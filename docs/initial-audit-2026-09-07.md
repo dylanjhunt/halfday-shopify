@@ -1,6 +1,6 @@
 # Halfday — initial store and theme audit
 
-**Planning update:** use the [consolidated modernization roadmap](modernization-roadmap.md) for the current delivery waves, estimates, and acceptance criteria. This dated audit preserves the underlying findings.
+**Audit update:** see the [focused performance, app, Klaviyo and SEO audit](focused-audit-2026-09-07.md) for deeper measurements and account/content verification. The [consolidated roadmap](modernization-roadmap.md) contains the updated delivery waves. This document preserves the earlier evidence snapshot.
 
 **Date:** September 7, 2026. **Status:** initial evidence-based audit complete; app-side verification and implementation remain separate work.
 

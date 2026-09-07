@@ -1,0 +1,275 @@
+{
+  "observed_date": "2026-09-07",
+  "method": "Manual read-only inspection of authenticated Shopify/Klaviyo UI and public PageSpeed report. Selected aggregate facts only; not an API export.",
+  "changes_made": [],
+  "limitations": [
+    "No email sent, live signup, discount redemption, audience export, profile suppression or campaign/flow activation.",
+    "No delivered-message headers or Amazon promotion account inspected.",
+    "No Search Console traffic/indexing inspection, billing audit or integration transaction.",
+    "List sizes are memberships, not deduplicated or consent-validated recipient counts."
+  ],
+  "field_performance": {
+    "source": "https://pagespeed.web.dev/analysis/https-drinkhalfday-com/n806elrtam?form_factor=mobile",
+    "population": "Homepage URL, latest 28-day CrUX field window shown September 7",
+    "mobile": {
+      "assessment": "Passed",
+      "lcp_seconds": 1.4,
+      "inp_ms": 187,
+      "cls": 0,
+      "fcp_seconds": 1.3,
+      "ttfb_seconds": 0.5
+    },
+    "desktop": {
+      "assessment": "Passed",
+      "lcp_seconds": 1.2,
+      "inp_ms": 109,
+      "cls": 0.02,
+      "fcp_seconds": 1.1,
+      "ttfb_seconds": 0.5
+    },
+    "shopify_30_day_all_device_aggregate": {
+      "source": "https://admin.shopify.com/store/halfday-tonics/themes",
+      "lcp_ms": 1292,
+      "inp_ms": 96,
+      "cls": 0.01
+    }
+  },
+  "independent_pagespeed_lab": {
+    "source": "https://pagespeed.web.dev/analysis/https-drinkhalfday-com/n806elrtam?form_factor=mobile",
+    "mobile": {
+      "performance_score": 38,
+      "lcp_seconds": 10.4,
+      "tbt_ms": 1200,
+      "fcp_seconds": 2.7,
+      "cls": 0,
+      "transfer_kib": 58405
+    },
+    "desktop": {
+      "performance_score": 55,
+      "lcp_seconds": 2.5,
+      "tbt_ms": 570,
+      "fcp_seconds": 0.7,
+      "cls": 0.016,
+      "transfer_kib": 60135
+    },
+    "limitation": "Single synthetic runs. Separate from real-user field metrics and the 15 local repeat runs."
+  },
+  "klaviyo": {
+    "branded_sending_domain": {
+      "source": "Klaviyo Settings > Domains",
+      "domain": "send.drinkhalfday.com",
+      "status": "Active",
+      "purpose": "Marketing",
+      "routing": "Dynamic",
+      "delivered_authentication_tested": false
+    },
+    "deliverability": {
+      "source": "https://www.klaviyo.com/analytics/deliverability",
+      "window_start": "2026-08-08",
+      "window_end": "2026-09-07",
+      "welcome_flow_rates": {
+        "flow_id": "XruESR",
+        "open_percent": 36.4,
+        "open_recipients": 99,
+        "click_percent": 4.78,
+        "click_recipients": 13,
+        "bounce_percent": 0.37,
+        "bounce_recipients": 1,
+        "unsubscribe_percent": 1.1,
+        "unsubscribe_recipients": 3,
+        "unsubscribe_rating": "Poor",
+        "spam_complaint_percent": 0,
+        "spam_complaint_recipients": 0
+      },
+      "score": "Unavailable",
+      "score_requirement": "At least 1000 emails sent in the last 30 days",
+      "reports_tab_snapshot": {
+        "timeframe": "Last 30 days",
+        "message_type": "All messages",
+        "category": "Inbox Provider",
+        "selected_categories": 5,
+        "total_recipients": 282,
+        "open_percent": 37.0,
+        "click_percent": 5.34,
+        "bounce_percent": 0.36,
+        "unsubscribe_percent": 1.07,
+        "spam_complaint_percent": 0,
+        "caution": "Selected inbox-provider report population differs from individual welcome-flow summary. Do not combine denominators."
+      }
+    },
+    "main_popup": {
+      "id": "XDLfXK",
+      "source": "https://www.klaviyo.com/forms/XDLfXK/reports/overview",
+      "status": "Live",
+      "last_published": "2026-02-17",
+      "lists": [
+        "Halfday Newsletter",
+        "SMS Subscribers"
+      ],
+      "display": {
+        "delay_seconds": 2,
+        "devices": "All",
+        "audience": "All audience members",
+        "dismissal_cooldown_days": 5,
+        "hide_after_submit_or_url_click": true,
+        "store_utm_parameters": false,
+        "excluded_url_count": 4,
+        "excluded_url_purposes": [
+          "Promo free can",
+          "HelloFresh",
+          "Subscribe",
+          "PTO"
+        ]
+      },
+      "offer": "Get 15% off",
+      "success_text": "Thank you! Use NEWERA15 for 15% off.",
+      "steps": [
+        "Email",
+        "Optional SMS",
+        "Success"
+      ],
+      "sms_observation": "Consent paragraph repeats privacy/terms wording; includes cart-reminder language.",
+      "last_seven_days": {
+        "views": 1347,
+        "submits": 19,
+        "submit_percent": 1.41,
+        "desktop_views": 791,
+        "desktop_submits": 2,
+        "desktop_submit_percent": 0.25,
+        "mobile_views": 556,
+        "mobile_submits": 17,
+        "mobile_submit_percent": 3.06,
+        "all_step_submits": 9,
+        "all_step_submit_percent": 0.67
+      },
+      "caution": "All-step completion does not establish whether email-only consent was lost. Timing changes require measurement."
+    },
+    "alternate_popup": {
+      "id": "WtiUL4",
+      "status": "Live",
+      "last_published": "2025-05-15",
+      "display": "Only on custom trigger",
+      "last_seven_day_views": 0,
+      "last_seven_day_submits": 0,
+      "caution": "Not proven to compete automatically with the main popup. Review testing-page/custom-trigger dependencies."
+    },
+    "footer_routing": {
+      "form_id": "TPsGns",
+      "destination_list": "HelloFresh Sample Campaign",
+      "destination_list_id": "TPaapC",
+      "destination_members": 15696,
+      "welcome_trigger_list": "Halfday Newsletter",
+      "welcome_trigger_list_id": "XNd8tH",
+      "newsletter_members": 14969,
+      "bridging_automation_verified": false,
+      "historical_list_migration_recommended": false
+    },
+    "welcome": {
+      "source": "https://www.klaviyo.com/flow/XruESR/edit",
+      "id": "XruESR",
+      "status": "Live",
+      "email_days": [
+        0,
+        2,
+        5
+      ],
+      "profile_filters": [
+        "Placed Order zero times ever",
+        "Has not received old A-Game welcome XeYvCE ever",
+        "rc_active_subscriber Boolean equals false"
+      ],
+      "legacy_filter_missing_value_behavior_tested": false,
+      "all_three_save_15_links": "https://www.amazon.com/dp/B0B4F5NJB6",
+      "link_parameters_observed": [
+        "maas",
+        "utm_source",
+        "utm_medium",
+        "utm_campaign"
+      ],
+      "amazon_offer_verified": false,
+      "third_message": {
+        "id": "XkRqxt",
+        "name": "[JB] Welcome Series, Email #3 - Meet Our Founders",
+        "subject": "Meet our Best Friend Founders 😎",
+        "preview": "teamwork makes the dream work",
+        "smart_sending": false,
+        "utm_tracking": true,
+        "last_30_day_open_percent": 32.6,
+        "last_30_day_open_recipients": 29,
+        "last_30_day_click_percent": 1.1,
+        "last_30_day_click_recipients": 1,
+        "body": "Heavily image-based brand content and linked image CTAs",
+        "twitter_destination": "Twitter login redirect to drinkhalfday profile"
+      },
+      "preview_caution": "Preference placeholder in generic preview was not tested in delivered mail; no claim that live unsubscribe is broken."
+    },
+    "browse_flow": {
+      "source": "https://www.klaviyo.com/flow/RX4C7p/edit",
+      "id": "RX4C7p",
+      "name": "[FE] Browse Abandonment",
+      "status": "Draft",
+      "trigger": "Viewed Product",
+      "wait_hours": 2,
+      "reentry_days": 30,
+      "message_count": 1,
+      "message_id": "TKuvBS",
+      "smart_sending_hours": 16,
+      "utm_tracking": true,
+      "trigger_filters": [],
+      "profile_filters": [
+        "Checkout Started zero times since starting this flow",
+        "Placed Order zero times since starting this flow"
+      ],
+      "preview_text": "Don't shy away from of a little fiber",
+      "dynamic_product_links": "Blank in generic preview, which warns dynamic content may be incomplete; event-specific rendering not tested.",
+      "limitation": "Shopify order/checkout suppression cannot establish Amazon purchases."
+    },
+    "campaigns": {
+      "last_30_day_view": "No campaigns",
+      "recent_sent_row": {
+        "name": "OL | Amazon Spring Sale (Reschedule)",
+        "date": "2026-03-25",
+        "click_percent": 0.95,
+        "click_recipients": 133
+      },
+      "recent_draft_row": {
+        "name": "OL | Watermelon HH Launch",
+        "date": "2026-04-16"
+      },
+      "audience_observation": "Recent historical sends include now-deactivated engagement segments plus the full newsletter list. Rebuild eligible audiences before reuse."
+    },
+    "sunset_segment": {
+      "id": "YA5dwU",
+      "name": "[FE] Eligible for Sunset Flow",
+      "members": 26960,
+      "criteria": [
+        "Can receive email because subscribed",
+        "Profile created at least 160 days ago",
+        "Received Email at least once over all time",
+        "Opened Email zero times in last 160 days",
+        "Clicked Email zero times in last 160 days",
+        "Placed Order zero times in last 160 days"
+      ],
+      "recent_email_opportunity_required": false,
+      "separate_platform_suppression_suggestion_count": 318,
+      "action": "Review criteria and actual consent/engagement before any suppression; no suppression performed."
+    },
+    "other_list_context": {
+      "PTO_giveaway_members": 8318,
+      "Active_DTC_Subscribers_3_10_25_static_list_members": 105,
+      "note": "Static legacy membership is not a current subscription-status signal."
+    }
+  },
+  "shopify_discount_check": {
+    "source": "https://admin.shopify.com/store/halfday-tonics/discounts",
+    "view": "All discounts, search NEWERA15",
+    "result": "No discounts found",
+    "amazon_redemption_status": "Unknown"
+  },
+  "deferred": [
+    "GA setup",
+    "Google Ads",
+    "Full attribution implementation",
+    "GTM (confirmed empty/unused by user)"
+  ]
+}

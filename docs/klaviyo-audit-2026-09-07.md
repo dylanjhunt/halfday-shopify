@@ -1,6 +1,6 @@
 # Halfday — Klaviyo account audit
 
-**Planning update:** email work is included in the [consolidated modernization roadmap](modernization-roadmap.md), alongside CRO, performance, content, search, operations, and reviews. This document preserves the account audit evidence.
+**Audit update:** see the [focused performance, app, Klaviyo and SEO audit](focused-audit-2026-09-07.md) for deeper measurements and account/content verification. The [consolidated roadmap](modernization-roadmap.md) contains the updated delivery waves. This document preserves the earlier evidence snapshot.
 
 Read-only inspection on September 7, 2026 after Dylan received account access. Account shown: **Halfday**. No form, flow, audience, campaign, consent, integration, or sending settings were changed. No emails were sent and no profiles were subscribed/exported. GA and Google Ads remain deferred. GTM was confirmed unused by Dylan and is excluded from further work.
 

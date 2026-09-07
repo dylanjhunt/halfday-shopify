@@ -4,7 +4,9 @@
 
 Modernize Halfday's existing Shopify store so it is easier to shop, faster to load, simpler to maintain, and reliable across email, retail, and fulfillment. Keep the brand's personality and useful existing work. Use native Shopify sections, editable content, and minimal JavaScript as the default.
 
-This is the single delivery roadmap. The [store/theme audit](initial-audit-2026-09-07.md) and [Klaviyo audit](klaviyo-audit-2026-09-07.md) remain the evidence snapshots; this document replaces their separate priority sequences. Setup is complete: Shopify CLI, downloaded live-theme baseline, local Git, and Claude project guidance. Implementation has not started, and no live settings or theme code have been changed.
+This is the single delivery roadmap. The [focused performance, app, Klaviyo and SEO audit](focused-audit-2026-09-07.md) supplies the current findings and supersedes the earlier generic scope. The [store/theme audit](initial-audit-2026-09-07.md) and [initial Klaviyo inventory](klaviyo-audit-2026-09-07.md) remain supporting snapshots. Setup is complete: Shopify CLI, downloaded live-theme baseline, local Git, and Claude project guidance. Implementation has not started, and no live settings or theme code have been changed.
+
+**Evidence update:** the homepage passes field Core Web Vitals, but offscreen video accounts for most captured transfer. The sending domain is already active. The concrete email work is offer/list/eligibility repair and a controlled restart audience. SEO work starts with eight broken destinations, blank structured descriptions on 14 products, conflicting slim-can facts and public test/utility URLs. See the focused audit for measurements, source files, exact account IDs and remaining verification limits.
 
 ## Schedule at a glance
 
@@ -20,16 +22,16 @@ This is the single delivery roadmap. The [store/theme audit](initial-audit-2026-
 
 Wave 5 is the least certain: its allowance covers checking existing connections, straightforward configuration, and a standard review-widget/import setup when the vendors are ready. Bazaarvoice onboarding, retailer syndication, and unresolved Cin7/3PL issues have no verified completion date yet. Keep those milestones open separately if they outlast the site work. Identify a concrete fault before estimating integration repair; do not promise that any unknown repair fits inside the allowance.
 
-This estimate covers focused modernization of the existing theme and integrations. A full rebrand/replatform, custom integration middleware, new photography or extensive copywriting, bulk legacy-page rebuilding, and major data repairs need separate estimates if the audit establishes a need. Keep those discoveries in this roadmap with an owner and next action. Recheck remaining effort after the performance baseline and integration access checks rather than padding every wave in advance.
+This estimate covers focused modernization of the existing theme and integrations. A full rebrand/replatform, custom integration middleware, new photography or extensive copywriting, bulk legacy-page rebuilding, and major data repairs need separate estimates if selected. The 32-article editorial review is not a promise to rewrite the entire blog inside Wave 4. Keep those discoveries in this roadmap with an owner and next action. Use the completed performance baseline and remaining integration checks to refine effort.
 
 ### Internal effort allocation
 
 | Wave | Included effort |
 | --- | --- |
 | 1 | Stock/CTA/schema corrections on known affected templates: 1–2h; footer routing and eligibility test: 0.5–1h; links, spot QA, and dependency checklist: 0.5–1h |
-| 2 | Performance baseline and app inventory triage: 1–2h; highest-impact image/font/asset/script fixes: 3–5h; before/after measurements and regression checks: 2–3h |
+| 2 | Implement deferred testimonial/footer videos and sized posters: 3–5h; targeted asset/app configuration work: 1–2h; matched before/after measurements and regression checks: 2–3h |
 | 3 | Existing product records and approved assets: 2–3h; focused mobile/navigation/PDP improvements: 3–5h; legacy-page triage and content QA: 1–2h |
-| 4 | Refresh and validate up to three existing core email journeys/forms: 4–6h; priority SEO/schema/content fixes: 3–4h; final checks: 1–2h |
+| 4 | Welcome/browse validation and consented restart audience: 4–6h; priority metadata, links, utility-page discovery and FAQ fixes: 3–4h; final checks: 1–2h. Product/schema work begins in Waves 1 and 3. |
 | 5 | Existing integration/routing checks and routine corrections: 2–3h; standard Bazaarvoice setup and import checks: 3–5h; final site QA and handover: 1–2h |
 
 These are estimates for the concrete first pass, not fixed-price commitments or a cap that makes unfinished work complete. If a task needs a deeper rebuild, record the finding and a specific additional estimate before expanding implementation.
@@ -40,9 +42,9 @@ These are estimates for the concrete first pass, not fixed-price commitments or 
 
 **Lead:** Dylan/theme development, with ecommerce, lifecycle, and operations owners. **Estimate:** 2–4 hours.
 
-- Use the completed audit to fix the known issues directly. Capture the affected states before editing; the full performance baseline belongs in Wave 2.
+- Use the completed audits and performance baseline to fix known issues directly. Capture affected states before editing.
 - Confirm the intended purchase channel for the affected products and correct the variety-pack sold-out messaging and related schema. Do not invent Amazon availability or weaken inventory checks on actual Shopify purchases. Complete catalog-wide channel mapping with the new formats in Wave 3.
-- Correct the footer signup destination after confirming the intended newsletter list, consent, and valid offer. Test form → list → welcome eligibility with an approved test profile. Preserve suppression and avoid enrolling historical lists into live flows by accident.
+- Correct footer form TPsGns routing from HelloFresh Sample Campaign to Halfday Newsletter for new general signups after checking any bridge and consent. Reconcile popup code NEWERA15 with the Amazon Save 15% destination: exact Shopify discount search returned no result, and Amazon eligibility is unverified. Test form → list → welcome eligibility with an approved test profile. Do not migrate the historic HelloFresh list wholesale.
 - Fix verified stale preview links and confusing destinations; check navigation, key CTAs, and protected product visibility.
 - Prepare one dependency checklist for product assets/mapping, Cin7 access, 3PL contacts, and Bazaarvoice onboarding. Assign owners so they can begin providing inputs while site work proceeds; detailed app, catalog, and routing work sits in its respective wave.
 
@@ -52,17 +54,17 @@ These are estimates for the concrete first pass, not fixed-price commitments or 
 
 **Lead:** theme development, with app owners. **Estimate:** 6–10 hours.
 
-- Establish the mobile/desktop baseline for home, Shop All/Variety Packs, a representative PDP, a slim-can page, and the store locator, reusing measurements where templates are identical. Measure the actual LCP element and its loading sequence. Address the limiting factor: server response, resource discovery, image download, or render delay. Inspect the homepage's separate desktop/mobile priority images before changing preload behavior.
-- Use correct image sizes/formats, responsive sources, dimensions, and deliberate loading priority. Keep the visible hero eager; lazy-load suitable offscreen media. Review font families/weights, loading, and layout shifts while preserving Halfday typography.
-- Audit all 22 installed apps plus theme-injected services. Attribute cost using network and performance recordings; app count alone does not establish a slowdown. Apply the app decisions below.
-- Reduce unnecessary global CSS/JS and conditionally load section/route features. Investigate the existing jQuery/Swiper bundle, global locator styles, repeated sliders, and duplicate loaders. Replace simple behavior with native HTML/CSS or small vanilla JS where it preserves functionality.
+- Defer video sources in `Index-object-testimonials-new` and the global footer's `Index-object-instagram-new` snippets. Start with sized posters, load playable video only when needed, and avoid downloading duplicate offscreen video copies. Video request blocking reduced median local homepage transfer from 42.25 MB to 7.62 MB. Use that as opportunity evidence, not a shipped saving or a guaranteed LCP improvement.
+- Replace master-sized posters with responsive card sizes; address the approximately 2 MiB homepage image-saving estimate. The mobile hero is already eager and high priority. Add high priority only to the initially visible PDP image, then verify variant switching and zoom. Review the ten observed font requests without removing used brand faces.
+- Use the runtime app evidence below. Prioritize vendor-supported Signifyd scoping, Postscript/Klaviyo SMS ownership and the hardcoded accessiBe injection. Keep Yotpo until migration is verified. Extend measurements to the locator/slim-can route when touching those features; the completed home/PDP/Shop All repeat runs provide the baseline.
+- Move global `find-us.css` to the locator route. Map actual jQuery/Swiper consumers before replacing simple controls. Preserve functioning sliders and protected shopping paths. Removing unloaded backup files is housekeeping, not a performance claim.
 - Triage inherited Theme Check findings in touched, active code; clean reusable components and inspect upstream Dawn compatibility. A wholesale theme replacement is not assumed in this estimate.
 
 **Done when:** before/after results use the same routes and test conditions, straightforward fixes for the highest-impact measured bottlenecks are delivered, every audited app has a documented decision, and affected shopping, forms, reviews, locator, and access controls pass regression checks. Record deeper replacement work and remaining third-party limits with a specific next action/estimate. Final speed acceptance is repeated after subsequent waves add content or widgets.
 
 ### Speed and LCP acceptance
 
-Target good field Core Web Vitals at the 75th percentile, assessed separately for mobile and desktop: **LCP ≤2.5 seconds, INP ≤200 ms, CLS ≤0.1**. These are targets, not current Halfday results or a guaranteed outcome. [Google's Core Web Vitals guidance](https://web.dev/articles/vitals)
+Maintain good field Core Web Vitals at the 75th percentile, assessed separately for mobile and desktop: **LCP ≤2.5 seconds, INP ≤200 ms, CLS ≤0.1**. The September 7 homepage field report already passes: mobile LCP 1.4s, INP 187ms, CLS 0; desktop LCP 1.2s, INP 109ms, CLS 0.02. Improve heavy initial downloads and slow-device lab behavior while preserving those results. [Google's Core Web Vitals guidance](https://web.dev/articles/vitals)
 
 Capture available Shopify performance reporting and public field data, plus at least three comparable lab runs per priority page using documented device/network conditions and median results. Keep cold and repeat-visit results separate; control consent and login state when comparing app changes. Record LCP element/timing, CLS, lab responsiveness indicators, transferred JS/CSS, requests, long tasks, and screenshots. Lab TBT is a diagnostic, not a substitute for field INP. If field data is unavailable, say so; do not substitute a Lighthouse score and call it a field result.
 
@@ -76,10 +78,11 @@ For each app/service record its owner, purpose, cost if accessible, recent use, 
 | --- | --- | --- |
 | Global custom JS with jQuery/Swiper | Map active consumers and execution; distinguish used sliders from dead code | Remove unused initialization; use CSS scroll snap or small native controls for simple cases; retain a library where its features justify it |
 | Global CSS and locator assets | Confirm which routes need the styles and whether they block rendering | Load locator/section assets only where needed and remove proven-unused rules |
-| Klaviyo forms; Shopify Forms; Messaging/Postscript | Check collection-channel ownership, overlapping prompts, loaders, and form targeting | Consolidate duplicate experiences and retain the required email/SMS and consent functions |
-| Yotpo / planned Bazaarvoice | Measure current widget cost and compare the proposed replacement on a preview | Retain Yotpo until migration works; load the chosen integration efficiently and verify reviews remain discoverable |
-| Stockist | Measure map/locator loading and document required search/filter features | Load on the locator route or on appropriate interaction; consider a native directory only if it meets the actual requirements |
-| accessiBe injection | Establish runtime cost and inspect the site's underlying accessibility | Fix native markup/interactions; assess whether the service is still needed with the owner |
+| Signifyd | Median homepage ~213 KiB / 304ms main-thread work; request-blocking median TBT 747ms versus 928ms baseline, with variable runs | Review vendor-supported scoping on Amazon/retail discovery routes; preserve fraud coverage on Shopify purchase paths |
+| Klaviyo / Postscript | Klaviyo ~262 KiB; Postscript ~209 KiB despite absence from initial installed-app list. Main popup has optional SMS | Confirm SMS owner and capture handoff. Main popup is timed; alternate popup is custom-trigger only, so automatic duplication is not established |
+| Yotpo / planned Bazaarvoice | ~206 KiB on homepage; reviews do render on tested PDP | Retain until migration works; scope loading to real review surfaces where supported and compare replacement cost |
+| Stockist | No homepage requests identified in these captures | Keep and measure the locator route before considering replacement |
+| accessiBe injection | ~230 KiB; hardcoded hidden trigger with background processing enabled | Confirm continued need, retire injection if approved, and fix actual native accessibility defects |
 | Locksmith and old EasyLockdown files | Map active restrictions versus unused backup code | Preserve access controls; retire confirmed unused remnants. Deleting an unloaded backup is maintenance cleanup, not a speed win |
 | Cin7, ShipStation, finance/admin tools and other installed apps | Determine whether they inject storefront code at all | Keep necessary operational apps; retire unused services only after ownership/data review |
 
@@ -89,7 +92,7 @@ No app is labeled slow solely because it is installed. Test replacements one at 
 
 **Lead:** ecommerce/theme development, with content and operations. **Estimate:** 6–10 hours using the existing product records, with approved assets, copy, and product mapping ready.
 
-- Finish the existing slim-can and 4-pack records: correct sellable pack versus logistics case, SKU/GTIN, channel, retailer/Amazon destination, imagery, nutrition, claims, display fields, and collection placement. Avoid duplicate products. Verify the sampled “Silm Can” typo, 12-pack copy, and mismatched asset references.
+- Finish the existing slim-can and 4-pack records: correct sellable pack versus logistics case, SKU/GTIN, channel, retailer/Amazon destination, imagery, nutrition, claims, display fields, and collection placement. Avoid duplicate products. Resolve Strawberry slim-can's 45-versus-40 calories and green/black-versus-black tea conflict from approved facts. Align its retail-only CTA with appropriate schema; populate the 14 blank structured product descriptions from the same approved content source.
 - Make mobile navigation, flavor/format discovery, product comparison, and the next purchase action clear. Use one obvious primary CTA appropriate to the product and clear secondary retail options. Preserve Halfday's playful typography, colors, and visual identity while improving spacing, legibility, and consistency.
 - Improve PDP hierarchy: flavor/format, pack quantity, verified benefits and nutrition, purchase destination, shipping/retail expectations where relevant, reviews, and useful FAQs. Keep key content editable in Shopify.
 - Review popup timing and interference, tap targets, keyboard/focus behavior, contrast, image text, and layout movement. Consider a lightweight mobile sticky CTA only when it solves an observed problem without obscuring content.
@@ -117,11 +120,13 @@ Observe releases for at least 2–4 weeks after launch and longer if traffic is 
 
 **Lead:** lifecycle marketer and theme/content owners. **Estimate:** 8–12 hours, refreshing existing content and flows rather than creating a new email program from scratch.
 
-- Rationalize the 42 Klaviyo flows and 16 forms into a clear owner/purpose map. Review sender authentication, consent, exclusions, offer validity, audience targeting, manual queues, and legacy filters before changing statuses.
-- Refresh and validate the existing welcome series first, then a focused browse-interest and re-engagement journey where events and audiences support them. Prioritize up to three core journeys in this wave; inventory the remainder for later work. Shopify cart/order/replenishment triggers are not assumed to represent Amazon purchases. Preserve staff/sample/wholesale exclusions.
-- Validate a controlled signup, relevant onsite events, flow eligibility, suppression, rendering, and Amazon/retailer destinations. Existing Amazon links already have parameters; this work verifies destinations and naming without claiming end-to-end attribution. Do not release manual queues as a cleanup shortcut.
-- Correct page descriptions, factual product/schema content, organization identity/social links, canonical internal URLs, heading structure, useful alt text, and redirects. Check key templates, sitemap/robots behavior, and broken destinations; add Search Console inspection only when access is available.
-- Improve SEO/AEO through clear product facts, answerable questions, helpful visible copy, and accurate structured data. Avoid unsupported stock/price/health claims or special “AI optimization” scripts. [Google's guidance for AI search features](https://developers.google.com/search/docs/appearance/ai-features)
+- Preserve the active `send.drinkhalfday.com` sending domain. Validate authentication with an approved delivered test, not a new domain setup. After Wave 1 offer/routing repair, test welcome XruESR's `rc_active_subscriber=false`, no-Shopify-orders and legacy A-Game exclusions against missing/false/true properties and staff/sample cases. Make the primary benefit and CTA readable as email text rather than only images.
+- Adjust main popup XDLfXK from its current two-second/all-audience display after offer correction. Last-seven-day submission rates were 0.25% desktop and 3.06% mobile; test eligible-audience targeting and later engagement-based timing. Verify optional SMS consent/handoff. Keep custom-trigger WtiUL4 until its test-page dependencies are resolved.
+- Validate draft browse flow RX4C7p: Viewed Product → 2h → one email, 30-day re-entry. Fix its preview-text typo, add eligible public-product/channel filters and render a real event to check product links. Its Shopify order suppression cannot detect Amazon purchases. Do not release manual queues or activate all legacy cart/replenishment flows.
+- Rebuild current consented engagement/new-subscriber audiences for a controlled new-format campaign. Historical sends include deactivated segments plus the full newsletter. Review the 26,960-member sunset segment before suppression: it requires one email ever but no recent sending opportunity, a material issue given the campaign gap. Broader re-engagement content is a follow-on after the initial audience test.
+- Repair eight verified 404 destinations, including the old Shop page, retired Cranberry links, malformed relative blog links and FAQ anchors. Hide popup-testing and retained staff/menu utility collections from search appropriately, preserving dependencies and access checks. Fill missing descriptions on retained customer pages, including Watermelon and real shopping collections; do not optimize utility pages being hidden.
+- Rewrite FAQ answers around actual purchase channels, caffeine by format and approved current nutrition. Fix Organization identity/social fields and complete the product/schema corrections begun in Waves 1 and 3. This provides concrete SEO/AEO content improvements without another app. [Google's guidance for AI search features](https://developers.google.com/search/docs/appearance/ai-features)
+- Queue the overlapping 2022 blog articles and outdated health/product claims for editorial review. Use Search Console/backlink evidence when available to choose consolidation targets. Full article rewriting is separate from this wave's first-pass fixes.
 
 **Done when:** selected journeys pass event/audience/content checks and are approved for activation, priority templates have accurate crawlable content, and legacy routes have intentional destinations. Inbox delivery, rankings, and AI citations are outcomes to monitor, not guaranteed deliverables.
 
@@ -160,13 +165,13 @@ I’ve gone through the site and Klaviyo and put together a plan based on your l
    Sort out the out-of-stock messaging on products that send people to Amazon, fix the footer email signup so it goes to the right welcome flow, and clean up incorrect links. We’ll also check that this doesn’t affect staff orders or anything being purchased through Shopify.
 
 2. **Site speed and app cleanup (6-10 hours)**
-   Check what’s slowing the site down, especially on mobile, and improve how quickly the main images and content load. We’ll go through the apps and extra code to see what’s still needed, what overlaps, and what we can remove or replace with something simpler.
+   The videos lower down the page are downloading a lot of data before people get to them. We’ll change how those load, resize the larger images and clean up code that doesn’t need to run on every page. We’ll also review Signifyd, the SMS setup and the accessibility tool to see what can be simplified while keeping the features we need.
 
 3. **Product updates and shopping experience (6-10 hours)**
    Get the 4-packs and slim cans showing with the right images, product details and links. We’ll also tidy up the navigation and product pages so it’s easier to find a flavour or format and know where to buy it, while keeping the Halfday look and feel.
 
 4. **Klaviyo and SEO (8-12 hours)**
-   Update the welcome emails and main follow-up flows, check the offers and who’s receiving what, and sort through the older setups. On the site, we’ll clean up search descriptions, product information and FAQs to help with SEO and how the products show up in AI search.
+   Make sure the signup offer and welcome emails send people to the right place, refresh the browse reminder and sort out who should receive the relaunch emails. The sending domain is already set up. On the site, we’ll fix broken links, keep testing pages out of search, and update the product information, search descriptions and FAQs so they match what you’re selling now.
 
 5. **Integrations and reviews (6-10 hours)**
    Get a clear picture of how Cin7, ShipStation, Faire and TikTok/Amazon fulfillment are connected, then address any straightforward setup issues. We’ll also work through the Bazaarvoice setup and check the review migration before removing Yotpo.

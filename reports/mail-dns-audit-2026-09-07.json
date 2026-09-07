@@ -1,0 +1,41 @@
+[
+  {
+    "host": "drinkhalfday.com",
+    "type": "TXT",
+    "values": [
+      "\"v=spf1 include:_spf.google.com include:_spf.mlsend.com ~all\""
+    ],
+    "returncode": 0
+  },
+  {
+    "host": "_dmarc.drinkhalfday.com",
+    "type": "TXT",
+    "values": [
+      "\"v=DMARC1; p=none\""
+    ],
+    "returncode": 0
+  },
+  {
+    "host": "send.drinkhalfday.com",
+    "type": "NS",
+    "values": [
+      "ns4.klaviyo.com.",
+      "ns1.klaviyo.com.",
+      "ns2.klaviyo.com.",
+      "ns3.klaviyo.com."
+    ],
+    "returncode": 0
+  },
+  {
+    "host": "send.drinkhalfday.com",
+    "type": "TXT",
+    "values": [],
+    "returncode": 0
+  },
+  {
+    "host": "trk.send.drinkhalfday.com",
+    "type": "CNAME",
+    "values": [],
+    "returncode": 0
+  }
+]
