@@ -1,0 +1,7 @@
+# Store selection only. Never default writes to the live theme.
+[environments.default]
+store = "halfday-tonics.myshopify.com"
+
+[environments.development]
+store = "halfday-tonics.myshopify.com"
+development = true

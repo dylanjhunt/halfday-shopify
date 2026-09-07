@@ -1,0 +1,16 @@
+{
+  "name": "halfday-shopify-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Halfday's customized Dawn Shopify theme; no storefront build step",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "theme:list": "shopify theme list --store halfday-tonics.myshopify.com",
+    "theme:pull": "node scripts/pull-live.mjs",
+    "theme:dev": "shopify theme dev --environment development",
+    "theme:check": "shopify theme check",
+    "theme:push:dev": "shopify theme push --environment development",
+    "theme:open:dev": "shopify theme open --environment development"
+  },
+  "devDependencies": { "@shopify/cli": "4.6.1" }
+}

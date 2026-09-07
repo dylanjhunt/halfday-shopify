@@ -1,0 +1,11 @@
+.git/**
+.claude/**
+.shopify/**
+node_modules/**
+docs/**
+reports/**
+scripts/**
+*.md
+package*.json
+.gitignore
+.env*
