@@ -8,43 +8,57 @@ This is the single delivery roadmap. The [store/theme audit](initial-audit-2026-
 
 ## Schedule at a glance
 
-| Wave | Simple outcome | Estimated hands-on time | Target window |
-| --- | --- | --- | --- |
-| 1. Fix the essentials | Correct misleading stock messages, signup routing, and obvious journey problems | 3–5 business days | Week 1 |
-| 2. Make the site faster | Improve loading and LCP; remove or replace measured app/theme overhead | 5–7 business days | Weeks 2–3 |
-| 3. Improve the shopping experience | Launch the right new products and improve mobile browsing and conversion paths | 5–7 business days | Weeks 3–4 |
-| 4. Strengthen email and search | Relaunch useful Klaviyo journeys and improve SEO/AEO foundations | 4–6 business days | Weeks 5–6 |
-| 5. Connect and finish | Validate fulfillment/Faire, complete the review migration, and hand over a maintainable store | 5–8 business days | Weeks 6–8 |
+| Wave | Simple outcome | Estimated hands-on time |
+| --- | --- | --- |
+| 1. Fix the essentials | Correct misleading stock messages, signup routing, and obvious journey problems | 2–4 hours |
+| 2. Make the site faster | Improve loading and LCP; remove or replace measured app/theme overhead | 6–10 hours |
+| 3. Improve the shopping experience | Launch the right new products and improve mobile browsing and conversion paths | 6–10 hours |
+| 4. Strengthen email and search | Refresh core Klaviyo journeys and improve SEO/AEO foundations | 8–12 hours |
+| 5. Connect and finish | Validate fulfillment/Faire, configure the review replacement, and finish QA | 6–10 hours, conditional on vendor readiness |
 
-**Plan for approximately 6–8 calendar weeks, with 22–33 hands-on business days.** Windows are planning ranges, not five independent deadlines. They allow for review and QA and assume one primary implementer with timely content, lifecycle, and operations support. Allow one consolidated client review per wave, typically returned within two business days. Begin vendor coordination in Wave 1 so it can progress alongside site work. Cin7/3PL access, Bazaarvoice onboarding, retailer acceptance, and content production can extend the affected milestones beyond eight weeks; the hands-on estimates exclude waiting for those parties.
+**Working estimate: 28–46 hands-on hours, roughly 4–6 eight-hour workdays.** Aim to deliver the ready work over **1–2 calendar weeks**, assuming access, approved assets/copy, and prompt decisions. This uses the completed audit and existing theme, product records, and email assets. It includes focused implementation and relevant QA; it does not reserve whole days for routine fixes or count client/vendor waiting as development time. The first four waves account for 22–36 hours and can progress while operations and review vendors respond.
 
-This estimate covers focused modernization of the existing theme and integrations. A full rebrand/replatform, new custom integration middleware, extensive new content production, or a major vendor-driven data repair needs a separate estimate. Recheck scope and remaining effort at the end of each wave.
+Wave 5 is the least certain: its allowance covers checking existing connections, straightforward configuration, and a standard review-widget/import setup when the vendors are ready. Bazaarvoice onboarding, retailer syndication, and unresolved Cin7/3PL issues have no verified completion date yet. Keep those milestones open separately if they outlast the site work. Identify a concrete fault before estimating integration repair; do not promise that any unknown repair fits inside the allowance.
+
+This estimate covers focused modernization of the existing theme and integrations. A full rebrand/replatform, custom integration middleware, new photography or extensive copywriting, bulk legacy-page rebuilding, and major data repairs need separate estimates if the audit establishes a need. Keep those discoveries in this roadmap with an owner and next action. Recheck remaining effort after the performance baseline and integration access checks rather than padding every wave in advance.
+
+### Internal effort allocation
+
+| Wave | Included effort |
+| --- | --- |
+| 1 | Stock/CTA/schema corrections on known affected templates: 1–2h; footer routing and eligibility test: 0.5–1h; links, spot QA, and dependency checklist: 0.5–1h |
+| 2 | Performance baseline and app inventory triage: 1–2h; highest-impact image/font/asset/script fixes: 3–5h; before/after measurements and regression checks: 2–3h |
+| 3 | Existing product records and approved assets: 2–3h; focused mobile/navigation/PDP improvements: 3–5h; legacy-page triage and content QA: 1–2h |
+| 4 | Refresh and validate up to three existing core email journeys/forms: 4–6h; priority SEO/schema/content fixes: 3–4h; final checks: 1–2h |
+| 5 | Existing integration/routing checks and routine corrections: 2–3h; standard Bazaarvoice setup and import checks: 3–5h; final site QA and handover: 1–2h |
+
+These are estimates for the concrete first pass, not fixed-price commitments or a cap that makes unfinished work complete. If a task needs a deeper rebuild, record the finding and a specific additional estimate before expanding implementation.
 
 **Out of scope for now:** GA setup, Google Ads, and full attribution implementation await Dylan's confirmation. GTM was confirmed empty/unused and is excluded. Their absence does not block storefront improvements; conversion-lift claims and paid-media launch readiness remain limited until measurement is available.
 
 ## Wave 1 — Fix the essentials
 
-**Lead:** Dylan/theme development, with ecommerce, lifecycle, and operations owners. **Estimate:** 3–5 business days.
+**Lead:** Dylan/theme development, with ecommerce, lifecycle, and operations owners. **Estimate:** 2–4 hours.
 
-- Establish a repeatable mobile/desktop speed and UX baseline for home, Shop All, Variety Packs, a representative PDP, a slim-can page, and the store locator. Record current app/script loading and the primary customer paths before changing them.
-- Define each product's intended purchase channel: Amazon, retailer discovery, Shopify purchase, or restricted staff/sample. Correct the confirmed variety-pack sold-out messaging and related schema to match that model. Do not invent Amazon availability or weaken inventory checks on actual Shopify purchases.
+- Use the completed audit to fix the known issues directly. Capture the affected states before editing; the full performance baseline belongs in Wave 2.
+- Confirm the intended purchase channel for the affected products and correct the variety-pack sold-out messaging and related schema. Do not invent Amazon availability or weaken inventory checks on actual Shopify purchases. Complete catalog-wide channel mapping with the new formats in Wave 3.
 - Correct the footer signup destination after confirming the intended newsletter list, consent, and valid offer. Test form → list → welcome eligibility with an approved test profile. Preserve suppression and avoid enrolling historical lists into live flows by accident.
 - Fix verified stale preview links and confusing destinations; check navigation, key CTAs, and protected product visibility.
-- Start the product/pack mapping sheet, app ownership inventory, Cin7 organization-access request, 3PL routing discovery, and Bazaarvoice/retailer onboarding. Assign the person who can resolve each dependency.
+- Prepare one dependency checklist for product assets/mapping, Cin7 access, 3PL contacts, and Bazaarvoice onboarding. Assign owners so they can begin providing inputs while site work proceeds; detailed app, catalog, and routing work sits in its respective wave.
 
-**Done when:** the priority stock/signup problems have been tested, public and restricted purchase paths behave correctly, the baseline is saved, and each dependency has an owner. Theme changes are reviewed in a development preview before an authorized release.
+**Done when:** the priority stock/signup problems have been tested, affected public and restricted purchase paths behave correctly, key links are corrected, and each dependency has an owner. Theme changes are reviewed in a development preview before an authorized release.
 
 ## Wave 2 — Make the site faster
 
-**Lead:** theme development, with app owners. **Estimate:** 5–7 business days.
+**Lead:** theme development, with app owners. **Estimate:** 6–10 hours.
 
-- Measure the actual LCP element and its loading sequence on priority routes. Address the limiting factor: server response, resource discovery, image download, or render delay. Inspect the homepage's separate desktop/mobile priority images before changing preload behavior.
+- Establish the mobile/desktop baseline for home, Shop All/Variety Packs, a representative PDP, a slim-can page, and the store locator, reusing measurements where templates are identical. Measure the actual LCP element and its loading sequence. Address the limiting factor: server response, resource discovery, image download, or render delay. Inspect the homepage's separate desktop/mobile priority images before changing preload behavior.
 - Use correct image sizes/formats, responsive sources, dimensions, and deliberate loading priority. Keep the visible hero eager; lazy-load suitable offscreen media. Review font families/weights, loading, and layout shifts while preserving Halfday typography.
 - Audit all 22 installed apps plus theme-injected services. Attribute cost using network and performance recordings; app count alone does not establish a slowdown. Apply the app decisions below.
 - Reduce unnecessary global CSS/JS and conditionally load section/route features. Investigate the existing jQuery/Swiper bundle, global locator styles, repeated sliders, and duplicate loaders. Replace simple behavior with native HTML/CSS or small vanilla JS where it preserves functionality.
 - Triage inherited Theme Check findings in touched, active code; clean reusable components and inspect upstream Dawn compatibility. A wholesale theme replacement is not assumed in this estimate.
 
-**Done when:** before/after results use the same routes and test conditions, the principal measured bottlenecks are addressed, every audited app has a documented decision, and shopping, forms, reviews, locator, and access controls pass regression checks. Record any remaining third-party limits and the next action. Final speed acceptance is repeated after subsequent waves add content or widgets.
+**Done when:** before/after results use the same routes and test conditions, straightforward fixes for the highest-impact measured bottlenecks are delivered, every audited app has a documented decision, and affected shopping, forms, reviews, locator, and access controls pass regression checks. Record deeper replacement work and remaining third-party limits with a specific next action/estimate. Final speed acceptance is repeated after subsequent waves add content or widgets.
 
 ### Speed and LCP acceptance
 
@@ -73,13 +87,13 @@ No app is labeled slow solely because it is installed. Test replacements one at 
 
 ## Wave 3 — Improve the shopping experience
 
-**Lead:** ecommerce/theme development, with content and operations. **Estimate:** 5–7 business days after assets and product mapping are ready.
+**Lead:** ecommerce/theme development, with content and operations. **Estimate:** 6–10 hours using the existing product records, with approved assets, copy, and product mapping ready.
 
 - Finish the existing slim-can and 4-pack records: correct sellable pack versus logistics case, SKU/GTIN, channel, retailer/Amazon destination, imagery, nutrition, claims, display fields, and collection placement. Avoid duplicate products. Verify the sampled “Silm Can” typo, 12-pack copy, and mismatched asset references.
 - Make mobile navigation, flavor/format discovery, product comparison, and the next purchase action clear. Use one obvious primary CTA appropriate to the product and clear secondary retail options. Preserve Halfday's playful typography, colors, and visual identity while improving spacing, legibility, and consistency.
 - Improve PDP hierarchy: flavor/format, pack quantity, verified benefits and nutrition, purchase destination, shipping/retail expectations where relevant, reviews, and useful FAQs. Keep key content editable in Shopify.
 - Review popup timing and interference, tap targets, keyboard/focus behavior, contrast, image text, and layout movement. Consider a lightweight mobile sticky CTA only when it solves an observed problem without obscuring content.
-- Inventory legacy Shogun pages and template assignments. Migrate useful active content into native sections; retire unused pages with a URL/redirect plan and retained reference copy. Check campaign destinations before retirement.
+- Triage legacy Shogun pages and template assignments. Move simple active content into existing native sections where practical; retire confirmed-unused pages with a URL/redirect plan and retained reference copy. Check campaign destinations before retirement. Record any substantial page rebuild separately with its actual page count and estimate.
 
 **Done when:** approved new formats are discoverable on their intended channels, representative mobile/desktop journeys work, restricted products remain protected, and content/design/redirect QA is complete. These are usability and merchandising improvements; revenue lift requires subsequent measurement.
 
@@ -101,7 +115,7 @@ Observe releases for at least 2–4 weeks after launch and longer if traffic is 
 
 ## Wave 4 — Strengthen email and search
 
-**Lead:** lifecycle marketer and theme/content owners. **Estimate:** 4–6 business days.
+**Lead:** lifecycle marketer and theme/content owners. **Estimate:** 8–12 hours, refreshing existing content and flows rather than creating a new email program from scratch.
 
 - Rationalize the 42 Klaviyo flows and 16 forms into a clear owner/purpose map. Review sender authentication, consent, exclusions, offer validity, audience targeting, manual queues, and legacy filters before changing statuses.
 - Refresh and validate the existing welcome series first, then a focused browse-interest and re-engagement journey where events and audiences support them. Prioritize up to three core journeys in this wave; inventory the remainder for later work. Shopify cart/order/replenishment triggers are not assumed to represent Amazon purchases. Preserve staff/sample/wholesale exclusions.
@@ -113,12 +127,12 @@ Observe releases for at least 2–4 weeks after launch and longer if traffic is 
 
 ## Wave 5 — Connect and finish
 
-**Lead:** operations/3PL and ecommerce, supported by developer and review vendor. **Estimate:** 5–8 hands-on business days; external milestones may take longer.
+**Lead:** operations/3PL and ecommerce, supported by developer and review vendor. **Estimate:** 6–10 hands-on hours for existing-connection checks, routine configuration, and a standard review setup with vendor inputs ready. Unknown sync/data repairs and vendor waiting need separate estimates/dates once identified.
 
 - Validate the channel map started in Wave 1: Shopify, Amazon, TikTok/AfterShip, and Faire → order owner → Cin7/ShipStation or other fulfillment route → inventory and tracking updates. Document one authoritative stock source and intended route per channel, SKU/case mapping, stock locations, buffers, cancellations, returns, and retry/duplicate handling.
 - Resolve access to the existing Cin7 organization; the observed launch gate is not proof of broken sync. Trace representative existing orders with private customer details kept outside Git. Reconnect Faire or adjust routing only after confirming direction and duplicate prevention. Any paid/test order requires its own authorization.
 - Confirm the actual AfterShip/TikTok/Amazon fulfillment arrangement and its owner. Do not infer the integration route from the app list. Document unresolved vendor-side work with a named owner and next checkpoint.
-- Complete Bazaarvoice catalog/GTIN and Walmart/Target matching, eligible review export/import, count/rating/media reconciliation, onsite QA, and retailer syndication verification. Begin this coordination in Wave 1. Keep Yotpo until the replacement and agreed retailer destinations are verified; do not equate an onsite widget launch with completed syndication.
+- Configure Bazaarvoice with the approved catalog/GTIN and Walmart/Target matches, run the supported eligible review export/import, reconcile counts/ratings/media, and verify onsite rendering. Begin coordination in Wave 1. Track retailer syndication acceptance separately until it is confirmed. If the vendor requires custom feed work or extensive manual product matching, estimate that work after inspecting its requirements. Keep Yotpo until the replacement and agreed retailer destinations are verified; do not equate an onsite widget launch with completed syndication.
 - Finish performance/functional regression QA after the new content and review widget. Document the app decisions, reusable sections, content workflow, integration map, remaining debt, and rollback/release process. Establish shared Git hosting if Dylan supplies the preferred organization, and maintain CLI preview/review before releases.
 
 **Done when:** the agreed channel routes and Faire behavior are verified, review migration is reconciled and verified at the agreed destinations, and the team can operate and update the store. If vendor dependencies remain, hand over completed storefront work with a clearly open integration/review milestone; do not mark the whole wave complete.
@@ -138,12 +152,16 @@ Each wave produces a focused change set, before/after evidence, a short acceptan
 
 ## Slack draft for Leslie
 
-Hi Leslie — I’ve pulled everything into a five-wave plan to modernize the Halfday site:
+Hi Leslie — here’s the plan to modernize Halfday, starting with the quickest fixes. These are hands-on work estimates:
 
-1. **Fix the essentials — 3–5 business days:** clean up stock messaging, email signup issues, and key links.
-2. **Make the site faster — 5–7 business days:** improve loading speed and review apps for easy cleanup or replacements.
-3. **Improve shopping — 5–7 business days:** get the new formats onto the site and make the mobile shopping experience clearer and easier to convert.
-4. **Strengthen email and search — 4–6 business days:** refresh the core Klaviyo flows and improve SEO and AI-search readiness.
-5. **Connect and finish — 5–8 business days:** validate fulfillment and Faire, complete the review migration, and finish QA.
+1. **Fix the essentials — 2–4 hours.** Correct the misleading out-of-stock messaging on products that link to Amazon, get the footer email signup feeding the right welcome flow, and clean up incorrect links. Check that regular and staff ordering still work as intended.
 
-I’d plan for **roughly 6–8 weeks overall**, assuming timely access, assets, and approvals. We’ll start coordinating with the 3PL and Bazaarvoice immediately; their turnaround may extend those pieces. Google Analytics and Ads will be scoped once access is ready; GTM is excluded for now.
+2. **Make the site faster — 6–10 hours.** Measure mobile loading, improve how quickly the main images and content appear, and clean up unnecessary scripts and heavy assets. Review the apps for slowdowns, duplicates, and easy replacements, keeping the features we actually need.
+
+3. **Improve shopping and conversion — 6–10 hours.** Finish the 4-pack and slim-can listings with the right images, pack details, and purchase links. Tighten mobile navigation and product pages so shoppers can quickly find the right format, understand it, and buy on the appropriate channel.
+
+4. **Strengthen email and search — 8–12 hours.** Refresh the existing welcome and priority follow-up emails, check signup targeting and offers, and clean up outdated flow logic. Improve product information, search descriptions, FAQs, and the site's foundations for Google and AI search.
+
+5. **Check integrations and move reviews — 6–10 hours.** Verify how Cin7, ShipStation, Faire, and TikTok/Amazon fulfillment connect, address straightforward setup issues, and configure Bazaarvoice to replace Yotpo once the migration is verified. Finish with a final site check.
+
+That’s approximately **28–46 hours total**, targeting **1–2 weeks for the ready work** with assets and access in place. Integration repairs, if needed, will be scoped once identified; Bazaarvoice/retailer turnaround may run beyond that window. Google Analytics and Ads remain a separate phase once access is ready, and GTM stays out of scope.
