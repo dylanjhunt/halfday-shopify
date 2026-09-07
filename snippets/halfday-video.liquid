@@ -1,0 +1,12 @@
+{% comment %}
+  Decorative Shopify video, loaded only while visible. A responsive poster remains
+  available without JavaScript and for visitors who prefer reduced motion.
+  Accepts: video, sizes (CSS image sizes), poster_width (maximum pixel width).
+{% endcomment %}
+{%- assign poster_width = poster_width | default: 900 -%}
+<halfday-video>
+  {{ video.preview_image | image_url: width: poster_width | image_tag: widths: '280, 420, 600, 750, 900', sizes: sizes, loading: 'lazy', class: 'Static_image_new', alt: video.alt }}
+  <template>
+    {{ video | video_tag: class: 'Static_video_new', image_size: '750x', controls: false, autoplay: false, muted: true, loop: true, preload: 'none', aria-hidden: 'true', tabindex: '-1' }}
+  </template>
+</halfday-video>

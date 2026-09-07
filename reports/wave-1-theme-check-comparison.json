@@ -1,0 +1,12 @@
+{
+  "baseline": {
+    "warning": 361,
+    "error": 126
+  },
+  "current": {
+    "warning": 361,
+    "error": 126
+  },
+  "new_issues": [],
+  "resolved_issues": []
+}

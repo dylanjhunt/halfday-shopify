@@ -13,6 +13,7 @@
     <meta name="theme-color" content="">
     <meta name="google-site-verification" content="q6nP6wB9PS0mY5vVi_gYfyY35IOB-z2uPXpzcEJatTU" />
     <link rel="canonical" href="{{ canonical_url }}">
+    {% render 'halfday-search-metadata' %}
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -316,8 +317,11 @@
     <!-- custom -->
     {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
-     {{ 'find-us.css' | asset_url | stylesheet_tag }}
+    {%- if template.name == 'page' and template.suffix == 'find-us' -%}
+      {{ 'find-us.css' | asset_url | stylesheet_tag }}
+    {%- endif -%}
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'halfday-video.js' | asset_url }}" defer="defer"></script>
   </head>
 
   <body class="{% if template.name == 'product' %}product-{{ product.handle }}{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template-{{ template.suffix }} {%- if page.metafields.custom.lp_header_footer_new == true -%} lp_header_footer_new {%- endif -%} {% if collection.metafields.custom.collection_employee_shop == true %} collection_employee_shop_new {% endif %} {% if template.name == 'account' or template.name == 'addresses' or template.name == 'order' or template.name == 'orders' %} collection_employee_shop_new {% endif %} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

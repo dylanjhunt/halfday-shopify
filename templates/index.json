@@ -149,7 +149,7 @@
         "main_mobile_image": "shopify://shop_images/Rectangle_3147_abe0defb-c199-463d-be01-ac22beb56fd8.jpg",
         "main_heading_text": "Old-school flavor, new-school benefits",
         "main_button_text": "Why Halfday",
-        "main_button_link": "/pages/why-halfday?view=why-halfday"
+        "main_button_link": "/pages/why-halfday"
       }
     },
     "index_object_testimonials_new_MQt4KN": {
@@ -348,7 +348,7 @@
         "main_heading_text": "A glass <br>half full",
         "main_details_text": "<p>After being diagnosed with Ulcerative Colitis, Kayvon joined best friend Mike to make gut-friendly iced teas inspired by their childhood favorite flavors.</p>",
         "main_button_text": "Our Story",
-        "main_button_link": "/pages/our-story?view=our-story"
+        "main_button_link": "/pages/our-story"
       }
     }
   },

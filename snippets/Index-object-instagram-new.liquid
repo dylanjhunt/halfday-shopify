@@ -44,6 +44,7 @@
             <div class="Index_object_instagram_slider">
               <span>
                 {%- for main_instagram_item_select in index_instagram_item_selection.main_instagram_item_select.value -%}
+                  {%- capture instagram_image_sizes -%}(min-width: 750px) {{ main_instagram_item_select.main_width_desktop_block.value | default: 302 }}px, {{ main_instagram_item_select.main_width_mobile_block.value | default: 280 }}px{%- endcapture -%}
                   {%- if main_instagram_item_select.main_video_or_image_block.value != blank -%}
                     <div class="Index_object_instagram_innerloops_mainboxs_new Index_object_instagram_innerloops_mainboxs_new_{{ forloop.index }}" style="width: {{ main_instagram_item_select.main_width_desktop_block.value }}px;">
                       <style>
@@ -61,15 +62,15 @@
                               <div class="Index_object_instagram_innerloops_innerboxs_imagevideo_new">
                                 {{
                                   main_instagram_item_select.main_video_or_image_block.value | 
-                                  image_url: width: img.width | 
-                                  image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                  image_url: width: 900 |
+                                  image_tag: widths: '280, 420, 600, 750, 900', sizes: instagram_image_sizes, loading: 'lazy',
                                   fetchpriority: 'low', 
                                   class: 'Static_image_new'
                                 }}
                               </div>
                             {%- else -%}
                               <div class="Index_object_instagram_innerloops_innerboxs_imagevideo_new">
-                                {{ main_instagram_item_select.main_video_or_image_block.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                                {% render 'halfday-video', video: main_instagram_item_select.main_video_or_image_block.value, sizes: instagram_image_sizes %}
                               </div>
                             {%- endif -%}
                           </div>
@@ -80,42 +81,7 @@
                   {%- endif -%}
                 {%- endfor -%}
 
-                {%- for main_instagram_item_select in index_instagram_item_selection.main_instagram_item_select.value -%}
-                  {%- if main_instagram_item_select.main_video_or_image_block.value != blank -%}
-                    <div class="Index_object_instagram_innerloops_mainboxs_new Index_object_instagram_innerloops_mainboxs_new_{{ forloop.index }}" style="width: {{ main_instagram_item_select.main_width_desktop_block.value }}px;">
-                      <style>
-                        @media(min-width:0px) and (max-width:749px){
-                          .Index_object_instagram_innerloops_mainboxs_new_{{ forloop.index }}{
-                            width: {{ main_instagram_item_select.main_width_mobile_block.value }}px !important;
-                          }
-                        }
-                      </style>
-                      {%- if main_instagram_item_select.main_block_redirect_link.value != blank -%}
-                        <a href="{{ main_instagram_item_select.main_block_redirect_link.value }}">
-                      {%- endif -%}  
-                          <div class="Index_object_instagram_innerloops_innerboxs_new">
-                            {%- if main_instagram_item_select.main_video_or_image_block.value contains "files" -%}
-                              <div class="Index_object_instagram_innerloops_innerboxs_imagevideo_new">
-                                {{
-                                  main_instagram_item_select.main_video_or_image_block.value | 
-                                  image_url: width: img.width | 
-                                  image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                  fetchpriority: 'low', 
-                                  class: 'Static_image_new'
-                                }}
-                              </div>
-                            {%- else -%}
-                              <div class="Index_object_instagram_innerloops_innerboxs_imagevideo_new">
-                                {{ main_instagram_item_select.main_video_or_image_block.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
-                              </div>
-                            {%- endif -%}
-                          </div>
-                      {%- if main_instagram_item_select.main_block_redirect_link.value != blank -%}
-                        </a>
-                      {%- endif -%}
-                    </div>
-                  {%- endif -%}
-                {%- endfor -%}
+
               </span>
             </div>
           </div>

@@ -1,0 +1,103 @@
+{
+  "method": "Three alternating dev/live cold-profile mobile Lighthouse 13.4.1 homepage runs. Preview asset presence verified. Initial viewport only; no scrolling. Preview infrastructure differs from production. FAQ/playback guard code was updated during the run window; initial media deferral and poster sizing were unchanged.",
+  "scope": "Theme changes only; no app removals or production deployment. Lab results are not field Core Web Vitals.",
+  "runs": [
+    {
+      "run": "live-home-1",
+      "group": "live",
+      "captured_at": "2026-09-07T21:33:26.060Z",
+      "lighthouse_version": "13.4.1",
+      "score": 0.55,
+      "transfer_bytes": 39987160,
+      "lcp_ms": 3865.3678000000004,
+      "tbt_ms": 898.9999999999964,
+      "cls": 0.0001120011847793862,
+      "media_bytes": 32316100,
+      "development_asset_present": false
+    },
+    {
+      "run": "live-home-2",
+      "group": "live",
+      "captured_at": "2026-09-07T21:34:16.693Z",
+      "lighthouse_version": "13.4.1",
+      "score": 0.37,
+      "transfer_bytes": 39737813,
+      "lcp_ms": 30107.362100000006,
+      "tbt_ms": 757.5,
+      "cls": 0,
+      "media_bytes": 32253948,
+      "development_asset_present": false
+    },
+    {
+      "run": "live-home-3",
+      "group": "live",
+      "captured_at": "2026-09-07T21:35:05.771Z",
+      "lighthouse_version": "13.4.1",
+      "score": 0.57,
+      "transfer_bytes": 40274927,
+      "lcp_ms": 3682.3729999999996,
+      "tbt_ms": 875,
+      "cls": 0,
+      "media_bytes": 32476649,
+      "development_asset_present": false
+    },
+    {
+      "run": "dev-home-1",
+      "group": "dev",
+      "captured_at": "2026-09-07T21:32:27.822Z",
+      "lighthouse_version": "13.4.1",
+      "score": 0.39,
+      "transfer_bytes": 6805239,
+      "lcp_ms": 4764.222999999998,
+      "tbt_ms": 2506.4999999999945,
+      "cls": 0.0001120011847793862,
+      "media_bytes": 0,
+      "development_asset_present": true
+    },
+    {
+      "run": "dev-home-2",
+      "group": "dev",
+      "captured_at": "2026-09-07T21:33:52.321Z",
+      "lighthouse_version": "13.4.1",
+      "score": 0.51,
+      "transfer_bytes": 6982334,
+      "lcp_ms": 4056.6096000000002,
+      "tbt_ms": 1073.5,
+      "cls": 4.050936436287064e-05,
+      "media_bytes": 0,
+      "development_asset_present": true
+    },
+    {
+      "run": "dev-home-3",
+      "group": "dev",
+      "captured_at": "2026-09-07T21:34:41.050Z",
+      "lighthouse_version": "13.4.1",
+      "score": 0.48,
+      "transfer_bytes": 6680182,
+      "lcp_ms": 4675.6668,
+      "tbt_ms": 975,
+      "cls": 9.859534807434639e-07,
+      "media_bytes": 0,
+      "development_asset_present": true
+    }
+  ],
+  "medians": {
+    "live": {
+      "score": 0.55,
+      "transfer_bytes": 39987160,
+      "lcp_ms": 3865.3678000000004,
+      "tbt_ms": 875,
+      "cls": 0,
+      "media_bytes": 32316100
+    },
+    "dev": {
+      "score": 0.48,
+      "transfer_bytes": 6805239,
+      "lcp_ms": 4675.6668,
+      "tbt_ms": 1073.5,
+      "cls": 4.050936436287064e-05,
+      "media_bytes": 0
+    }
+  },
+  "transfer_reduction_percent": 82.981439542093
+}

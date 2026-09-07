@@ -11,7 +11,7 @@ Halfday's customized Dawn 15.2.0 theme, downloaded from the active theme on Sept
 | Toolchain | Shopify CLI 4.6.1 (pinned locally); Node 24.19.0 used for setup |
 | Claude Code | Installed version 2.1.207; shared project context in `CLAUDE.md` |
 
-Start with the [focused performance, app, Klaviyo and SEO audit](docs/focused-audit-2026-09-07.md) for verified findings from 15 performance runs, 71 public pages and authenticated account inspection. The [modernization roadmap](docs/modernization-roadmap.md) is the single delivery plan for CRO, speed/LCP, app cleanup, content, email/search, integrations, and reviews, including estimates and an email draft for Leslie. The [initial store audit](docs/initial-audit-2026-09-07.md) and [Klaviyo account audit](docs/klaviyo-audit-2026-09-07.md) remain supporting snapshots. Evidence is in `reports/`. No storefront theme code was changed during setup, auditing, or planning.
+Start with the [focused performance, app, Klaviyo and SEO audit](docs/focused-audit-2026-09-07.md) for verified findings from 15 performance runs, 71 public pages and authenticated account inspection. The [modernization roadmap](docs/modernization-roadmap.md) is the single delivery plan for CRO, speed/LCP, app cleanup, content, email/search, integrations, and reviews, including estimates and an email draft for Leslie. The [initial store audit](docs/initial-audit-2026-09-07.md) and [Klaviyo account audit](docs/klaviyo-audit-2026-09-07.md) remain supporting snapshots. Evidence is in `reports/`. Wave 1 implementation is now active on `dev/wave-1`. See the [progress checklist and preview](docs/wave-1-progress.md) for changes, validation and outstanding decisions. Production is unchanged.
 
 ## Daily development
 
@@ -31,7 +31,7 @@ npm run theme:push:dev
 npm run theme:open:dev
 ```
 
-During setup, `shopify theme info --environment development` resolved development theme `142755430600`, named `Development (deb269-MacBook-Pro-4)`. Development themes are account/session resources; resolve again rather than hardcoding this ID for another collaborator. No local theme files have been pushed during this setup. Development previews share real store data and apps; they are not isolated test stores.
+During setup, `shopify theme info --environment development` resolved development theme `142755430600`, named `Development (deb269-MacBook-Pro-4)`. Development themes are account/session resources; resolve again rather than hardcoding this ID for another collaborator. Wave 1 has now been pushed to this development theme; the current preview is linked in the progress checklist. Development previews share real store data and apps; they are not isolated test stores.
 
 The initial Theme Check result is **126 errors and 361 warnings**, recorded in `reports/theme-check-baseline.json`. These are inherited, not setup regressions. Do not suppress the whole baseline or claim checks pass. Triage active code first; the two dynamic-tag syntax findings require runtime validation, and Locksmith findings require app-aware review. `theme:push:dev` is deliberately not a production release command.
 
@@ -55,7 +55,7 @@ For a one-off comparison, pull the relevant remote theme to a separate temporary
 
 Shopify's native theme folders live at the repository root. This is a Liquid/CSS/JavaScript theme with no frontend build step. Node dependencies are developer tooling and are not sent to the storefront. `.shopifyignore` excludes project documentation, reports, scripts, and tooling from theme sync.
 
-Git is local on `main`. No GitHub repository, remote, Shopify GitHub connection, CI deployment, or automatic publishing has been created. A Git host/organization can be selected later if shared remote version control is wanted.
+Git is local; `main` retains the audited baseline and `dev/wave-1` contains development work. No GitHub repository, remote, Shopify GitHub connection, CI deployment, or automatic publishing has been created. A Git host/organization can be selected later if shared remote version control is wanted.
 
 Products, menus, pages, metafields/metaobjects, app configuration, inventory, and fulfillment do not come down with `theme pull`. Keep those changes documented separately; preserve merchant-managed theme JSON in version control. Never commit credentials or customer/order exports.
 

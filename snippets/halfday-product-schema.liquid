@@ -1,0 +1,39 @@
+{% comment %}
+  Public discovery templates have external purchase CTAs and no Shopify buy block.
+  Do not describe 3PL price/stock as an offer on Amazon or at a retailer.
+  Native Shopify structured data stays intact for templates with Shopify buying.
+{% endcomment %}
+{%- liquid
+  assign buy_blocks = section.blocks | where: 'type', 'buy_buttons'
+  assign external_blocks = section.blocks | where: 'type', 'Meta_custom_button_both'
+-%}
+{%- if buy_blocks.size == 0 and external_blocks.size > 0 -%}
+  {%- capture description -%}
+    {%- if product.metafields.custom.product_short_description_text != blank -%}
+      {{- product.metafields.custom.product_short_description_text | metafield_tag | strip_html | strip -}}
+    {%- else -%}
+      {{- product.description | strip_html | strip -}}
+    {%- endif -%}
+  {%- endcapture -%}
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": {{ canonical_url | append: '#product' | json }},
+    "url": {{ canonical_url | json }},
+    "name": {{ product.title | json }},
+    "description": {{ description | strip | json }},
+    "brand": {"@type": "Brand", "name": {{ product.vendor | default: shop.name | json }}}
+    {%- if product.featured_image -%},
+      "image": {{ product.featured_image | image_url: width: 1200 | prepend: 'https:' | json }}
+    {%- endif -%}
+    {%- if product.selected_or_first_available_variant.sku != blank -%},
+      "sku": {{ product.selected_or_first_available_variant.sku | json }}
+    {%- endif -%}
+    {%- assign barcode = product.selected_or_first_available_variant.barcode -%}
+    {%- if barcode.size == 8 or barcode.size == 12 or barcode.size == 13 or barcode.size == 14 -%},
+      "gtin{{ barcode.size }}": {{ barcode | json }}
+    {%- endif -%}
+  }
+{%- else -%}
+  {{ product | structured_data }}
+{%- endif -%}

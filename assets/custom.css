@@ -2047,3 +2047,9 @@ body.product-watermelon-half-half .product__title{ max-width:356px !important; }
 }
 
 
+
+/* Keep the original card geometry while offscreen video stays unloaded. */
+halfday-video { display: block; position: absolute; inset: 0; }
+halfday-video > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; visibility: hidden; }
+halfday-video[playing] > video { visibility: visible; }
+halfday-video[playing] > img { visibility: hidden; }

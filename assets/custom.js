@@ -885,7 +885,7 @@ if($(window).width() > 749){
       
         $(this).siblings("a.left_panel_item").removeClass("active");   
         $(this).addClass("active"); 
-        let targetID = $(this).attr('href');
+        let targetID = $(this).attr('href').replace(/^#/, '');
         if($(`#${targetID}`).length > 0) {
 
             if(targetID == 'faq_general') {
@@ -926,7 +926,7 @@ if($(window).width() > 749){
        var windscroll = $(window).scrollTop();
        if(windscroll == 0) {
            $(`.faq_page_section_left_side_panel_category_section a`).removeClass('active');
-           $(`.faq_page_section_left_side_panel_category_section a[href="faq_general"]`).addClass('active');
+           $(`.faq_page_section_left_side_panel_category_section a[href="#faq_general"]`).addClass('active');
        }
        else {
          const allSections = $('.faq_page_section_right_side .Page_faq_section_v2_right_faqs_category_main');
@@ -942,9 +942,9 @@ if($(window).width() > 749){
              let bottomScroll = offsetTop + $(this).outerHeight();
              if (windscroll >= offsetTop && windscroll <= bottomScroll) {
                  const targetID = $(this).attr('id');
-                 if($(`.faq_page_section_left_side_panel_category_section a[href="${targetID}"]`).length > 0) {
+                 if($(`.faq_page_section_left_side_panel_category_section a[href="#${targetID}"]`).length > 0) {
                      $(`.faq_page_section_left_side_panel_category_section a`).removeClass('active');
-                     $(`.faq_page_section_left_side_panel_category_section a[href="${targetID}"]`).addClass('active');
+                     $(`.faq_page_section_left_side_panel_category_section a[href="#${targetID}"]`).addClass('active');
                  }
              }
           });
@@ -979,7 +979,7 @@ if($(window).width() <= 749){
      $(this).siblings("a.left_panel_item").removeClass("active");   
       $(this).addClass("active");   
     
-        let target = $(this).attr("href"); // Get the target ID
+        let target = $(this).attr("href").replace(/^#/, ""); // Get the target ID
     
         let offset = $(".section-header").outerHeight(); // Get the height of the sticky header
        
@@ -1019,10 +1019,10 @@ if($(window).width() <= 749){
        // bottom = temp + $(this).outerHeight();
         if (cur_pos >= top && cur_pos <= bottom) {
           allFaqsMenu.find('a').removeClass('active');
-          allFaqsMenu.find('a[href="'+$(this).attr('id')+'"]').addClass('active');
+          allFaqsMenu.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
         } 
        if(cur_pos <= 20){
-      allFaqsMenu.find('a[href="'+$(this).attr('id')+'"]').addClass('active');
+      allFaqsMenu.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
       allFaqsMenu.find('a.faq_other').removeClass('active');
     }
     });
@@ -1040,7 +1040,7 @@ if($(window).width() <= 749){
       $(".faq_page_section_left_side_panel_category_section").removeClass("show");
       $(".left_panel_item_dropdown").find(".left_panel_item_active p").text(item);
 
-     let faq_id = $(this).attr('href');
+     let faq_id = $(this).attr('href').replace(/^#/, '');
   if(faq_id != ''){
       const targetOffsetTop =  $(`#${faq_id}`).offset().top-70;
         $('html, body').animate({

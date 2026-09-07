@@ -505,24 +505,24 @@
 
 <script type="application/ld+json">
   {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "Organization",
     "name": {{ shop.name | json }},
     {% if settings.logo %}
       "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
     {% endif %}
     "sameAs": [
-      {{ settings.social_twitter_link | json }},
-      {{ settings.social_facebook_link | json }},
-      {{ settings.social_pinterest_link | json }},
-      {{ settings.social_instagram_link | json }},
-      {{ settings.social_tiktok_link | json }},
-      {{ settings.social_tumblr_link | json }},
-      {{ settings.social_snapchat_link | json }},
-      {{ settings.social_youtube_link | json }},
-      {{ settings.social_vimeo_link | json }}
+      {%- assign social_keys = 'social_twitter_link,social_facebook_link,social_pinterest_link,social_instagram_link,social_tiktok_link,social_tumblr_link,social_snapchat_link,social_youtube_link,social_vimeo_link' | split: ',' -%}
+      {%- assign separator = '' -%}
+      {%- for social_key in social_keys -%}
+        {%- if settings[social_key] != blank -%}
+          {{ separator }}{{ settings[social_key] | json }}
+          {%- assign separator = ',' -%}
+        {%- endif -%}
+      {%- endfor -%}
     ],
-    "url": {{ request.origin | append: page.url | json }}
+    "@id": {{ request.origin | append: '/#organization' | json }},
+    "url": {{ request.origin | json }}
   }
 </script>
 
@@ -530,7 +530,7 @@
   {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "WebSite",
       "name": {{ shop.name | json }},
       "potentialAction": {
@@ -538,7 +538,7 @@
         "target": {{ potential_action_target | json }},
         "query-input": "required name=search_term_string"
       },
-      "url": {{ request.origin | append: page.url | json }}
+      "url": {{ request.origin | json }}
     }
   </script>
 {%- endif -%}
