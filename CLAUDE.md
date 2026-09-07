@@ -4,9 +4,9 @@ This repository is the Shopify Online Store theme for Halfday Iced Tea, not a he
 
 ## Workflow
 
-- Use Shopify CLI for theme operations. Read `README.md` and `docs/initial-audit-2026-09-07.md` for project status.
+- Use Shopify CLI for theme operations. Read `README.md` and `docs/modernization-roadmap.md` for project status and the current delivery sequence. The dated store and Klaviyo audits are supporting evidence.
 - `npm ci` installs the pinned local CLI. `npm run theme:list`, `npm run theme:check`, `npm run theme:dev`, `npm run theme:push:dev` are the normal commands.
-- Work on a Git branch and preview with a development theme. The current user request authorizes setup and an audit; production changes are a separate task.
+- Work on a Git branch and preview with a development theme. The current user request authorizes setup, audits, and roadmap planning; production changes are a separate task.
 - `npm run theme:pull` refuses a dirty working tree. Pull and commit current merchant edits before changing code. Review JSON templates and `config/settings_data.json` carefully: these contain merchant settings.
 - The default environment identifies only this store. Never infer a production deployment from a request for local development. Do not add `allow-live`, `publish`, or a live theme ID to default write commands.
 - Git tracks theme files, not products, menus, pages, metafields/metaobjects, app settings, inventory, fulfillment, or customer data. Those need separate verification in Shopify/apps.

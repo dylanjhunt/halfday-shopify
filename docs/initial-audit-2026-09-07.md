@@ -1,5 +1,7 @@
 # Halfday — initial store and theme audit
 
+**Planning update:** use the [consolidated modernization roadmap](modernization-roadmap.md) for the current delivery waves, estimates, and acceptance criteria. This dated audit preserves the underlying findings.
+
 **Date:** September 7, 2026. **Status:** initial evidence-based audit complete; app-side verification and implementation remain separate work.
 
 **Recommendation:** first correct the mismatch between Amazon merchandising and Shopify inventory and the Klaviyo footer-to-list mismatch, then finish the existing slim-can/4-pack catalog setup. Follow with lifecycle cleanup, SEO/content cleanup, and measured performance work. Preserve Yotpo until review migration is verified. Confirm fulfillment ownership before reconnecting any integrations.

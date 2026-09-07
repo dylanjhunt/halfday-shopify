@@ -11,7 +11,7 @@ Halfday's customized Dawn 15.2.0 theme, downloaded from the active theme on Sept
 | Toolchain | Shopify CLI 4.6.1 (pinned locally); Node 24.19.0 used for setup |
 | Claude Code | Installed version 2.1.207; shared project context in `CLAUDE.md` |
 
-Read the [initial audit and prioritized plan](docs/initial-audit-2026-09-07.md) and the [Klaviyo account audit](docs/klaviyo-audit-2026-09-07.md), completed after access arrived. Evidence is in `reports/`. No storefront theme code was changed during setup or the audit.
+Start with the [modernization roadmap](docs/modernization-roadmap.md): the single delivery plan for CRO, speed/LCP, app cleanup, content, email/search, integrations, and reviews, including estimates and a Slack draft for Leslie. The [initial store audit](docs/initial-audit-2026-09-07.md) and [Klaviyo account audit](docs/klaviyo-audit-2026-09-07.md) are supporting evidence snapshots. Evidence is in `reports/`. No storefront theme code was changed during setup, auditing, or planning.
 
 ## Daily development
 
