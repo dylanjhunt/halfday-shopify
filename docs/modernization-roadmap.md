@@ -150,18 +150,27 @@ Each wave produces a focused change set, before/after evidence, a short acceptan
 | Bazaarvoice / retailer contacts | Onboarding, review import eligibility, GTIN matches, syndication acceptance | Begin Wave 1; external completion date tracked separately |
 | Dylan | Consolidated wave review, release authorization, any later analytics/ads access confirmation | At each delivery gate |
 
-## Slack draft for Leslie
+## Email draft for Leslie
 
-Hi Leslie — here’s the plan to modernize Halfday, starting with the quickest fixes. These are hands-on work estimates:
+Hey Leslie,
 
-1. **Fix the essentials — 2–4 hours.** Correct the misleading out-of-stock messaging on products that link to Amazon, get the footer email signup feeding the right welcome flow, and clean up incorrect links. Check that regular and staff ordering still work as intended.
+I’ve gone through the site and Klaviyo and put together a plan based on your list. There’s useful work already in place, so we can build on that and clean up what needs attention. I’d break it into five waves:
 
-2. **Make the site faster — 6–10 hours.** Measure mobile loading, improve how quickly the main images and content appear, and clean up unnecessary scripts and heavy assets. Review the apps for slowdowns, duplicates, and easy replacements, keeping the features we actually need.
+1. **Quick fixes (2-4 hours)**
+   Sort out the out-of-stock messaging on products that send people to Amazon, fix the footer email signup so it goes to the right welcome flow, and clean up incorrect links. We’ll also check that this doesn’t affect staff orders or anything being purchased through Shopify.
 
-3. **Improve shopping and conversion — 6–10 hours.** Finish the 4-pack and slim-can listings with the right images, pack details, and purchase links. Tighten mobile navigation and product pages so shoppers can quickly find the right format, understand it, and buy on the appropriate channel.
+2. **Site speed and app cleanup (6-10 hours)**
+   Check what’s slowing the site down, especially on mobile, and improve how quickly the main images and content load. We’ll go through the apps and extra code to see what’s still needed, what overlaps, and what we can remove or replace with something simpler.
 
-4. **Strengthen email and search — 8–12 hours.** Refresh the existing welcome and priority follow-up emails, check signup targeting and offers, and clean up outdated flow logic. Improve product information, search descriptions, FAQs, and the site's foundations for Google and AI search.
+3. **Product updates and shopping experience (6-10 hours)**
+   Get the 4-packs and slim cans showing with the right images, product details and links. We’ll also tidy up the navigation and product pages so it’s easier to find a flavour or format and know where to buy it, while keeping the Halfday look and feel.
 
-5. **Check integrations and move reviews — 6–10 hours.** Verify how Cin7, ShipStation, Faire, and TikTok/Amazon fulfillment connect, address straightforward setup issues, and configure Bazaarvoice to replace Yotpo once the migration is verified. Finish with a final site check.
+4. **Klaviyo and SEO (8-12 hours)**
+   Update the welcome emails and main follow-up flows, check the offers and who’s receiving what, and sort through the older setups. On the site, we’ll clean up search descriptions, product information and FAQs to help with SEO and how the products show up in AI search.
 
-That’s approximately **28–46 hours total**, targeting **1–2 weeks for the ready work** with assets and access in place. Integration repairs, if needed, will be scoped once identified; Bazaarvoice/retailer turnaround may run beyond that window. Google Analytics and Ads remain a separate phase once access is ready, and GTM stays out of scope.
+5. **Integrations and reviews (6-10 hours)**
+   Get a clear picture of how Cin7, ShipStation, Faire and TikTok/Amazon fulfillment are connected, then address any straightforward setup issues. We’ll also work through the Bazaarvoice setup and check the review migration before removing Yotpo.
+
+That puts the initial work at around 28-46 hours. I’d aim to get it through over 1-2 weeks once we have the images, product details and access we need. If we find anything more involved with the integrations, I’ll flag it with a separate estimate. Bazaarvoice and the retailer side may take longer depending on their turnaround.
+
+We can pick up Google Analytics and Ads once access is sorted.
