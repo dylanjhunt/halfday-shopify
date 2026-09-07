@@ -1,0 +1,307 @@
+{
+  "date": "2026-09-07",
+  "account": "Halfday",
+  "source": "Klaviyo flows UI, all 3 pages, read-only",
+  "note": "Flow-level status; message-level status verified only for active welcome series. Null trigger means not captured, not missing configuration. No recipient data or preview tokens stored.",
+  "counts": {
+    "Draft": 37,
+    "Live": 1,
+    "Manual": 4
+  },
+  "flows": [
+    {
+      "id": "QZ2YC3",
+      "name": "[FE] Abandoned Cart",
+      "status": "Draft",
+      "trigger": "Trigger not setup",
+      "url": "https://www.klaviyo.com/flow/QZ2YC3/edit"
+    },
+    {
+      "id": "TpipgU",
+      "name": "[FE] Abandoned Cart",
+      "status": "Draft",
+      "trigger": "Checkout Started",
+      "url": "https://www.klaviyo.com/flow/TpipgU/edit"
+    },
+    {
+      "id": "RX4C7p",
+      "name": "[FE] Browse Abandonment",
+      "status": "Draft",
+      "trigger": "Viewed Product",
+      "url": "https://www.klaviyo.com/flow/RX4C7p/edit"
+    },
+    {
+      "id": "YpSaRv",
+      "name": "[FE] Customer Winback Series",
+      "status": "Draft",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/YpSaRv/edit"
+    },
+    {
+      "id": "QZA7Hn",
+      "name": "[FE] Post Purchase (Order Fulfilled)",
+      "status": "Draft",
+      "trigger": "Fulfilled Order",
+      "url": "https://www.klaviyo.com/flow/QZA7Hn/edit"
+    },
+    {
+      "id": "SijWa7",
+      "name": "[FE] Post-Purchase (Placed Order)",
+      "status": "Draft",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/SijWa7/edit"
+    },
+    {
+      "id": "XGT2nM",
+      "name": "[FE] Replenishment (Repeat Trigger)",
+      "status": "Draft",
+      "trigger": "Due to Reorder (Repeat)",
+      "url": "https://www.klaviyo.com/flow/XGT2nM/edit"
+    },
+    {
+      "id": "RGQSDU",
+      "name": "[FE] Replenishment Reminder",
+      "status": "Draft",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/RGQSDU/edit"
+    },
+    {
+      "id": "SAX2ty",
+      "name": "[FE] Sunset Flow",
+      "status": "Draft",
+      "trigger": "Added to [FE] Eligible for Sunset Flow list",
+      "url": "https://www.klaviyo.com/flow/SAX2ty/edit"
+    },
+    {
+      "id": "XruESR",
+      "name": "[FE] Welcome Series",
+      "status": "Live",
+      "trigger": "Added to Halfday Newsletter list",
+      "url": "https://www.klaviyo.com/flow/XruESR/edit"
+    },
+    {
+      "id": "Yfzwx4",
+      "name": "[FE] Welcome Series CLONE",
+      "status": "Draft",
+      "trigger": "Added to Halfday Newsletter list",
+      "url": "https://www.klaviyo.com/flow/Yfzwx4/edit"
+    },
+    {
+      "id": "UmxYWj",
+      "name": "[TEMPLATE] Repeat - Replenishment (clone)",
+      "status": "Draft",
+      "trigger": "Due to Reorder (Repeat)",
+      "url": "https://www.klaviyo.com/flow/UmxYWj/edit"
+    },
+    {
+      "id": "XeYvCE",
+      "name": "1. [A-Game] - Welcome Series",
+      "status": "Manual",
+      "trigger": "Added to Halfday Newsletter list",
+      "url": "https://www.klaviyo.com/flow/XeYvCE/edit"
+    },
+    {
+      "id": "Yndqpx",
+      "name": "2. [A-Game] - Browse Abandonment",
+      "status": "Draft",
+      "trigger": "Viewed Product",
+      "url": "https://www.klaviyo.com/flow/Yndqpx/edit"
+    },
+    {
+      "id": "Usi8Ep",
+      "name": "3. [A-Game] - Abandoned Cart",
+      "status": "Draft",
+      "trigger": "Checkout Started",
+      "url": "https://www.klaviyo.com/flow/Usi8Ep/edit"
+    },
+    {
+      "id": "WaCu6c",
+      "name": "4. [A-Game] - Customer Thank You - New vs. Returning",
+      "status": "Draft",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/WaCu6c/edit"
+    },
+    {
+      "id": "VPqHDE",
+      "name": "5. [A-Game] - Post-Purchase Followup - Order Count Split",
+      "status": "Draft",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/VPqHDE/edit"
+    },
+    {
+      "id": "X5rMRx",
+      "name": "6. [A-Game] - Customer Winback - Standard",
+      "status": "Draft",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/X5rMRx/edit"
+    },
+    {
+      "id": "TjdJeZ",
+      "name": "Abandoned Cart",
+      "status": "Draft",
+      "trigger": "Checkout Started",
+      "url": "https://www.klaviyo.com/flow/TjdJeZ/edit"
+    },
+    {
+      "id": "XSXDnd",
+      "name": "Abandoned Cart Test 2",
+      "status": "Draft",
+      "trigger": "Checkout Started",
+      "url": "https://www.klaviyo.com/flow/XSXDnd/edit"
+    },
+    {
+      "id": "U7inWZ",
+      "name": "BFCM Welcome",
+      "status": "Draft",
+      "trigger": "Added to Halfday Newsletter list",
+      "url": "https://www.klaviyo.com/flow/U7inWZ/edit"
+    },
+    {
+      "id": "Sm78pv",
+      "name": "Browse Abandonment - Standard",
+      "status": "Manual",
+      "trigger": "Viewed Product",
+      "url": "https://www.klaviyo.com/flow/Sm78pv/edit"
+    },
+    {
+      "id": "R2RkYn",
+      "name": "Customer Thank You",
+      "status": "Draft",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/R2RkYn/edit"
+    },
+    {
+      "id": "VfqWhu",
+      "name": "Customer Thank You Test 2",
+      "status": "Draft",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/VfqWhu/edit"
+    },
+    {
+      "id": "XMGLnU",
+      "name": "Customer Winback - Standard",
+      "status": "Draft",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/XMGLnU/edit"
+    },
+    {
+      "id": "WT5z2w",
+      "name": "Customer Winback - Template 2",
+      "status": "Draft",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/WT5z2w/edit"
+    },
+    {
+      "id": "URQXbE",
+      "name": "Flow - Jan 20, 2025, 10:19 PM",
+      "status": "Draft",
+      "trigger": "Added to HelloFresh Sample Campaign list",
+      "url": "https://www.klaviyo.com/flow/URQXbE/edit"
+    },
+    {
+      "id": "RU9JVq",
+      "name": "Flow - Jan 7, 2025, 2:42 PM",
+      "status": "Draft",
+      "trigger": "Trigger not setup",
+      "url": "https://www.klaviyo.com/flow/RU9JVq/edit"
+    },
+    {
+      "id": "Wzdec2",
+      "name": "Hans I Abandoned Cart Flow",
+      "status": "Draft",
+      "trigger": "Checkout Started",
+      "url": "https://www.klaviyo.com/flow/Wzdec2/edit"
+    },
+    {
+      "id": "Vj4nXi",
+      "name": "Hans I Welcome Flow",
+      "status": "Draft",
+      "trigger": "Added to Halfday Newsletter list",
+      "url": "https://www.klaviyo.com/flow/Vj4nXi/edit"
+    },
+    {
+      "id": "UfnakG",
+      "name": "Hub- Abandoned Cart",
+      "status": "Draft",
+      "trigger": "Checkout Started",
+      "url": "https://www.klaviyo.com/flow/UfnakG/edit"
+    },
+    {
+      "id": "WXj7GR",
+      "name": "Hub- Browse Abandonment",
+      "status": "Draft",
+      "trigger": "Viewed Product",
+      "url": "https://www.klaviyo.com/flow/WXj7GR/edit"
+    },
+    {
+      "id": "WRY7h8",
+      "name": "Hub- Customer Thank You",
+      "status": "Draft",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/WRY7h8/edit"
+    },
+    {
+      "id": "Ubn55r",
+      "name": "Hub- Customer Winback",
+      "status": "Manual",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/Ubn55r/edit"
+    },
+    {
+      "id": "VZM3GE",
+      "name": "Hub- Welcome Series",
+      "status": "Draft",
+      "trigger": "Added to Halfday Newsletter list",
+      "url": "https://www.klaviyo.com/flow/VZM3GE/edit"
+    },
+    {
+      "id": "UW9f7s",
+      "name": "Post-Purchase Followup - Order Count Split",
+      "status": "Manual",
+      "trigger": "Placed Order",
+      "url": "https://www.klaviyo.com/flow/UW9f7s/edit"
+    },
+    {
+      "id": "Uve5UV",
+      "name": "Replenishment (Repeat Trigger)",
+      "status": "Draft",
+      "trigger": "Due to Reorder (Repeat)",
+      "url": "https://www.klaviyo.com/flow/Uve5UV/edit"
+    },
+    {
+      "id": "WvLGZW",
+      "name": "Replenishment Reminder Flow [FE]",
+      "status": "Draft",
+      "trigger": null,
+      "url": "https://www.klaviyo.com/flow/WvLGZW/edit"
+    },
+    {
+      "id": "VPnGY8",
+      "name": "Welcome Series",
+      "status": "Draft",
+      "trigger": "Added to Halfday Newsletter list",
+      "url": "https://www.klaviyo.com/flow/VPnGY8/edit"
+    },
+    {
+      "id": "Yxwtrt",
+      "name": "Welcome Series 2",
+      "status": "Draft",
+      "trigger": "Added to Halfday Newsletter list",
+      "url": "https://www.klaviyo.com/flow/Yxwtrt/edit"
+    },
+    {
+      "id": "RfrB8j",
+      "name": "Welcome Series 2- HUB",
+      "status": "Draft",
+      "trigger": "Added to Halfday Newsletter list",
+      "url": "https://www.klaviyo.com/flow/RfrB8j/edit"
+    },
+    {
+      "id": "XZUjqj",
+      "name": "Welcome Series 3",
+      "status": "Draft",
+      "trigger": "Added to Halfday Newsletter list",
+      "url": "https://www.klaviyo.com/flow/XZUjqj/edit"
+    }
+  ]
+}

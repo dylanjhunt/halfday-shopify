@@ -2,9 +2,9 @@
 
 **Date:** September 7, 2026. **Status:** initial evidence-based audit complete; app-side verification and implementation remain separate work.
 
-**Recommendation:** first correct the mismatch between Amazon merchandising and Shopify inventory, then finish the existing slim-can/4-pack catalog setup. Follow with Klaviyo validation, SEO/content cleanup, and measured performance work. Preserve Yotpo until review migration is verified. Confirm fulfillment ownership before reconnecting any integrations.
+**Recommendation:** first correct the mismatch between Amazon merchandising and Shopify inventory and the Klaviyo footer-to-list mismatch, then finish the existing slim-can/4-pack catalog setup. Follow with lifecycle cleanup, SEO/content cleanup, and measured performance work. Preserve Yotpo until review migration is verified. Confirm fulfillment ownership before reconnecting any integrations.
 
-GA, GTM, and Google Ads are explicitly deferred until Dylan confirms access. No analytics setup, ad activation, campaign changes, live theme edits, orders, subscriptions, app uninstalls, or integration-setting changes were performed.
+GA and Google Ads remain deferred. Klaviyo access arrived during this audit and was used for read-only account inspection. GTM access also arrived; Dylan then confirmed it was unused/empty and asked not to pursue it, so that work stopped. No analytics setup, ad activation, campaign changes, live theme edits, orders, subscriptions, app uninstalls, or integration-setting changes were performed.
 
 ## Evidence and limits
 
@@ -13,6 +13,7 @@ GA, GTM, and Google Ads are explicitly deferred until Dylan confirms access. No 
 - Inspected the rendered homepage, Lemon Tea PDP, Shop All, and Variety Packs. Rechecked asynchronously loaded Yotpo and Klaviyo content rather than treating initial empty containers as final failures.
 - Captured 13 public HTTP responses, including key content/product pages, robots.txt, sitemap.xml, and the stale footer URL. See `reports/public-storefront-baseline.json`; rerun with `python3 scripts/audit-public.py`. HTML text counts include hidden/template content and are not proof of visible UI defects.
 - Ran Shopify CLI Theme Check; full findings in `reports/theme-check-baseline.json`, paths normalized relative to the project.
+- Subsequently inspected all 42 Klaviyo flow rows, all 16 signup-form rows, Shopify integration settings, the live welcome flow/filter configuration, its first two email previews, and footer-form reporting. See `docs/klaviyo-audit-2026-09-07.md`.
 - No Lighthouse run, mobile device/keyboard matrix, field Core Web Vitals report, Search Console inspection, email event test, retailer review match, or end-to-end fulfillment test was completed. No conversion, revenue-lift, or speed-score claims are made.
 
 ## Prioritized next steps
@@ -23,7 +24,7 @@ Effort bands are planning estimates after inputs/access are ready: S = up to one
 | --- | --- | --- | --- | --- | --- |
 | P1 | Separate Amazon messaging from Shopify stock rules | Visible sold-out badges and conflicting product schema | Theme developer + operations: approve channel model | Amazon-directed cards/PDPs do not claim 3PL stock is Amazon stock; actual Shopify/staff purchasing still enforces correct inventory | M |
 | P1 | Complete slim-can and 4-pack merchandising | Existing active products, incomplete display fields, sample-only tags | Content + ecommerce + operations: approved consumer pack/SKU/retailer mapping | Correct products appear in intended public collections; images, copy, nutrition, destinations, and access rules verified | M |
-| P1 | Resolve Klaviyo access and validate existing flows | Embed/form render; app launch requests new data access | Account owner + lifecycle marketer | Existing integration, events, consent, forms, offers, exclusions, and flow statuses tested before activation | M |
+| P1 | Correct Klaviyo form routing and validate existing flows | Footer submits to HelloFresh Sample Campaign; live welcome triggers from Halfday Newsletter; 37 flows are Draft | Lifecycle marketer: approve intended lists/offer and audience exclusions | Footer subscribers enter intended list/flow; existing consent, offers, exclusions, events, and duplicate legacy flows verified before activation | M |
 | P1 | Map fulfillment and inventory ownership | Cin7 and ShipStation installed; Cin7 launch hits existing-organization gate | Operations/3PL + integration owners | One documented source of truth and order route per channel; existing order traced through stock, fulfillment, tracking, cancellation/return | L |
 | P2 | Clean SEO and old navigation | Empty product descriptions in JSON-LD, missing page descriptions, stale preview links | Theme/content + Search Console owner when available | Accurate schema/content, canonical internal links, redirect checks, crawl/index review | M |
 | P2 | Reduce verified performance overhead | Global 287 KB JS bundle, 173 KB custom CSS, route-specific assets loaded globally | Theme developer | Repeatable before/after mobile lab and field baselines; fewer unnecessary bytes/execution with relevant flows intact | M |
@@ -59,11 +60,15 @@ The sampled public Shop All grid displays eight established flavors, not these s
 
 Prepare a merchandising sheet with consumer pack quantity, sellable unit/case quantity, SKU, UPC/GTIN, ASIN, Walmart/Target product IDs and URLs, channel eligibility, imagery, nutrition, approved claims, product metafields, and collection placement. Audit existing records before adding duplicates. Confirm whether the client wants retail discovery pages, Amazon links, or Shopify checkout for each new format.
 
-## 3. Klaviyo: installed and rendering; flow health unverified
+## 3. Klaviyo: account audit completed after access arrived
 
 Klaviyo is installed; its app embed is enabled in `config/settings_data.json:161`. The public page includes the Klaviyo loader, and the footer form (`sections/footer.liquid:186`, form `TPsGns`) rendered an email input and `GET 15% OFF` button after asynchronous loading. No signup was submitted. Rendering proves neither consent capture nor event delivery.
 
-Launching Klaviyo from Shopify opened an **Update data access** screen. Requested access includes staff/contributor data, gift card/store-credit data, server pixels, and Online Store editing, among other scopes. That update was not approved. The owner should review the exact scopes or provide access directly to the existing Klaviyo account; then audit flows there.
+Direct Klaviyo account access is now working. The separate Shopify app-launch path still requested an **Update data access** action; it was not approved and was not needed for the direct account audit. Any future scope update remains an owner decision.
+
+The account shows **42 flows: 1 Live, 4 Manual, 37 Draft**, plus **16 signup forms: 5 Live, 11 Draft**. Shopify integration is enabled for the correct store, with Viewed Product and behavioral tracking selected; Shopify email subscribers sync to Halfday Newsletter. The live `[FE] Welcome Series` contains three live emails and existing Amazon links with UTM/maas parameters. These facts establish useful existing infrastructure, not complete attribution or end-to-end event correctness.
+
+**Confirmed P1 routing mismatch:** footer form `TPsGns` submits to **HelloFresh Sample Campaign**, whereas the live welcome flow triggers on **Halfday Newsletter**. Its report shows five submissions from 688 form views over the last seven days. Correct the intended list route and test consent + flow entry; do not bulk-add historic profiles to a live flow without a separate audience/re-entry plan. Full findings, legacy filter details, and relaunch order are in [the Klaviyo audit](klaviyo-audit-2026-09-07.md).
 
 For the relaunch, inventory current flow status, triggers, filters, list/segment definitions, suppression, sender setup, offer validity, and destinations. Prioritize welcome, browse interest, re-engagement, and replenishment where appropriate. Validate events with a controlled consented test profile and confirm no duplicate collection. Onsite activity and Viewed Product have distinct roles in Klaviyo's tracking model. [Klaviyo onsite tracking](https://help.klaviyo.com/hc/en-us/articles/115005076767)
 
@@ -144,9 +149,9 @@ Faire documents that inventory deductions depend on enabled inventory/order sync
 ## Inputs needed for the implementation phase
 
 1. Client/content owner: approved slim-can and consumer 4-pack assortment, pack/case definitions, imagery, ingredients/nutrition, retail destinations, and which channels may sell each SKU.
-2. Lifecycle owner: existing Klaviyo account access or an owner-reviewed decision on the pending Shopify data-access update; approved offers and intended flow audiences.
+2. Lifecycle owner: approved footer/list routing, offers, profile exclusions, and intended flow audiences. Klaviyo account access is now available; the separate Shopify app permission update is not necessary to read the account.
 3. Operations/3PL: access to the existing Cin7 organization and ShipStation account, AfterShip/TikTok/Amazon fulfillment configuration, Faire sync settings, SKU/location map, and example existing orders.
 4. Review owner: Yotpo export permissions, Bazaarvoice onboarding/contact, Walmart/Target identifier and syndication requirements.
 5. Optional shared development: desired Git hosting organization/repository. Local Git and Shopify CLI workflows are ready now.
 
-The first implementation batch should address channel-aware availability, complete one slim-can product as the reusable content model, and clean stale navigation/schema. Follow with measured asset reductions and app migrations once their dependencies are verified. GA/GTM/Google Ads stay deferred.
+The first implementation batch should address channel-aware availability and the Klaviyo footer/list mismatch, complete one slim-can product as the reusable content model, and clean stale navigation/schema. Follow with measured asset reductions and app migrations once their dependencies are verified. GA/Google Ads stay deferred; GTM is excluded per Dylan's latest instruction.

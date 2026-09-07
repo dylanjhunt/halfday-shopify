@@ -33,6 +33,6 @@ This repository is the Shopify Online Store theme for Halfday Iced Tea, not a he
 
 - Public product pages primarily link to Amazon. Shopify inventory at a 3PL must not be presented as Amazon availability. Preserve real Shopify inventory checks on actual Shopify purchase paths.
 - Audit priorities: availability messaging, 4-packs/slim cans, Klaviyo, SEO/AEO, legacy content, Cin7/ShipStation/AfterShip/Faire, and Yotpo-to-Bazaarvoice planning. Do not activate flows, uninstall apps, or alter integrations as part of an audit.
-- GA, GTM, and Google Ads are explicitly deferred until Dylan confirms access is ready.
+- GA and Google Ads are deferred until Dylan confirms access. Klaviyo access is available and was audited; see `docs/klaviyo-audit-2026-09-07.md`. Dylan confirmed GTM was unused/empty and asked not to pursue it; leave it alone unless scope changes.
 - Run Theme Check and distinguish inherited findings from regressions. Verify relevant desktop/mobile pages, keyboard navigation, variant/media interactions, Amazon destinations, and protected staff flows as applicable. Do not place orders or subscribe real people during tests.
 - Separate confirmed defects, hypotheses, and access-dependent checks. Theme code cannot establish integration health, conversion performance, or retailer review syndication.
