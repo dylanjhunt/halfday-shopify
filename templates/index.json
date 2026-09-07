@@ -1,0 +1,366 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "index_top_image_over_text_new_XAgdxw": {
+      "type": "Index-top-image-over-text-new",
+      "blocks": {
+        "information_hnVVCJ": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/Rectangle_1_a843aad4-a461-452a-be36-52afe68be888.jpg",
+            "main_mobile_image": "shopify://shop_images/mobile-hero_8c1cbfb4-2dc9-46c0-bf1f-29d3381342f6.png",
+            "main_heading_text": "A new era <br>of iced tea",
+            "main_details_text": "<p>Gut-friendly nostalgic iced teas that make moments of freedom even sweeter.</p>",
+            "main_button_text": "Shop Now",
+            "main_button_link": "shopify://collections/shop-all"
+          }
+        }
+      },
+      "block_order": [
+        "information_hnVVCJ"
+      ],
+      "settings": {
+        "main_background_color": "#efefef"
+      }
+    },
+    "index_information_marquee_new_j7GRar": {
+      "type": "Index-information-marquee-new",
+      "blocks": {
+        "information_ahNmB9": {
+          "type": "information",
+          "settings": {
+            "title": "<p>6g Fiber</p>"
+          }
+        },
+        "information_cFmJnB": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Classic Flavors</p>"
+          }
+        },
+        "information_daQKCV": {
+          "type": "information",
+          "settings": {
+            "title": "<p>3-5g Sugar</p>"
+          }
+        },
+        "information_ikTUER": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Low Calorie</p>"
+          }
+        },
+        "information_6Hg7GF": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Prebiotics</p>"
+          }
+        },
+        "information_hBBydE": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Good For Your Gut</p>"
+          }
+        }
+      },
+      "block_order": [
+        "information_ahNmB9",
+        "information_cFmJnB",
+        "information_daQKCV",
+        "information_ikTUER",
+        "information_6Hg7GF",
+        "information_hBBydE"
+      ],
+      "settings": {
+        "main_back_color": "#ff5528",
+        "main_text_color": "#ffffff",
+        "main_icon_color": "#ffe700"
+      }
+    },
+    "index_featured_collection_new_m8ApNi": {
+      "type": "Index-featured-collection-new",
+      "settings": {
+        "main_background_color": "#ffffff",
+        "main_heading_text": "Go with your gut",
+        "main_details_text": "<p>Find your favorites. Or try a new one. You write the rules.</p>",
+        "main_collection_select": "shop-all",
+        "main_products_to_show": 16,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none"
+      }
+    },
+    "index_image_accordion_new_wC8DVf": {
+      "type": "Index-image-accordion-new",
+      "blocks": {
+        "information_fBrbDi": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/Intestine_29ff06e6-6d55-405f-9c1c-b35833b4b9bb.svg",
+            "title": "Good for your gut",
+            "main_custom_infos": "<p>Halfday’s exclusive <strong>GOODDAY Prebiotic Blend</strong> delivers <strong>6g of prebiotic fiber</strong>—cassava root, fructan fiber, and organic agave inulin—to support digestion and keep your gut feeling good all day long.</p>"
+          }
+        },
+        "information_ztyKEJ": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/cubes_5f4a781b-261d-4942-a7f1-842c3ce2c2c3.svg",
+            "title": "Sweet, not sugary",
+            "main_custom_infos": "<p><strong>3-5g of sugar,</strong> naturally sweetened, for all the flavor and none of the crash.</p>"
+          }
+        },
+        "information_eki4r9": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/Blink_b7efcaf0-6004-481d-888b-079e4ce5135f.svg",
+            "title": "More flavor less calories",
+            "main_custom_infos": "<p><strong>30-40 calories per can,</strong> so you can sip happily while still enjoying the classic, bold flavors you love.</p>"
+          }
+        },
+        "information_MQMwyM": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/Sun.svg",
+            "title": "For whatever you’re into",
+            "main_custom_infos": "<p>Keto, gluten-free, or just mindful<strong>—Halfday is here for whatever you're into.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "information_fBrbDi",
+        "information_ztyKEJ",
+        "information_eki4r9",
+        "information_MQMwyM"
+      ],
+      "settings": {
+        "main_background_color": "#ff5528",
+        "main_desktop_image": "shopify://shop_images/Rectangle_3147_42434949-0bb9-4b3f-8b65-e67ffa1ac8c1.jpg",
+        "main_mobile_image": "shopify://shop_images/Rectangle_3147_abe0defb-c199-463d-be01-ac22beb56fd8.jpg",
+        "main_heading_text": "Old-school flavor, new-school benefits",
+        "main_button_text": "Why Halfday",
+        "main_button_link": "/pages/why-halfday?view=why-halfday"
+      }
+    },
+    "index_object_testimonials_new_MQt4KN": {
+      "type": "Index-object-testimonials-new",
+      "settings": {
+        "main_background_color": "#ffffff"
+      }
+    },
+    "index_store_logo_slider_new_RiVcXd": {
+      "type": "Index-store-logo-slider-new",
+      "blocks": {
+        "information_bdaKfk": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/Layer_3.svg",
+            "main_custom_links": "https://erewhon.com/product/7737761000/halfday-tonics-lemon-black-tea-12-oz?referral=search"
+          }
+        },
+        "information_kTwqJC": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/SVG_Export_1.svg",
+            "main_custom_links": "https://www.gopuff.com/p/halfday-peach-prebiotic-iced-tea-12oz-can/p41565"
+          }
+        },
+        "information_fpTLXP": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/Harris_Teeter.svg",
+            "main_custom_links": "https://www.harristeeter.com/p/halfday-peach-iced-tea/0086000032295?fulfillment=SHIP&searchType=default_search"
+          }
+        },
+        "information_rmwf64": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/HEB.svg",
+            "main_custom_links": "https://www.heb.com/product-detail/halfday-southern-style-sweet-tea-with-prebiotics/15177524"
+          }
+        },
+        "information_bywcxz": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/Kroger.svg",
+            "main_custom_links": "https://www.kroger.com/p/halfday-peach-iced-tea/0086000032295?fulfillment=PICKUP&searchType=default_search"
+          }
+        },
+        "information_LRfYhn": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/Safeway.svg",
+            "main_custom_links": "https://www.safeway.com/shop/product-details.970509523.html"
+          }
+        },
+        "information_FfY9Uy": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/Sprouts.svg",
+            "main_custom_links": "https://shop.sprouts.com/store/sprouts/s?k=halfday"
+          }
+        },
+        "information_fBhnt8": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/Stop_Shop.svg",
+            "main_custom_links": "https://stopandshop.com/product/halfday-peach-iced-tea-12-oz-can/311313"
+          }
+        },
+        "information_tD9pAV": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/SVG_Export_1_1.svg",
+            "main_custom_links": "https://thrivemarket.com/brand/halfday"
+          }
+        },
+        "information_rLmBWg": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/Wegmans.svg",
+            "main_custom_links": "https://shop.wegmans.com/product/263039/halfday-iced-tea,-peach"
+          }
+        },
+        "information_WfNhmF": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/Whole-Foods.svg",
+            "main_custom_links": "https://www.wholefoodsmarket.com/product/halfday-iced-tea-peach-ice-tea-12-fl-oz-b0b57wmy81"
+          }
+        }
+      },
+      "block_order": [
+        "information_bdaKfk",
+        "information_kTwqJC",
+        "information_fpTLXP",
+        "information_rmwf64",
+        "information_bywcxz",
+        "information_LRfYhn",
+        "information_FfY9Uy",
+        "information_fBhnt8",
+        "information_tD9pAV",
+        "information_rLmBWg",
+        "information_WfNhmF"
+      ],
+      "settings": {
+        "main_background_color": "#ff5528",
+        "main_heading_text": "Find us in store:"
+      }
+    },
+    "product_object_table_list_new_b4BPkE": {
+      "type": "Product-object-table-list-new",
+      "settings": {
+        "custom_class": "",
+        "main_background_color": "#ffffff",
+        "left_comparison_table": false
+      }
+    },
+    "index_infos_logos_slider_new_jBDanA": {
+      "type": "Index-infos-logos-slider-new",
+      "blocks": {
+        "information_xdC6pL": {
+          "type": "information",
+          "settings": {
+            "main_custom_text": "“30 Under 30 Class of 2023”",
+            "main_custom_logo": "shopify://shop_images/SVG_Export_3_1.svg",
+            "main_custom_logo_width": "56px"
+          }
+        },
+        "information_6c6e4Q": {
+          "type": "information",
+          "settings": {
+            "main_custom_text": "“This stuff tastes eerily similar to Ariz*na, Sn*pple, and Cryst*l L*ght, yet it’s made with 80-90% less sugar.”",
+            "main_custom_logo": "shopify://shop_images/Quality_Edit_Logo_1.svg",
+            "main_custom_logo_width": "40px"
+          }
+        },
+        "information_gDfAJM": {
+          "type": "information",
+          "settings": {
+            "main_custom_text": "“Bottom line: if you're a beverage fiend like me who wants to avoid added sugar, Halfday is a worthwhile find.”",
+            "main_custom_logo": "shopify://shop_images/SVG_Export_9_1.svg",
+            "main_custom_logo_width": "113px"
+          }
+        },
+        "information_Ybj7PX": {
+          "type": "information",
+          "settings": {
+            "main_custom_text": "\"Speaking of favorite products, now that spring is here, I’m reaching for iced tea more than a hot beverage. My favorite right now is Halfday’s iced tea and lemonade!\"",
+            "main_custom_logo": "shopify://shop_images/SVG_Export_3.svg",
+            "main_custom_logo_width": ""
+          }
+        },
+        "information_ME4T8L": {
+          "type": "information",
+          "disabled": true,
+          "settings": {
+            "main_custom_text": "“Halfday is changing the iced tea game by perfecting a canned bev that is both super low in sugar and supports healthy digestion.”",
+            "main_custom_logo": "shopify://shop_images/SVG_Export_2_1.svg",
+            "main_custom_logo_width": "218px"
+          }
+        },
+        "information_NziU6e": {
+          "type": "information",
+          "disabled": true,
+          "settings": {
+            "main_custom_text": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "main_custom_logo_width": ""
+          }
+        },
+        "information_hMPBcy": {
+          "type": "information",
+          "settings": {
+            "main_custom_text": "“Halfday's Lemon Iced Tea is a go-to for gut health.”",
+            "main_custom_logo": "shopify://shop_images/SVG_Export_2_2.svg",
+            "main_custom_logo_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "information_xdC6pL",
+        "information_6c6e4Q",
+        "information_gDfAJM",
+        "information_Ybj7PX",
+        "information_ME4T8L",
+        "information_NziU6e",
+        "information_hMPBcy"
+      ],
+      "settings": {
+        "main_background_color": "#ff5528"
+      }
+    },
+    "index_image_with_text_new_MBANLa": {
+      "type": "Index-image-with-text-new",
+      "settings": {
+        "main_background_color": "#ffffff",
+        "main_desktop_image": "shopify://shop_images/Rectangle_6.jpg",
+        "main_mobile_image": "shopify://shop_images/Rectangle_6.jpg",
+        "main_heading_text": "A glass <br>half full",
+        "main_details_text": "<p>After being diagnosed with Ulcerative Colitis, Kayvon joined best friend Mike to make gut-friendly iced teas inspired by their childhood favorite flavors.</p>",
+        "main_button_text": "Our Story",
+        "main_button_link": "/pages/our-story?view=our-story"
+      }
+    }
+  },
+  "order": [
+    "index_top_image_over_text_new_XAgdxw",
+    "index_information_marquee_new_j7GRar",
+    "index_featured_collection_new_m8ApNi",
+    "index_image_accordion_new_wC8DVf",
+    "index_object_testimonials_new_MQt4KN",
+    "index_store_logo_slider_new_RiVcXd",
+    "product_object_table_list_new_b4BPkE",
+    "index_infos_logos_slider_new_jBDanA",
+    "index_image_with_text_new_MBANLa"
+  ]
+}

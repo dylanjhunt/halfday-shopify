@@ -1,0 +1,1035 @@
+.find-us-banner .find-us-banner-inner .mobile-image {
+  display:none;
+}
+.find-us-banner .find-us-banner-inner {
+    position: relative;
+    height: 315px;
+    overflow: hidden;
+}
+
+.find-us-banner .find-us-banner-inner img {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100% !important;
+}
+.find-us-banner .find-us-banner-inner .find-us-content {
+    position: absolute;
+    bottom: 56px;
+    left: 0;
+    padding: 0 56px;
+}
+.find-us-banner .find-us-banner-inner .find-us-content h1 {
+    color: #FFE700;
+    font-size: 96px;
+    line-height: 100%; 
+    letter-spacing: 3.84px;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+.find-us-banner .find-us-banner-inner .find-us-content .text {
+     color: #fff;
+     font-size: 24px;
+     font-weight: 600;
+     line-height: 115%; 
+     letter-spacing: 0.48px;
+}
+
+.find-us-marquee {
+    padding: 0px 0;
+}
+.find-us-marquee .js-marquee span {
+   grid-gap: 0 40px;
+}
+
+.find-us-marquee .swiper-slide img {
+    max-height: 56px;
+    width: auto;
+     max-width: 100%;
+}
+
+#stockist-widget .stockist-map {
+    left: 745px !important;
+    padding-right: 56px !important;
+    background-color: transparent !important;
+}
+#stockist-widget .stockist-horizontal .stockist-side-panel {
+    width: 713px !important;
+    padding-left: 56px !important;
+  
+}
+#stockist-widget .stockist-map .stockist-map-inner {
+      border-radius: 24px !important;
+      min-height: 491px !important;
+}
+#stockist-widget .stockist-horizontal {
+       height: 491px !important;
+}
+#stockist-widget .stockist-horizontal .stockist-result-list {
+    height: 383px !important;
+}
+
+#stockist-widget .stockist-horizontal .stockist-result-list::-webkit-scrollbar {
+    height: 12px;
+    width: 6px;
+    background: rgba(0, 70, 0, 0.1);
+    opacity:0.1;
+   -webkit-border-radius: 12px;
+}
+
+#stockist-widget .stockist-horizontal .stockist-result-list::-webkit-scrollbar-thumb {
+    background: #004600;
+    -webkit-border-radius: 12px;
+   
+}
+
+#stockist-widget .stockist-horizontal .stockist-result-list::-webkit-scrollbar-corner {
+    background: #004600;
+}
+
+#stockist-widget .stockist-query-entry .stockist-search-field {
+    display: flex !important;
+    width: 568px !important;
+    height: 48px !important;
+    padding: 12px 20px !important;
+    align-items: center !important;
+    gap: 20px !important;
+    border-radius: 99px !important;
+    border: 0 !important;
+    color: #004600;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 135%; 
+    letter-spacing: 0.32px;
+}
+
+#stockist-widget .stockist-list-result .stockist-result-distance {
+    right: 0 !important;
+    top: 24px !important;
+    left: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    width: auto !important;
+    gap: 8px !important;
+}
+#stockist-widget .stockist-result-list ul {
+    margin-right: 0 !important;
+    width: 544px !important;
+}
+#stockist-widget .stockist-list-result .stockist-result-distance .stockist-result-distance-text {
+    color: #004600 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 120% !important;
+    letter-spacing: 0.36px !important;
+}
+#stockist-widget .stockist-list-result>.stockist-result-distance>.stockist-icon {
+    font-size: 24px !important;
+    margin: 0 !important;
+}
+#stockist-widget .stockist-icon-marker:before {
+    color: #FF5528 !important;
+}
+#stockist-widget .stockist-list-result>div {
+    padding-left: 0 !important;
+}
+#stockist-widget .stockist-result-list ul>li {
+    border-top: 2px solid #004600 !important;
+    border-left: 0px solid transparent !important;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+}
+#stockist-widget .stockist-result-list ul>li:first-child {
+  border-top: 0px solid #004600 !important;
+  padding-top: 0 !important;
+}
+
+#stockist-widget input::placeholder {
+   color: #004600;
+  font-family: var(--font-museo-slab-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 135%; 
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+#stockist-widget input::-ms-input-placeholder { /* Edge 12 -18 */
+  color: #004600;
+  font-family: var(--font-museo-slab-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 135%; 
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+#stockist-widget .stockist-query-entry {
+    width: 100% !important;
+}
+#stockist-widget .stockist-query-entry {
+    width: 100% !important;
+}
+#stockist-widget .stockist-query-entry .stockist-search-button {
+   display: none !important;
+}
+
+#stockist-widget .stockist-result-list .stockist-result-name {
+    color: #004600 !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    line-height: 120% !important;
+    letter-spacing: 0.36px !important;
+    margin-bottom:9px !important;
+   font-family: var(--font-museo-slab-family);
+}
+#stockist-widget .stockist-result-list .stockist-result-address {
+    color: #004600 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 120% !important;
+    letter-spacing: 0.36px !important;
+}
+
+#stockist-widget .stockist-result-list .stockist-result-address .stockist-result-addr-1 {
+   margin-bottom:8px !important;
+}
+#stockist-widget .stockist-result-list .stockist-result-phone a {
+    color: #004600 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 120% !important;
+    letter-spacing: 0.36px !important;
+    text-decoration:none !important;
+}
+
+#stockist-widget .stockist-result>div {
+    margin-top: 3px !important;
+}
+#stockist-widget .stockist-search-form {
+   margin-bottom: 24px !important;
+    margin-left: 0 !important;
+}
+
+#stockist-widget .stockist-map.stockist-map-google .gm-style-iw {
+    background: #FF5528 !important;
+    min-width: 257px !important;
+    padding: 20px !important;
+   border-radius: 12px !important;
+    -webkit-box-shadow: inherit !important;
+    box-shadow: inherit !important;
+    min-width: 257px !important;
+}
+#stockist-widget .stockist-map.stockist-map-google .stockist-result-name.stockist-feature-color {
+  color: #FFF !important;
+  font-family: var(--font-museo-slab-family) !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  line-height: 120% !important;
+  letter-spacing: 0.36px !important;
+   margin-bottom: 8px !important;
+   margin-top: 0 !important;
+}
+#stockist-widget .stockist-map.stockist-map-google .stockist-result-address {
+  color: #FFF !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 120% !important;
+  letter-spacing: 0.36px !important;
+   margin: 0px !important;
+}
+#stockist-widget .stockist-map.stockist-map-google .stockist-result-address .stockist-result-addr-1 {
+   margin-bottom: 8px !important;
+}
+#stockist-widget .stockist-map.stockist-map-google .stockist-result-directions-link {
+ margin-top: 20px !important;
+}
+#stockist-widget .stockist-map.stockist-map-google .stockist-result-details {
+    margin-top: 8px !important;
+}
+#stockist-widget .stockist-map.stockist-map-google .stockist-result-phone a {
+  color: #FFF !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 120% !important;
+  letter-spacing: 0.36px !important;
+   margin: 0px !important;
+  text-decoration: none;
+}
+#stockist-widget .stockist-map.stockist-map-google .stockist-result-directions-link a {
+  color: #FFF;
+  font-family: var(--font-museo-slab-family) !important;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 135%; 
+  letter-spacing: 0.32px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  text-transform: uppercase;
+}
+
+#stockist-widget .stockist-map.stockist-map-google .gm-style-iw-d {
+      overflow: hidden !important;
+}
+
+#stockist-widget .stockist-map.stockist-map-google .gm-style .gm-style-iw-tc::after {
+    background: #FF5528 !important;
+    height: 35px !important;
+    left: 0 !important;
+    top: -15px !important;
+    width: 32px !important;
+}
+
+#stockist-widget .stockist-map.stockist-map-google .gm-ui-hover-effect>span {
+    background-color: #fff !important;
+    width: 28px !important;
+    height: 28px !important;
+    margin: 0 !important;
+}
+
+#stockist-widget .stockist-map.stockist-map-google .gm-style-iw-a button {
+    top: 5px !important;
+    right: 5px !important;
+    opacity: 1 !important;
+}
+
+#stockist-widget .stockist-map.stockist-map-google .gm-style .gm-style-iw-tc {
+    -webkit-filter: none !important;
+    filter: none !important;
+}
+
+/* #stockist-widget {
+  height:603px !important;
+}
+ */
+.get-free-call {
+    text-align: center;
+    /* margin: 96px 0; */
+      /* margin: 84px 0; */
+      margin: 84px 0 96px 0;
+}
+.get-free-call h2.heading {
+    color: #FF5528;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 2.88px;
+      margin: 0 0 46px;
+    /* margin: 0 0 56px 0; */
+}
+
+.get-free-call form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-bottom: 56px;
+}
+.get-free-call form .form-heading {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: 0.48px;
+    margin-right:24px;
+}
+.get-free-call form input {
+    border-radius: 99px;
+    border: 2px solid #004600;
+    background: #FFF;
+    height: 48px;
+    padding: 12px 20px;
+    width: 375px;
+    margin-right:8px;
+
+   color: #004600;
+   font-size: 16px;
+   font-style: normal;
+  font-weight: 900;
+  line-height: 135%; 
+  letter-spacing: 0.32px;
+ 
+}
+
+.get-free-call form input::placeholder {
+   color: #004600;
+  font-family: var(--font-museo-slab-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 135%; 
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.get-free-call form input::-ms-input-placeholder { /* Edge 12 -18 */
+  color: #004600;
+  font-family: var(--font-museo-slab-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 135%; 
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+
+.get-free-call form input::-webkit-outer-spin-button,
+.get-free-call form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.get-free-call form input[type=number]{
+    -moz-appearance: textfield;
+}
+
+.get-free-call form .button {
+    max-width: 128px;
+    min-width: 128px;
+}
+
+.get-free-call .get-free-call-inner .text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: 0.48px;
+     max-width: 276px;
+    margin-top: 7px;
+     /* max-width: 296px;
+     margin-top: 16px; */
+}
+
+.get-free-call .get-free-call-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 108px;
+}
+
+
+
+.rather-shop {
+  /* padding:56px 0; */
+  padding: 46px 0 56px;
+  text-align: center;
+}
+
+
+.rather-shop .heading {
+  color: #FFF;
+  font-size: 72px;
+  line-height: 100%; 
+  letter-spacing: 2.88px;
+  margin-bottom: 46px;
+  /* margin-bottom:56px; */
+  margin-top: 0;
+}
+
+.rather-shop .heading br {
+  display:none;
+}
+
+.rather-shop .block {
+    width: auto !important;
+    display: inline-grid;
+}
+.rather-shop .swiper-wrapper {
+   align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.rather-shop .swiper-wrapper a {
+  display: inline-grid;
+}
+
+.rather-shop .swiper {
+    max-width: 944px;
+    margin: 0 auto;
+}
+
+.find-us-form .left-part {
+  width: 720px;
+  padding: 80px 78px;
+}
+.find-us-form .left-part .image {
+   position:relative;
+   overflow:hidden;
+   height: 640px;
+   width: 100%;
+}
+.find-us-form .left-part img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.find-us-form-inner {
+    display: flex;
+}
+.find-us-form-inner .right-part {
+    width: calc(100% - 720px);
+    padding: 67px 56px;
+}
+
+.find-us-form .right-part .heading {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 2.88px;
+    margin: 0;
+    color:#FF5528;
+     max-width: 80%;
+}
+
+.find-us-form .right-part .description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.36px;
+    color:#004600;
+    margin: 20px 0 32px 0;
+}
+
+.find-us-form .right-part .description p {
+    margin: 0;
+}
+
+.find-us-form .right-part .description p a {
+   color:#004600;
+   font-weight: 800;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.find-us-form .right-part .contact__fields {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.find-us-form .right-part .button {  
+   width: 100%;
+}
+
+.find-us-form .right-part form input {
+    border-radius: 99px;
+    border: 2px solid #004600;
+    background: #FFF;
+    margin-bottom: 8px;
+    padding: 12px 20px;
+    width: 100%;
+    height: 48px;
+  
+    color: #004600;
+  font-family: var(--font-museo-slab-family) !important;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 135%; 
+  letter-spacing: 0.32px;
+ 
+}
+
+.find-us-form .right-part form textarea {
+    border-radius: 12px;
+    border: 2px solid #004600;
+    background: #FFF;
+    margin-bottom: 8px;
+    height:200px;
+    padding: 12px 20px;
+    width: 100%;
+  color: #004600;
+  font-family: var(--font-museo-slab-family);
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 135%; 
+  letter-spacing: 0.32px;
+ 
+}
+
+
+.find-us-form .right-part form input::placeholder, .find-us-form .right-part form textarea::placeholder {
+   color: #004600;
+  font-family: var(--font-museo-slab-family) !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 135%; 
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.find-us-form .right-part form input::-ms-input-placeholder, .find-us-form .right-part form textarea::-ms-input-placeholder { /* Edge 12 -18 */
+  color: #004600;
+  font-family: var(--font-museo-slab-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 135%; 
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.find-us-form .right-part form .form-status {
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+    #stockist-widget.stockist-responsive .stockist-map {
+        height: 320px !important;
+              order: 3;
+    }
+   #stockist-widget .stockist-map .stockist-map-inner {
+      min-height: 320px !important;
+     
+  }
+  #stockist-widget .stockist-map {
+    padding-right: 0px !important;
+  }
+  #stockist-widget.stockist-responsive {
+        display: grid;
+        padding: 0 20px;
+    }
+    #stockist-widget .stockist-search-form {
+        order: 1;
+        width: 100%;
+        margin-bottom: 24px !important;
+    }
+    #stockist-widget .stockist-horizontal {
+        height: 383px !important;
+        order: 2;
+        margin-bottom: 32px;
+    }
+    #stockist-widget .stockist-query-entry .stockist-search-field {
+     width: 100% !important;
+    }
+    #stockist-widget .stockist-horizontal .stockist-side-panel {
+     width: 100% !important;
+     padding-left: 0px !important;
+    }
+  #stockist-widget .stockist-result-list ul {
+      padding-right: 16px !important;
+    width: 100% !important;
+}
+  #stockist-widget .stockist-result-list ul>li:first-child {
+    padding-top: 0 !important;
+  }
+  #stockist-widget .stockist-result-list ul>li {
+    padding-top: 24px !important;
+   padding-bottom: 60px !important;
+  }
+  #stockist-widget .stockist-result-list .stockist-result-name {
+    margin-bottom: 12px !important;
+  }
+  #stockist-widget .stockist-result>div {
+    margin-top: 0 !important;
+  }
+  #stockist-widget .stockist-list-result .stockist-result-distance {
+    right: auto !important;
+    top: auto !important;
+    left: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    width: auto !important;
+    gap: 8px !important;
+    bottom: 22px !important;
+ }
+  #stockist-widget .stockist-list-result .stockist-result-phone {
+        margin-top: 4px;
+  }
+  #stockist-widget .stockist-map.stockist-map-google .gm-style-iw-d {
+    overflow: hidden !important;
+    max-height: none !important;
+  }
+}
+@media only screen and (max-width:749px) {
+  .find-us-banner .find-us-banner-inner .mobile-image {
+    display: block;
+  }
+  .find-us-banner .find-us-banner-inner .desktop-image {
+    display: none;
+  }
+  .find-us-banner .find-us-banner-inner .find-us-content h1 {
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: 2.88px;
+    margin-bottom: 14px;
+  }
+  .find-us-banner .find-us-banner-inner .find-us-content .text {
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: .36px;
+  }
+  .find-us-banner .find-us-banner-inner .find-us-content {
+    bottom: 32px;
+    padding: 0 20px;
+    width: 288px;
+  }
+  .find-us-banner .find-us-banner-inner {
+    height: 283px;
+  }
+  .get-free-call h2.heading {
+    font-size: 48px;
+       letter-spacing: 1.92px;
+          margin: 0 auto 17px;
+    max-width: 300px;
+  }
+  .get-free-call {
+    text-align: center;
+    margin: 49px 0 56px 0;
+  }
+  .get-free-call form {
+    display: block;
+    margin-bottom: 32px;
+   }
+  .get-free-call form .form-heading {
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: .36px;
+    margin-right: 0;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .get-free-call form input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .get-free-call form .button {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .get-free-call .get-free-call-inner {
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .get-free-call .get-free-call-inner .text {
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: .36px;
+    max-width: 210px;
+    margin-top: 8px;
+  }
+  .rather-shop {
+    padding: 50px 0 56px 0;
+  }
+  .rather-shop .heading {
+    font-size: 48px;
+    letter-spacing: 1.92px;
+    margin-bottom: 50px;
+  }
+  .rather-shop svg {
+      max-width: 150px;
+   }
+  .rather-shop .swiper-wrapper {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 38px;
+  }
+  .find-us-form-inner {
+    display: block;
+  }
+  .find-us-form .left-part {
+    width: 100%;
+    padding: 42px 41px;
+  }
+  .find-us-form .left-part .image {
+    height: 334px;
+  }
+  .find-us-form-inner .right-part {
+    width: 100%;
+    padding: 49px 20px 56px 20px;
+  }
+  .find-us-form .right-part .heading {
+    font-size: 48px;
+    letter-spacing: 1.92px;
+    margin: 0 auto;
+    text-align: center;
+     max-width: 268px;
+  }
+  .find-us-form .right-part .description {
+        margin: 16px auto 24px auto;
+        text-align: center;
+        max-width: 328px;
+  }
+  .find-us-form .right-part .contact__fields {
+    display: block;
+  }
+  .rather-shop .heading br {
+     display:block;
+  }
+}
+
+   
+@media only screen and (min-width:750px) and (max-width:768px) {
+  #stockist-widget.stockist-responsive .stockist-map {
+        height: 450px !important;
+        margin-bottom: 0 !important;
+  }
+  #stockist-widget input::placeholder {
+    font-size: 10px;
+    line-height:1;
+  }
+  
+  #stockist-widget input::-ms-input-placeholder { /* Edge 12 -18 */
+    font-size: 10px;
+    line-height:1;
+  }
+}
+@media only screen and (min-width:769px) and (max-width:989px) {
+   #stockist-widget .stockist-horizontal .stockist-side-panel {
+    width: 50% !important;
+    padding-left: 20px !important;
+  }
+  #stockist-widget .stockist-map {
+    left: 50% !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+  #stockist-widget .stockist-map .stockist-map-inner {
+    min-height: 350px !important;
+  }
+  #stockist-widget .stockist-query-entry .stockist-search-field {
+    width: 100% !important;
+    height: 40px !important;
+  }
+  #stockist-widget .stockist-horizontal .stockist-result-list {
+    height: 300px !important;
+  }
+  #stockist-widget .stockist-horizontal {
+    height: auto !important;
+  }
+  #stockist-widget .stockist-result-list ul {
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+  #stockist-widget .stockist-result-list ul>li:first-child {
+    padding-top: 0 !important;
+ }
+  #stockist-widget .stockist-search-form {
+    margin-bottom: 24px !important;
+  }
+
+#stockist-widget .stockist-horizontal .stockist-side-panel {
+    width: 50% !important;
+    padding-left: 20px !important;
+}
+   
+  #stockist-widget input::placeholder {
+     font-size: 10px;
+     line-height:1;
+  }
+
+  #stockist-widget input::-ms-input-placeholder { /* Edge 12 -18 */
+     font-size: 10px;
+     line-height:1;
+  }
+  #stockist-widget .stockist-list-result .stockist-result-distance {
+    right: 12px !important;
+  }
+  #stockist-widget .stockist-result-list .stockist-result-name {
+    max-width: 200px;
+  }
+}
+@media only screen and (min-width:750px) and (max-width:989px) {
+  .find-us-banner .find-us-banner-inner .find-us-content {
+    bottom: 46px;
+    padding: 0 20px;
+   }
+  .find-us-banner .find-us-banner-inner .find-us-content h1 {
+    font-size: 90px;
+  }
+  .get-free-call h2.heading {
+    font-size: 66px;
+    margin: 0 0 40px;
+  }
+  .get-free-call {
+    text-align: center;
+    margin: 70px 0 72px;
+}
+  .get-free-call form input {
+    height: 40px;
+    width: 284px;
+    margin-right: 8px;
+  }
+  .get-free-call form .form-heading {
+    margin-right: 6px;
+  }
+  .find-us-banner .find-us-banner-inner .find-us-content .text {
+    font-size: 20px;
+  }
+  .get-free-call form .form-heading {
+    font-size: 20px;
+  }
+  .get-free-call .get-free-call-inner .text {
+       font-size: 19px;
+    max-width: 240px;
+  }
+  .get-free-call .get-free-call-inner {
+    gap: 24px;
+  }
+  .find-us-form .left-part {
+    width: 50%;
+    padding: 20px;
+  }
+  .find-us-form .left-part .image {
+    height: 450px;
+  }
+  .find-us-form-inner .right-part {
+    width: 50%;
+    padding: 20px;
+ }
+  .rather-shop .heading {
+    margin-bottom: 40px;
+      font-size: 66px;
+   }
+   .find-us-form .right-part .heading {
+     font-size: 52px;
+         max-width: 100%;
+  }
+  .find-us-form .right-part .description {
+    margin: 18px 0 25px;
+        font-size: 16px;
+  }
+  .find-us-form .right-part form input {
+    height: 40px;
+    padding: 7px 20px;
+  }
+  .find-us-form .right-part form textarea {
+    height: 100px;
+  }
+  .find-us-form .right-part form input::placeholder, .find-us-form .right-part form textarea::placeholder {
+     font-size: 10px;
+     line-height:1;
+  }
+
+  .find-us-form .right-part form input::-ms-input-placeholder, .find-us-form .right-part form textarea::-ms-input-placeholder { /* Edge 12 -18 */
+    line-height:1;
+    font-size: 10px;
+  }
+  .get-free-call form input::placeholder {
+     font-size: 10px;
+     line-height:1;
+  }
+
+  .get-free-call form input::-ms-input-placeholder { /* Edge 12 -18 */
+     font-size: 10px;
+     line-height:1;
+  }
+  .rather-shop .swiper-wrapper {
+    /* justify-content: center; */
+  }
+  .rather-shop .block svg {
+    max-width: 100px;
+ }
+}
+
+@media only screen and (min-width:990px) and (max-width:1349px) {
+  .find-us-banner .find-us-banner-inner .find-us-content {
+    padding: 0 30px;
+   }
+  .find-us-banner .find-us-banner-inner .find-us-content h1 {
+    font-size: 90px;
+  }
+ #stockist-widget .stockist-horizontal .stockist-side-panel {
+    width: 50% !important;
+    padding-left: 30px !important;
+  }
+  #stockist-widget .stockist-map {
+    left: 50% !important;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+  #stockist-widget .stockist-query-entry .stockist-search-field {
+    width: 100% !important;
+  }
+  #stockist-widget .stockist-result-list ul {
+    width: 100% !important;
+  }
+  #stockist-widget .stockist-result-list ul>li:first-child {
+    padding-top: 0 !important;
+  }
+  #stockist-widget .stockist-search-form {
+    margin-bottom: 24px !important;
+  }
+  #stockist-widget .stockist-list-result .stockist-result-distance {
+    right: 20px !important;
+  }
+  #stockist-widget .stockist-result-list ul {
+    margin-right: 0 !important;
+    width: 90% !important;
+  }
+  .get-free-call h2.heading {
+    font-size: 70px;
+    margin: 0 0 40px;
+   }
+  .get-free-call {
+    margin: 70px 0 80px;
+   }
+  .get-free-call .get-free-call-inner {
+    gap: 50px;
+  }
+  .rather-shop .heading {
+    font-size: 70px;
+    margin-bottom: 40px;
+  }
+  .rather-shop .swiper-wrapper {
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .find-us-form .left-part {
+    width: 50%;
+    padding: 30px;
+  }
+  .find-us-form-inner .right-part {
+    width: 50%;
+    padding: 30px;
+  }
+  .find-us-form .right-part .heading {
+    font-size: 70px;
+    max-width: 100%;
+  }
+}
+
+
+.find-us-marquee a {
+    line-height: 1;
+}
+
+.find-us-marquee .Index_store_logo_slider_mainmobile_new {
+    /*display: flex;*/
+    align-items: center;
+    /*grid-gap: 0 40px;*/
+    line-height: 1;
+    padding: 32px 0;
+  width:100%;
+}
+.find-us-marquee .swiper-slide {
+  width:auto;
+}
+
+.find-us-marquee .swiper-wrapper { -webkit-transition-timing-function: linear !important; -o-transition-timing-function: linear !important; transition-timing-function: linear !important; }
+
+
+.stockist-map.stockist-map-google .stockist-cluster div[role="button"] {
+      background-color: #FFE700 !important;
+}

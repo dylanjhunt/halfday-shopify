@@ -1,0 +1,209 @@
+<style>
+  {% if section.settings.bg_color != blank %}
+    .Page_2_col_image_content_main { background-color: {{ section.settings.bg_color }}; }
+  {% endif %}
+
+  @media (max-width: 749px){
+    {% if section.settings.bg_color_mobile != blank %}
+      .Page_2_col_image_content_main { background-color: {{ section.settings.bg_color_mobile }}; }
+    {% else %}
+      .Page_2_col_image_content_main { background-color: {{ section.settings.bg_color }}; } 
+    {% endif %}
+  }
+  
+</style>
+
+{% if section.settings.heading_text != blank or section.settings.information_text != blank or section.settings.button_text != blank or section.settings.button_link != blank or section.settings.image != blank %}
+  <div class="Page_2_col_image_content_main Page_2_col_image_content_main_{{ section.id }} {{ section.settings.custom_class }}">
+    <div class="page-width">
+      <div class="Page_2_col_image_content_inner">
+        <div class="Page_2_col_image_content_sides {% if section.settings.square_image == true %} square_image_parent_container {% endif %}">
+          {% if section.settings.heading_text != blank or section.settings.information_text != blank or section.settings.button_text != blank or section.settings.button_link != blank %}
+            <div class="Page_2_col_image_content_leftmain">
+              <div class="Page_2_col_image_content_leftinner {% if section.settings.center_align_content_mobile == true %} center_content_mobile {% endif %}">
+                {% if section.settings.heading_text != blank %}
+                  <div class="Page_2_col_image_content_main_heading_text Common_title_new {% if section.settings.big_heading == true %} big_heading {% endif %}">
+                    <h2>
+                      {{ section.settings.heading_text }}
+                    </h2>
+                  </div>
+                {% endif %}
+                {% if section.settings.information_text != blank %}
+                  <div class="Page_2_col_image_content_main_information_text Common_infos_new">
+                    {{ section.settings.information_text }}
+                  </div>
+                {% endif %}
+                {% if section.settings.button_text != blank or section.settings.button_link != blank %}
+                  <div class=Page_2_col_image_content_main_button_container>
+                    <a class="button" href="{{ section.settings.button_link }}">
+                      {{ section.settings.button_text }}
+                    </a>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+          {% if section.settings.image != blank %}
+            <div class="Page_2_col_image_content_rightmain">
+              <div class="Page_2_col_image_content_rightinner">
+                <div class="Page_2_col_image_content_main_image small-hide">
+                  {{
+                    section.settings.image | 
+                    image_url: width: img.width | 
+                    image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                    fetchpriority: 'high'
+                  }}
+                </div>
+                {% if section.settings.image_mobile != blank %}
+                  <div class="Page_2_col_image_content_main_image medium-hide large-up-hide">
+                    {{
+                      section.settings.image_mobile | 
+                      image_url: width: img.width | 
+                      image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                      fetchpriority: 'high'
+                    }}
+                  </div>
+                {% else %}
+                  <div class="Page_2_col_image_content_main_image medium-hide large-up-hide">
+                    {{
+                      section.settings.image | 
+                      image_url: width: img.width | 
+                      image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                      fetchpriority: 'high'
+                    }}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  .Page_2_col_image_content_main { padding: 56px 0; }
+  .Page_2_col_image_content_sides { display: flex; gap: 32px; align-items: center; justify-content: space-between; }
+  .Page_2_col_image_content_leftmain { width: 37.952%; }
+  .Page_2_col_image_content_rightmain { width: 57.8316%; }
+  .Page_2_col_image_content_sides.square_image_parent_container .Page_2_col_image_content_leftmain { width: 44.5788%;}
+  .Page_2_col_image_content_sides.square_image_parent_container .Page_2_col_image_content_rightmain { width: 51.8076%;}
+  .Page_2_col_image_content_main_heading_text h2 { text-align: left; }
+  .Page_2_col_image_content_main_heading_text.big_heading h2 { font-size: 96px; letter-spacing: 3.84px; }
+  .Page_2_col_image_content_main_information_text, .Page_2_col_image_content_main_button_container { padding-top: 32px; }
+  /* .Page_2_col_image_content_main_information_text p { font-family: var(--font-museo-sans-family); } */
+  .Page_2_col_image_content_main_image { aspect-ratio: 1.29729; }
+  .Page_2_col_image_content_sides.square_image_parent_container .Page_2_col_image_content_main_image { aspect-ratio: 1.16215; }
+  .Page_2_col_image_content_main_image img { width: 100%; height: 100% !important; display: block; object-fit: cover; border-radius: 12px; }
+
+  @media (min-width: 1440px){
+    .Page_2_col_image_content_leftinner { max-width: 592px; width: 100%; margin: 0 auto; }
+  }
+  
+  @media (max-width: 1439px){
+    .Page_2_col_image_content_main_heading_text.big_heading h2 { font-size: 56px; letter-spacing: 2.24px; }
+  }
+  
+  @media (max-width: 749px){
+    .Page_2_col_image_content_sides { flex-direction: column; }
+    .Page_2_col_image_content_leftmain, .Page_2_col_image_content_rightmain { width: 100% !important; }
+    .Page_2_col_image_content_leftinner.center_content_mobile .Page_2_col_image_content_main_heading_text h2,
+    .Page_2_col_image_content_leftinner.center_content_mobile .Page_2_col_image_content_main_information_text p{ text-align: center; }
+    .Page_2_col_image_content_main_information_text { padding-top: 24px; }
+    .Page_2_col_image_content_main_information_text p br { display: none; }
+    .Page_2_col_image_content_main_image { aspect-ratio: 0.8375 !important; }
+
+    .Page_2_col_image_content_main.halfday_2_col .Page_2_col_image_content_main_information_text p { font-size: 18px; line-height: 120%; letter-spacing: 0.36px; } 
+  }
+
+</style>
+
+{% schema %}
+  {
+    "name": "Page 2 Col Image Content",
+    "class": "Page_2_col_image_content",
+    "settings": [
+      {
+        "type": "text",
+        "id": "custom_class",
+        "label": "Add Custom Class"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Add Background Color",
+        "default": "#FFE700"
+      },
+      {
+        "type": "color",
+        "id": "bg_color_mobile",
+        "label": "Add Background Color - Mobile"
+      },
+      {
+        "type": "header",
+        "content": "Left Side"
+      },
+      {
+        "type": "textarea",
+        "id": "heading_text",
+        "label": "Add Heading Text",
+        "default": "Halfday includes 6g of prebiotic fiber"
+      },
+      {
+        "type": "checkbox",
+        "id": "big_heading",
+        "label": "Big Heading Text",
+        "default": false
+      },
+      {
+        "type": "richtext",
+        "id": "information_text",
+        "label": "Add Information Text",
+        "default": "<p>Our exclusive GOODDAY Prebiotic Blend is made up of 3 fiber-rich ingredients, cassava root fiber, fructan fiber, and organic agave inulin, making up 15-25% of your daily fiber needs.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Add Button Text",
+        "default": "Find a store"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Add Button Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "center_align_content_mobile",
+        "label": "Center Aligned Content in Mobile",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Right Side"
+      },
+      {
+        "type": "checkbox",
+        "id": "square_image",
+        "label": "Keep Sqaure Image",
+        "default": false
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Add Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_mobile",
+        "label": "Add Image - Mobile"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Page 2 Col Image Content"
+      }
+    ]
+  }
+{% endschema %}

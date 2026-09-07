@@ -1,0 +1,45 @@
+{%- if product.metafields.custom.product_instagram_item_selection != blank -%}
+  {%- assign index_instagram_item_selection = product.metafields.custom.product_instagram_item_selection.value -%}
+  {%- if index_instagram_item_selection.main_home_page_section.value == false -%}
+    {%- include 'Index-object-instagram-new' -%}
+  {%- endif -%}
+{%- elsif page.metafields.custom.index_instagram_item_selection != blank -%}
+  {%- assign index_instagram_item_selection = page.metafields.custom.index_instagram_item_selection.value -%}
+  {%- if index_instagram_item_selection.main_home_page_section.value == false -%}
+    {%- include 'Index-object-instagram-new' -%}
+  {%- endif -%}
+{%- elsif collection.metafields.custom.index_instagram_item_selection != blank -%}
+  {%- assign index_instagram_item_selection = collection.metafields.custom.index_instagram_item_selection.value -%}
+  {%- if index_instagram_item_selection.main_home_page_section.value == false -%}
+    {%- include 'Index-object-instagram-new' -%}
+  {%- endif -%}
+{%- else -%}
+  {%- assign index_instagram_item_selection = shop.metaobjects.index_instagram_item_selection -%}
+  {%- paginate shop.metaobjects.index_instagram_item_selection.values by 1000 -%}
+    {%- for index_instagram_item_selection in index_instagram_item_selection.values -%}
+      {%- if index_instagram_item_selection.main_home_page_section.value == true -%}
+        {%- include 'Index-object-instagram-new' -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endpaginate -%}  
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Index Object Instagram",
+    "class": "Index_object_instagram_new",
+    "settings": [
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FFE700"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Index Object Instagram"
+      }
+    ]
+  }
+{% endschema %}

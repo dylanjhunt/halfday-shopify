@@ -1,0 +1,281 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- if section.settings.enable_shop_login_button == false -%}
+  {%- assign hide_shop_login_button = true -%}
+{%- endif -%}
+
+<div class="login section-{{ section.id }}-padding">
+  <div id="recover" tabindex="-1">
+    
+  </div>
+  <div class="main-login-wraper recover-login-wrapper">
+    <div class="left-part">
+      <div class="image">
+         {%- if section.settings.image2 != blank -%}
+            {{
+              section.settings.image2 | 
+              image_url: width: img.width | 
+              image_tag: widths: '200, 300, 400, 500, 560,750', 
+              fetchpriority: 'high', 
+              class:'desktop-image'
+            }}
+          {%- endif -%}
+      </div>
+    </div>
+    <div class="right-part">
+   <h1 class="login-title recover-title">{{ 'customer.recover_password.title' | t }}</h1>
+    <p class="login-sub-title recover-sub-title">
+      {{ 'customer.recover_password.subtext' | t }}
+    </p>
+
+    {%- form 'recover_customer_password' -%}
+      {% assign recover_success = form.posted_successfully? %}
+     
+        <input
+          type="email"
+          value=""
+          name="email"
+          id="RecoverEmail"
+          autocorrect="off"
+          autocapitalize="off"
+          autocomplete="email"
+          {% if form.errors %}
+            aria-invalid="true"
+            aria-describedby="RecoverEmail-email-error"
+            autofocus
+          {% endif %}
+          placeholder="{{ 'customer.login_page.email' | t }}"
+        >
+        
+      {%- if form.errors -%}
+        <small id="RecoverEmail-email-error" class="form__message">
+          <span class="svg-wrapper">
+            {{- 'icon-error.svg' | inline_asset_content -}}
+          </span>
+          {{ form.errors.messages.form }}
+        </small>
+      {%- endif -%}
+
+      <button class="button">
+        {{ 'customer.recover_password.submit' | t }}
+      </button>
+      {% if section.settings.botom_text != blank %}
+<div class="botom_text">{{ section.settings.botom_text }}</div>
+        {% endif %}
+      <a href="/collections/employee-shop">
+        {{ 'customer.recover_password.cancel' | t }}
+      </a>
+      <a href="{{ routes.account_register_url }}">
+        {{ 'customer.login_page.create_account' | t }}
+      </a>
+    {%- endform -%}
+  </div>
+  </div>
+
+  <div id="login" tabindex="-1">
+   
+  </div>
+  <div class="main-login-wraper">
+    
+    <div class="left-part">
+      <div class="image">
+         {%- if section.settings.image1 != blank -%}
+            {{
+              section.settings.image1 | 
+              image_url: width: img.width | 
+              image_tag: widths: '200, 300, 400, 500, 560,750', 
+              fetchpriority: 'high', 
+              class:'desktop-image'
+            }}
+          {%- endif -%}
+      </div>
+    </div>
+
+    <div class="right-part">
+
+       <h1 class="login-title" tabindex="-1">
+        {{ 'customer.login_page.title' | t }}
+      </h1>
+
+      <div class="login-sub-title">
+         {{ 'customer.login_page.sub_title' | t }}
+      </div>
+      
+    {%- if recover_success == true -%}
+      <h3 class="form__message" tabindex="-1" autofocus>
+        <span class="svg-wrapper">
+          {{- 'icon-success.svg' | inline_asset_content -}}
+        </span>
+        {{ 'customer.recover_password.success' | t }}
+      </h3>
+    {%- endif -%}
+    {%- form 'customer_login', novalidate: 'novalidate' -%}
+      {%- if form.errors -%}
+        <h2 class="form__message" tabindex="-1" autofocus>
+          <span class="visually-hidden">{{ 'accessibility.error' | t }} </span>
+          <span class="svg-wrapper">
+            {{- 'icon-error.svg' | inline_asset_content -}}
+          </span>
+          {{ 'templates.contact.form.error_heading' | t }}
+        </h2>
+        {{ form.errors | default_errors }}
+      {%- endif -%}
+
+      {%- if shop.features.login_with_shop_classic_customer_accounts? -%}
+        <section name="sign-in-with-shop-provider">
+          {{ shop | login_button: hide_button: hide_shop_login_button }}
+
+          {%- unless hide_shop_login_button -%}
+            <p>
+              {{ 'customer.login_page.alternate_provider_separator' | t }}
+            </p>
+          {%- endunless -%}
+        </section>
+      {%- endif -%}
+
+     
+        <input
+          type="email"
+          name="customer[email]"
+          id="CustomerEmail"
+          autocomplete="email"
+          autocorrect="off"
+          autocapitalize="off"
+          {% if form.errors contains 'form' %}
+            aria-invalid="true"
+          {% endif %}
+          placeholder="{{ 'customer.login_page.email' | t }}"
+        >
+       
+
+      {%- if form.password_needed -%}
+       <div class="password_container">
+          <input
+            type="password"
+            value=""
+            name="customer[password]"
+            id="CustomerPassword"
+            autocomplete="current-password"
+            {% if form.errors contains 'form' %}
+              aria-invalid="true"
+            {% endif %}
+            placeholder="{{ 'customer.login_page.password' | t }}"
+          >
+         <div id="toggle-password">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="show_eye">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 12.3471C1 12.3471 10.5206 -1.93389 22.592 12.3471C22.592 12.3471 12.8446 26.5147 1 12.3471ZM11.7958 8.66351C13.836 8.66351 15.451 10.307 15.451 12.3187C15.451 14.3589 13.8359 15.9739 11.7958 15.9739C9.784 15.9739 8.1406 14.3588 8.1406 12.3187C8.1406 10.3069 9.78404 8.66351 11.7958 8.66351Z" fill="#004600"></path>
+</svg>
+ <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="hide_eye">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 12.3471C1 12.3471 10.5206 -1.93388 22.592 12.3471C22.592 12.3471 12.8446 26.5147 1 12.3471ZM11.7958 8.66352C13.836 8.66352 15.451 10.307 15.451 12.3187C15.451 14.3589 13.8359 15.9739 11.7958 15.9739C9.784 15.9739 8.1406 14.3588 8.1406 12.3187C8.1406 10.3069 9.78404 8.66352 11.7958 8.66352Z" fill="#004600"></path>
+<path d="M20.2364 20.9864C20.1379 20.9866 20.0404 20.9672 19.9494 20.9295C19.8584 20.8918 19.7758 20.8364 19.7063 20.7666L3.20627 4.26658C3.07155 4.12478 2.99756 3.93597 3.00006 3.7404C3.00257 3.54483 3.08137 3.35797 3.21967 3.21967C3.35797 3.08137 3.54483 3.00257 3.7404 3.00006C3.93597 2.99756 4.12478 3.07155 4.26658 3.20627L20.7666 19.7063C20.8714 19.8112 20.9428 19.9448 20.9717 20.0902C21.0006 20.2356 20.9857 20.3864 20.929 20.5234C20.8723 20.6604 20.7762 20.7775 20.6529 20.8599C20.5296 20.9423 20.3847 20.9864 20.2364 20.9864Z" fill="#004600"></path>
+</svg>
+          
+  </div>
+       </div>
+       
+      {%- endif -%}
+
+      <button class="button">
+        {{ 'customer.login_page.sign_in' | t }}
+      </button>
+       {%- if form.password_needed -%}
+ <a href="#recover">
+          {{ 'customer.login_page.forgot_password' | t }}
+        </a>
+         {%- endif -%}
+      <a href="{{ routes.account_register_url }}">
+        {{ 'customer.login_page.create_account' | t }}
+      </a>
+    {%- endform -%}
+  </div>
+
+  {%- if shop.checkout.guest_login -%}
+    <div>
+      <hr>
+      <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
+
+      {%- form 'guest_login' -%}
+        <button>
+          {{ 'customer.login_page.guest_continue' | t }}
+        </button>
+      {%- endform -%}
+    </div>
+  {%- endif -%}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-login.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_shop_login_button",
+      "label": "t:sections.main-login.shop_login_button.enable",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Login Page"
+    },
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Forgot Password Page"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image"
+    },
+    {
+      "type": "richtext",
+      "id": "botom_text",
+      "label": "Bottom Text"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}
+ 

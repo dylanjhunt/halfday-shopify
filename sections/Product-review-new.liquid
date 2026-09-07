@@ -1,0 +1,61 @@
+<div class="product_review_main_new" id="Reviews" data-section="{{ section.id }}" style="background: {{ section.settings.main_background_color }};">
+  <div class="page-width">
+    <div class="product_review_inner_new">
+      {%- if section.settings.main_heading_text != blank or section.settings.main_information_text != blank -%}
+        <div class="product_review_title_main_new">
+          <div class="Card_product_review_new">
+            <div class="yotpo bottomLine" data-product-id="{{ product.id }}"></div>
+          </div>
+          {%- if section.settings.main_heading_text != blank -%}
+            <div class="Common_large_title_new product_review_title_new">
+              <h2>{{ section.settings.main_heading_text }}</h2>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      <div class="product_review_widget_new">
+        <div class="yotpo yotpo-main-widget"
+        data-product-id="{{ product.id }}"
+        data-name="{{ product.title | escape }}"
+        data-url="{{ shop.url }}{{ product.url }}"
+        data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
+        data-price="{{ variant.price | money_without_currency }}"
+        data-currency="{{ shop.currency }}"
+        data-description="{{ product.description | escape }}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Review",
+    "class": "product_review_new",
+    "settings": [
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FFE700"
+      },
+      {
+        "type": "textarea",
+        "id": "main_heading_text",
+        "label": "Add Main Heading Text",
+        "default": "Taste worth raving about"
+      },
+      {
+        "type": "richtext",
+        "id": "main_information_text",
+        "label": "Add Main Information Text",
+        "default": "<p>Reviews</p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Review"
+      }
+    ]
+  }
+{% endschema %}

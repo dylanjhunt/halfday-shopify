@@ -1,0 +1,227 @@
+{% if section.settings.heading_text != blank or section.settings.video != blank or section.settings.image != blank or section.blocks.size > 0 %}
+  <div class="Page_2_col_image_accordian_main Page_2_col_image_accordian_main_{{ section.id }}" style="background-color: {{ section.settings.bg_color }}">
+    <div class="Page_2_col_image_accordian_sides">
+      {% if section.settings.heading_text != blank or section.blocks.size > 0 %}
+        <div class="Page_2_col_image_accordian_leftmain">
+          <div class="Page_2_col_image_accordian_leftinner">
+            {% if section.settings.heading_text != blank %}
+              <div class="Page_2_col_image_accordian_heading_text Common_infos_new">
+                <p>
+                  {{ section.settings.heading_text }}
+                </p>
+              </div>
+            {% endif %}
+            {% if section.blocks.size > 0 %}
+              <div class="Page_2_col_image_accordian_main_container">
+                {% for block in section.blocks %}
+                  {% if block.type == "accordian" %}
+                    {% if block.settings.icon != blank or block.settings.title != blank or block.settings.sub_text != blank or block.settings.decription != blank %}
+                      <div class="Page_2_col_image_accordian_parent">
+                        {% if block.settings.icon != blank or block.settings.title != blank or block.settings.sub_text != blank %}
+                          <div class="Page_2_col_image_accordian_title_main_container">
+                            <div class="Page_2_col_image_accordian_title_parent">
+                              {% if block.settings.icon != blank or block.settings.title != blank %}
+                                <div class="Page_2_col_image_accordian_title_icon">
+                                  {% if block.settings.icon != blank %}
+                                    <div class="Page_2_col_image_accordian_icon">
+                                      {{
+                                        block.settings.icon | 
+                                        image_url: width: img.width | 
+                                        image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                        fetchpriority: 'low'
+                                      }}
+                                    </div>
+                                  {% endif %}
+                                  {% if block.settings.title != blank %}
+                                    <div class="Page_2_col_image_accordian_title Common_infos_new">
+                                      <p>
+                                        {{ block.settings.title }}
+                                      </p>
+                                    </div>
+                                  {% endif %}
+                                </div>
+                              {% endif %}
+                              {% if block.settings.sub_text != blank %}
+                                <div class="Page_2_col_image_accordian_subtext Common_infos_new">
+                                  <p>
+                                    {{ block.settings.sub_text }}
+                                  </p>
+                                </div>
+                              {% endif %}
+                            </div>
+                            <div class="close">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 11H13V5C13 4.73478 12.8946 4.48043 12.7071 4.29289C12.5196 4.10536 12.2652 4 12 4C11.7348 4 11.4804 4.10536 11.2929 4.29289C11.1054 4.48043 11 4.73478 11 5V11H5C4.73478 11 4.48043 11.1054 4.29289 11.2929C4.10536 11.4804 4 11.7348 4 12C4 12.2652 4.10536 12.5196 4.29289 12.7071C4.48043 12.8946 4.73478 13 5 13H11V19C11 19.2652 11.1054 19.5196 11.2929 19.7071C11.4804 19.8946 11.7348 20 12 20C12.2652 20 12.5196 19.8946 12.7071 19.7071C12.8946 19.5196 13 19.2652 13 19V13H19C19.2652 13 19.5196 12.8946 19.7071 12.7071C19.8946 12.5196 20 12.2652 20 12C20 11.7348 19.8946 11.4804 19.7071 11.2929C19.5196 11.1054 19.2652 11 19 11Z" fill="#004600"></path>
+                              </svg>
+                            </div>
+                            <div class="open">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.6663 12H5.33301" stroke="#004600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        {% endif %}
+                        {% if block.settings.description != blank %}
+                          <div class="Page_2_col_image_accordian_description">
+                            {{ block.settings.description }}
+                          </div>
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+      {% if section.settings.video != blank or section.settings.image != blank %}
+        <div class="Page_2_col_image_accordian_rightmain" style="background-color: {{ section.settings.img_video_bg_color }}">
+          <div class="Page_2_col_image_accordian_rightinner">
+            {% if section.settings.video != blank %}
+              <div class="Page_2_col_image_accordian_video_image">
+                {{ section.settings.video | video_tag: class:'Common_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+              </div>
+              {% else %}
+              <div class="Page_2_col_image_accordian_video_image">
+                {{
+                  section.settings.image | 
+                  image_url: width: img.width | 
+                  image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                  fetchpriority: 'low'
+                }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  .Page_2_col_image_accordian_sides { display: flex; }
+  .Page_2_col_image_accordian_leftmain { width: 50%; padding: 56px; }
+  .Page_2_col_image_accordian_rightmain { width: 50%; }
+  .Page_2_col_image_accordian_main_container { padding-top: 56px; }
+  .Page_2_col_image_accordian_parent:not(:first-child) { padding-top: 32px; }
+  .Page_2_col_image_accordian_parent:not(:last-child) { border-bottom: 2px solid #004600; }
+  .Page_2_col_image_accordian_parent { padding-bottom: 32px; }
+  .Page_2_col_image_accordian_title_main_container { display: flex; gap: 20px; justify-content: space-between; cursor: pointer;  }
+  .Page_2_col_image_accordian_title_icon { display: flex; align-items: center; gap: 12px; }
+  .Page_2_col_image_accordian_icon { min-width: 32px; height: 32px;}
+  .Page_2_col_image_accordian_icon img { width: 100%; hegiht: 100%; display: block; }
+  .Page_2_col_image_accordian_title p { text-transform: uppercase; font-weight: 900; letter-spacing: 0.96px; }
+  .Page_2_col_image_accordian_subtext { padding: 8px 0 0 44px; }
+  .Page_2_col_image_accordian_title_main_container .open { display: none; }
+  .Page_2_col_image_accordian_title_main_container .close, .Page_2_col_image_accordian_title_main_container .open { width: 24px; height: 24px; margin-top: 4px; }
+  .Page_2_col_image_accordian_title_main_container .close svg, .Page_2_col_image_accordian_title_main_container .open svg { display: block; }
+  .Page_2_col_image_accordian_description { padding: 16px 44px 0; display: none; }
+  .Page_2_col_image_accordian_description p { font-size: 18px; font-weight: 700; line-height: 120%; letter-spacing: .36px; margin: 0; }
+  .Page_2_col_image_accordian_title_main_container.active .close { display: none; }
+  .Page_2_col_image_accordian_title_main_container.active .open { display: block; }
+  .Page_2_col_image_accordian_title_main_container.active + .Page_2_col_image_accordian_description { display: block; }
+  .Page_2_col_image_accordian_rightinner { padding: 80px 78px; position: sticky; top: 0; }
+  .Page_2_col_image_accordian_video_image video, .Page_2_col_image_accordian_video_image img { width: 100%; height: 100%; display: block; object-fit: cover; }
+
+  @media (min-width: 990px) and (max-width: 1439px) {
+    .Page_2_col_image_accordian_leftmain { padding: 40px 30px; }
+    .Page_2_col_image_accordian_rightinner { padding: 40px; }
+  }
+
+  @media (max-width: 989px){
+    .Page_2_col_image_accordian_leftmain { padding: 30px 20px; }
+    .Page_2_col_image_accordian_rightinner { padding: 30px; }
+    .Page_2_col_image_accordian_main_container { padding-top: 32px; } 
+  }
+
+  @media (max-width: 749px){
+    .Page_2_col_image_accordian_leftmain { width: 100%; padding: 56px 20px; }
+    .Page_2_col_image_accordian_rightmain { display: none; }
+    .Page_2_col_image_accordian_parent:not(:first-child) { padding-top: 24px; }
+    .Page_2_col_image_accordian_parent { padding-bottom: 24px; }    
+    .Page_2_col_image_accordian_subtext { padding-top: 16px; }
+    .Page_2_col_image_accordian_title_main_container { position: relative; }
+    .Page_2_col_image_accordian_title_icon { padding-right: 15px; }
+    .Page_2_col_image_accordian_title_main_container .close, .Page_2_col_image_accordian_title_main_container .open { position: absolute; right: 0;}
+    .Page_2_col_image_accordian_description { padding-right: 0; }
+  }
+
+</style>
+
+{% schema %}
+  {
+    "name": "Page 2 Col Img Accordian",
+    "class": "Page_2_col_image_accordian",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Add Main Background Color",
+        "default": "#FFF"
+      },
+      {
+        "type": "text",
+        "id": "heading_text",
+        "label": "Add Heading Text"
+      },
+      {
+        "type": "video",
+        "id": "video",
+        "label": "Add Video"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Add Image"
+      },
+      {
+        "type": "color",
+        "id": "img_video_bg_color",
+        "label": "Add Image Video Background Color",
+        "default": "#FFE700"
+      },
+    ],
+    "blocks": [
+      {
+        "type": "accordian",
+        "name": "Accordian",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Add Icon"
+          },
+          {
+            "type": "textarea",
+            "id": "title",
+            "label": "Add Title",
+            "default": "Organic Teas"
+          },
+          {
+            "type": "textarea",
+            "id": "sub_text",
+            "label": "Add Sub Text",
+            "default": "A natural source of caffeine, antioxidants, and all-around good vibes."
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Add Description",
+            "default": "<p>Organic tea isn’t just refreshing—it’s packed with antioxidants to support your overall health and natural caffeine for a gentle energy boost. It’s the perfect base for a flavorful escape that does your body good.</p>"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Page 2 Col Image Accordian",
+        "blocks": [
+          {
+            "type": "accordian"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,106 @@
+{%- if index_testimonial_item_selection.main_custom_testimonial_list.value != blank -%}
+  <div class="Index_object_testimonials_main_new LP_PTO_object_testimonial_main_new" style="background: {{ section.settings.main_background_color }};">
+    <div class="Index_object_testimonials_inner_new">
+      {%- if index_testimonial_item_selection.main_custom_details_text.value != blank or index_testimonial_item_selection.main_custom_heading_text.value != blank -%}
+        <div class="Index_object_testimonials_mainboths_new">
+          <div class="page-width">
+            <div class="Index_object_testimonials_innerboths_new">
+              {%- if index_testimonial_item_selection.main_custom_details_text.value != blank -%}
+                <div class="Index_object_testimonials_innerboths_maininfos_new">
+                  <div class="Common_infos_new Index_object_testimonials_innerboths_innerinfos_new">
+                    {{ index_testimonial_item_selection.main_custom_details_text | metafield_tag }}
+                  </div>
+                </div>
+              {%- endif -%}
+              {%- if index_testimonial_item_selection.main_custom_heading_text.value != blank -%}
+                <div class="Index_object_testimonials_innerboths_maintitle_new">
+                  <div class="Common_title_new Index_object_testimonials_innerboths_innertitle_new">
+                    <h2>{{ index_testimonial_item_selection.main_custom_heading_text.value }}</h2>
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if index_testimonial_item_selection.main_custom_testimonial_list.value != blank -%}
+        <div class="Index_object_testimonials_mainloops_new">
+          <div class="Index_object_testimonials_innerloops_new">
+            <div class="swiper Index_object_testimonials_slider" dir="rtl">
+              <div class="swiper-wrapper">
+                {%- for main_custom_testimonial_list in index_testimonial_item_selection.main_custom_testimonial_list.value -%}
+                  {%- if main_custom_testimonial_list.main_video_or_image_block.value != blank or main_custom_testimonial_list.main_custom_details_text.value != blank or main_custom_testimonial_list.main_custom_author_text.value != blank -%}
+                    {%- if main_custom_testimonial_list.main_video_or_image_block.value != blank -%}
+                      <div class="swiper-slide Index_object_testimonials_innerloops_maincolumn_new">
+                        <div class="Index_object_testimonials_innerloops_innercolumn_new">
+                          {%- if main_custom_testimonial_list.main_video_or_image_block.value contains "files" -%}
+                            <div class="Index_object_testimonials_innerloops_innercolumn_imagevideo_new">
+                              {{
+                                main_custom_testimonial_list.main_video_or_image_block.value | 
+                                image_url: width: img.width | 
+                                image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                fetchpriority: 'low', 
+                                class: 'Static_image_new'
+                              }}
+                            </div>
+                          {%- else -%}
+                            <div class="Index_object_testimonials_innerloops_innercolumn_imagevideo_new">
+                              {{ main_custom_testimonial_list.main_video_or_image_block.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                            </div>
+                          {%- endif -%}
+                        </div>
+                      </div>
+                    {%- endif -%}
+                    {%- if main_custom_testimonial_list.main_custom_details_text.value != blank or main_custom_testimonial_list.main_custom_author_text.value != blank -%}
+                      <div class="swiper-slide Index_object_testimonials_innerloops_maindetail_new" dir="ltr" style="background: {{ main_custom_testimonial_list.main_custom_background_color.value }};">
+                        <div class="Index_object_testimonials_innerloops_innerdetail_new">
+                          {%- if main_custom_testimonial_list.main_custom_details_text.value != blank -%}
+                            <div class="Index_object_testimonials_innerloops_innerdetail_maininfos_new">
+                              <div class="Index_object_testimonials_innerloops_innerdetail_innerinfos_new">
+                                {{ main_custom_testimonial_list.main_custom_details_text | metafield_tag }}
+                              </div>
+                            </div>
+                          {%- endif -%}  
+                          {%- if main_custom_testimonial_list.main_custom_author_text.value != blank -%}
+                            <div class="Index_object_testimonials_innerloops_innerdetail_mainboths_new">
+                              <div class="Index_object_testimonials_innerloops_innerdetail_innerboths_new">
+                                <div class="Index_object_testimonials_innerloops_innerdetail_innerboths_title_new">
+                                  {{ main_custom_testimonial_list.main_custom_author_text.value }}
+                                </div>
+                              </div>
+                            </div>
+                          {%- endif -%}  
+                        </div>
+                      </div>
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if index_testimonial_item_selection.main_custom_button_label_text.value != blank -%}
+        {%- if index_testimonial_item_selection.main_custom_button_scroll_text.value != blank or index_testimonial_item_selection.main_custom_button_redirect_link.value != blank -%}
+          <div class="LP_PTO_object_testimonial_mainbutton_new">
+            <div class="page-width">
+              <div class="LP_PTO_object_testimonial_innerbutton_new">
+                {%- if index_testimonial_item_selection.main_custom_button_scroll_text.value != blank -%}
+                  <a href="{{ index_testimonial_item_selection.main_custom_button_scroll_text.value }}" class="button">
+                {%- elsif index_testimonial_item_selection.main_custom_button_redirect_link.value != blank -%}
+                  <a href="{{ index_testimonial_item_selection.main_custom_button_redirect_link.value }}" class="button">
+                {%- endif -%}
+                    {{ index_testimonial_item_selection.main_custom_button_label_text.value }}
+                {%- if index_testimonial_item_selection.main_custom_button_scroll_text.value != blank -%}
+                  </a>
+                {%- elsif index_testimonial_item_selection.main_custom_button_redirect_link.value != blank -%}
+                  </a>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}

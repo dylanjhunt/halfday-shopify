@@ -1,0 +1,138 @@
+{%- if product_comparison_table_item_selection.main_column_select_list.value != blank -%}
+  <div class="Product_object_table_list_main_new {{ section.settings.custom_class }}" style="background: {{ section.settings.main_background_color }};">
+    <div class="Product_object_table_list_inner_new">
+      <div class="Product_object_table_list_sides_new {% if section.settings.left_comparison_table %} row_reverse {% endif %}">
+        {%- if product_comparison_table_item_selection.main_common_heading_text.value != blank or product_comparison_table_item_selection.main_column_select_list.value != blank or product_comparison_table_item_selection.main_common_details_text.value != blank -%}
+          <div class="Product_object_table_list_sides_mainleft_new">
+            <div class="Product_object_table_list_sides_innerleft_new">
+              {%- if product_comparison_table_item_selection.main_common_heading_text.value != blank -%}
+                <div class="Product_object_table_list_sides_innerleft_maintitle_new">
+                  <div class="Common_title_new Product_object_table_list_sides_innerleft_innertitle_new">
+                    <h2>{{ product_comparison_table_item_selection.main_common_heading_text.value }}</h2>
+                  </div>
+                </div>
+              {%- endif -%}
+              {%- if product_comparison_table_item_selection.main_column_select_list.value != blank -%}
+                <div class="Product_object_table_list_sides_innerleft_maintable_new">
+                  <div class="Product_object_table_list_sides_innerleft_innertable_new">
+                    {%- if product_comparison_table_item_selection.main_column_select_list.value != blank -%}
+                      <div class="Product_object_table_list_sides_innerleft_innertable_mainloops_new">
+                        <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_new">
+                          {%- for main_column_select_list in product_comparison_table_item_selection.main_column_select_list.value -%}
+                            <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_maincolumn_new">
+                              <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_new">
+                                <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_mainboths_new">
+                                  <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_innerboths_new">
+                                    {%- if main_column_select_list.main_detail_logo_image.value != blank -%}
+                                      {%- if main_column_select_list.main_detail_logo_image.value contains "files" -%}
+                                        <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_innerboths_mainimage_new">
+                                          <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_innerboths_innerimage_new">
+                                            {{
+                                              main_column_select_list.main_detail_logo_image.value | 
+                                              image_url: width: img.width | 
+                                              image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                              fetchpriority: 'low', 
+                                              class: 'Static_image_new'
+                                            }}
+                                          </div>
+                                        </div>
+                                      {%- endif -%}
+                                    {%- elsif main_column_select_list.main_detail_title_text.value != blank -%}
+                                      <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_innerboths_maintitle_new">
+                                        <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_innerboths_innertitle_new">
+                                          {{ main_column_select_list.main_detail_title_text.value }}
+                                        </div>
+                                      </div>
+                                    {%- endif -%}
+                                  </div>
+                                </div>
+                                {%- if main_column_select_list.main_detail_text_list.value != blank -%}
+                                  <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_mainlists_new">
+                                    <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_innerlists_new">
+                                      {%- for main_detail_text_list in main_column_select_list.main_detail_text_list.value -%}
+                                        {%- if main_detail_text_list != blank -%}
+                                          <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_innerlists_maintexts_new">
+                                            <div class="Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_innerlists_innertexts_new">
+                                              {{ main_detail_text_list }}
+                                            </div>
+                                          </div>
+                                        {%- endif -%}  
+                                      {%- endfor -%}
+                                    </div>
+                                  </div>
+                                {%- endif -%}  
+                              </div>
+                            </div>
+                          {%- endfor -%}
+                        </div>
+                      </div>
+                    {%- endif -%}  
+                  </div>
+                </div>
+              {%- endif -%}  
+              {%- if product_comparison_table_item_selection.main_common_details_text.value != blank -%}
+                <div class="Product_object_table_list_sides_innerleft_maininfos_new">
+                  <div class="Product_object_table_list_sides_innerleft_innerinfos_new">
+                    <p>{{ product_comparison_table_item_selection.main_common_details_text.value }}</p>
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+        {%- if product_comparison_table_item_selection.main_desktop_video_or_image_full.value != blank and product_comparison_table_item_selection.main_mobile_video_or_image_full.value != blank -%}
+          <div class="Product_object_table_list_sides_mainright_new">
+            <div class="Product_object_table_list_sides_innerright_new">
+              {%- if product_comparison_table_item_selection.main_desktop_video_or_image_full.value != blank -%}
+                <div class="Product_object_table_list_sides_innerright_mainboths_new Desktop_only_new">
+                  <div class="Product_object_table_list_sides_innerright_innerboths_new">
+                    {%- if product_comparison_table_item_selection.main_desktop_video_or_image_full.value contains "files" -%}
+                      <div class="Product_object_table_list_sides_innerright_innerboths_imagevideo_new">
+                        {{
+                          product_comparison_table_item_selection.main_desktop_video_or_image_full.value | 
+                          image_url: width: img.width | 
+                          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                          fetchpriority: 'low', 
+                          class: 'Static_image_new'
+                        }}
+                      </div>
+                    {%- else -%}
+                      <div class="Product_object_table_list_sides_innerright_innerboths_imagevideo_new">
+                        {{ product_comparison_table_item_selection.main_desktop_video_or_image_full.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                      </div>
+                    {%- endif -%}
+                  </div>
+                </div>
+              {%- endif -%}
+              {%- if product_comparison_table_item_selection.main_mobile_video_or_image_full.value != blank -%}
+                <div class="Product_object_table_list_sides_innerright_mainboths_new Mobile_only_new">
+                  <div class="Product_object_table_list_sides_innerright_innerboths_new">
+                    {%- if product_comparison_table_item_selection.main_mobile_video_or_image_full.value contains "files" -%}
+                      <div class="Product_object_table_list_sides_innerright_innerboths_imagevideo_new">
+                        {{
+                          product_comparison_table_item_selection.main_mobile_video_or_image_full.value | 
+                          image_url: width: img.width | 
+                          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                          fetchpriority: 'low', 
+                          class: 'Static_image_new'
+                        }}
+                      </div>
+                    {%- else -%}
+                      <div class="Product_object_table_list_sides_innerright_innerboths_imagevideo_new">
+                        {{ product_comparison_table_item_selection.main_mobile_video_or_image_full.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                      </div>
+                    {%- endif -%}
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+<style>
+  .Product_object_table_list_sides_new.row_reverse { flex-direction: row-reverse; }
+</style>

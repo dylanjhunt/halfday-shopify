@@ -1,0 +1,137 @@
+{% if section.settings.sub_heading_text != blank or section.settings.information_text != blank or section.blocks.size > 0 %}
+  <div class="Page_fiber_slider_section_main Page_fiber_slider_section_main_{{ section.id }}" style="background-color: {{ section.settings.bg_color }}">
+    <div class="page-width">
+      <div class="Page_fiber_slider_section_inner">
+        {% if section.settings.sub_heading_text != blank %}
+          <div class="Page_fiber_slider_section_subheading_text">
+            <p>
+              {{ section.settings.sub_heading_text }}
+            </p>
+          </div>
+        {% endif %}
+        {% if section.blocks.size > 0 %}
+          <div class="Page_fiber_slider_container">
+            <div class="Page_fiber_slider swiper">
+              <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                  {% if block.type == "fiber-text" %}
+                    {% if block.settings.text != blank %}
+                      <div class="Page_fiber_text swiper-slide">
+                        <h2>
+                          {{ block.settings.text }}
+                        </h2>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+              </div>
+              <div class="swiper-button-prev">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.3488 9.01253L22.9238 10.675L12.6863 21L22.9238 31.325L21.3488 32.9875L9.36133 21L21.3488 9.01253Z" fill="#FF5528"></path>
+                  <path d="M11.0234 19.7751L32.0234 19.7751L32.0234 22.2251L11.0234 22.2251L11.0234 19.7751Z" fill="#FF5528"></path>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.6512 32.9875L19.0762 31.325L29.3137 21L19.0762 10.675L20.6512 9.01245L32.6387 21L20.6512 32.9875Z" fill="#FF5528"></path>
+                  <path d="M30.9766 22.2249L9.97656 22.2249L9.97656 19.7749L30.9766 19.7749L30.9766 22.2249Z" fill="#FF5528"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+        {% if section.settings.information_text != blank %}
+          <div class="Page_fiber_slider_section_information_text Common_infos_new">
+            {{ section.settings.information_text }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  .Page_fiber_slider_section_main { padding: 92px 0; }
+  .Page_fiber_slider_section_inner { max-width: 1128px; width: 100%; margin: 0 auto; }
+  .Page_fiber_slider_section_subheading_text p { margin: 0; text-align: center; font-family: var(--font-museo-slab-family); color: #FFF; font-size: 16px; font-weight: 800; line-height: 135%; letter-spacing: 0.32px; text-transform: uppercase; }
+  .Page_fiber_slider_container { padding-top: 44px; }
+  .Page_fiber_text { padding: 0 112px; opacity: 0 !Important; margin: auto; }
+  .Page_fiber_text.swiper-slide-active { opacity: 1 !important; }
+  .Page_fiber_text h2 { margin: 0; text-align: center; color: #FFF; font-size: 72px; line-height: 100%; letter-spacing: 2.88px; font-family: Strippy; font-weight: 400; }
+  .Page_fiber_slider_section_information_text { padding-top: 44px; max-width: 880px; width: 100%; margin: 0 auto; }
+  .Page_fiber_slider_section_information_text p { color: #FFF; text-align: center; }
+  .Page_fiber_slider .swiper-button-next { right: 7px; }
+  .Page_fiber_slider .swiper-button-prev { left: 7px; }
+  .Page_fiber_slider .swiper-button-next, .Page_fiber_slider .swiper-button-prev { width: 42px; height: 42px; background-color: #FFFFFF; border-radius: 50%; }
+  .Page_fiber_slider .swiper-button-next:after, .Page_fiber_slider .swiper-button-prev:after { display: none; }
+  .Page_fiber_slider .swiper-button-next svg, .Page_fiber_slider .swiper-button-prev svg { display: block; }
+
+  @media (max-width: 1439px){
+    .Page_fiber_text h2 { font-size: 64px; letter-spacing: 2.56px; }
+  }
+  
+  @media (max-width: 989px){
+    .Page_fiber_slider_section_main { padding: 56px 0; }
+    .Page_fiber_text h2 { font-size: 48px; letter-spacing: 1.92px; }
+  }
+
+  @media (max-width: 749px){
+    .Page_fiber_slider { padding-bottom: 88px; }
+    .Page_fiber_text { padding: 0; }
+    .Page_fiber_slider_section_information_text { padding-top: 32px; }
+    .Page_fiber_slider .swiper-button-next, .Page_fiber_slider .swiper-button-prev { bottom: 7px; top: unset; }
+    .Page_fiber_slider .swiper-button-next { right: 32%; }
+    .Page_fiber_slider .swiper-button-prev { left: 32%; }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Page Fiber Slider Section",
+    "class": "Page_fiber_slider_section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Add Background Color",
+        "default": "#FF5528"
+      },
+      {
+        "type": "text",
+        "id": "sub_heading_text",
+        "label": "Add Sub Heading Text",
+        "default": "cool – but why fiber?"
+      },
+      {
+        "type": "richtext",
+        "id": "information_text",
+        "label": "Add Information Text",
+        "default": "<p>Drinking 1-2 cans of Halfday a day tops up the fiber you’re already getting from food, supporting healthy digestion, feeding beneficial gut bacteria, and keeping your gut feeling great.</p>"
+      },
+    ],
+    "blocks": [
+      {
+        "type": "fiber-text",
+        "name": "Fiber Text",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Add Text",
+            "default": "95% of Americans don’t get enough fiber in their diet."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Page Fiber Slider Section",
+        "blocks": [
+          {
+            "type": "fiber-text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

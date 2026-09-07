@@ -1,0 +1,271 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page_product_marquee_8BzeRH": {
+      "type": "Page-product-marquee",
+      "blocks": {
+        "product_7e7gpe": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/SWEET_TEA.png",
+            "product_link": "shopify://products/sweet-tea"
+          }
+        },
+        "product_AtyiJG": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/LEMON_TEA.png",
+            "product_link": "shopify://products/lemon-tea"
+          }
+        },
+        "product_qeDGwK": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/PEACH_TEA.png",
+            "product_link": "shopify://products/peach-tea"
+          }
+        },
+        "product_LRd3Ve": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/GREEN_TEA.png",
+            "product_link": "shopify://products/green-tea"
+          }
+        },
+        "product_tYqdfL": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/RASPBERRY_TEA.png",
+            "product_link": "shopify://products/raspberry-tea"
+          }
+        }
+      },
+      "block_order": [
+        "product_7e7gpe",
+        "product_AtyiJG",
+        "product_qeDGwK",
+        "product_LRd3Ve",
+        "product_tYqdfL"
+      ],
+      "settings": {
+        "background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 231, 0, 1) 66%)",
+        "heading_text": "A classic, remade better"
+      }
+    },
+    "product_object_table_list_new_b4BPkE": {
+      "type": "Product-object-table-list-new",
+      "settings": {
+        "custom_class": "halfday_image_comparison",
+        "main_background_color": "#ffffff",
+        "left_comparison_table": true
+      }
+    },
+    "page_2_col_image_content_A3MTqf": {
+      "type": "Page-2-col-image-content",
+      "settings": {
+        "custom_class": "halfday_2_col",
+        "bg_color": "#ffe700",
+        "bg_color_mobile": "#ffe700",
+        "heading_text": "Halfday <br>includes 6g of prebiotic fiber",
+        "big_heading": false,
+        "information_text": "<p>Our exclusive GOODDAY Prebiotic Blend is made up of 3 fiber-rich ingredients: cassava root fiber, fructan fiber, and organic agave inulin, making up 15-25% of your daily fiber needs.</p>",
+        "button_text": "",
+        "button_link": "",
+        "center_align_content_mobile": false,
+        "square_image": false,
+        "image": "shopify://shop_images/Rectangle_6_58c6f594-3fb4-42cb-8957-d498f4bc438b.png",
+        "image_mobile": "shopify://shop_images/Rectangle_6_58c6f594-3fb4-42cb-8957-d498f4bc438b.png"
+      }
+    },
+    "page_fiber_slider_3P7DEW": {
+      "type": "Page-fiber-slider",
+      "blocks": {
+        "fiber_text_bUf37y": {
+          "type": "fiber-text",
+          "settings": {
+            "text": "95% of Americans don’t get enough fiber in their diet."
+          }
+        },
+        "fiber_text_7E7H7M": {
+          "type": "fiber-text",
+          "settings": {
+            "text": "95% of serotonin, the happiness hormone, is made in the gut."
+          }
+        },
+        "fiber_text_rHzPAm": {
+          "type": "fiber-text",
+          "settings": {
+            "text": "Prebiotics are plant-based fibers that feed good bacteria."
+          }
+        },
+        "fiber_text_KpqXdg": {
+          "type": "fiber-text",
+          "settings": {
+            "text": "This helps regulate digestion, mood, immune health, and more!"
+          }
+        }
+      },
+      "block_order": [
+        "fiber_text_bUf37y",
+        "fiber_text_7E7H7M",
+        "fiber_text_rHzPAm",
+        "fiber_text_KpqXdg"
+      ],
+      "settings": {
+        "bg_color": "#ff5528",
+        "sub_heading_text": "cool – but why fiber?",
+        "information_text": "<p>Drinking Halfday can top up the fiber you’re already getting from food, support healthy digestion, feed beneficial gut bacteria, and keep your gut feeling great.</p>"
+      }
+    },
+    "page_2_col_image_accordian_HTgLLB": {
+      "type": "Page-2-col-image-accordian",
+      "blocks": {
+        "accordian_HmU8R9": {
+          "type": "accordian",
+          "settings": {
+            "icon": "shopify://shop_images/Tea_Leaves.svg",
+            "title": "Organic Teas",
+            "sub_text": "A natural source of caffeine, antioxidants, and all-around good vibes.",
+            "description": "<p>Organic tea isn’t just refreshing—it’s packed with antioxidants to support your overall health and natural caffeine for a gentle energy boost. It’s the perfect base for a flavorful escape that does your body good.</p>"
+          }
+        },
+        "accordian_mTAUAD": {
+          "type": "accordian",
+          "settings": {
+            "icon": "shopify://shop_images/Root.svg",
+            "title": "Cassava Root Fiber",
+            "sub_text": "Gut-friendly goodness from a nutrient-rich root.",
+            "description": "<p>Cassava root fiber is a prebiotic powerhouse, supporting healthy digestion and feeding the good bacteria in your gut. This plant-based fiber helps keep everything running smoothly while adding a touch of natural health to every sip.</p>"
+          }
+        },
+        "accordian_6xKADt": {
+          "type": "accordian",
+          "settings": {
+            "icon": "shopify://shop_images/Intestine_29ff06e6-6d55-405f-9c1c-b35833b4b9bb.svg",
+            "title": "Fructan Fiber",
+            "sub_text": "A prebiotic boost to fuel your gut health.",
+            "description": "<p>Fructan fiber works behind the scenes to support your digestion by feeding beneficial gut bacteria. It’s a natural way to keep your gut balanced and happy, sip after sip.</p>"
+          }
+        },
+        "accordian_DhaR8P": {
+          "type": "accordian",
+          "settings": {
+            "icon": "shopify://shop_images/Agave.svg",
+            "title": "Organic Agave Inulin",
+            "sub_text": "A naturally sweet fiber that’s good for your gut.",
+            "description": "<p>Organic agave inulin is a prebiotic fiber that supports digestion and gut health while adding a touch of natural sweetness. It’s the perfect combination of flavor and function.</p>"
+          }
+        },
+        "accordian_eLtT8e": {
+          "type": "accordian",
+          "settings": {
+            "icon": "shopify://shop_images/cubes_5f4a781b-261d-4942-a7f1-842c3ce2c2c3.svg",
+            "title": "3-5g sugar",
+            "sub_text": "Just the right amount of natural sweetness.",
+            "description": "<p>Raw cane sugar delivers the nostalgic sweetness you love, but with a modern touch of balance. It’s the perfect complement to Halfday’s bold flavors without going overboard.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordian_HmU8R9",
+        "accordian_mTAUAD",
+        "accordian_6xKADt",
+        "accordian_DhaR8P",
+        "accordian_eLtT8e"
+      ],
+      "settings": {
+        "bg_color": "#ffffff",
+        "heading_text": "Better-for-you ingredients",
+        "image": "shopify://shop_images/Rectangle_3147-1_d65710d9-fd6d-446c-b5e9-5ca18e0d2c4d.png",
+        "img_video_bg_color": "#ffe700"
+      }
+    },
+    "index_information_marquee_new_j7GRar": {
+      "type": "Index-information-marquee-new",
+      "blocks": {
+        "information_ahNmB9": {
+          "type": "information",
+          "settings": {
+            "title": "<p>6g Fiber</p>"
+          }
+        },
+        "information_cFmJnB": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Classic Flavors</p>"
+          }
+        },
+        "information_daQKCV": {
+          "type": "information",
+          "settings": {
+            "title": "<p>3-5g Sugar</p>"
+          }
+        },
+        "information_ikTUER": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Low Calorie</p>"
+          }
+        },
+        "information_rqnXCy": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Prebiotics</p>"
+          }
+        },
+        "information_hBBydE": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Good For Your Gut</p>"
+          }
+        }
+      },
+      "block_order": [
+        "information_ahNmB9",
+        "information_cFmJnB",
+        "information_daQKCV",
+        "information_ikTUER",
+        "information_rqnXCy",
+        "information_hBBydE"
+      ],
+      "settings": {
+        "main_back_color": "#ff5528",
+        "main_text_color": "#ffffff",
+        "main_icon_color": "#ffe700"
+      }
+    },
+    "index_featured_collection_new_m8ApNi": {
+      "type": "Index-featured-collection-new",
+      "settings": {
+        "main_background_color": "#ffffff",
+        "main_heading_text": "Go with your gut",
+        "main_details_text": "<p>Find your favorites. Or try a new one. You write the rules.</p>",
+        "main_collection_select": "menu-duplicate",
+        "main_products_to_show": 16,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none"
+      }
+    }
+  },
+  "order": [
+    "page_product_marquee_8BzeRH",
+    "product_object_table_list_new_b4BPkE",
+    "page_2_col_image_content_A3MTqf",
+    "page_fiber_slider_3P7DEW",
+    "page_2_col_image_accordian_HTgLLB",
+    "index_information_marquee_new_j7GRar",
+    "index_featured_collection_new_m8ApNi"
+  ]
+}

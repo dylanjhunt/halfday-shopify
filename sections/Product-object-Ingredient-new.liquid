@@ -1,0 +1,49 @@
+{%- if product.metafields.custom.product_tabs_ingredients_detail_selection != blank -%}
+  {%- include 'Product-object-tabs-Ingredient-new' -%}
+{%- else -%}  
+  {%- if product.metafields.custom.product_ingredients_detail_selection != blank -%}
+    {%- assign product_ingredients_detail = product.metafields.custom.product_ingredients_detail_selection.value -%}
+    {%- if product_ingredients_detail.main_home_page_section.value == false -%}
+      {%- include 'Product-object-Ingredient-new' -%}
+    {%- endif -%}
+  {%- elsif page.metafields.custom.product_ingredients_detail != blank -%}
+    {%- assign product_ingredients_detail = page.metafields.custom.product_ingredients_detail.value -%}
+    {%- if product_ingredients_detail.main_home_page_section.value == false -%}
+      {%- include 'Product-object-Ingredient-new' -%}
+    {%- endif -%}
+  {%- elsif collection.metafields.custom.product_ingredients_detail != blank -%}
+    {%- assign product_ingredients_detail = collection.metafields.custom.product_ingredients_detail.value -%}
+    {%- if product_ingredients_detail.main_home_page_section.value == false -%}
+      {%- include 'Product-object-Ingredient-new' -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- assign product_ingredients_detail = shop.metaobjects.product_ingredients_detail -%}
+    {%- paginate shop.metaobjects.product_ingredients_detail.values by 1000 -%}
+      {%- for product_ingredients_detail in product_ingredients_detail.values -%}
+        {%- if product_ingredients_detail.main_home_page_section.value == true -%}
+          {%- include 'Product-object-Ingredient-new' -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endpaginate -%}  
+  {%- endif -%}
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Product Object Ingredient",
+    "class": "Product_object_Ingredient_new",
+    "settings": [
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FFFFFF"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Object Ingredient"
+      }
+    ]
+  }
+{% endschema %}

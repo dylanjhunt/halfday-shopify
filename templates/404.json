@@ -1,0 +1,37 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "disabled": true,
+      "settings": {}
+    },
+    "page_404_banner_pNGJAC": {
+      "type": "Page-404-banner",
+      "settings": {
+        "video_show": true,
+        "bg_video": "shopify://files/videos/989bc8557c95fe5a9c1ccb627985e39888145899 (3) (1) (1).mov",
+        "bg_video_mobile": "shopify://files/videos/989bc8557c95fe5a9c1ccb627985e39888145899 (3) (1) (1).mov",
+        "bg_image": "shopify://shop_images/Rectangle_1_048b8007-7e53-4f44-800d-2844b12ca04a.png",
+        "bg_image_mobile": "shopify://shop_images/Rectangle_1.png",
+        "sub_heading_text": "404 – this page is out of office",
+        "heading_text": "You’ve taken a wrong turn",
+        "information_text": "<p>This isn’t the escape you were looking for. Head back and find your next Halfday.</p>",
+        "button_text": "take me home",
+        "button_link": "/"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "page_404_banner_pNGJAC"
+  ]
+}

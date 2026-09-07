@@ -1,0 +1,136 @@
+{{ 'page-image-with-text.css' | asset_url | stylesheet_tag }}
+  <div class="Page_image_with_text Product_object_table_list_main_new {{ section.settings.custom_class }}" style="background: {{ section.settings.main_background_color }};">
+    <div class="Product_object_table_list_inner_new">
+      <div class="Product_object_table_list_sides_new {% if section.settings.left_comparison_table %} row_reverse {% endif %}">
+         {% if section.settings.description != blank or section.settings.main_heading != blank %} 
+        <div class="Product_object_table_list_sides_mainleft_new">
+            <div class="Product_object_table_list_sides_innerleft_new">
+              {% if section.settings.main_heading != blank %}
+                <div class="Product_object_table_list_sides_innerleft_maintitle_new">
+                  <div class="Common_title_new Product_object_table_list_sides_innerleft_innertitle_new">
+                    <h2>{{ section.settings.main_heading }}</h2>
+                  </div>
+                </div>
+               {% endif %}
+           {% if section.settings.description != blank %}
+                <div class="Product_object_table_list_sides_innerleft_description">
+                  <div class="Product_object_table_list_sides_innerleft_description_content">
+                   {{ section.settings.description }}
+                  </div>
+                </div>
+               {% endif %}
+            </div>
+          </div>
+        {% endif %}
+          <div class="Product_object_table_list_sides_mainright_new">
+            <div class="Product_object_table_list_sides_innerright_new">
+              {%- if section.settings.image != blank or section.settings.video != blank -%}
+                <div class="Product_object_table_list_sides_innerright_mainboths_new Desktop_only_new">
+                  <div class="Product_object_table_list_sides_innerright_innerboths_new">
+                    {%- if section.settings.image != blank -%}
+                      <div class="Product_object_table_list_sides_innerright_innerboths_imagevideo_new">
+                        {{
+                          section.settings.image | 
+                          image_url: width: img.width | 
+                          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                          fetchpriority: 'low', 
+                          class: 'Static_image_new'
+                        }}
+                      </div>
+                    {%- else -%}
+                      <div class="Product_object_table_list_sides_innerright_innerboths_imagevideo_new">
+                        {{ section.settings.video | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                      </div>
+                    {%- endif -%}
+                  </div>
+                </div>
+              {%- endif -%}
+              {%- if section.settings.image_mobile != blank or section.settings.video_mobile != blank -%}
+                <div class="Product_object_table_list_sides_innerright_mainboths_new Mobile_only_new">
+                  <div class="Product_object_table_list_sides_innerright_innerboths_new">
+                    {%- if section.settings.image_mobile != blank -%}
+                      <div class="Product_object_table_list_sides_innerright_innerboths_imagevideo_new">
+                        {{
+                         section.settings.image_mobile | 
+                          image_url: width: img.width | 
+                          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                          fetchpriority: 'low', 
+                          class: 'Static_image_new'
+                        }}
+                      </div>
+                    {%- else -%}
+                      <div class="Product_object_table_list_sides_innerright_innerboths_imagevideo_new">
+                        {{ section.settings.video_mobile | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                      </div>
+                    {%- endif -%}
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+<style>
+  .Product_object_table_list_sides_new.row_reverse { flex-direction: row-reverse; }
+</style>
+{% schema %}
+  {
+    "name": "page-image-with-text",
+    "settings": [
+      {
+        "type": "text",
+        "id": "custom_class",
+        "label": "Add Custom Class"
+      },
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "checkbox",
+        "id": "left_comparison_table",
+        "label": "Keep Comparison Table on the Left Side"
+      },
+      {
+        "type": "text",
+        "id": "main_heading",
+        "label": "Main Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_mobile",
+        "label": "Mobile Image"
+      },
+      {
+        "type": "video",
+        "id": "video",
+        "label": "Video"
+      },
+      {
+        "type": "video",
+        "id": "video_mobile",
+        "label": "Video Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "page-image-with-text"
+      }
+    ]
+  }
+{% endschema %}

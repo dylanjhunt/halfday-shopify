@@ -1,0 +1,69 @@
+{%- if section.blocks.size > 0 -%}
+  <div class="LP_Header_announcement_main_new" style="background: {{ section.settings.main_background_color }}; color: {{ section.settings.main_information_color }};">
+    <div class="page-width">
+      <div class="LP_Header_announcement_inner_new">
+        <div class="LP_Header_announcement_loops_new">
+          <div class="swiper{% if section.blocks.size > 1 %} LP_Header_announcement_loops_slider{% endif %}">
+            <div class="swiper-wrapper">
+              {%- for block in section.blocks -%}
+                {%- if block.settings.title != blank -%}
+                  <div class="swiper-slide LP_Header_announcement_loops_mainboxs_new">
+                    <div class="LP_Header_announcement_loops_innerboxs_new">
+                      {{ block.settings.title }}
+                    </div>
+                  </div>  
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "LP Header Announcement",
+    "class": "LP_Header_announcement_new",
+    "settings": [
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FF5528"
+      },
+      {
+        "type": "color",
+        "id": "main_information_color",
+        "label": "Add Main Information Color",
+        "default": "#FFFFFF"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "information",
+        "name": "Information",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "title",
+            "label": "Add Main Information Text",
+            "default": "<p>Join our exclusive giveaway</p>"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "LP Header Announcement",
+        "blocks": [
+          {
+            "type": "information"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

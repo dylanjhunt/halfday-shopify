@@ -1,0 +1,134 @@
+{%- if product_ingredients_detail.main_common_heading_text.value != blank or product_ingredients_detail.main_common_details_text.value != blank or product_ingredients_detail.main_common_information_text.value != blank or product_ingredients_detail.main_logo_with_text_item_selection.value != blank or product_ingredients_detail.main_common_logo_image.value != blank or product_ingredients_detail.main_common_facts_image.value != blank -%}
+  <div class="Product_object_Ingredient_main_new" style="background: {{ section.settings.main_background_color }};">
+    <div class="page-width">
+      <div class="Product_object_Ingredient_inner_new">
+        {%- if product_ingredients_detail.main_common_logo_image.value != blank -%}
+          {%- if product_ingredients_detail.main_common_logo_image.value contains "files" -%}
+            <div class="Product_object_Ingredient_mainimage_new Mobile_only_new">
+              <div class="Product_object_Ingredient_innerimage_new">
+                {{
+                  product_ingredients_detail.main_common_logo_image.value | 
+                  image_url: width: img.width | 
+                  image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                  fetchpriority: 'low', 
+                  class: 'Static_image_new'
+                }}
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endif -%}
+        {%- if product_ingredients_detail.main_common_heading_text.value != blank or product_ingredients_detail.main_common_details_text.value != blank or product_ingredients_detail.main_common_information_text.value != blank or product_ingredients_detail.main_logo_with_text_item_selection.value != blank or product_ingredients_detail.main_common_logo_image.value != blank or product_ingredients_detail.main_common_facts_image.value != blank -%}
+          <div class="Product_object_Ingredient_mainsides_new">
+            <div class="Product_object_Ingredient_innersides_new">
+              {%- if product_ingredients_detail.main_common_heading_text.value != blank or product_ingredients_detail.main_common_details_text.value != blank or product_ingredients_detail.main_common_information_text.value != blank or product_ingredients_detail.main_logo_with_text_item_selection.value != blank -%}
+                <div class="Product_object_Ingredient_innersides_mainleft_new">
+                  <div class="Product_object_Ingredient_innersides_innerleft_new">
+                    {%- if product_ingredients_detail.main_common_heading_text.value != blank -%}
+                      <div class="Product_object_Ingredient_innersides_innerleft_maintitle_new">
+                        <div class="Common_large_title_new Product_object_Ingredient_innersides_innerleft_innertitle_new">
+                          <h2>{{ product_ingredients_detail.main_common_heading_text.value }}</h2>
+                        </div>
+                      </div>
+                    {%- endif -%}
+                    {%- if product_ingredients_detail.main_common_details_text.value != blank or product_ingredients_detail.main_common_information_text.value != blank -%}
+                      <div class="Product_object_Ingredient_innersides_innerleft_mainboths_new">
+                        <div class="Product_object_Ingredient_innersides_innerleft_innerboths_new">
+                          {%- if product_ingredients_detail.main_common_details_text.value != blank -%}
+                            <div class="Product_object_Ingredient_innersides_innerleft_innerboths_maintitle_new">
+                              <div class="Product_object_Ingredient_innersides_innerleft_innerboths_innertitle_new">
+                                {{ product_ingredients_detail.main_common_details_text.value }}
+                              </div>
+                            </div>
+                          {%- endif -%}
+                          {%- if product_ingredients_detail.main_common_information_text.value != blank -%}
+                            <div class="Product_object_Ingredient_innersides_innerleft_innerboths_maininfos_new">
+                              <div class="Product_object_Ingredient_innersides_innerleft_innerboths_innerinfos_new">
+                                {{ product_ingredients_detail.main_common_information_text | metafield_tag }}
+                              </div>
+                            </div>
+                          {%- endif -%}
+                        </div>
+                      </div>
+                    {%- endif -%}
+                    {%- if product_ingredients_detail.main_logo_with_text_item_selection.value != blank -%}
+                      <div class="Product_object_Ingredient_innersides_innerleft_mainloops_new">
+                        <div class="Product_object_Ingredient_innersides_innerleft_innerloops_new">
+                          {%- for main_logo_with_text_item_selection in product_ingredients_detail.main_logo_with_text_item_selection.value -%}
+                            {%- if main_logo_with_text_item_selection.main_custom_logo.value != blank and main_logo_with_text_item_selection.main_custom_text.value != blank -%}
+                              <div class="Product_object_Ingredient_innersides_innerleft_innerloops_mainboxs_new">
+                                <div class="Product_object_Ingredient_innersides_innerleft_innerloops_innerboxs_new">
+                                  {%- if main_logo_with_text_item_selection.main_custom_logo.value != blank -%}
+                                    {%- if main_logo_with_text_item_selection.main_custom_logo.value contains "files" -%}
+                                      <div class="Product_object_Ingredient_innersides_innerleft_innerloops_innerboxs_mainimage_new">
+                                        <div class="Product_object_Ingredient_innersides_innerleft_innerloops_innerboxs_innerimage_new">
+                                          {{
+                                            main_logo_with_text_item_selection.main_custom_logo.value | 
+                                            image_url: width: img.width | 
+                                            image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                            fetchpriority: 'low', 
+                                            class: 'Static_image_new'
+                                          }}
+                                        </div>
+                                      </div>
+                                    {%- endif -%}
+                                  {%- endif -%}
+                                  {%- if main_logo_with_text_item_selection.main_custom_text.value != blank -%}
+                                    <div class="Product_object_Ingredient_innersides_innerleft_innerloops_innerboxs_maintitle_new">
+                                      <div class="Product_object_Ingredient_innersides_innerleft_innerloops_innerboxs_innertitle_new">
+                                        {{ main_logo_with_text_item_selection.main_custom_text.value }}
+                                      </div>
+                                    </div>
+                                  {%- endif -%}
+                                </div>
+                              </div>
+                            {%- endif -%}  
+                          {%- endfor -%}  
+                        </div>
+                      </div>
+                    {%- endif -%}  
+                  </div>
+                </div>
+              {%- endif -%}  
+              {%- if product_ingredients_detail.main_common_logo_image.value != blank or product_ingredients_detail.main_common_facts_image.value != blank -%}
+                <div class="Product_object_Ingredient_innersides_mainright_new">
+                  <div class="Product_object_Ingredient_innersides_innerright_new">
+                    {%- if product_ingredients_detail.main_common_logo_image.value != blank -%}
+                      {%- if product_ingredients_detail.main_common_logo_image.value contains "files" -%}
+                        <div class="Product_object_Ingredient_innersides_innerright_mainimage_new Desktop_only_new">
+                          <div class="Product_object_Ingredient_innersides_innerright_innerimage_new">
+                            {{
+                              product_ingredients_detail.main_common_logo_image.value | 
+                              image_url: width: img.width | 
+                              image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                              fetchpriority: 'low', 
+                              class: 'Static_image_new'
+                            }}
+                          </div>
+                        </div>
+                      {%- endif -%}
+                    {%- endif -%}
+                    {%- if product_ingredients_detail.main_common_facts_image.value != blank -%}
+                      {%- if product_ingredients_detail.main_common_facts_image.value contains "files" -%}
+                        <div class="Product_object_Ingredient_innersides_innerright_mainfacts_new">
+                          <div class="Product_object_Ingredient_innersides_innerright_innerfacts_new">
+                            {{
+                              product_ingredients_detail.main_common_facts_image.value | 
+                              image_url: width: img.width | 
+                              image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                              fetchpriority: 'low', 
+                              class: 'Static_image_new'
+                            }}
+                          </div>
+                        </div>
+                      {%- endif -%}
+                    {%- endif -%}
+                  </div>
+                </div>
+              {%- endif -%}  
+            </div>
+          </div>
+        {%- endif -%}  
+      </div>
+    </div>
+  </div>
+{%- endif -%}   

@@ -1,0 +1,101 @@
+{%- if index_testimonial_item_selection.main_custom_testimonial_list.value != blank -%}
+  <div class="Index_object_testimonials_main_new" style="background: {{ section.settings.main_background_color }};">
+    <div class="Index_object_testimonials_inner_new">
+      {%- if index_testimonial_item_selection.main_custom_heading_text.value != blank or index_testimonial_item_selection.main_custom_details_text.value != blank -%}
+        <div class="Index_object_testimonials_mainboths_new">
+          <div class="page-width">
+            <div class="Index_object_testimonials_innerboths_new">
+              {%- if index_testimonial_item_selection.main_custom_heading_text.value != blank -%}
+                <div class="Index_object_testimonials_innerboths_maintitle_new">
+                  <div class="Common_large_title_new Index_object_testimonials_innerboths_innertitle_new">
+                    <h2>{{ index_testimonial_item_selection.main_custom_heading_text.value }}</h2>
+                  </div>
+                </div>
+              {%- endif -%}
+              {%- if index_testimonial_item_selection.main_custom_details_text.value != blank -%}
+                <div class="Index_object_testimonials_innerboths_maininfos_new">
+                  <div class="Common_infos_new Index_object_testimonials_innerboths_innerinfos_new">
+                    {{ index_testimonial_item_selection.main_custom_details_text | metafield_tag }}
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if index_testimonial_item_selection.main_custom_testimonial_list.value != blank -%}
+        <div class="Index_object_testimonials_mainloops_new">
+          <div class="Index_object_testimonials_innerloops_new">
+            <div class="swiper Index_object_testimonials_slider" dir="rtl">
+              <div class="swiper-wrapper">
+                {%- for main_custom_testimonial_list in index_testimonial_item_selection.main_custom_testimonial_list.value -%}
+                  {%- if main_custom_testimonial_list.main_video_or_image_block.value != blank -%}
+                    <div class="swiper-slide Index_object_testimonials_innerloops_maincolumn_new">
+                      <div class="Index_object_testimonials_innerloops_innercolumn_new">
+                        {%- if main_custom_testimonial_list.main_video_or_image_block.value contains "files" -%}
+                          <div class="Index_object_testimonials_innerloops_innercolumn_imagevideo_new">
+                            {{
+                              main_custom_testimonial_list.main_video_or_image_block.value | 
+                              image_url: width: img.width | 
+                              image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                              fetchpriority: 'low', 
+                              class: 'Static_image_new'
+                            }}
+                          </div>
+                        {%- else -%}
+                          <div class="Index_object_testimonials_innerloops_innercolumn_imagevideo_new">
+                            {{ main_custom_testimonial_list.main_video_or_image_block.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                  {%- if main_custom_testimonial_list.main_custom_details_text.value != blank or main_custom_testimonial_list.main_custom_logo_image.value != blank or main_custom_testimonial_list.main_custom_author_text.value != blank -%}
+                    <div class="swiper-slide Index_object_testimonials_innerloops_maindetail_new" dir="ltr" style="background: {{ main_custom_testimonial_list.main_custom_background_color.value }};">
+                      <div class="Index_object_testimonials_innerloops_innerdetail_new">
+                        {%- if main_custom_testimonial_list.main_custom_details_text.value != blank -%}
+                          <div class="Index_object_testimonials_innerloops_innerdetail_maininfos_new">
+                            <div class="Index_object_testimonials_innerloops_innerdetail_innerinfos_new">
+                              {{ main_custom_testimonial_list.main_custom_details_text | metafield_tag }}
+                            </div>
+                          </div>
+                        {%- endif -%}  
+                        {%- if main_custom_testimonial_list.main_custom_logo_image.value != blank -%}
+                          {%- if main_custom_testimonial_list.main_custom_logo_image.value contains "files" -%}
+                            <div class="Index_object_testimonials_innerloops_innerdetail_mainimage_new">
+                              <div class="Index_object_testimonials_innerloops_innerdetail_innerimage_new">
+                                {{
+                                  main_custom_testimonial_list.main_custom_logo_image.value | 
+                                  image_url: width: img.width | 
+                                  image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                  fetchpriority: 'low', 
+                                  class: 'Static_image_new'
+                                }}
+                              </div>
+                            </div>
+                          {%- endif -%}
+                        {%- endif -%}  
+                        {%- if main_custom_testimonial_list.main_custom_author_text.value != blank -%}
+                          <div class="Index_object_testimonials_innerloops_innerdetail_mainboths_new">
+                            <div class="Index_object_testimonials_innerloops_innerdetail_innerboths_new">
+                              <div class="Index_object_testimonials_innerloops_innerdetail_innerboths_icons_new">
+                                <svg width="89" height="16" viewBox="0 0 89 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.045 6.74167C15.1117 6.40834 14.845 6.00834 14.5117 6.00834L10.7117 5.47501L8.97834 2.00834C8.91167 1.87501 8.845 1.80834 8.71167 1.74167C8.37834 1.54167 7.97834 1.67501 7.77834 2.00834L6.11167 5.47501L2.31167 6.00834C2.11167 6.00834 1.97834 6.07501 1.91167 6.20834C1.645 6.47501 1.645 6.87501 1.91167 7.14167L4.645 9.80834L3.97834 13.6083C3.97834 13.7417 3.97834 13.875 4.045 14.0083C4.245 14.3417 4.645 14.475 4.97834 14.275L8.37834 12.475L11.7783 14.275C11.845 14.3417 11.9783 14.3417 12.1117 14.3417C12.1783 14.3417 12.1783 14.3417 12.245 14.3417C12.5783 14.275 12.845 13.9417 12.7783 13.5417L12.1117 9.74167L14.845 7.07501C14.9783 7.00834 15.045 6.87501 15.045 6.74167Z" fill="#004600"/><path d="M33.045 6.74167C33.1117 6.40834 32.845 6.00834 32.5117 6.00834L28.7117 5.47501L26.9783 2.00834C26.9117 1.87501 26.845 1.80834 26.7117 1.74167C26.3783 1.54167 25.9783 1.67501 25.7783 2.00834L24.1117 5.47501L20.3117 6.00834C20.1117 6.00834 19.9783 6.07501 19.9117 6.20834C19.645 6.47501 19.645 6.87501 19.9117 7.14167L22.645 9.80834L21.9783 13.6083C21.9783 13.7417 21.9783 13.875 22.045 14.0083C22.245 14.3417 22.645 14.475 22.9783 14.275L26.3783 12.475L29.7783 14.275C29.845 14.3417 29.9783 14.3417 30.1117 14.3417C30.1783 14.3417 30.1783 14.3417 30.245 14.3417C30.5783 14.275 30.845 13.9417 30.7783 13.5417L30.1117 9.74167L32.845 7.07501C32.9783 7.00834 33.045 6.87501 33.045 6.74167Z" fill="#004600"/><path d="M51.045 6.74167C51.1117 6.40834 50.845 6.00834 50.5117 6.00834L46.7117 5.47501L44.9783 2.00834C44.9117 1.87501 44.845 1.80834 44.7117 1.74167C44.3783 1.54167 43.9783 1.67501 43.7783 2.00834L42.1117 5.47501L38.3117 6.00834C38.1117 6.00834 37.9783 6.07501 37.9117 6.20834C37.645 6.47501 37.645 6.87501 37.9117 7.14167L40.645 9.80834L39.9783 13.6083C39.9783 13.7417 39.9783 13.875 40.045 14.0083C40.245 14.3417 40.645 14.475 40.9783 14.275L44.3783 12.475L47.7783 14.275C47.845 14.3417 47.9783 14.3417 48.1117 14.3417C48.1783 14.3417 48.1783 14.3417 48.245 14.3417C48.5783 14.275 48.845 13.9417 48.7783 13.5417L48.1117 9.74167L50.845 7.07501C50.9783 7.00834 51.045 6.87501 51.045 6.74167Z" fill="#004600"/><path d="M69.045 6.74167C69.1117 6.40834 68.845 6.00834 68.5117 6.00834L64.7117 5.47501L62.9783 2.00834C62.9117 1.87501 62.845 1.80834 62.7117 1.74167C62.3783 1.54167 61.9783 1.67501 61.7783 2.00834L60.1117 5.47501L56.3117 6.00834C56.1117 6.00834 55.9783 6.07501 55.9117 6.20834C55.645 6.47501 55.645 6.87501 55.9117 7.14167L58.645 9.80834L57.9783 13.6083C57.9783 13.7417 57.9783 13.875 58.045 14.0083C58.245 14.3417 58.645 14.475 58.9783 14.275L62.3783 12.475L65.7783 14.275C65.845 14.3417 65.9783 14.3417 66.1117 14.3417C66.1783 14.3417 66.1783 14.3417 66.245 14.3417C66.5783 14.275 66.845 13.9417 66.7783 13.5417L66.1117 9.74167L68.845 7.07501C68.9783 7.00834 69.045 6.87501 69.045 6.74167Z" fill="#004600"/><path d="M87.045 6.74167C87.1117 6.40834 86.845 6.00834 86.5117 6.00834L82.7117 5.47501L80.9783 2.00834C80.9117 1.87501 80.845 1.80834 80.7117 1.74167C80.3783 1.54167 79.9783 1.67501 79.7783 2.00834L78.1117 5.47501L74.3117 6.00834C74.1117 6.00834 73.9783 6.07501 73.9117 6.20834C73.645 6.47501 73.645 6.87501 73.9117 7.14167L76.645 9.80834L75.9783 13.6083C75.9783 13.7417 75.9783 13.875 76.045 14.0083C76.245 14.3417 76.645 14.475 76.9783 14.275L80.3783 12.475L83.7783 14.275C83.845 14.3417 83.9783 14.3417 84.1117 14.3417C84.1783 14.3417 84.1783 14.3417 84.245 14.3417C84.5783 14.275 84.845 13.9417 84.7783 13.5417L84.1117 9.74167L86.845 7.07501C86.9783 7.00834 87.045 6.87501 87.045 6.74167Z" fill="#004600"/></svg>
+                              </div>
+                              <div class="Index_object_testimonials_innerloops_innerdetail_innerboths_title_new">
+                                {{ main_custom_testimonial_list.main_custom_author_text.value }}
+                              </div>
+                            </div>
+                          </div>
+                        {%- endif -%}  
+                      </div>
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}  
+    </div>
+  </div>
+{%- endif -%}   

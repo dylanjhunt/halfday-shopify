@@ -1,0 +1,186 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "review_new_9Arzf8": {
+          "type": "Review_new",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "meta_detail_list_new_jhxfmY": {
+          "type": "Meta_detail_list_new",
+          "settings": {}
+        },
+        "meta_flavors_variety_tabs_ABbWyL": {
+          "type": "Meta_flavors_variety_tabs",
+          "settings": {
+            "main_heading_tab_1": "Single Flavors",
+            "main_heading_tab_2": "Variety Packs"
+          }
+        },
+        "meta_short_description_wpnem4": {
+          "type": "Meta_short_description",
+          "settings": {}
+        },
+        "meta_icon_with_text_list_dmHRzt": {
+          "type": "Meta_icon_with_text_list",
+          "settings": {}
+        },
+        "meta_shipping_save_text_TxMXP9": {
+          "type": "Meta_shipping_save_text",
+          "settings": {
+            "main_detail_text": "Free shipping on Amazon Prime.<br>Subscribe and Save up to 15% off."
+          }
+        },
+        "meta_custom_button_both_3byLTE": {
+          "type": "Meta_custom_button_both",
+          "settings": {
+            "main_button_text_1": "Buy On Amazon",
+            "main_button_text_2": "Find In Store",
+            "main_button_link_2": "shopify://pages/find-in-store"
+          }
+        }
+      },
+      "block_order": [
+        "review_new_9Arzf8",
+        "title",
+        "meta_detail_list_new_jhxfmY",
+        "meta_flavors_variety_tabs_ABbWyL",
+        "meta_short_description_wpnem4",
+        "meta_icon_with_text_list_dmHRzt",
+        "meta_shipping_save_text_TxMXP9",
+        "meta_custom_button_both_3byLTE"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "product_object_ingredient_new_rYVRfY": {
+      "type": "Product-object-Ingredient-new",
+      "settings": {
+        "main_background_color": "#ffffff"
+      }
+    },
+    "index_information_marquee_new_AXxbJB": {
+      "type": "Index-information-marquee-new",
+      "blocks": {
+        "information_ahNmB9": {
+          "type": "information",
+          "settings": {
+            "title": "<p>6g Fiber</p>"
+          }
+        },
+        "information_cFmJnB": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Classic Flavors</p>"
+          }
+        },
+        "information_daQKCV": {
+          "type": "information",
+          "settings": {
+            "title": "<p>3-5g Sugar</p>"
+          }
+        },
+        "information_ikTUER": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Low Calorie</p>"
+          }
+        },
+        "information_LMchP3": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Prebiotics</p>"
+          }
+        },
+        "information_hBBydE": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Good For Your Gut</p>"
+          }
+        }
+      },
+      "block_order": [
+        "information_ahNmB9",
+        "information_cFmJnB",
+        "information_daQKCV",
+        "information_ikTUER",
+        "information_LMchP3",
+        "information_hBBydE"
+      ],
+      "settings": {
+        "main_back_color": "#ff5528",
+        "main_text_color": "#ffffff",
+        "main_icon_color": "#ffe700"
+      }
+    },
+    "product_object_table_list_new_dngLhz": {
+      "type": "Product-object-table-list-new",
+      "settings": {
+        "custom_class": "",
+        "main_background_color": "#ffffff",
+        "left_comparison_table": false
+      }
+    },
+    "product_review_new_CgpxqH": {
+      "type": "Product-review-new",
+      "settings": {
+        "main_background_color": "#ffe700",
+        "main_heading_text": "Taste worth raving about",
+        "main_information_text": "<p>Reviews</p>"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "main_heading_text": "You’ll also like",
+        "main_details_text": "<p>Your escape isn’t over yet. Discover more flavors you know and love.</p>",
+        "products_to_show": 10,
+        "columns_desktop": 5,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_object_ingredient_new_rYVRfY",
+    "index_information_marquee_new_AXxbJB",
+    "product_object_table_list_new_dngLhz",
+    "product_review_new_CgpxqH",
+    "related-products"
+  ]
+}

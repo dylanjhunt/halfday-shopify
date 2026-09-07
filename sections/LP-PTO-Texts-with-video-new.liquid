@@ -1,0 +1,177 @@
+{%- if section.settings.main_heading_text != blank or section.settings.main_details_text != blank or section.settings.main_button_label_text != blank or section.settings.main_common_video != blank or section.settings.main_desktop_image != blank or section.settings.main_mobile_image != blank -%}
+  <div class="LP_PTO_Texts_with_video_main_new" style="background: {{ section.settings.main_background_color }};">
+    <div class="page-width">
+      <div class="LP_PTO_Texts_with_video_inner_new">
+        <div class="LP_PTO_Texts_with_video_sides_new">
+          {%- if section.settings.main_heading_text != blank or section.settings.main_details_text != blank or section.settings.main_button_label_text != blank -%}
+            <div class="LP_PTO_Texts_with_video_sides_mainleft_new">
+              <div class="LP_PTO_Texts_with_video_sides_innerleft_new">
+                {%- if section.settings.main_heading_text != blank -%}
+                  <div class="LP_PTO_Texts_with_video_sides_innerleft_maintitle_new">
+                    <div class="Common_large_title_new LP_PTO_Texts_with_video_sides_innerleft_innertitle_new">
+                      <h1>{{ section.settings.main_heading_text }}</h1>
+                    </div>
+                  </div>
+                {%- endif -%}
+                {%- if section.settings.main_details_text != blank -%}
+                  <div class="LP_PTO_Texts_with_video_sides_innerleft_maininfos_new">
+                    <div class="Common_infos_new LP_PTO_Texts_with_video_sides_innerleft_innerinfos_new">
+                      {{ section.settings.main_details_text }}
+                    </div>
+                  </div>
+                {%- endif -%}  
+                {%- if section.settings.main_button_label_text != blank -%}
+                  {%- if section.settings.main_button_scroll_text != blank or section.settings.main_button_redirect_link != blank -%}
+                    <div class="LP_PTO_Texts_with_video_sides_innerleft_mainbutton_new">
+                      <div class="LP_PTO_Texts_with_video_sides_innerleft_innerbutton_new">
+                        {%- if section.settings.main_button_scroll_text != blank -%}
+                          <a href="{{ section.settings.main_button_scroll_text }}" class="button">
+                        {%- elsif section.settings.main_button_redirect_link != blank -%}
+                          <a href="{{ section.settings.main_button_redirect_link }}" class="button">
+                        {%- endif -%}
+                            {{ section.settings.main_button_label_text }}
+                        {%- if section.settings.main_button_scroll_text != blank -%}
+                          </a>
+                        {%- elsif section.settings.main_button_redirect_link != blank -%}
+                          </a>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+          {%- if section.settings.main_common_video != blank or section.settings.main_desktop_image != blank or section.settings.main_mobile_image != blank -%}
+            <div class="LP_PTO_Texts_with_video_sides_mainright_new">
+              <div class="LP_PTO_Texts_with_video_sides_innerright_new">
+                {%- if section.settings.main_common_video != blank -%}
+                  <div class="LP_PTO_Texts_with_video_sides_innerright_videoimage_new">
+                    {{ section.settings.main_common_video | video_tag: class:'Common_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                    <div class="mute_video_main_new">
+                      <div class="mute_video active">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M28.8333 7.33328C28.3333 6.66662 27.1666 6.49995 26.4999 6.99995L18.4999 13.3333H12.4999C11.4999 13.3333 10.8333 14 10.8333 15V25C10.8333 26 11.4999 26.6666 12.4999 26.6666H18.4999L26.3333 33C26.6666 33.1666 26.9999 33.3333 27.3333 33.3333C28.3333 33.3333 28.9999 32.6666 28.9999 31.6666V8.33328C29.1666 7.99995 28.9999 7.66662 28.8333 7.33328Z" fill="white"/>
+                        </svg>
+                      </div>
+                      <div class="unmute_video">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20.6666 6.83331C20.1666 6.49997 19.3333 6.66664 18.8333 6.99997L10.9999 13.3333H4.99992C3.99992 13.3333 3.33325 14 3.33325 15V25C3.33325 26 3.99992 26.6666 4.99992 26.6666H11.1666L18.9999 33C19.6666 33.5 20.8333 33.5 21.3333 32.6666C21.4999 32.3333 21.6666 32 21.6666 31.6666V8.33331C21.6666 7.66664 21.3333 7.16664 20.6666 6.83331ZM28.4999 15.6666C28.3333 15.5 28.1666 15.3333 28.1666 15.1666C27.4999 14.5 26.4999 14.5 25.8333 15.1666C25.1666 15.8333 25.1666 16.8333 25.8333 17.5C26.3333 18.3333 26.6666 19.1666 26.6666 20C26.6666 21 26.1666 22 25.4999 22.5C24.8333 23.1666 24.6666 24.1666 25.3333 24.8333C25.9999 25.5 26.9999 25.6666 27.6666 25C30.4999 22.6666 30.8333 18.5 28.4999 15.6666ZM33.4999 11.5C33.3333 11.1666 32.9999 11 32.6666 10.6666C31.9999 9.99997 30.9999 9.99997 30.3333 10.6666C29.6666 11.3333 29.6666 12.3333 30.3333 13C34.1666 16.8333 34.1666 23.1666 30.3333 27.1666C30.1666 27.3333 29.8333 27.5 29.6666 27.8333C28.9999 28.5 28.8333 29.5 29.4999 30.1666C30.1666 30.8333 31.1666 31 31.8333 30.3333C37.4999 25.5 38.3333 17 33.4999 11.5Z" fill="white"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                {% else %}  
+                  {%- if section.settings.main_desktop_image != blank and section.settings.main_mobile_image != blank -%}
+                    <div class="LP_PTO_Texts_with_video_sides_innerright_videoimage_new">
+                      {%- if section.settings.main_desktop_image != blank -%}
+                        {{
+                          section.settings.main_desktop_image | 
+                          image_url: width: img.width | 
+                          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                          fetchpriority: 'low', 
+                          class:'Desktop_image_new'
+                        }}
+                      {%- endif -%}
+                      {%- if section.settings.main_mobile_image != blank -%}
+                        {{
+                          section.settings.main_mobile_image | 
+                          image_url: width: img.width | 
+                          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                          fetchpriority: 'low', 
+                          class:'Mobile_image_new'
+                        }}
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                {%- endif -%}
+              </div>
+              {%- if section.settings.main_video_label_text != blank and section.settings.main_video_redirect_link != blank -%}
+                <div class="LP_PTO_Texts_with_video_sides_innerright_button_new">
+                  <a href="{{ section.settings.main_video_redirect_link }}" target="_blank">
+                    {{ section.settings.main_video_label_text }}
+                  </a>
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "LP PTO Texts With Video",
+    "class": "LP_PTO_Texts_with_video_new",
+    "settings": [
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "textarea",
+        "id": "main_heading_text",
+        "label": "Add Main Heading Text",
+        "default": "You should take a half day on us"
+      },
+      {
+        "type": "richtext",
+        "id": "main_details_text",
+        "label": "Add Main Details Text",
+        "default": "<p>Know someone who deserves a break? Halfday is giving 100 people cash to make the most of their unused PTO. Nominate someone to win (or yourself, we'll never tell).</p>"
+      },
+      {
+        "type": "text",
+        "id": "main_button_label_text",
+        "label": "Add Main Button Label Text",
+        "default": "Nominate Here"
+      },
+      {
+        "type": "text",
+        "id": "main_button_scroll_text",
+        "label": "Add Main Button Scroll Text",
+        "info": "For EX: #signup ETC..."
+      },
+      {
+        "type": "url",
+        "id": "main_button_redirect_link",
+        "label": "Add Main Button Redirect Link"
+      },
+      {
+        "type": "video",
+        "id": "main_common_video",
+        "label": "Add Main Common Video"
+      },
+      {
+        "type": "image_picker",
+        "id": "main_desktop_image",
+        "label": "Add Main Desktop Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "main_mobile_image",
+        "label": "Add Main Mobile Image"
+      },
+      {
+        "type": "textarea",
+        "id": "main_video_label_text",
+        "label": "Add Main Video Label Text",
+        "default": "Play<br>Full<br>Video"
+      },
+      {
+        "type": "url",
+        "id": "main_video_redirect_link",
+        "label": "Add Main Video Redirect Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "LP PTO Texts With Video"
+      }
+    ]
+  }
+{% endschema %}

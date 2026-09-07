@@ -1,0 +1,9 @@
+.page-rich-text-main-heading.Common_title_new h2{color:inherit;max-width:906px;margin:auto;}
+.page-rich-text-wrapper-new .cta_rich_text{text-align: center;margin-top: 56px;}
+.page-rich-text-wrapper-new .cta_rich_text .button{background:#FFE700;color:#004600;min-width: 209px;}
+.page-rich-text-wrapper-new .cta_rich_text .button:hover{background: #004600;color:#fff;}
+@media(max-width:749px){
+ .page-rich-text-wrapper-new .page-rich-text-main-heading.Common_title_new h2{letter-spacing: 1.80px;}
+  .page-rich-text-wrapper-new .cta_rich_text{margin-top:40px;}
+  .page-rich-text-wrapper-new .cta_rich_text .button{min-width:100%;}
+}

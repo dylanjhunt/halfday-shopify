@@ -1,0 +1,107 @@
+{% if section.settings.bg_image != blank or section.settings.heading_text != blank or section.settings.information_text != blank %}
+  <div class="Page_image_banner_main Page_image_banner_main_{{ section.id }}">
+    {% if section.settings.bg_image != blank %}
+      <div class="Page_image_banner_main_image small-hide">
+        {{
+          section.settings.bg_image | 
+          image_url: width: img.width | 
+          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+          fetchpriority: 'low'
+        }}
+      </div>
+    {% endif %}
+    {% if section.settings.bg_image_mobile != blank %}
+      <div class="Page_image_banner_main_image medium-hide large-up-hide">
+        {{
+          section.settings.bg_image_mobile | 
+          image_url: width: img.width | 
+          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+          fetchpriority: 'low'
+        }}
+      </div>
+    {% else %}
+      <div class="Page_image_banner_main_image medium-hide large-up-hide">
+        {{
+          section.settings.bg_image | 
+          image_url: width: img.width | 
+          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+          fetchpriority: 'low'
+        }}
+      </div>
+    {% endif %}
+    <div class="page-width">
+      {% if section.settings.heading_text != blank or section.settings.information_text != blank %}
+        <div class="Page_image_banner_inner">
+          {% if section.settings.heading_text != blank %}
+            <div class="Page_image_banner_heading_text Common_large_title_new">
+              <h2>
+                {{ section.settings.heading_text }}
+              </h2>
+            </div>
+          {% endif %}
+          {% if section.settings.information_text != blank %}
+            <div class="Page_image_banner_information_text Common_infos_new">
+              {{ section.settings.information_text }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  .Page_image_banner_main { position: relative; aspect-ratio: 4.5714; }
+  .Page_image_banner_main .page-width { display: flex; flex-direction: column; justify-content: end; height: 100%; }
+  .Page_image_banner_main_image { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
+  .Page_image_banner_main_image img { width: 100%; height: 100% !important; display: block; object-fit: cover; }
+  .Page_image_banner_inner { position: relative; padding: 56px 0 56px; }
+  .Page_image_banner_heading_text h2 { color: #FFE700; }
+  .Page_image_banner_information_text { padding-top: 32px; }
+  .Page_image_banner_information_text p { color: #FFF; }
+
+  @media (max-width: 1439px){
+    .Page_image_banner_heading_text h2 { font-size: 72px; }
+  }
+  
+  @media (max-width: 749px){
+    .Page_image_banner_main { aspect-ratio: 1.32508; }
+    .Page_image_banner_inner { padding: 32px 0; }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Page Image Banner",
+    "class": "Page_image_banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Add Background Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_image_mobile",
+        "label": "Add Background Image - Mobile"
+      },
+      {
+        "type": "text",
+        "id": "heading_text",
+        "label": "Add Heading Text",
+        "default": "FAQs"
+      },
+      {
+        "type": "richtext",
+        "id": "information_text",
+        "label": "Add Information Text",
+        "default": "<p>We're available nationwide!</p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Page Image Banner"
+      }
+    ]
+  }
+{% endschema %}

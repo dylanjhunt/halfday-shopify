@@ -1,0 +1,180 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "page_main_banner_new_kHzhU8": {
+      "type": "Page_main_banner_new",
+      "settings": {
+        "section_color_scheme": "scheme-5",
+        "main_heading": "Our story starts with two best friends...",
+        "banner_image": "shopify://shop_images/LEMON_TEA_87e6411b-983e-482c-a00e-159ee0b3879a.png",
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
+    "page_image_with_text_new_yRRdgy": {
+      "type": "page-image-with-text-new",
+      "settings": {
+        "custom_class": "",
+        "main_background_color": "#ffffff",
+        "left_comparison_table": false,
+        "main_heading": "We were on a mission to create something better.",
+        "description": "<p>When life handed Kayvon Jahanbakhsh a brutal health challenge, he didn't just fight back – he partnered with his best friend Mike Lombardo to revolutionize iced tea. Their story isn't just about a drink; it's about transforming a tough moment into something refreshingly awesome.</p><p>After a three-month hospital stay and 80 pounds lost in a battle with ulcerative colitis, Kayvon emerged with a mission: Create mind-blowing drinks that make your taste buds and your body high-five each other.</p>",
+        "image": "shopify://shop_images/Rectangle_3147_a0f811c6-52b3-49bf-8efd-36847c2e5ab9.png",
+        "image_mobile": "shopify://shop_images/Rectangle_3147_a0f811c6-52b3-49bf-8efd-36847c2e5ab9.png"
+      }
+    },
+    "index_information_marquee_new_qCne4X": {
+      "type": "Index-information-marquee-new",
+      "blocks": {
+        "information_BbzKwf": {
+          "type": "information",
+          "settings": {
+            "title": "<p>6g Fiber</p>"
+          }
+        },
+        "information_H4FpLz": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Classic flavors</p>"
+          }
+        },
+        "information_hjYkxa": {
+          "type": "information",
+          "settings": {
+            "title": "<p>3-5g Sugar</p>"
+          }
+        },
+        "information_KBPKmP": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Low calorie</p>"
+          }
+        },
+        "information_6b3TP6": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Prebiotics</p>"
+          }
+        },
+        "information_6b4gwF": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Good for your gut</p>"
+          }
+        }
+      },
+      "block_order": [
+        "information_BbzKwf",
+        "information_H4FpLz",
+        "information_hjYkxa",
+        "information_KBPKmP",
+        "information_6b3TP6",
+        "information_6b4gwF"
+      ],
+      "settings": {
+        "main_back_color": "#ff5528",
+        "main_text_color": "#ffffff",
+        "main_icon_color": "#ffe700"
+      }
+    },
+    "page_image_with_text_new_kFX3DQ": {
+      "type": "page-image-with-text-new",
+      "settings": {
+        "custom_class": "",
+        "main_background_color": "#ffffff",
+        "left_comparison_table": true,
+        "main_heading": "A new era of iced tea.",
+        "description": "<p>Transforming their kitchen into a flavor lab, Kayvon and Mike cracked the code on iced teas that pack all the punch of their favorite sugary drinks, minus the baggage.</p><p>Now Halfday is shaking up the beverage game, proving that \"healthy\" and \"holy cow, that's delicious\" aren't just allowed to hang out – they're best friends. Just like Kayvon and Mike.</p><p>Welcome to the new era of iced tea, where feeling good and tasting good are finally on the same team.</p>",
+        "image": "shopify://shop_images/Rectangle_3147-1_57daaf61-3303-414a-b312-52904fbdfba3.png",
+        "image_mobile": "shopify://shop_images/Rectangle_3147-1_57daaf61-3303-414a-b312-52904fbdfba3.png"
+      }
+    },
+    "page_product_marquee_mrceLe": {
+      "type": "Page-product-marquee",
+      "blocks": {
+        "product_nRRLna": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/SWEET_TEA.png",
+            "product_link": "shopify://products/sweet-tea"
+          }
+        },
+        "product_LmQBB8": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/LEMON_TEA.png",
+            "product_link": "shopify://products/lemon-tea"
+          }
+        },
+        "product_KRxbcP": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/PEACH_TEA.png",
+            "product_link": "shopify://products/peach-tea"
+          }
+        },
+        "product_QnqXQC": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/GREEN_TEA.png",
+            "product_link": "shopify://products/green-tea"
+          }
+        },
+        "product_ekDmV6": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/RASPBERRY_TEA.png",
+            "product_link": "shopify://products/raspberry-tea"
+          }
+        }
+      },
+      "block_order": [
+        "product_nRRLna",
+        "product_LmQBB8",
+        "product_KRxbcP",
+        "product_QnqXQC",
+        "product_ekDmV6"
+      ],
+      "settings": {
+        "background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 231, 0, 1) 66%)",
+        "heading_text": "Enter Halfday."
+      }
+    },
+    "page_rich_text_new_aDi9RF": {
+      "type": "page_rich_text_new",
+      "settings": {
+        "section_color_scheme": "scheme-3",
+        "main_heading": "We believe better health shouldn't be hard work. Every can of Halfday proves that taking care of yourself doesn’t have to mean giving up the flavors and moments you love.",
+        "btn_url": "https://drinkhalfday.com/pages/why-halfday",
+        "btn_label": "why halfday",
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    }
+  },
+  "order": [
+    "main",
+    "page_main_banner_new_kHzhU8",
+    "page_image_with_text_new_yRRdgy",
+    "index_information_marquee_new_qCne4X",
+    "page_image_with_text_new_kFX3DQ",
+    "page_product_marquee_mrceLe",
+    "page_rich_text_new_aDi9RF"
+  ]
+}

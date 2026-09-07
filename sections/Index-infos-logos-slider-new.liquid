@@ -1,0 +1,157 @@
+{%- if section.blocks.size > 0 -%}
+  <div class="Index_infos_logos_slider_main_new" style="background: {{ section.settings.main_background_color }};">
+    <div class="Index_infos_logos_slider_inner_new Desktop_only_new">
+      {%- if section.blocks.size > 0 -%}
+        <div class="Index_infos_logos_slider_mainloops_new">
+          <div class="Index_infos_logos_slider_innerloops_new">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                {%- for block in section.blocks -%}
+                  {%- if block.settings.main_custom_text != blank -%}
+                    <div class="swiper-slide Index_infos_logos_slider_innerloops_mainboxs_new">
+                      <div class="Index_infos_logos_slider_innerloops_innerboxs_new">
+                        {{ block.settings.main_custom_text }}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+        <div class="Index_infos_logos_slider_mainthumb_new">
+          <div class="Index_infos_logos_slider_innerthumb_new">
+            <div thumbsSlider="" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                {%- for block in section.blocks -%}
+                  {%- if block.settings.main_custom_logo != blank -%}
+                    <div class="swiper-slide Index_infos_logos_slider_innerthumb_mainboxs_new" style="width:{{ block.settings.main_custom_logo_width }};">
+                      <div class="Index_infos_logos_slider_innerthumb_innerboxs_new">
+                        {{
+                          block.settings.main_custom_logo | 
+                          image_url: width: img.width | 
+                          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                          fetchpriority: 'high', 
+                          class: 'Custom_image_new'
+                        }}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="Index_infos_logos_slider_inner_new Mobile_only_new">
+      {%- if section.blocks.size > 0 -%}
+        <div class="Index_infos_logos_slider_mainloops_new">
+          <div class="Index_infos_logos_slider_innerloops_new">
+            <div thumbsSlider="" class="swiper mySwiper_left_product">
+              <div class="swiper-wrapper">
+                {%- for block in section.blocks -%}
+                  {%- if block.settings.main_custom_text != blank -%}
+                    <div class="swiper-slide Index_infos_logos_slider_innerloops_mainboxs_new">
+                      <div class="Index_infos_logos_slider_innerloops_innerboxs_new">
+                        {{ block.settings.main_custom_text }}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+        <div class="Index_infos_logos_slider_mainthumb_new">
+          <div class="Index_infos_logos_slider_innerthumb_new">
+            <div  class="swiper mySwiper2_right_product">
+              <div class="swiper-wrapper">
+                {%- for block in section.blocks -%}
+                  {%- if block.settings.main_custom_logo != blank -%}
+                    <div class="swiper-slide Index_infos_logos_slider_innerthumb_mainboxs_new" style="width:{{ block.settings.main_custom_logo_width }};">
+                      <div class="Index_infos_logos_slider_innerthumb_innerboxs_new">
+                        {{
+                          block.settings.main_custom_logo | 
+                          image_url: width: img.width | 
+                          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                          fetchpriority: 'high', 
+                          class: 'Custom_image_new'
+                        }}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}  
+
+{% schema %}
+  {
+    "name": "Index Infos Logos Slider",
+    "class": "Index_infos_logos_slider_new",
+    "settings": [
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FF5528"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "information",
+        "name": "Information",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "main_custom_text",
+            "label": "Add Main Custom Text",
+            "default": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.”"
+          },
+          {
+            "type": "image_picker",
+            "id": "main_custom_logo",
+            "label": "Add Main Custom Logo"
+          },
+          {
+            "type": "text",
+            "id": "main_custom_logo_width",
+            "label": "Add Main Custom Logo Width"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Index Infos Logos Slider",
+        "blocks": [
+          {
+            "type": "information"
+          },
+          {
+            "type": "information"
+          },
+          {
+            "type": "information"
+          },
+          {
+            "type": "information"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

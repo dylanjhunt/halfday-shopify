@@ -1,0 +1,90 @@
+{%- if section.settings.main_common_video != blank or section.settings.main_desktop_image != blank or section.settings.main_mobile_image != blank or section.settings.main_klaviyo_form != blank -%}
+  <div class="LP_PTO_Signup_template_scroll_new" {% if section.settings.main_scroll_id_text != blank %} id="{{ section.settings.main_scroll_id_text }}"{% endif %}></div>
+  <div class="LP_Hello_fresh_template_main_new LP_PTO_Signup_template_main_new" style="background: {{ section.settings.main_background_color }};">
+    <div class="LP_Hello_fresh_template_inner_new">
+      <div class="LP_Hello_fresh_template_sides_new">
+        {%- if section.settings.main_common_video != blank or section.settings.main_desktop_image != blank or section.settings.main_mobile_image != blank -%}
+          <div class="LP_Hello_fresh_template_sides_mainleft_new">
+            <div class="LP_Hello_fresh_template_sides_innerleft_new">
+              {%- if section.settings.main_common_video != blank -%}
+                <div class="LP_Hello_fresh_template_sides_innerleft_videoimage_new">
+                  {{ section.settings.main_common_video | video_tag: class:'Common_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                </div>
+              {% else %}  
+                {%- if section.settings.main_desktop_image != blank and section.settings.main_mobile_image != blank -%}
+                  <div class="LP_Hello_fresh_template_sides_innerleft_videoimage_new">
+                    {%- if section.settings.main_desktop_image != blank -%}
+                      {{
+                        section.settings.main_desktop_image | 
+                        image_url: width: img.width | 
+                        image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                        fetchpriority: 'high', 
+                        class:'Desktop_image_new'
+                      }}
+                    {%- endif -%}
+                    {%- if section.settings.main_mobile_image != blank -%}
+                      {{
+                        section.settings.main_mobile_image | 
+                        image_url: width: img.width | 
+                        image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                        fetchpriority: 'high', 
+                        class:'Mobile_image_new'
+                      }}
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+        {%- if section.settings.main_klaviyo_form != blank -%}
+          <div class="LP_Hello_fresh_template_sides_mainright_new">
+            <div class="LP_Hello_fresh_template_sides_innerright_new">
+              {{ section.settings.main_klaviyo_form }}
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "LP PTO Signup Template",
+    "class": "LP_PTO_Signup_template_new",
+    "settings": [
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FF5528"
+      },
+      {
+        "type": "text",
+        "id": "main_scroll_id_text",
+        "label": "Add Main Scroll Id Text"
+      },
+      {
+        "type": "video",
+        "id": "main_common_video",
+        "label": "Add Main Common Video"
+      },
+      {
+        "type": "image_picker",
+        "id": "main_desktop_image",
+        "label": "Add Main Desktop Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "main_mobile_image",
+        "label": "Add Main Mobile Image"
+      },
+      {
+        "type": "textarea",
+        "id": "main_klaviyo_form",
+        "label": "Klaviyo Form Code",
+      }
+    ]
+  }
+{% endschema %}

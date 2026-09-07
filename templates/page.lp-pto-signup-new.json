@@ -1,0 +1,48 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "lp_pto_texts_with_video_new_yhyA6Q": {
+      "type": "LP-PTO-Texts-with-video-new",
+      "settings": {
+        "main_background_color": "#ffffff",
+        "main_heading_text": "You should take a half day on us",
+        "main_details_text": "<p>Know someone who deserves a break? Halfday is giving 100 people cash to make the most of their unused PTO. Nominate someone to win (or yourself, we'll never tell).</p>",
+        "main_button_label_text": "Nominate Here",
+        "main_button_scroll_text": "#signup",
+        "main_button_redirect_link": "",
+        "main_common_video": "shopify://files/videos/PTO PSA 1 with Captions (1) (1).mp4",
+        "main_video_label_text": "Watch full video",
+        "main_video_redirect_link": "https://www.instagram.com/p/DIT3_-oOFfA/"
+      }
+    },
+    "main": {
+      "type": "LP-PTO-Signup-template-new",
+      "settings": {
+        "main_background_color": "#ff5528",
+        "main_scroll_id_text": "signup",
+        "main_desktop_image": "shopify://shop_images/PTO-image.jpg",
+        "main_mobile_image": "shopify://shop_images/PTO-image-mobile.jpg",
+        "main_klaviyo_form": "<div class=\"klaviyo-form-W727SZ\"></div>"
+      }
+    },
+    "lp_pto_object_testimonial_new_BmFYLT": {
+      "type": "LP-PTO-object-testimonial-new",
+      "settings": {
+        "main_background_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "lp_pto_texts_with_video_new_yhyA6Q",
+    "main",
+    "lp_pto_object_testimonial_new_BmFYLT"
+  ]
+}

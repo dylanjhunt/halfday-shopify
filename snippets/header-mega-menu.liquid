@@ -1,0 +1,294 @@
+{% comment %}
+  Renders a megamenu for the header.
+
+  Usage:
+  {% render 'header-mega-menu' %}
+{% endcomment %}
+
+{%- liquid
+  unless limit
+    assign limit = section.settings.menu.links.size
+  endunless
+  unless offset
+    assign offset = 0
+  endunless
+-%}
+
+<nav class="header__inline-menu {% if collection.metafields.custom.collection_employee_shop == true or template.name == 'account' or template.name == 'addresses' or template.name == 'order' or template.name == 'orders' %} collection_employee_shop_inline_menu_new {% endif %}">
+  <ul class="list-menu list-menu--inline" role="list">
+    {%- comment %}<locksmith:f4ea>{% endcomment -%}
+      {%- assign locksmith_ab77_forloop__size = 0 %}{%- for link in section.settings.menu.links limit: limit offset: offset -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: section.settings.menu, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_ab77_forloop__size = locksmith_ab77_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_ab77_forloop__index = nil -%}
+    {%- comment %}</locksmith:f4ea>{% endcomment -%}
+    {%- for link in section.settings.menu.links limit: limit offset: offset -%}
+      {%- comment %}<locksmith:6a66>{% endcomment -%}
+        {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: section.settings.menu, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_ab77_forloop__index == nil %}{% assign locksmith_ab77_forloop__index = 1 %}{% assign locksmith_ab77_forloop__index0 = 0 %}{% else %}{% assign locksmith_ab77_forloop__index = locksmith_ab77_forloop__index | plus: 1 %}{% assign locksmith_ab77_forloop__index0 = locksmith_ab77_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_ab77_forloop__index == 1 %}{% assign locksmith_ab77_forloop__first = true %}{% else %}{% assign locksmith_ab77_forloop__first = false %}{% endif %}{% if locksmith_ab77_forloop__index == locksmith_ab77_forloop__size %}{% assign locksmith_ab77_forloop__last = true %}{% else %}{% assign locksmith_ab77_forloop__last = false %}{% endif %}{% assign locksmith_ab77_forloop__rindex = locksmith_ab77_forloop__size | minus: locksmith_ab77_forloop__index | minus: 1 %}{% assign locksmith_ab77_forloop__rindex0 = locksmith_ab77_forloop__size | minus: locksmith_ab77_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+      {%- comment %}</locksmith:6a66>{% endcomment -%}
+      {% assign custom_megamenu = false  %}
+
+      {% assign megamenu_selection = shop.metaobjects.megamenu_selection.values %}
+      {% paginate shop.metaobjects.megamenu_selection.values by 1000 %}
+        {% for megamenu_selection in megamenu_selection %}
+
+          {% assign link_title = link.title | handleize %}
+          {% assign main_menu_title = megamenu_selection.main_menu_title.value | handleize %}
+          
+          {% if main_menu_title == link_title %}
+            {%- for childlink in link.links -%}  
+              {%- comment %}<locksmith:8ce2>{% endcomment -%}
+                {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: childlink, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+              {%- comment %}</locksmith:8ce2>{% endcomment -%}  
+              {% assign childlink_title = childlink.title | handleize %}
+              {% assign inner_menu_title = megamenu_selection.inner_menu_title.value | handleize %}
+              
+              {% if inner_menu_title == childlink_title %}
+                {%- assign custom_megamenu = true -%}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endpaginate %}
+      
+      {%- if link.links != blank or custom_megamenu -%}
+        <li class="{% if custom_megamenu %} custom_mega_menu_top_new custom_mega_menu_top_only_new {% else %} custom_mega_menu_top_new single_menu_top_new {% endif %}">
+          <header-menu>
+            <{% if custom_megamenu %}div{% else %}details{% endif %} id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+              <{% if custom_megamenu %}a{% else %}summary{% endif %}
+                id="HeaderMenu-{{ link.handle }}"
+                class="header__menu-item {% if custom_megamenu %}header__menu-item_main_menu{% endif %} list-menu__item link focus-inset {%- if link.child_active %} header__active-menu-item_new {% endif %}"
+                {% if custom_megamenu %} href="{% if link.url == "#" %}javascript:void(0){% else %}{{ link.url }}{% endif %}" {% endif %}
+              >
+                <span
+                  {%- if link.child_active %}
+                    class=""
+                  {% endif %}
+                >
+                  {{- link.title -}}
+                </span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5.75L7.5 10.25L3 5.75" stroke="#004600" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                </svg>
+              </{% if custom_megamenu %}a{% else %}summary{% endif %}>
+        
+              <div
+                id="MegaMenu-Content-{{ forloop.index }}"
+                class="{% if custom_megamenu %}mega-menu__content{% else %}header__submenu list-menu list-menu--disclosure{% endif %} Header_mega_menu_inner_new color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
+                tabindex="-1"
+              >
+                {% if custom_megamenu %}
+                  <div class="page-width Header_mega_menu_mainleftright_new">
+                    <div class="Header_mega_menu_innerleftright_new">
+                      <div class="Header_mega_menu_mainleft_new">
+                        <div class="Header_mega_menu_innerleft_new">
+                          <ul
+                            class="{% if custom_megamenu %}mega-menu__list{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}{% endif %} Header_mega_menu_innerleft_mainmenus_new"
+                            role="list"
+                          >
+                            {%- comment %}<locksmith:3d9f>{% endcomment -%}
+                              {%- assign locksmith_ef92_forloop__size = 0 %}{%- for childlink in link.links -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: childlink, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_ef92_forloop__size = locksmith_ef92_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_ef92_forloop__index = nil -%}
+                            {%- comment %}</locksmith:3d9f>{% endcomment -%}
+                            {%- for childlink in link.links -%}
+
+                              {%- comment %}<locksmith:be4a>{% endcomment -%}
+                                {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: childlink, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_ef92_forloop__index == nil %}{% assign locksmith_ef92_forloop__index = 1 %}{% assign locksmith_ef92_forloop__index0 = 0 %}{% else %}{% assign locksmith_ef92_forloop__index = locksmith_ef92_forloop__index | plus: 1 %}{% assign locksmith_ef92_forloop__index0 = locksmith_ef92_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_ef92_forloop__index == 1 %}{% assign locksmith_ef92_forloop__first = true %}{% else %}{% assign locksmith_ef92_forloop__first = false %}{% endif %}{% if locksmith_ef92_forloop__index == locksmith_ef92_forloop__size %}{% assign locksmith_ef92_forloop__last = true %}{% else %}{% assign locksmith_ef92_forloop__last = false %}{% endif %}{% assign locksmith_ef92_forloop__rindex = locksmith_ef92_forloop__size | minus: locksmith_ef92_forloop__index | minus: 1 %}{% assign locksmith_ef92_forloop__rindex0 = locksmith_ef92_forloop__size | minus: locksmith_ef92_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+                              {%- comment %}</locksmith:be4a>{% endcomment -%}
+
+                              {% assign megamenu_selection = shop.metaobjects.megamenu_selection.values %}
+                              {% paginate shop.metaobjects.megamenu_selection.values by 1000 %}
+                                {% for megamenu_selection in megamenu_selection %}
+                                  {% assign childlink_title = childlink.title | handleize %}
+                                  {% assign inner_menu_title = megamenu_selection.inner_menu_title.value | handleize %}
+                                  {% assign child_custom_megamenu = false  %}
+                                  {% if inner_menu_title == childlink_title %}
+                                    {%- assign child_custom_megamenu = true -%}
+                                    {% break %}
+                                  {% endif %}
+                                {% endfor %}
+                              {% endpaginate %}
+                                                      
+                              <li>
+                                <a
+                                  id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                                  href="{% if childlink.url == "#" %}javascript:void(0){% else %}{{ childlink.url }}{% endif %}"
+                                  class="mega-menu__link mega-menu__link--level-2 link collection_info_links_new {% if childlink.current %} mega-menu__link--active{% endif %} {% if locksmith_ef92_forloop__first == true %} active {% endif %} {% if locksmith_ef92_forloop__first == true %} first_item_in_loop_new {% endif %}" {% if child_custom_megamenu %} menu_id="item_{{ childlink.title | handleize }}" {% endif %}
+                                  {% if childlink.current %}
+                                    aria-current="page"
+                                  {% endif %}
+                                >
+                                  {{ childlink.title  }}
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.75 4L10.25 8.5L5.75 13" stroke="#004600" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                  </svg>
+                                </a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                          {%- if section.settings.main_megamenu_button_text != blank and section.settings.main_megamenu_button_link != blank -%}
+                            <div class="megamenu_button_new">
+                              <a href="{{ section.settings.main_megamenu_button_link }}" class="button">
+                                {{ section.settings.main_megamenu_button_text }}  
+                              </a>
+                            </div>
+                          {%- endif -%}
+                        </div>
+                      </div>
+                      {%- if shop.metaobjects.megamenu_selection.values -%}
+                        <div class="Header_mega_menu_mainright_new">
+                          <div class="Header_mega_menu_innerright_new">
+                            {% assign megamenu_selection = shop.metaobjects.megamenu_selection.values %}
+                            {% paginate shop.metaobjects.megamenu_selection.values by 1000 %}
+                              {% for megamenu_selection in megamenu_selection %}
+
+                                {% assign link_title = link.title | handleize %}
+                                {% assign main_menu_title = megamenu_selection.main_menu_title.value | handleize %}
+                                
+                                {% if main_menu_title == link_title %}
+                                  {%- comment %}<locksmith:8ed6>{% endcomment -%}
+                                    {%- assign locksmith_c290_forloop__size = 0 %}{%- for childlink in link.links -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: childlink, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_c290_forloop__size = locksmith_c290_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_c290_forloop__index = nil -%}
+                                  {%- comment %}</locksmith:8ed6>{% endcomment -%}
+                                  {%- for childlink in link.links -%}  
+                                    {%- comment %}<locksmith:7f79>{% endcomment -%}
+                                      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: childlink, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_c290_forloop__index == nil %}{% assign locksmith_c290_forloop__index = 1 %}{% assign locksmith_c290_forloop__index0 = 0 %}{% else %}{% assign locksmith_c290_forloop__index = locksmith_c290_forloop__index | plus: 1 %}{% assign locksmith_c290_forloop__index0 = locksmith_c290_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_c290_forloop__index == 1 %}{% assign locksmith_c290_forloop__first = true %}{% else %}{% assign locksmith_c290_forloop__first = false %}{% endif %}{% if locksmith_c290_forloop__index == locksmith_c290_forloop__size %}{% assign locksmith_c290_forloop__last = true %}{% else %}{% assign locksmith_c290_forloop__last = false %}{% endif %}{% assign locksmith_c290_forloop__rindex = locksmith_c290_forloop__size | minus: locksmith_c290_forloop__index | minus: 1 %}{% assign locksmith_c290_forloop__rindex0 = locksmith_c290_forloop__size | minus: locksmith_c290_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+                                    {%- comment %}</locksmith:7f79>{% endcomment -%}  
+                                    {% assign childlink_title = childlink.title | handleize %}
+                                    {% assign inner_menu_title = megamenu_selection.inner_menu_title.value | handleize %}
+                                    
+                                    {% if inner_menu_title == childlink_title %}
+
+                                      <div class="Header_mega_menu_innerright_mainbox_new megamenu_right_collection_Info_new custom_megamenu_inner_new item_{{ childlink.title | handleize }}_display {% if locksmith_c290_forloop__first == true %} first_element_in_loop_new {% endif %}" {% if locksmith_c290_forloop__first == true %} style="display:block;" {% endif %}>
+
+                                        <div class="Header_mega_menu_innerright_title_new">{{ megamenu_selection.megamenu_slider_title.value }}</div>
+                                        
+                                        <div class="Header_mega_menu_innerright_innerbox_new">
+
+                                          <div class="swiper Header_mega_menu_slider">
+                                            <div class="swiper-wrapper">
+                                              <!-- 1 --> 
+                                              {% for megamenu_items in megamenu_selection.megamenu_item_selection.value %}
+                                                {%- if megamenu_items.image_or_video.value != blank -%}
+                                                  <div class="swiper-slide megamenu_right_mainbox_new">
+                                                    {% if megamenu_items.url.value != blank %}
+                                                      <a href="{{ megamenu_items.url.value }}" class="megamenu_right_mainbox_link_new"></a>
+                                                    {% endif %}
+                                                    <div class="megamenu_right_innervideoimage_new">
+                                                      {%- if megamenu_items.image_or_video.value contains "files" -%}
+                                                        <div class="megamenu_right_video_OR_image_new">
+                                                          {{
+                                                            megamenu_items.image_or_video.value | 
+                                                            image_url: width: img.width | 
+                                                            image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                                            fetchpriority: 'low'
+                                                          }}
+                                                        </div>
+                                                      {%- else -%}
+                                                        <div class="megamenu_right_video_OR_image_new">
+                                                          {{ megamenu_items.image_or_video.value | video_tag: image_size: 'master', controls: false, autoplay: true, loop: true }}
+                                                        </div>
+                                                      {%- endif -%}
+                                                    </div>
+                                                    {% if megamenu_items.title.value != blank %}
+                                                      <div class="megamenu_right_title_new">{{ megamenu_items.title.value }}</div>
+                                                    {% endif %}  
+                                                  </div>
+                                                {%- endif -%}
+                                              {% endfor %}
+                                            </div>
+                                            <div class="swiper-button-prev">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                                                <circle cx="27.91" cy="27.9974" r="20.91" fill="#FFE700"/>
+                                                <path d="M28.3503 16.0123L29.9253 17.6748L19.6878 27.9998L29.9253 38.3248L28.3503 39.9873L16.3628 27.9998L28.3503 16.0123Z" fill="#004600"/>
+                                                <path d="M18.0254 26.7749L39.0254 26.7749L39.0254 29.2249L18.0254 29.2249L18.0254 26.7749Z" fill="#004600"/>
+                                              </svg>
+                                            </div>
+                                            <div class="swiper-button-next">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                                                <circle cx="28.09" cy="28.0026" r="20.91" transform="rotate(-180 28.09 28.0026)" fill="#FFE700"/>
+                                                <path d="M27.6497 39.9877L26.0747 38.3252L36.3122 28.0002L26.0747 17.6752L27.6497 16.0127L39.6372 28.0002L27.6497 39.9877Z" fill="#004600"/>
+                                                <path d="M37.9746 29.2251L16.9746 29.2251L16.9746 26.7751L37.9746 26.7752L37.9746 29.2251Z" fill="#004600"/>
+                                              </svg>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    {% endif %}
+                                  {% endfor %}
+                                {% endif %}
+                              {% endfor %}
+                            {% endpaginate %}
+                            
+                          </div>
+                        </div>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {% else %}
+                  <ul
+                    class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
+                    role="list"
+                  >
+                    {%- for childlink in link.links -%}
+                      {%- comment %}<locksmith:d17a>{% endcomment -%}
+                        {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: childlink, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                      {%- comment %}</locksmith:d17a>{% endcomment -%}
+                      <li>
+                        <a
+                          id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                          href="{{ childlink.url }}"
+                          class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
+                          {% if childlink.current %}
+                            aria-current="page"
+                          {% endif %}
+                        >
+                          {{ childlink.title | escape }}
+                        </a>
+                        {%- if childlink.links != blank -%}
+                          <ul class="list-unstyled" role="list">
+                            {%- for grandchildlink in childlink.links -%}
+                              {%- comment %}<locksmith:3529>{% endcomment -%}
+                                {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: grandchildlink, subject_parent: childlink, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                              {%- comment %}</locksmith:3529>{% endcomment -%}
+                              <li>
+                                <a
+                                  id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
+                                  href="{{ grandchildlink.url }}"
+                                  class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
+                                  {% if grandchildlink.current %}
+                                    aria-current="page"
+                                  {% endif %}
+                                >
+                                  {{ grandchildlink.title | escape }}
+                                </a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {% endif %}
+              </div>
+            </{% if custom_megamenu %}div{% else %}details{% endif %}>
+          </header-menu>
+        </li>
+      {%- else -%}
+        <li>
+          <a
+            id="HeaderMenu-{{ link.handle }}"
+            href="{{ link.url }}"
+            class="header__menu-item list-menu__item link link--text focus-inset"
+            {% if link.current %}
+              aria-current="page"
+            {% endif %}
+          >
+            <span
+              {%- if link.current %}
+                class=""
+              {% endif %}
+            >
+              {{- link.title | escape -}}
+            </span>
+          </a>
+        </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</nav>

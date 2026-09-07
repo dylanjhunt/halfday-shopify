@@ -1,0 +1,42 @@
+{{ "sticky-addtocart-button.css" | asset_url | stylesheet_tag }}
+<div class="sticky-addtocart-button">
+  <div class="page-width">
+    <div class="main-grid">
+      <div class="sticky_addtocart_left_new">
+        <div class="sticky_addtocart_img_new">
+          <img src="{% if product.metafields.custom.product_stitcher_image != blank %}{{ product.metafields.custom.product_stitcher_image.value | img_url:'master' }}{% else %}{{ product.featured_image | img_url:'master' }}{% endif %}" alt="" width="" height="" />
+        </div>
+        <div class="sticky_addtocart_title_new">
+          <h2>{{ product.title }}</h2>
+        </div>
+      </div>
+      <div class="sticky_addtocart_right_new">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'Meta_custom_button_both' -%}
+              {%- if product.metafields.my_fields.amazon_pdp_url != blank or block.settings.main_button_link_2 != blank -%}
+                {%- if block.settings.main_button_text_1 != blank and product.metafields.my_fields.amazon_pdp_url != blank -%}
+                  <div class="Meta_custom_button_both_mainbutton_new">
+                    <div class="Meta_custom_button_both_innerbutton_new">
+                      <a href="{{ product.metafields.my_fields.amazon_pdp_url }}" class="button" style="background: {{ product.metafields.custom.product_secondary_color }}; color: {{ product.metafields.custom.product_announcement_text_color }};" target="_blank">
+                        {{ block.settings.main_button_text_1 }}
+                      </a>
+                    </div>
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.main_button_text_2 != blank and block.settings.main_button_link_2 != blank -%}
+                  <div class="Meta_custom_button_both_mainredirect_new">
+                    <div class="Meta_custom_button_both_innerredirect_new">
+                      <a href="{{ block.settings.main_button_link_2 }}" class="button button_border_new">
+                        {{ block.settings.main_button_text_2 }}
+                      </a>
+                    </div>
+                  </div>
+                {%- endif -%}
+              {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>

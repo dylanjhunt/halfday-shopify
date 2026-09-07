@@ -1,0 +1,273 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+
+<div class="register_main_section"> 
+  <div class="register_main_section_sides">
+    {% if section.settings.image != blank %}
+      <div class="register_main_section_leftmain" style="background-color: {{ section.settings.image_bg_color }}">
+        <div class="register_main_section_leftinner">
+          <div class="register_main_section_main_image small-hide">
+            {{
+              section.settings.image | 
+              image_url: width: img.width | 
+              image_tag: widths: '200, 300, 400, 500, 560,750', 
+              fetchpriority: 'high'
+            }}
+          </div>
+          {% if section.settings.image_mobile != blank %}
+            <div class="register_main_section_main_image large-up-hide medium-hide">
+              {{
+                section.settings.image_mobile | 
+                image_url: width: img.width | 
+                image_tag: widths: '200, 300, 400, 500, 560,750', 
+                fetchpriority: 'high'
+              }}
+            </div>
+          {% else %}
+            <div class="register_main_section_main_image large-up-hide medium-hide">
+              {{
+                section.settings.image | 
+                image_url: width: img.width | 
+                image_tag: widths: '200, 300, 400, 500, 560,750', 
+                fetchpriority: 'high'
+              }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+    <div class="register_main_section_rightmain">
+      <div class="register_main_section_rightinner">
+        <div class="customer register">
+          <div class="register-title Common_title_new">
+            <h2>
+              {{ 'customer.register.title' | t }}
+            </h2>
+          </div>
+          <div class="register-sub-title Common_infos_new">
+            {{ 'customer.register.sub_title_html' | t }}
+          </div>
+          {%- form 'create_customer', novalidate: 'novalidate' -%}
+            {%- if form.errors -%}
+              <h2 class="form__message" tabindex="-1" autofocus>
+                <span class="svg-wrapper">
+                  {{- 'icon-error.svg' | inline_asset_content -}}
+                </span>
+                {{ 'templates.contact.form.error_heading' | t }}
+              </h2>
+              <ul>
+                {%- for field in form.errors -%}
+                  <li>
+                    {%- if field == 'form' -%}
+                      {{ form.errors.messages[field] }}
+                    {%- else -%}
+                      <a href="#RegisterForm-{{ field }}">
+                        {{ form.errors.translated_fields[field] | capitalize }}
+                        {{ form.errors.messages[field] }}
+                      </a>
+                    {%- endif -%}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+            <div class="field">
+              <input
+                type="text"
+                name="customer[first_name]"
+                id="RegisterForm-FirstName"
+                {% if form.first_name %}
+                  value="{{ form.first_name }}"
+                {% endif %}
+                autocomplete="given-name"
+                placeholder="{{ 'customer.register.first_name' | t }}"
+              >
+              <label for="RegisterForm-FirstName">
+                {{ 'customer.register.first_name' | t }}
+              </label>
+            </div>
+            <div class="field">
+              <input
+                type="text"
+                name="customer[last_name]"
+                id="RegisterForm-LastName"
+                {% if form.last_name %}
+                  value="{{ form.last_name }}"
+                {% endif %}
+                autocomplete="family-name"
+                placeholder="{{ 'customer.register.last_name' | t }}"
+              >
+              <label for="RegisterForm-LastName">
+                {{ 'customer.register.last_name' | t }}
+              </label>
+            </div>
+            <div class="field">
+              <input
+                type="email"
+                name="customer[email]"
+                id="RegisterForm-email"
+                {% if form.email %}
+                  value="{{ form.email }}"
+                {% endif %}
+                spellcheck="false"
+                autocapitalize="off"
+                autocomplete="email"
+                aria-required="true"
+                {% if form.errors contains 'email' %}
+                  aria-invalid="true"
+                  aria-describedby="RegisterForm-email-error"
+                {% endif %}
+                placeholder="{{ 'customer.register.email' | t }}"
+              >
+              <label for="RegisterForm-email">
+                {{ 'customer.register.email' | t }}
+              </label>
+            </div>
+            {%- if form.errors contains 'email' -%}
+              <span id="RegisterForm-email-error" class="form__message">
+                <span class="svg-wrapper">
+                  {{- 'icon-error.svg' | inline_asset_content -}}
+                </span>
+                {{ form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email }}.
+              </span>
+            {%- endif -%}
+            <div class="field password_container">
+              <input
+                type="password"
+                name="customer[password]"
+                id="RegisterForm-password"
+                aria-required="true"
+                {% if form.errors contains 'password' %}
+                  aria-invalid="true"
+                  aria-describedby="RegisterForm-password-error"
+                {% endif %}
+                placeholder="{{ 'customer.register.password' | t }}"
+              >
+              <div id="toggle-password">
+ <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="show_eye">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 12.3471C1 12.3471 10.5206 -1.93389 22.592 12.3471C22.592 12.3471 12.8446 26.5147 1 12.3471ZM11.7958 8.66351C13.836 8.66351 15.451 10.307 15.451 12.3187C15.451 14.3589 13.8359 15.9739 11.7958 15.9739C9.784 15.9739 8.1406 14.3588 8.1406 12.3187C8.1406 10.3069 9.78404 8.66351 11.7958 8.66351Z" fill="#004600"></path>
+</svg>
+ <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="hide_eye">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 12.3471C1 12.3471 10.5206 -1.93388 22.592 12.3471C22.592 12.3471 12.8446 26.5147 1 12.3471ZM11.7958 8.66352C13.836 8.66352 15.451 10.307 15.451 12.3187C15.451 14.3589 13.8359 15.9739 11.7958 15.9739C9.784 15.9739 8.1406 14.3588 8.1406 12.3187C8.1406 10.3069 9.78404 8.66352 11.7958 8.66352Z" fill="#004600"></path>
+<path d="M20.2364 20.9864C20.1379 20.9866 20.0404 20.9672 19.9494 20.9295C19.8584 20.8918 19.7758 20.8364 19.7063 20.7666L3.20627 4.26658C3.07155 4.12478 2.99756 3.93597 3.00006 3.7404C3.00257 3.54483 3.08137 3.35797 3.21967 3.21967C3.35797 3.08137 3.54483 3.00257 3.7404 3.00006C3.93597 2.99756 4.12478 3.07155 4.26658 3.20627L20.7666 19.7063C20.8714 19.8112 20.9428 19.9448 20.9717 20.0902C21.0006 20.2356 20.9857 20.3864 20.929 20.5234C20.8723 20.6604 20.7762 20.7775 20.6529 20.8599C20.5296 20.9423 20.3847 20.9864 20.2364 20.9864Z" fill="#004600"></path>
+</svg>
+  </div>
+              <label for="RegisterForm-password">
+                {{ 'customer.register.password' | t }}
+              </label>
+              
+            </div>
+            {%- if form.errors contains 'password' -%}
+              <span id="RegisterForm-password-error" class="form__message">
+                <span class="svg-wrapper">
+                  {{- 'icon-error.svg' | inline_asset_content -}}
+                </span>
+                {{ form.errors.translated_fields.password | capitalize }}
+                {{ form.errors.messages.password }}.
+              </span>
+            {%- endif -%}
+            <button class="button">
+              {{ 'customer.register.submit' | t }}
+            </button>
+          {%- endform -%}
+        </div>
+        {% if section.settings.bottom_text != blank %}
+          <div class="register_main_section_bottom_text">
+            {{ section.settings.bottom_text }}
+          </div>
+        {% endif %}
+        <div class="register_main_section_login_link_container">
+          <p>
+            Already a member? 
+            <a href="/collections/employee-shop">
+              {{ 'customer.login_page.sign_in' | t }}
+            </a>
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .register_main_section_sides { display: flex; }
+  .register_main_section_leftmain { width: 50%; padding: 80px 78px; }
+  .register_main_section_rightmain { width: 50%; padding: 40px 100px; }
+  .register_main_section_leftinner { height: 100%; }
+  .register_main_section_main_image { width: 100%; height: 100%; }
+  .register_main_section_main_image img { width: 100%; height: 100% !important; display: block; object-fit: cover; }
+  .register_main_section_rightinner { height: 100%; display: flex; flex-direction: column; justify-content: center; }
+  .register_main_section_bottom_text { padding-top: 16px; }
+  .register_main_section_bottom_text p { margin: 0; text-align: center; color: #004600; font-family: var(--font-museo-sans-family); font-size: 14px; font-weight: 600; line-height: 130%; letter-spacing: 0.28px;}
+  .register_main_section_bottom_text a { color: #004600; }
+  .register_main_section_login_link_container { padding-top: 32px; }
+  .register_main_section_login_link_container p { margin: 0; text-align: center; color: #004600; font-family: var(--font-museo-slab-family); font-size: 14px; font-weight: 800; line-height: 135%; letter-spacing: 0.28px; text-transform: uppercase;}
+  .register_main_section_login_link_container a { color: #004600; }
+  
+  .register_main_section .register { padding: 0 !important; max-width: 520px !important; }
+  .register_main_section .register-sub-title { padding-top: 32px; }
+  .register_main_section .register-sub-title p:not(:first-child) { margin-top: 8px; }
+  .register_main_section .customer form { margin: 32px 32px 0;}
+  .register_main_section .customer form .field { margin: 0 0 8px 0; }
+  .register_main_section .customer form .field:before, .register_main_section .customer form .field:after { display: none; }
+  .register_main_section .customer form input { height: 48px; padding: 12px 20px; border-radius: 99px; border: 2px solid #004600; margin: 0; }
+  .register_main_section .customer form input:focus, .register_main_section .customer .field input:not(:placeholder-shown) { margin: 0; padding: 12px 20px; }
+  .register_main_section .customer form label { display: none; }
+  .register_main_section .customer form input::placeholder { opacity: 1; }
+  .register_main_section .customer form input, .register_main_section .customer form input::placeholder { font-family: var(--font-museo-slab-family) !important; color: #004600; font-size: 16px; font-weight: 800; line-height: 135%; letter-spacing: 0.32px; text-transform: uppercase;}
+  .register_main_section .customer form .button {  width: 100%; margin: 0; font-family: var(--font-museo-slab-family); border-radius: 99px; color: #fff; text-align: center; font-size: 16px; line-height: 22px; letter-spacing: .32px; text-transform: uppercase; padding: 13px; display: inline-block; min-height: initial; font-weight: 800; }
+  .register_main_section .customer form .form__message { margin-bottom: 20px; }
+  
+  @media (min-width: 990px) and (max-width: 1439px) {
+    .register_main_section_leftmain { padding: 40px; }
+    .register_main_section_rightmain { padding: 40px; }
+    .register_main_section .customer form .button { font-size: 12px; padding: 15px; min-height: 45px; }
+  }
+
+  @media (max-width: 989px){
+    .register_main_section_rightmain { padding: 30px 20px; }
+    .register_main_section_leftmain { padding: 30px; }
+    .register_main_section .register-sub-title p { font-size: 18px; line-height: 120%; }
+    .register_main_section .customer form { margin: 32px 0 0; }
+  }
+
+  @media (max-width: 749px){
+    .register_main_section_sides { flex-direction: column-reverse; }
+    .register_main_section_rightmain { width: 100%; padding: 40px 20px 56px; }
+    .register_main_section_leftmain { width: 100%; padding: 41.67px 40.62px 41px; }
+    .register_main_section_main_image { aspect-ratio: 0.8813; }
+  }
+  
+</style>
+
+
+{% schema %}
+{
+  "name": "t:sections.main-register.name",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Add Main Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Add Main Image - Mobile"
+    },
+    {
+      "type": "color",
+      "id": "image_bg_color",
+      "label": "Add Image Background Color",
+      "default": "#FF5528"
+    },
+    {
+      "type": "richtext",
+      "id": "bottom_text",
+      "label": "Add Bottom Text",
+      "default": "<p>If you don't receive an email within 24 hours, please reach out to jessica@drinkhalfday.com.</p>"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,217 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "page_image_banner_cBCdV8": {
+      "type": "Page-image-banner",
+      "settings": {
+        "bg_image": "shopify://shop_images/Rectangle_3166_474d6d7a-05f5-462d-b43d-3b4cf8dff283.png",
+        "bg_image_mobile": "shopify://shop_images/Rectangle_1_396ed252-7799-4692-a984-9f921024632a.png",
+        "heading_text": "FAQ",
+        "information_text": ""
+      }
+    },
+    "faq": {
+      "type": "faq_section_new",
+      "blocks": {
+        "information_NYnLpw": {
+          "type": "information",
+          "settings": {
+            "faq_category": "General",
+            "title": "What is halfday?",
+            "infos": "<p>Halfday is a new era iced tea. We've kept the classic iced tea taste you know and love, and recreated it with modern gut-healthy ingredients.</p>"
+          }
+        },
+        "information_9kE7mF": {
+          "type": "information",
+          "settings": {
+            "faq_category": "General",
+            "title": "Where can I find Halfday in stores?",
+            "infos": "<p>Halfday can be purchased directly from our website, but if you feel like heading outside (we recommend it) use our store locator to find a retailer near you. Still no luck? Send us an email at <a href=\"mailto:hey@drinkhalfday.com\" title=\"mailto:hey@drinkhalfday.com\">hey@drinkhalfday.com</a> and we'll help you out. </p>"
+          }
+        },
+        "information_rEHN6d": {
+          "type": "information",
+          "settings": {
+            "faq_category": "General",
+            "title": "Can I contact Halfday for support?",
+            "infos": "<p>You sure can, and we'd love to help you out. Send us an email to <a href=\"mailto:hey@drinkhalfday.com\" title=\"mailto:hey@drinkhalfday.com\">hey@drinkhalfday.com</a> and someone from our team will be in touch. </p>"
+          }
+        },
+        "information_HDAR7T": {
+          "type": "information",
+          "settings": {
+            "faq_category": "General",
+            "title": "Is your packaging recylcable?",
+            "infos": "<p>All of our packaging is 100% recyclable.</p>"
+          }
+        },
+        "information_YV3kdK": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Products",
+            "title": "What are prebiotics?",
+            "infos": "<p>Put simply, prebiotics are food for probiotics! And probiotics are live bacteria that naturally live in your body. (Notice the PRE- vs PRO- prefix. There's a difference!) Probiotics are 'good bacteria' that are important for a healthy gut, and in turn, overall health. So it's important to feed them what they like. And they LOVE prebiotics, like the fiber in Halfday.</p>"
+          }
+        },
+        "information_e78qDm": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Products",
+            "title": "Why is there prebiotic fiber in Halfday?",
+            "infos": "<p>Great question! Halfday was started because of our cofounder Kayvon's journey with ulcerative colitis. You can learn about that on the Our Story section of our website. Also, did you know that on average, Americans get less than a third of their daily recommended intake of fiber. This nutrient is important to digestive health and we're on a mission to make it easier for you to consume fiber in fun and delicious ways, like iced tea!</p>"
+          }
+        },
+        "information_HahGcR": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Products",
+            "title": "What types of prebiotic fiber are in Halfday?",
+            "infos": "<p>Halfday has created the GOODDAY Prebiotic Blend, which is a combination of 3 different, high-quality prebiotic sources. It consists of Cassava Root Fiber, Organic Agave Inulin, and Fructan Fiber. We believe that 3 fiber sources are better than one to help keep your gut feeling great.</p><p><strong>Organic Agave Inulin: </strong>A natural superfood that feeds the good bacteria in your gut, helping with digestion and overall wellness.</p><p><strong>Cassava Root Fiber:</strong> Fiber that keeps things moving and helps you feel full longer.</p><p><strong>Fructan Fiber: </strong>A prebiotic that supports gut balance and nutrient absorption.</p>"
+          }
+        },
+        "information_BXBdJP": {
+          "type": "information",
+          "disabled": true,
+          "settings": {
+            "faq_category": "Products",
+            "title": "Is there caffeine in Halfday?",
+            "infos": "<p>-------</p>"
+          }
+        },
+        "information_Qyq8r3": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Products",
+            "title": "How is Halfday sweetened?",
+            "infos": "<p>Halfday is sweetened by using a blend of fruit juices, organic raw cane sugar and a mild form of stevia. All of which combine to create the perfect classic iced tea taste. </p>"
+          }
+        },
+        "information_gwAAaq": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Products",
+            "title": "How much sugar is in Halfday?",
+            "infos": "<p>We only use 3-5g of sugar in each can of Halfday, but they taste like the classic iced teas that you know and love. </p>"
+          }
+        },
+        "information_W8ncbB": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Products",
+            "title": "Is Halfday Kosher?",
+            "infos": "<p>Yes, Halfday is OU Kosher certified. Huzzah!</p>"
+          }
+        },
+        "information_3fCtCq": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Products",
+            "title": "Can I drink while pregnant or breastfeeding?",
+            "infos": "<p>It's always a good idea to check in with your healthcare provider before introducing something new to your diet while pregnant or breastfeeding.</p>"
+          }
+        },
+        "information_r7DxBh": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Products",
+            "title": "Can children consume Halfday?",
+            "infos": "<p>The American Academy of Pediatrics reccomends that children under 12 avoid caffeine altogether, while those aged 12-18 should limit their intake to 100mg per day. Halfday has a small amount of caffeine in each bottle, that is naturally occuring in the tea leaves. Depending on the flavor, Halfday contains between 25-50mg of caffiene. You may find the exact amounts of caffeine under the question \"Is there caffeine in Halfday\" </p>"
+          }
+        },
+        "information_m3zLyP": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Products",
+            "title": "Does Halfday need to be refrigerated?",
+            "infos": "<p>Nope! It's shelf stable but for best taste, we highly recommend you chill it before sipping....or chugging.</p>"
+          }
+        },
+        "information_Baqrkb": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Orders",
+            "title": "Where do you ship to?",
+            "infos": "<p>We are shipping our new era iced teas all throughout the United States. We haven't gotten our passport yet, but when we do go international we'll be sure to let you know. </p>"
+          }
+        },
+        "information_U9bCa6": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Orders",
+            "title": "How long does it take to ship?",
+            "infos": "<p>Order processing and shipping times vary depending on your loaction and selected shipping method. In most cases, standard shipping is typically 3-5 business days. </p>"
+          }
+        },
+        "information_DmhWUU": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Orders",
+            "title": "Can you deliver to PO Boxes or AFO/FPO addresses?",
+            "infos": "<p>There are limitations, which prevent us from shipping certain products to some geographical locations in the U.S. The locations include U.S. territories, protectorates, P.O. Boxes, military installations (APO/FPO addresses), and diplomatic posts (DPO addresses). </p>"
+          }
+        },
+        "information_gDjncm": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Company",
+            "title": "How can I stock Halfday in my store?",
+            "infos": "<p>We're so glad you asked. Send us an email to <a href=\"mailto:orders@drinkhalfday.com\" title=\"mailto:orders@drinkhalfday.com\">orders@drinkhalfday.com </a>and someone from our team will reach out to get you set up. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "information_NYnLpw",
+        "information_9kE7mF",
+        "information_rEHN6d",
+        "information_HDAR7T",
+        "information_YV3kdK",
+        "information_e78qDm",
+        "information_HahGcR",
+        "information_BXBdJP",
+        "information_Qyq8r3",
+        "information_gwAAaq",
+        "information_W8ncbB",
+        "information_3fCtCq",
+        "information_r7DxBh",
+        "information_m3zLyP",
+        "information_Baqrkb",
+        "information_U9bCa6",
+        "information_DmhWUU",
+        "information_gDjncm"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "faq_main_title": "",
+        "left_panel_title": "",
+        "left_panel_bottomcontent": "",
+        "padding_top": 56,
+        "padding_bottom": 96,
+        "faq_category_1": "General",
+        "faq_category_2": "Products",
+        "faq_category_3": "Orders",
+        "faq_category_4": "Company"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "page_image_banner_cBCdV8",
+    "faq"
+  ]
+}

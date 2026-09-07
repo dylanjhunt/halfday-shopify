@@ -1,0 +1,234 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.image_shape == 'blob' %}
+  {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{{ 'quick-add.css' | asset_url | stylesheet_tag }}
+{%- unless section.settings.quick_add == 'none' -%}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endunless -%}
+
+{%- if section.settings.quick_add == 'standard' -%}
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- if section.settings.quick_add == 'bulk' -%}
+  <script src="{{ 'quick-add-bulk.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'quick-order-list.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- if section.settings.main_collection_select != blank -%}
+  <div class="Index_featured_collection_main_new" style="background: {{ section.settings.main_background_color }};">
+    <div class="Index_featured_collection_inner_new">
+      {%- if section.settings.main_heading_text != blank or section.settings.main_details_text != blank -%}
+        <div class="Index_featured_collection_mainsides_new">
+          <div class="page-width">
+            <div class="Index_featured_collection_innersides_new">
+              {%- if section.settings.main_heading_text != blank -%}
+                <div class="Index_featured_collection_innersides_maintitle_new">
+                  <div class="Common_title_new Index_featured_collection_innersides_innertitle_new">
+                    <h2>{{ section.settings.main_heading_text }}</h2>
+                  </div>
+                </div>
+              {%- endif -%}
+              {%- if section.settings.main_details_text != blank -%}
+                <div class="Index_featured_collection_innersides_maininfos_new">
+                  <div class="Common_infos_new Index_featured_collection_innersides_innerinfos_new">
+                    {{ section.settings.main_details_text }}
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if section.settings.main_collection_select != blank -%}
+        <div class="Index_featured_collection_mainloops_new">
+          <div class="Index_featured_collection_innerloops_new">
+            <div class="swiper Index_featured_collection_slider">
+              <div class="swiper-wrapper">
+                {%- for product in section.settings.main_collection_select.products limit: section.settings.main_products_to_show -%}
+                  {%- comment %}<locksmith:e51f>{% endcomment -%}
+                    {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: section.settings.main_collection_select, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                  {%- comment %}</locksmith:e51f>{% endcomment -%}
+                  <div class="swiper-slide Product_grid_item_main_new">
+                    {% render 'card-product',
+                      card_product: product,
+                      media_aspect_ratio: section.settings.image_ratio,
+                      image_shape: section.settings.image_shape,
+                      show_secondary_image: section.settings.show_secondary_image,
+                      show_vendor: section.settings.show_vendor,
+                      show_rating: section.settings.show_rating,
+                      section_id: section.id,
+                      quick_add: section.settings.quick_add
+                    %}
+                  </div>
+                {%- endfor -%}
+              </div>
+              <div class="swiper-button-prev"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="27.91" cy="27.9974" r="20.91" fill="#FFE700"/><path d="M28.3501 16.0124L29.9251 17.6749L19.6875 27.9999L29.925 38.3249L28.35 39.9874L16.3625 27.9999L28.3501 16.0124Z" fill="#004600"/><path d="M18.0249 26.7749L39.0249 26.7749L39.0249 29.2249L18.0249 29.2249L18.0249 26.7749Z" fill="#004600"/></svg></div>
+              <div class="swiper-button-next"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="28.09" cy="28.0026" r="20.91" transform="rotate(-180 28.09 28.0026)" fill="#FFE700"/><path d="M27.6499 39.9877L26.0749 38.3252L36.3124 28.0002L26.075 17.6752L27.65 16.0127L39.6374 28.0002L27.6499 39.9877Z" fill="#004600"/><path d="M37.9751 29.2251L16.9751 29.2251L16.9751 26.7751L37.9751 26.7752L37.9751 29.2251Z" fill="#004600"/></svg></div>
+            </div>
+          </div>  
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}  
+
+{% schema %}
+  {
+    "name": "Index Featured Collection",
+    "class": "Index_featured_collection_new",
+    "settings": [
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "textarea",
+        "id": "main_heading_text",
+        "label": "Add Main Heading Text",
+        "default": "Go with your gut"
+      },
+      {
+        "type": "richtext",
+        "id": "main_details_text",
+        "label": "Add Main Details Text",
+        "default": "<p>Find your favorites. Or try a new one. You write the rules.</p>"
+      },
+      {
+        "type": "collection",
+        "id": "main_collection_select",
+        "label": "Add Main Collection Select"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.featured-collection.settings.header.content"
+      },
+      {
+        "type": "range",
+        "id": "main_products_to_show",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "default": 11,
+        "label": "Select Main Products To Show"
+      },
+      {
+        "type": "select",
+        "id": "image_ratio",
+        "options": [
+          {
+            "value": "adapt",
+            "label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
+          },
+          {
+            "value": "portrait",
+            "label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
+          },
+          {
+            "value": "square",
+            "label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
+          }
+        ],
+        "default": "adapt",
+        "label": "t:sections.featured-collection.settings.image_ratio.label"
+      },
+      {
+        "type": "select",
+        "id": "image_shape",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:sections.all.image_shape.options__1.label"
+          },
+          {
+            "value": "arch",
+            "label": "t:sections.all.image_shape.options__2.label"
+          },
+          {
+            "value": "blob",
+            "label": "t:sections.all.image_shape.options__3.label"
+          },
+          {
+            "value": "chevronleft",
+            "label": "t:sections.all.image_shape.options__4.label"
+          },
+          {
+            "value": "chevronright",
+            "label": "t:sections.all.image_shape.options__5.label"
+          },
+          {
+            "value": "diamond",
+            "label": "t:sections.all.image_shape.options__6.label"
+          },
+          {
+            "value": "parallelogram",
+            "label": "t:sections.all.image_shape.options__7.label"
+          },
+          {
+            "value": "round",
+            "label": "t:sections.all.image_shape.options__8.label"
+          }
+        ],
+        "default": "default",
+        "label": "t:sections.all.image_shape.label",
+        "info": "t:sections.all.image_shape.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_secondary_image",
+        "label": "t:sections.featured-collection.settings.show_secondary_image.label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "t:sections.featured-collection.settings.show_vendor.label",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_rating",
+        "label": "t:sections.featured-collection.settings.show_rating.label",
+        "default": false,
+        "info": "t:sections.featured-collection.settings.show_rating.info"
+      },
+      {
+        "type": "select",
+        "id": "quick_add",
+        "default": "none",
+        "label": "t:sections.main-collection-product-grid.settings.quick_add.label",
+        "info": "t:sections.main-collection-product-grid.settings.quick_add.info",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_1"
+          },
+          {
+            "value": "standard",
+            "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_2"
+          },
+          {
+            "value": "bulk",
+            "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Index Featured Collection"
+      }
+    ]
+  }
+{% endschema %}

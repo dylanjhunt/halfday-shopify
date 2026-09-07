@@ -1,0 +1,31 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "LP-Hello-fresh-template-new",
+      "settings": {
+        "main_background_color": "#ff5528",
+        "main_desktop_image": "shopify://shop_images/Rectangle_3147-min.jpg",
+        "main_mobile_image": "shopify://shop_images/Rectangle_3147-min.jpg",
+        "main_heading_text": "Drink in the new look all year long.",
+        "main_details_text": "<p>The only thing better than our new vibe? Entering to win a full year of free Halfdays.</p>",
+        "main_klaviyo_form": "<div class=\"klaviyo-form-Xc2KrW\"></div>",
+        "main_information_text": "<p>NO PURCHASE NECESSARY. Offer ends 3/31/25 at 11:59pm ET. Limit one entry per person per household. Must be 18 years or older to enter. Offer limited to USA. Message and data rates may apply.</p>",
+        "main_question_text": "Need a Halfday right away?",
+        "main_button_text": "Find the local hookups",
+        "main_button_link": "shopify://pages/find-in-store"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

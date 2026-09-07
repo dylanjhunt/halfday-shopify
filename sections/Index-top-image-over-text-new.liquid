@@ -1,0 +1,152 @@
+{%- if section.blocks.size > 0 -%}
+  <div class="Index_top_image_over_text_main_new" style="background: {{ section.settings.main_background_color }};">
+    <div class="Index_top_image_over_text_inner_new">
+      <div class="Index_top_image_over_text_loops_new">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.main_common_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank or block.settings.main_heading_text != blank or block.settings.main_details_text != blank or block.settings.main_button_link != blank -%}
+            <div class="Index_top_image_over_text_loops_mainboxs_new">
+              <div class="Index_top_image_over_text_loops_innerboxs_new">
+                {%- if block.settings.main_common_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank -%}
+                  <div class="Index_top_image_over_text_loops_innerboxs_mainstatic_new">
+                    <div class="Index_top_image_over_text_loops_innerboxs_innerstatic_new">
+                      {%- if block.settings.main_common_video != blank -%}
+                        <div class="Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new">
+                          {{ block.settings.main_common_video | video_tag: class:'Common_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                        </div>
+                      {% else %}  
+                        {%- if block.settings.main_desktop_image != blank and block.settings.main_mobile_image != blank -%}
+                          <div class="Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new">
+                            {%- if block.settings.main_desktop_image != blank -%}
+                              {{
+                                block.settings.main_desktop_image | 
+                                image_url: width: img.width | 
+                                image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                fetchpriority: 'high', 
+                                class:'Desktop_image_new'
+                              }}
+                            {%- endif -%}
+                            {%- if block.settings.main_mobile_image != blank -%}
+                              {{
+                                block.settings.main_mobile_image | 
+                                image_url: width: img.width | 
+                                image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                fetchpriority: 'high', 
+                                class:'Mobile_image_new'
+                              }}
+                            {%- endif -%}
+                          </div>
+                        {%- endif -%}
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.main_heading_text != blank or block.settings.main_details_text != blank or block.settings.main_button_link != blank -%}
+                  <div class="Index_top_image_over_text_loops_innerboxs_mainoverlay_new">
+                    <div class="Index_top_image_over_text_loops_innerboxs_inneroverlay_new">
+                      {%- if block.settings.main_heading_text != blank -%}
+                        <div class="Index_top_image_over_text_loops_innerboxs_inneroverlay_maintitle_new">
+                          <div class="Common_large_title_new Index_top_image_over_text_loops_innerboxs_inneroverlay_innertitle_new">
+                            <h2>{{ block.settings.main_heading_text }}</h2>
+                          </div>
+                        </div>
+                      {%- endif -%}
+                      {%- if block.settings.main_details_text != blank -%}
+                        <div class="Index_top_image_over_text_loops_innerboxs_inneroverlay_maininfos_new">
+                          <div class="Common_infos_new Index_top_image_over_text_loops_innerboxs_inneroverlay_innerinfos_new">
+                            {{ block.settings.main_details_text }}
+                          </div>
+                        </div>
+                      {%- endif -%}  
+                      {%- if block.settings.main_button_text != blank and block.settings.main_button_link != blank -%}
+                        <div class="Index_top_image_over_text_loops_innerboxs_inneroverlay_mainbutton_new">
+                          <div class="Index_top_image_over_text_loops_innerboxs_inneroverlay_innerbutton_new">
+                            <a href="{{ block.settings.main_button_link }}" class="button button_yellow_new">
+                              {{ block.settings.main_button_text }}
+                            </a>
+                          </div>
+                        </div>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}  
+        {%- endfor -%}  
+      </div>
+    </div>
+  </div>
+{%- endif -%}  
+
+{% schema %}
+  {
+    "name": "Index Top Image Over Text",
+    "class": "Index_top_image_over_text_new",
+    "settings": [
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#EFEFEF"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "information",
+        "name": "Information",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "video",
+            "id": "main_common_video",
+            "label": "Add Main Common Video"
+          },
+          {
+            "type": "image_picker",
+            "id": "main_desktop_image",
+            "label": "Add Main Desktop Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "main_mobile_image",
+            "label": "Add Main Mobile Image"
+          },
+          {
+            "type": "textarea",
+            "id": "main_heading_text",
+            "label": "Add Main Heading Text",
+            "default": "A new era of iced tea"
+          },
+          {
+            "type": "richtext",
+            "id": "main_details_text",
+            "label": "Add Main Details Text",
+            "default": "<p>Gut-friendly nostalgic iced teas that make moments of freedom even sweeter.</p>"
+          },
+          {
+            "type": "text",
+            "id": "main_button_text",
+            "label": "Add Main Button Text",
+            "default": "Shop Now"
+          },
+          {
+            "type": "url",
+            "id": "main_button_link",
+            "label": "Add Main Button Link",
+            "default": "/"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Index Top Image Over Text",
+        "blocks": [
+          {
+            "type": "information"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

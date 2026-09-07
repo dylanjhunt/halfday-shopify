@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "LP Header Group New",
+  "sections": {
+    "lp_header_announcement_new_RUhW6W": {
+      "type": "LP-Header-announcement-new",
+      "blocks": {
+        "information_r4mc64": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Join our exclusive giveaway</p>"
+          }
+        }
+      },
+      "block_order": [
+        "information_r4mc64"
+      ],
+      "settings": {
+        "main_background_color": "#ff5528",
+        "main_information_color": "#ffffff"
+      }
+    },
+    "lp_header_latest_new_H4TJDd": {
+      "type": "LP-Header-latest-new",
+      "blocks": {
+        "social_link_list_mjTeGc": {
+          "type": "social_link_list",
+          "settings": {
+            "main_social_icon": "shopify://shop_images/tiktok.svg",
+            "main_social_link": "https://www.tiktok.com/@drinkhalfday"
+          }
+        },
+        "social_link_list_X8ptH4": {
+          "type": "social_link_list",
+          "settings": {
+            "main_social_icon": "shopify://shop_images/instagram.svg",
+            "main_social_link": "https://www.instagram.com/drinkhalfday"
+          }
+        },
+        "social_link_list_FDbCnp": {
+          "type": "social_link_list",
+          "settings": {
+            "main_social_icon": "shopify://shop_images/twitter.svg",
+            "main_social_link": "https://twitter.com/drinkhalfday"
+          }
+        }
+      },
+      "block_order": [
+        "social_link_list_mjTeGc",
+        "social_link_list_X8ptH4",
+        "social_link_list_FDbCnp"
+      ],
+      "settings": {
+        "main_background_color": "#ffe700",
+        "main_desktop_menu": "lp-header-desktop-menu",
+        "main_mobile_menu": "lp-header-mobile-menu",
+        "main_custom_logo": "shopify://shop_images/HEADER-LOGO-NEW.svg",
+        "main_redirect_text": "Find In Store",
+        "main_redirect_link": "shopify://pages/find-in-store",
+        "main_button_text": "Shop On Amazon",
+        "main_button_link": "https://www.amazon.com/stores/Halfday/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?maas=maas_adg_2692AE890B7430B306E0F6BBB67E7A5A_afap_abs&ref_=aa_maas&tag=maas"
+      }
+    }
+  },
+  "order": [
+    "lp_header_announcement_new_RUhW6W",
+    "lp_header_latest_new_H4TJDd"
+  ]
+}

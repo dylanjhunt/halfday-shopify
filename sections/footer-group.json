@@ -1,0 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "index_object_instagram_new_XyMz7E": {
+      "type": "Index-object-instagram-new",
+      "settings": {
+        "main_background_color": "#ffe700"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "link_list_acUkCD": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Explore",
+            "menu": "footer-main-menu-1",
+            "default_open_mobile": true
+          }
+        },
+        "link_list_MY4XHN": {
+          "type": "link_list",
+          "settings": {
+            "heading": "About",
+            "menu": "footer-main-menu-2",
+            "default_open_mobile": false
+          }
+        },
+        "link_list_QrnwJW": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Connect",
+            "menu": "footer-main-menu-3",
+            "default_open_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "link_list_acUkCD",
+        "link_list_MY4XHN",
+        "link_list_QrnwJW"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "main_custom_logo": "shopify://shop_images/HALFDAY_LOGO_RGB_1.png",
+        "main_custom_menu": "footer-bottom-menu",
+        "newsletter_enable": true,
+        "main_heading_text": "Make this moment sweeter",
+        "main_detail_list": "<p>Subscribe for up to 15% off your first order and enjoy exclusive discounts, updates, and other Halfday perks.</p>",
+        "enable_follow_on_shop": false,
+        "show_social": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "index_object_instagram_new_XyMz7E",
+    "footer"
+  ]
+}

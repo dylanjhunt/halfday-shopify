@@ -1,0 +1,136 @@
+{% if section.settings.heading_text != blank or section.blocks.size > 0 %}
+  <div class="Page_product_marquee_section_main Page_product_marquee_section_main_{{ section.id }}" style="background: {{ section.settings.background }}">
+    <div class="Page_product_marquee_section_inner">
+      {% if section.settings.heading_text != blank %}
+        <div class="Page_product_marquee_section_heading_text">
+          <h2>
+            {{ section.settings.heading_text }}
+          </h2>
+        </div>
+      {% endif %}
+      {%- if section.blocks.size > 0 -%}
+        <div class="Page_product_marquee_container">
+          <div class="Page_product_marquee">
+            <div class="image-marquee">
+              <span>
+                {%- for block in section.blocks -%} 
+                  {% if block.type == "product" %}
+                    {%- if block.settings.product_image != blank -%}
+                      <div class="Page_product_marquee_single_product">
+                        <div class="Page_product_marquee_single_product_image">
+                          {{
+                            block.settings.product_image | 
+                            image_url: width: img.width | 
+                            image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                            fetchpriority: 'high'
+                          }}
+                        </div>
+                        {% if block.settings.product_link != blank %}
+                          <a class="Page_product_marquee_single_product_link" href="{{ block.settings.product_link }}"></a>
+                        {% endif %}
+                      </div>
+                    {%- endif -%}
+                  {% endif %}
+                {%- endfor -%}
+                {%- for block in section.blocks -%} 
+                  {% if block.type == "product" %}
+                    {%- if block.settings.product_image != blank -%}
+                      <div class="Page_product_marquee_single_product">
+                        <div class="Page_product_marquee_single_product_image">
+                          {{
+                            block.settings.product_image | 
+                            image_url: width: img.width | 
+                            image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                            fetchpriority: 'high'
+                          }}
+                        </div>
+                        {% if block.settings.product_link != blank %}
+                          <a class="Page_product_marquee_single_product_link" href="{{ block.settings.product_link }}"></a>
+                        {% endif %}
+                      </div>
+                    {%- endif -%}
+                  {% endif %}
+                {%- endfor -%}
+              </span>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  .Page_product_marquee_section_main { padding: 80px 0 58px; }
+  .Page_product_marquee_section_heading_text { padding: 0 56px; }
+  .Page_product_marquee_section_heading_text h2 { margin: 0; color: #FF5528; text-align: center; font-family: Strippy; font-size: 96px; line-height: 100%; letter-spacing: 3.84px; }
+  .Page_product_marquee_container { padding-top: 56px; overflow: hidden; }
+  .Page_product_marquee_single_product { position: relative; width: 288px; margin: 0 28px; }
+  .Page_product_marquee_single_product_link { position: absolute; width: 100%; height: 100%; top: 0; left: 0; display: block !important; }
+  .Page_product_marquee_single_product_image { width: 100%; }
+  .Page_product_marquee_single_product_image img { width: 100%; display: block; }
+
+  /* .image-marquee { overflow} */
+  .Page_product_marquee{ display:flex; align-items:center;  }
+  .Page_product_marquee span{ display:flex; align-items:center; }
+
+  @media (max-width: 989px){
+    .Page_product_marquee_section_main { padding: 40px 0 50px !important; }
+    .Page_product_marquee_section_heading_text { padding: 0 20px; }
+    .Page_product_marquee_section_heading_text h2 { font-size: 72px; letter-spacing: 2.88px; }
+    .Page_product_marquee_container { padding-top: 40px; }
+    .Page_product_marquee_single_product { margin: 0; width: 184px; }
+    
+  }
+
+  .template-why-halfday .Page_product_marquee_section_main { padding-top: 60px; }
+  
+</style>
+
+{% schema %}
+  {
+    "name": "Page Product Marquee",
+    "class": "Page_product_marquee_section",
+    "settings": [
+      {
+        "type": "color_background",
+        "id": "background",
+        "label": "Add Background"
+      },
+      {
+        "type": "textarea",
+        "id": "heading_text",
+        "label": "Add Heading Text",
+        "default": "A classic, remade better"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "product",
+        "name": "Product",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "product_image",
+            "label": "Add Product Image"
+          },
+          {
+            "type": "url",
+            "id": "product_link",
+            "label": "Add Product Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Page Product Marquee",
+        "blocks": [
+          {
+            "type": "product"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

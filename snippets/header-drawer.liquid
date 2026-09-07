@@ -1,0 +1,471 @@
+{% comment %}
+  Renders a header drawer menu for mobile and desktop.
+
+  Usage:
+  {% render 'header-drawer' %}
+{% endcomment %}
+{{ 'component-list-social.css' | asset_url | stylesheet_tag }}
+
+
+<header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
+  <details id="Details-menu-drawer-container" class="menu-drawer-container">
+    <summary
+      class="header__icon header__icon--menu header__icon--summary link focus-inset"
+      aria-label="{{ 'sections.header.menu' | t }}"
+    >
+      <span>
+        {{- 'icon-hamburger.svg' | inline_asset_content -}}
+        {{- 'icon-close.svg' | inline_asset_content -}}
+      </span>
+    </summary>
+    <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
+      <div class="menu-drawer__inner-container">
+        <div class="menu-drawer__navigation-container">
+          <nav class="menu-drawer__navigation">
+            <ul class="menu-drawer__menu has-submenu list-menu" role="list">
+              {%- comment %}<locksmith:ad9a>{% endcomment -%}
+                {%- assign locksmith_22d8_forloop__size = 0 %}{%- for link in section.settings.mobile_main_menu.links -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: section.settings.mobile_main_menu, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_22d8_forloop__size = locksmith_22d8_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_22d8_forloop__index = nil -%}
+              {%- comment %}</locksmith:ad9a>{% endcomment -%}
+              {%- for link in section.settings.mobile_main_menu.links -%}
+                {%- comment %}<locksmith:89e6>{% endcomment -%}
+                  {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: section.settings.mobile_main_menu, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_22d8_forloop__index == nil %}{% assign locksmith_22d8_forloop__index = 1 %}{% assign locksmith_22d8_forloop__index0 = 0 %}{% else %}{% assign locksmith_22d8_forloop__index = locksmith_22d8_forloop__index | plus: 1 %}{% assign locksmith_22d8_forloop__index0 = locksmith_22d8_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_22d8_forloop__index == 1 %}{% assign locksmith_22d8_forloop__first = true %}{% else %}{% assign locksmith_22d8_forloop__first = false %}{% endif %}{% if locksmith_22d8_forloop__index == locksmith_22d8_forloop__size %}{% assign locksmith_22d8_forloop__last = true %}{% else %}{% assign locksmith_22d8_forloop__last = false %}{% endif %}{% assign locksmith_22d8_forloop__rindex = locksmith_22d8_forloop__size | minus: locksmith_22d8_forloop__index | minus: 1 %}{% assign locksmith_22d8_forloop__rindex0 = locksmith_22d8_forloop__size | minus: locksmith_22d8_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+                {%- comment %}</locksmith:89e6>{% endcomment -%}
+                {% assign custom_megamenu_mobile = false  %}
+
+                {% assign megamenu_selection = shop.metaobjects.megamenu_selection.values %}
+                {% paginate shop.metaobjects.megamenu_selection.values by 1000 %}
+                  {% for megamenu_selection in megamenu_selection %}
+          
+                    {% assign link_title = link.title | handleize %}
+                    {% assign inner_menu_title = megamenu_selection.inner_menu_title.value | handleize %}
+                    
+                    {% if inner_menu_title == link_title %}
+                      {%- assign custom_megamenu_mobile = true -%}
+                    {% endif %}
+                    
+                  {% endfor %}
+                {% endpaginate %}
+                <li>
+                  {%- if link.links != blank or custom_megamenu_mobile -%}
+                    <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
+                      <summary
+                        id="HeaderDrawer-{{ link.handle }}"
+                        class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}"
+                      >
+                        {{ link.title }}
+                        <span class="svg-wrapper">
+                          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="28.09" cy="28.0026" r="20.91" transform="rotate(-180 28.09 28.0026)" fill="#FFE700"/>
+                            <path d="M27.6497 39.9872L26.0747 38.3247L36.3122 27.9997L26.0747 17.6747L27.6497 16.0122L39.6372 27.9997L27.6497 39.9872Z" fill="#004600"/>
+                            <path d="M37.9746 29.2249L16.9746 29.2249L16.9746 26.7749L37.9746 26.7749L37.9746 29.2249Z" fill="#004600"/>
+                          </svg>
+                        </span>
+                        <span class="svg-wrapper">
+                          {{- 'icon-caret.svg' | inline_asset_content -}}
+                        </span>
+                      </summary>
+                      <div
+                        id="link-{{ link.handle }}"
+                        class="menu-drawer__submenu has-submenu gradient motion-reduce"
+                        tabindex="-1"
+                      >
+                        <div class="menu-drawer__inner-submenu">
+                          <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                            <span class="svg-wrapper">
+                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.25 12L5.75 7.5L10.25 3" stroke="#004600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            Back
+                          </button>
+                          {% if custom_megamenu_mobile %}
+                            <div class="mobile_megamenu_mainbox_new">
+                              {% assign megamenu_selection = shop.metaobjects.megamenu_selection.values %}
+                              {% paginate shop.metaobjects.megamenu_selection.values by 1000 %}
+                                {% for megamenu_selection in megamenu_selection %}
+                                  {% assign link_title = link.title | handleize %}
+                                  {% assign inner_menu_title = megamenu_selection.inner_menu_title.value | handleize %}
+                                  
+                                  {% if inner_menu_title == link_title %}
+                                    <div class="mobile_megamenu_innerbox_new">
+                                      <!-- 1 --> 
+                                      {% for megamenu_items in megamenu_selection.megamenu_item_selection.value %}
+                                        {%- if megamenu_items.image_or_video.value != blank -%}
+                                          <div class="mobile_megamenu_box_new">
+                                            {% if megamenu_items.url.value != blank %}
+                                              <a href="{{ megamenu_items.url.value }}" class="mobile_megamenu_mainbox_link_new"></a>
+                                            {% endif %}
+                                            <div class="mobile_megamenu_innervideoimage_new">
+                                              {%- if megamenu_items.image_or_video.value contains "files" -%}
+                                                <div class="mobile_megamenu_video_OR_image_new">
+                                                  {{
+                                                    megamenu_items.image_or_video.value | 
+                                                    image_url: width: img.width | 
+                                                    image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                                    fetchpriority: 'low'
+                                                  }}
+                                                </div>
+                                              {%- else -%}
+                                                <div class="mobile_megamenu_video_OR_image_new">
+                                                  {{ megamenu_items.image_or_video.value | video_tag: image_size: 'master', controls: false, autoplay: true, loop: true }}
+                                                </div>
+                                              {%- endif -%}
+                                            </div>
+                                            {% if megamenu_items.title.value != blank %}
+                                              <div class="mobile_megamenu_title_new">{{ megamenu_items.title.value }}</div>
+                                            {% endif %}  
+                                          </div>
+                                        {%- endif -%}
+                                      {% endfor %}
+                                    </div>
+
+                                    {%- if megamenu_selection.megamenu_button_url.value != blank and megamenu_selection.megamenu_button_title.value != blank -%}
+                                      <div class="mobile_megamenu_innerboth_buttons_new">
+                                        <a href="{{ megamenu_selection.megamenu_button_url.value }}" class="button">
+                                          {{ megamenu_selection.megamenu_button_title.value }}  
+                                        </a>
+                                      </div>
+                                    {%- endif -%}
+                                                      
+                                  {%- endif -%}
+                                {% endfor %}
+                              {% endpaginate %}
+                            </div>
+                          {% else %}
+                            <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                              {%- for childlink in link.links -%}
+                                {%- comment %}<locksmith:a171>{% endcomment -%}
+                                  {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: childlink, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                                {%- comment %}</locksmith:a171>{% endcomment -%}
+                                <li>
+                                  {%- if childlink.links == blank -%}
+                                    <a
+                                      id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
+                                      href="{{ childlink.url }}"
+                                      class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"
+                                      {% if childlink.current %}
+                                        aria-current="page"
+                                      {% endif %}
+                                    >
+                                      {{ childlink.title }}
+                                    </a>
+                                  {%- else -%}
+                                    <details id="Details-menu-drawer-{{ link.handle }}-{{ childlink.handle }}">
+                                      <summary
+                                        id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
+                                        class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
+                                      >
+                                        {{ childlink.title }}
+                                        <span class="svg-wrapper">
+                                          {{- 'icon-arrow.svg' | inline_asset_content -}}
+                                        </span>
+                                        <span class="svg-wrapper">
+                                          {{- 'icon-caret.svg' | inline_asset_content -}}
+                                        </span>
+                                      </summary>
+                                      <div
+                                        id="childlink-{{ childlink.handle }}"
+                                        class="menu-drawer__submenu has-submenu gradient motion-reduce"
+                                      >
+                                        <button
+                                          class="menu-drawer__close-button link link--text focus-inset"
+                                          aria-expanded="true"
+                                        >
+                                          <span class="svg-wrapper">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M10.25 12L5.75 7.5L10.25 3" stroke="#004600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                          </span>
+                                          Back
+                                        </button>
+                                        <ul
+                                          class="menu-drawer__menu list-menu"
+                                          role="list"
+                                          tabindex="-1"
+                                        >
+                                          {%- for grandchildlink in childlink.links -%}
+                                            {%- comment %}<locksmith:1f9d>{% endcomment -%}
+                                              {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: grandchildlink, subject_parent: childlink, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                                            {%- comment %}</locksmith:1f9d>{% endcomment -%}
+                                            <li>
+                                              <a
+                                                id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
+                                                href="{{ grandchildlink.url }}"
+                                                class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"
+                                                {% if grandchildlink.current %}
+                                                  aria-current="page"
+                                                {% endif %}
+                                              >
+                                                {{ grandchildlink.title }}
+                                              </a>
+                                            </li>
+                                          {%- endfor -%}
+                                        </ul>
+                                      </div>
+                                    </details>
+                                  {%- endif -%}
+                                </li>
+                              {%- endfor -%}
+                            </ul>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </details>
+                  {%- else -%}
+                    <a
+                      id="HeaderDrawer-{{ link.handle }}"
+                      href="{{ link.url }}"
+                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
+                      {% if link.current %}
+                        aria-current="page"
+                      {% endif %}
+                    >
+                      {{ link.title }}
+                      <span class="svg-wrapper">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="28.09" cy="28.0026" r="20.91" transform="rotate(-180 28.09 28.0026)" fill="#FFE700"/>
+                          <path d="M27.6497 39.9872L26.0747 38.3247L36.3122 27.9997L26.0747 17.6747L27.6497 16.0122L39.6372 27.9997L27.6497 39.9872Z" fill="#004600"/>
+                          <path d="M37.9746 29.2249L16.9746 29.2249L16.9746 26.7749L37.9746 26.7749L37.9746 29.2249Z" fill="#004600"/>
+                        </svg>
+                      </span>
+                    </a>
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+            {%- if collection.metafields.custom.collection_employee_shop == true or template.name == 'account' or template.name == 'addresses' or template.name == 'order' or template.name == 'orders' -%}   
+              <div class="Header_drawer_collection_employee_shop_new">
+                <div class="Header_drawer_mobile_innerboth_new">
+                  <div class="Header_drawer_mobile_innerboth_buttons_new">
+                    <a href="{{ routes.account_url }}" class="button">
+                      My account
+                    </a>
+                  </div>
+                  <div class="Header_drawer_mobile_innerboth_buttons_new">
+                    <a href="{{ routes.account_logout_url }}" class="button button_yellow_new">
+                      Log out
+                    </a>
+                  </div>
+                </div>  
+              </div>
+            {%- endif -%}
+          </nav>
+          <div class="menu-drawer__utility-links">
+            {%- if section.settings.main_mobile_bottom_menu != blank or section.settings.main_mobile_button_link != blank or section.settings.main_desktop_right_button_link != blank -%}
+              <div class="Header_drawer_mobile_mainboth_new">
+                <div class="Header_drawer_mobile_innerboth_new">
+                  {%- if section.settings.main_desktop_right_button_text != blank and section.settings.main_desktop_right_button_link != blank -%}
+                    <div class="Header_drawer_mobile_innerboth_buttons_new Header_drawer_mobile_innerboth_buttons_amazon_new">
+                      <a href="{{ section.settings.main_desktop_right_button_link }}" class="button">
+                        {{ section.settings.main_desktop_right_button_text }}  
+                      </a>
+                    </div>
+                  {%- endif -%}
+                  {%- if section.settings.main_mobile_button_text != blank and section.settings.main_mobile_button_link != blank -%}
+                    <div class="Header_drawer_mobile_innerboth_buttons_new">
+                      <a href="{{ section.settings.main_mobile_button_link }}" class="button button_border_new">
+                        {{ section.settings.main_mobile_button_text }}  
+                      </a>
+                    </div>
+                  {%- endif -%}
+                  {%- if section.settings.main_mobile_bottom_menu != blank -%}
+                    <div class="Header_drawer_mobile_innerboth_menulist_new">
+                      <ul class="menu">
+                        {%- for link in section.settings.main_mobile_bottom_menu.links -%}
+                          {%- comment %}<locksmith:19a0>{% endcomment -%}
+                            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: section.settings.main_mobile_bottom_menu, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                          {%- comment %}</locksmith:19a0>{% endcomment -%}
+                          <li class="menu-link">
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    </div>
+                  {%- endif -%}
+                </div>  
+              </div>
+            {%- endif -%}
+
+            {% comment %}
+            {%- if shop.customer_accounts_enabled -%}
+              <a
+                href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+                class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
+                rel="nofollow"
+              >
+                {%- if section.settings.enable_customer_avatar -%}
+                  <account-icon>
+                    {%- if customer and customer.has_avatar? -%}
+                      {{ customer | avatar }}
+                    {%- else -%}
+                      <span class="svg-wrapper">
+                        {{- 'icon-account.svg' | inline_asset_content -}}
+                      </span>
+                    {%- endif -%}
+                  </account-icon>
+                {%- else -%}
+                  <span class="svg-wrapper">
+                    {{- 'icon-account.svg' | inline_asset_content -}}
+                  </span>
+                {%- endif -%}
+                {%- liquid
+                  if customer
+                    echo 'customer.account_fallback' | t
+                  else
+                    echo 'customer.log_in' | t
+                  endif
+                -%}
+              </a>
+            {%- endif -%}
+            {% endcomment %}
+            {%- if localization.available_countries or localization.available_languages -%}
+              <div class="menu-drawer__localization header-localization">
+                {%- if localization.available_countries and localization.available_countries.size > 1 -%}
+                  <localization-form>
+                    {%- form 'localization', id: 'HeaderCountryMobileForm', class: 'localization-form' -%}
+                      <div>
+                        <h2 class="visually-hidden" id="HeaderCountryMobileLabel">
+                          {{ 'localization.country_label' | t }}
+                        </h2>
+                        {%- render 'country-localization', localPosition: 'HeaderCountryMobile' -%}
+                      </div>
+                    {%- endform -%}
+                  </localization-form>
+                {% endif %}
+
+                {%- if localization.available_languages and localization.available_languages.size > 1 -%}
+                  <localization-form>
+                    {%- form 'localization', id: 'HeaderLanguageMobileForm', class: 'localization-form' -%}
+                      <div>
+                        <h2 class="visually-hidden" id="HeaderLanguageMobileLabel">
+                          {{ 'localization.language_label' | t }}
+                        </h2>
+                        {%- render 'language-localization', localPosition: 'HeaderLanguageMobile' -%}
+                      </div>
+                    {%- endform -%}
+                  </localization-form>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+            <ul class="list list-social list-unstyled" role="list">
+              {%- if settings.social_tiktok_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_tiktok_link }}" class="list-social__link link" target="_blank">
+                    <span class="svg-wrapper">
+                      <svg class="icon icon-tiktok" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_243_56527)">
+                      <path d="M10.6891 9.66698V13.789C10.17 13.6521 9.62673 13.6334 9.09942 13.7344C8.57211 13.8353 8.07419 14.0534 7.64234 14.3723C7.2105 14.6913 6.85575 15.1032 6.60423 15.5775C6.35272 16.0518 6.21086 16.5765 6.1891 17.113C6.15937 17.5749 6.22887 18.0377 6.39293 18.4705C6.557 18.9033 6.81182 19.2959 7.14027 19.622C7.46872 19.9481 7.86318 20.2001 8.29713 20.361C8.73108 20.5219 9.19446 20.5881 9.6561 20.555C10.1224 20.5907 10.5909 20.5249 11.0293 20.3618C11.4677 20.1988 11.8654 19.9426 12.1951 19.6109C12.5247 19.2791 12.7784 18.8798 12.9387 18.4404C13.0989 18.001 13.1618 17.5321 13.1231 17.066V0.72998H17.2001C17.8931 5.04498 20.0511 6.04598 22.9401 6.50798V10.643C20.938 10.4788 19.0067 9.82643 17.3151 8.74298V16.91C17.3151 20.61 15.1251 24.73 9.6881 24.73C8.66806 24.7255 7.65918 24.5175 6.72058 24.1181C5.78199 23.7186 4.93258 23.1359 4.22213 22.4039C3.51168 21.6719 2.9545 20.8055 2.58325 19.8554C2.212 18.9053 2.03414 17.8907 2.0601 16.871C2.09241 15.8093 2.34936 14.7666 2.81401 13.8115C3.27866 12.8564 3.94047 12.0107 4.7558 11.33C5.57114 10.6493 6.52148 10.1491 7.5442 9.86248C8.56691 9.57584 9.63876 9.50921 10.6891 9.66698Z" fill="currentColor"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_243_56527">
+                      <rect width="24" height="24" fill="white" transform="translate(0.5 0.72998)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                    </span>
+                    <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_instagram_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_instagram_link }}" class="list-social__link link" target="_blank">
+                    <span class="svg-wrapper">
+                      <svg class="icon icon-instagram" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 3.71198C15.437 3.71198 15.785 3.72298 16.945 3.77598C17.6424 3.7841 18.3332 3.91231 18.987 4.15498C19.465 4.33109 19.8973 4.61235 20.252 4.97798C20.6176 5.33267 20.8989 5.76499 21.075 6.24298C21.3177 6.89683 21.4459 7.5876 21.454 8.28498C21.507 9.44498 21.518 9.79298 21.518 12.73C21.518 15.667 21.507 16.015 21.454 17.175C21.4459 17.8724 21.3177 18.5631 21.075 19.217C20.8919 19.6915 20.6116 20.1223 20.252 20.482C19.8924 20.8416 19.4615 21.1219 18.987 21.305C18.3332 21.5476 17.6424 21.6759 16.945 21.684C15.785 21.737 15.437 21.748 12.5 21.748C9.563 21.748 9.215 21.737 8.055 21.684C7.35762 21.6759 6.66685 21.5476 6.013 21.305C5.535 21.1289 5.10269 20.8476 4.748 20.482C4.38237 20.1273 4.10111 19.695 3.925 19.217C3.68233 18.5631 3.55412 17.8724 3.546 17.175C3.493 16.015 3.482 15.667 3.482 12.73C3.482 9.79298 3.493 9.44498 3.546 8.28498C3.55412 7.5876 3.68233 6.89683 3.925 6.24298C4.10111 5.76499 4.38237 5.33267 4.748 4.97798C5.10269 4.61235 5.535 4.33109 6.013 4.15498C6.66685 3.91231 7.35762 3.7841 8.055 3.77598C9.215 3.72298 9.563 3.71198 12.5 3.71198ZM12.5 1.72998C9.513 1.72998 9.138 1.74298 7.965 1.79598C7.05258 1.81484 6.1499 1.9876 5.295 2.30698C4.56355 2.59015 3.8994 3.02317 3.34521 3.57822C2.79102 4.13327 2.35904 4.79809 2.077 5.52998C1.75762 6.38488 1.58486 7.28756 1.566 8.19998C1.513 9.36798 1.5 9.74298 1.5 12.73C1.5 15.717 1.513 16.092 1.566 17.265C1.58486 18.1774 1.75762 19.0801 2.077 19.935C2.36017 20.6664 2.79319 21.3306 3.34824 21.8848C3.90329 22.439 4.56811 22.8709 5.3 23.153C6.1549 23.4724 7.05758 23.6451 7.97 23.664C9.138 23.717 9.513 23.73 12.5 23.73C15.487 23.73 15.862 23.717 17.035 23.664C17.9474 23.6451 18.8501 23.4724 19.705 23.153C20.4365 22.8698 21.1006 22.4368 21.6548 21.8817C22.209 21.3267 22.641 20.6619 22.923 19.93C23.2424 19.0751 23.4151 18.1724 23.434 17.26C23.487 16.092 23.5 15.717 23.5 12.73C23.5 9.74298 23.487 9.36798 23.434 8.19498C23.4151 7.28256 23.2424 6.37988 22.923 5.52498C22.6398 4.79353 22.2068 4.12938 21.6518 3.57519C21.0967 3.021 20.4319 2.58902 19.7 2.30698C18.8451 1.9876 17.9424 1.81484 17.03 1.79598C15.862 1.74298 15.487 1.72998 12.5 1.72998Z" fill="currentColor"/>
+                        <path d="M12.5001 7.08105C11.3828 7.08105 10.2906 7.41236 9.36166 8.03308C8.43269 8.6538 7.70864 9.53606 7.28108 10.5683C6.85352 11.6005 6.74165 12.7363 6.95962 13.8321C7.17759 14.9279 7.7156 15.9345 8.50563 16.7245C9.29566 17.5145 10.3022 18.0525 11.398 18.2705C12.4938 18.4885 13.6296 18.3766 14.6619 17.9491C15.6941 17.5215 16.5763 16.7974 17.197 15.8685C17.8178 14.9395 18.1491 13.8473 18.1491 12.7301C18.1491 11.2318 17.5539 9.795 16.4945 8.73561C15.4351 7.67622 13.9983 7.08105 12.5001 7.08105ZM12.5001 16.3971C11.7748 16.3971 11.0658 16.182 10.4628 15.7791C9.85977 15.3761 9.38976 14.8034 9.11221 14.1334C8.83466 13.4633 8.76205 12.726 8.90354 12.0147C9.04503 11.3033 9.39428 10.6499 9.90712 10.1371C10.42 9.62426 11.0734 9.27501 11.7847 9.13352C12.496 8.99202 13.2333 9.06464 13.9034 9.34219C14.5734 9.61974 15.1461 10.0897 15.5491 10.6928C15.952 11.2958 16.1671 12.0048 16.1671 12.7301C16.1671 13.7026 15.7807 14.6353 15.093 15.323C14.4053 16.0107 13.4726 16.3971 12.5001 16.3971Z" fill="currentColor"/>
+                        <path d="M18.3718 8.17809C19.1008 8.17809 19.6918 7.5871 19.6918 6.85809C19.6918 6.12907 19.1008 5.53809 18.3718 5.53809C17.6427 5.53809 17.0518 6.12907 17.0518 6.85809C17.0518 7.5871 17.6427 8.17809 18.3718 8.17809Z" fill="currentColor"/>
+                      </svg>
+                    </span>
+                    <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_twitter_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_twitter_link }}" class="list-social__link link" target="_blank">
+                    <span class="svg-wrapper">
+                      <svg class="icon icon-twitter" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_243_56529)">
+                      <path d="M14.7833 10.8456L23.7178 0.459961H21.6006L13.8427 9.4777L7.64656 0.459961H0.5L9.86984 14.0964L0.5 24.9874H2.61732L10.8098 15.4643L17.3534 24.9874H24.5L14.7827 10.8456H14.7833ZM11.8833 14.2165L10.9339 12.8586L3.38022 2.05385H6.6323L12.7282 10.7737L13.6776 12.1315L21.6016 23.466H18.3495L11.8833 14.217V14.2165Z" fill="currentColor" />
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_243_56529">
+                      <rect width="24" height="24.54" fill="white" transform="translate(0.5 0.459961)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                    </span>
+                    <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_facebook_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_facebook_link }}" class="list-social__link link" target="_blank">
+                    <span class="svg-wrapper">
+                      {{- 'icon-facebook.svg' | inline_asset_content -}}
+                    </span>
+                    <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_pinterest_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_pinterest_link }}" class="list-social__link link" target="_blank">
+                    <span class="svg-wrapper">
+                      {{- 'icon-pinterest.svg' | inline_asset_content -}}
+                    </span>
+                    <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              
+              
+              {%- if settings.social_tumblr_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_tumblr_link }}" class="list-social__link link" target="_blank">
+                    <span class="svg-wrapper">
+                      {{- 'icon-tumblr.svg' | inline_asset_content -}}
+                    </span>
+                    <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_snapchat_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_snapchat_link }}" class="list-social__link link" target="_blank">
+                    <span class="svg-wrapper">
+                      {{- 'icon-snapchat.svg' | inline_asset_content -}}
+                    </span>
+                    <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_youtube_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_youtube_link }}" class="list-social__link link" target="_blank">
+                    <span class="svg-wrapper">
+                      {{- 'icon-youtube.svg' | inline_asset_content -}}
+                    </span>
+                    <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_vimeo_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_vimeo_link }}" class="list-social__link link" target="_blank">
+                    <span class="svg-wrapper">
+                      {{- 'icon-vimeo.svg' | inline_asset_content -}}
+                    </span>
+                    <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </details>
+</header-drawer>

@@ -1,0 +1,147 @@
+{%- if collection.metafields.custom.collection_desktop_custom_heading_text.value != blank or collection.metafields.custom.collection_mobile_custom_heading_text.value != blank or collection.title != blank or collection.metafields.custom.collection_shortcut_reference_lists.value != blank -%}
+  <div class="Collection_template_mainboths_new">
+    <div class="Collection_template_innerboths_new">
+      {%- if collection.metafields.custom.collection_desktop_video_or_image_banner.value != blank and collection.metafields.custom.collection_mobile_video_or_image_banner.value != blank -%}
+        {%- if collection.metafields.custom.collection_desktop_video_or_image_banner.value != blank -%}
+          <div class="Collection_template_innerboths_mainstatic_new Desktop_only_new">
+            <div class="Collection_template_innerboths_innerstatic_new">
+              {%- if collection.metafields.custom.collection_desktop_video_or_image_banner.value contains "files" -%}
+                <div class="Collection_template_innerboths_innerstatic_imagevideo_new">
+                  {{
+                    collection.metafields.custom.collection_desktop_video_or_image_banner.value | 
+                    image_url: width: img.width | 
+                    image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                    fetchpriority: 'high', 
+                    class: 'Static_image_new'
+                  }}
+                </div>
+              {%- else -%}
+                <div class="Collection_template_innerboths_innerstatic_imagevideo_new">
+                  {{ collection.metafields.custom.collection_desktop_video_or_image_banner.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+        {%- if collection.metafields.custom.collection_mobile_video_or_image_banner.value != blank -%}
+          <div class="Collection_template_innerboths_mainstatic_new Mobile_only_new">
+            <div class="Collection_template_innerboths_innerstatic_new">
+              {%- if collection.metafields.custom.collection_mobile_video_or_image_banner.value contains "files" -%}
+                <div class="Collection_template_innerboths_innerstatic_imagevideo_new">
+                  {{
+                    collection.metafields.custom.collection_mobile_video_or_image_banner.value | 
+                    image_url: width: img.width | 
+                    image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                    fetchpriority: 'high', 
+                    class: 'Static_image_new'
+                  }}
+                </div>
+              {%- else -%}
+                <div class="Collection_template_innerboths_innerstatic_imagevideo_new">
+                  {{ collection.metafields.custom.collection_mobile_video_or_image_banner.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endif -%}
+      {%- if collection.metafields.custom.collection_desktop_custom_heading_text.value != blank or collection.metafields.custom.collection_mobile_custom_heading_text.value != blank or collection.title != blank or collection.metafields.custom.collection_shortcut_reference_lists.value != blank -%}
+        <div class="Collection_template_innerboths_mainoverlay_new">
+          <div class="page-width">
+            <div class="Collection_template_innerboths_inneroverlay_new">
+              {%- if collection.metafields.custom.collection_desktop_custom_heading_text.value != blank or collection.title != blank -%}
+                <div class="Collection_template_innerboths_inneroverlay_maintitle_new Desktop_only_new">
+                  <div class="Common_large_title_new Collection_template_innerboths_inneroverlay_innertitle_new">
+                    {%- if collection.metafields.custom.collection_desktop_custom_heading_text.value != blank -%}
+                      <h1>{{ collection.metafields.custom.collection_desktop_custom_heading_text.value }}</h1>
+                    {%- elsif collection.title != blank -%}
+                      <h1>{{ collection.title }}</h1>
+                    {%- endif -%}
+                  </div>
+                </div>
+              {%- endif -%}
+              {%- if collection.metafields.custom.collection_mobile_custom_heading_text.value != blank or collection.title != blank -%}
+                <div class="Collection_template_innerboths_inneroverlay_maintitle_new Mobile_only_new">
+                  <div class="Common_large_title_new Collection_template_innerboths_inneroverlay_innertitle_new">
+                    {%- if collection.metafields.custom.collection_mobile_custom_heading_text.value != blank -%}
+                      <h1>{{ collection.metafields.custom.collection_mobile_custom_heading_text.value }}</h1>
+                    {%- elsif collection.title != blank -%}
+                      <h1>{{ collection.title }}</h1>
+                    {%- endif -%}
+                  </div>
+                </div>
+              {%- endif -%}
+              {%- if collection.metafields.custom.collection_shortcut_reference_lists.value != blank -%}
+                <div class="Collection_template_innerboths_inneroverlay_mainloops_new Desktop_only_new">
+                  <div class="Collection_template_innerboths_inneroverlay_innerloops_new">
+                    <div class="swiper Collection_template_reference_slider">
+                      <div class="swiper-wrapper">
+                        {%- for link in linklists[collection.metafields.custom.collection_shortcut_reference_lists].links -%}
+                          {%- comment %}<locksmith:6793>{% endcomment -%}
+                            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: linklists[collection.metafields.custom.collection_shortcut_reference_lists], variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                          {%- comment %}</locksmith:6793>{% endcomment -%}
+                          {% assign handle = link.url | split: '/' %}
+                          {% assign collectionHandleIndex = handle.size | minus: 1 %}
+                          {% assign subCollection = collections[handle[collectionHandleIndex]] %}
+                          {%- if link.title != blank -%}
+                            <div class="swiper-slide Collection_template_innerboths_inneroverlay_innerloops_mainboxs_new">
+                              <a href="{{ subCollection.url }}" class="{% if collection.handle == subCollection.handle %}active{% endif %}">
+                                {{ link.title }}
+                              </a>
+                            </div>
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div> 
+    {%- if collection.metafields.custom.collection_shortcut_reference_lists.value != blank -%}
+      <div class="Collection_template_innerboths_inneroverlay_mainlists_new Mobile_only_new">
+        <div class="Collection_template_innerboths_inneroverlay_innerlists_new">
+          <div class="Collection_template_innerboths_inneroverlay_innerlists_maintitle_new">
+            <div class="Collection_template_innerboths_inneroverlay_innerlists_innertitle_new">
+              {%- for link in linklists[collection.metafields.custom.collection_shortcut_reference_lists].links -%}
+                {%- comment %}<locksmith:5477>{% endcomment -%}
+                  {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: linklists[collection.metafields.custom.collection_shortcut_reference_lists], variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                {%- comment %}</locksmith:5477>{% endcomment -%}
+                {% assign handle = link.url | split: '/' %}
+                {% assign collectionHandleIndex = handle.size | minus: 1 %}
+                {% assign subCollection = collections[handle[collectionHandleIndex]] %}
+                {%- if link.title != blank -%}
+                  {% if collection.handle == subCollection.handle %}
+                    {{ link.title }}
+                  {% endif %}
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </div>
+          <div class="Collection_template_innerboths_inneroverlay_innerlists_mainloops_new">
+            <div class="Collection_template_innerboths_inneroverlay_innerlists_innerloops_new">
+              {%- for link in linklists[collection.metafields.custom.collection_shortcut_reference_lists].links -%}
+                {%- comment %}<locksmith:5a4c>{% endcomment -%}
+                  {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: linklists[collection.metafields.custom.collection_shortcut_reference_lists], variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                {%- comment %}</locksmith:5a4c>{% endcomment -%}
+                {% assign handle = link.url | split: '/' %}
+                {% assign collectionHandleIndex = handle.size | minus: 1 %}
+                {% assign subCollection = collections[handle[collectionHandleIndex]] %}
+                {%- if link.title != blank -%}
+                  <div class="Collection_template_innerboths_inneroverlay_innerlists_innerloops_mainboxs_new">
+                    <a href="{{ subCollection.url }}" class="{% if collection.handle == subCollection.handle %}active{% endif %}">
+                      {{ link.title }}
+                    </a>
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+{%- endif -%}

@@ -1,0 +1,8 @@
+.page_main_banner_main_heading.Common_large_title_new h2{color:inherit;text-align: center;max-width: 800px;margin: auto;}
+.page_main_banner_image{width:31.3253%;position:relative;aspect-ratio:1 /0.95914;margin: 79px auto 0;}
+.page_main_banner_image img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:top;}
+.page_main_banner_new_sec{overflow:hidden;}
+@media(max-width:750px){
+  .page_main_banner_main_heading.Common_large_title_new h2{font-size: 72px;letter-spacing: 2.88px; line-height: 100%; }
+  .page_main_banner_image{aspect-ratio: 1 / 0.81438;width: 99.702%;}
+}

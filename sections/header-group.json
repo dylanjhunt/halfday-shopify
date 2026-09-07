@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "header_announcement_bar_new_HWYmt8": {
+      "type": "Header-announcement-bar-new",
+      "blocks": {
+        "information_XNYnLg": {
+          "type": "information",
+          "settings": {
+            "title": "<p><a href=\"https://www.amazon.com/stores/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?ingress=2&visitId=71862258-e898-4588-b18a-f6fb1e1baa6e&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln\" target=\"_blank\" title=\"https://www.amazon.com/stores/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?ingress=2&visitId=71862258-e898-4588-b18a-f6fb1e1baa6e&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln\">Subscribe and Save 15% + Free Shipping w/ Amazon Prime</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "information_XNYnLg"
+      ],
+      "settings": {
+        "main_background_color": "#ff5528",
+        "main_information_color": "#ffffff"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-center",
+        "menu": "main-menu-kb",
+        "mobile_main_menu": "mobile-menu-kb",
+        "main_mobile_find_in_store_link": "shopify://pages/find-in-store",
+        "main_desktop_right_button_text": "SHOP ON AMAZON",
+        "main_desktop_right_button_link": "https://www.amazon.com/stores/Halfday/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?maas=maas_adg_2692AE890B7430B306E0F6BBB67E7A5A_afap_abs&ref_=aa_maas&tag=maas",
+        "main_mobile_button_text": "Find in store",
+        "main_mobile_button_link": "shopify://pages/find-in-store",
+        "main_mobile_bottom_menu": "mobile-bottom-menu-kb",
+        "menu_type_desktop": "mega",
+        "main_megamenu_button_text": "SHOP ALL",
+        "main_megamenu_button_link": "https://drinkhalfday.com/collections/new-2-0",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": false,
+        "add_website_name": "halfday.com",
+        "add_website_link": "/",
+        "color_scheme": "scheme-2",
+        "menu_color_scheme": "scheme-2",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_customer_avatar": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "header_announcement_bar_new_HWYmt8",
+    "header"
+  ]
+}

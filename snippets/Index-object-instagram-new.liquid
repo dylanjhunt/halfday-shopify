@@ -1,0 +1,126 @@
+{%- if index_instagram_item_selection.main_instagram_item_select.value != blank -%}
+  <div class="Index_object_instagram_main_new" style="background: {{ section.settings.main_background_color }};">
+    <div class="Index_object_instagram_inner_new">
+      {%- if index_instagram_item_selection.main_common_heading_text.value != blank or index_instagram_item_selection.main_common_details_text.value != blank or index_instagram_item_selection.main_common_button_link.value != blank -%}
+        <div class="Index_object_instagram_mainsides_new">
+          <div class="page-width">
+            <div class="Index_object_instagram_innersides_new">
+              {%- if index_instagram_item_selection.main_common_heading_text.value != blank or index_instagram_item_selection.main_common_details_text.value != blank -%}
+                <div class="Index_object_instagram_innersides_mainleft_new">
+                  <div class="Index_object_instagram_innersides_innerleft_new">
+                    {%- if index_instagram_item_selection.main_common_heading_text.value != blank -%}
+                      <div class="Index_object_instagram_innersides_innerleft_maintitle_new">
+                        <div class="Common_title_new Index_object_instagram_innersides_innerleft_innertitle_new">
+                          <h2>{{ index_instagram_item_selection.main_common_heading_text.value }}</h2>
+                        </div>
+                      </div>
+                    {%- endif -%}
+                    {%- if index_instagram_item_selection.main_common_details_text.value != blank -%}
+                      <div class="Index_object_instagram_innersides_innerleft_maininfos_new">
+                        <div class="Common_infos_new Index_object_instagram_innersides_innerleft_innerinfos_new">
+                          {{ index_instagram_item_selection.main_common_details_text | metafield_tag }}
+                        </div>
+                      </div>
+                    {%- endif -%}
+                  </div>
+                </div>
+              {%- endif -%}
+              {%- if index_instagram_item_selection.main_common_button_text.value != blank and index_instagram_item_selection.main_common_button_link.value != blank -%}
+                <div class="Index_object_instagram_innersides_mainright_new">
+                  <div class="Index_object_instagram_innersides_innerright_new">
+                    <a href="{{ index_instagram_item_selection.main_common_button_link.value }}" target="_blank" class="button">
+                      {{ index_instagram_item_selection.main_common_button_text.value }}
+                    </a>
+                  </div>
+                </div>
+              {%- endif -%}  
+            </div>
+          </div>
+        </div>
+      {%- endif -%}  
+      {%- if index_instagram_item_selection.main_instagram_item_select.value != blank -%}
+        <div class="Index_object_instagram_mainloops_new">
+          <div class="Index_object_instagram_innerloops_new">
+            <div class="Index_object_instagram_slider">
+              <span>
+                {%- for main_instagram_item_select in index_instagram_item_selection.main_instagram_item_select.value -%}
+                  {%- if main_instagram_item_select.main_video_or_image_block.value != blank -%}
+                    <div class="Index_object_instagram_innerloops_mainboxs_new Index_object_instagram_innerloops_mainboxs_new_{{ forloop.index }}" style="width: {{ main_instagram_item_select.main_width_desktop_block.value }}px;">
+                      <style>
+                        @media(min-width:0px) and (max-width:749px){
+                          .Index_object_instagram_innerloops_mainboxs_new_{{ forloop.index }}{
+                            width: {{ main_instagram_item_select.main_width_mobile_block.value }}px !important;
+                          }
+                        }
+                      </style>
+                      {%- if main_instagram_item_select.main_block_redirect_link.value != blank -%}
+                        <a href="{{ main_instagram_item_select.main_block_redirect_link.value }}">
+                      {%- endif -%}  
+                          <div class="Index_object_instagram_innerloops_innerboxs_new">
+                            {%- if main_instagram_item_select.main_video_or_image_block.value contains "files" -%}
+                              <div class="Index_object_instagram_innerloops_innerboxs_imagevideo_new">
+                                {{
+                                  main_instagram_item_select.main_video_or_image_block.value | 
+                                  image_url: width: img.width | 
+                                  image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                  fetchpriority: 'low', 
+                                  class: 'Static_image_new'
+                                }}
+                              </div>
+                            {%- else -%}
+                              <div class="Index_object_instagram_innerloops_innerboxs_imagevideo_new">
+                                {{ main_instagram_item_select.main_video_or_image_block.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                              </div>
+                            {%- endif -%}
+                          </div>
+                      {%- if main_instagram_item_select.main_block_redirect_link.value != blank -%}
+                        </a>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+
+                {%- for main_instagram_item_select in index_instagram_item_selection.main_instagram_item_select.value -%}
+                  {%- if main_instagram_item_select.main_video_or_image_block.value != blank -%}
+                    <div class="Index_object_instagram_innerloops_mainboxs_new Index_object_instagram_innerloops_mainboxs_new_{{ forloop.index }}" style="width: {{ main_instagram_item_select.main_width_desktop_block.value }}px;">
+                      <style>
+                        @media(min-width:0px) and (max-width:749px){
+                          .Index_object_instagram_innerloops_mainboxs_new_{{ forloop.index }}{
+                            width: {{ main_instagram_item_select.main_width_mobile_block.value }}px !important;
+                          }
+                        }
+                      </style>
+                      {%- if main_instagram_item_select.main_block_redirect_link.value != blank -%}
+                        <a href="{{ main_instagram_item_select.main_block_redirect_link.value }}">
+                      {%- endif -%}  
+                          <div class="Index_object_instagram_innerloops_innerboxs_new">
+                            {%- if main_instagram_item_select.main_video_or_image_block.value contains "files" -%}
+                              <div class="Index_object_instagram_innerloops_innerboxs_imagevideo_new">
+                                {{
+                                  main_instagram_item_select.main_video_or_image_block.value | 
+                                  image_url: width: img.width | 
+                                  image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                  fetchpriority: 'low', 
+                                  class: 'Static_image_new'
+                                }}
+                              </div>
+                            {%- else -%}
+                              <div class="Index_object_instagram_innerloops_innerboxs_imagevideo_new">
+                                {{ main_instagram_item_select.main_video_or_image_block.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                              </div>
+                            {%- endif -%}
+                          </div>
+                      {%- if main_instagram_item_select.main_block_redirect_link.value != blank -%}
+                        </a>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </span>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}  
+    </div>
+  </div>
+{%- endif -%}  

@@ -1,0 +1,181 @@
+{%- if section.settings.main_mobile_menu_1 != blank or section.settings.main_custom_logo != blank or section.settings.main_mobile_menu_2 != blank or section.settings.main_desktop_menu != blank or section.blocks.size > 0 -%}
+  <div class="LP_Footer_latest_main_new" style="background: {{ section.settings.main_background_color }};">
+    <div class="page-width">
+      <div class="LP_Footer_latest_inner_new">
+        <div class="LP_Footer_latest_detail_new">
+          {%- if section.settings.main_mobile_menu_1 != blank -%}
+            <div class="LP_Footer_latest_detail_mainlinks_new Mobile_only_new">
+              <div class="LP_Footer_latest_detail_innerlinks_new">
+                <ul>
+                  {%- for link in section.settings.main_mobile_menu_1.links -%}
+                    {%- comment %}<locksmith:0271>{% endcomment -%}
+                      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: section.settings.main_mobile_menu_1, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                    {%- comment %}</locksmith:0271>{% endcomment -%}
+                    <li>
+                      {%- assign link_title_handle = link.title | handleize -%}
+                      {%- if link_title_handle == 'accessibility' -%}
+                        <a href="javascript:void(0)" data-acsb-custom-trigger="true">
+                          {{ link.title }}<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6.53998" r="6" fill="#004600"/><path d="M7.21514 10.2364C7.27258 10.2364 7.33577 10.2192 7.39321 10.1905C7.61724 10.0871 7.70915 9.83433 7.6 9.61031C7.6 9.61031 6.77857 7.73193 6.62922 7.04262C6.57178 6.80136 6.53731 6.16375 6.52583 5.86504C6.52583 5.76165 6.58327 5.66974 6.67518 5.64102L8.51334 5.08957C8.73737 5.03212 8.86949 4.77363 8.81205 4.54961C8.7546 4.32558 8.49611 4.19346 8.27208 4.2509C8.27208 4.2509 6.57178 4.80235 5.95714 4.80235C5.35974 4.80235 3.67092 4.26239 3.67092 4.26239C3.4469 4.20495 3.19415 4.30835 3.11947 4.53237C3.0448 4.77363 3.17692 5.02638 3.41817 5.08382L5.25634 5.63527C5.34825 5.66399 5.42292 5.7559 5.40569 5.8593C5.38846 6.158 5.35974 6.80136 5.3023 7.03688C5.15294 7.72619 4.33151 9.60456 4.33151 9.60456C4.22812 9.82859 4.33151 10.0813 4.53831 10.1847C4.59575 10.2135 4.65894 10.2307 4.71638 10.2307C4.88296 10.2307 5.0438 10.1388 5.10699 9.97794L5.98586 8.18573L6.82453 9.98943C6.8992 10.1445 7.04855 10.2364 7.21514 10.2364Z" fill="#FFE700"/><path d="M5.99174 4.3716C6.45492 4.3716 6.8304 3.99612 6.8304 3.53294C6.8304 3.06976 6.45492 2.69427 5.99174 2.69427C5.52856 2.69427 5.15308 3.06976 5.15308 3.53294C5.15308 3.99612 5.52856 4.3716 5.99174 4.3716Z" fill="#FFE700"/></svg>
+                        </a>
+                      {%- else -%}
+                        <a href="{{ link.url }}" target="_blank">
+                          {{ link.title }}
+                        </a>
+                      {%- endif -%} 
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </div>
+          {%- endif -%}
+          {%- if section.settings.main_custom_logo != blank -%}
+            <div class="LP_Footer_latest_detail_mainlogos_new">
+              <div class="LP_Footer_latest_detail_innerlogos_new">
+                <a href="/" target="_blank">
+                  {{
+                    section.settings.main_custom_logo | 
+                    image_url: width: img.width | 
+                    image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                    fetchpriority: 'high', 
+                    class:'Logo_image_new'
+                  }}
+                </a>
+              </div>
+            </div>
+          {%- endif -%}
+          {%- if section.blocks.size > 0 -%}
+            <div class="LP_Footer_latest_detail_mainsocial_new">
+              <div class="LP_Footer_latest_detail_innersocial_new">
+                {%- for block in section.blocks -%}
+                  {%- if block.settings.main_social_icon != blank and block.settings.main_social_link != blank -%}
+                    <div class="LP_Footer_latest_detail_innersocial_mainicons_new">
+                      <div class="LP_Footer_latest_detail_innersocial_innericons_new">
+                        <a href="{{ block.settings.main_social_link }}" target="_blank">
+                          {{
+                            block.settings.main_social_icon | 
+                            image_url: width: img.width | 
+                            image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                            fetchpriority: 'high', 
+                            class:'Logo_image_new'
+                          }}
+                        </a>
+                      </div>
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endif -%}
+          {%- if section.settings.main_mobile_menu_2 != blank -%}
+            <div class="LP_Footer_latest_detail_mainlists_new Mobile_only_new">
+              <div class="LP_Footer_latest_detail_innerlists_new">
+                <ul>
+                  {%- for link in section.settings.main_mobile_menu_2.links -%}
+                    {%- comment %}<locksmith:3261>{% endcomment -%}
+                      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: section.settings.main_mobile_menu_2, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                    {%- comment %}</locksmith:3261>{% endcomment -%}
+                    {%- assign link_title_handle = link.title | handleize -%}
+                    <li>
+                      {%- if link_title_handle == 'accessibility' -%}
+                        <a href="javascript:void(0)" data-acsb-custom-trigger="true">
+                          {{ link.title }}<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6.53998" r="6" fill="#004600"/><path d="M7.21514 10.2364C7.27258 10.2364 7.33577 10.2192 7.39321 10.1905C7.61724 10.0871 7.70915 9.83433 7.6 9.61031C7.6 9.61031 6.77857 7.73193 6.62922 7.04262C6.57178 6.80136 6.53731 6.16375 6.52583 5.86504C6.52583 5.76165 6.58327 5.66974 6.67518 5.64102L8.51334 5.08957C8.73737 5.03212 8.86949 4.77363 8.81205 4.54961C8.7546 4.32558 8.49611 4.19346 8.27208 4.2509C8.27208 4.2509 6.57178 4.80235 5.95714 4.80235C5.35974 4.80235 3.67092 4.26239 3.67092 4.26239C3.4469 4.20495 3.19415 4.30835 3.11947 4.53237C3.0448 4.77363 3.17692 5.02638 3.41817 5.08382L5.25634 5.63527C5.34825 5.66399 5.42292 5.7559 5.40569 5.8593C5.38846 6.158 5.35974 6.80136 5.3023 7.03688C5.15294 7.72619 4.33151 9.60456 4.33151 9.60456C4.22812 9.82859 4.33151 10.0813 4.53831 10.1847C4.59575 10.2135 4.65894 10.2307 4.71638 10.2307C4.88296 10.2307 5.0438 10.1388 5.10699 9.97794L5.98586 8.18573L6.82453 9.98943C6.8992 10.1445 7.04855 10.2364 7.21514 10.2364Z" fill="#FFE700"/><path d="M5.99174 4.3716C6.45492 4.3716 6.8304 3.99612 6.8304 3.53294C6.8304 3.06976 6.45492 2.69427 5.99174 2.69427C5.52856 2.69427 5.15308 3.06976 5.15308 3.53294C5.15308 3.99612 5.52856 4.3716 5.99174 4.3716Z" fill="#FFE700"/></svg>
+                        </a>
+                      {%- else -%}
+                        <a href="{{ link.url }}" target="_blank">
+                          {{ link.title }}
+                        </a>
+                      {%- endif -%}  
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </div>
+          {%- endif -%}
+          {%- if section.settings.main_desktop_menu != blank -%}
+            <div class="LP_Footer_latest_detail_mainmenus_new Desktop_only_new">
+              <div class="LP_Footer_latest_detail_innermenus_new">
+                <ul>
+                  {%- for link in section.settings.main_desktop_menu.links -%}
+                    {%- comment %}<locksmith:2dca>{% endcomment -%}
+                      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: section.settings.main_desktop_menu, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                    {%- comment %}</locksmith:2dca>{% endcomment -%}
+                    {%- assign link_title_handle = link.title | handleize -%}
+                    <li>
+                      {%- if link_title_handle == 'accessibility' -%}
+                        <a href="javascript:void(0)" data-acsb-custom-trigger="true">
+                          {{ link.title }}<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6.53998" r="6" fill="#004600"/><path d="M7.21514 10.2364C7.27258 10.2364 7.33577 10.2192 7.39321 10.1905C7.61724 10.0871 7.70915 9.83433 7.6 9.61031C7.6 9.61031 6.77857 7.73193 6.62922 7.04262C6.57178 6.80136 6.53731 6.16375 6.52583 5.86504C6.52583 5.76165 6.58327 5.66974 6.67518 5.64102L8.51334 5.08957C8.73737 5.03212 8.86949 4.77363 8.81205 4.54961C8.7546 4.32558 8.49611 4.19346 8.27208 4.2509C8.27208 4.2509 6.57178 4.80235 5.95714 4.80235C5.35974 4.80235 3.67092 4.26239 3.67092 4.26239C3.4469 4.20495 3.19415 4.30835 3.11947 4.53237C3.0448 4.77363 3.17692 5.02638 3.41817 5.08382L5.25634 5.63527C5.34825 5.66399 5.42292 5.7559 5.40569 5.8593C5.38846 6.158 5.35974 6.80136 5.3023 7.03688C5.15294 7.72619 4.33151 9.60456 4.33151 9.60456C4.22812 9.82859 4.33151 10.0813 4.53831 10.1847C4.59575 10.2135 4.65894 10.2307 4.71638 10.2307C4.88296 10.2307 5.0438 10.1388 5.10699 9.97794L5.98586 8.18573L6.82453 9.98943C6.8992 10.1445 7.04855 10.2364 7.21514 10.2364Z" fill="#FFE700"/><path d="M5.99174 4.3716C6.45492 4.3716 6.8304 3.99612 6.8304 3.53294C6.8304 3.06976 6.45492 2.69427 5.99174 2.69427C5.52856 2.69427 5.15308 3.06976 5.15308 3.53294C5.15308 3.99612 5.52856 4.3716 5.99174 4.3716Z" fill="#FFE700"/></svg>
+                        </a>
+                      {%- else -%}
+                        <a href="{{ link.url }}" target="_blank">
+                          {{ link.title }}
+                        </a>
+                      {%- endif -%}   
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "LP Footer Latest New",
+    "class": "LP_Footer_latest_new",
+    "settings": [
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FFE700"
+      },
+      {
+        "type": "image_picker",
+        "id": "main_custom_logo",
+        "label": "Add Main Custom Logo"
+      },
+      {
+        "type": "link_list",
+        "id": "main_desktop_menu",
+        "label": "Add Main Desktop Menu"
+      },
+      {
+        "type": "link_list",
+        "id": "main_mobile_menu_1",
+        "label": "Add Main Mobile Menu-1"
+      },
+      {
+        "type": "link_list",
+        "id": "main_mobile_menu_2",
+        "label": "Add Main Mobile Menu-2"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "social_link_list",
+        "name": "Social Link List",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "main_social_icon",
+            "label": "Add Main Social Icon"
+          }, 
+          {
+            "type": "url",
+            "id": "main_social_link",
+            "label": "Add Main Social Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "LP Footer Latest New"
+      }
+    ]
+  }
+{% endschema %}

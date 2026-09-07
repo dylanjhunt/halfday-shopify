@@ -1,0 +1,81 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Employee Header",
+  "sections": {
+    "header_announcement_bar_new_HWYmt8": {
+      "type": "Header-announcement-bar-new",
+      "blocks": {
+        "information_im9P3B": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Welcome halfdayer!</p>"
+          }
+        },
+        "information_3eD7QP": {
+          "type": "information",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Free Shipping With Amazon Prime</p>"
+          }
+        },
+        "information_LEUDrH": {
+          "type": "information",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Subscribe & Save Up To 15%</p>"
+          }
+        }
+      },
+      "block_order": [
+        "information_im9P3B",
+        "information_3eD7QP",
+        "information_LEUDrH"
+      ],
+      "settings": {
+        "main_background_color": "#ff5528",
+        "main_information_color": "#ffffff"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-center",
+        "menu": "desktop-employee-shop",
+        "mobile_main_menu": "mobile-employee-shop",
+        "main_mobile_find_in_store_link": "",
+        "main_desktop_right_button_text": "",
+        "main_desktop_right_button_link": "",
+        "main_mobile_button_text": "",
+        "main_mobile_button_link": "",
+        "main_mobile_bottom_menu": "",
+        "menu_type_desktop": "mega",
+        "main_megamenu_button_text": "",
+        "main_megamenu_button_link": "",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": false,
+        "color_scheme": "scheme-2",
+        "menu_color_scheme": "scheme-2",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_customer_avatar": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "header_announcement_bar_new_HWYmt8",
+    "header"
+  ]
+}

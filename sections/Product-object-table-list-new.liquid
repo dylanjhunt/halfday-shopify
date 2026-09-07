@@ -1,0 +1,61 @@
+{%- if product.metafields.custom.product_comparison_table_item_selection != blank -%}
+  {%- assign product_comparison_table_item_selection = product.metafields.custom.product_comparison_table_item_selection.value -%}
+  {%- if product_comparison_table_item_selection.main_home_page_section.value == false -%}
+    {%- include 'Product-object-table-list-new' -%}
+  {%- endif -%}
+{%- elsif page.metafields.custom.product_comparison_table_item_selection != blank -%}
+  {%- assign product_comparison_table_item_selection = page.metafields.custom.product_comparison_table_item_selection.value -%}
+  {%- if product_comparison_table_item_selection.main_home_page_section.value == false -%}
+    {%- include 'Product-object-table-list-new' -%}
+  {%- endif -%}
+{%- elsif collection.metafields.custom.product_comparison_table_item_selection != blank -%}
+  {%- assign product_comparison_table_item_selection = collection.metafields.custom.product_comparison_table_item_selection.value -%}
+  {%- if product_comparison_table_item_selection.main_home_page_section.value == false -%}
+    {%- include 'Product-object-table-list-new' -%}
+  {%- endif -%}
+{%- else -%}
+  {%- assign product_comparison_table_item_selection = shop.metaobjects.product_comparison_table_item_selection -%}
+  {%- paginate shop.metaobjects.product_comparison_table_item_selection.values by 1000 -%}
+    {%- for product_comparison_table_item_selection in product_comparison_table_item_selection.values -%}
+      {%- if product_comparison_table_item_selection.main_home_page_section.value == true -%}
+        {%- include 'Product-object-table-list-new' -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endpaginate -%}  
+{%- endif -%}
+
+<style>
+  .halfday_image_comparison .Product_object_table_list_sides_mainright_new { background: #FF5528; }
+  .halfday_image_comparison .Product_object_table_list_sides_innerleft_innertable_innerloops_maincolumn_new:nth-child(2n) .Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_mainlists_new:after { background: #FFE700; }
+  .halfday_image_comparison .Product_object_table_list_sides_innerleft_innertable_innerloops_maincolumn_new:nth-child(2n) .Product_object_table_list_sides_innerleft_innertable_innerloops_innercolumn_innerlists_innertexts_new { color: #004600; }
+</style>
+
+{% schema %}
+  {
+    "name": "Product Object Table List",
+    "class": "Product_object_table_list_new",
+    "settings": [
+      {
+        "type": "text",
+        "id": "custom_class",
+        "label": "Add Custom Class"
+      },
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FFFFFF"
+      },      
+      {
+        "type": "checkbox",
+        "id": "left_comparison_table",
+        "label": "Keep Comparison Table on the Left Side"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Object Table List"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,27 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-login",
+      "settings": {
+        "enable_shop_login_button": false,
+        "image1": "shopify://shop_images/Rectangle_3147_abe0defb-c199-463d-be01-ac22beb56fd8.jpg",
+        "image2": "shopify://shop_images/Rectangle_3147-2_3574929e-ae45-4c19-b588-93bc2d4e5226.png",
+        "botom_text": "<p>If you don't receive an email within 24 hours, <br/>please reach out to <a href=\"mailto:jessica@drinkhalfday.com\" target=\"_blank\" title=\"mailto:jessica@drinkhalfday.com\">jessica@drinkhalfday.com</a>.</p>",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
