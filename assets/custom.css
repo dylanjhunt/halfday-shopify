@@ -217,7 +217,7 @@ details[open]>.header__menu-item svg path{ stroke:#FF5528; }
 .Index_top_image_over_text_loops_innerboxs_inneroverlay_new{ max-width:390px; }
 .Index_top_image_over_text_loops_innerboxs_inneroverlay_maintitle_new{}
 .Index_top_image_over_text_loops_innerboxs_inneroverlay_innertitle_new{}
-.Index_top_image_over_text_loops_innerboxs_inneroverlay_innertitle_new h2{color:#FFE700; }
+.Index_top_image_over_text_loops_innerboxs_inneroverlay_innertitle_new :is(h1, h2){color:#FFE700; }
 .Index_top_image_over_text_loops_innerboxs_inneroverlay_maininfos_new{padding-top:22px;}
 .Index_top_image_over_text_loops_innerboxs_inneroverlay_innerinfos_new{}
 .Index_top_image_over_text_loops_innerboxs_inneroverlay_innerinfos_new p{color:#FFF; }
@@ -1081,7 +1081,7 @@ body.product-watermelon-half-half .product__title{ max-width:356px !important; }
   
   .Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new { position: relative; padding-bottom:618px; }
   .Index_top_image_over_text_loops_innerboxs_mainoverlay_new{top:auto; transform:inherit; left:0; bottom:0; padding:20px 20px 70px 20px;}
-  .Index_top_image_over_text_loops_innerboxs_inneroverlay_innertitle_new h2{max-width:100%; }
+  .Index_top_image_over_text_loops_innerboxs_inneroverlay_innertitle_new :is(h1, h2){max-width:100%; }
   .Index_top_image_over_text_loops_innerboxs_inneroverlay_maininfos_new{padding-top:24px;}
   .Index_top_image_over_text_loops_innerboxs_inneroverlay_innerinfos_new p{max-width:100%;}
   .Index_top_image_over_text_loops_innerboxs_inneroverlay_mainbutton_new{padding-top:24px;}
@@ -1542,7 +1542,7 @@ body.product-watermelon-half-half .product__title{ max-width:356px !important; }
   /* Index */
   .Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new { position: relative; }
   .Index_top_image_over_text_loops_innerboxs_mainoverlay_new{ padding:20px;}
-  .Index_top_image_over_text_loops_innerboxs_inneroverlay_innertitle_new h2{max-width:100%; font-size:70px; }
+  .Index_top_image_over_text_loops_innerboxs_inneroverlay_innertitle_new :is(h1, h2){max-width:100%; font-size:70px; }
   .Index_top_image_over_text_loops_innerboxs_inneroverlay_maininfos_new{padding-top:24px;}
   .Index_top_image_over_text_loops_innerboxs_inneroverlay_innerinfos_new p{max-width:100%;}
   .Index_top_image_over_text_loops_innerboxs_inneroverlay_mainbutton_new{padding-top:24px;}

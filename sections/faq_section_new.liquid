@@ -4,143 +4,63 @@
     padding-top: {{ section.settings.padding_top | times: 0.58 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.58 | round: 0 }}px;
   }
-
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-  @media(max-width:767px){}
 {%- endstyle -%}
-
-
-<div id="faq_section_new" class="faq_page_section_wrapper_new faq_page_section_v2 section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
+<div id="faq_section_new" class="faq_page_section_wrapper_new section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
   <div class="page-width">
-    {% if section.settings.faq_main_title != blank or section.settings.left_panel_bottomcontent != blank %} 
     <div class="header-section">
-     {% if section.settings.faq_main_title != blank %} 
-       <div class="Common_title_new"> <h2>{{ section.settings.faq_main_title }}</h2></div> 
-       {% endif %}
-      {% if section.settings.left_panel_bottomcontent != blank %}
-        <div class="faq_page_section_left_side_panel_inner_bottomContent large-up-hide medium-hide">{{ section.settings.left_panel_bottomcontent }}</div>
-          {% endif %}
+      {% if section.settings.faq_main_title != blank %}
+        <div class="Common_title_new"><h1>{{ section.settings.faq_main_title }}</h1></div>
+      {% endif %}
+      <div class="faq-contact large-up-hide medium-hide">{{ section.settings.left_panel_bottomcontent }}</div>
     </div>
-       {% endif %}
-   
     <div class="faq_page_section_main_container">
-    <div class="faq_page_section_left_side">
-      <div class="faq_page_section_left_side_panel">
-      <div class="faq_page_section_left_side_panel_inner">
-        {% if section.settings.left_panel_title != blank %}
-        <div class="faq_page_section_left_side_panel_inner_maintitle"><h2>{{ section.settings.left_panel_title }}</h2></div>
+      <div class="faq_page_section_left_side">
+        <div class="faq_page_section_left_side_panel">
+          {% if section.settings.left_panel_title != blank %}
+            <h2 class="faq-topics-title">{{ section.settings.left_panel_title }}</h2>
           {% endif %}
-        <div class="left_panel_item_dropdown">
-          <div class="left_panel_item_active">
-            <p>Sort</p>
-          </div>
-          <div class="dropdown_arrow">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 10.25L8.5 5.75L13 10.25" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-</svg>
-
-          </div>
-          </div>
-        <div class="faq_page_section_left_side_panel_category_section">
-          
-          <!-- <a href="#faq_all" class="left_panel_item active">
-            All
-          </a> -->
-          <a href="#faq_{{ section.settings.faq_category_1 | downcase | replace: " ", "_"  }}" class="left_panel_item faq_other active">
-            {{ section.settings.faq_category_1 }}
-          </a>
-          <a href="#faq_{{ section.settings.faq_category_2 | downcase | replace: " ", "_"  }}" class="left_panel_item faq_other">
-            {{ section.settings.faq_category_2 }}
-          </a>
-          <a href="#faq_{{ section.settings.faq_category_3 | downcase | replace: " ", "_"  }}" class="left_panel_item faq_other">
-            {{ section.settings.faq_category_3 }}
-          </a>
-          <a href="#faq_{{ section.settings.faq_category_4  | downcase | replace: " ", "_" }}" class="left_panel_item faq_other">
-            {{ section.settings.faq_category_4 }}
-          </a>
+          <nav class="faq-topics" aria-label="FAQ topics">
+            {% for category_index in (1..4) %}
+              {% capture category_key %}faq_category_{{ category_index }}{% endcapture %}
+              {% assign category_name = section.settings[category_key] %}
+              {% if category_name != blank %}
+                <a href="#faq_{{ category_name | downcase | replace: ' ', '_' }}">{{ category_name }}</a>
+              {% endif %}
+            {% endfor %}
+          </nav>
+          <div class="faq-contact small-hide">{{ section.settings.left_panel_bottomcontent }}</div>
         </div>
-        {% if section.settings.left_panel_bottomcontent != blank %}
-        <div class="faq_page_section_left_side_panel_inner_bottomContent small-hide">{{ section.settings.left_panel_bottomcontent }}</div>
+      </div>
+      <div class="faq_page_section_right_side">
+        {% for category_index in (1..4) %}
+          {% capture category_key %}faq_category_{{ category_index }}{% endcapture %}
+          {% assign category_name = section.settings[category_key] %}
+          {% if category_name != blank %}
+            <section class="halfday-faq-category" id="faq_{{ category_name | downcase | replace: ' ', '_' }}" aria-labelledby="faq-heading-{{ section.id }}-{{ category_index }}">
+              <h2 id="faq-heading-{{ section.id }}-{{ category_index }}">{{ category_name }}</h2>
+              {% assign first_question = true %}
+              {% for block in section.blocks %}
+                {% if block.type == 'information' and block.settings.title != blank and block.settings.infos != blank and block.settings.faq_category == category_name %}
+                  <details class="halfday-faq-item" name="faq-{{ section.id }}-{{ category_index }}" {% if first_question %}open{% endif %} {{ block.shopify_attributes }}>
+                    <summary><h3>{{ block.settings.title }}</h3><span aria-hidden="true" class="halfday-faq-icon"></span></summary>
+                    <div class="halfday-faq-answer Common_infos_new">{{ block.settings.infos }}</div>
+                  </details>
+                  {% assign first_question = false %}
+                {% endif %}
+              {% endfor %}
+            </section>
           {% endif %}
+        {% endfor %}
       </div>
-        
-      </div>
-    </div>
-    <div class="faq_page_section_right_side">
-       {%- if section.blocks.size > 0 -%}
-                  <div class="Index_faqs_accordion_list_sides_innerboths_mainloops_new">
-                    <div class="Index_faqs_accordion_list_sides_innerboths_innerloops_new">
-                     
-                      <div class="Page_faq_section_v2_right_faqs_category_main_parent">
-                        <!-- <div class="Page_faq_section_v2_right_faqs_category_main" id="faq_all" style="display:none;">all</div> -->
-                      <!-- <div class="Page_faq_section_v2_right_faqs_category_main" id="faq_all" style="display:none;">all</div> -->
-                        {% for main_category in (1..4) %}
-                  {% capture main_id %}faq_category_{{ main_category }}{% endcapture %}
-                          
-                  {% assign main_category_name = section.settings[main_id] %}
-                  <div class="Page_faq_section_v2_right_faqs_category_main" id="faq_{{ main_category_name | downcase | replace: " ", "_" }}">
-                    
-                      <div class="faq_category faq_title">
-                        <h2>{{ main_category_name }}</h2>
-                      </div>
-                      {% if section.blocks.size  > 0 %}
-                        
-                           
-                        <div class="faqs_accordian_main accordion">
-                            <ul class="list-unstyled">
-                            {%- for block in section.blocks -%}
-                              {%- if block.type == 'information' -%}
-                            {%- if block.settings.title != blank and block.settings.infos != blank -%}
-                              {% if block.settings.faq_category == main_category_name %}
-                              <li>
-                                {%- if block.settings.title != blank -%}
-                                  <div class="question">
-                                    <h4>{{ block.settings.title }}</h4>
-                                    <span class="close">
-                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 11H13V5C13 4.73478 12.8946 4.48043 12.7071 4.29289C12.5196 4.10536 12.2652 4 12 4C11.7348 4 11.4804 4.10536 11.2929 4.29289C11.1054 4.48043 11 4.73478 11 5V11H5C4.73478 11 4.48043 11.1054 4.29289 11.2929C4.10536 11.4804 4 11.7348 4 12C4 12.2652 4.10536 12.5196 4.29289 12.7071C4.48043 12.8946 4.73478 13 5 13H11V19C11 19.2652 11.1054 19.5196 11.2929 19.7071C11.4804 19.8946 11.7348 20 12 20C12.2652 20 12.5196 19.8946 12.7071 19.7071C12.8946 19.5196 13 19.2652 13 19V13H19C19.2652 13 19.5196 12.8946 19.7071 12.7071C19.8946 12.5196 20 12.2652 20 12C20 11.7348 19.8946 11.4804 19.7071 11.2929C19.5196 11.1054 19.2652 11 19 11Z" fill="#004600"></path>
-                                      </svg>
-                                    </span>
-                                    <span class="open">
-                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18.6673 12H5.33398" stroke="#004600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                {%- endif -%}
-                                {%- if block.settings.infos != blank -%}
-                                  <div class="answer Common_infos_new">
-                                    {{ block.settings.infos }}
-                                  </div>
-                                {%- endif -%}
-                              </li>
-                                {% endif %}
-                            {%- endif -%}
-                                {%- endif -%}
-                              {%- endfor -%}
-                              </ul>
-                        </div>
-                        {% endif %}
-                  </div>
-                          {% endfor %}
-                       
-                      </div>
-                    </div>
-                  </div>
-                {%- endif -%}
-    </div>
     </div>
   </div>
 </div>
-
-<style>
-  
-</style>
 
 {% schema %}
   {

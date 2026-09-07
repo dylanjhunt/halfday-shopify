@@ -1,0 +1,27 @@
+{
+  "theme_id": 142755430600,
+  "viewports_checked": [
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 1440,
+      "height": 1000
+    }
+  ],
+  "checks": [
+    "Mobile homepage has one H1, loaded responsive hero, no horizontal overflow, zero initialized Swipers and zero video elements before scrolling.",
+    "Product carousel initializes in view and desktop Next advances active slide from 1/8 to 2/8.",
+    "Offscreen animation state changes to paused; hidden desktop quote group stays pending on mobile.",
+    "Shop menu opens with Enter, reports expanded=true, and initializes its visible carousel; Escape clears open, expanded and backdrop state.",
+    "Footer Flavors navigates to Lemon Tea; product gallery Next advances 1/5 to 2/5, with one high-priority image.",
+    "FAQ retains 17 questions, one page H1 and four valid topics; Enter opens the second General answer and closes the first.",
+    "At 390px, Orders anchor places its section around 139px below viewport top, with no horizontal overflow."
+  ],
+  "limitations": [
+    "No checkout, order, subscription, campaign or production changes.",
+    "Authenticated staff/sample paths require owner release QA.",
+    "Real OS reduced-motion setting not changed; lifecycle harness tests the preference branch."
+  ]
+}

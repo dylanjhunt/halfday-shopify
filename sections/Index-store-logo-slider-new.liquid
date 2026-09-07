@@ -18,7 +18,7 @@
                   {%- if block.settings.main_custom_image != blank -%}
                     <div class="swiper-slide Index_store_logo_slider_innerdesktop_mainboxs_new">
                       {%- if block.settings.main_custom_links != blank -%}
-                        <a href="{{ block.settings.main_custom_links }}" target="_blank">
+                        <a href="{{ block.settings.main_custom_links }}" target="_blank" rel="noopener" aria-label="Find Halfday at {{ block.settings.main_custom_links | split: '/' | slice: 2 | first | remove: 'www.' | escape }}">
                       {%- endif -%}  
                           <div class="Index_store_logo_slider_innerdesktop_innerboxs_new">
                             {{
@@ -50,7 +50,7 @@
                   {%- if block.settings.main_custom_image != blank -%}
                     <div class="swiper-slide Index_store_logo_slider_innermobile_mainboxs_new">
                       {%- if block.settings.main_custom_links != blank -%}
-                        <a href="{{ block.settings.main_custom_links }}" target="_blank">
+                        <a href="{{ block.settings.main_custom_links }}" target="_blank" rel="noopener" aria-label="Find Halfday at {{ block.settings.main_custom_links | split: '/' | slice: 2 | first | remove: 'www.' | escape }}">
                       {%- endif -%}  
                           <div class="Index_store_logo_slider_innermobile_innerboxs_new">
                             {{
@@ -71,7 +71,7 @@
                   {%- if block.settings.main_custom_image != blank -%}
                     <div class="swiper-slide Index_store_logo_slider_innermobile_mainboxs_new">
                       {%- if block.settings.main_custom_links != blank -%}
-                        <a href="{{ block.settings.main_custom_links }}" target="_blank">
+                        <a href="{{ block.settings.main_custom_links }}" target="_blank" rel="noopener" aria-label="Find Halfday at {{ block.settings.main_custom_links | split: '/' | slice: 2 | first | remove: 'www.' | escape }}">
                       {%- endif -%}  
                           <div class="Index_store_logo_slider_innermobile_innerboxs_new">
                             {{

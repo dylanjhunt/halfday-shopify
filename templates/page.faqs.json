@@ -23,6 +23,7 @@
         "bg_image": "shopify://shop_images/Rectangle_3166_474d6d7a-05f5-462d-b43d-3b4cf8dff283.png",
         "bg_image_mobile": "shopify://shop_images/Rectangle_1_396ed252-7799-4692-a984-9f921024632a.png",
         "heading_text": "FAQ",
+        "heading_level": "h1",
         "information_text": ""
       }
     },

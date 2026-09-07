@@ -1,6 +1,6 @@
 # Wave 1 progress
 
-**Status: in progress, first development checkpoint available. September 7, 2026.**
+**Status: in progress, second development checkpoint available. September 7, 2026.**
 
 - Branch: `dev/wave-1`.
 - Development theme: `142755430600`, Development (deb269-MacBook-Pro-4).
@@ -22,11 +22,11 @@
 | Organization schema | Stable homepage identity and nonempty social links. | Included in rendered JSON checks. |
 | Utility-page discovery | `noindex,follow` for the popup test page and the six named staff/menu utility collections. | Test page and staff collection verified. Access controls/publication/sitemap membership are unchanged; noindex is not an access restriction. |
 | Search descriptions | Theme fallbacks for retained shopping collections, blog, Contact and product short copy when merchant SEO description is absent. | Existing merchant descriptions take precedence. Shop All/Variety descriptions verified in preview. |
-| FAQ fragments | Valid `#faq_*` links with matching existing desktop/mobile scroll selectors. | All four resolve to existing targets; mobile Orders reaches its section at the header offset. |
+| FAQ navigation | Native topic anchors and keyboard-operable details replace the legacy FAQ scroll/click scripts. | All four targets resolve; 17 questions retained. Enter opens/closes answers, and mobile Orders lands below the header. |
 | FAQ copy | Draft where-to-buy and shipping answers match Amazon/retailer journeys. Correct recyclable/APO/FPO and spelling errors. | Theme JSON only. Nutrition, caffeine, health and fulfillment-policy claims still require the content review below. |
 | Legacy links | Repair old shop and malformed relative links while rendering articles. Normalize the footer's old `/en-test/` flavor destination and remove redundant homepage template-preview parameters. | Server-side theme output; shared article/menu records remain unchanged. Retired Cranberry content needs an editorial destination decision. |
 
-## Measurements and checks
+## First checkpoint measurements and checks
 
 Three alternating cold-profile mobile Lighthouse homepage comparisons, version 13.4.1:
 
@@ -47,6 +47,46 @@ The comparison verifies the development asset is present only in preview runs. A
 - JavaScript syntax checked with Node. Git whitespace checks completed before commit.
 - No order, signup, review migration, app uninstall, campaign activation or production release was performed.
 
+## Second checkpoint: performance, navigation and accessibility
+
+All changes below are uploaded to development theme **142755430600** on `dev/wave-1`. The live snapshot was refreshed and still matched `main`. Production and shared app/store data remain unchanged.
+
+| Completed | Result and verification |
+| --- | --- |
+| Defer carousels and marquees | One shared IntersectionObserver initializes content when visible and pauses autoplay offscreen, in hidden tabs, during keyboard focus and with reduced motion. Desktop/mobile quote pairs initialize together only at their visible breakpoint. Initial mobile preview: zero initialized Swipers and zero video elements. Product carousel Next advances 1/8 to 2/8; galleries remain immediately available. |
+| Remove continuous polling | Removed the sitewide 100ms landing-page link loop. A MutationObserver runs only inside the relevant HelloFresh content panel to handle its asynchronously inserted links. Landing-page header scrolling is also scoped to landing pages. |
+| Native FAQ | Replaced approximately 180 lines of global, overlapping FAQ handlers with native details/summary and ordinary anchor links. The mobile topic list remains visible; no dropdown script is required. Reworked scoped CSS to retain Halfday typography, colors and spacing. Verified 17 questions, keyboard expansion, four topic targets, no horizontal overflow at 390px and 1440px. |
+| Safe anchor navigation | Removed the footer handler that interpreted ordinary URLs as fragment selectors. Valid local anchors use the browser; legacy accordions open only if the target exists. Clicking footer Flavors reaches Lemon Tea. |
+| Repair header disclosures | Shop now uses the native details/summary markup expected by Dawn. This fixes the constructor/scroll errors from trying to close a nonexistent details element. Enter opens Shop, Escape closes it, expanded state and backdrop clear correctly, and the visible menu carousel initializes. Hover remains available; menu category previews also respond to focus. Optional search-modal close is guarded when the modal is absent. |
+| Responsive hero | A single picture selects the mobile or desktop artwork, has explicit responsive sizes and keeps eager/high priority. It also works if only one image setting is populated. Verified the 390px layout and desktop layout with loaded images and no overflow. |
+| Headings and link names | Homepage content supplies the H1 instead of the logo. FAQ banner has a configurable H1. Product image links, retailer links, mobile locator icon and footer logo now have accessible names; product detail links identify the product. Decorative video posters have explicit empty alt text. Homepage Lighthouse link-name audit now passes. |
+| Theme validity | Fixed two Liquid/HTML parser errors, the invalid password-section schema property and an unsupported filter in swatch render arguments. Removed unused undefined header arguments. No new runtime dependency or build tool. |
+
+### Second checkpoint evidence
+
+Three previous-checkpoint runs and three delivered-theme runs without concurrent preview navigation, same Lighthouse 13.4.1 mobile settings and preview URL:
+
+| Median | Previous checkpoint | Delivered theme |
+| --- | --- | --- |
+| Theme custom.js attributed main-thread work | 1,450ms | 121ms |
+| Total transferred data | 6.96 MB | 6.84 MB |
+| Initial video/media transfer | 0 MB | 0 MB |
+| Simulated LCP | 4.34s | 4.13s |
+| Total blocking time | 1,092ms | 1,054ms |
+| Performance score | 48 | 50 |
+| Accessibility score | 86 | 89 |
+| SEO score | 77 | 85 |
+
+**Theme JavaScript work fell about 92%; consistent whole-page LCP improvement is not established.** An intermediate batch reached 3.79s LCP. A later batch during browser QA regressed to 28–32s simulated LCP; three additional runs without concurrent navigation returned to 3.53–4.20s. The cause of that variability is unproven. All four batches are retained in the [performance evidence](../reports/wave-1-performance-pass-2.json), rather than reporting only the best runs. These are lab results, not field CWV or conversion results. Initial media transfer does not measure post-scroll video use.
+
+In the three isolated delivered-theme runs, median reported main-thread attribution was approximately **Signifyd 3,445ms, Klaviyo 354ms, accessiBe 244ms, Postscript 209ms and Yotpo 175ms**. These are observed CPU costs, not guaranteed uninstall savings. Signifyd is the first owner review: confirm its order-risk role and supported storefront scoping before changing it. Do not strip fraud scripts out of `content_for_header`. Klaviyo/Postscript ownership and offer cleanup remain part of the lifecycle plan; Yotpo stays until the review migration has an approved export/replacement path.
+
+- [Rendered route checks](../reports/wave-1-preview-checks.json): all 13 representative routes pass; development assets are present and no Liquid errors render. Native product gallery Next advances 1/5 to 2/5, with one high-priority gallery image and the existing Amazon destination retained.
+- [Theme Check comparison](../reports/wave-1-theme-check-pass-2-comparison.json): **122 errors, 404 warnings**. Four inherited errors are fixed. Parsing the formerly invalid mega-menu exposes 52 existing warnings in its untouched Locksmith/generated logic; nine older warnings disappear. This is not a clean Theme Check pass and does not mean 43 new code defects were introduced.
+- `node scripts/test-motion.cjs` passes the lazy initialization, focus, tab visibility, reduced-motion, instance reuse and editor-unload lifecycle checks. Reduced motion is covered by the behavior harness; a real OS/browser preference walkthrough remains part of release QA.
+- JavaScript syntax and Git whitespace checks pass. A separate fresh Lighthouse console audit reports zero errors. Two unsourced MutationObserver errors appeared in the long-lived interactive browser session and did not reproduce in that fresh audit; the known header stack stopped recurring after its repair.
+- Raw captures remain under `/private/tmp/halfday-wave1-next/`; only sanitized performance summaries are committed. No customer data, credentials or anonymous preview cookies are exported.
+
 ## Still to tackle / decisions needed
 
 | Item | Next step / dependency |
@@ -55,8 +95,8 @@ The comparison verifies the development asset is present only in preview runs. A
 | Slim cans | Confirm 45 versus 40 calories, tea ingredients, caffeine, approved images and the sample-only/access restrictions before making products publicly discoverable. Fix display-title/content fields after those decisions. |
 | CRO/content hierarchy | Finish format discovery, product comparisons and primary CTA placement using the approved catalog. Current public product CTAs and gallery behavior are preserved. |
 | Apps | Review Signifyd scoping with its owner; settle Postscript/Klaviyo SMS ownership; decide whether accessiBe remains needed. Shared app settings affect production and are not isolated by this preview. No speculative uninstall. |
-| Further speed work | Investigate remaining script/main-thread costs and route asset loading; preserve the byte reduction while seeking repeatable LCP/TBT improvements. Compare matched preview/baseline conditions before attributing a vendor's cost. |
-| SEO/content | Review retained page titles/headings/alt text; confirm Subscribe page purpose; review nutrition/caffeine and old health claims. Choose retired Cranberry and overlapping blog destinations using content/Search Console evidence when available. |
+| Further speed work | The theme animation/polling pass is complete. LCP remains variable; isolate app costs in a supported staging setup, review font delivery and remaining route assets, and repeat production measurements after any approved release. |
+| SEO/content | Homepage/FAQ headings and key link names are improved. Review remaining page titles/headings/alt text; confirm Subscribe page purpose; review nutrition/caffeine and old health claims. Choose retired Cranberry and overlapping blog destinations using content/Search Console evidence when available. |
 | Store-data cleanup | After preview approval, decide whether to migrate theme-level article fixes into source content and add redirects. Noindex does not remove retained utility URLs from Shopify's sitemap. |
 | Release QA | Owner walkthrough of authenticated staff/sample buying, desktop/mobile content review, reduced-motion setting check, and final production comparison/merchant-diff refresh. |
 

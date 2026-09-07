@@ -282,7 +282,7 @@
       >
         {%- if product.metafields.custom.product_logo != blank -%}
           <div class="Footer_bottom_mainlogo_new">
-            <a href="/">
+            <a href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }} home">
               <div class="Footer_bottom_innerlogo_new">
                 {{
                   product.metafields.custom.product_logo | 
@@ -297,7 +297,7 @@
         {% else %}
           {%- if section.settings.main_custom_logo != blank -%}
             <div class="Footer_bottom_mainlogo_new">
-              <a href="/">
+              <a href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }} home">
                 <div class="Footer_bottom_innerlogo_new">
                   {{
                     section.settings.main_custom_logo | 

@@ -5,7 +5,7 @@
 {% endcomment %}
 {%- assign poster_width = poster_width | default: 900 -%}
 <halfday-video>
-  {{ video.preview_image | image_url: width: poster_width | image_tag: widths: '280, 420, 600, 750, 900', sizes: sizes, loading: 'lazy', class: 'Static_image_new', alt: video.alt }}
+  {{ video.preview_image | image_url: width: poster_width | image_tag: widths: '280, 420, 600, 750, 900', sizes: sizes, loading: 'lazy', class: 'Static_image_new', alt: '' }}
   <template>
     {{ video | video_tag: class: 'Static_video_new', image_size: '750x', controls: false, autoplay: false, muted: true, loop: true, preload: 'none', aria-hidden: 'true', tabindex: '-1' }}
   </template>

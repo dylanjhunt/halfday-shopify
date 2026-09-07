@@ -51,11 +51,10 @@
       {%- if link.links != blank or custom_megamenu -%}
         <li class="{% if custom_megamenu %} custom_mega_menu_top_new custom_mega_menu_top_only_new {% else %} custom_mega_menu_top_new single_menu_top_new {% endif %}">
           <header-menu>
-            <{% if custom_megamenu %}div{% else %}details{% endif %} id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
-              <{% if custom_megamenu %}a{% else %}summary{% endif %}
+            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+              <summary
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item {% if custom_megamenu %}header__menu-item_main_menu{% endif %} list-menu__item link focus-inset {%- if link.child_active %} header__active-menu-item_new {% endif %}"
-                {% if custom_megamenu %} href="{% if link.url == "#" %}javascript:void(0){% else %}{{ link.url }}{% endif %}" {% endif %}
               >
                 <span
                   {%- if link.child_active %}
@@ -67,7 +66,7 @@
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 5.75L7.5 10.25L3 5.75" stroke="#004600" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
                 </svg>
-              </{% if custom_megamenu %}a{% else %}summary{% endif %}>
+              </summary>
         
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
@@ -266,7 +265,7 @@
                   </ul>
                 {% endif %}
               </div>
-            </{% if custom_megamenu %}div{% else %}details{% endif %}>
+            </details>
           </header-menu>
         </li>
       {%- else -%}

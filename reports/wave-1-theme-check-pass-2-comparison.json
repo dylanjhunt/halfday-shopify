@@ -1,0 +1,317 @@
+{
+  "comparison": "Previous Wave 1 checkpoint versus performance/accessibility pass",
+  "previous": {
+    "errorCount": 126,
+    "warningCount": 361
+  },
+  "current": {
+    "errorCount": 122,
+    "warningCount": 404
+  },
+  "removed": [
+    {
+      "file": "sections/header.liquid",
+      "check": "LiquidHTMLSyntaxError",
+      "severity": "error",
+      "message": "SyntaxError: expected a letter, \"{{\", \"wbr\" (case-insensitive), \"track\" (case-insensitive), \"source\" (case-insensitive), \"param\" (case-insensitive), \"meta\" (case-insensitive), \"link\" (case-insensitive), \"keygen\" (case-insensitive), \"input\" (case-insensitive), \"img\" (case-insensitive), \"hr\" (case-insensitive), \"embed\" (case-insensitive), \"command\" (case-insensitive), \"col\" (case-insensitive), \"br\" (case-insensitive), \"base\" (case-insensitive), \"area\" (case-insensitive), \"svg\", \"style\", or \"script\"",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-drawer.liquid",
+      "check": "OrphanedSnippet",
+      "severity": "warning",
+      "message": "This snippet is not referenced by any other files",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-dropdown-menu.liquid",
+      "check": "OrphanedSnippet",
+      "severity": "warning",
+      "message": "This snippet is not referenced by any other files",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "LiquidHTMLSyntaxError",
+      "severity": "error",
+      "message": "SyntaxError: expected a letter, \"{{\", \"wbr\" (case-insensitive), \"track\" (case-insensitive), \"source\" (case-insensitive), \"param\" (case-insensitive), \"meta\" (case-insensitive), \"link\" (case-insensitive), \"keygen\" (case-insensitive), \"input\" (case-insensitive), \"img\" (case-insensitive), \"hr\" (case-insensitive), \"embed\" (case-insensitive), \"command\" (case-insensitive), \"col\" (case-insensitive), \"br\" (case-insensitive), \"base\" (case-insensitive), \"area\" (case-insensitive), \"svg\", \"style\", or \"script\"",
+      "count": 1
+    },
+    {
+      "file": "snippets/cart-notification.liquid",
+      "check": "OrphanedSnippet",
+      "severity": "warning",
+      "message": "This snippet is not referenced by any other files",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-search.liquid",
+      "check": "OrphanedSnippet",
+      "severity": "warning",
+      "message": "This snippet is not referenced by any other files",
+      "count": 1
+    },
+    {
+      "file": "sections/email-signup-banner.liquid",
+      "check": "ValidSchema",
+      "severity": "error",
+      "message": "Property templates is not allowed.",
+      "count": 1
+    },
+    {
+      "file": "snippets/product-variant-options.liquid",
+      "check": "UnsupportedFilterArguments",
+      "severity": "error",
+      "message": "Filters cannot be used on arguments passed to the 'render' tag. Apply the filter beforehand (e.g. with {% assign %}) and pass the result instead.",
+      "count": 1
+    },
+    {
+      "file": "snippets/product-variant-options.liquid",
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "message": "The variable 'help_text' is assigned but not used",
+      "count": 1
+    },
+    {
+      "file": "sections/footer.liquid",
+      "check": "HardcodedRoutes",
+      "severity": "warning",
+      "message": "Use routes object {{ routes.root_url }} instead of hardcoding /",
+      "count": 2
+    },
+    {
+      "file": "sections/Index-top-image-over-text-new.liquid",
+      "check": "UndefinedObject",
+      "severity": "warning",
+      "message": "Unknown object 'img' used.",
+      "count": 2
+    }
+  ],
+  "newly_reported": [
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ab77_forloop__size' uses wrong naming format",
+      "count": 2
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ab77_forloop__index' uses wrong naming format",
+      "count": 3
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ab77_forloop__index0' uses wrong naming format",
+      "count": 2
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ab77_forloop__first' uses wrong naming format",
+      "count": 2
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ab77_forloop__last' uses wrong naming format",
+      "count": 2
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ab77_forloop__rindex' uses wrong naming format",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ab77_forloop__rindex0' uses wrong naming format",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "PaginationSize",
+      "severity": "warning",
+      "message": "Pagination size must be a positive integer between 1 and 250.",
+      "count": 3
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ef92_forloop__size' uses wrong naming format",
+      "count": 2
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ef92_forloop__index' uses wrong naming format",
+      "count": 3
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ef92_forloop__index0' uses wrong naming format",
+      "count": 2
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ef92_forloop__first' uses wrong naming format",
+      "count": 2
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ef92_forloop__last' uses wrong naming format",
+      "count": 2
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ef92_forloop__rindex' uses wrong naming format",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ef92_forloop__rindex0' uses wrong naming format",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_c290_forloop__size' uses wrong naming format",
+      "count": 2
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_c290_forloop__index' uses wrong naming format",
+      "count": 3
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_c290_forloop__index0' uses wrong naming format",
+      "count": 2
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_c290_forloop__first' uses wrong naming format",
+      "count": 2
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_c290_forloop__last' uses wrong naming format",
+      "count": 2
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_c290_forloop__rindex' uses wrong naming format",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "VariableName",
+      "severity": "warning",
+      "message": "The variable 'locksmith_c290_forloop__rindex0' uses wrong naming format",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ab77_forloop__first' is assigned but not used",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ab77_forloop__last' is assigned but not used",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ab77_forloop__rindex' is assigned but not used",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ab77_forloop__rindex0' is assigned but not used",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ef92_forloop__last' is assigned but not used",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ef92_forloop__rindex' is assigned but not used",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "message": "The variable 'locksmith_ef92_forloop__rindex0' is assigned but not used",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "message": "The variable 'locksmith_c290_forloop__last' is assigned but not used",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "message": "The variable 'locksmith_c290_forloop__rindex' is assigned but not used",
+      "count": 1
+    },
+    {
+      "file": "snippets/header-mega-menu.liquid",
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "message": "The variable 'locksmith_c290_forloop__rindex0' is assigned but not used",
+      "count": 1
+    }
+  ],
+  "note": "All newly reported warnings are in the formerly unparseable header-mega-menu snippet. The underlying Locksmith variable names, large pagination and unused assignments predate this change. No Locksmith logic was changed."
+}

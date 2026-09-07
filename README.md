@@ -33,7 +33,7 @@ npm run theme:open:dev
 
 During setup, `shopify theme info --environment development` resolved development theme `142755430600`, named `Development (deb269-MacBook-Pro-4)`. Development themes are account/session resources; resolve again rather than hardcoding this ID for another collaborator. Wave 1 has now been pushed to this development theme; the current preview is linked in the progress checklist. Development previews share real store data and apps; they are not isolated test stores.
 
-The initial Theme Check result is **126 errors and 361 warnings**, recorded in `reports/theme-check-baseline.json`. These are inherited, not setup regressions. Do not suppress the whole baseline or claim checks pass. Triage active code first; the two dynamic-tag syntax findings require runtime validation, and Locksmith findings require app-aware review. `theme:push:dev` is deliberately not a production release command.
+The initial Theme Check result is **126 errors and 361 warnings**, recorded in `reports/theme-check-baseline.json`. These are inherited, not setup regressions. Do not suppress the whole baseline or claim checks pass. The second Wave 1 checkpoint fixes four errors, including both dynamic-tag parser errors, and reports 122 errors / 404 warnings. The warning increase comes from existing mega-menu code becoming parseable; see the progress checklist for the comparison. Locksmith findings require app-aware review. `theme:push:dev` is deliberately not a production release command.
 
 ## Synchronize merchant changes
 
@@ -64,3 +64,5 @@ Launch `claude` from this directory. Claude Code automatically reads the root `C
 `buffer context`, requested by the supplied managed instruction, was attempted; Buffer CLI is not installed. It is not required for this Shopify workflow.
 
 Environment configuration follows [Shopify theme environments](https://shopify.dev/docs/storefronts/themes/tools/cli/environments). Command references: [theme pull](https://shopify.dev/docs/api/shopify-cli/theme/theme-pull), [theme dev](https://shopify.dev/docs/api/shopify-cli/theme/theme-dev), [theme push](https://shopify.dev/docs/api/shopify-cli/theme/theme-push).
+
+Wave 1 motion lifecycle verification: `node scripts/test-motion.cjs`. Sanitized performance summaries can be regenerated with `python3 scripts/summarize-wave-1-pass-2.py /path/to/lighthouse-json-directory`.
