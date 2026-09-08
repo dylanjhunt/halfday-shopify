@@ -1,12 +1,12 @@
 # Halfday modernization roadmap
 
-**Current three-wave plan. First Wave 1 release published by Dylan on September 8, 2026. Follow-through remains on development.** This replaces the earlier five-wave grouping; the work is grouped around site readiness, email relaunch, and operations/reviews.
+**Current three-wave plan. First Wave 1 release published by Dylan on September 8, 2026. The audited gallery, collection and review follow-through is also live; subsequent work remains in development.** This replaces the earlier five-wave grouping; the work is grouped around site readiness, email relaunch, and operations/reviews.
 
 [Verified audit](focused-audit-2026-09-07.md) · [Wave 1 checklist and preview](wave-1-progress.md) · [LCP/CLS findings](lcp-cls-follow-up-2026-09-08.md)
 
 | Wave | Outcome | Estimated hands-on time | Status |
 | --- | --- | --- | --- |
-| 1. Site cleanup, speed and shopping experience | Current content, clear buying paths, lighter pages and concrete SEO repairs | 14–20 hours | First release live; follow-through in development; catalog/app decisions open |
+| 1. Site cleanup, speed and shopping experience | Current content, clear buying paths, lighter pages and concrete SEO repairs | 14–20 hours | First release and follow-through live; responsive refinement in development; catalog/app decisions open |
 | 2. Klaviyo cleanup and relaunch | Correct signup/offer journey, refreshed welcome/browse messaging and eligible campaign audience | 8–12 hours | Not started |
 | 3. Fulfillment connections and reviews | Verified channel routing, routine sync repairs and Bazaarvoice migration | 6–10 hours | Vendor/access inputs needed |
 
@@ -23,7 +23,7 @@
 
 **September 8 progress:** Dylan published Git-connected theme **142757101768**, `halfday-shopify/main`, at `2c8ff4f`. All 455 downloaded live files match that release. The initial performance, accessibility, metadata, link, image and stylesheet improvements are now the production baseline. The obsolete Shogun product assignments were also cleared with approval.
 
-New work is on **`feature/wave-1-follow-through`**, preview theme **142755430600**. Product gallery videos now load on request and pause when leaving their slide. Collection banners use a single responsive picture and one H1 while preserving the existing artwork and heading text. See the [follow-through report](wave-1-follow-through-2026-09-08.md) and the [latest review-layout/Agentready checkpoint](wave-1-review-layout-2026-09-08.md).
+The audited follow-through was merged and deployed with Dylan’s authorization at **`a99ed7f`**. All 455 live files match the release. New work is on **`djh/wave-1-responsive-follow-up`**, preview theme **142755430600**. Product gallery videos now load on request and pause when leaving their slide. Collection banners use a single responsive picture and one H1 while preserving the existing artwork and heading text. See the [follow-through report](wave-1-follow-through-2026-09-08.md) and the [latest review-layout/Agentready checkpoint](wave-1-review-layout-2026-09-08.md).
 
 **Open to finish Wave 1:** approved 4-pack/slim-can facts and assets; app ownership and supported Signifyd scoping; verification after Agentready's app fixes are ready; editorial decisions on disputed health/nutrition claims and retired content. The review slot now has a verified loading/zero-review state, and Dawn/Yotpo star CSS is separated. LCP remains variable. Agentready output-off endpoint blocking now passes, but Concierge Apply still fails with `unsupported_field`. These items remain open, not silently marked complete. Klaviyo signup/offer activation belongs to Wave 2.
 

@@ -1,17 +1,17 @@
 # Wave 1 progress
 
-**Status: Dylan published the first Wave 1 release on September 8, 2026. Main is live. New follow-through is on a development branch/theme; remaining catalog/app dependencies are listed in the current roadmap.**
+**Status: the initial release and audited gallery, collection and review follow-through are live. Remaining development is on a fresh branch. Catalog/app dependencies remain open.**
 
-- Live: theme **142757101768**, `halfday-shopify/main`, commit `2c8ff4f`; tag `baseline/live-wave-1-2026-09-08`.
-- Current branch: **`feature/wave-1-follow-through`**. Never push this work to main without release authorization.
+- Live: theme **142757101768**, `halfday-shopify/main`, release commit `a99ed7f`; tag `baseline/live-wave-1-follow-through-2026-09-08`.
+- Current branch: **`djh/wave-1-responsive-follow-up`**. Further changes stay in development until separately authorized for release.
 - Development theme: **142755430600**, Development (deb269-MacBook-Pro-4).
-- [Development preview](https://drinkhalfday.com/?preview_theme_id=142755430600) · [Latest review-layout and Agentready report](wave-1-review-layout-2026-09-08.md).
-- Fresh live and pre-edit development pulls each matched all 455 published theme files. No merchant drift needed merging.
-- Dylan confirmed all customer ordering redirects to Amazon. Authenticated staff/sample checkout is no longer a release gate; retain its existing code and Locksmith controls.
-- **This follow-through makes no production or shared app/store-data changes.** Agentready activation remains pending verification after the app fixes are ready.
-- The dated checkpoints below are historical. Their statements about an unpublished theme or authenticated-release dependencies describe the scope at the time and are superseded by this current status.
+- [Development preview](https://drinkhalfday.com/?preview_theme_id=142755430600) · [Release audit](wave-1-follow-through-release-2026-09-08.md).
+- Post-release Shopify CLI download: **455 files match main**, live role verified and processing complete. Public Lemon Tea has the new unique anchor, zero initial gallery videos and the existing attributed Amazon destination; browser preview was exited before this check.
+- Continuing: tablet flavor-selector spacing in development, with no new JavaScript. See the [responsive follow-up](wave-1-responsive-follow-up-2026-09-08.md).
+- Shared app/store data was not changed by this release. Agentready activation still depends on app fixes and visibility verification.
+- Historical checkpoints below retain their original scope; this current status supersedes their release-state statements. Public buying routes to Amazon; authenticated staff checkout is outside the release gate, with code and access controls preserved.
 
-## Implemented in development
+## Implemented and released
 
 | Item | Change | Verification |
 | --- | --- | --- |

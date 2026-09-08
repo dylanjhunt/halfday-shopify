@@ -1949,6 +1949,9 @@ body.product-watermelon-half-half .product__title{ max-width:356px !important; }
 
 @media(min-width:990px) and (max-width:1280px){
   #product-grid .grid__item { padding: 0 16px; }
+  /* Keep long flavor names inside their links in the narrow product column. */
+  .Meta_flavors_variety_tabs_innerloops_innerboxs_innerlists_mainboxs_new{ width:calc((100% - 16px) / 3); }
+  .Meta_flavors_variety_tabs_innerloops_innerboxs_innerlists_innerboxs_innertitle_new p{ font-size:13px; }
 }
 
 @media(min-width:0px) and (max-width:989px){
