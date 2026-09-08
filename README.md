@@ -66,3 +66,5 @@ Launch `claude` from this directory. Claude Code automatically reads the root `C
 Environment configuration follows [Shopify theme environments](https://shopify.dev/docs/storefronts/themes/tools/cli/environments). Command references: [theme pull](https://shopify.dev/docs/api/shopify-cli/theme/theme-pull), [theme dev](https://shopify.dev/docs/api/shopify-cli/theme/theme-dev), [theme push](https://shopify.dev/docs/api/shopify-cli/theme/theme-push).
 
 Wave 1 motion lifecycle verification: `node scripts/test-motion.cjs`. Sanitized performance summaries can be regenerated with `python3 scripts/summarize-wave-1-pass-2.py /path/to/lighthouse-json-directory`.
+
+Wave 1 regression verification: `python3 scripts/verify-regressions.py` compares 15 public live/development routes, Amazon attribution links, tracking loaders and protected code. The third checkpoint in the progress checklist records browser interaction checks, visual comparisons and tracking transport limits.

@@ -93,7 +93,7 @@
                                         {%- if megamenu_items.image_or_video.value != blank -%}
                                           <div class="mobile_megamenu_box_new">
                                             {% if megamenu_items.url.value != blank %}
-                                              <a href="{{ megamenu_items.url.value }}" class="mobile_megamenu_mainbox_link_new"></a>
+                                              <a href="{% render 'halfday-menu-link', url: megamenu_items.url.value %}" class="mobile_megamenu_mainbox_link_new"></a>
                                             {% endif %}
                                             <div class="mobile_megamenu_innervideoimage_new">
                                               {%- if megamenu_items.image_or_video.value contains "files" -%}
@@ -121,7 +121,7 @@
 
                                     {%- if megamenu_selection.megamenu_button_url.value != blank and megamenu_selection.megamenu_button_title.value != blank -%}
                                       <div class="mobile_megamenu_innerboth_buttons_new">
-                                        <a href="{{ megamenu_selection.megamenu_button_url.value }}" class="button">
+                                        <a href="{% render 'halfday-menu-link', url: megamenu_selection.megamenu_button_url.value %}" class="button">
                                           {{ megamenu_selection.megamenu_button_title.value }}  
                                         </a>
                                       </div>

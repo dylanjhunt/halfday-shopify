@@ -92,37 +92,55 @@ function halfdaySwiper(selector, options) {
   });
 });
 
-/* megamenu */
-$(".collection_info_links_new").on("mouseenter focusin", function() {
-    var ID = $(this).attr("menu_id");
-    if (ID) {
-        setTimeout(function() {
-            $(".megamenu_right_collection_Info_new").css("display", "none");
-            $("." + ID + "_display").css("display", "block");
-        }, 200);
-        $(".collection_info_links_new").removeClass("active");
-        $(this).addClass("active");
-    }
-})
-
-// Native details supplies click/keyboard behavior; retain desktop hover.
+/* Megamenu: preserve hover while making the first pointer click stay open. */
+const halfdayHoverOpenedMenus = new WeakSet();
+let halfdayMenuPreviewTimer;
+$(".collection_info_links_new").on("mouseenter focusin", function(event) {
+    const menu = $(this).closest('.mega-menu');
+    const id = $(this).attr('menu_id');
+    if (!id) return;
+    clearTimeout(halfdayMenuPreviewTimer);
+    halfdayMenuPreviewTimer = setTimeout(() => {
+        if (!menu[0].open) return;
+        menu.find('.megamenu_right_collection_Info_new').hide();
+        menu.find('.' + id + '_display').show();
+    }, event.type === 'focusin' ? 0 : 200);
+    menu.find('.collection_info_links_new').removeClass('active');
+    $(this).addClass('active');
+});
 $(".custom_mega_menu_top_new").hover(function() {
-    $(this).find(".mega-menu").attr("open", "open");
+    const details = this.querySelector('.mega-menu');
+    if (!details.open) halfdayHoverOpenedMenus.add(details);
+    details.open = true;
 }, function() {
-    if (!this.contains(document.activeElement)) $(this).find(".mega-menu").removeAttr("open");
+    const details = this.querySelector('.mega-menu');
+    halfdayHoverOpenedMenus.delete(details);
+    if (!this.contains(document.activeElement)) details.open = false;
+});
+document.addEventListener('click', event => {
+    const summary = event.target.closest('header-menu > details > summary');
+    if (!summary || event.detail === 0 || event.button !== 0) return;
+    const details = summary.parentElement;
+    if (halfdayHoverOpenedMenus.has(details)) {
+        event.preventDefault();
+        halfdayHoverOpenedMenus.delete(details);
+        summary.setAttribute('aria-expanded', 'true');
+    }
 });
 document.addEventListener('toggle', event => {
-  if (!event.target.matches('header-menu > details')) return;
-  const openShopMenu = document.querySelector('.custom_mega_menu_top_only_new .mega-menu[open]');
-  document.body.classList.toggle('open_megamenu', Boolean(openShopMenu));
-  $('.overlay').toggle(Boolean(openShopMenu));
-  if (!event.target.open) {
-    const menu = $(event.target);
-    menu.find('.megamenu_right_collection_Info_new').hide();
-    menu.find('.first_element_in_loop_new').show();
-    menu.find('.collection_info_links_new').removeClass('active');
-    menu.find('.first_item_in_loop_new').addClass('active');
-  }
+    if (!event.target.matches('header-menu > details')) return;
+    const openShopMenu = document.querySelector('.custom_mega_menu_top_only_new .mega-menu[open]');
+    document.body.classList.toggle('open_megamenu', Boolean(openShopMenu));
+    $('.overlay').toggle(Boolean(openShopMenu));
+    if (!event.target.open) {
+        halfdayHoverOpenedMenus.delete(event.target);
+        clearTimeout(halfdayMenuPreviewTimer);
+        const menu = $(event.target);
+        menu.find('.megamenu_right_collection_Info_new').hide();
+        menu.find('.first_element_in_loop_new').show();
+        menu.find('.collection_info_links_new').removeClass('active');
+        menu.find('.first_item_in_loop_new').addClass('active');
+    }
 }, true);
 
 $(".tab_title_mobile_new").on('click', function() {
@@ -197,12 +215,14 @@ document.addEventListener('click', event => {
 });
 
 $(".footer-block__heading").click(function() {
-    var width = $(window).width();
-    if (width < 750) {
-        $(this).toggleClass("active");
-        $(this).next(".Footer_detail_1_menus_items_new").slideToggle();
+    const panel = $(this).next('.Footer_detail_1_menus_items_new');
+    if (window.matchMedia('(max-width: 749px)').matches && panel.length) {
+        const open = $(this).toggleClass('active').hasClass('active');
+        $(this).find('.Footer_heading_toggle_new').attr('aria-expanded', String(open));
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) panel.stop(true, true).toggle(open);
+        else panel.stop(true, true)[open ? 'slideDown' : 'slideUp']();
     }
-})
+});
 
 $(".play_video_on_hover").hover(function() {
     var URL = $(this).find('video').attr("video_url");

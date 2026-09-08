@@ -123,7 +123,7 @@
                           </ul>
                           {%- if section.settings.main_megamenu_button_text != blank and section.settings.main_megamenu_button_link != blank -%}
                             <div class="megamenu_button_new">
-                              <a href="{{ section.settings.main_megamenu_button_link }}" class="button">
+                              <a href="{% render 'halfday-menu-link', url: section.settings.main_megamenu_button_link %}" class="button">
                                 {{ section.settings.main_megamenu_button_text }}  
                               </a>
                             </div>
@@ -166,7 +166,7 @@
                                                 {%- if megamenu_items.image_or_video.value != blank -%}
                                                   <div class="swiper-slide megamenu_right_mainbox_new">
                                                     {% if megamenu_items.url.value != blank %}
-                                                      <a href="{{ megamenu_items.url.value }}" class="megamenu_right_mainbox_link_new"></a>
+                                                      <a href="{% render 'halfday-menu-link', url: megamenu_items.url.value %}" class="megamenu_right_mainbox_link_new"></a>
                                                     {% endif %}
                                                     <div class="megamenu_right_innervideoimage_new">
                                                       {%- if megamenu_items.image_or_video.value contains "files" -%}

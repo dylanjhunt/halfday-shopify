@@ -1,0 +1,34 @@
+{%- comment -%}
+  Normalize verified legacy menu destinations and remove storefront preview IDs.
+  Preserve other query parameters and external destinations, including attribution.
+{%- endcomment -%}
+{%- assign first_character = url | slice: 0, 1 -%}
+{%- assign first_two_characters = url | slice: 0, 2 -%}
+{%- assign url_segments = url | split: '/' -%}
+{%- assign internal_link = false -%}
+{%- if first_character == '/' and first_two_characters != '//' -%}
+  {%- assign internal_link = true -%}
+{%- elsif url_segments[2] == 'drinkhalfday.com' or url_segments[2] == 'www.drinkhalfday.com' or url_segments[2] == shop.permanent_domain -%}
+  {%- assign internal_link = true -%}
+{%- endif -%}
+{%- if internal_link -%}
+  {%- assign fragment_parts = url | split: '#' -%}
+  {%- assign url_parts = fragment_parts[0] | split: '?' -%}
+  {%- assign clean_path = url_parts[0] | replace: '/en-test/products/classic-variety-new-2-0', '/products/classic-variety' | replace: '/en-test/products/lemon-iced-tea', '/products/lemon-tea' | replace: '/collections/new-2-0', '/collections/shop-all' -%}
+  {%- assign parameters = url_parts[1] | split: '&' -%}
+  {%- capture clean_query -%}
+    {%- assign separator = '' -%}
+    {%- for parameter in parameters -%}
+      {%- assign parameter_parts = parameter | split: '=' -%}
+      {%- unless parameter_parts[0] == 'preview_theme_id' or parameter == blank -%}
+        {{- separator -}}{{- parameter -}}
+        {%- assign separator = '&' -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {{- clean_path | escape -}}
+  {%- if clean_query != blank -%}?{{- clean_query | escape -}}{%- endif -%}
+  {%- if fragment_parts.size > 1 -%}#{{- fragment_parts[1] | escape -}}{%- endif -%}
+{%- else -%}
+  {{- url | escape -}}
+{%- endif -%}

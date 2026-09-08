@@ -78,7 +78,14 @@
                     {% endif %}
                   >
                     {%- if block.settings.heading != blank -%}
-                      <h2 class="footer-block__heading inline-richtext {% if block.settings.default_open_mobile == true %} active {% endif %}">{{- block.settings.heading -}}</h2>
+                      <h2 class="footer-block__heading inline-richtext {% if block.settings.default_open_mobile == true %} active {% endif %}">
+                        {%- if block.type == 'link_list' and block.settings.menu != blank -%}
+                          <span class="Desktop_only_new">{{- block.settings.heading -}}</span>
+                          <button type="button" class="Footer_heading_toggle_new" aria-controls="FooterMenu-{{ section.id }}-{{ block.id }}" aria-expanded="{{ block.settings.default_open_mobile }}">{{- block.settings.heading -}}</button>
+                        {%- else -%}
+                          {{- block.settings.heading -}}
+                        {%- endif -%}
+                      </h2>
                     {%- endif -%}
     
                     {%- case block.type -%}
@@ -90,7 +97,7 @@
                         </div>
                       {%- when 'link_list' -%}
                         {%- if block.settings.menu != blank -%}
-                          <div class="Footer_detail_1_menus_items_new" {% if block.settings.default_open_mobile == true %}style="display: block;"{% endif %}>
+                          <div id="FooterMenu-{{ section.id }}-{{ block.id }}" class="Footer_detail_1_menus_items_new" {% if block.settings.default_open_mobile == true %}style="display: block;"{% endif %}>
                             <ul class="footer-block__details-content list-unstyled">
                               {%- for link in block.settings.menu.links -%}
                                 {%- comment %}<locksmith:86fa>{% endcomment -%}

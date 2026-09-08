@@ -87,6 +87,30 @@ In the three isolated delivered-theme runs, median reported main-thread attribut
 - JavaScript syntax and Git whitespace checks pass. A separate fresh Lighthouse console audit reports zero errors. Two unsourced MutationObserver errors appeared in the long-lived interactive browser session and did not reproduce in that fresh audit; the known header stack stopped recurring after its repair.
 - Raw captures remain under `/private/tmp/halfday-wave1-next/`; only sanitized performance summaries are committed. No customer data, credentials or anonymous preview cookies are exported.
 
+## Third checkpoint: interaction, visual and tracking regression review
+
+Completed September 7, 2026 (Toronto), on `dev/wave-1` and development theme **142755430600**. A fresh CLI download of the live theme still matched `main`. All changes below are theme-scoped and uploaded through Shopify CLI. Production and shared store/app data remain unchanged.
+
+| Completed | Result and verification |
+| --- | --- |
+| Shop pointer regression | Hover opened the native disclosure, so the first mouse click immediately closed it. Preserve the first click after hover; subsequent clicks toggle normally. Real browser checks: first click opens, second closes, Enter opens, Escape closes. Learn opens by mouse. Category previews now clear stale timers and are scoped to their menu. |
+| Header visual regression | Native summary inherited extra right padding and shifted Learn 11px. Restore the original spacing. Live and development now both place Shop at x=40 and Learn at x=141.14 at 1440px. |
+| Legacy mobile navigation | The Variety Packs CTA used a retired `/en-test/` product path plus old preview theme ID `140338692296`. Normalize three verified old destinations and remove only internal `preview_theme_id` parameters when rendering header links. Other query parameters and external URLs are preserved. Mobile drawer CTA reaches Classic Variety while retaining the current development assets. Shared menus/metaobjects are untouched. |
+| Footer keyboard and resize | Mobile menu headings use buttons with expanded state and visible focus. Enter opens About; Space closes it. Returning from 390px to 1440px shows all three desktop link groups even after closing a mobile group. Respect reduced motion for the footer animation, smooth scrolling and decorative spin. |
+| Landing-page broken social link | Correct the LP footer's concatenated TikTok/Twitter URL to the existing X profile destination in development section settings. No campaign or app setting changes. |
+
+### Regression coverage
+
+- **15 live/development routes pass** the [markup comparison](../reports/wave-1-regression-markup.json): HTTP 200, verified development assets, no rendered Liquid errors, identical Amazon destinations including attribution query parameters, unchanged Klaviyo embed IDs, no removed external script loaders or product data IDs. Integration-marker presence matches. No legacy internal preview links remain in these development pages. Re-run with `python3 scripts/verify-regressions.py`.
+- Theme settings, Locksmith snippet and native product/cart scripts remain byte-for-byte identical to `main`. The bundled jQuery, marquee and Swiper library code is unchanged. Removed hidden cart forms on Amazon-directed cards are the earlier intended change; primary product/contact/landing-page and protected staff form signatures remain intact.
+- **Desktop/mobile hero comparison:** at 1440px and 390px, live/development hero, heading-wrapper and CTA-wrapper rectangles match exactly. Screenshots retain the artwork, crop, typography and colors; neither viewport has horizontal overflow. This is representative visual QA, not a pixel comparison of every page or browser.
+- **Real interactions checked:** desktop Shop/Learn, menu category switching, keyboard open/close, mobile drawer and Variety Packs CTA, Classic Variety gallery Next (1/2 to 2/2), footer keyboard/resize, and Stockist locator search for ZIP 10001 returning stores. Previous checkpoint covers FAQ questions/topic anchors, product carousel Next, Lemon gallery and video visibility behavior.
+- **Signup UI:** the existing offer teaser opens its email dialog by keyboard and Close dismisses it; the preview toolbar overlaps pointer clicks at that location. HelloFresh's asynchronously loaded first-name/email/phone/consent form appears. Nothing was entered or submitted. Its current form contains no `h6 a` links, so the scoped link observer has no live target to exercise in this form version.
+- **Tracking transport:** a fresh anonymous homepage capture has the same successful Klaviyo onsite analytics (200/202), Postscript page-event (200) and Signifyd loader (200) requests as the earlier live baseline, with zero console errors. The [sanitized network summary](../reports/wave-1-tracking-transport.json) retains endpoint/status counts only. HTTP success verifies transport, not event payload correctness, identified profiles, purchases or complete attribution. Amazon links retain their destinations and parameters; external checkout completion was not tested.
+- **Checks:** motion lifecycle harness and JS syntax pass. [Theme Check comparison](../reports/wave-1-regression-theme-check.json) remains **122 errors / 404 warnings**, with zero added or removed findings against checkpoint two. Git whitespace checks pass. Existing Theme Check debt remains.
+
+Release still needs authenticated staff/sample ordering QA, a real reduced-motion preference walkthrough and conversion/identified-user validation. GA/Ads remain deferred and GTM excluded. The HelloFresh page still advertises an offer ending March 31, 2025; its disposition belongs to the campaign/content review rather than silently extending an expired offer.
+
 ## Still to tackle / decisions needed
 
 | Item | Next step / dependency |
