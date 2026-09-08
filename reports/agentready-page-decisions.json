@@ -1,0 +1,180 @@
+{
+  "status": "Draft Concierge decisions saved; not applied to store",
+  "pages": [
+    {
+      "url": "https://drinkhalfday.com/pages/affiliate-sign-up",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/affiliate-sign-up",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/coming-soon",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/coming-soon",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/communi-tea",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/communi-tea",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/contact",
+      "http_status": 200,
+      "final_url": "https://drinkhalfday.com/pages/contact",
+      "selected_classification": "ContactPage",
+      "reason": "Verified public informational page"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/home-copy",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/home-copy",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/email-signup",
+      "http_status": 200,
+      "final_url": "https://drinkhalfday.com/",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "Campaign, popup test, or redirect to home; omit from Agentready discovery"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/faq",
+      "http_status": 200,
+      "final_url": "https://drinkhalfday.com/pages/faq",
+      "selected_classification": "FAQPage",
+      "reason": "Verified public informational page"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/find-in-store",
+      "http_status": 200,
+      "final_url": "https://drinkhalfday.com/pages/find-in-store",
+      "selected_classification": "WebPage",
+      "reason": "Verified public informational page"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/game",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/game",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/gut-health",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/gut-health",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/halfday-subscribe-page",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/halfday-subscribe-page",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/hellofresh",
+      "http_status": 200,
+      "final_url": "https://drinkhalfday.com/pages/hellofresh",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "Campaign, popup test, or redirect to home; omit from Agentready discovery"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/home",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/home",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/homie",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/homie",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/shop-variety-pack",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/shop-variety-pack",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/our-story-2",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/our-story-2",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/our-story",
+      "http_status": 200,
+      "final_url": "https://drinkhalfday.com/pages/our-story",
+      "selected_classification": "AboutPage",
+      "reason": "Verified public informational page"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/peach-green-tea",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/peach-green-tea",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/popup-testing",
+      "http_status": 200,
+      "final_url": "https://drinkhalfday.com/pages/popup-testing",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "Campaign, popup test, or redirect to home; omit from Agentready discovery"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/press",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/press",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/privacy-policy",
+      "http_status": 200,
+      "final_url": "https://drinkhalfday.com/pages/privacy-policy",
+      "selected_classification": "WebPage",
+      "reason": "Verified public informational page"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/promo-free-can",
+      "http_status": 200,
+      "final_url": "https://drinkhalfday.com/",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "Campaign, popup test, or redirect to home; omit from Agentready discovery"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/free-can-social-1",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/free-can-social-1",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/pto",
+      "http_status": 200,
+      "final_url": "https://drinkhalfday.com/pages/pto",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "Campaign, popup test, or redirect to home; omit from Agentready discovery"
+    },
+    {
+      "url": "https://drinkhalfday.com/pages/referral-program",
+      "http_status": 404,
+      "final_url": "https://drinkhalfday.com/pages/referral-program",
+      "selected_classification": "Hidden from AI (promo)",
+      "reason": "404/nonpublic at audit time"
+    }
+  ]
+}
