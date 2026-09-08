@@ -1,8 +1,8 @@
 # Wave 1 progress
 
-**Status: in progress. Secondary-page images, card stylesheets and social-preview metadata are complete in development. September 8, 2026.**
+**Status: implemented Wave 1 work merged into `main` as an unpublished release candidate. Shopify connection and final audit are next. Outstanding dependencies remain listed below. September 8, 2026.**
 
-- Branch: `dev/wave-1`.
+- Release candidate: `main`. Completed implementation branch: `dev/wave-1`.
 - Development theme: `142755430600`, Development (deb269-MacBook-Pro-4).
 - [Preview](https://halfday-tonics.myshopify.com?preview_theme_id=142755430600) · [Theme editor](https://halfday-tonics.myshopify.com/admin/themes/142755430600/editor).
 - Latest live theme was pulled before edits; it matched the committed baseline. No merchant changes needed merging.
@@ -195,3 +195,10 @@ All **10 social-image checks** match the actual PNG dimensions over HTTPS. The [
 No JavaScript added or changed. This pass does not claim a measured LCP/CLS improvement. App scoping, approved catalog facts, Agentready fixes and authenticated release QA remain the major dependencies.
 
 [Final Theme Check comparison](../reports/wave-1-quick-wins-theme-check.json): **122 inherited errors / 391 warnings**, no new offenses and six inherited warnings removed. Git whitespace checks pass.
+
+
+## September 8: merge into main
+
+Dylan authorized merging the implemented Wave 1 work into `main`. The working tree was clean and `main` was an ancestor of `dev/wave-1`, so no conflict resolution or theme-code changes were needed. A merge commit preserves the wave boundary. The original live theme remains at `baseline/live-2026-09-07`; the regression checker now uses that immutable reference instead of the moving `main` branch.
+
+The merged `main`, completed `dev/wave-1` branch and original baseline tag are being pushed to Dylan’s supplied repository, [dylanjhunt/halfday-shopify](https://github.com/dylanjhunt/halfday-shopify). No Shopify files were uploaded and no theme was published during this merge/push task. Dylan will connect Shopify, then request the final audit before publishing. Existing catalog, app and authenticated-ordering dependencies remain open. Subsequent work starts on a descriptive feature/fix branch from `main` and is reviewed in an unpublished theme before merging.

@@ -12,6 +12,8 @@ from urllib.parse import urljoin, urlsplit, parse_qs
 from urllib.request import Request, build_opener, HTTPCookieProcessor
 
 ROOT = Path(__file__).resolve().parents[1]
+# Keep the original live comparison stable after Wave 1 is merged into main.
+BASELINE_REF = 'baseline/live-2026-09-07'
 PATHS = ['/', '/collections/shop-all', '/collections/variety-packs', '/products/lemon-tea',
          '/products/classic-variety', '/products/strawberry-half-half-slim-can',
          '/pages/faq', '/pages/find-in-store', '/pages/contact', '/pages/why-halfday',
@@ -65,7 +67,7 @@ def compare(path):
 if __name__ == '__main__':
     with ThreadPoolExecutor(max_workers=3) as pool:
         pages = list(pool.map(compare, PATHS))
-    old = subprocess.check_output(['git','show','main:assets/custom.js'], cwd=ROOT).decode()
+    old = subprocess.check_output(['git','show',BASELINE_REF + ':assets/custom.js'], cwd=ROOT).decode()
     new = (ROOT/'assets/custom.js').read_text()
     libraries = {}
     for label, marker in [('jQuery', '/*! jQuery'), ('marquee', '(function(factory)'), ('Swiper', 'var Swiper=function')]:
@@ -76,9 +78,9 @@ if __name__ == '__main__':
             new_library = next(line for line in new.splitlines() if line.startswith(marker))
         libraries[label] = {'unchanged': old_library == new_library, 'sha256': sha256(new_library.encode()).hexdigest()}
     protected_files = ['snippets/locksmith.liquid', 'assets/product-form.js', 'assets/cart.js', 'assets/cart-drawer.js']
-    unchanged = {name: subprocess.check_output(['git','show','main:'+name],cwd=ROOT) == (ROOT/name).read_bytes() for name in protected_files}
+    unchanged = {name: subprocess.check_output(['git','show',BASELINE_REF + ':' + name],cwd=ROOT) == (ROOT/name).read_bytes() for name in protected_files}
     # App setup adds one disabled embed. Preserve every other merchant setting.
-    original_settings = subprocess.check_output(['git','show','main:config/settings_data.json'],cwd=ROOT).decode()
+    original_settings = subprocess.check_output(['git','show',BASELINE_REF + ':config/settings_data.json'],cwd=ROOT).decode()
     current_settings = (ROOT/'config/settings_data.json').read_text()
     original_settings = json.loads(original_settings[original_settings.index('{'):])
     current_settings = json.loads(current_settings[current_settings.index('{'):])
@@ -87,7 +89,7 @@ if __name__ == '__main__':
     unchanged['agentready_embed_is_disabled'] = agentready == {
         'type': 'shopify://apps/agentready/blocks/agent-json/019bc449-5f49-7d2d-86cd-f07c7b17ff7b',
         'disabled': True, 'settings': {}}
-    report = {'captured_at':datetime.now(timezone.utc).isoformat(), 'theme_id':142755430600,
+    report = {'captured_at':datetime.now(timezone.utc).isoformat(), 'theme_id':142755430600, 'baseline_ref':BASELINE_REF,
               'method':'Separate anonymous cookie jars for public live and development HTML; no forms submitted. Script paths omit query/session values.',
               'limits':'Preserved loaders, attribution URLs, embed IDs and code do not prove receipt of analytics events or conversion attribution. No GA/Ads access; GTM excluded; no purchase/signup events generated.',
               'libraries':libraries, 'unchanged_protected_files':unchanged, 'pages':pages}

@@ -11,7 +11,7 @@ Halfday's customized Dawn 15.2.0 theme, downloaded from the active theme on Sept
 | Toolchain | Shopify CLI 4.6.1 (pinned locally); Node 24.19.0 used for setup |
 | Claude Code | Installed version 2.1.207; shared project context in `CLAUDE.md` |
 
-Start with the [focused performance, app, Klaviyo and SEO audit](docs/focused-audit-2026-09-07.md) for verified findings from 15 performance runs, 71 public pages and authenticated account inspection. The [modernization roadmap](docs/modernization-roadmap.md) is the single delivery plan for CRO, speed/LCP, app cleanup, content, email/search, integrations, and reviews, including estimates and an email draft for Leslie. The [initial store audit](docs/initial-audit-2026-09-07.md) and [Klaviyo account audit](docs/klaviyo-audit-2026-09-07.md) remain supporting snapshots. Evidence is in `reports/`. Wave 1 implementation is now active on `dev/wave-1`. See the [progress checklist and preview](docs/wave-1-progress.md) for changes, validation and outstanding decisions. The production theme is unchanged. Agentready shared settings have been configured; full activation is blocked by [verified app issues](docs/agentready-product-feedback.md).
+Start with the [focused performance, app, Klaviyo and SEO audit](docs/focused-audit-2026-09-07.md) for verified findings from 15 performance runs, 71 public pages and authenticated account inspection. The [modernization roadmap](docs/modernization-roadmap.md) is the single delivery plan for CRO, speed/LCP, app cleanup, content, email/search, integrations, and reviews, including estimates and an email draft for Leslie. The [initial store audit](docs/initial-audit-2026-09-07.md) and [Klaviyo account audit](docs/klaviyo-audit-2026-09-07.md) remain supporting snapshots. Evidence is in `reports/`. Wave 1 is merged into `main` as an unpublished release candidate; `dev/wave-1` retains its implementation history. See the [progress checklist and preview](docs/wave-1-progress.md) for changes, validation and outstanding decisions. The production theme is unchanged. Agentready shared settings have been configured; full activation is blocked by [verified app issues](docs/agentready-product-feedback.md).
 
 ## Daily development
 
@@ -19,6 +19,7 @@ Start with the [focused performance, app, Klaviyo and SEO audit](docs/focused-au
 cd /Users/dylanhunt/Documents/development/Halfday
 npm ci
 npm run theme:list
+git switch main
 git switch -c feature/describe-the-change
 npm run theme:dev
 ```
@@ -37,25 +38,17 @@ The initial Theme Check result is **126 errors and 361 warnings**, recorded in `
 
 ## Synchronize merchant changes
 
-Before new work, commit/stash changes and pull the latest live theme:
+Before new work, check the working tree and `theme:list`. While `main` contains unpublished Wave 1 work, download the live theme to a separate temporary directory using Shopify CLI with explicit `--theme` and `--path`. Compare it with `baseline/live-2026-09-07`, then bring any newer merchant changes into a feature branch. Do not pull the older live theme directly over `main`.
 
-```sh
-npm run theme:pull
-git diff --stat
-git diff -- config/settings_data.json templates sections
-git add assets config layout locales sections snippets templates
-git commit -m "chore: sync current Shopify theme changes"
-```
+The pull wrapper refuses a dirty tree but can still overwrite committed changes. After an approved release, record the released baseline and reconcile merchant edits against that version. Before publishing, refresh the live snapshot, reconcile JSON/settings edits, validate the connected unpublished preview and review the exact diff. Production publishing requires an explicitly authorized release task.
 
-The pull wrapper refuses a dirty tree and follows whichever theme is currently live. Check `theme:list` first if another theme may have been published. Pulling over a clean feature branch can still overwrite committed feature changes; synchronize on `main` and merge the resulting commit into the feature branch. Git gives you recovery, not conflict-free automatic sync.
-
-For a one-off comparison, pull the relevant remote theme to a separate temporary directory using an explicit `--theme` and `--path`, then diff it with this checkout. Before release, refresh the live snapshot, reconcile merchant JSON/settings edits, validate a development preview, and review the exact diff. Production publishing requires an explicitly authorized release task; no live push or publish shortcut is configured here.
+Start each subsequent wave or focused fix from `main` on a descriptive `feature/...` or `fix/...` branch. Preview and verify that branch on an unpublished theme, then merge reviewed changes into `main`. A Git merge is not publishing permission. Once Shopify is connected, inspect the actual branch/theme mapping before pushing because a connected theme may synchronize automatically.
 
 ## Repository boundaries
 
 Shopify's native theme folders live at the repository root. This is a Liquid/CSS/JavaScript theme with no frontend build step. Node dependencies are developer tooling and are not sent to the storefront. `.shopifyignore` excludes project documentation, reports, scripts, and tooling from theme sync.
 
-Git is local; `main` retains the audited baseline and `dev/wave-1` contains development work. No GitHub repository, remote, Shopify GitHub connection, CI deployment, or automatic publishing has been created. A Git host/organization can be selected later if shared remote version control is wanted.
+GitHub repository: [dylanjhunt/halfday-shopify](https://github.com/dylanjhunt/halfday-shopify), configured as `origin`. `main` contains the Wave 1 release candidate and `dev/wave-1` retains the completed implementation history. The original live theme remains available at `baseline/live-2026-09-07`. Dylan will arrange the Shopify connection, followed by the final audit and separate publishing approval.
 
 Products, menus, pages, metafields/metaobjects, app configuration, inventory, and fulfillment do not come down with `theme pull`. Keep those changes documented separately; preserve merchant-managed theme JSON in version control. Never commit credentials or customer/order exports.
 
