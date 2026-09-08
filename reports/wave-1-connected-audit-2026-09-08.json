@@ -771,7 +771,9 @@
     "rendered_theme_id_verified_on_all_routes": true,
     "amazon_destinations_and_attribution_unchanged": true,
     "klaviyo_embeds_unchanged": true,
-    "external_loaders_unchanged": false,
-    "protected_code_unchanged": true
+    "protected_code_unchanged": true,
+    "no_existing_external_loaders_removed": true,
+    "only_added_loader": "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js",
+    "added_loader_context": "Shopify preview hot reload infrastructure; no new business integration loader."
   }
 }
