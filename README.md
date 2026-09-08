@@ -11,7 +11,7 @@ Halfday's customized Dawn 15.2.0 theme, downloaded from the active theme on Sept
 | Toolchain | Shopify CLI 4.6.1 (pinned locally); Node 24.19.0 used for setup |
 | Claude Code | Installed version 2.1.207; shared project context in `CLAUDE.md` |
 
-Start with the [focused performance, app, Klaviyo and SEO audit](docs/focused-audit-2026-09-07.md) for verified findings from 15 performance runs, 71 public pages and authenticated account inspection. The [modernization roadmap](docs/modernization-roadmap.md) is the single delivery plan for CRO, speed/LCP, app cleanup, content, email/search, integrations, and reviews, including estimates and an email draft for Leslie. The [initial store audit](docs/initial-audit-2026-09-07.md) and [Klaviyo account audit](docs/klaviyo-audit-2026-09-07.md) remain supporting snapshots. Evidence is in `reports/`. Wave 1 is merged into `main` as an unpublished release candidate; `dev/wave-1` retains its implementation history. See the [progress checklist and preview](docs/wave-1-progress.md) for changes, validation and outstanding decisions. The production theme is unchanged. Agentready shared settings have been configured; full activation is blocked by [verified app issues](docs/agentready-product-feedback.md).
+Start with the [focused performance, app, Klaviyo and SEO audit](docs/focused-audit-2026-09-07.md) for verified findings from 15 performance runs, 71 public pages and authenticated account inspection. The [modernization roadmap](docs/modernization-roadmap.md) is the single delivery plan for CRO, speed/LCP, app cleanup, content, email/search, integrations, and reviews, including estimates and an email draft for Leslie. The [initial store audit](docs/initial-audit-2026-09-07.md) and [Klaviyo account audit](docs/klaviyo-audit-2026-09-07.md) remain supporting snapshots. Evidence is in `reports/`. Dylan published `halfday-shopify/main` (theme `142757101768`) on September 8, 2026. **GitHub main is live: pushing to main deploys to production.** The released baseline is `baseline/live-wave-1-2026-09-08` (`2c8ff4f`); `dev/wave-1` retains the first implementation history. See the [progress checklist and preview](docs/wave-1-progress.md) for changes, validation and outstanding decisions. Further Wave 1 work stays on `feature/wave-1-follow-through` and development theme `142755430600`. Agentready shared settings have been configured; full activation is blocked by [verified app issues](docs/agentready-product-feedback.md).
 
 ## Daily development
 
@@ -19,8 +19,8 @@ Start with the [focused performance, app, Klaviyo and SEO audit](docs/focused-au
 cd /Users/dylanhunt/Documents/development/Halfday
 npm ci
 npm run theme:list
-git switch main
-git switch -c feature/describe-the-change
+git fetch origin
+git switch --no-track -c feature/describe-the-change origin/main
 npm run theme:dev
 ```
 
@@ -38,17 +38,17 @@ The initial Theme Check result is **126 errors and 361 warnings**, recorded in `
 
 ## Synchronize merchant changes
 
-Before new work, check the working tree and `theme:list`. While `main` contains unpublished Wave 1 work, download the live theme to a separate temporary directory using Shopify CLI with explicit `--theme` and `--path`. Compare it with `baseline/live-2026-09-07`, then bring any newer merchant changes into a feature branch. Do not pull the older live theme directly over `main`.
+Before new work, check the working tree, fetch GitHub and inspect `theme:list`. Download live theme `142757101768` into a separate temporary directory with explicit `--theme` and `--path`. Compare against `baseline/live-wave-1-2026-09-08` or the latest recorded release, then reconcile any merchant JSON/settings changes through a development branch. Do not pull live over unpublished work.
 
-The pull wrapper refuses a dirty tree but can still overwrite committed changes. After an approved release, record the released baseline and reconcile merchant edits against that version. Before publishing, refresh the live snapshot, reconcile JSON/settings edits, validate the connected unpublished preview and review the exact diff. Production publishing requires an explicitly authorized release task.
+Use a named `feature/...` or `fix/...` branch and Shopify CLI development preview for every new change. Push that branch explicitly (`git push -u origin feature/describe-the-change`). **Never push or merge into main without release approval: its Shopify theme is already live.** Before an authorized release, refresh the live snapshot, review the exact diff and validate the unpublished preview. Record each released baseline.
 
-Start each subsequent wave or focused fix from `main` on a descriptive `feature/...` or `fix/...` branch. Preview and verify that branch on an unpublished theme, then merge reviewed changes into `main`. A Git merge is not publishing permission. Once Shopify is connected, inspect the actual branch/theme mapping before pushing because a connected theme may synchronize automatically.
+Dylan confirmed customer buying routes to Amazon. Verify Amazon destinations and attribution parameters; staff/sample checkout is not a release gate. Preserve existing access controls and legacy native purchase code.
 
 ## Repository boundaries
 
 Shopify's native theme folders live at the repository root. This is a Liquid/CSS/JavaScript theme with no frontend build step. Node dependencies are developer tooling and are not sent to the storefront. `.shopifyignore` excludes project documentation, reports, scripts, and tooling from theme sync.
 
-GitHub repository: [dylanjhunt/halfday-shopify](https://github.com/dylanjhunt/halfday-shopify), configured as `origin`. `main` contains the Wave 1 release candidate and `dev/wave-1` retains the completed implementation history. The original live theme remains available at `baseline/live-2026-09-07`. Dylan will arrange the Shopify connection, followed by the final audit and separate publishing approval.
+GitHub repository: [dylanjhunt/halfday-shopify](https://github.com/dylanjhunt/halfday-shopify), configured as `origin`. `main` is connected to production; `dev/wave-1` retains the initial implementation history. The original theme remains available at `baseline/live-2026-09-07`, and the first published Wave 1 release is `baseline/live-wave-1-2026-09-08`.
 
 Products, menus, pages, metafields/metaobjects, app configuration, inventory, and fulfillment do not come down with `theme pull`. Keep those changes documented separately; preserve merchant-managed theme JSON in version control. Never commit credentials or customer/order exports.
 

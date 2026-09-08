@@ -7,17 +7,17 @@
   margin: 0;
 }
 
-.product .rating-star {
+.product .rating > .rating-star {
   --letter-spacing: 0.8;
   --font-size: 1.7;
 }
 
-.card-wrapper .rating-star {
+.card-wrapper .rating > .rating-star {
   --letter-spacing: 0.7;
   --font-size: 1.4;
 }
 
-.rating-star {
+.rating > .rating-star {
   --color-rating-star: rgb(var(--color-foreground));
   --percent: calc(
     (
@@ -33,7 +33,7 @@
   margin: 0;
 }
 
-.rating-star::before {
+.rating > .rating-star::before {
   content: '★★★★★';
   background: linear-gradient(
     90deg,

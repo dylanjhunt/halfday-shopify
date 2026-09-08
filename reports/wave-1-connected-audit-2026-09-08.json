@@ -1,0 +1,779 @@
+{
+  "date": "2026-09-08",
+  "release_commit": "2c8ff4ff3a4a29a87a1e59a9359dff09d2d9de5a",
+  "connected_theme_id": 142757101768,
+  "live_theme_id": 141825474760,
+  "file_sync": {
+    "connected": {
+      "compared": 455,
+      "different": [],
+      "missing": [],
+      "extra": []
+    },
+    "live": {
+      "compared": 447,
+      "different": [],
+      "missing": [],
+      "extra": []
+    }
+  },
+  "performance_method": "Four sequential Lighthouse 13.4.1 mobile simulated-throttling runs, one per page/theme. Fresh temporary Chrome profiles. These are individual lab samples, not medians or field Core Web Vitals. Raw session-bearing artifacts are retained only in /private/tmp.",
+  "performance": [
+    {
+      "run": "home",
+      "captured_at": "2026-09-08T13:44:48.155Z",
+      "runtime_error": null,
+      "performance_score": 0.36,
+      "metrics": {
+        "largest-contentful-paint": 6887.7215,
+        "cumulative-layout-shift": 0.00011296493210065345,
+        "total-byte-weight": 6831564,
+        "total-blocking-time": 1560.9999999999964
+      },
+      "media_transfer_bytes": 0,
+      "wave_1_asset_present": true,
+      "console_errors": 0,
+      "http_errors": 0,
+      "lcp_discovery_score": 1,
+      "tracking_transport": {
+        "klaviyo_onsite_analytics": {
+          "202": 2,
+          "200": 2
+        },
+        "postscript_page_events": {
+          "200": 2
+        },
+        "signifyd_requests": {
+          "200": 18,
+          "204": 3
+        }
+      },
+      "accessibility_findings": {
+        "image-alt": {
+          "score": 0,
+          "selectors": [
+            "div.needsclick > div.needsclick > div.needsclick > img.needsclick"
+          ]
+        },
+        "frame-title": {
+          "score": 0,
+          "selectors": [
+            "body.template-index > div#PBarNextFrameWrapper > iframe#PBarNextFrame"
+          ]
+        },
+        "color-contrast": {
+          "score": 0,
+          "selectors": [
+            "div.Header_announcement_bar_innermobile_mainboxs_new > div.Header_announcement_bar_innermobile_innerboxs_new > p > a",
+            "div.Header_announcement_bar_innermobile_mainboxs_new > div.Header_announcement_bar_innermobile_innerboxs_new > p > a",
+            "div.Index_image_accordion_sides_innerright_new > div.Index_image_accordion_sides_innerright_maintitle_new > div.Common_title_new > h2",
+            "div.Index_image_accordion_sides_innerright_new > div.Index_image_accordion_sides_innerright_mainbutton_new > div.Index_image_accordion_sides_innerright_innerbutton_new > a.button",
+            "div.Index_image_with_text_sides_innerright_new > div.Index_image_with_text_sides_innerright_mainbutton_new > div.Index_image_with_text_sides_innerright_innerbutton_new > a.button",
+            "div.Index_object_instagram_innersides_innerleft_new > div.Index_object_instagram_innersides_innerleft_maintitle_new > div.Common_title_new > h2",
+            "div.Index_object_instagram_innersides_new > div.Index_object_instagram_innersides_mainright_new > div.Index_object_instagram_innersides_innerright_new > a.button",
+            "div.needsclick > div.needsclick > div.needsclick > button.needsclick",
+            "div.needsclick > div#rich-text-01KHPQZCVWQ3S9ZYP1F4DEE195 > div > span",
+            "div.needsclick > div.needsclick > div.needsclick > button.needsclick"
+          ]
+        },
+        "crawlable-anchors": {
+          "score": 0,
+          "selectors": [
+            "div.Header_mega_menu_innerleft_new > ul.mega-menu__list > li > a#HeaderMenu-shop-flavors",
+            "div.Header_mega_menu_innerleft_new > ul.mega-menu__list > li > a#HeaderMenu-shop-variety-packs",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m"
+          ]
+        }
+      }
+    },
+    {
+      "run": "pdp",
+      "captured_at": "2026-09-08T13:46:54.973Z",
+      "runtime_error": null,
+      "performance_score": 0.41,
+      "metrics": {
+        "largest-contentful-paint": 9409.734449999996,
+        "cumulative-layout-shift": 0.00020811871869026228,
+        "total-byte-weight": 15122760,
+        "total-blocking-time": 897.5000000000036
+      },
+      "media_transfer_bytes": 8962953,
+      "wave_1_asset_present": true,
+      "console_errors": 0,
+      "http_errors": 0,
+      "lcp_discovery_score": 1,
+      "tracking_transport": {
+        "klaviyo_onsite_analytics": {
+          "200": 2,
+          "202": 2
+        },
+        "postscript_page_events": {
+          "200": 2
+        },
+        "signifyd_requests": {
+          "200": 17,
+          "204": 3
+        }
+      },
+      "accessibility_findings": {
+        "image-alt": {
+          "score": 0,
+          "selectors": [
+            "div.product-media-container > deferred-media.deferred-media > video > img",
+            "div.needsclick > div.needsclick > div.needsclick > img.needsclick"
+          ]
+        },
+        "frame-title": {
+          "score": 0,
+          "selectors": [
+            "body.product-lemon-tea > div#PBarNextFrameWrapper > iframe#PBarNextFrame"
+          ]
+        },
+        "color-contrast": {
+          "score": 0,
+          "selectors": [
+            "section#ProductInfo-template--18207001280712__main > div.Meta_shipping_save_text_main_new > div.Meta_shipping_save_text_inner_new > a",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div#FooterMenu-sections--18207000330440__footer-link_list_acUkCD > ul.footer-block__details-content > li > a.link",
+            "div#FooterMenu-sections--18207000330440__footer-link_list_acUkCD > ul.footer-block__details-content > li > a.link",
+            "div#FooterMenu-sections--18207000330440__footer-link_list_acUkCD > ul.footer-block__details-content > li > a.link",
+            "div#FooterMenu-sections--18207000330440__footer-link_list_acUkCD > ul.footer-block__details-content > li > a.link",
+            "div.Footer_top_sides_new > div.footer-block--newsletter > div.footer-block__newsletter > p",
+            "div.Footer_bottom_innermenus_new > ul.menu > li.menu-link > a",
+            "div.Footer_bottom_innermenus_new > ul.menu > li.menu-link > a",
+            "div.Footer_bottom_innermenus_new > ul.menu > li.menu-link > a",
+            "div.needsclick > div#rich-text-01KHPQZCVWQ3S9ZYP1F4DEE195 > div > span",
+            "div.needsclick > div.needsclick > div.needsclick > button.needsclick"
+          ]
+        },
+        "crawlable-anchors": {
+          "score": 0,
+          "selectors": [
+            "div.Header_mega_menu_innerleft_new > ul.mega-menu__list > li > a#HeaderMenu-shop-flavors",
+            "div.Header_mega_menu_innerleft_new > ul.mega-menu__list > li > a#HeaderMenu-shop-variety-packs",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m"
+          ]
+        }
+      }
+    },
+    {
+      "run": "live-home",
+      "captured_at": "2026-09-08T13:50:00.915Z",
+      "runtime_error": null,
+      "performance_score": 0.33,
+      "metrics": {
+        "largest-contentful-paint": 27520.141249999993,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 43104937,
+        "total-blocking-time": 1041
+      },
+      "media_transfer_bytes": 35617883,
+      "wave_1_asset_present": false,
+      "console_errors": 1,
+      "http_errors": 0,
+      "lcp_discovery_score": 1,
+      "tracking_transport": {
+        "klaviyo_onsite_analytics": {
+          "200": 2,
+          "202": 2
+        },
+        "postscript_page_events": {
+          "200": 2
+        },
+        "signifyd_requests": {
+          "200": 18,
+          "204": 3
+        }
+      },
+      "accessibility_findings": {
+        "image-alt": {
+          "score": 0,
+          "selectors": [
+            "div.Index_object_testimonials_innerloops_innercolumn_new > div.Index_object_testimonials_innerloops_innercolumn_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.needsclick > div.needsclick > div.needsclick > img.needsclick"
+          ]
+        },
+        "frame-title": {
+          "score": null,
+          "selectors": []
+        },
+        "color-contrast": {
+          "score": 0,
+          "selectors": [
+            "div.Header_announcement_bar_innermobile_mainboxs_new > div.Header_announcement_bar_innermobile_innerboxs_new > p > a",
+            "div.Header_announcement_bar_innermobile_mainboxs_new > div.Header_announcement_bar_innermobile_innerboxs_new > p > a",
+            "div.Index_image_accordion_sides_innerright_new > div.Index_image_accordion_sides_innerright_maintitle_new > div.Common_title_new > h2",
+            "div.Index_image_accordion_sides_innerright_new > div.Index_image_accordion_sides_innerright_mainbutton_new > div.Index_image_accordion_sides_innerright_innerbutton_new > a.button",
+            "div.Index_image_with_text_sides_innerright_new > div.Index_image_with_text_sides_innerright_mainbutton_new > div.Index_image_with_text_sides_innerright_innerbutton_new > a.button",
+            "div.Index_object_instagram_innersides_innerleft_new > div.Index_object_instagram_innersides_innerleft_maintitle_new > div.Common_title_new > h2",
+            "div.Index_object_instagram_innersides_new > div.Index_object_instagram_innersides_mainright_new > div.Index_object_instagram_innersides_innerright_new > a.button",
+            "div.needsclick > div.needsclick > div.needsclick > button.needsclick",
+            "div.needsclick > div#rich-text-01KHPQZCVWQ3S9ZYP1F4DEE195 > div > span",
+            "div.needsclick > div.needsclick > div.needsclick > button.needsclick"
+          ]
+        },
+        "crawlable-anchors": {
+          "score": 0,
+          "selectors": [
+            "li.custom_mega_menu_top_new > header-menu > div#Details-HeaderMenu-1 > a#HeaderMenu-shop",
+            "div.Header_mega_menu_innerleft_new > ul.mega-menu__list > li > a#HeaderMenu-shop-flavors",
+            "div.Header_mega_menu_innerleft_new > ul.mega-menu__list > li > a#HeaderMenu-shop-variety-packs",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m"
+          ]
+        }
+      }
+    },
+    {
+      "run": "live-pdp",
+      "captured_at": "2026-09-08T13:51:57.262Z",
+      "runtime_error": null,
+      "performance_score": 0.38,
+      "metrics": {
+        "largest-contentful-paint": 12262.20635,
+        "cumulative-layout-shift": 0.04145701256385608,
+        "total-byte-weight": 38284731,
+        "total-blocking-time": 1312.5
+      },
+      "media_transfer_bytes": 31712023,
+      "wave_1_asset_present": false,
+      "console_errors": 1,
+      "http_errors": 0,
+      "lcp_discovery_score": 0,
+      "tracking_transport": {
+        "klaviyo_onsite_analytics": {
+          "200": 2,
+          "202": 2
+        },
+        "postscript_page_events": {
+          "200": 2
+        },
+        "signifyd_requests": {
+          "200": 17,
+          "204": 3
+        }
+      },
+      "accessibility_findings": {
+        "image-alt": {
+          "score": 0,
+          "selectors": [
+            "div.product-media-container > deferred-media.deferred-media > video > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.Index_object_instagram_innerloops_innerboxs_new > div.Index_object_instagram_innerloops_innerboxs_imagevideo_new > video.Static_video_new > img",
+            "div.needsclick > div.needsclick > div.needsclick > img.needsclick"
+          ]
+        },
+        "frame-title": {
+          "score": null,
+          "selectors": []
+        },
+        "color-contrast": {
+          "score": 0,
+          "selectors": [
+            "section#ProductInfo-template--17947250360520__main > div.Meta_shipping_save_text_main_new > div.Meta_shipping_save_text_inner_new > a",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.Footer_detail_1_menus_items_new > ul.footer-block__details-content > li > a.link",
+            "div.Footer_detail_1_menus_items_new > ul.footer-block__details-content > li > a.link",
+            "div.Footer_detail_1_menus_items_new > ul.footer-block__details-content > li > a.link",
+            "div.Footer_detail_1_menus_items_new > ul.footer-block__details-content > li > a.link",
+            "div.Footer_top_sides_new > div.footer-block--newsletter > div.footer-block__newsletter > p",
+            "div.Footer_bottom_innermenus_new > ul.menu > li.menu-link > a",
+            "div.Footer_bottom_innermenus_new > ul.menu > li.menu-link > a",
+            "div.Footer_bottom_innermenus_new > ul.menu > li.menu-link > a",
+            "div.needsclick > div#rich-text-01KHPQZCVWQ3S9ZYP1F4DEE195 > div > span",
+            "div.needsclick > div.needsclick > div.needsclick > button.needsclick"
+          ]
+        },
+        "crawlable-anchors": {
+          "score": 0,
+          "selectors": [
+            "li.custom_mega_menu_top_new > header-menu > div#Details-HeaderMenu-1 > a#HeaderMenu-shop",
+            "div.Header_mega_menu_innerleft_new > ul.mega-menu__list > li > a#HeaderMenu-shop-flavors",
+            "div.Header_mega_menu_innerleft_new > ul.mega-menu__list > li > a#HeaderMenu-shop-variety-packs",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m",
+            "div.yotpo-display-wrapper > div.standalone-bottomline > div.yotpo-bottomline > a.text-m"
+          ]
+        }
+      }
+    }
+  ],
+  "feature_checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 32,
+      "high_priority_images": 33,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/collections/shop-all",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 2,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/collections/shop-all",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 32,
+      "high_priority_images": 4,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/collections/variety-packs",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 2,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/collections/variety-packs",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 32,
+      "high_priority_images": 3,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/products/lemon-tea",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/products/lemon-tea",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 37,
+      "high_priority_images": 1,
+      "legacy_article_links": 0,
+      "locator_css": false,
+      "theme_product_schema_has_description": true,
+      "theme_product_schema_has_offers": false
+    },
+    {
+      "path": "/products/classic-variety",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/products/classic-variety",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 37,
+      "high_priority_images": 1,
+      "legacy_article_links": 0,
+      "locator_css": false,
+      "theme_product_schema_has_description": true,
+      "theme_product_schema_has_offers": false
+    },
+    {
+      "path": "/products/strawberry-half-half-slim-can",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/products/strawberry-half-half-slim-can",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 37,
+      "high_priority_images": 1,
+      "legacy_article_links": 0,
+      "locator_css": false,
+      "theme_product_schema_has_description": true,
+      "theme_product_schema_has_offers": false
+    },
+    {
+      "path": "/pages/faq",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/pages/faq",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 27,
+      "high_priority_images": 1,
+      "legacy_article_links": 0,
+      "locator_css": false,
+      "faq_native_details": 26,
+      "faq_anchor_targets_resolve": true
+    },
+    {
+      "path": "/pages/find-in-store",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/pages/find-in-store",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 33,
+      "high_priority_images": 25,
+      "legacy_article_links": 0,
+      "locator_css": true
+    },
+    {
+      "path": "/pages/contact",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/pages/contact",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 26,
+      "high_priority_images": 1,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/pages/why-halfday",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/pages/why-halfday",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 32,
+      "high_priority_images": 0,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/pages/our-story",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/pages/our-story",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 30,
+      "high_priority_images": 1,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/pages/hellofresh",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 0,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/pages/hellofresh",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 14,
+      "high_priority_images": 10,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/pages/pto",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/pages/pto",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 21,
+      "high_priority_images": 6,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/pages/subscribe",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 0,
+      "description_present": false,
+      "social_description_matches": false,
+      "canonical": "https://drinkhalfday.com/pages/subscribe",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 14,
+      "high_priority_images": 10,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/collections/staff-variety-packs",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 2,
+      "description_present": false,
+      "social_description_matches": false,
+      "canonical": "https://drinkhalfday.com/collections/staff-variety-packs",
+      "robots": [
+        "noindex,follow"
+      ],
+      "schema_parse_errors": 0,
+      "style_count": 31,
+      "high_priority_images": 2,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/pages/popup-testing",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/pages/popup-testing",
+      "robots": [
+        "noindex,follow"
+      ],
+      "schema_parse_errors": 0,
+      "style_count": 27,
+      "high_priority_images": 0,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/blogs/news/kombucha-when-is-the-best-time-to-drink-it",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/kombucha-when-is-the-best-time-to-drink-it",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 27,
+      "high_priority_images": 1,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/blogs/news/white-green-tea-shot-vs-green-tea-shot-which-is-the-better-choice",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/white-green-tea-shot-vs-green-tea-shot-which-is-the-better-choice",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 27,
+      "high_priority_images": 1,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/blogs/news/white-green-tea-shot-vs-green-tea-shots",
+      "status": 200,
+      "preview_asset": true,
+      "liquid_error": false,
+      "main_h1_count": 1,
+      "description_present": true,
+      "social_description_matches": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/white-green-tea-shot-vs-green-tea-shots",
+      "robots": [],
+      "schema_parse_errors": 0,
+      "style_count": 27,
+      "high_priority_images": 1,
+      "legacy_article_links": 0,
+      "locator_css": false
+    },
+    {
+      "path": "/agents.md",
+      "status": 200,
+      "curated_guide": true,
+      "restricted_catalog_terms_present": false,
+      "liquid_error": false
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "curated_guide": true,
+      "restricted_catalog_terms_present": false,
+      "liquid_error": false
+    },
+    {
+      "path": "/llms-full.txt",
+      "status": 200,
+      "curated_guide": true,
+      "restricted_catalog_terms_present": false,
+      "liquid_error": false
+    }
+  ],
+  "browser_checks": {
+    "viewports": [
+      390,
+      1440
+    ],
+    "desktop_shop_click_and_enter_open_escape_closes": true,
+    "desktop_learn_opens": true,
+    "homepage_carousel_next": "2 / 8",
+    "mobile_menu_and_variety_cta_destination": "/products/classic-variety",
+    "product_format_tab_reveals_single_flavors": true,
+    "flavor_choice_navigates": "/products/lemon-tea",
+    "classic_gallery_next": "2 / 2",
+    "lemon_gallery_next": "2 / 5",
+    "product_gallery_high_priority_images": 1,
+    "homepage_initial_video_elements": 0,
+    "instagram_video_loaded_and_played_when_visible": true,
+    "faq_orders_anchor_hash": "#faq_orders",
+    "faq_orders_top_px": 139.171875,
+    "faq_returns_enter_opens": true,
+    "mobile_footer_enter_opens_space_closes": true,
+    "footer_desktop_lists_restored_after_resize": true,
+    "locator_zip": "10001",
+    "locator_returned_retailers": true,
+    "contact_tab_name_to_email": true,
+    "contact_form_endpoint": "/contact#ContactForm",
+    "contact_mobile_hidden_photo_uses_inline_source": true,
+    "why_halfday_image_frames": {
+      "mobile": [
+        350,
+        417.90625
+      ],
+      "desktop": [
+        768,
+        592
+      ]
+    },
+    "no_horizontal_overflow_on_checked_pages": true,
+    "signup_popup_open_and_close": true,
+    "anonymous_staff_collection_no_products_shown": true,
+    "native_empty_cart_open_and_close": true,
+    "viewport_reset": true
+  },
+  "theme_check": {
+    "errors": 122,
+    "warnings": 391,
+    "added_against_last_verified_checkpoint": 0,
+    "removed_against_last_verified_checkpoint": 0
+  },
+  "limits": [
+    "No authenticated staff/sample ordering, add-to-cart with restricted merchandise, checkout, orders or real form submissions.",
+    "Tracking HTTP success does not prove identified events, consent eligibility or Amazon purchase attribution. GA/Ads deferred and GTM excluded.",
+    "App accessibility, existing content/catalog decisions and LCP consistency remain open. Agentready embed is still disabled; shared app visibility defects were not re-audited.",
+    "Representative responsive checks do not guarantee every viewport, device, app state or browser. No production changes or theme upload."
+  ],
+  "metadata_summary": {
+    "checked_product_schemas_described_without_shopify_offers": true,
+    "key_public_search_social_descriptions_match": true,
+    "social_images": [
+      {
+        "path": "/",
+        "og_image": {
+          "og:image": "https://drinkhalfday.com/cdn/shop/files/og-image.png?v=1740401558",
+          "og:image:secure_url": "https://drinkhalfday.com/cdn/shop/files/og-image.png?v=1740401558",
+          "og:image:width": "2400",
+          "og:image:height": "1256"
+        }
+      },
+      {
+        "path": "/products/lemon-tea",
+        "og_image": {
+          "og:image": "https://drinkhalfday.com/cdn/shop/files/PEACH_TEA-1_c4b7d446-f2fb-4849-99a7-cf8ab602206f.png?v=1775837183",
+          "og:image:secure_url": "https://drinkhalfday.com/cdn/shop/files/PEACH_TEA-1_c4b7d446-f2fb-4849-99a7-cf8ab602206f.png?v=1775837183",
+          "og:image:width": "750",
+          "og:image:height": "902"
+        }
+      },
+      {
+        "path": "/products/classic-variety",
+        "og_image": {
+          "og:image": "https://drinkhalfday.com/cdn/shop/files/PEACH_TEA_c7efd8f9-0718-4624-8616-924c2e206480.png?v=1740035996",
+          "og:image:secure_url": "https://drinkhalfday.com/cdn/shop/files/PEACH_TEA_c7efd8f9-0718-4624-8616-924c2e206480.png?v=1740035996",
+          "og:image:width": "750",
+          "og:image:height": "902"
+        }
+      },
+      {
+        "path": "/products/strawberry-half-half-slim-can",
+        "og_image": {
+          "og:image": "https://drinkhalfday.com/cdn/shop/files/Halfday_StrawberryHH-12oz-REF-FPO.png?v=1786037854",
+          "og:image:secure_url": "https://drinkhalfday.com/cdn/shop/files/Halfday_StrawberryHH-12oz-REF-FPO.png?v=1786037854",
+          "og:image:width": "2400",
+          "og:image:height": "2400"
+        }
+      }
+    ]
+  },
+  "regression_summary": {
+    "paths": 15,
+    "rendered_theme_id_verified_on_all_routes": true,
+    "amazon_destinations_and_attribution_unchanged": true,
+    "klaviyo_embeds_unchanged": true,
+    "protected_code_unchanged": true,
+    "no_existing_external_loaders_removed": true,
+    "only_added_loader": "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js",
+    "added_loader_context": "Shopify preview hot reload infrastructure; no new business integration loader."
+  }
+}

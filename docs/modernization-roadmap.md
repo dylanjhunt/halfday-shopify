@@ -1,12 +1,12 @@
 # Halfday modernization roadmap
 
-**Current three-wave plan. Wave 1 authorized for development on September 7, 2026.** This replaces the earlier five-wave grouping; the work is grouped around site readiness, email relaunch, and operations/reviews.
+**Current three-wave plan. First Wave 1 release published by Dylan on September 8, 2026. Follow-through remains on development.** This replaces the earlier five-wave grouping; the work is grouped around site readiness, email relaunch, and operations/reviews.
 
 [Verified audit](focused-audit-2026-09-07.md) · [Wave 1 checklist and preview](wave-1-progress.md) · [LCP/CLS findings](lcp-cls-follow-up-2026-09-08.md)
 
 | Wave | Outcome | Estimated hands-on time | Status |
 | --- | --- | --- | --- |
-| 1. Site cleanup, speed and shopping experience | Current content, clear buying paths, lighter pages and concrete SEO repairs | 14–20 hours | In progress on development theme |
+| 1. Site cleanup, speed and shopping experience | Current content, clear buying paths, lighter pages and concrete SEO repairs | 14–20 hours | First release live; follow-through in development; catalog/app decisions open |
 | 2. Klaviyo cleanup and relaunch | Correct signup/offer journey, refreshed welcome/browse messaging and eligible campaign audience | 8–12 hours | Not started |
 | 3. Fulfillment connections and reviews | Verified channel routing, routine sync repairs and Bazaarvoice migration | 6–10 hours | Vendor/access inputs needed |
 
@@ -21,9 +21,13 @@
 5. Improve mobile/desktop flavor and format discovery, product information hierarchy, primary purchase CTAs, comparison content and accessibility while preserving Halfday's brand.
 6. Fix verified broken/internal links, search descriptions, product/organization schema, FAQ content and test/utility discovery. Retain useful blog content and queue claim review/consolidation decisions.
 
-**September 8 progress:** the secondary-page split-image cleanup, repeated/unused card stylesheet cleanup and HTTPS social-preview image/dimension fixes are complete on development. See the [Wave 1 checklist](wave-1-progress.md) for verification and remaining dependencies.
+**September 8 progress:** Dylan published Git-connected theme **142757101768**, `halfday-shopify/main`, at `2c8ff4f`. All 455 downloaded live files match that release. The initial performance, accessibility, metadata, link, image and stylesheet improvements are now the production baseline. The obsolete Shogun product assignments were also cleared with approval.
 
-**Acceptance:** reviewable development preview, documented before/after measurements, no new Theme Check offenses, verified public and protected buying paths, approved product content and an exact release diff. Keep unfinished content, app and access-dependent items visible on the checklist.
+New work is on **`feature/wave-1-follow-through`**, preview theme **142755430600**. Product gallery videos now load on request and pause when leaving their slide. Collection banners use a single responsive picture and one H1 while preserving the existing artwork and heading text. See the [follow-through report](wave-1-follow-through-2026-09-08.md) and the [latest review-layout/Agentready checkpoint](wave-1-review-layout-2026-09-08.md).
+
+**Open to finish Wave 1:** approved 4-pack/slim-can facts and assets; app ownership and supported Signifyd scoping; verification after Agentready's app fixes are ready; editorial decisions on disputed health/nutrition claims and retired content. The review slot now has a verified loading/zero-review state, and Dawn/Yotpo star CSS is separated. LCP remains variable. Agentready output-off endpoint blocking now passes, but Concierge Apply still fails with `unsupported_field`. These items remain open, not silently marked complete. Klaviyo signup/offer activation belongs to Wave 2.
+
+**Acceptance:** documented before/after evidence, no new Theme Check offenses, verified Amazon buying links and relevant mobile/desktop interactions, approved product content and an exact release diff. Dylan confirmed all customer buying redirects to Amazon, so authenticated staff/sample checkout is not a release gate. Preserve its legacy code and access controls. Each follow-through release still requires approval before merging/pushing main.
 
 ## Wave 2: Klaviyo cleanup and relaunch
 
@@ -48,7 +52,7 @@
 
 ## Working boundaries
 
-- Wave 1 is authorized on a development branch/theme. Production repair is permitted for confirmed broken functionality; otherwise development only. No production theme changes have been made. Authorized Agentready setup changed shared app settings; the current theme follow-up is development-only.
+- GitHub main is connected to the live theme. Use Shopify CLI with development/unpublished themes and descriptive feature/fix branches. A main push is a production deployment and needs release authorization. Production repair is permitted for confirmed broken functionality; otherwise development only. Authorized Agentready setup and Shogun assignment cleanup changed shared settings/data; this follow-through changes neither.
 - Product records, menus, metafields, article content and app settings are shared store data. Theme previews do not isolate their mutation.
 - GA setup, Google Ads and full attribution implementation remain deferred until Dylan confirms readiness. GTM was empty/unused and is excluded.
 - Amazon clicks are intent signals, not confirmed sales. Use actual channel data before claiming conversion lift.

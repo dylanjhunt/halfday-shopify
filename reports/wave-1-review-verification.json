@@ -1,0 +1,86 @@
+{
+  "date": "2026-09-08",
+  "branch": "feature/wave-1-follow-through",
+  "dev_theme": 142755430600,
+  "live_theme": 142757101768,
+  "live_snapshot_files_matching_main": 455,
+  "theme_check": {
+    "counts": {
+      "warning": 391,
+      "error": 122
+    },
+    "added_offenses": []
+  },
+  "readback": {
+    "assets/custom.css": true,
+    "assets/component-rating.css": true,
+    "sections/main-product.liquid": true,
+    "locales/en.default.json": true
+  },
+  "browser": {
+    "viewports": [
+      390,
+      1440
+    ],
+    "lemon_title_geometry_matches_before": true,
+    "lemon_desktop_title_y": 197,
+    "lemon_mobile_title_y": 116.1328125,
+    "lemon_mobile_rating_text_right": 369.953125,
+    "rated_fallback_visibility": "hidden",
+    "zero_review_product": "strawberry-half-half-slim-can",
+    "zero_review_fallback_text": "Reviews",
+    "zero_review_stars_display": "none",
+    "zero_review_fallback_keyboard_navigation": true,
+    "review_target_top_after_anchor": {
+      "mobile": 110.0390625,
+      "desktop": 110.0234375
+    },
+    "unique_product_info_target": true,
+    "skip_link_target_classes": "Product_template_detail_mainright_loops_new",
+    "yotpo_existing_review_click_scrolls": true,
+    "mobile_overflow": false
+  },
+  "review_metafield_probe": {
+    "products": [
+      "lemon-tea",
+      "peach-tea",
+      "green-tea",
+      "classic-variety",
+      "watermelon-half-half"
+    ],
+    "fields": [
+      "yotpo.reviews_count",
+      "yotpo.reviews_average",
+      "reviews.rating_count",
+      "yotpo.bottomline"
+    ],
+    "all_empty": true,
+    "temporary_probe_removed": true
+  },
+  "performance": [
+    {
+      "sample": 1,
+      "fetch_time": "2026-09-08T19:28:18.999Z",
+      "lcp_ms": 4862.7766,
+      "cls": 0.00015339930434442613,
+      "tbt_ms": 3056,
+      "console_errors_pass": true,
+      "media_bytes": 0
+    },
+    {
+      "sample": 2,
+      "fetch_time": "2026-09-08T19:28:48.283Z",
+      "lcp_ms": 5258.6733,
+      "cls": 0.0014157301828241688,
+      "tbt_ms": 1225.5,
+      "console_errors_pass": true,
+      "media_bytes": 0
+    }
+  ],
+  "limits": [
+    "Two sequential development mobile samples, not field Core Web Vitals or a controlled before/after experiment.",
+    "No consistent LCP gain is established; third-party work remains variable.",
+    "Dawn native-rating selectors were checked against existing native markup; no live synced native-rating product was available.",
+    "No JavaScript changed. Link/loader checks do not prove downstream analytics or Amazon purchase attribution."
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "date": "2026-09-08",
+  "branch": "feature/wave-1-follow-through",
+  "live_theme": 142757101768,
+  "development_theme": 142755430600,
+  "published_baseline": "2c8ff4ff3a4a29a87a1e59a9359dff09d2d9de5a",
+  "remote_readback": {
+    "assets/custom.css": true,
+    "assets/custom.js": true,
+    "snippets/collection-banner-new.liquid": true,
+    "snippets/product-thumbnail.liquid": true,
+    "snippets/halfday-video.liquid": true
+  },
+  "theme_check": {
+    "before": {
+      "warning": 391,
+      "error": 122
+    },
+    "after": {
+      "warning": 391,
+      "error": 122
+    },
+    "added_offenses": []
+  },
+  "browser": {
+    "viewports": [
+      390,
+      1440
+    ],
+    "lemon": {
+      "initial_gallery_video_count_before": 1,
+      "initial_gallery_video_count_after": 0,
+      "desktop_keyboard_enter_plays_one_video": true,
+      "mobile_click_plays_one_video": true,
+      "native_controls_visible": true,
+      "next_slide_pauses_video_desktop_and_mobile": true,
+      "gallery_and_h1_geometry_match_before_after": true,
+      "mobile_horizontal_overflow": false
+    },
+    "shop_all": {
+      "h1_count_before": 2,
+      "h1_count_after": 1,
+      "banner_img_count_before": 2,
+      "banner_img_count_after": 1,
+      "mobile_current_source": "collection-hero.jpg?width=750",
+      "desktop_current_source": "Rectangle_3166.jpg?width=1500",
+      "heading_text": "Go with your gut",
+      "mobile_heading_box": {
+        "x": 20,
+        "y": 224.4375,
+        "width": 350,
+        "height": 144
+      },
+      "desktop_heading_box": {
+        "x": 56,
+        "y": 224,
+        "width": 1328,
+        "height": 96
+      },
+      "heading_geometry_font_color_match_before_after": true,
+      "mobile_category_expansion_passed": true,
+      "desktop_variety_link_navigation_passed": true,
+      "horizontal_overflow": false
+    },
+    "variety_packs": {
+      "h1_count": 1,
+      "banner_img_count": 1,
+      "desktop_horizontal_overflow": false
+    }
+  },
+  "performance_samples": [
+    {
+      "sample": "live-lemon-lighthouse",
+      "lighthouse_version": "13.4.1",
+      "fetch_time": "2026-09-08T17:20:22.508Z",
+      "total_bytes": 14696330,
+      "media_bytes": 8963070,
+      "lcp_ms": 3545.4603032287596,
+      "cls": 0.043353178758642585,
+      "tbt_ms": 2269.9999999999964,
+      "console_error_audit_passed": true
+    },
+    {
+      "sample": "dev-lemon-lighthouse",
+      "lighthouse_version": "13.4.1",
+      "fetch_time": "2026-09-08T17:28:57.761Z",
+      "total_bytes": 6149365,
+      "media_bytes": 0,
+      "lcp_ms": 26825.791202500008,
+      "cls": 0,
+      "tbt_ms": 1173.4999999999964,
+      "console_error_audit_passed": true
+    },
+    {
+      "sample": "dev-lemon-lighthouse-2",
+      "lighthouse_version": "13.4.1",
+      "fetch_time": "2026-09-08T17:33:04.949Z",
+      "total_bytes": 6046021,
+      "media_bytes": 0,
+      "lcp_ms": 12262.960000000003,
+      "cls": 0.04339368812300545,
+      "tbt_ms": 4663.5625499999915,
+      "console_error_audit_passed": true
+    },
+    {
+      "sample": "baseline-preview-lemon-lighthouse",
+      "lighthouse_version": "13.4.1",
+      "fetch_time": "2026-09-08T17:36:06.661Z",
+      "total_bytes": 15199799,
+      "media_bytes": 8962903,
+      "lcp_ms": 5016.033100000001,
+      "cls": 0.0004730804575762804,
+      "tbt_ms": 2443.5000000000036,
+      "console_error_audit_passed": true
+    },
+    {
+      "sample": "dev-lemon-lighthouse-final",
+      "lighthouse_version": "13.4.1",
+      "fetch_time": "2026-09-08T17:38:28.003Z",
+      "total_bytes": 6207223,
+      "media_bytes": 0,
+      "lcp_ms": 3789.910599999999,
+      "cls": 0.0001300309160497529,
+      "tbt_ms": 2010.5,
+      "console_error_audit_passed": true
+    }
+  ],
+  "limits": [
+    "One public live sample, two initial development samples, then an original-code/restored-change pair on the same development URL; not a statistical or real-user comparison.",
+    "Initial media transfer was about 8.96 MB with the original code and zero in all three development-change samples. This does not measure post-click video consumption.",
+    "The initial development LCP readings were slower than the public sample. A same-preview original-code/restored-change pair measured 5.02s/3.79s. A consistent slowdown was not reproduced, but neither consistent LCP improvement nor a regression-free performance guarantee is established.",
+    "CLS remained variable; the baseline layout-shift audit identified late Yotpo rating rendering.",
+    "Browser checks cover Shopify-hosted gallery video, not a new external-video or 3D-model fixture. Legacy collection video/mixed-media branches are unchanged.",
+    "Tracking checks establish loader/link preservation, not downstream attribution or Amazon sales."
+  ]
+}

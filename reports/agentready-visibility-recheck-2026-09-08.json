@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-09-08T19:29:38.047853+00:00",
+  "path": "/apps/agentready/products/womens-marmot-black-jacket-s.md",
+  "status": 404,
+  "content_type": "text/plain; charset=utf-8",
+  "cache_control": "private, no-store",
+  "age": "0",
+  "contains_product_title": false,
+  "contains_sample_tags": false,
+  "body_bytes": 18,
+  "cookies_sent": false,
+  "public_product_control": {
+    "path": "/apps/agentready/products/lemon-tea.md",
+    "status": 404,
+    "cache_control": "private, no-store",
+    "body_bytes": 18
+  },
+  "app_ui": {
+    "embed": "off",
+    "output": "off",
+    "schema_switch": false,
+    "agent_json_switch": false,
+    "concierge_reviewed_changes": 34,
+    "apply_result": "not confirmed",
+    "apply_reason": "unsupported_field",
+    "reload_saved_attempt_result": "welcome / Analyze my store",
+    "shopify_embedded_plan": "Growth",
+    "standalone_plan": "Core trial"
+  },
+  "limit": "Anonymous endpoint blocking is verified with output off. Protected-resource exclusions with output enabled and successful onboarding are not yet verified."
+}

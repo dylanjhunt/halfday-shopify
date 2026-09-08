@@ -1,0 +1,318 @@
+[
+  {
+    "path": "/products/lemon-tea",
+    "live_status": 200,
+    "development_status": 200,
+    "rendered_theme_id": 142757101768,
+    "development_verified": true,
+    "liquid_error": false,
+    "amazon_urls_and_attribution_equal": true,
+    "amazon_destination_count": 3,
+    "live_legacy_internal_links": [
+      "https://drinkhalfday.com/en-test/products/classic-variety-new-2-0?preview_theme_id=140338692296",
+      "https://drinkhalfday.com/en-test/products/lemon-iced-tea",
+      "https://drinkhalfday.com/en-test/products/lemon-iced-tea-new-2-0?preview_theme_id=140338692296"
+    ],
+    "development_legacy_internal_links": [],
+    "removed_external_loaders": [],
+    "added_external_loaders": [
+      "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+    ],
+    "integration_markers": {
+      "ShopifyAnalytics": {
+        "live": true,
+        "development": true
+      },
+      "web-pixels-manager": {
+        "live": true,
+        "development": true
+      },
+      "klaviyo": {
+        "live": true,
+        "development": true
+      },
+      "postscript": {
+        "live": true,
+        "development": true
+      },
+      "yotpo": {
+        "live": true,
+        "development": true
+      },
+      "signifyd": {
+        "live": true,
+        "development": true
+      },
+      "acsb": {
+        "live": true,
+        "development": true
+      },
+      "locksmith": {
+        "live": true,
+        "development": true
+      }
+    },
+    "klaviyo_embed_ids_equal": true,
+    "klaviyo_embed_ids": [
+      "TPsGns"
+    ],
+    "live_forms": [
+      {
+        "action": "/cart",
+        "method": "post"
+      },
+      {
+        "action": "/search",
+        "method": "get"
+      }
+    ],
+    "development_forms": [
+      {
+        "action": "/cart",
+        "method": "post"
+      },
+      {
+        "action": "/search",
+        "method": "get"
+      }
+    ],
+    "removed_product_data_ids": []
+  },
+  {
+    "path": "/products/peach-tea",
+    "live_status": 200,
+    "development_status": 200,
+    "rendered_theme_id": 142757101768,
+    "development_verified": true,
+    "liquid_error": false,
+    "amazon_urls_and_attribution_equal": true,
+    "amazon_destination_count": 3,
+    "live_legacy_internal_links": [
+      "https://drinkhalfday.com/en-test/products/classic-variety-new-2-0?preview_theme_id=140338692296",
+      "https://drinkhalfday.com/en-test/products/lemon-iced-tea",
+      "https://drinkhalfday.com/en-test/products/lemon-iced-tea-new-2-0?preview_theme_id=140338692296"
+    ],
+    "development_legacy_internal_links": [],
+    "removed_external_loaders": [],
+    "added_external_loaders": [
+      "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+    ],
+    "integration_markers": {
+      "ShopifyAnalytics": {
+        "live": true,
+        "development": true
+      },
+      "web-pixels-manager": {
+        "live": true,
+        "development": true
+      },
+      "klaviyo": {
+        "live": true,
+        "development": true
+      },
+      "postscript": {
+        "live": true,
+        "development": true
+      },
+      "yotpo": {
+        "live": true,
+        "development": true
+      },
+      "signifyd": {
+        "live": true,
+        "development": true
+      },
+      "acsb": {
+        "live": true,
+        "development": true
+      },
+      "locksmith": {
+        "live": true,
+        "development": true
+      }
+    },
+    "klaviyo_embed_ids_equal": true,
+    "klaviyo_embed_ids": [
+      "TPsGns"
+    ],
+    "live_forms": [
+      {
+        "action": "/cart",
+        "method": "post"
+      },
+      {
+        "action": "/search",
+        "method": "get"
+      }
+    ],
+    "development_forms": [
+      {
+        "action": "/cart",
+        "method": "post"
+      },
+      {
+        "action": "/search",
+        "method": "get"
+      }
+    ],
+    "removed_product_data_ids": []
+  },
+  {
+    "path": "/products/green-tea",
+    "live_status": 200,
+    "development_status": 200,
+    "rendered_theme_id": 142757101768,
+    "development_verified": true,
+    "liquid_error": false,
+    "amazon_urls_and_attribution_equal": true,
+    "amazon_destination_count": 3,
+    "live_legacy_internal_links": [
+      "https://drinkhalfday.com/en-test/products/classic-variety-new-2-0?preview_theme_id=140338692296",
+      "https://drinkhalfday.com/en-test/products/lemon-iced-tea",
+      "https://drinkhalfday.com/en-test/products/lemon-iced-tea-new-2-0?preview_theme_id=140338692296"
+    ],
+    "development_legacy_internal_links": [],
+    "removed_external_loaders": [],
+    "added_external_loaders": [
+      "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+    ],
+    "integration_markers": {
+      "ShopifyAnalytics": {
+        "live": true,
+        "development": true
+      },
+      "web-pixels-manager": {
+        "live": true,
+        "development": true
+      },
+      "klaviyo": {
+        "live": true,
+        "development": true
+      },
+      "postscript": {
+        "live": true,
+        "development": true
+      },
+      "yotpo": {
+        "live": true,
+        "development": true
+      },
+      "signifyd": {
+        "live": true,
+        "development": true
+      },
+      "acsb": {
+        "live": true,
+        "development": true
+      },
+      "locksmith": {
+        "live": true,
+        "development": true
+      }
+    },
+    "klaviyo_embed_ids_equal": true,
+    "klaviyo_embed_ids": [
+      "TPsGns"
+    ],
+    "live_forms": [
+      {
+        "action": "/cart",
+        "method": "post"
+      },
+      {
+        "action": "/search",
+        "method": "get"
+      }
+    ],
+    "development_forms": [
+      {
+        "action": "/cart",
+        "method": "post"
+      },
+      {
+        "action": "/search",
+        "method": "get"
+      }
+    ],
+    "removed_product_data_ids": []
+  },
+  {
+    "path": "/products/refresher-variety",
+    "live_status": 200,
+    "development_status": 200,
+    "rendered_theme_id": 142757101768,
+    "development_verified": true,
+    "liquid_error": false,
+    "amazon_urls_and_attribution_equal": true,
+    "amazon_destination_count": 3,
+    "live_legacy_internal_links": [
+      "https://drinkhalfday.com/en-test/products/classic-variety-new-2-0?preview_theme_id=140338692296",
+      "https://drinkhalfday.com/en-test/products/lemon-iced-tea",
+      "https://drinkhalfday.com/en-test/products/lemon-iced-tea-new-2-0?preview_theme_id=140338692296"
+    ],
+    "development_legacy_internal_links": [],
+    "removed_external_loaders": [],
+    "added_external_loaders": [
+      "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+    ],
+    "integration_markers": {
+      "ShopifyAnalytics": {
+        "live": true,
+        "development": true
+      },
+      "web-pixels-manager": {
+        "live": true,
+        "development": true
+      },
+      "klaviyo": {
+        "live": true,
+        "development": true
+      },
+      "postscript": {
+        "live": true,
+        "development": true
+      },
+      "yotpo": {
+        "live": true,
+        "development": true
+      },
+      "signifyd": {
+        "live": true,
+        "development": true
+      },
+      "acsb": {
+        "live": true,
+        "development": true
+      },
+      "locksmith": {
+        "live": true,
+        "development": true
+      }
+    },
+    "klaviyo_embed_ids_equal": true,
+    "klaviyo_embed_ids": [
+      "TPsGns"
+    ],
+    "live_forms": [
+      {
+        "action": "/cart",
+        "method": "post"
+      },
+      {
+        "action": "/search",
+        "method": "get"
+      }
+    ],
+    "development_forms": [
+      {
+        "action": "/cart",
+        "method": "post"
+      },
+      {
+        "action": "/search",
+        "method": "get"
+      }
+    ],
+    "removed_product_data_ids": []
+  }
+]

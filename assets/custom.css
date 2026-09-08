@@ -603,9 +603,13 @@ details[open]>.header__menu-item svg path{ stroke:#FF5528; }
 .Product_template_detail_mainleft_new{ max-width:calc(50% - 16.667%)!important; width:calc(50% - 16.667%)!important; padding:0px !important; padding: 0 32px 0 56px !important; }
 .Product_template_detail_mainleft_loops_new{ border-radius:12px; background:#FFF; padding:24px 24px 1px 24px; min-height:576px; }
 .Review_main_new{}
-.Review_main_new .Card_product_review_new{ padding:0; }
+.Review_main_new .Card_product_review_new .yotpo .standalone-bottomline .star-clickable:has(.write-review-btn-hidden){ display:none !important; }
+#Reviews{ scroll-margin-top:110px; }
+.Review_main_new .Card_product_review_new{ padding:0; position:relative; min-height:18px; margin-bottom:24px; }
+.halfday-review-fallback{ position:absolute; top:0; left:0; color:#004600; font-family:var(--font-museo-slab-family); font-size:16px; font-weight:800; line-height:18px; text-underline-offset:3px; }
+.Review_main_new .Card_product_review_new:has(.yotpo-bottomline.star-clickable .text-m:not(.write-review-btn-hidden)) .halfday-review-fallback{ visibility:hidden; }
 .Review_main_new .Card_product_review_new .yotpo .standalone-bottomline .star-clickable { justify-content: flex-start !important; }
-.Review_main_new .Card_product_review_new .yotpo-display-wrapper{ margin-bottom:24px; }
+.Review_main_new .Card_product_review_new .yotpo-display-wrapper{ margin-bottom:0; }
 .product__title{ margin:0px 0 20px 0 !important; max-width:256px; }
 body.product-watermelon-half-half .product__title{ max-width:356px !important; }
 .product__title>*{color:#FF5528; font-size:56px; line-height:100%; letter-spacing:2.88px;}
@@ -666,6 +670,7 @@ body.product-watermelon-half-half .product__title{ max-width:356px !important; }
 .product_desktop_slider_new .swiper-button-next:after{ display:none; }
 .product_page_last_image_new  .media>*{ object-fit:cover !important; border-radius: 12px; }
 .deferred-media__poster-button{ display:none !important; }
+.product__media-list .deferred-media__poster-button{ display:flex !important; }
 
 .Product_template_detail_mainright_new{ max-width:calc(50% - 16.667%)!important; width:calc(50% - 16.667%)!important; padding:0px !important; padding: 0 56px 0 32px !important; }
 .Product_template_detail_mainright_loops_new{}
@@ -1287,7 +1292,8 @@ body.product-watermelon-half-half .product__title{ max-width:356px !important; }
   .Product_template_detail_mainleft_new{ max-width: 100% !important; width: 100% !important; padding: 0 !important;}
   .Product_template_detail_mainleft_loops_new{padding:17px 137px 17px 20px; border-radius:0; min-height:initial; position:relative; }
   .Review_main_new{ position: absolute; right: 0; top: 0; height:100%; display: flex; align-items: center; padding:0 20px 0 0; width:127px; justify-content:flex-end; }
-  .Review_main_new .Card_product_review_new .yotpo-display-wrapper { margin-bottom: 0; }
+  .Review_main_new .Card_product_review_new{ width:max-content; min-width:73px; max-width:100%; min-height:33px; margin-bottom:0; }
+  .halfday-review-fallback{ left:auto; right:0; top:50%; transform:translateY(-50%); font-size:14px; }
   .Review_main_new .Card_product_review_new .yotpo .standalone-bottomline .star-clickable{ flex-direction:column; }
   .Review_main_new .Card_product_review_new .yotpo .text-m{ font-size:14px; padding:6px 0 0 2px; }
   .product__title{margin:0 0 0px!important;}
@@ -1653,7 +1659,7 @@ body.product-watermelon-half-half .product__title{ max-width:356px !important; }
   /* Product */
   .Product_template_detail_mainleft_new { padding: 0 0px 0 20px !important; }
   .Product_template_detail_mainleft_loops_new{ padding:15px; min-height:initial; }
-  .Review_main_new .Card_product_review_new .yotpo-display-wrapper { margin-bottom: 16px; }
+  .Review_main_new .Card_product_review_new{ margin-bottom:16px; }
   .Card_product_review_new .yotpo .text-m{ font-size:14px !important; }
   .product__title { margin: 0 0 16px !important; }
   .product__title>*{font-size:40px;}

@@ -1,12 +1,15 @@
 # Wave 1 progress
 
-**Status: implemented Wave 1 work merged into `main` as an unpublished release candidate. Shopify connection and final audit are next. Outstanding dependencies remain listed below. September 8, 2026.**
+**Status: Dylan published the first Wave 1 release on September 8, 2026. Main is live. New follow-through is on a development branch/theme; remaining catalog/app dependencies are listed in the current roadmap.**
 
-- Release candidate: `main`. Completed implementation branch: `dev/wave-1`.
-- Development theme: `142755430600`, Development (deb269-MacBook-Pro-4).
-- [Preview](https://halfday-tonics.myshopify.com?preview_theme_id=142755430600) · [Theme editor](https://halfday-tonics.myshopify.com/admin/themes/142755430600/editor).
-- Latest live theme was pulled before edits; it matched the committed baseline. No merchant changes needed merging.
-- **Production theme changes: none.** The latest checkpoint is theme-scoped. Earlier authorized Agentready configuration changed shared app settings; its activation remains disabled pending the app fixes documented below.
+- Live: theme **142757101768**, `halfday-shopify/main`, commit `2c8ff4f`; tag `baseline/live-wave-1-2026-09-08`.
+- Current branch: **`feature/wave-1-follow-through`**. Never push this work to main without release authorization.
+- Development theme: **142755430600**, Development (deb269-MacBook-Pro-4).
+- [Development preview](https://drinkhalfday.com/?preview_theme_id=142755430600) · [Latest review-layout and Agentready report](wave-1-review-layout-2026-09-08.md).
+- Fresh live and pre-edit development pulls each matched all 455 published theme files. No merchant drift needed merging.
+- Dylan confirmed all customer ordering redirects to Amazon. Authenticated staff/sample checkout is no longer a release gate; retain its existing code and Locksmith controls.
+- **This follow-through makes no production or shared app/store-data changes.** Agentready activation remains pending verification after the app fixes are ready.
+- The dated checkpoints below are historical. Their statements about an unpublished theme or authenticated-release dependencies describe the scope at the time and are superseded by this current status.
 
 ## Implemented in development
 
@@ -202,3 +205,27 @@ No JavaScript added or changed. This pass does not claim a measured LCP/CLS impr
 Dylan authorized merging the implemented Wave 1 work into `main`. The working tree was clean and `main` was an ancestor of `dev/wave-1`, so no conflict resolution or theme-code changes were needed. A merge commit preserves the wave boundary. The original live theme remains at `baseline/live-2026-09-07`; the regression checker now uses that immutable reference instead of the moving `main` branch.
 
 The merged `main`, completed `dev/wave-1` branch and original baseline tag are being pushed to Dylan’s supplied repository, [dylanjhunt/halfday-shopify](https://github.com/dylanjhunt/halfday-shopify). No Shopify files were uploaded and no theme was published during this merge/push task. Dylan will connect Shopify, then request the final audit before publishing. Existing catalog, app and authenticated-ordering dependencies remain open. Subsequent work starts on a descriptive feature/fix branch from `main` and is reviewed in an unpublished theme before merging.
+
+
+## September 8: Git-connected preview audited
+
+Dylan connected `main` to unpublished theme **142757101768**, `halfday-shopify/main`. [Final connected-theme audit](wave-1-connected-audit-2026-09-08.md) confirms all 455 theme files match release commit `2c8ff4f`, with no live merchant drift. Fifteen live/preview regression routes and 22 feature endpoints pass; representative desktop/mobile interactions are verified. Both fresh preview browser audits have zero console errors and very low CLS. LCP/TBT remain inconsistent; authenticated staff/sample ordering is still unverified. No theme code, app settings or publishing state changed during this audit.
+# September 8: legacy product template assignments
+
+With Dylan's approval, inspected all 66 products and switched 39 obsolete `shogun.custom` assignments to Default product. The remaining 27 already used the default. Saved in Shopify admin, verified product-record samples, and checked four affected tea routes on live and the Git-connected preview. All returned HTTP 200 without Liquid errors; Amazon links and attribution parameters matched. No theme was published. Details: `docs/shogun-template-cleanup-2026-09-08.md`.
+
+
+## September 8: published baseline and continued Wave 1 development
+
+Dylan published `halfday-shopify/main`; Shopify CLI confirms its live role and a fresh pull matches all 455 files at `2c8ff4f`. Created the immutable published baseline tag and moved follow-through onto `feature/wave-1-follow-through`, with no upstream to main. Updated shared Claude guidance, README, the roadmap and regression comparisons for the live-main workflow.
+
+The [follow-through report](wave-1-follow-through-2026-09-08.md) records the additional gallery video deferral, responsive collection banner and single-H1 cleanup, browser checks, exact remote file verification and performance limits. All new theme edits are in development theme `142755430600`. Main remains unchanged. Outstanding catalog, app, Agentready and editorial dependencies remain visible in the roadmap.
+
+
+## September 8: review layout and Agentready recovery
+
+Completed a further three-file theme pass on `feature/wave-1-follow-through`: reserved the product rating slot with an editable Reviews fallback, separated Dawn/Yotpo star styles and conditional native-rating CSS, and made the gallery skip-link target unique. No JavaScript changed. Rated-product title geometry is retained at 390px/1440px; the zero-review fallback reaches the review section by keyboard.
+
+Two fresh mobile preview runs recorded CLS **0.000153 / 0.001416** and LCP **4.86s / 5.26s**. No reliable LCP gain is claimed. Fifteen regression routes preserve links/loaders/settings, Theme Check has zero added offenses (122 inherited errors / 391 warnings), and final remote files match local code.
+
+Agentready output-off endpoint blocking now passes the staff and public-product checks. A reviewed 34-proposal setup Apply still failed with `unsupported_field`; recovery returned to the welcome screen. Embed and output switches remain off. The app report includes the error, recovery behavior, conflicting plan labels and ineffective embedded CTA. [Details and evidence](wave-1-review-layout-2026-09-08.md).

@@ -727,6 +727,12 @@ function productPageScript() {
   var slider_width = $(document).width();
   if (slider_width > 0) {
     var product_desktop_slider_new = new Swiper(".product_desktop_slider_new", {
+      on: {
+        slideChange: function () {
+          // A gallery video should stop when the shopper moves to another slide.
+          this.el.querySelectorAll('video').forEach(function (video) { video.pause(); });
+        }
+      },
       loop: true,
       grabCursor: false,
       spaceBetween: 5,
