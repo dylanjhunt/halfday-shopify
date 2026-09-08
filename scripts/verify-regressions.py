@@ -5,6 +5,7 @@ from hashlib import sha256
 from html.parser import HTMLParser
 from http.cookiejar import CookieJar
 import json
+import argparse
 from pathlib import Path
 import re
 import subprocess
@@ -14,6 +15,7 @@ from urllib.request import Request, build_opener, HTTPCookieProcessor
 ROOT = Path(__file__).resolve().parents[1]
 # Keep the original live comparison stable after Wave 1 is merged into main.
 BASELINE_REF = 'baseline/live-2026-09-07'
+THEME_ID = 142755430600
 PATHS = ['/', '/collections/shop-all', '/collections/variety-packs', '/products/lemon-tea',
          '/products/classic-variety', '/products/strawberry-half-half-slim-can',
          '/pages/faq', '/pages/find-in-store', '/pages/contact', '/pages/why-halfday',
@@ -36,7 +38,7 @@ class Markup(HTMLParser):
 
 def fetch(path, development):
     opener = build_opener(HTTPCookieProcessor(CookieJar()))
-    query = '?preview_theme_id=142755430600' if development else ''
+    query = f'?preview_theme_id={THEME_ID}' if development else ''
     with opener.open(Request('https://drinkhalfday.com' + path + query,
                              headers={'User-Agent': 'Halfday-regression-verification/1.0'}), timeout=40) as response:
         html = response.read().decode('utf-8', 'replace'); status = response.status
@@ -46,12 +48,15 @@ def fetch(path, development):
 def compare(path):
     live_html, live, live_status = fetch(path, False)
     dev_html, dev, dev_status = fetch(path, True)
+    theme_match = re.search(r'Shopify\.theme\s*=\s*\{[^}]*"id"\s*:\s*(\d+)', dev_html)
+    rendered_theme_id = int(theme_match.group(1)) if theme_match else None
     amazon = lambda p: sorted(u for u in p.links if urlsplit(u).hostname in {'amazon.com','www.amazon.com','amzn.to'})
     legacy = lambda page: sorted(u for u in page.links if urlsplit(u).hostname in {'drinkhalfday.com', 'www.drinkhalfday.com', 'halfday-tonics.myshopify.com'} and ('/en-test/' in urlsplit(u).path or 'preview_theme_id' in parse_qs(urlsplit(u).query)))
     markers = ['ShopifyAnalytics', 'web-pixels-manager', 'klaviyo', 'postscript', 'yotpo', 'signifyd', 'acsb', 'locksmith']
     embeds = lambda html: sorted(set(re.findall(r'klaviyo-form-([a-zA-Z0-9]+)', html)))
     return {'path': path, 'live_status': live_status, 'development_status': dev_status,
-            'development_verified': 'halfday-video.js' in dev_html and 'halfday-video.js' not in live_html,
+            'rendered_theme_id': rendered_theme_id,
+            'development_verified': rendered_theme_id == THEME_ID and 'halfday-video.js' in dev_html and 'halfday-video.js' not in live_html,
             'liquid_error': 'Liquid error' in dev_html or 'Liquid syntax error' in dev_html,
             'amazon_urls_and_attribution_equal': amazon(live) == amazon(dev),
             'amazon_destination_count': len(amazon(dev)),
@@ -65,6 +70,11 @@ def compare(path):
             'removed_product_data_ids': sorted(live.product_ids - dev.product_ids)}
 
 if __name__ == '__main__':
+    arguments = argparse.ArgumentParser(description=__doc__)
+    arguments.add_argument('--theme-id', type=int, default=THEME_ID, help='Unpublished theme ID to verify')
+    arguments.add_argument('--output', type=Path, default=ROOT/'reports/wave-1-regression-markup.json')
+    options = arguments.parse_args()
+    THEME_ID = options.theme_id
     with ThreadPoolExecutor(max_workers=3) as pool:
         pages = list(pool.map(compare, PATHS))
     old = subprocess.check_output(['git','show',BASELINE_REF + ':assets/custom.js'], cwd=ROOT).decode()
@@ -89,11 +99,11 @@ if __name__ == '__main__':
     unchanged['agentready_embed_is_disabled'] = agentready == {
         'type': 'shopify://apps/agentready/blocks/agent-json/019bc449-5f49-7d2d-86cd-f07c7b17ff7b',
         'disabled': True, 'settings': {}}
-    report = {'captured_at':datetime.now(timezone.utc).isoformat(), 'theme_id':142755430600, 'baseline_ref':BASELINE_REF,
+    report = {'captured_at':datetime.now(timezone.utc).isoformat(), 'theme_id':THEME_ID, 'baseline_ref':BASELINE_REF,
               'method':'Separate anonymous cookie jars for public live and development HTML; no forms submitted. Script paths omit query/session values.',
               'limits':'Preserved loaders, attribution URLs, embed IDs and code do not prove receipt of analytics events or conversion attribution. No GA/Ads access; GTM excluded; no purchase/signup events generated.',
               'libraries':libraries, 'unchanged_protected_files':unchanged, 'pages':pages}
-    (ROOT/'reports/wave-1-regression-markup.json').write_text(json.dumps(report,indent=2)+'\n')
+    options.output.write_text(json.dumps(report,indent=2)+'\n')
     for p in pages:
         print(p['path'], 'preview',p['development_verified'],'Amazon',p['amazon_urls_and_attribution_equal'], 'loaders_removed',p['removed_external_loaders'],'Klaviyo',p['klaviyo_embed_ids_equal'])
     assert all(x['unchanged'] for x in libraries.values())

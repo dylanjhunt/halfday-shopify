@@ -202,3 +202,8 @@ No JavaScript added or changed. This pass does not claim a measured LCP/CLS impr
 Dylan authorized merging the implemented Wave 1 work into `main`. The working tree was clean and `main` was an ancestor of `dev/wave-1`, so no conflict resolution or theme-code changes were needed. A merge commit preserves the wave boundary. The original live theme remains at `baseline/live-2026-09-07`; the regression checker now uses that immutable reference instead of the moving `main` branch.
 
 The merged `main`, completed `dev/wave-1` branch and original baseline tag are being pushed to Dylan’s supplied repository, [dylanjhunt/halfday-shopify](https://github.com/dylanjhunt/halfday-shopify). No Shopify files were uploaded and no theme was published during this merge/push task. Dylan will connect Shopify, then request the final audit before publishing. Existing catalog, app and authenticated-ordering dependencies remain open. Subsequent work starts on a descriptive feature/fix branch from `main` and is reviewed in an unpublished theme before merging.
+
+
+## September 8: Git-connected preview audited
+
+Dylan connected `main` to unpublished theme **142757101768**, `halfday-shopify/main`. [Final connected-theme audit](wave-1-connected-audit-2026-09-08.md) confirms all 455 theme files match release commit `2c8ff4f`, with no live merchant drift. Fifteen live/preview regression routes and 22 feature endpoints pass; representative desktop/mobile interactions are verified. Both fresh preview browser audits have zero console errors and very low CLS. LCP/TBT remain inconsistent; authenticated staff/sample ordering is still unverified. No theme code, app settings or publishing state changed during this audit.
