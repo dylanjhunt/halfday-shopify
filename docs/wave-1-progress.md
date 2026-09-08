@@ -113,6 +113,12 @@ Release still needs authenticated staff/sample ordering QA, a real reduced-motio
 
 ## Still to tackle / decisions needed
 
+### Agentready / SEO follow-up
+
+Dylan authorized Agentready onboarding and configuration. Shopify currently requires a passkey verification before the app can be inspected; app setup and the post-setup audit remain pending. See the [source sheet and baseline gap list](agentready-setup-and-gaps.md). Public checks found title-only native refund/shipping policy endpoints; the actual return terms are in Section 21 of the Terms of Service. Root AI discovery files already exist but the observed content lacks Halfday-specific return/support/Amazon context.
+
+Added two policy-backed answers to the development FAQ, bringing it from 17 to 19 visible questions: returns/exchanges and damaged/incorrect orders. Existing terms are unchanged, and both answers link to their source. Uploaded only the FAQ template through CLI. Browser verification confirms keyboard/mouse expansion, correct answer text, one H1 and development assets. Theme Check stays at 122 errors / 404 warnings; no JS added. Production and app configuration are unchanged.
+
 | Item | Next step / dependency |
 | --- | --- |
 | 4-packs | Confirm the consumer 4-pack versus 24-pack logistics-case records, SKU/GTIN, approved imagery, channel and purchase links. Do not expose case SKUs as consumer packs. |

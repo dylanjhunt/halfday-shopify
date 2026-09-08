@@ -1,0 +1,52 @@
+{
+  "captured_at": "2026-09-08T01:53:14.927992+00:00",
+  "method": "Anonymous read-only public HTTP requests; no customer data or authenticated sessions. Observed before Agentready onboarding access.",
+  "agentready_onboarding": "blocked_on_shopify_passkey",
+  "endpoints": [
+    {
+      "url": "https://drinkhalfday.com/policies/refund-policy",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "main_content": "Refund policy",
+      "policy_body_present": false
+    },
+    {
+      "url": "https://drinkhalfday.com/policies/shipping-policy",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "main_content": "Shipping policy",
+      "policy_body_present": false
+    },
+    {
+      "url": "https://drinkhalfday.com/llms.txt",
+      "status": 200,
+      "content_type": "text/markdown; charset=utf-8",
+      "content_character_count": 4358,
+      "shopify_commerce_instructions_present": true,
+      "amazon_context_present": false,
+      "support_email_present": false,
+      "return_policy_link_present": false
+    },
+    {
+      "url": "https://drinkhalfday.com/agents.md",
+      "status": 200,
+      "content_type": "text/markdown; charset=utf-8",
+      "content_character_count": 4315,
+      "shopify_commerce_instructions_present": true,
+      "amazon_context_present": false,
+      "support_email_present": false,
+      "return_policy_link_present": false
+    },
+    {
+      "url": "https://drinkhalfday.com/robots.txt",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "user_agent_groups": [
+        "*",
+        "adsbot-google"
+      ],
+      "public_allow_all_rule": true,
+      "private_and_preview_disallows_present": true
+    }
+  ]
+}

@@ -167,6 +167,22 @@
             "infos": "<p>There are limitations, which prevent us from shipping certain products to some geographical locations in the U.S. The locations include U.S. territories, protectorates, P.O. Boxes, military installations (APO/FPO addresses), and diplomatic posts (DPO addresses). </p>"
           }
         },
+        "information_returns": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Orders",
+            "title": "Does Halfday accept returns or exchanges?",
+            "infos": "<p>Halfday does not accept product returns or exchanges. See Section 21 of our <a href=\"/pages/terms-of-service\">Terms of Service</a> for the full policy. For purchases through Amazon or another retailer, check that seller's policies and contact them about your order.</p>"
+          }
+        },
+        "information_order_help": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Orders",
+            "title": "What should I do if my order arrives damaged or incorrect?",
+            "infos": "<p>If your order was damaged in transit or you received the wrong Halfday order, email <a href=\"mailto:hey@drinkhalfday.com\">hey@drinkhalfday.com</a> immediately. See Section 21 of our <a href=\"/pages/terms-of-service\">Terms of Service</a> for details.</p>"
+          }
+        },
         "information_gDjncm": {
           "type": "information",
           "settings": {
@@ -194,6 +210,8 @@
         "information_Baqrkb",
         "information_U9bCa6",
         "information_DmhWUU",
+        "information_returns",
+        "information_order_help",
         "information_gDjncm"
       ],
       "settings": {
