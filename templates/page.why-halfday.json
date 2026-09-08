@@ -16,35 +16,40 @@
           "type": "product",
           "settings": {
             "product_image": "shopify://shop_images/SWEET_TEA.png",
-            "product_link": "shopify://products/sweet-tea"
+            "product_link": "shopify://products/sweet-tea",
+            "link_label": "Explore Halfday Sweet Tea"
           }
         },
         "product_AtyiJG": {
           "type": "product",
           "settings": {
             "product_image": "shopify://shop_images/LEMON_TEA.png",
-            "product_link": "shopify://products/lemon-tea"
+            "product_link": "shopify://products/lemon-tea",
+            "link_label": "Explore Halfday Lemon Tea"
           }
         },
         "product_qeDGwK": {
           "type": "product",
           "settings": {
             "product_image": "shopify://shop_images/PEACH_TEA.png",
-            "product_link": "shopify://products/peach-tea"
+            "product_link": "shopify://products/peach-tea",
+            "link_label": "Explore Halfday Peach Tea"
           }
         },
         "product_LRd3Ve": {
           "type": "product",
           "settings": {
             "product_image": "shopify://shop_images/GREEN_TEA.png",
-            "product_link": "shopify://products/green-tea"
+            "product_link": "shopify://products/green-tea",
+            "link_label": "Explore Halfday Green Tea"
           }
         },
         "product_tYqdfL": {
           "type": "product",
           "settings": {
             "product_image": "shopify://shop_images/RASPBERRY_TEA.png",
-            "product_link": "shopify://products/raspberry-tea"
+            "product_link": "shopify://products/raspberry-tea",
+            "link_label": "Explore Halfday Raspberry Tea"
           }
         }
       },
@@ -57,6 +62,7 @@
       ],
       "settings": {
         "background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 231, 0, 1) 66%)",
+        "heading_tag": "h1",
         "heading_text": "A classic, remade better"
       }
     },

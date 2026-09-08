@@ -1,0 +1,13 @@
+{
+  "previous": {
+    "warning": 404,
+    "error": 122
+  },
+  "current": {
+    "warning": 404,
+    "error": 122
+  },
+  "added_offense_count": 0,
+  "removed_offense_count": 0,
+  "note": "Compared file/check/severity/message, ignoring shifted line numbers. Existing findings remain; not a clean Theme Check pass."
+}

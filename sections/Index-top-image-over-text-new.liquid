@@ -14,26 +14,15 @@
                           {{ block.settings.main_common_video | video_tag: class:'Common_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
                         </div>
                       {% else %}  
-                        {%- if block.settings.main_desktop_image != blank and block.settings.main_mobile_image != blank -%}
+                        {%- assign hero_image = block.settings.main_desktop_image | default: block.settings.main_mobile_image -%}
+                        {%- if hero_image != blank -%}
                           <div class="Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new">
-                            {%- if block.settings.main_desktop_image != blank -%}
-                              {{
-                                block.settings.main_desktop_image | 
-                                image_url: width: img.width | 
-                                image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                fetchpriority: 'high', 
-                                class:'Desktop_image_new'
-                              }}
-                            {%- endif -%}
-                            {%- if block.settings.main_mobile_image != blank -%}
-                              {{
-                                block.settings.main_mobile_image | 
-                                image_url: width: img.width | 
-                                image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                fetchpriority: 'high', 
-                                class:'Mobile_image_new'
-                              }}
-                            {%- endif -%}
+                            <picture>
+                              {%- if block.settings.main_mobile_image != blank -%}
+                                <source media="(max-width: 749px)" width="{{ block.settings.main_mobile_image.width }}" height="{{ block.settings.main_mobile_image.height }}" sizes="100vw" srcset="{{ block.settings.main_mobile_image | image_url: width: 375 }} 375w, {{ block.settings.main_mobile_image | image_url: width: 550 }} 550w, {{ block.settings.main_mobile_image | image_url: width: 750 }} 750w">
+                              {%- endif -%}
+                              {{ hero_image | image_url: width: 2048 | image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', sizes: '100vw', loading: 'eager', fetchpriority: 'high' }}
+                            </picture>
                           </div>
                         {%- endif -%}
                       {%- endif -%}
@@ -46,7 +35,7 @@
                       {%- if block.settings.main_heading_text != blank -%}
                         <div class="Index_top_image_over_text_loops_innerboxs_inneroverlay_maintitle_new">
                           <div class="Common_large_title_new Index_top_image_over_text_loops_innerboxs_inneroverlay_innertitle_new">
-                            <h2>{{ block.settings.main_heading_text }}</h2>
+                            <h1>{{ block.settings.main_heading_text }}</h1>
                           </div>
                         </div>
                       {%- endif -%}

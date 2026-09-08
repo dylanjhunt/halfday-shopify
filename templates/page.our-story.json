@@ -21,6 +21,7 @@
       "type": "Page_main_banner_new",
       "settings": {
         "section_color_scheme": "scheme-5",
+        "heading_tag": "h1",
         "main_heading": "Our story starts with two best friends...",
         "banner_image": "shopify://shop_images/LEMON_TEA_87e6411b-983e-482c-a00e-159ee0b3879a.png",
         "padding_top": 80,
@@ -112,35 +113,40 @@
           "type": "product",
           "settings": {
             "product_image": "shopify://shop_images/SWEET_TEA.png",
-            "product_link": "shopify://products/sweet-tea"
+            "product_link": "shopify://products/sweet-tea",
+            "link_label": "Explore Halfday Sweet Tea"
           }
         },
         "product_LmQBB8": {
           "type": "product",
           "settings": {
             "product_image": "shopify://shop_images/LEMON_TEA.png",
-            "product_link": "shopify://products/lemon-tea"
+            "product_link": "shopify://products/lemon-tea",
+            "link_label": "Explore Halfday Lemon Tea"
           }
         },
         "product_KRxbcP": {
           "type": "product",
           "settings": {
             "product_image": "shopify://shop_images/PEACH_TEA.png",
-            "product_link": "shopify://products/peach-tea"
+            "product_link": "shopify://products/peach-tea",
+            "link_label": "Explore Halfday Peach Tea"
           }
         },
         "product_QnqXQC": {
           "type": "product",
           "settings": {
             "product_image": "shopify://shop_images/GREEN_TEA.png",
-            "product_link": "shopify://products/green-tea"
+            "product_link": "shopify://products/green-tea",
+            "link_label": "Explore Halfday Green Tea"
           }
         },
         "product_ekDmV6": {
           "type": "product",
           "settings": {
             "product_image": "shopify://shop_images/RASPBERRY_TEA.png",
-            "product_link": "shopify://products/raspberry-tea"
+            "product_link": "shopify://products/raspberry-tea",
+            "link_label": "Explore Halfday Raspberry Tea"
           }
         }
       },

@@ -1,0 +1,21 @@
+{% comment %}Theme-scoped search cleanup; merchant SEO descriptions take precedence.{% endcomment %}
+{%- liquid
+  assign utility_collections = 'staff-variety-packs,zb252lh3pgnv3b,menu,menu-duplicate,flavours-new-2-0,frontpage' | split: ','
+  assign hide_from_search = false
+  if request.page_type == 'collection' and utility_collections contains collection.handle
+    assign hide_from_search = true
+  elsif request.page_type == 'page' and page.handle == 'popup-testing'
+    assign hide_from_search = true
+  endif
+-%}
+{%- if hide_from_search -%}
+  <meta name="robots" content="noindex,follow">
+{%- elsif page_description == blank -%}
+  {%- capture fallback_description -%}
+    {% render 'halfday-description-fallback', page_type: request.page_type, collection_handle: collection.handle, page_handle: page.handle, product_description: product.metafields.custom.product_short_description_text %}
+  {%- endcapture -%}
+  {%- capture search_access -%}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{%- endcapture -%}
+  {%- if fallback_description != blank and search_access == 'true' -%}
+    <meta name="description" content="{{ fallback_description | strip | escape }}">
+  {%- endif -%}
+{%- endif -%}

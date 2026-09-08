@@ -78,7 +78,14 @@
                     {% endif %}
                   >
                     {%- if block.settings.heading != blank -%}
-                      <h2 class="footer-block__heading inline-richtext {% if block.settings.default_open_mobile == true %} active {% endif %}">{{- block.settings.heading -}}</h2>
+                      <h2 class="footer-block__heading inline-richtext {% if block.settings.default_open_mobile == true %} active {% endif %}">
+                        {%- if block.type == 'link_list' and block.settings.menu != blank -%}
+                          <span class="Desktop_only_new">{{- block.settings.heading -}}</span>
+                          <button type="button" class="Footer_heading_toggle_new" aria-controls="FooterMenu-{{ section.id }}-{{ block.id }}" aria-expanded="{{ block.settings.default_open_mobile }}">{{- block.settings.heading -}}</button>
+                        {%- else -%}
+                          {{- block.settings.heading -}}
+                        {%- endif -%}
+                      </h2>
                     {%- endif -%}
     
                     {%- case block.type -%}
@@ -90,7 +97,7 @@
                         </div>
                       {%- when 'link_list' -%}
                         {%- if block.settings.menu != blank -%}
-                          <div class="Footer_detail_1_menus_items_new" {% if block.settings.default_open_mobile == true %}style="display: block;"{% endif %}>
+                          <div id="FooterMenu-{{ section.id }}-{{ block.id }}" class="Footer_detail_1_menus_items_new" {% if block.settings.default_open_mobile == true %}style="display: block;"{% endif %}>
                             <ul class="footer-block__details-content list-unstyled">
                               {%- for link in block.settings.menu.links -%}
                                 {%- comment %}<locksmith:86fa>{% endcomment -%}
@@ -98,7 +105,7 @@
                                 {%- comment %}</locksmith:86fa>{% endcomment -%}
                                 <li>
                                   <a
-                                    href="{{ link.url }}"
+                                    href="{{ link.url | replace: 'https://drinkhalfday.com/en-test/products/lemon-iced-tea', '/products/lemon-tea' }}"
                                     class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
                                   >
                                     {{ link.title | escape }}
@@ -282,7 +289,7 @@
       >
         {%- if product.metafields.custom.product_logo != blank -%}
           <div class="Footer_bottom_mainlogo_new">
-            <a href="/">
+            <a href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }} home">
               <div class="Footer_bottom_innerlogo_new">
                 {{
                   product.metafields.custom.product_logo | 
@@ -297,7 +304,7 @@
         {% else %}
           {%- if section.settings.main_custom_logo != blank -%}
             <div class="Footer_bottom_mainlogo_new">
-              <a href="/">
+              <a href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }} home">
                 <div class="Footer_bottom_innerlogo_new">
                   {{
                     section.settings.main_custom_logo | 
@@ -326,7 +333,7 @@
                         {{ link.title }}<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6.5" cy="6.5" r="6" fill="#004600"/><path d="M7.71514 10.1962C7.77258 10.1962 7.83577 10.179 7.89321 10.1503C8.11724 10.0469 8.20915 9.79411 8.1 9.57009C8.1 9.57009 7.27857 7.69171 7.12922 7.0024C7.07178 6.76114 7.03731 6.12352 7.02583 5.82482C7.02583 5.72143 7.08327 5.62952 7.17518 5.6008L9.01334 5.04935C9.23737 4.9919 9.36949 4.73341 9.31205 4.50938C9.2546 4.28536 8.99611 4.15324 8.77208 4.21068C8.77208 4.21068 7.07178 4.76213 6.45714 4.76213C5.85974 4.76213 4.17092 4.22217 4.17092 4.22217C3.9469 4.16473 3.69415 4.26812 3.61947 4.49215C3.5448 4.73341 3.67692 4.98616 3.91817 5.0436L5.75634 5.59505C5.84825 5.62377 5.92292 5.71568 5.90569 5.81908C5.88846 6.11778 5.85974 6.76114 5.8023 6.99665C5.65294 7.68597 4.83151 9.56434 4.83151 9.56434C4.72812 9.78837 4.83151 10.0411 5.03831 10.1445C5.09575 10.1732 5.15894 10.1905 5.21638 10.1905C5.38296 10.1905 5.5438 10.0986 5.60699 9.93772L6.48586 8.14551L7.32453 9.94921C7.3992 10.1043 7.54855 10.1962 7.71514 10.1962Z" fill="#FFE700"/><path d="M6.49174 4.33162C6.95492 4.33162 7.3304 3.95614 7.3304 3.49296C7.3304 3.02978 6.95492 2.6543 6.49174 2.6543C6.02856 2.6543 5.65308 3.02978 5.65308 3.49296C5.65308 3.95614 6.02856 4.33162 6.49174 4.33162Z" fill="#FFE700"/></svg>
                       </a>
                     {%- else -%}
-                      <a href="{{ link.url }}">
+                      <a href="{{ link.url | replace: 'https://drinkhalfday.com/en-test/products/lemon-iced-tea', '/products/lemon-tea' }}">
                         {{ link.title }}
                       </a>
                     {%- endif -%}    

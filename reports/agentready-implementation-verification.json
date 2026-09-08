@@ -1,0 +1,95 @@
+{
+  "captured_at": "2026-09-08T12:05:48.900237+00:00",
+  "development_theme_id": 142755430600,
+  "native_files": [
+    {
+      "path": "/agents.md",
+      "development_status": 200,
+      "live_status": 200,
+      "development_curated_guide": true,
+      "live_curated_guide": false,
+      "unrendered_liquid": false,
+      "size": 3439,
+      "sha256": "3f721d91f11240035e3c05534c7108f1b621ab9c0cbd197e6016afafa74f2bfe",
+      "staff_recommendation": false
+    },
+    {
+      "path": "/llms.txt",
+      "development_status": 200,
+      "live_status": 200,
+      "development_curated_guide": true,
+      "live_curated_guide": false,
+      "unrendered_liquid": false,
+      "size": 3439,
+      "sha256": "3f721d91f11240035e3c05534c7108f1b621ab9c0cbd197e6016afafa74f2bfe",
+      "staff_recommendation": false
+    },
+    {
+      "path": "/llms-full.txt",
+      "development_status": 200,
+      "live_status": 200,
+      "development_curated_guide": true,
+      "live_curated_guide": false,
+      "unrendered_liquid": false,
+      "size": 3439,
+      "sha256": "3f721d91f11240035e3c05534c7108f1b621ab9c0cbd197e6016afafa74f2bfe",
+      "staff_recommendation": false
+    }
+  ],
+  "embed_rollback": [
+    {
+      "path": "/",
+      "status": 200,
+      "agentready_data_blocks": 0,
+      "development_verified": true,
+      "liquid_error": false
+    },
+    {
+      "path": "/products/sweet-tea",
+      "status": 200,
+      "agentready_data_blocks": 0,
+      "development_verified": true,
+      "liquid_error": false
+    },
+    {
+      "path": "/collections/staff-variety-packs",
+      "status": 200,
+      "agentready_data_blocks": 0,
+      "development_verified": true,
+      "liquid_error": false
+    }
+  ],
+  "proxy_checks": [
+    {
+      "path": "/apps/agentready/llms.txt",
+      "status": 200,
+      "staff_details_present": false,
+      "products_section": false,
+      "embedded_script_text": false,
+      "has_staff_collection_links": false,
+      "bytes": 2632
+    },
+    {
+      "path": "/apps/agentready/products/womens-marmot-black-jacket-s.md",
+      "status": 200,
+      "staff_details_present": true,
+      "products_section": false,
+      "embedded_script_text": false,
+      "has_staff_collection_links": false,
+      "bytes": 669
+    }
+  ],
+  "post_exclusion_endpoint_recheck": {
+    "captured_at": "2026-09-08T12:08:40.450081+00:00",
+    "path": "/apps/agentready/products/womens-marmot-black-jacket-s.md",
+    "status": 200,
+    "staff_details_present": true,
+    "conditions": "Both app render switches off; live embed off; dev embed disabled; Include Products off; all 45 selectable product rows explicitly hidden; regenerated discovery file. No cookies; Cache-Control no-cache requested.",
+    "response_headers": {
+      "Date": "Tue, 08 Sep 2026 12:08:40 GMT",
+      "Content-Type": "text/markdown; charset=utf-8",
+      "Age": "0",
+      "Cache-Control": "public, max-age=900"
+    }
+  }
+}

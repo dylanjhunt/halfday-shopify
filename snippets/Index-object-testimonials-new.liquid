@@ -36,15 +36,15 @@
                           <div class="Index_object_testimonials_innerloops_innercolumn_imagevideo_new">
                             {{
                               main_custom_testimonial_list.main_video_or_image_block.value | 
-                              image_url: width: img.width | 
-                              image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                              image_url: width: 900 |
+                              image_tag: widths: '280, 420, 600, 750, 900', sizes: '(min-width: 750px) 302px, 280px', loading: 'lazy',
                               fetchpriority: 'low', 
                               class: 'Static_image_new'
                             }}
                           </div>
                         {%- else -%}
                           <div class="Index_object_testimonials_innerloops_innercolumn_imagevideo_new">
-                            {{ main_custom_testimonial_list.main_video_or_image_block.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                            {% render 'halfday-video', video: main_custom_testimonial_list.main_video_or_image_block.value, sizes: '(min-width: 750px) 302px, 280px' %}
                           </div>
                         {%- endif -%}
                       </div>
@@ -66,8 +66,8 @@
                               <div class="Index_object_testimonials_innerloops_innerdetail_innerimage_new">
                                 {{
                                   main_custom_testimonial_list.main_custom_logo_image.value | 
-                                  image_url: width: img.width | 
-                                  image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                  image_url: width: 900 |
+                                  image_tag: widths: '280, 420, 600, 750, 900', sizes: '(min-width: 750px) 302px, 280px', loading: 'lazy',
                                   fetchpriority: 'low', 
                                   class: 'Static_image_new'
                                 }}

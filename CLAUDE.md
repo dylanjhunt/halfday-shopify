@@ -6,11 +6,11 @@ This repository is the Shopify Online Store theme for Halfday Iced Tea, not a he
 
 - Use Shopify CLI for theme operations. Read `README.md` and `docs/modernization-roadmap.md` for project status and the current delivery sequence. The dated store and Klaviyo audits are supporting evidence.
 - `npm ci` installs the pinned local CLI. `npm run theme:list`, `npm run theme:check`, `npm run theme:dev`, `npm run theme:push:dev` are the normal commands.
-- Work on a Git branch and preview with a development theme. The current user request authorizes setup, audits, and roadmap planning; production changes are a separate task.
-- `npm run theme:pull` refuses a dirty working tree. Pull and commit current merchant edits before changing code. Review JSON templates and `config/settings_data.json` carefully: these contain merchant settings.
+- Wave 1 is merged into `main` as an unpublished release candidate. Dylan will connect Shopify and request the final audit before publishing. Start subsequent work on a descriptive `feature/...` or `fix/...` branch from `main`, preview it on an unpublished theme, and merge reviewed work back into `main`. Keep `dev/wave-1` as the completed wave history. Track completed work, verification and pending decisions in `docs/wave-1-progress.md`. The user permits production repairs for confirmed broken functionality; otherwise keep all changes in the development theme until release approval. Shared product/app data is not isolated by theme previews.
+- `npm run theme:pull` refuses a dirty working tree but can still overwrite committed unpublished work. While `main` is ahead of production, pull live files into a separate temporary directory using explicit `--theme` and `--path`; compare against `baseline/live-2026-09-07` and merge only newer merchant edits through a branch. Review JSON templates and `config/settings_data.json` carefully: these contain merchant settings. The baseline tag also anchors the pre-release regression checker.
 - The default environment identifies only this store. Never infer a production deployment from a request for local development. Do not add `allow-live`, `publish`, or a live theme ID to default write commands.
 - Git tracks theme files, not products, menus, pages, metafields/metaobjects, app settings, inventory, fulfillment, or customer data. Those need separate verification in Shopify/apps.
-- Keep credentials, CLI sessions, customer/order exports, and local settings out of Git. No automatic GitHub or production synchronization is configured.
+- Keep credentials, CLI sessions, customer/order exports, and local settings out of Git. Git remote `origin` points to `https://github.com/dylanjhunt/halfday-shopify.git`. Dylan is arranging the Shopify connection; inspect the actual branch/theme mapping before future pushes. No publishing authorization is implied by a Git merge or push.
 
 ## Shopify architecture and simplicity
 

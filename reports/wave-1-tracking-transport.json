@@ -1,0 +1,55 @@
+{
+  "method": "Anonymous homepage Lighthouse network captures. Only known endpoint paths and HTTP status counts retained; no queries, payloads, profile IDs or cookies. Live capture is the earlier baseline, not simultaneous.",
+  "limits": "HTTP success establishes transport only. Event payload correctness, identified Klaviyo profiles, orders and attribution are not established. GA and Ads deferred; GTM excluded.",
+  "captures": {
+    "live": {
+      "captured_at": "2026-09-07T21:33:26.060Z",
+      "endpoints": {
+        "Klaviyo anonymous onsite analytics": {
+          "endpoint": "a.klaviyo.com/onsite/track-analytics",
+          "http_status_counts": {
+            "200": 2,
+            "202": 2
+          }
+        },
+        "Postscript page events": {
+          "endpoint": "bicp-analytics.postscript.io/api/v1/page_events",
+          "http_status_counts": {
+            "200": 2
+          }
+        },
+        "Signifyd fingerprint loader": {
+          "endpoint": "dp.signifyd.com/fp-web",
+          "http_status_counts": {
+            "200": 2
+          }
+        }
+      }
+    },
+    "development": {
+      "captured_at": "2026-09-08T00:12:11.420Z",
+      "endpoints": {
+        "Klaviyo anonymous onsite analytics": {
+          "endpoint": "a.klaviyo.com/onsite/track-analytics",
+          "http_status_counts": {
+            "202": 2,
+            "200": 2
+          }
+        },
+        "Postscript page events": {
+          "endpoint": "bicp-analytics.postscript.io/api/v1/page_events",
+          "http_status_counts": {
+            "200": 2
+          }
+        },
+        "Signifyd fingerprint loader": {
+          "endpoint": "dp.signifyd.com/fp-web",
+          "http_status_counts": {
+            "200": 2
+          }
+        }
+      },
+      "console_errors": 0
+    }
+  }
+}

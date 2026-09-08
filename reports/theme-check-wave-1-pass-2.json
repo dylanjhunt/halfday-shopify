@@ -1,0 +1,5528 @@
+[
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/layout/theme-easylockdown-bckp.liquid",
+    "offenses": [
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 1,
+        "start_column": 6,
+        "end_row": 1,
+        "end_column": 13,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 8,
+        "start_column": 61,
+        "end_row": 8,
+        "end_column": 70,
+        "message": "The variable 'elhRender' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 8,
+        "start_column": 299,
+        "end_row": 8,
+        "end_column": 346,
+        "message": "The variable 'elhRender' uses wrong naming format"
+      },
+      {
+        "check": "RemoteAsset",
+        "severity": "warning",
+        "start_row": 39,
+        "start_column": 27,
+        "end_row": 39,
+        "end_column": 69,
+        "message": "Asset should be served by the Shopify CDN for better performance."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 7,
+        "start_column": 3,
+        "end_row": 7,
+        "end_column": 28,
+        "message": "Unknown object 'locksmith_initializations' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 8,
+        "start_column": 168,
+        "end_row": 8,
+        "end_column": 204,
+        "message": "Unknown object 'easylockdownOnlySpecialPriceSelector' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 8,
+        "start_column": 239,
+        "end_row": 8,
+        "end_column": 270,
+        "message": "Unknown object 'easylockdownCustomPriceSelector' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 69,
+        "start_column": 35,
+        "end_row": 69,
+        "end_column": 49,
+        "message": "Unknown object 'scheme_classes' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 8,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/layout/theme.liquid",
+    "offenses": [
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 1,
+        "start_column": 6,
+        "end_row": 1,
+        "end_column": 13,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "RemoteAsset",
+        "severity": "warning",
+        "start_row": 41,
+        "start_column": 27,
+        "end_row": 41,
+        "end_column": 69,
+        "message": "Asset should be served by the Shopify CDN for better performance."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 8,
+        "start_column": 7,
+        "end_row": 8,
+        "end_column": 32,
+        "message": "Unknown object 'locksmith_initializations' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 71,
+        "start_column": 35,
+        "end_row": 71,
+        "end_column": 49,
+        "message": "Unknown object 'scheme_classes' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 4,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/header-drawer.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 26,
+        "start_column": 27,
+        "end_row": 26,
+        "end_column": 60,
+        "message": "The variable 'locksmith_22d8_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 26,
+        "start_column": 329,
+        "end_row": 26,
+        "end_column": 399,
+        "message": "The variable 'locksmith_22d8_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 26,
+        "start_column": 434,
+        "end_row": 26,
+        "end_column": 470,
+        "message": "The variable 'locksmith_22d8_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 272,
+        "end_row": 30,
+        "end_column": 306,
+        "message": "The variable 'locksmith_22d8_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 318,
+        "end_row": 30,
+        "end_column": 353,
+        "message": "The variable 'locksmith_22d8_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 375,
+        "end_row": 30,
+        "end_column": 447,
+        "message": "The variable 'locksmith_22d8_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 459,
+        "end_row": 30,
+        "end_column": 533,
+        "message": "The variable 'locksmith_22d8_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 599,
+        "end_row": 30,
+        "end_column": 636,
+        "message": "The variable 'locksmith_22d8_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 658,
+        "end_row": 30,
+        "end_column": 696,
+        "message": "The variable 'locksmith_22d8_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 789,
+        "end_row": 30,
+        "end_column": 825,
+        "message": "The variable 'locksmith_22d8_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 847,
+        "end_row": 30,
+        "end_column": 884,
+        "message": "The variable 'locksmith_22d8_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 907,
+        "end_row": 30,
+        "end_column": 1019,
+        "message": "The variable 'locksmith_22d8_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 1031,
+        "end_row": 30,
+        "end_column": 1145,
+        "message": "The variable 'locksmith_22d8_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "PaginationSize",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 74,
+        "end_row": 35,
+        "end_column": 78,
+        "message": "Pagination size must be a positive integer between 1 and 250."
+      },
+      {
+        "check": "PaginationSize",
+        "severity": "warning",
+        "start_row": 83,
+        "start_column": 88,
+        "end_row": 83,
+        "end_column": 92,
+        "message": "Pagination size must be a positive integer between 1 and 250."
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 648,
+        "end_row": 30,
+        "end_column": 698,
+        "message": "The variable 'locksmith_22d8_forloop__first' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 837,
+        "end_row": 30,
+        "end_column": 886,
+        "message": "The variable 'locksmith_22d8_forloop__last' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 897,
+        "end_row": 30,
+        "end_column": 1021,
+        "message": "The variable 'locksmith_22d8_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 1021,
+        "end_row": 30,
+        "end_column": 1147,
+        "message": "The variable 'locksmith_22d8_forloop__rindex0' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 19,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/header-dropdown-menu.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 10,
+        "start_column": 17,
+        "end_row": 10,
+        "end_column": 50,
+        "message": "The variable 'locksmith_fd5a_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 10,
+        "start_column": 295,
+        "end_row": 10,
+        "end_column": 365,
+        "message": "The variable 'locksmith_fd5a_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 10,
+        "start_column": 400,
+        "end_row": 10,
+        "end_column": 436,
+        "message": "The variable 'locksmith_fd5a_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 250,
+        "end_row": 14,
+        "end_column": 284,
+        "message": "The variable 'locksmith_fd5a_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 296,
+        "end_row": 14,
+        "end_column": 331,
+        "message": "The variable 'locksmith_fd5a_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 353,
+        "end_row": 14,
+        "end_column": 425,
+        "message": "The variable 'locksmith_fd5a_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 437,
+        "end_row": 14,
+        "end_column": 511,
+        "message": "The variable 'locksmith_fd5a_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 577,
+        "end_row": 14,
+        "end_column": 614,
+        "message": "The variable 'locksmith_fd5a_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 636,
+        "end_row": 14,
+        "end_column": 674,
+        "message": "The variable 'locksmith_fd5a_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 767,
+        "end_row": 14,
+        "end_column": 803,
+        "message": "The variable 'locksmith_fd5a_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 825,
+        "end_row": 14,
+        "end_column": 862,
+        "message": "The variable 'locksmith_fd5a_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 885,
+        "end_row": 14,
+        "end_column": 997,
+        "message": "The variable 'locksmith_fd5a_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 1009,
+        "end_row": 14,
+        "end_column": 1123,
+        "message": "The variable 'locksmith_fd5a_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 626,
+        "end_row": 14,
+        "end_column": 676,
+        "message": "The variable 'locksmith_fd5a_forloop__first' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 815,
+        "end_row": 14,
+        "end_column": 864,
+        "message": "The variable 'locksmith_fd5a_forloop__last' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 875,
+        "end_row": 14,
+        "end_column": 999,
+        "message": "The variable 'locksmith_fd5a_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 14,
+        "start_column": 999,
+        "end_row": 14,
+        "end_column": 1125,
+        "message": "The variable 'locksmith_fd5a_forloop__rindex0' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 17,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/locksmith-content-variables.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 9,
+        "end_row": 9,
+        "end_column": 16,
+        "message": "The variable '_p' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 27,
+        "end_row": 9,
+        "end_column": 38,
+        "message": "The variable '_d' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 49,
+        "end_row": 9,
+        "end_column": 57,
+        "message": "The variable '_l' uses wrong naming format"
+      },
+      {
+        "check": "RemoteAsset",
+        "severity": "warning",
+        "start_row": 10,
+        "start_column": 155,
+        "end_row": 10,
+        "end_column": 246,
+        "message": "Asset should be served by the Shopify CDN for better performance."
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 69,
+        "end_row": 9,
+        "end_column": 70,
+        "message": "The variable '_' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 81,
+        "end_row": 9,
+        "end_column": 86,
+        "message": "The variable '_h' uses wrong naming format"
+      },
+      {
+        "check": "RemoteAsset",
+        "severity": "warning",
+        "start_row": 21,
+        "start_column": 76,
+        "end_row": 21,
+        "end_column": 167,
+        "message": "Asset should be served by the Shopify CDN for better performance."
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 88,
+        "end_row": 9,
+        "end_column": 116,
+        "message": "The variable 'locksmith_client' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 79,
+        "start_column": 89,
+        "end_row": 79,
+        "end_column": 155,
+        "message": "The variable 'customer_register_form' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 92,
+        "start_column": 50,
+        "end_row": 92,
+        "end_column": 85,
+        "message": "The variable 'locksmith_passcode_form' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 93,
+        "start_column": 151,
+        "end_row": 93,
+        "end_column": 183,
+        "message": "The variable 'locksmith_email_form' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 94,
+        "start_column": 157,
+        "end_row": 94,
+        "end_column": 196,
+        "message": "The variable 'locksmith_confirmation_form' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 12,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/locksmith-variables.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 9,
+        "end_row": 9,
+        "end_column": 17,
+        "message": "The variable '_c' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 28,
+        "end_row": 9,
+        "end_column": 35,
+        "message": "The variable '_k' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 304,
+        "end_row": 9,
+        "end_column": 305,
+        "message": "The variable '_' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 370,
+        "end_row": 9,
+        "end_column": 376,
+        "message": "The variable '_s' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 565,
+        "end_row": 9,
+        "end_column": 570,
+        "message": "The variable '_o' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 581,
+        "end_row": 9,
+        "end_column": 586,
+        "message": "The variable '_g' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 2305,
+        "end_row": 9,
+        "end_column": 2322,
+        "message": "The variable '_w' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 2341,
+        "end_row": 9,
+        "end_column": 2368,
+        "message": "The variable '_w' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 5338,
+        "end_row": 9,
+        "end_column": 5361,
+        "message": "The variable '_o' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 5496,
+        "end_row": 9,
+        "end_column": 5519,
+        "message": "The variable '_g' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 5676,
+        "end_row": 9,
+        "end_column": 5699,
+        "message": "The variable '_o' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 5834,
+        "end_row": 9,
+        "end_column": 5857,
+        "message": "The variable '_g' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 6014,
+        "end_row": 9,
+        "end_column": 6037,
+        "message": "The variable '_o' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 6172,
+        "end_row": 9,
+        "end_column": 6195,
+        "message": "The variable '_g' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 6352,
+        "end_row": 9,
+        "end_column": 6375,
+        "message": "The variable '_o' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 6510,
+        "end_row": 9,
+        "end_column": 6533,
+        "message": "The variable '_g' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 6667,
+        "end_row": 9,
+        "end_column": 6717,
+        "message": "The variable '_o' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 6728,
+        "end_row": 9,
+        "end_column": 6778,
+        "message": "The variable '_g' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 7385,
+        "end_row": 9,
+        "end_column": 7390,
+        "message": "The variable '_g' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 8758,
+        "end_row": 9,
+        "end_column": 8760,
+        "message": "The variable '_s' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 8894,
+        "end_row": 9,
+        "end_column": 8896,
+        "message": "The variable '_s' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 8978,
+        "end_row": 9,
+        "end_column": 8989,
+        "message": "The variable '_s' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 9023,
+        "end_row": 9,
+        "end_column": 9034,
+        "message": "The variable '_s' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 9071,
+        "end_row": 9,
+        "end_column": 9085,
+        "message": "The variable '_s' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 9130,
+        "end_row": 9,
+        "end_column": 9149,
+        "message": "The variable '_s' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 9197,
+        "end_row": 9,
+        "end_column": 9219,
+        "message": "The variable '_s' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 9254,
+        "end_row": 9,
+        "end_column": 9260,
+        "message": "The variable '_s' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 9306,
+        "end_row": 9,
+        "end_column": 9323,
+        "message": "The variable '_s' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 9357,
+        "end_row": 9,
+        "end_column": 9367,
+        "message": "The variable '_s' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 9409,
+        "end_row": 9,
+        "end_column": 9421,
+        "message": "The variable '_s' uses wrong naming format"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 3210,
+        "end_row": 9,
+        "end_column": 3248,
+        "message": "The variable 'variant_option_name' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 3248,
+        "end_row": 9,
+        "end_column": 3282,
+        "message": "The variable 'variant_option_value' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 4279,
+        "end_row": 9,
+        "end_column": 4297,
+        "message": "The variable 'link' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 4357,
+        "end_row": 9,
+        "end_column": 4379,
+        "message": "The variable 'linklist' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 4459,
+        "end_row": 9,
+        "end_column": 4479,
+        "message": "The variable 'vendor' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 8289,
+        "end_row": 9,
+        "end_column": 8322,
+        "message": "The variable 'locksmith_redirect' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 8322,
+        "end_row": 9,
+        "end_column": 8354,
+        "message": "The variable 'locksmith_noindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 9460,
+        "end_row": 9,
+        "end_column": 9496,
+        "message": "The variable 'locksmith_current_path' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 11236,
+        "end_row": 9,
+        "end_column": 11336,
+        "message": "The variable 'locksmith_json_signature' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 39,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/locksmith.liquid",
+    "offenses": [
+      {
+        "check": "ContentForHeaderModification",
+        "severity": "error",
+        "start_row": 71,
+        "start_column": 203,
+        "end_row": 71,
+        "end_column": 409,
+        "message": "Do not rely on the content of `content_for_header`"
+      },
+      {
+        "check": "ContentForHeaderModification",
+        "severity": "error",
+        "start_row": 71,
+        "start_column": 203,
+        "end_row": 71,
+        "end_column": 409,
+        "message": "Do not rely on the content of `content_for_header`"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 9,
+        "start_column": 2,
+        "end_row": 9,
+        "end_column": 9,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 71,
+        "start_column": 49,
+        "end_row": 71,
+        "end_column": 56,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 71,
+        "start_column": 90,
+        "end_row": 71,
+        "end_column": 97,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 71,
+        "start_column": 432,
+        "end_row": 71,
+        "end_column": 469,
+        "message": "The variable 'locksmith_initializations' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 162,
+        "start_column": 336,
+        "end_row": 162,
+        "end_column": 383,
+        "message": "The variable 'locksmith_original_template' is assigned but not used"
+      }
+    ],
+    "errorCount": 2,
+    "warningCount": 5,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Product-object-Ingredient-new.liquid",
+    "offenses": [
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 1,
+        "start_column": 6,
+        "end_row": 1,
+        "end_column": 13,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 6,
+        "start_column": 10,
+        "end_row": 6,
+        "end_column": 17,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 11,
+        "start_column": 10,
+        "end_row": 11,
+        "end_column": 17,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 16,
+        "start_column": 10,
+        "end_row": 16,
+        "end_column": 17,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "PaginationSize",
+        "severity": "warning",
+        "start_row": 20,
+        "start_column": 71,
+        "end_row": 20,
+        "end_column": 75,
+        "message": "Pagination size must be a positive integer between 1 and 250."
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 14,
+        "end_row": 23,
+        "end_column": 21,
+        "message": "Use the 'render' tag instead of 'include'"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/easylockdown_body.liquid",
+    "offenses": [
+      {
+        "check": "OrphanedSnippet",
+        "severity": "warning",
+        "start_row": 0,
+        "start_column": 0,
+        "end_row": 0,
+        "end_column": 1,
+        "message": "This snippet is not referenced by any other files"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/easylockdown_filter_collection.liquid",
+    "offenses": [
+      {
+        "check": "OrphanedSnippet",
+        "severity": "warning",
+        "start_row": -1,
+        "start_column": -1,
+        "end_row": -1,
+        "end_column": -1,
+        "message": "This snippet is not referenced by any other files"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/easylockdown_filter_collections.liquid",
+    "offenses": [
+      {
+        "check": "OrphanedSnippet",
+        "severity": "warning",
+        "start_row": -1,
+        "start_column": -1,
+        "end_row": -1,
+        "end_column": -1,
+        "message": "This snippet is not referenced by any other files"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/easylockdown_filter_search.liquid",
+    "offenses": [
+      {
+        "check": "OrphanedSnippet",
+        "severity": "warning",
+        "start_row": -1,
+        "start_column": -1,
+        "end_row": -1,
+        "end_column": -1,
+        "message": "This snippet is not referenced by any other files"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/easylockdown_head.liquid",
+    "offenses": [
+      {
+        "check": "OrphanedSnippet",
+        "severity": "warning",
+        "start_row": -1,
+        "start_column": -1,
+        "end_row": -1,
+        "end_column": -1,
+        "message": "This snippet is not referenced by any other files"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/quick-order-product-row.liquid",
+    "offenses": [
+      {
+        "check": "OrphanedSnippet",
+        "severity": "warning",
+        "start_row": 0,
+        "start_column": 0,
+        "end_row": 0,
+        "end_column": 1,
+        "message": "This snippet is not referenced by any other files"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/sticky-addtocart-button.liquid",
+    "offenses": [
+      {
+        "check": "RemoteAsset",
+        "severity": "warning",
+        "start_row": 6,
+        "start_column": 15,
+        "end_row": 6,
+        "end_column": 234,
+        "message": "Use one of the asset_url filters to serve assets for better performance."
+      },
+      {
+        "check": "DeprecatedFilter",
+        "severity": "warning",
+        "start_row": 6,
+        "start_column": 144,
+        "end_row": 6,
+        "end_column": 162,
+        "message": "Deprecated filter 'img_url', consider using 'image_url'."
+      },
+      {
+        "check": "DeprecatedFilter",
+        "severity": "warning",
+        "start_row": 6,
+        "start_column": 201,
+        "end_row": 6,
+        "end_column": 219,
+        "message": "Deprecated filter 'img_url', consider using 'image_url'."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/collage.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 19,
+        "end_row": 30,
+        "end_column": 52,
+        "message": "The variable 'locksmith_3838_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 292,
+        "end_row": 30,
+        "end_column": 362,
+        "message": "The variable 'locksmith_3838_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 397,
+        "end_row": 30,
+        "end_column": 433,
+        "message": "The variable 'locksmith_3838_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 34,
+        "start_column": 259,
+        "end_row": 34,
+        "end_column": 293,
+        "message": "The variable 'locksmith_3838_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 34,
+        "start_column": 305,
+        "end_row": 34,
+        "end_column": 340,
+        "message": "The variable 'locksmith_3838_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 34,
+        "start_column": 362,
+        "end_row": 34,
+        "end_column": 434,
+        "message": "The variable 'locksmith_3838_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 34,
+        "start_column": 446,
+        "end_row": 34,
+        "end_column": 520,
+        "message": "The variable 'locksmith_3838_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 34,
+        "start_column": 586,
+        "end_row": 34,
+        "end_column": 623,
+        "message": "The variable 'locksmith_3838_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 34,
+        "start_column": 645,
+        "end_row": 34,
+        "end_column": 683,
+        "message": "The variable 'locksmith_3838_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 34,
+        "start_column": 776,
+        "end_row": 34,
+        "end_column": 812,
+        "message": "The variable 'locksmith_3838_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 34,
+        "start_column": 834,
+        "end_row": 34,
+        "end_column": 871,
+        "message": "The variable 'locksmith_3838_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 34,
+        "start_column": 894,
+        "end_row": 34,
+        "end_column": 1006,
+        "message": "The variable 'locksmith_3838_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 34,
+        "start_column": 1018,
+        "end_row": 34,
+        "end_column": 1132,
+        "message": "The variable 'locksmith_3838_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 34,
+        "start_column": 884,
+        "end_row": 34,
+        "end_column": 1008,
+        "message": "The variable 'locksmith_3838_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 34,
+        "start_column": 1008,
+        "end_row": 34,
+        "end_column": 1134,
+        "message": "The variable 'locksmith_3838_forloop__rindex0' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 15,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Index-object-instagram-new.liquid",
+    "offenses": [
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 3,
+        "start_column": 8,
+        "end_row": 3,
+        "end_column": 15,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 8,
+        "start_column": 8,
+        "end_row": 8,
+        "end_column": 15,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 13,
+        "start_column": 8,
+        "end_row": 13,
+        "end_column": 15,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "PaginationSize",
+        "severity": "warning",
+        "start_row": 17,
+        "start_column": 73,
+        "end_row": 17,
+        "end_column": 77,
+        "message": "Pagination size must be a positive integer between 1 and 250."
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 20,
+        "start_column": 12,
+        "end_row": 20,
+        "end_column": 19,
+        "message": "Use the 'render' tag instead of 'include'"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 5,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Index-object-testimonials-new.liquid",
+    "offenses": [
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 3,
+        "start_column": 8,
+        "end_row": 3,
+        "end_column": 15,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 8,
+        "start_column": 8,
+        "end_row": 8,
+        "end_column": 15,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 13,
+        "start_column": 8,
+        "end_row": 13,
+        "end_column": 15,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "PaginationSize",
+        "severity": "warning",
+        "start_row": 17,
+        "start_column": 75,
+        "end_row": 17,
+        "end_column": 79,
+        "message": "Pagination size must be a positive integer between 1 and 250."
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 20,
+        "start_column": 12,
+        "end_row": 20,
+        "end_column": 19,
+        "message": "Use the 'render' tag instead of 'include'"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 5,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/LP-PTO-object-testimonial-new.liquid",
+    "offenses": [
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 3,
+        "start_column": 8,
+        "end_row": 3,
+        "end_column": 15,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 8,
+        "start_column": 8,
+        "end_row": 8,
+        "end_column": 15,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 13,
+        "start_column": 8,
+        "end_row": 13,
+        "end_column": 15,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "PaginationSize",
+        "severity": "warning",
+        "start_row": 17,
+        "start_column": 75,
+        "end_row": 17,
+        "end_column": 79,
+        "message": "Pagination size must be a positive integer between 1 and 250."
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 20,
+        "start_column": 12,
+        "end_row": 20,
+        "end_column": 19,
+        "message": "Use the 'render' tag instead of 'include'"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 5,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Product-object-table-list-new.liquid",
+    "offenses": [
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 3,
+        "start_column": 8,
+        "end_row": 3,
+        "end_column": 15,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 8,
+        "start_column": 8,
+        "end_row": 8,
+        "end_column": 15,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 13,
+        "start_column": 8,
+        "end_row": 13,
+        "end_column": 15,
+        "message": "Use the 'render' tag instead of 'include'"
+      },
+      {
+        "check": "PaginationSize",
+        "severity": "warning",
+        "start_row": 17,
+        "start_column": 82,
+        "end_row": 17,
+        "end_column": 86,
+        "message": "Pagination size must be a positive integer between 1 and 250."
+      },
+      {
+        "check": "DeprecatedTag",
+        "severity": "warning",
+        "start_row": 20,
+        "start_column": 12,
+        "end_row": 20,
+        "end_column": 19,
+        "message": "Use the 'render' tag instead of 'include'"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 5,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/header-mega-menu.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 19,
+        "start_column": 17,
+        "end_row": 19,
+        "end_column": 50,
+        "message": "The variable 'locksmith_ab77_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 19,
+        "start_column": 323,
+        "end_row": 19,
+        "end_column": 393,
+        "message": "The variable 'locksmith_ab77_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 19,
+        "start_column": 428,
+        "end_row": 19,
+        "end_column": 464,
+        "message": "The variable 'locksmith_ab77_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 250,
+        "end_row": 23,
+        "end_column": 284,
+        "message": "The variable 'locksmith_ab77_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 296,
+        "end_row": 23,
+        "end_column": 331,
+        "message": "The variable 'locksmith_ab77_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 353,
+        "end_row": 23,
+        "end_column": 425,
+        "message": "The variable 'locksmith_ab77_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 437,
+        "end_row": 23,
+        "end_column": 511,
+        "message": "The variable 'locksmith_ab77_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 577,
+        "end_row": 23,
+        "end_column": 614,
+        "message": "The variable 'locksmith_ab77_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 636,
+        "end_row": 23,
+        "end_column": 674,
+        "message": "The variable 'locksmith_ab77_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 767,
+        "end_row": 23,
+        "end_column": 803,
+        "message": "The variable 'locksmith_ab77_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 825,
+        "end_row": 23,
+        "end_column": 862,
+        "message": "The variable 'locksmith_ab77_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 885,
+        "end_row": 23,
+        "end_column": 997,
+        "message": "The variable 'locksmith_ab77_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 1009,
+        "end_row": 23,
+        "end_column": 1123,
+        "message": "The variable 'locksmith_ab77_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "PaginationSize",
+        "severity": "warning",
+        "start_row": 28,
+        "start_column": 64,
+        "end_row": 28,
+        "end_column": 68,
+        "message": "Pagination size must be a positive integer between 1 and 250."
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 85,
+        "start_column": 41,
+        "end_row": 85,
+        "end_column": 74,
+        "message": "The variable 'locksmith_ef92_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 85,
+        "start_column": 295,
+        "end_row": 85,
+        "end_column": 365,
+        "message": "The variable 'locksmith_ef92_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 85,
+        "start_column": 400,
+        "end_row": 85,
+        "end_column": 436,
+        "message": "The variable 'locksmith_ef92_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 262,
+        "end_row": 90,
+        "end_column": 296,
+        "message": "The variable 'locksmith_ef92_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 308,
+        "end_row": 90,
+        "end_column": 343,
+        "message": "The variable 'locksmith_ef92_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 365,
+        "end_row": 90,
+        "end_column": 437,
+        "message": "The variable 'locksmith_ef92_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 449,
+        "end_row": 90,
+        "end_column": 523,
+        "message": "The variable 'locksmith_ef92_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 589,
+        "end_row": 90,
+        "end_column": 626,
+        "message": "The variable 'locksmith_ef92_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 648,
+        "end_row": 90,
+        "end_column": 686,
+        "message": "The variable 'locksmith_ef92_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 779,
+        "end_row": 90,
+        "end_column": 815,
+        "message": "The variable 'locksmith_ef92_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 837,
+        "end_row": 90,
+        "end_column": 874,
+        "message": "The variable 'locksmith_ef92_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 897,
+        "end_row": 90,
+        "end_column": 1009,
+        "message": "The variable 'locksmith_ef92_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 1021,
+        "end_row": 90,
+        "end_column": 1135,
+        "message": "The variable 'locksmith_ef92_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "PaginationSize",
+        "severity": "warning",
+        "start_row": 94,
+        "start_column": 88,
+        "end_row": 94,
+        "end_column": 92,
+        "message": "Pagination size must be a positive integer between 1 and 250."
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 144,
+        "start_column": 47,
+        "end_row": 144,
+        "end_column": 80,
+        "message": "The variable 'locksmith_c290_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 144,
+        "start_column": 301,
+        "end_row": 144,
+        "end_column": 371,
+        "message": "The variable 'locksmith_c290_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "PaginationSize",
+        "severity": "warning",
+        "start_row": 136,
+        "start_column": 86,
+        "end_row": 136,
+        "end_column": 90,
+        "message": "Pagination size must be a positive integer between 1 and 250."
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 144,
+        "start_column": 406,
+        "end_row": 144,
+        "end_column": 442,
+        "message": "The variable 'locksmith_c290_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 268,
+        "end_row": 148,
+        "end_column": 302,
+        "message": "The variable 'locksmith_c290_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 314,
+        "end_row": 148,
+        "end_column": 349,
+        "message": "The variable 'locksmith_c290_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 371,
+        "end_row": 148,
+        "end_column": 443,
+        "message": "The variable 'locksmith_c290_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 455,
+        "end_row": 148,
+        "end_column": 529,
+        "message": "The variable 'locksmith_c290_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 595,
+        "end_row": 148,
+        "end_column": 632,
+        "message": "The variable 'locksmith_c290_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 654,
+        "end_row": 148,
+        "end_column": 692,
+        "message": "The variable 'locksmith_c290_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 785,
+        "end_row": 148,
+        "end_column": 821,
+        "message": "The variable 'locksmith_c290_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 843,
+        "end_row": 148,
+        "end_column": 880,
+        "message": "The variable 'locksmith_c290_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 903,
+        "end_row": 148,
+        "end_column": 1015,
+        "message": "The variable 'locksmith_c290_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 1027,
+        "end_row": 148,
+        "end_column": 1141,
+        "message": "The variable 'locksmith_c290_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 626,
+        "end_row": 23,
+        "end_column": 676,
+        "message": "The variable 'locksmith_ab77_forloop__first' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 815,
+        "end_row": 23,
+        "end_column": 864,
+        "message": "The variable 'locksmith_ab77_forloop__last' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 875,
+        "end_row": 23,
+        "end_column": 999,
+        "message": "The variable 'locksmith_ab77_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 23,
+        "start_column": 999,
+        "end_row": 23,
+        "end_column": 1125,
+        "message": "The variable 'locksmith_ab77_forloop__rindex0' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 827,
+        "end_row": 90,
+        "end_column": 876,
+        "message": "The variable 'locksmith_ef92_forloop__last' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 887,
+        "end_row": 90,
+        "end_column": 1011,
+        "message": "The variable 'locksmith_ef92_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 90,
+        "start_column": 1011,
+        "end_row": 90,
+        "end_column": 1137,
+        "message": "The variable 'locksmith_ef92_forloop__rindex0' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 833,
+        "end_row": 148,
+        "end_column": 882,
+        "message": "The variable 'locksmith_c290_forloop__last' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 893,
+        "end_row": 148,
+        "end_column": 1017,
+        "message": "The variable 'locksmith_c290_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 148,
+        "start_column": 1017,
+        "end_row": 148,
+        "end_column": 1143,
+        "message": "The variable 'locksmith_c290_forloop__rindex0' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 52,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/main-list-collections.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 19,
+        "start_column": 11,
+        "end_row": 19,
+        "end_column": 71,
+        "message": "The variable 'moduloResult' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 31,
+        "start_column": 19,
+        "end_row": 31,
+        "end_column": 52,
+        "message": "The variable 'locksmith_2385_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 31,
+        "start_column": 254,
+        "end_row": 31,
+        "end_column": 324,
+        "message": "The variable 'locksmith_2385_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 31,
+        "start_column": 359,
+        "end_row": 31,
+        "end_column": 395,
+        "message": "The variable 'locksmith_2385_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 219,
+        "end_row": 35,
+        "end_column": 253,
+        "message": "The variable 'locksmith_2385_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 265,
+        "end_row": 35,
+        "end_column": 300,
+        "message": "The variable 'locksmith_2385_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 322,
+        "end_row": 35,
+        "end_column": 394,
+        "message": "The variable 'locksmith_2385_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 406,
+        "end_row": 35,
+        "end_column": 480,
+        "message": "The variable 'locksmith_2385_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 546,
+        "end_row": 35,
+        "end_column": 583,
+        "message": "The variable 'locksmith_2385_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 605,
+        "end_row": 35,
+        "end_column": 643,
+        "message": "The variable 'locksmith_2385_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 736,
+        "end_row": 35,
+        "end_column": 772,
+        "message": "The variable 'locksmith_2385_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 794,
+        "end_row": 35,
+        "end_column": 831,
+        "message": "The variable 'locksmith_2385_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 854,
+        "end_row": 35,
+        "end_column": 966,
+        "message": "The variable 'locksmith_2385_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 978,
+        "end_row": 35,
+        "end_column": 1092,
+        "message": "The variable 'locksmith_2385_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 595,
+        "end_row": 35,
+        "end_column": 645,
+        "message": "The variable 'locksmith_2385_forloop__first' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 784,
+        "end_row": 35,
+        "end_column": 833,
+        "message": "The variable 'locksmith_2385_forloop__last' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 844,
+        "end_row": 35,
+        "end_column": 968,
+        "message": "The variable 'locksmith_2385_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 35,
+        "start_column": 968,
+        "end_row": 35,
+        "end_column": 1094,
+        "message": "The variable 'locksmith_2385_forloop__rindex0' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 18,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/predictive-search.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 48,
+        "start_column": 23,
+        "end_row": 48,
+        "end_column": 56,
+        "message": "The variable 'locksmith_3cc4_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 48,
+        "start_column": 331,
+        "end_row": 48,
+        "end_column": 401,
+        "message": "The variable 'locksmith_3cc4_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 48,
+        "start_column": 436,
+        "end_row": 48,
+        "end_column": 472,
+        "message": "The variable 'locksmith_3cc4_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 268,
+        "end_row": 52,
+        "end_column": 302,
+        "message": "The variable 'locksmith_3cc4_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 314,
+        "end_row": 52,
+        "end_column": 349,
+        "message": "The variable 'locksmith_3cc4_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 371,
+        "end_row": 52,
+        "end_column": 443,
+        "message": "The variable 'locksmith_3cc4_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 455,
+        "end_row": 52,
+        "end_column": 529,
+        "message": "The variable 'locksmith_3cc4_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 595,
+        "end_row": 52,
+        "end_column": 632,
+        "message": "The variable 'locksmith_3cc4_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 654,
+        "end_row": 52,
+        "end_column": 692,
+        "message": "The variable 'locksmith_3cc4_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 785,
+        "end_row": 52,
+        "end_column": 821,
+        "message": "The variable 'locksmith_3cc4_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 843,
+        "end_row": 52,
+        "end_column": 880,
+        "message": "The variable 'locksmith_3cc4_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 903,
+        "end_row": 52,
+        "end_column": 1015,
+        "message": "The variable 'locksmith_3cc4_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 1027,
+        "end_row": 52,
+        "end_column": 1141,
+        "message": "The variable 'locksmith_3cc4_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 138,
+        "start_column": 27,
+        "end_row": 138,
+        "end_column": 60,
+        "message": "The variable 'locksmith_b53b_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 138,
+        "start_column": 326,
+        "end_row": 138,
+        "end_column": 396,
+        "message": "The variable 'locksmith_b53b_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 138,
+        "start_column": 431,
+        "end_row": 138,
+        "end_column": 467,
+        "message": "The variable 'locksmith_b53b_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 269,
+        "end_row": 142,
+        "end_column": 303,
+        "message": "The variable 'locksmith_b53b_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 315,
+        "end_row": 142,
+        "end_column": 350,
+        "message": "The variable 'locksmith_b53b_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 372,
+        "end_row": 142,
+        "end_column": 444,
+        "message": "The variable 'locksmith_b53b_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 456,
+        "end_row": 142,
+        "end_column": 530,
+        "message": "The variable 'locksmith_b53b_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 596,
+        "end_row": 142,
+        "end_column": 633,
+        "message": "The variable 'locksmith_b53b_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 655,
+        "end_row": 142,
+        "end_column": 693,
+        "message": "The variable 'locksmith_b53b_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 786,
+        "end_row": 142,
+        "end_column": 822,
+        "message": "The variable 'locksmith_b53b_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 844,
+        "end_row": 142,
+        "end_column": 881,
+        "message": "The variable 'locksmith_b53b_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 904,
+        "end_row": 142,
+        "end_column": 1016,
+        "message": "The variable 'locksmith_b53b_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 1028,
+        "end_row": 142,
+        "end_column": 1142,
+        "message": "The variable 'locksmith_b53b_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 644,
+        "end_row": 52,
+        "end_column": 694,
+        "message": "The variable 'locksmith_3cc4_forloop__first' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 833,
+        "end_row": 52,
+        "end_column": 882,
+        "message": "The variable 'locksmith_3cc4_forloop__last' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 893,
+        "end_row": 52,
+        "end_column": 1017,
+        "message": "The variable 'locksmith_3cc4_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 1017,
+        "end_row": 52,
+        "end_column": 1143,
+        "message": "The variable 'locksmith_3cc4_forloop__rindex0' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 645,
+        "end_row": 142,
+        "end_column": 695,
+        "message": "The variable 'locksmith_b53b_forloop__first' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 834,
+        "end_row": 142,
+        "end_column": 883,
+        "message": "The variable 'locksmith_b53b_forloop__last' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 894,
+        "end_row": 142,
+        "end_column": 1018,
+        "message": "The variable 'locksmith_b53b_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 142,
+        "start_column": 1018,
+        "end_row": 142,
+        "end_column": 1144,
+        "message": "The variable 'locksmith_b53b_forloop__rindex0' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 34,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/LP-Footer-latest-new.liquid",
+    "offenses": [
+      {
+        "check": "HardcodedRoutes",
+        "severity": "warning",
+        "start_row": 33,
+        "start_column": 25,
+        "end_row": 33,
+        "end_column": 26,
+        "message": "Use routes object {{ routes.root_url }} instead of hardcoding /"
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 36,
+        "start_column": 38,
+        "end_row": 36,
+        "end_column": 47,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 55,
+        "start_column": 46,
+        "end_row": 55,
+        "end_column": 55,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/collection-list.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 63,
+        "start_column": 21,
+        "end_row": 63,
+        "end_column": 54,
+        "message": "The variable 'locksmith_5d4a_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 63,
+        "start_column": 294,
+        "end_row": 63,
+        "end_column": 364,
+        "message": "The variable 'locksmith_5d4a_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 63,
+        "start_column": 399,
+        "end_row": 63,
+        "end_column": 435,
+        "message": "The variable 'locksmith_5d4a_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 261,
+        "end_row": 67,
+        "end_column": 295,
+        "message": "The variable 'locksmith_5d4a_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 307,
+        "end_row": 67,
+        "end_column": 342,
+        "message": "The variable 'locksmith_5d4a_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 364,
+        "end_row": 67,
+        "end_column": 436,
+        "message": "The variable 'locksmith_5d4a_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 448,
+        "end_row": 67,
+        "end_column": 522,
+        "message": "The variable 'locksmith_5d4a_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 588,
+        "end_row": 67,
+        "end_column": 625,
+        "message": "The variable 'locksmith_5d4a_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 647,
+        "end_row": 67,
+        "end_column": 685,
+        "message": "The variable 'locksmith_5d4a_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 778,
+        "end_row": 67,
+        "end_column": 814,
+        "message": "The variable 'locksmith_5d4a_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 836,
+        "end_row": 67,
+        "end_column": 873,
+        "message": "The variable 'locksmith_5d4a_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 896,
+        "end_row": 67,
+        "end_column": 1008,
+        "message": "The variable 'locksmith_5d4a_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 1020,
+        "end_row": 67,
+        "end_column": 1134,
+        "message": "The variable 'locksmith_5d4a_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 637,
+        "end_row": 67,
+        "end_column": 687,
+        "message": "The variable 'locksmith_5d4a_forloop__first' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 826,
+        "end_row": 67,
+        "end_column": 875,
+        "message": "The variable 'locksmith_5d4a_forloop__last' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 886,
+        "end_row": 67,
+        "end_column": 1010,
+        "message": "The variable 'locksmith_5d4a_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 67,
+        "start_column": 1010,
+        "end_row": 67,
+        "end_column": 1136,
+        "message": "The variable 'locksmith_5d4a_forloop__rindex0' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 17,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/main-collection-product-grid.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 163,
+        "start_column": 29,
+        "end_row": 163,
+        "end_column": 62,
+        "message": "The variable 'locksmith_d63a_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 163,
+        "start_column": 294,
+        "end_row": 163,
+        "end_column": 364,
+        "message": "The variable 'locksmith_d63a_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 163,
+        "start_column": 399,
+        "end_row": 163,
+        "end_column": 435,
+        "message": "The variable 'locksmith_d63a_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 254,
+        "end_row": 167,
+        "end_column": 288,
+        "message": "The variable 'locksmith_d63a_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 300,
+        "end_row": 167,
+        "end_column": 335,
+        "message": "The variable 'locksmith_d63a_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 357,
+        "end_row": 167,
+        "end_column": 429,
+        "message": "The variable 'locksmith_d63a_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 441,
+        "end_row": 167,
+        "end_column": 515,
+        "message": "The variable 'locksmith_d63a_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 581,
+        "end_row": 167,
+        "end_column": 618,
+        "message": "The variable 'locksmith_d63a_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 640,
+        "end_row": 167,
+        "end_column": 678,
+        "message": "The variable 'locksmith_d63a_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 771,
+        "end_row": 167,
+        "end_column": 807,
+        "message": "The variable 'locksmith_d63a_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 829,
+        "end_row": 167,
+        "end_column": 866,
+        "message": "The variable 'locksmith_d63a_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 889,
+        "end_row": 167,
+        "end_column": 1001,
+        "message": "The variable 'locksmith_d63a_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 1013,
+        "end_row": 167,
+        "end_column": 1127,
+        "message": "The variable 'locksmith_d63a_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 630,
+        "end_row": 167,
+        "end_column": 680,
+        "message": "The variable 'locksmith_d63a_forloop__first' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 819,
+        "end_row": 167,
+        "end_column": 868,
+        "message": "The variable 'locksmith_d63a_forloop__last' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 879,
+        "end_row": 167,
+        "end_column": 1003,
+        "message": "The variable 'locksmith_d63a_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 167,
+        "start_column": 1003,
+        "end_row": 167,
+        "end_column": 1129,
+        "message": "The variable 'locksmith_d63a_forloop__rindex0' is assigned but not used"
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 222,
+        "start_column": 60,
+        "end_row": 222,
+        "end_column": 69,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 268,
+        "start_column": 54,
+        "end_row": 268,
+        "end_column": 63,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 304,
+        "start_column": 60,
+        "end_row": 304,
+        "end_column": 69,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 325,
+        "start_column": 60,
+        "end_row": 325,
+        "end_column": 69,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 21,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/collection-banner-new.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 83,
+        "start_column": 36,
+        "end_row": 83,
+        "end_column": 83,
+        "message": "The variable 'collectionHandleIndex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 84,
+        "start_column": 36,
+        "end_row": 84,
+        "end_column": 95,
+        "message": "The variable 'subCollection' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 113,
+        "start_column": 26,
+        "end_row": 113,
+        "end_column": 73,
+        "message": "The variable 'collectionHandleIndex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 114,
+        "start_column": 26,
+        "end_row": 114,
+        "end_column": 85,
+        "message": "The variable 'subCollection' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 130,
+        "start_column": 26,
+        "end_row": 130,
+        "end_column": 73,
+        "message": "The variable 'collectionHandleIndex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 131,
+        "start_column": 26,
+        "end_row": 131,
+        "end_column": 85,
+        "message": "The variable 'subCollection' uses wrong naming format"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/main-article.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 101,
+        "start_column": 21,
+        "end_row": 101,
+        "end_column": 66,
+        "message": "The variable 'anchorId' uses wrong naming format"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/featured-collection.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 98,
+        "start_column": 21,
+        "end_row": 98,
+        "end_column": 54,
+        "message": "The variable 'locksmith_6ad9_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 98,
+        "start_column": 361,
+        "end_row": 98,
+        "end_column": 431,
+        "message": "The variable 'locksmith_6ad9_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 98,
+        "start_column": 466,
+        "end_row": 98,
+        "end_column": 502,
+        "message": "The variable 'locksmith_6ad9_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 263,
+        "end_row": 102,
+        "end_column": 297,
+        "message": "The variable 'locksmith_6ad9_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 309,
+        "end_row": 102,
+        "end_column": 344,
+        "message": "The variable 'locksmith_6ad9_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 366,
+        "end_row": 102,
+        "end_column": 438,
+        "message": "The variable 'locksmith_6ad9_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 450,
+        "end_row": 102,
+        "end_column": 524,
+        "message": "The variable 'locksmith_6ad9_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 590,
+        "end_row": 102,
+        "end_column": 627,
+        "message": "The variable 'locksmith_6ad9_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 649,
+        "end_row": 102,
+        "end_column": 687,
+        "message": "The variable 'locksmith_6ad9_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 780,
+        "end_row": 102,
+        "end_column": 816,
+        "message": "The variable 'locksmith_6ad9_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 838,
+        "end_row": 102,
+        "end_column": 875,
+        "message": "The variable 'locksmith_6ad9_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 898,
+        "end_row": 102,
+        "end_column": 1010,
+        "message": "The variable 'locksmith_6ad9_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 1022,
+        "end_row": 102,
+        "end_column": 1136,
+        "message": "The variable 'locksmith_6ad9_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 639,
+        "end_row": 102,
+        "end_column": 689,
+        "message": "The variable 'locksmith_6ad9_forloop__first' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 828,
+        "end_row": 102,
+        "end_column": 877,
+        "message": "The variable 'locksmith_6ad9_forloop__last' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 888,
+        "end_row": 102,
+        "end_column": 1012,
+        "message": "The variable 'locksmith_6ad9_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 102,
+        "start_column": 1012,
+        "end_row": 102,
+        "end_column": 1138,
+        "message": "The variable 'locksmith_6ad9_forloop__rindex0' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 17,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/main-login.liquid",
+    "offenses": [
+      {
+        "check": "HardcodedRoutes",
+        "severity": "warning",
+        "start_row": 78,
+        "start_column": 15,
+        "end_row": 78,
+        "end_column": 27,
+        "message": "Use routes object {{ routes.collections_url }} instead of hardcoding /collections"
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 30,
+        "start_column": 32,
+        "end_row": 30,
+        "end_column": 41,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 98,
+        "start_column": 32,
+        "end_row": 98,
+        "end_column": 41,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/main-search.liquid",
+    "offenses": [
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 260,
+        "start_column": 29,
+        "end_row": 260,
+        "end_column": 62,
+        "message": "The variable 'locksmith_a105_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 260,
+        "start_column": 279,
+        "end_row": 260,
+        "end_column": 349,
+        "message": "The variable 'locksmith_a105_forloop__size' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 260,
+        "start_column": 384,
+        "end_row": 260,
+        "end_column": 420,
+        "message": "The variable 'locksmith_a105_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 247,
+        "end_row": 264,
+        "end_column": 281,
+        "message": "The variable 'locksmith_a105_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 293,
+        "end_row": 264,
+        "end_column": 328,
+        "message": "The variable 'locksmith_a105_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 350,
+        "end_row": 264,
+        "end_column": 422,
+        "message": "The variable 'locksmith_a105_forloop__index' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 434,
+        "end_row": 264,
+        "end_column": 508,
+        "message": "The variable 'locksmith_a105_forloop__index0' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 574,
+        "end_row": 264,
+        "end_column": 611,
+        "message": "The variable 'locksmith_a105_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 633,
+        "end_row": 264,
+        "end_column": 671,
+        "message": "The variable 'locksmith_a105_forloop__first' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 764,
+        "end_row": 264,
+        "end_column": 800,
+        "message": "The variable 'locksmith_a105_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 822,
+        "end_row": 264,
+        "end_column": 859,
+        "message": "The variable 'locksmith_a105_forloop__last' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 882,
+        "end_row": 264,
+        "end_column": 994,
+        "message": "The variable 'locksmith_a105_forloop__rindex' uses wrong naming format"
+      },
+      {
+        "check": "VariableName",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 1006,
+        "end_row": 264,
+        "end_column": 1120,
+        "message": "The variable 'locksmith_a105_forloop__rindex0' uses wrong naming format"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 623,
+        "end_row": 264,
+        "end_column": 673,
+        "message": "The variable 'locksmith_a105_forloop__first' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 812,
+        "end_row": 264,
+        "end_column": 861,
+        "message": "The variable 'locksmith_a105_forloop__last' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 872,
+        "end_row": 264,
+        "end_column": 996,
+        "message": "The variable 'locksmith_a105_forloop__rindex' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 264,
+        "start_column": 996,
+        "end_row": 264,
+        "end_column": 1122,
+        "message": "The variable 'locksmith_a105_forloop__rindex0' is assigned but not used"
+      },
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 279,
+        "start_column": 24,
+        "end_row": 279,
+        "end_column": 56,
+        "message": "The variable 'product_settings' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 18,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/LP-Header-latest-new.liquid",
+    "offenses": [
+      {
+        "check": "HardcodedRoutes",
+        "severity": "warning",
+        "start_row": 109,
+        "start_column": 25,
+        "end_row": 109,
+        "end_column": 26,
+        "message": "Use routes object {{ routes.root_url }} instead of hardcoding /"
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 87,
+        "start_column": 58,
+        "end_row": 87,
+        "end_column": 67,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 112,
+        "start_column": 38,
+        "end_row": 112,
+        "end_column": 47,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/main-register.liquid",
+    "offenses": [
+      {
+        "check": "HardcodedRoutes",
+        "severity": "warning",
+        "start_row": 181,
+        "start_column": 21,
+        "end_row": 181,
+        "end_column": 33,
+        "message": "Use routes object {{ routes.collections_url }} instead of hardcoding /collections"
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 11,
+        "start_column": 32,
+        "end_row": 11,
+        "end_column": 41,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 20,
+        "start_column": 34,
+        "end_row": 20,
+        "end_column": 43,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 29,
+        "start_column": 34,
+        "end_row": 29,
+        "end_column": 43,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 4,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/product-media-gallery.liquid",
+    "offenses": [
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 32,
+        "start_column": 4,
+        "end_row": 32,
+        "end_column": 36,
+        "message": "The variable 'hide_mobile_slider' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/featured-product.liquid",
+    "offenses": [
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 475,
+        "start_column": 6,
+        "end_row": 475,
+        "end_column": 47,
+        "message": "The variable 'seo_media' is assigned but not used"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/bg.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 428,
+        "start_column": 4,
+        "end_row": 440,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 451,
+        "start_column": 4,
+        "end_row": 455,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 451,
+        "start_column": 4,
+        "end_row": 455,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 456,
+        "start_column": 4,
+        "end_row": 463,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/da.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/de.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/el.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/fi.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/hu.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/id.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/ja.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/ko.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/nb.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 483,
+        "start_column": 4,
+        "end_row": 487,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 483,
+        "start_column": 4,
+        "end_row": 487,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 488,
+        "start_column": 4,
+        "end_row": 495,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/nl.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/sv.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/th.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/tr.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/vi.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/zh-CN.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/zh-TW.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 434,
+        "start_column": 4,
+        "end_row": 446,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 457,
+        "start_column": 4,
+        "end_row": 461,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 462,
+        "start_column": 4,
+        "end_row": 469,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/es.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 446,
+        "start_column": 4,
+        "end_row": 458,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 469,
+        "start_column": 4,
+        "end_row": 473,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 469,
+        "start_column": 4,
+        "end_row": 473,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 474,
+        "start_column": 4,
+        "end_row": 481,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/fr.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 446,
+        "start_column": 4,
+        "end_row": 458,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 469,
+        "start_column": 4,
+        "end_row": 473,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 469,
+        "start_column": 4,
+        "end_row": 473,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 474,
+        "start_column": 4,
+        "end_row": 481,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/hr.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 446,
+        "start_column": 4,
+        "end_row": 458,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 469,
+        "start_column": 4,
+        "end_row": 473,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 469,
+        "start_column": 4,
+        "end_row": 473,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 474,
+        "start_column": 4,
+        "end_row": 481,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/it.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 446,
+        "start_column": 4,
+        "end_row": 458,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 495,
+        "start_column": 4,
+        "end_row": 499,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 495,
+        "start_column": 4,
+        "end_row": 499,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 500,
+        "start_column": 4,
+        "end_row": 507,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/pt-BR.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 446,
+        "start_column": 4,
+        "end_row": 458,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 469,
+        "start_column": 4,
+        "end_row": 473,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 469,
+        "start_column": 4,
+        "end_row": 473,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 474,
+        "start_column": 4,
+        "end_row": 481,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/pt-PT.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 446,
+        "start_column": 4,
+        "end_row": 458,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 495,
+        "start_column": 4,
+        "end_row": 499,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 495,
+        "start_column": 4,
+        "end_row": 499,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 500,
+        "start_column": 4,
+        "end_row": 507,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/ro.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 446,
+        "start_column": 4,
+        "end_row": 458,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 469,
+        "start_column": 4,
+        "end_row": 473,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 469,
+        "start_column": 4,
+        "end_row": 473,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 474,
+        "start_column": 4,
+        "end_row": 481,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/cs.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 458,
+        "start_column": 4,
+        "end_row": 470,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 481,
+        "start_column": 4,
+        "end_row": 485,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 481,
+        "start_column": 4,
+        "end_row": 485,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 486,
+        "start_column": 4,
+        "end_row": 493,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/lt.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 458,
+        "start_column": 4,
+        "end_row": 470,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 507,
+        "start_column": 4,
+        "end_row": 511,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 507,
+        "start_column": 4,
+        "end_row": 511,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 512,
+        "start_column": 4,
+        "end_row": 519,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/pl.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 458,
+        "start_column": 4,
+        "end_row": 470,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 507,
+        "start_column": 4,
+        "end_row": 511,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 507,
+        "start_column": 4,
+        "end_row": 511,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 512,
+        "start_column": 4,
+        "end_row": 519,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/ru.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 458,
+        "start_column": 4,
+        "end_row": 470,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 481,
+        "start_column": 4,
+        "end_row": 485,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 481,
+        "start_column": 4,
+        "end_row": 485,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 486,
+        "start_column": 4,
+        "end_row": 493,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/sk.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 458,
+        "start_column": 4,
+        "end_row": 470,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 481,
+        "start_column": 4,
+        "end_row": 485,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 481,
+        "start_column": 4,
+        "end_row": 485,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 486,
+        "start_column": 4,
+        "end_row": 493,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/locales/sl.json",
+    "offenses": [
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 458,
+        "start_column": 4,
+        "end_row": 470,
+        "end_column": 5,
+        "message": "The translation for 'customer.login_page.sub_title' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 507,
+        "start_column": 4,
+        "end_row": 511,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.submit' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 507,
+        "start_column": 4,
+        "end_row": 511,
+        "end_column": 5,
+        "message": "The translation for 'customer.recover_password.cancel' is missing"
+      },
+      {
+        "check": "MatchingTranslations",
+        "severity": "error",
+        "start_row": 512,
+        "start_column": 4,
+        "end_row": 519,
+        "end_column": 5,
+        "message": "The translation for 'customer.register.sub_title_html' is missing"
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/main-product.liquid",
+    "offenses": [
+      {
+        "check": "UnusedAssign",
+        "severity": "warning",
+        "start_row": 1047,
+        "start_column": 10,
+        "end_row": 1047,
+        "end_column": 51,
+        "message": "The variable 'seo_media' is assigned but not used"
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 145,
+        "start_column": 62,
+        "end_row": 145,
+        "end_column": 71,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 649,
+        "start_column": 48,
+        "end_row": 649,
+        "end_column": 56,
+        "message": "Unknown object 'continue' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 825,
+        "start_column": 84,
+        "end_row": 825,
+        "end_column": 93,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 877,
+        "start_column": 84,
+        "end_row": 877,
+        "end_column": 93,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 933,
+        "start_column": 62,
+        "end_row": 933,
+        "end_column": 71,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Product-review-new.liquid",
+    "offenses": [
+      {
+        "check": "DeprecatedFilter",
+        "severity": "warning",
+        "start_row": 20,
+        "start_column": 50,
+        "end_row": 20,
+        "end_column": 76,
+        "message": "Deprecated filter 'product_img_url', consider using 'image_url'."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 21,
+        "start_column": 23,
+        "end_row": 21,
+        "end_column": 36,
+        "message": "Unknown object 'variant' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/snippets/meta-tags.liquid",
+    "offenses": [
+      {
+        "check": "DeprecatedFilter",
+        "severity": "warning",
+        "start_row": 33,
+        "start_column": 247,
+        "end_row": 33,
+        "end_column": 265,
+        "message": "Deprecated filter 'img_url', consider using 'image_url'."
+      },
+      {
+        "check": "DeprecatedFilter",
+        "severity": "warning",
+        "start_row": 37,
+        "start_column": 258,
+        "end_row": 37,
+        "end_column": 276,
+        "message": "Deprecated filter 'img_url', consider using 'image_url'."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/find-us-banner.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 6,
+        "start_column": 50,
+        "end_row": 6,
+        "end_column": 59,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 15,
+        "start_column": 50,
+        "end_row": 15,
+        "end_column": 59,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Page-image-banner.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 6,
+        "start_column": 28,
+        "end_row": 6,
+        "end_column": 37,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 16,
+        "start_column": 28,
+        "end_row": 16,
+        "end_column": 37,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 25,
+        "start_column": 28,
+        "end_row": 25,
+        "end_column": 37,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/page-image-with-text-new.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 33,
+        "start_column": 44,
+        "end_row": 33,
+        "end_column": 53,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 54,
+        "start_column": 44,
+        "end_row": 54,
+        "end_column": 53,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/LP-PTO-Signup-template-new.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 18,
+        "start_column": 42,
+        "end_row": 18,
+        "end_column": 51,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 27,
+        "start_column": 42,
+        "end_row": 27,
+        "end_column": 51,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/find-us-marquee.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 19,
+        "start_column": 50,
+        "end_row": 19,
+        "end_column": 59,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 40,
+        "start_column": 50,
+        "end_row": 40,
+        "end_column": 59,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Page-store-logo-slider.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 57,
+        "start_column": 48,
+        "end_row": 57,
+        "end_column": 57,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 78,
+        "start_column": 48,
+        "end_row": 78,
+        "end_column": 57,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Index-store-logo-slider-new.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 57,
+        "start_column": 48,
+        "end_row": 57,
+        "end_column": 57,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 78,
+        "start_column": 48,
+        "end_row": 78,
+        "end_column": 57,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Page-product-marquee.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 22,
+        "start_column": 46,
+        "end_row": 22,
+        "end_column": 55,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 41,
+        "start_column": 46,
+        "end_row": 41,
+        "end_column": 55,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Index-infos-logos-slider-new.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 33,
+        "start_column": 44,
+        "end_row": 33,
+        "end_column": 53,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 81,
+        "start_column": 44,
+        "end_row": 81,
+        "end_column": 53,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/find-us-form.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 16,
+        "start_column": 32,
+        "end_row": 16,
+        "end_column": 41,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Index-image-with-text-new.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 18,
+        "start_column": 44,
+        "end_row": 18,
+        "end_column": 53,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 27,
+        "start_column": 44,
+        "end_row": 27,
+        "end_column": 53,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Page-404-banner.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 6,
+        "start_column": 28,
+        "end_row": 6,
+        "end_column": 37,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 31,
+        "start_column": 28,
+        "end_row": 31,
+        "end_column": 37,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Page-2-col-image-content.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 51,
+        "start_column": 38,
+        "end_row": 51,
+        "end_column": 47,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 60,
+        "start_column": 40,
+        "end_row": 60,
+        "end_column": 49,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 69,
+        "start_column": 40,
+        "end_row": 69,
+        "end_column": 49,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Page-2-col-image-accordian.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 28,
+        "start_column": 58,
+        "end_row": 28,
+        "end_column": 67,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 88,
+        "start_column": 36,
+        "end_row": 88,
+        "end_column": 45,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/LP-Hello-fresh-template-new.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 17,
+        "start_column": 42,
+        "end_row": 17,
+        "end_column": 51,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 26,
+        "start_column": 42,
+        "end_row": 26,
+        "end_column": 51,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/LP-PTO-Texts-with-video-new.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 69,
+        "start_column": 44,
+        "end_row": 69,
+        "end_column": 53,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 78,
+        "start_column": 44,
+        "end_row": 78,
+        "end_column": 53,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Index-image-accordion-new.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 17,
+        "start_column": 42,
+        "end_row": 17,
+        "end_column": 51,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 26,
+        "start_column": 42,
+        "end_row": 26,
+        "end_column": 51,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 64,
+        "start_column": 62,
+        "end_row": 64,
+        "end_column": 71,
+        "message": "Unknown object 'img' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/Page-2-col-image-contact-form.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 28,
+        "start_column": 36,
+        "end_row": 28,
+        "end_column": 45,
+        "message": "Unknown object 'img' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 63,
+        "start_column": 62,
+        "end_row": 63,
+        "end_column": 80,
+        "message": "Unknown object 'contact_form_class' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/sections/announcement-bar.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 33,
+        "start_column": 11,
+        "end_row": 33,
+        "end_column": 35,
+        "message": "Unknown object 'block' used."
+      },
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 22,
+        "start_column": 5,
+        "end_row": 22,
+        "end_column": 29,
+        "message": "Unknown object 'block' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "environment": "default",
+    "path": "/Users/dylanhunt/Documents/development/Halfday/layout/password.liquid",
+    "offenses": [
+      {
+        "check": "UndefinedObject",
+        "severity": "warning",
+        "start_row": 39,
+        "start_column": 35,
+        "end_row": 39,
+        "end_column": 49,
+        "message": "Unknown object 'scheme_classes' used."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0
+  }
+]

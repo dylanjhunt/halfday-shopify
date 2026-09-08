@@ -23,6 +23,7 @@
         "bg_image": "shopify://shop_images/Rectangle_3166_474d6d7a-05f5-462d-b43d-3b4cf8dff283.png",
         "bg_image_mobile": "shopify://shop_images/Rectangle_1_396ed252-7799-4692-a984-9f921024632a.png",
         "heading_text": "FAQ",
+        "heading_level": "h1",
         "information_text": ""
       }
     },
@@ -42,7 +43,7 @@
           "settings": {
             "faq_category": "General",
             "title": "Where can I find Halfday in stores?",
-            "infos": "<p>Halfday can be purchased directly from our website, but if you feel like heading outside (we recommend it) use our store locator to find a retailer near you. Still no luck? Send us an email at <a href=\"mailto:hey@drinkhalfday.com\" title=\"mailto:hey@drinkhalfday.com\">hey@drinkhalfday.com</a> and we'll help you out. </p>"
+            "infos": "<p>Browse our <a href=\"/collections/shop-all\">flavors and variety packs</a> for Amazon purchase links, or use our <a href=\"/pages/find-in-store\">store locator</a> to find Halfday near you. Still no luck? Email <a href=\"mailto:hey@drinkhalfday.com\">hey@drinkhalfday.com</a> and we'll help you out.</p>"
           }
         },
         "information_rEHN6d": {
@@ -57,7 +58,7 @@
           "type": "information",
           "settings": {
             "faq_category": "General",
-            "title": "Is your packaging recylcable?",
+            "title": "Is your packaging recyclable?",
             "infos": "<p>All of our packaging is 100% recyclable.</p>"
           }
         },
@@ -131,7 +132,7 @@
           "settings": {
             "faq_category": "Products",
             "title": "Can children consume Halfday?",
-            "infos": "<p>The American Academy of Pediatrics reccomends that children under 12 avoid caffeine altogether, while those aged 12-18 should limit their intake to 100mg per day. Halfday has a small amount of caffeine in each bottle, that is naturally occuring in the tea leaves. Depending on the flavor, Halfday contains between 25-50mg of caffiene. You may find the exact amounts of caffeine under the question \"Is there caffeine in Halfday\" </p>"
+            "infos": "<p>The American Academy of Pediatrics recommends that children under 12 avoid caffeine altogether, while those aged 12-18 should limit their intake to 100mg per day. Halfday has a small amount of caffeine in each bottle, that is naturally occurring in the tea leaves. Depending on the flavor, Halfday contains between 25-50mg of caffeine. You may find the exact amounts of caffeine under the question \"Is there caffeine in Halfday\" </p>"
           }
         },
         "information_m3zLyP": {
@@ -155,15 +156,31 @@
           "settings": {
             "faq_category": "Orders",
             "title": "How long does it take to ship?",
-            "infos": "<p>Order processing and shipping times vary depending on your loaction and selected shipping method. In most cases, standard shipping is typically 3-5 business days. </p>"
+            "infos": "<p>For Amazon or retailer purchases, check the delivery estimate shown when you order. Shipping options and timing depend on the seller, your location and the shipping method. For help with an existing order, start with the retailer you purchased from. You can also reach us at <a href=\"mailto:hey@drinkhalfday.com\">hey@drinkhalfday.com</a>.</p>"
           }
         },
         "information_DmhWUU": {
           "type": "information",
           "settings": {
             "faq_category": "Orders",
-            "title": "Can you deliver to PO Boxes or AFO/FPO addresses?",
+            "title": "Can you deliver to PO Boxes or APO/FPO addresses?",
             "infos": "<p>There are limitations, which prevent us from shipping certain products to some geographical locations in the U.S. The locations include U.S. territories, protectorates, P.O. Boxes, military installations (APO/FPO addresses), and diplomatic posts (DPO addresses). </p>"
+          }
+        },
+        "information_returns": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Orders",
+            "title": "Does Halfday accept returns or exchanges?",
+            "infos": "<p>Halfday does not accept product returns or exchanges. See Section 21 of our <a href=\"/pages/terms-of-service\">Terms of Service</a> for the full policy. For purchases through Amazon or another retailer, check that seller's policies and contact them about your order.</p>"
+          }
+        },
+        "information_order_help": {
+          "type": "information",
+          "settings": {
+            "faq_category": "Orders",
+            "title": "What should I do if my order arrives damaged or incorrect?",
+            "infos": "<p>If your order was damaged in transit or you received the wrong Halfday order, email <a href=\"mailto:hey@drinkhalfday.com\">hey@drinkhalfday.com</a> immediately. See Section 21 of our <a href=\"/pages/terms-of-service\">Terms of Service</a> for details.</p>"
           }
         },
         "information_gDjncm": {
@@ -193,6 +210,8 @@
         "information_Baqrkb",
         "information_U9bCa6",
         "information_DmhWUU",
+        "information_returns",
+        "information_order_help",
         "information_gDjncm"
       ],
       "settings": {

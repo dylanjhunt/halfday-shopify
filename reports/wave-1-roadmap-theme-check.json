@@ -1,0 +1,25 @@
+{
+  "before": {
+    "warning": 404,
+    "error": 122
+  },
+  "after": {
+    "warning": 402,
+    "error": 122
+  },
+  "new_offenses": [],
+  "removed_offenses": [
+    [
+      "sections/Page-product-marquee.liquid",
+      "UndefinedObject",
+      "warning",
+      "Unknown object 'img' used."
+    ],
+    [
+      "sections/Page-product-marquee.liquid",
+      "UndefinedObject",
+      "warning",
+      "Unknown object 'img' used."
+    ]
+  ]
+}

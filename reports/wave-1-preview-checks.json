@@ -1,0 +1,1212 @@
+{
+  "captured_at": "2026-09-07T23:27:13.925215+00:00",
+  "theme_id": 142755430600,
+  "method": "HTTP preview HTML; browser behavior checked separately.",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      Halfday Iced Tea\n",
+      "description": "Welcome to a new era of iced tea. Halfday is a better-for-you, gut-healthy iced tea with 6g of prebiotic fiber, classic flavor, and 3-5g of sugar.",
+      "robots": [],
+      "canonical": "https://drinkhalfday.com/",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Halfday Iced Tea",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://drinkhalfday.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          },
+          "url": "https://drinkhalfday.com"
+        }
+      ],
+      "faq_links": [],
+      "remaining_legacy_article_links": [],
+      "locator_css": false,
+      "high_priority_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Rectangle_1_a843aad4-a461-452a-be36-52afe68be888.jpg?v=1740041343&width=2048",
+          "alt": "",
+          "loading": "eager",
+          "fetchpriority": "high",
+          "sizes": "100vw",
+          "width": "2048",
+          "height": "1030"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Layer_3.svg?v=1740080615",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "153",
+          "height": "24"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_1.svg?v=1738060894",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "125",
+          "height": "41"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Harris_Teeter.svg?v=1737106460",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "197",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HEB.svg?v=1737106460",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "93",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Kroger.svg?v=1737106460",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "130",
+          "height": "49"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Safeway.svg?v=1737106459",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "166",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Sprouts.svg?v=1737106460",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "126",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Stop_Shop.svg?v=1737106460",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "138",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_1_1.svg?v=1738060894",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "129",
+          "height": "49"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Wegmans.svg?v=1737106460",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "139",
+          "height": "49"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Whole-Foods.svg?v=1740080941",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "82",
+          "height": "56"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Layer_3.svg?v=1740080615",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "153",
+          "height": "24"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_1.svg?v=1738060894",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "125",
+          "height": "41"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Harris_Teeter.svg?v=1737106460",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "197",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HEB.svg?v=1737106460",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "93",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Kroger.svg?v=1737106460",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "130",
+          "height": "49"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Safeway.svg?v=1737106459",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "166",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Sprouts.svg?v=1737106460",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "126",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Stop_Shop.svg?v=1737106460",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "138",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_1_1.svg?v=1738060894",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "129",
+          "height": "49"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Wegmans.svg?v=1737106460",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "139",
+          "height": "49"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Whole-Foods.svg?v=1740080941",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "82",
+          "height": "56"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_3_1.svg?v=1740081202",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "89",
+          "height": "26"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Quality_Edit_Logo_1.svg?v=1740081237",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "57",
+          "height": "40"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_9_1.svg?v=1740081308",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "41",
+          "height": "24"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_3.svg?v=1741725291",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "46",
+          "height": "22"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_2_2.svg?v=1740081097",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "211",
+          "height": "24"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_3_1.svg?v=1740081202",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "89",
+          "height": "26"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Quality_Edit_Logo_1.svg?v=1740081237",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "57",
+          "height": "40"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_9_1.svg?v=1740081308",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "41",
+          "height": "24"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_3.svg?v=1741725291",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "46",
+          "height": "22"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_2_2.svg?v=1740081097",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "211",
+          "height": "24"
+        }
+      ],
+      "public_text": "A new era of iced tea Gut-friendly nostalgic iced teas that make moments of freedom even sweeter. Shop Now 6g Fiber Classic Flavors 3-5g Sugar Low Calorie Prebiotics Good For Your Gut 6g Fiber Classic Flavors 3-5g Sugar Low Calorie Prebiotics Good For Your Gut Go with your gut Find your favorites. Or try a new one. You write the rules. Lemon Tea BEST\u2028SELLER Lemon Tea When life gives you lemons, you carpe squeeze \u2018em. Buy On Amazon View details for Lemon Tea Buy On Amazon View details for Lemon Tea BEST\u2028SELLER Green Tea Green Tea Honey flavor so sweet, you\u2019ll need to bear-proof it. Buy On Amazon View details for Green Tea Buy On Amazon View details for Green Tea Raspberry Tea Raspberry Tea Laid back and chill, like the silent \u201cp\u201d in raspberry. Buy On Amazon View details for Raspberry Tea Buy On Amazon View details for Raspberry Tea Tropical Tea NEW Tropical Tea Happiness comes in waves, this time it comes in a can. Buy On Amazon View details for Tropical Tea Buy On Amazon View details for Tropical Tea NEW Peach Tea BEST\u2028SELLER Peach Tea Peachy flavor so juicy, Georgia is getting jealous. Buy On Amazon View details for Peach Tea Buy On Amazon View details for Peach Tea BEST\u2028SELLER Sweet Tea Sweet Tea Spill the tea, it\u2019s sweeter when shared. Buy On Amazon View details for Sweet Tea Buy On Amazon View details for Sweet Tea Classic Half & Half NEW Classic Half & Half Two iconic flavors, hole in one. Buy On Amazon View details for Classic Half & Half Buy On Amazon View details for Classic Half & Half NEW Watermelon Half & Half LIMITED Watermelon Half & Half A slice of summer, perfect for your tea time Buy On Amazon View details for Watermelon Half & Half Buy On Amazon View details for Watermelon Half & Half LIMITED Old-school flavor, new-school benefits Good for your gut Halfday\u2019s exclusive GOODDAY Prebiotic Blend delivers 6g of prebiotic fiber \u2014cassava root, fructan fiber, and organic agave inulin\u2014to support digestion and keep your gut feeling good all day long. Sweet, not sugary 3-5g of sugar, naturally sweetened, for all the flavor and none of the crash. More flavor less calories 30-40 calories per can, so you can sip happily while still enjoying the classic, bold flavors you love. For whatever you\u2019re into Keto, gluten-free, or just mindful \u2014Halfday is here for whatever you're into. Why Halfday Classic flavors, modern love Over 5 million cans sold! Here's what our Besteas say: \"I just ordered 6 cases, and am not interested in drinking anything else.\" Joe B. \u201cI love Halfday! It tastes just as good as a tea loaded with sugar, but these only have 3g! I\u2019m obsessed!\u201d Erin H. \u201cThe BEST. I have a subscription so I\u2019m never without! It\u2019s my alternative to soda and other over sweetened bevs.\u201d Wilson L. \u201cIf you enjoy Arizona Green Tea, this is a must!! Tastes 100% better and it's 100% better for you!! We buy this flavor in 3-4 cases at a time!!\u201d Christian M. \u201cI'm completely obsessed with Halfday\u2014the flavors are insanely good! I honestly can't stop drinking them!\u201d J. Bieber Find us in store: A classic, remade Calories* Sugar* Net Carbs* Prebiotic\u2028Fiber* Brewed with Organic Tea* 30-40 3-5g 5-6g 6g Yes Generic iced tea 100+ 25g + 27g + 0g Maybe *per 12 fl oz can \u201c30 Under 30 Class of 2023\u201d \u201cThis stuff tastes eerily similar to Ariz*na, Sn*pple, and Cryst*l L*ght, yet it\u2019s made with 80-90% less sugar.\u201d \u201cBottom line: if you're a beverage fiend like me who wants to avoid added sugar, Halfday is a worthwhile find.\u201d \"Speaking of favorite products, now that spring is here, I\u2019m reaching for iced tea more than a hot beverage. My favorite right now is Halfday\u2019s iced tea and lemonade!\" \u201cHalfday's Lemon Iced Tea\u00a0is a go-to for gut health.\u201d \u201c30 Under 30 Class of 2023\u201d \u201cThis stuff tastes eerily similar to Ariz*na, Sn*pple, and Cryst*l L*ght, yet it\u2019s made with 80-90% less sugar.\u201d \u201cBottom line: if you're a beverage fiend like me who wants to avoid added sugar, Halfday is a worthwhile find.\u201d \"Speaking of favorite products, now that spring is here, I\u2019m reaching for iced tea more than a hot beverage. My favorite right now is Halfday\u2019s iced tea and lemonade!\" \u201cHalfday's Lemon Iced Tea\u00a0is a go-to for gut health.\u201d A glass half full After being diagnosed with Ulcerative Colitis, Kayvon joined best friend Mike to make gut-friendly iced teas inspired by their childhood favorite flavors. Our Story"
+    },
+    {
+      "path": "/collections/shop-all",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      Shop All\n \u2013 Halfday Iced Tea",
+      "description": "Explore Halfday prebiotic iced tea flavors and variety packs. Find your favorite and browse Amazon and store purchase options.",
+      "robots": [],
+      "canonical": "https://drinkhalfday.com/collections/shop-all",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        }
+      ],
+      "faq_links": [],
+      "remaining_legacy_article_links": [],
+      "locator_css": false,
+      "high_priority_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Rectangle_3166.jpg?v=1737867717",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "2880",
+          "height": "838"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/collection-hero.jpg?v=1737867793",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "750",
+          "height": "674"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HALFDAY_FRUIT_ILLUSTRATION_HALF_HALF_LEMON.svg?v=1740441108",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "267",
+          "height": "257"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Rectangle_6_3b1de0ce-c167-4ea6-9feb-b029be68c7a7.png?v=1740042997",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "1200",
+          "height": "953"
+        }
+      ],
+      "public_text": "Go with your gut Go with your gut All Flavors Iced Teas Variety Packs Half & Half All Flavors All Flavors Iced Teas Variety Packs Half & Half Lemon Tea BEST\u2028SELLER Lemon Tea When life gives you lemons, you carpe squeeze \u2018em. Buy On Amazon View details for Lemon Tea Buy On Amazon View details for Lemon Tea BEST\u2028SELLER Green Tea Green Tea Honey flavor so sweet, you\u2019ll need to bear-proof it. Buy On Amazon View details for Green Tea Buy On Amazon View details for Green Tea Raspberry Tea Raspberry Tea Laid back and chill, like the silent \u201cp\u201d in raspberry. Buy On Amazon View details for Raspberry Tea Buy On Amazon View details for Raspberry Tea Tropical Tea NEW Tropical Tea Happiness comes in waves, this time it comes in a can. Buy On Amazon View details for Tropical Tea Buy On Amazon View details for Tropical Tea NEW Peach Tea BEST\u2028SELLER Peach Tea Peachy flavor so juicy, Georgia is getting jealous. Buy On Amazon View details for Peach Tea Buy On Amazon View details for Peach Tea BEST\u2028SELLER Sweet Tea Sweet Tea Spill the tea, it\u2019s sweeter when shared. Buy On Amazon View details for Sweet Tea Buy On Amazon View details for Sweet Tea Classic Half & Half NEW Classic Half & Half Two iconic flavors, hole in one. Buy On Amazon View details for Classic Half & Half Buy On Amazon View details for Classic Half & Half NEW Watermelon Half & Half LIMITED Watermelon Half & Half A slice of summer, perfect for your tea time Buy On Amazon View details for Watermelon Half & Half Buy On Amazon View details for Watermelon Half & Half LIMITED \u201cI love Halfday! It tastes just as good as a tea loaded with sugar, but these only have 3g! I\u2019m obsessed!\u201d Erin H. Take your taste buds on a mini adventure Shop Now"
+    },
+    {
+      "path": "/collections/variety-packs",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      Variety Packs\n \u2013 Halfday Iced Tea",
+      "description": "Explore Halfday iced tea variety packs, compare the included flavors and find your next pack on Amazon.",
+      "robots": [],
+      "canonical": "https://drinkhalfday.com/collections/variety-packs",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        }
+      ],
+      "faq_links": [],
+      "remaining_legacy_article_links": [],
+      "locator_css": false,
+      "high_priority_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Rectangle_3166.jpg?v=1737867717",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "2880",
+          "height": "838"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/collection-hero.jpg?v=1737867793",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "750",
+          "height": "674"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HALFDAY_FRUIT_ILLUSTRATION_HALF_HALF_LEMON.svg?v=1740441108",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "267",
+          "height": "257"
+        }
+      ],
+      "public_text": "Go with your gut Go with your gut All Flavors Iced Teas Variety Packs Half & Half Variety Packs All Flavors Iced Teas Variety Packs Half & Half Fan Favorites BEST\u2028SELLER Fan Favorites Tried, tested, and true, this pack is a crowd-pleaser. Buy On Amazon View details for Fan Favorites Buy On Amazon View details for Fan Favorites BEST\u2028SELLER Classic Variety Classic Variety Classic vibes so good, you\u2019ll go back in time. Buy On Amazon View details for Classic Variety Buy On Amazon View details for Classic Variety Fruity Variety Fruity Variety Juicy, tangy, and sweet, for a fruit-filled escape. Buy On Amazon View details for Fruity Variety Buy On Amazon View details for Fruity Variety Peach & Lemon NEW Peach & Lemon Peach brings the sweet, lemon brings the twist. Buy On Amazon View details for Peach & Lemon Buy On Amazon View details for Peach & Lemon NEW Southern Variety NEW Southern Variety Front porch sittin', iced tea sippin'. Buy On Amazon View details for Southern Variety Buy On Amazon View details for Southern Variety NEW Refresher Variety NEW Refresher Variety Four mouth watering flavors, one epic refresh. Buy On Amazon View details for Refresher Variety Buy On Amazon View details for Refresher Variety NEW \u201cI love Halfday! It tastes just as good as a tea loaded with sugar, but these only have 3g! I\u2019m obsessed!\u201d Erin H. Take your taste buds on a mini adventure Shop Now"
+    },
+    {
+      "path": "/products/lemon-tea",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      Lemon Tea | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description": "Bright, tangy, and refreshing\u2013like a sip of sunshine. Halfday\u2019s exclusive GOODDAY Prebiotic Blend delivers 6g of prebiotic fiber, with only 3-5g of sugar, and 30-40 calories per can.",
+      "robots": [],
+      "canonical": "https://drinkhalfday.com/products/lemon-tea",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "@id": "https://drinkhalfday.com/products/lemon-tea#product",
+          "url": "https://drinkhalfday.com/products/lemon-tea",
+          "name": "Lemon Tea",
+          "description": "When life gives you lemons, \nyou carpe squeeze \u2018em.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Halfday Tonics"
+          },
+          "image": "https://drinkhalfday.com/cdn/shop/files/Halfday-Lemon-Tea-V5-12oz-SS-Can_1500x2390_4aa4faa0-6d74-4a03-8011-9ff7517ca54a.png?v=1788731166&width=1200",
+          "sku": "LIT12PCK"
+        }
+      ],
+      "faq_links": [],
+      "remaining_legacy_article_links": [],
+      "locator_css": false,
+      "high_priority_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Halfday-Lemon-Tea-V5-12oz-SS-Can_1500x2390_4aa4faa0-6d74-4a03-8011-9ff7517ca54a.png?v=1788731166&width=1946",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": "(min-width: 1200px) 605px, (min-width: 990px) calc(55.0vw - 10rem), (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw / 1 - 4rem)",
+          "width": "1946",
+          "height": "3101"
+        }
+      ],
+      "public_text": "Lemon Tea Lemon Tea BEST\u2028SELLER Single 12-Pack 12 fl oz per can When life gives you lemons, you carpe squeeze \u2018em. 6g of prebiotic fiber 3g of sugar 35 calories Non-carbonated Made with Real Brewed Black Tea For lazy afternoons, poolside fun, and floating the day away. View full details Skip to product information Open media 1 in modal Open media 2 in modal Open media 3 in modal Open media 4 in modal Open media 5 in modal Play video BEST\u2028SELLER Single Flavors Variety Packs Flavor: Lemon Tea Lemon Tea Peach Tea Green Tea Raspberry Tea Tropical Tea Sweet Tea Classic Half & Half Watermelon Half & Half Variety Pack: Lemon Tea Classic Variety Fan Favorites Fruity Variety Refresher Variety Southern Variety Peach & Lemon When life gives you lemons, you carpe squeeze \u2018em. 6g of prebiotic fiber 3g of sugar 35 calories Non-carbonated Made with Real Brewed Black Tea For lazy afternoons, poolside fun, and floating the day away. Free shipping on Amazon Prime. Subscribe and Save up to 15% off. Buy On Amazon Find In Store Lemon Tea Buy On Amazon Find In Store Bright, tangy, and refreshing\u2013like a sip of sunshine. Ingredients Brewed Organic Black Tea (Filtered Water, Organic Black Tea), GOODDAY Prebiotic Blend (Cassava Root Fiber, Fructan Fiber, Organic Agave Inulin), Organic Raw Cane Sugar, Lemon Juice Powder, Citric Acid, French Grey Sea Salt, Stevia Leaf Extract, Malic Acid, Natural Lemon Flavor, Ascorbic Acid (Vitamin C), Tartaric Acid (From Grapes) Gluten-Free Vegan Kosher Certified 6g Fiber Classic Flavors 3-5g Sugar Low Calorie Prebiotics Good For Your Gut 6g Fiber Classic Flavors 3-5g Sugar Low Calorie Prebiotics Good For Your Gut A classic, remade Calories* Sugar* Net Carbs* Prebiotic\u2028Fiber* Brewed with Organic Tea* 35 3g 5g 6g Yes Generic iced tea 100+ 25g + 27g + 0g Maybe *per 12 fl oz can Taste worth raving about"
+    },
+    {
+      "path": "/products/classic-variety",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      Classic Variety | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description": "A lineup of Halfday\u2019s greatest hits, ready for any escape. Halfday\u2019s exclusive GOODDAY Prebiotic Blend delivers 6g of prebiotic fiber, with only 3-5g of sugar, and 30-40 calories per can.",
+      "robots": [],
+      "canonical": "https://drinkhalfday.com/products/classic-variety",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "@id": "https://drinkhalfday.com/products/classic-variety#product",
+          "url": "https://drinkhalfday.com/products/classic-variety",
+          "name": "Classic Variety",
+          "description": "Classic vibes so good,\nyou\u2019ll go back in time.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Halfday Tonics"
+          },
+          "image": "https://drinkhalfday.com/cdn/shop/files/classic-flavors_0c64b16e-d75a-4d39-9420-981406319734.png?v=1740035996&width=1200"
+        }
+      ],
+      "faq_links": [],
+      "remaining_legacy_article_links": [],
+      "locator_css": false,
+      "high_priority_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/classic-flavors_0c64b16e-d75a-4d39-9420-981406319734.png?v=1740035996&width=1946",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": "(min-width: 1200px) 605px, (min-width: 990px) calc(55.0vw - 10rem), (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw / 1 - 4rem)",
+          "width": "1946",
+          "height": "2343"
+        }
+      ],
+      "public_text": "Classic Variety Classic Variety Variety 12-Pack 12 fl oz per can Classic vibes so good, you\u2019ll go back in time. 6g of prebiotic fiber 3g of sugar 30-35 calories Non-carbonated Made with Real Brewed Green or Black Tea Includes 4 Lemon Tea, 4 Peach Tea, and 4 Green Tea. View full details Skip to product information Open media 1 in modal Open media 2 in modal Single Flavors Variety Packs Flavor: Classic Variety Lemon Tea Peach Tea Green Tea Raspberry Tea Tropical Tea Sweet Tea Classic Half & Half Watermelon Half & Half Variety Pack: Classic Variety Classic Variety Fan Favorites Fruity Variety Refresher Variety Southern Variety Peach & Lemon Classic vibes so good, you\u2019ll go back in time. 6g of prebiotic fiber 3g of sugar 30-35 calories Non-carbonated Made with Real Brewed Green or Black Tea Includes 4 Lemon Tea, 4 Peach Tea, and 4 Green Tea. Free shipping on Amazon Prime. Subscribe and Save up to 15% off. Buy On Amazon Find In Store Classic Variety Buy On Amazon Find In Store A lineup of Halfday\u2019s greatest hits, ready for any escape. Lemon Tea Lemon Tea Peach Tea Green Tea Ingredients Brewed Organic Black Tea (Filtered Water, Organic Black Tea), GOODDAY Prebiotic Blend (Cassava Root Fiber, Fructan Fiber, Organic Agave Inulin), Organic Raw Cane Sugar, Lemon Juice Powder, Citric Acid, French Grey Sea Salt, Stevia Leaf Extract, Malic Acid, Natural Lemon Flavor, Ascorbic Acid (Vitamin C), Tartaric Acid (From Grapes) Gluten-Free Vegan Kosher Certified Ingredients Brewed Organic Green Tea (Filtered Water, Organic Green Tea), GOODDAY Prebiotic Blend (Cassava Root Fiber, Fructan Fiber, Organic Agave Inulin), Organic Raw Cane Sugar, Peach Juice Powder, Lemon Juice Powder, Malic Acid, Citric Acid, French Grey Sea Salt, Natural Peach Flavor, Stevia Leaf Extract, Tartaric Acid (From Grapes), Ascorbic Acid (Vitamin C) Gluten-Free Vegan Kosher Certified Ingredients Brewed Organic Green Tea (Filtered Water, Organic Green Tea), GOODDAY Prebiotic Blend (Cassava Root Fiber, Fructan Fiber, Organic Agave Inulin), Honey, Lemon Juice Powder, Citric Acid, Organic Honey Flavor, Organic Ginseng Extract, Stevia Leaf Extract, French Grey Sea Salt, Malic Acid, Ascorbic Acid (Vitamin C), Tartaric Acid (From Grapes) Gluten-Free Honey Sweetened Kosher Certified 6g Fiber Classic Flavors 3-5g Sugar Low Calorie Prebiotics Good For Your Gut 6g Fiber Classic Flavors 3-5g Sugar Low Calorie Prebiotics Good For Your Gut A classic, remade Calories* Sugar* Net Carbs* Prebiotic\u2028Fiber* Brewed with Organic Tea* 30-35 3g 5-6g 6g Yes Generic iced tea 100+ 25g + 27g + 0g Maybe *per 12 fl oz can Taste worth raving about"
+    },
+    {
+      "path": "/products/strawberry-half-half-slim-can",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      Strawberry Half & Half (Slim Can)\n \u2013 Halfday Iced Tea",
+      "description": "Meet the tea-and-lemonade classic, reimagined with a juicy strawberry twist. Halfday Strawberry Half &amp; Half blends real brewed tea with bright lemonade and sweet strawberries for the nostalgic flavor you grew up with - now made to love your gut back.",
+      "robots": [],
+      "canonical": "https://drinkhalfday.com/products/strawberry-half-half-slim-can",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "@id": "https://drinkhalfday.com/products/strawberry-half-half-slim-can#product",
+          "url": "https://drinkhalfday.com/products/strawberry-half-half-slim-can",
+          "name": "Strawberry Half & Half (Slim Can)",
+          "description": "Meet the tea-and-lemonade classic, reimagined with a juicy strawberry twist.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Halfday Tonics"
+          },
+          "image": "https://drinkhalfday.com/cdn/shop/files/Halfday_StrawberryHH-12oz-REF-FPO.png?v=1786037854&width=1200",
+          "sku": "REF-SHH12PK",
+          "gtin14": "10850064555247"
+        }
+      ],
+      "faq_links": [],
+      "remaining_legacy_article_links": [],
+      "locator_css": false,
+      "high_priority_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Halfday_StrawberryHH-12oz-REF-FPO.png?v=1786037854&width=1946",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": "(min-width: 1200px) 605px, (min-width: 990px) calc(55.0vw - 10rem), (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw / 1 - 4rem)",
+          "width": "1946",
+          "height": "1946"
+        }
+      ],
+      "public_text": "Strawberry Half & Half (Slim Can) Strawberry Half & Half (Slim Can) NEW Single 12-Pack 12 fl oz per can Meet the tea-and-lemonade classic, reimagined with a juicy strawberry twist. For pool days, sun rays, and refreshment by the water 3-5g of sugar 45 calories For cozy afternoons, festive dinners, and holiday gatherings. Made with Real Brewed\u2028Green & Black Tea Non-carbonated View full details Skip to product information Open media 1 in modal Open media 2 in modal Open media 3 in modal NEW Meet the tea-and-lemonade classic, reimagined with a juicy strawberry twist. For pool days, sun rays, and refreshment by the water 3-5g of sugar 45 calories For cozy afternoons, festive dinners, and holiday gatherings. Made with Real Brewed\u2028Green & Black Tea Non-carbonated Find In Store Strawberry Half & Half (Slim Can) Find In Store Strawberry meets lemonade\u2013a fresh take on a classic. Ingredients Brewed Organic Black Tea (Filtered Water, Organic Black Tea), GOODDAY Prebiotic Blend (Cassava Root Fiber, Fructan Fiber, Organic Agave Inulin), Organic Raw Cane Sugar, Lemon Juice Powder, Strawberry Juice Powder, Natural Flavors, French Grey Sea Salt, Hibiscus Juice Powder, Stevia Leaf Extract Gluten-Free Vegan Kosher Certified 6g Fiber Classic Flavors 3-5g Sugar Low Calorie Prebiotics Good For Your Gut 6g Fiber Classic Flavors 3-5g Sugar Low Calorie Prebiotics Good For Your Gut A classic, remade Calories* Sugar* Net Carbs* Prebiotic\u2028Fiber* Brewed with Organic Tea* 40 5g 7g 6g Yes Generic iced tea 100+ 25g + 27g + 0g Maybe *per 12 fl oz can Taste worth raving about"
+    },
+    {
+      "path": "/pages/faq",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      FAQ\n \u2013 Halfday Iced Tea",
+      "description": "Got questions? We have answers!",
+      "robots": [],
+      "canonical": "https://drinkhalfday.com/pages/faq",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        }
+      ],
+      "faq_links": [
+        {
+          "href": "#faq_general",
+          "text": "General",
+          "in_main": true
+        },
+        {
+          "href": "#faq_products",
+          "text": "Products",
+          "in_main": true
+        },
+        {
+          "href": "#faq_orders",
+          "text": "Orders",
+          "in_main": true
+        },
+        {
+          "href": "#faq_company",
+          "text": "Company",
+          "in_main": true
+        }
+      ],
+      "remaining_legacy_article_links": [],
+      "locator_css": false,
+      "high_priority_images": [],
+      "public_text": "FAQ General Products Orders Company General What is halfday? Halfday is a new era iced tea. We've kept the classic iced tea taste you know and love, and recreated it with modern gut-healthy ingredients. Where can I find Halfday in stores? Browse our flavors and variety packs for Amazon purchase links, or use our store locator to find Halfday near you. Still no luck? Email hey@drinkhalfday.com and we'll help you out. Can I contact Halfday for support? You sure can, and we'd love to help you out. Send us an email to hey@drinkhalfday.com and someone from our team will be in touch. Is your packaging recyclable? All of our packaging is 100% recyclable. Products What are prebiotics? Put simply, prebiotics are food for probiotics! And probiotics are live bacteria that naturally live in your body. (Notice the PRE- vs PRO- prefix. There's a difference!) Probiotics are 'good bacteria' that are important for a healthy gut, and in turn, overall health. So it's important to feed them what they like. And they LOVE prebiotics, like the fiber in Halfday. Why is there prebiotic fiber in Halfday? Great question! Halfday was started because of our cofounder Kayvon's journey with ulcerative colitis. You can learn about that on the Our Story section of our website. Also, did you know that on average, Americans get less than a third of their daily recommended intake of fiber. This nutrient is important to digestive health and we're on a mission to make it easier for you to consume fiber in fun and delicious ways, like iced tea! What types of prebiotic fiber are in Halfday? Halfday has created the GOODDAY Prebiotic Blend, which is a combination of 3 different, high-quality prebiotic sources. It consists of Cassava Root Fiber, Organic Agave Inulin, and Fructan Fiber. We believe that 3 fiber sources are better than one to help keep your gut feeling great. Organic Agave Inulin: A natural superfood that feeds the good bacteria in your gut, helping with digestion and overall wellness. Cassava Root Fiber: Fiber that keeps things moving and helps you feel full longer. Fructan Fiber: A prebiotic that supports gut balance and nutrient absorption. How is Halfday sweetened? Halfday is sweetened by using a blend of fruit juices, organic raw cane sugar and a mild form of stevia. All of which combine to create the perfect classic iced tea taste. How much sugar is in Halfday? We only use 3-5g of sugar in each can of Halfday, but they taste like the classic iced teas that you know and love. Is Halfday Kosher? Yes, Halfday is OU Kosher certified. Huzzah! Can I drink while pregnant or breastfeeding? It's always a good idea to check in with your healthcare provider before introducing something new to your diet while pregnant or breastfeeding. Can children consume Halfday? The American Academy of Pediatrics recommends that children under 12 avoid caffeine altogether, while those aged 12-18 should limit their intake to 100mg per day. Halfday has a small amount of caffeine in each bottle, that is naturally occurring in the tea leaves. Depending on the flavor, Halfday contains between 25-50mg of caffeine. You may find the exact amounts of caffeine under the question \"Is there caffeine in Halfday\" Does Halfday need to be refrigerated? Nope! It's shelf stable but for best taste, we highly recommend you chill it before sipping....or chugging. Orders Where do you ship to? We are shipping our new era iced teas all throughout the United States. We haven't gotten our passport yet, but when we do go international we'll be sure to let you know. How long does it take to ship? For Amazon or retailer purchases, check the delivery estimate shown when you order. Shipping options and timing depend on the seller, your location and the shipping method. For help with an existing order, start with the retailer you purchased from. You can also reach us at hey@drinkhalfday.com . Can you deliver to PO Boxes or APO/FPO addresses? There are limitations, which prevent us from shipping certain products to some geographical locations in the U.S. The locations include U.S. territories, protectorates, P.O. Boxes, military installations (APO/FPO addresses), and diplomatic posts (DPO addresses). Company How can I stock Halfday in my store? We're so glad you asked. Send us an email to orders@drinkhalfday.com and someone from our team will reach out to get you set up."
+    },
+    {
+      "path": "/pages/find-in-store",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      Find In Store\n \u2013 Halfday Iced Tea",
+      "description": "No need to wait - we're in stores nationwide! Pick up your favorite flavors today.",
+      "robots": [],
+      "canonical": "https://drinkhalfday.com/pages/find-in-store",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        }
+      ],
+      "faq_links": [],
+      "remaining_legacy_article_links": [],
+      "locator_css": true,
+      "high_priority_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Rectangle_3166_474d6d7a-05f5-462d-b43d-3b4cf8dff283.png?v=1740044313",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "1500",
+          "height": "328"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Rectangle_1_396ed252-7799-4692-a984-9f921024632a.png?v=1740044313",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "1000",
+          "height": "755"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Layer_3.svg?v=1740080615",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "153",
+          "height": "24"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_1.svg?v=1738060894",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "125",
+          "height": "41"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Harris_Teeter.svg?v=1737106460",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "197",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HEB.svg?v=1737106460",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "93",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Kroger.svg?v=1737106460",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "130",
+          "height": "49"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Safeway.svg?v=1737106459",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "166",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Sprouts.svg?v=1737106460",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "126",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Stop_Shop.svg?v=1737106460",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "138",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_1_1.svg?v=1738060894",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "129",
+          "height": "49"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Wegmans.svg?v=1737106460",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "139",
+          "height": "49"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Whole-Foods.svg?v=1740080941",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "82",
+          "height": "56"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Layer_3.svg?v=1740080615",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "153",
+          "height": "24"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_1.svg?v=1738060894",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "125",
+          "height": "41"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Harris_Teeter.svg?v=1737106460",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "197",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HEB.svg?v=1737106460",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "93",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Kroger.svg?v=1737106460",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "130",
+          "height": "49"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Safeway.svg?v=1737106459",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "166",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Sprouts.svg?v=1737106460",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "126",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Stop_Shop.svg?v=1737106460",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "138",
+          "height": "33"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SVG_Export_1_1.svg?v=1738060894",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "129",
+          "height": "49"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Wegmans.svg?v=1737106460",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "139",
+          "height": "49"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Whole-Foods.svg?v=1740080941",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "82",
+          "height": "56"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Rectangle_3147_d01f34c2-389d-487c-8e0f-222a1ebf4458.png?v=1740044531",
+          "alt": "",
+          "loading": "lazy",
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "1500",
+          "height": "1702"
+        }
+      ],
+      "public_text": "Find us in store We're available nationwide! Rather shop online? Want Halfday in your store? Email us at hey@drinkhalfday.com or fill out this form: SEND MESSAGE 6g fiber Classic flavors 3-5g sugar Low calorie Prebiotics Good for your gut 6g fiber Classic flavors 3-5g sugar Low calorie Prebiotics Good for your gut Go with your gut Find your favorites. Or try a new one. You write the rules. Lemon Tea BEST\u2028SELLER Lemon Tea When life gives you lemons, you carpe squeeze \u2018em. Buy On Amazon View details for Lemon Tea Buy On Amazon View details for Lemon Tea BEST\u2028SELLER Peach Tea BEST\u2028SELLER Peach Tea Peachy flavor so juicy, Georgia is getting jealous. Buy On Amazon View details for Peach Tea Buy On Amazon View details for Peach Tea BEST\u2028SELLER Green Tea Green Tea Honey flavor so sweet, you\u2019ll need to bear-proof it. Buy On Amazon View details for Green Tea Buy On Amazon View details for Green Tea Raspberry Tea Raspberry Tea Laid back and chill, like the silent \u201cp\u201d in raspberry. Buy On Amazon View details for Raspberry Tea Buy On Amazon View details for Raspberry Tea Tropical Tea NEW Tropical Tea Happiness comes in waves, this time it comes in a can. Buy On Amazon View details for Tropical Tea Buy On Amazon View details for Tropical Tea NEW Sweet Tea Sweet Tea Spill the tea, it\u2019s sweeter when shared. Buy On Amazon View details for Sweet Tea Buy On Amazon View details for Sweet Tea Classic Half & Half NEW Classic Half & Half Two iconic flavors, hole in one. Buy On Amazon View details for Classic Half & Half Buy On Amazon View details for Classic Half & Half NEW Classic Variety Classic Variety Classic vibes so good, you\u2019ll go back in time. Buy On Amazon View details for Classic Variety Buy On Amazon View details for Classic Variety Fruity Variety Fruity Variety Juicy, tangy, and sweet, for a fruit-filled escape. Buy On Amazon View details for Fruity Variety Buy On Amazon View details for Fruity Variety Fan Favorites BEST\u2028SELLER Fan Favorites Tried, tested, and true, this pack is a crowd-pleaser. Buy On Amazon View details for Fan Favorites Buy On Amazon View details for Fan Favorites BEST\u2028SELLER Southern Variety NEW Southern Variety Front porch sittin', iced tea sippin'. Buy On Amazon View details for Southern Variety Buy On Amazon View details for Southern Variety NEW"
+    },
+    {
+      "path": "/pages/popup-testing",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      Popup testing\n \u2013 Halfday Iced Tea",
+      "description": "Click here for popup Click here for popup - No image",
+      "robots": [
+        "noindex,follow"
+      ],
+      "canonical": "https://drinkhalfday.com/pages/popup-testing",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        }
+      ],
+      "faq_links": [],
+      "remaining_legacy_article_links": [],
+      "locator_css": false,
+      "high_priority_images": [],
+      "public_text": "Popup testing Click here for popup Click here for popup - No image"
+    },
+    {
+      "path": "/collections/staff-variety-packs",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      Staff Variety Packs\n \u2013 Halfday Iced Tea",
+      "description": null,
+      "robots": [
+        "noindex,follow"
+      ],
+      "canonical": "https://drinkhalfday.com/collections/staff-variety-packs",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        }
+      ],
+      "faq_links": [],
+      "remaining_legacy_article_links": [],
+      "locator_css": false,
+      "high_priority_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/Rectangle_3166.jpg?v=1737867717",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "2880",
+          "height": "838"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/collection-hero.jpg?v=1737867793",
+          "alt": "",
+          "loading": null,
+          "fetchpriority": "high",
+          "sizes": null,
+          "width": "750",
+          "height": "674"
+        }
+      ],
+      "public_text": "Go with your gut Go with your gut All Flavors Variety Packs Variety Packs All Flavors Variety Packs No products found Use fewer filters or remove all"
+    },
+    {
+      "path": "/blogs/news/kombucha-when-is-the-best-time-to-drink-it",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      Kombucha: When Is the Best Time to Drink it?\n \u2013 Halfday Iced Tea",
+      "description": "We've all seen Kombucha makes its rise, but does it actually matter when you drink it? Does drinking it have different effects on how it impacts your health?",
+      "robots": [],
+      "canonical": "https://drinkhalfday.com/blogs/news/kombucha-when-is-the-best-time-to-drink-it",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        },
+        {
+          "@context": "http://schema.org/",
+          "@id": "/blogs/news/kombucha-when-is-the-best-time-to-drink-it#article",
+          "@type": "Article",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://drinkhalfday.com/blogs/news/kombucha-when-is-the-best-time-to-drink-it"
+          },
+          "articleBody": "If you\u2019ve ever strolled down the drink aisle at Whole Foods, you\u2019ve seen the vast selection of kombucha. Trying something new can be daunting, but trust us when we say kombucha is worth it. This fizzy beverage is a great way to give yourself an energy boost during the day while being kind to your gut. \nWhile kombucha is advertised as a healthy drink, there is still little research on the benefits. This drink is, however, packed with vitamins and other compounds that have known health benefits in other foods. Kombucha is said to promote gut health, boost immunity, and could potentially help combat serious health conditions like cancer. This fermented drink can be a bit of an acquired taste, and knowing what it\u2019s made will probably make you feel better about trying it out. \nKombucha has been used by humans for centuries, and adding it to your diet can help you improve gut health. So, let\u2019s look at what it is, the benefits, and the best time to drink kombucha. \nWhat is Kombucha?\nTo start, kombucha is a fizzy fermented drink that\u2019s made of tea, sugar, bacteria, and yeast. If it sounds scary, it isn\u2019t. You probably eat and drink plenty of fermented things without realizing it! Kombucha is often referred to as a functional beverage because it contains vitamins, amino acids, and other nutrients that can provide us with health benefits. \nThere\u2019s no concrete invention date, but kombucha is thought to have been invented in China or Japan around 220 B.C. It\u2019s sometimes referred to as mushroom tea, but it\u2019s definitely not made out of mushrooms. The main ingredients in kombucha are yeast and bacteria that work together to create a colony that can work together for gut-friendly benefits. \nSome Kombucha studies claim that it can help with serious medical conditions such as blood pressure and cancer. It\u2019s also rich in antibiotics and vitamins, which can provide health benefits such as killing off harmful bacteria in the gut. \nThe double-fermentation process creates a fizzy drink that eliminates the alcohol content created by fermentation. You can even make kombucha at home. \nHow is Kombucha Made?\nTo put it simply, kombucha is made by adding bacteria, yeast, and sugar to tea. After about a month of fermentation, you\u2019re left with a drinkable beverage with natural carbonation. The process is fairly simple, and many people practice homebrewing techniques to see what they can come up with. T\nWhat is Fermentation? \nWhile you may consume fermented foods for gut health, you probably haven\u2019t thought about the process. Fermentation is a process in which molecules like glucose are broken down into a simpler form. It\u2019s typically used to make alcoholic drinks like beer and wine. Since fermentation of pretty much anything will make alcohol, there were some problems with alcohol regulation with kombucha. The kombucha process involves double fermentation, which will stop the production of too much alcohol in the beverage. \nMaking Kombucha \nKombucha starts with a mixture called a SCOBY. A SCOBY is a pancake-shaped blob type thing that kick starts the fermentation process. It\u2019s a culture of bacteria and yeast. When making kombucha, the SCOBY is added to black or green tea. Typically, the tea is sweetened beforehand with a natural sweetener. \nOnce everything is mixed together, the baby kombucha should be left at room temperature with a loose cover such as fabric over it to begin the fermentation process. Have you ever forgotten about a container of apple juice in the fridge for months? Congratulations, you fermented something without even realizing it! Don\u2019t drink it though. You\u2019ll catch a buzz, but you will most likely get sick. \nAfter 1-3 weeks, the mixture should be bottled. When it\u2019s bottled, the CO2 released is kept inside with the liquid which then created carbonation. The kombucha should be stored in the bottle for 1-2 weeks at room temperature for maximum carbonation. \u00a0\nThen, the kombucha should be refrigerated to slow down the fermentation and carbonation processes. This will make the kombucha drinkable, and keep it at a lower alcohol content. You can even do this on a small scale at home to try making your own! \nBenefits of Kombucha \nWhen looking at the benefits of Kombucha, it\u2019s important to understand that there is not a lot of research on the subject. Evidence-based research does support and suggests that these benefits can come from drinking this fizzy drink.\u00a0 \nKombucha Could be a Source of Probiotics \nProbiotics are the good bacteria that live in your digestive system and are crucial to maintaining a healthy gut. Fermented foods such as sauerkraut are excellent sources of probiotics, and kombucha is created through the same process. \nThere is no concrete evidence that kombucha does contain large amounts of probiotics, but it does contain lactic-acid bacteria. Lactic acid bacteria are probiotic organisms found in the body and are typically found in fermented dairy products. So, finding them in kombucha could mean it\u2019s a good source of probiotics.\nIt May Give a Boost to Your Immune System \nWe\u2019re always looking for the nest best way to give our immune system a little boost. Fermented foods are known to benefit the immune system, and since kombucha is made the same way, there\u2019s potential for it to do the same thing. Since kombucha is full of antioxidants, it doesn\u2019t hurt to add it to your diet for potential immune system benefits. \nKombucha Could Increase Your Energy \nThe components of kombucha have been proven you increase energy. Since kombucha is typically made with green or black tea, you will also receive a kick from the caffeine. This makes it a good pick-me-up that will be nice to your gut, too. \nKombucha Contains Vitamins\nStudies have shown that kombucha does in fact contain small amounts of vitamins and minerals. Some vitamins in kombucha are vitamin C, B1, and B12. Adding vitamins to your diet is never a bad thing, so it wouldn\u2019t hurt to try kombucha. \nWhen is The Best Time to Drink Kombucha?\nIf you\u2019re ready to incorporate kombucha into your diet, you\u2019re probably wondering when the best time of day to drink it is. If you\u2019ve never had it before, it\u2019s important to do your research and take it slow to start. While kombucha can be great for your health, it could also have some health risks. This is especially important if you decide to brew your own at home. \u00a0\nFor the beginner, it\u2019s recommended to start with around 3oz and see how it goes. Once you get a feel for how it affects you, you can increase to more. The last thing you want to happen is to realize it doesn\u2019t agree with you and you\u2019ve already drank a lot of it. \nAs for the best time to drink kombucha, you can drink it pretty much whenever you\u2019d like. Since kombucha is tea-based, it contains caffeine and can be a good way to get the day going. Some research shows that drinking kombucha on an empty stomach will help you get the gut health benefits from it, as well. So, if you\u2019re dealing with a bacteria imbalance in your gut, try some booch in the morning! \nAnother great time to drink kombucha is in the afternoon after lunch. It\u2019s common to feel a little sluggish in the afternoon, so drinking a fizzy caffeinated drink should do the trick. You can also drink kombucha before lunch to ease your stomach, as well. The fizzy and fermented nature of kombucha also makes it a great alternative to alcohol, so you can try it as a replacement for happy hour or a nightcap! \nIf you enjoy kombucha and the probiotic benefits, you\u2019re going to need something with prebiotics to feed that good bacteria. Probiotics are the good bacteria in your gut, and in order to keep you healthy and energized, they need to be healthy and energized too. Maintaining a good amount of plant fiber in your diet will bring in prebiotics, which is a source of food for probiotics. Try Halfday Tea Tonics which are packed with prebiotics to keep your gut balanced and the new bacteria full of energy!\n\u00a0\n\nConclusion\nThe bottom line is that kombucha is a great solution to gut health issues. If you want to know what the best time of day to drink kombucha is, you can drink it whenever you see fit. Keep in mind that it does contain caffeine, so in the morning or afternoon may be better if you\u2019re sensitive to it. \nThis fizzy drink is made through the same fermentation process as beer and wine, so it becomes naturally carbonated. If carbonation bothers your stomach, consider adding a prebiotic drink like Haldfay Tea Tonics to your diet to balance out the kombucha. Prebiotics will also keep the new probiotics energized and ready to protect your gut!\u00a0\nKombucha is also a great alcohol replacement for a healthy gut lifestyle. Try swapping your nightly cocktail for a glass of kombucha and see how you feel. There are many flavors of kombucha out there, so you\u2019ll be sure to find something just right for you. \n\u00a0",
+          "headline": "Kombucha: When Is the Best Time to Drink it?",
+          "description": "",
+          "image": "https://drinkhalfday.com/cdn/shop/articles/Kombucha.jpg?v=1645722552&width=1920",
+          "datePublished": "2022-02-24T12:07:16-05:00",
+          "dateModified": "2022-02-24T12:09:11-05:00",
+          "author": {
+            "@type": "Person",
+            "name": "Kayvon Jahanbakhsh"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Halfday Iced Tea"
+          }
+        }
+      ],
+      "faq_links": [],
+      "remaining_legacy_article_links": [],
+      "locator_css": false,
+      "high_priority_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/articles/Kombucha.jpg?v=1645722552&width=1100",
+          "alt": "Homemade Kombucha",
+          "loading": "eager",
+          "fetchpriority": "high",
+          "sizes": "(min-width: 1200px) 1100px, (min-width: 750px) calc(100vw - 10rem), 100vw",
+          "width": "2000",
+          "height": "1333"
+        }
+      ],
+      "public_text": "Kombucha: When Is the Best Time to Drink it? February 24, 2022 Share Share Link Close share Copy link If you\u2019ve ever strolled down the drink aisle at Whole Foods, you\u2019ve seen the vast selection of kombucha. Trying something new can be daunting, but trust us when we say kombucha is worth it. This fizzy beverage is a great way to give yourself an energy boost during the day while being kind to your gut. While kombucha is advertised as a healthy drink, there is still little research on the benefits. This drink is, however, packed with vitamins and other compounds that have known health benefits in other foods. Kombucha is said to promote gut health, boost immunity, and could potentially help combat serious health conditions like cancer. This fermented drink can be a bit of an acquired taste, and knowing what it\u2019s made will probably make you feel better about trying it out. Kombucha has been used by humans for centuries, and adding it to your diet can help you improve gut health. So, let\u2019s look at what it is, the benefits, and the best time to drink kombucha. What is Kombucha? To start, kombucha is a fizzy fermented drink that\u2019s made of tea, sugar, bacteria, and yeast. If it sounds scary, it isn\u2019t. You probably eat and drink plenty of fermented things without realizing it! Kombucha is often referred to as a functional beverage because it contains vitamins, amino acids, and other nutrients that can provide us with health benefits. There\u2019s no concrete invention date, but kombucha is thought to have been invented in China or Japan around 220 B.C. It\u2019s sometimes referred to as mushroom tea, but it\u2019s definitely not made out of mushrooms. The main ingredients in kombucha are yeast and bacteria that work together to create a colony that can work together for gut-friendly benefits. Some Kombucha studies claim that it can help with serious medical conditions such as blood pressure and cancer. It\u2019s also rich in antibiotics and vitamins, which can provide health benefits such as killing off harmful bacteria in the gut. The double-fermentation process creates a fizzy drink that eliminates the alcohol content created by fermentation. You can even make kombucha at home. How is Kombucha Made? To put it simply, kombucha is made by adding bacteria, yeast, and sugar to tea. After about a month of fermentation, you\u2019re left with a drinkable beverage with natural carbonation. The process is fairly simple, and many people practice homebrewing techniques to see what they can come up with. T What is Fermentation? While you may consume fermented foods for gut health, you probably haven\u2019t thought about the process. Fermentation is a process in which molecules like glucose are broken down into a simpler form. It\u2019s typically used to make alcoholic drinks like beer and wine. Since fermentation of pretty much anything will make alcohol, there were some problems with alcohol regulation with kombucha. The kombucha process involves double fermentation, which will stop the production of too much alcohol in the beverage. Making Kombucha Kombucha starts with a mixture called a SCOBY . A SCOBY is a pancake-shaped blob type thing that kick starts the fermentation process. It\u2019s a culture of bacteria and yeast. When making kombucha, the SCOBY is added to black or green tea. Typically, the tea is sweetened beforehand with a natural sweetener. Once everything is mixed together, the baby kombucha should be left at room temperature with a loose cover such as fabric over it to begin the fermentation process. Have you ever forgotten about a container of apple juice in the fridge for months? Congratulations, you fermented something without even realizing it! Don\u2019t drink it though. You\u2019ll catch a buzz, but you will most likely get sick. After 1-3 weeks, the mixture should be bottled. When it\u2019s bottled, the CO2 released is kept inside with the liquid which then created carbonation. The kombucha should be stored in the bottle for 1-2 weeks at room temperature for maximum carbonation. Then, the kombucha should be refrigerated to slow down the fermentation and carbonation processes. This will make the kombucha drinkable, and keep it at a lower alcohol content. You can even do this on a small scale at home to try making your own! Benefits of Kombucha When looking at the benefits of Kombucha, it\u2019s important to understand that there is not a lot of research on the subject. Evidence-based research does support and suggests that these benefits can come from drinking this fizzy drink. Kombucha Could be a Source of Probiotics Probiotics are the good bacteria that live in your digestive system and are crucial to maintaining a healthy gut. Fermented foods such as sauerkraut are excellent sources of probiotics, and kombucha is created through the same process. There is no concrete evidence that kombucha does contain large amounts of probiotics, but it does contain lactic-acid bacteria . Lactic acid bacteria are probiotic organisms found in the body and are typically found in fermented dairy products. So, finding them in kombucha could mean it\u2019s a good source of probiotics. It May Give a Boost to Your Immune System We\u2019re always looking for the nest best way to give our immune system a little boost. Fermented foods are known to benefit the immune system, and since kombucha is made the same way, there\u2019s potential for it to do the same thing. Since kombucha is full of antioxidants, it doesn\u2019t hurt to add it to your diet for potential immune system benefits. Kombucha Could Increase Your Energy The components of kombucha have been proven you increase energy. Since kombucha is typically made with green or black tea, you will also receive a kick from the caffeine. This makes it a good pick-me-up that will be nice to your gut, too. Kombucha Contains Vitamins Studies have shown that kombucha does in fact contain small amounts of vitamins and minerals. Some vitamins in kombucha are vitamin C, B1, and B12. Adding vitamins to your diet is never a bad thing, so it wouldn\u2019t hurt to try kombucha. When is The Best Time to Drink Kombucha? If you\u2019re ready to incorporate kombucha into your diet, you\u2019re probably wondering when the best time of day to drink it is. If you\u2019ve never had it before, it\u2019s important to do your research and take it slow to start. While kombucha can be great for your health, it could also have some health risks. This is especially important if you decide to brew your own at home. For the beginner, it\u2019s recommended to start with around 3oz and see how it goes. Once you get a feel for how it affects you, you can increase to more. The last thing you want to happen is to realize it doesn\u2019t agree with you and you\u2019ve already drank a lot of it. As for the best time to drink kombucha, you can drink it pretty much whenever you\u2019d like. Since kombucha is tea-based, it contains caffeine and can be a good way to get the day going. Some research shows that drinking kombucha on an empty stomach will help you get the gut health benefits from it, as well. So, if you\u2019re dealing with a bacteria imbalance in your gut, try some booch in the morning! Another great time to drink kombucha is in the afternoon after lunch. It\u2019s common to feel a little sluggish in the afternoon, so drinking a fizzy caffeinated drink should do the trick. You can also drink kombucha before lunch to ease your stomach, as well. The fizzy and fermented nature of kombucha also makes it a great alternative to alcohol, so you can try it as a replacement for happy hour or a nightcap! If you enjoy kombucha and the probiotic benefits, you\u2019re going to need something with prebiotics to feed that good bacteria. Probiotics are the good bacteria in your gut, and in order to keep you healthy and energized, they need to be healthy and energized too. Maintaining a good amount of plant fiber in your diet will bring in prebiotics, which is a source of food for probiotics. Try Halfday Tea Tonics which are packed with prebiotics to keep your gut balanced and the new bacteria full of energy! Conclusion The bottom line is that kombucha is a great solution to gut health issues. If you want to know what the best time of day to drink kombucha is, you can drink it whenever you see fit. Keep in mind that it does contain caffeine, so in the morning or afternoon may be better if you\u2019re sensitive to it. This fizzy drink is made through the same fermentation process as beer and wine, so it becomes naturally carbonated. If carbonation bothers your stomach, consider adding a prebiotic drink like Haldfay Tea Tonics to your diet to balance out the kombucha. Prebiotics will also keep the new probiotics energized and ready to protect your gut! Kombucha is also a great alcohol replacement for a healthy gut lifestyle. Try swapping your nightly cocktail for a glass of kombucha and see how you feel. There are many flavors of kombucha out there, so you\u2019ll be sure to find something just right for you. Back to blog"
+    },
+    {
+      "path": "/blogs/news/white-green-tea-shot-vs-green-tea-shot-which-is-the-better-choice",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      White Green Tea Shot vs. Green Tea Shot: Which Is The Better Choice?\n \u2013 Halfday Iced Tea",
+      "description": "There are many different options to choose from when it comes to tea. You can go with black tea, green tea, white tea, or oolong tea. And then, within those categories, you have a variety of flavors and brands to select from. So when you hear the bartender asking if you'd prefer a white green tea shot or a green tea sh",
+      "robots": [],
+      "canonical": "https://drinkhalfday.com/blogs/news/white-green-tea-shot-vs-green-tea-shot-which-is-the-better-choice",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        },
+        {
+          "@context": "http://schema.org/",
+          "@id": "/blogs/news/white-green-tea-shot-vs-green-tea-shot-which-is-the-better-choice#article",
+          "@type": "Article",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://drinkhalfday.com/blogs/news/white-green-tea-shot-vs-green-tea-shot-which-is-the-better-choice"
+          },
+          "articleBody": "There are many different options to choose from when it comes to tea. You can go with black tea, green tea, white tea, or oolong tea. And then, within those categories, you have a variety of flavors and brands to select from. So when you hear the bartender asking if you'd prefer a white green tea shot or a green tea shot, you might be wondering which would be the best option.\n\nIn this blog post, we will compare the white tea green shot vs. green tea shot in order to help you make the best decision for your next night out.\nIs There A Difference When It Comes To Tea?\nYes! Although all of these teas come from the same plant, Camellia Sinensis, they are processed differently. Black tea is fully oxidized, white tea is minimally oxidized, green tea is unoxidized, and oolong tea falls somewhere in between black and green tea. Let's break down the top tea colors and what they mean.\nWhite Tea\nWith white tea leaves, the leaves are picked from the plant it's growing on, and they're laid out to wither and dry without processing the leaves any further. Younger leaves and shoots are used for this type of tea, which is why they are called \"white tea.\" The lack of processing doesn't necessarily mean it's better for you than green tea. However, this type of tea is not produced as frequently as other varieties, so it tends to be more expensive than other forms of tea leaves.\nGreen Tea\nGreen tea is the most popular type of tea in the world. Green tea is high in antioxidants, which can help improve your health. Expanding upon the process that the white leaves go through, the green tea leaves have a bit more left to go after they've wilted and been plucked. Dry heat is typically applied during this process, creating the color we're most familiar with. Depending on the way the leaves are heated will impact the ultimate color of the leaves.\nYellow Tea\nYellow tea is not as popular as white or green teas, but it's still consumed regularly in China. The leaves for yellow tea are allowed to oxidize for a bit longer than white tea leaves, but not as long as black tea leaves. This oxidation time is what gives the leaves their yellow color. This type of tea was initially created as a mistake, as it was meant to be green tea. However, due to the fact that this tea was so delicious, it was produced and sold around the world.\u00a0\nOolong Tea\nOolong tea is the most complex type of tea. The leaves are allowed to oxidize for a longer time than green or white tea, but not as long as black tea. Therefore, oolong tea falls between green and black tea when it comes to oxidation levels, giving it its unique flavor profile. This type of tea is also the most expensive, as it takes a longer time to produce.\nBlack Tea\nBlack tea is the most oxidized type of tea. The leaves are allowed to wither, and then they are rolled, which breaks down the cell walls of the leaves. This allows oxygen to enter the leaves, which turns them black. Black tea is also known as \"red tea\" in some parts of China. It's typically sold as a pressed tea in the form of a nest or brick. The longer it's allowed to sit, the blacker it becomes, and the more expensive the leaf tends to be.\u00a0\nWhich Tea Is The Best To Drink?\nThere are many different types of tea, each with its own set of benefits. It's essential to experiment with different kinds of tea to find the one that best suits your needs.\u00a0\nIf you're looking for a healthy option, green tea is a great choice. If you want something that will help you relax, white tea might be a better choice for you. Oolong tea is an excellent option if you're looking for something that's both healthy and flavorful. And, if you're looking for the most antioxidants, black tea is your best bet.\u00a0\nIt really comes down to personal preference and what you're looking for in a cup of tea. So, try out different types of tea and find the one that's best for you!\u00a0\nWhat's the difference between a white green tea shot vs. a green tea shot?\nWhite green tea is less processed than a green tea shot, meaning the leaves have been withered and dried without further processing. This results in a more expensive type of tea. Green tea leaves are plucked and then allowed to oxidize for a bit longer than white tea leaves and then heated, resulting in a cheaper type of tea. Both white and green tea shots are high in antioxidants, but the flavor is slightly different. The best way to know which one you like the best is to try both!\nHow To Make A White Green Tea Shot\nIt's actually quite simple to make a white green tea shot. However, while the process will only take a few minutes, the most essential part of the shot is the white tea! So make sure that you have that available to you before starting the process, along with a strainer and shot glass.\u00a0\nIngredients:\n\nLemon-Lime Soda\n1 ounce Peach Schnapps\n1 ounce Irish whiskey\n1 ounce Sour Mix\n2 tablespoons honey\n1 ounce white tea brewed\u00a0\n\nDirections: \nStart by heating some water and then adding the white tea bag to a cup. Allow the tea to steep for about three minutes and cool down. Next, add the honey, white tea, Irish whiskey, Peach Schnapps, and Sour Mix to a shaker filled with ice. Shake well and then strain into a shot glass. Finally, top off the shot with lemon-lime soda and enjoy!\u00a0\nHow To Make A Green Tea Shot\nSimilar to the white-green tea shot, the process for making a green tea shot is quite simple. The only change between the last recipe and this recipe will be the type of tea we're using for the shot. The most important part of this recipe is the quality of the ingredients, so make sure that you use high-quality teas and spirits.\nIngredients:\n\nLemon-Lime Soda\n1 ounce Peach Schnapps\n1 ounce Irish whiskey\n1 ounce Sour Mix\n2 tablespoons honey OR Halfday Green Tea for a lower calorie option!\u00a0\n1 ounce green tea brewed\n\nDirections: \nStart by heating some water and then adding the green tea bag to a cup. Allow the tea to steep for about three minutes and cool down. Next, add the honey, white tea, Irish whiskey, Peach Schnapps, and Sour Mix to a shaker filled with ice. Shake well and then strain into a shot glass. Add lemon-lime soda to the top of the shot and enjoy!\nIs There An Easier Way To Make A Green Tea Shot?\nYes! If you don't want to have to find tea and steep it to make a shot, you might be interested in using a green tea shot mix. These can be found at most liquor stores and provide an easy way to make a green tea shot without any hassle.\nIngredients:\n\nLemon-Lime Soda\nGreen Tea Shot Mix\nIce\u00a0\n\nDirections: \nSimply add the Green Tea Shot Mix to a glass and then top it off with some lemon-lime soda. Add ice and enjoy!\u00a0\nConclusion\nAs you can see, there are a few different ways to make a green tea shot. It really comes down to personal preference and what you're looking for in a shot. If you want something simple and easy, go with the Green Tea Shot Mix. If you're looking for something with more flavor, try brewing your own white or green tea and using that in the shot. No matter which way you choose, both white and green tea shots are high in antioxidants and a great way to start your day!\u00a0\nWant to step up your shots? Why not try one of Halfday's delicious blends of teas in your next shot? Made with only the finest ingredients, our teas are sure to please. Order today and see for yourself!\n",
+          "headline": "White Green Tea Shot vs. Green Tea Shot: Which Is The Better Choice?",
+          "description": "",
+          "image": "https://drinkhalfday.com/cdn/shop/articles/drew-jemmett-qEcWgrTG578-unsplash-min.jpg?v=1648569424&width=1920",
+          "datePublished": "2022-03-29T11:52:09-04:00",
+          "dateModified": "2022-03-29T11:57:52-04:00",
+          "author": {
+            "@type": "Person",
+            "name": "Kayvon Jahanbakhsh"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Halfday Iced Tea"
+          }
+        }
+      ],
+      "faq_links": [],
+      "remaining_legacy_article_links": [],
+      "locator_css": false,
+      "high_priority_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/articles/drew-jemmett-qEcWgrTG578-unsplash-min.jpg?v=1648569424&width=1100",
+          "alt": "White Green Tea Shot vs. Green Tea Shot: Which Is The Better Choice?",
+          "loading": "eager",
+          "fetchpriority": "high",
+          "sizes": "(min-width: 1200px) 1100px, (min-width: 750px) calc(100vw - 10rem), 100vw",
+          "width": "1920",
+          "height": "1285"
+        }
+      ],
+      "public_text": "White Green Tea Shot vs. Green Tea Shot: Which Is The Better Choice? March 29, 2022 Share Share Link Close share Copy link There are many different options to choose from when it comes to tea. You can go with black tea, green tea, white tea, or oolong tea. And then, within those categories, you have a variety of flavors and brands to select from. So when you hear the bartender asking if you'd prefer a white green tea shot or a green tea shot, you might be wondering which would be the best option. In this blog post, we will compare the white tea green shot vs. green tea shot in order to help you make the best decision for your next night out. Is There A Difference When It Comes To Tea? Yes! Although all of these teas come from the same plant, Camellia Sinensis, they are processed differently. Black tea is fully oxidized, white tea is minimally oxidized, green tea is unoxidized, and oolong tea falls somewhere in between black and green tea. Let's break down the top tea colors and what they mean. White Tea With white tea leaves, the leaves are picked from the plant it's growing on, and they're laid out to wither and dry without processing the leaves any further. Younger leaves and shoots are used for this type of tea, which is why they are called \"white tea.\" The lack of processing doesn't necessarily mean it's better for you than green tea. However, this type of tea is not produced as frequently as other varieties, so it tends to be more expensive than other forms of tea leaves. Green Tea Green tea is the most popular type of tea in the world. Green tea is high in antioxidants, which can help improve your health. Expanding upon the process that the white leaves go through, the green tea leaves have a bit more left to go after they've wilted and been plucked. Dry heat is typically applied during this process, creating the color we're most familiar with. Depending on the way the leaves are heated will impact the ultimate color of the leaves. Yellow Tea Yellow tea is not as popular as white or green teas, but it's still consumed regularly in China. The leaves for yellow tea are allowed to oxidize for a bit longer than white tea leaves, but not as long as black tea leaves. This oxidation time is what gives the leaves their yellow color. This type of tea was initially created as a mistake, as it was meant to be green tea. However, due to the fact that this tea was so delicious, it was produced and sold around the world. Oolong Tea Oolong tea is the most complex type of tea. The leaves are allowed to oxidize for a longer time than green or white tea, but not as long as black tea. Therefore, oolong tea falls between green and black tea when it comes to oxidation levels, giving it its unique flavor profile. This type of tea is also the most expensive, as it takes a longer time to produce. Black Tea Black tea is the most oxidized type of tea. The leaves are allowed to wither, and then they are rolled, which breaks down the cell walls of the leaves. This allows oxygen to enter the leaves, which turns them black. Black tea is also known as \"red tea\" in some parts of China. It's typically sold as a pressed tea in the form of a nest or brick. The longer it's allowed to sit, the blacker it becomes, and the more expensive the leaf tends to be. Which Tea Is The Best To Drink? There are many different types of tea, each with its own set of benefits. It's essential to experiment with different kinds of tea to find the one that best suits your needs. If you're looking for a healthy option, green tea is a great choice. If you want something that will help you relax, white tea might be a better choice for you. Oolong tea is an excellent option if you're looking for something that's both healthy and flavorful. And, if you're looking for the most antioxidants, black tea is your best bet. It really comes down to personal preference and what you're looking for in a cup of tea. So, try out different types of tea and find the one that's best for you! What's the difference between a white green tea shot vs. a green tea shot? White green tea is less processed than a green tea shot, meaning the leaves have been withered and dried without further processing. This results in a more expensive type of tea. Green tea leaves are plucked and then allowed to oxidize for a bit longer than white tea leaves and then heated, resulting in a cheaper type of tea. Both white and green tea shots are high in antioxidants, but the flavor is slightly different. The best way to know which one you like the best is to try both! How To Make A White Green Tea Shot It's actually quite simple to make a white green tea shot. However, while the process will only take a few minutes, the most essential part of the shot is the white tea! So make sure that you have that available to you before starting the process, along with a strainer and shot glass. Ingredients: Lemon-Lime Soda 1 ounce Peach Schnapps 1 ounce Irish whiskey 1 ounce Sour Mix 2 tablespoons honey 1 ounce white tea brewed Directions: Start by heating some water and then adding the white tea bag to a cup. Allow the tea to steep for about three minutes and cool down. Next, add the honey, white tea, Irish whiskey, Peach Schnapps, and Sour Mix to a shaker filled with ice. Shake well and then strain into a shot glass. Finally, top off the shot with lemon-lime soda and enjoy! How To Make A Green Tea Shot Similar to the white-green tea shot, the process for making a green tea shot is quite simple. The only change between the last recipe and this recipe will be the type of tea we're using for the shot. The most important part of this recipe is the quality of the ingredients, so make sure that you use high-quality teas and spirits. Ingredients: Lemon-Lime Soda 1 ounce Peach Schnapps 1 ounce Irish whiskey 1 ounce Sour Mix 2 tablespoons honey OR Halfday Green Tea for a lower calorie option! 1 ounce green tea brewed Directions: Start by heating some water and then adding the green tea bag to a cup. Allow the tea to steep for about three minutes and cool down. Next, add the honey, white tea, Irish whiskey, Peach Schnapps, and Sour Mix to a shaker filled with ice. Shake well and then strain into a shot glass. Add lemon-lime soda to the top of the shot and enjoy! Is There An Easier Way To Make A Green Tea Shot? Yes! If you don't want to have to find tea and steep it to make a shot, you might be interested in using a green tea shot mix. These can be found at most liquor stores and provide an easy way to make a green tea shot without any hassle. Ingredients: Lemon-Lime Soda Green Tea Shot Mix Ice Directions: Simply add the Green Tea Shot Mix to a glass and then top it off with some lemon-lime soda. Add ice and enjoy! Conclusion As you can see, there are a few different ways to make a green tea shot. It really comes down to personal preference and what you're looking for in a shot. If you want something simple and easy, go with the Green Tea Shot Mix. If you're looking for something with more flavor, try brewing your own white or green tea and using that in the shot. No matter which way you choose, both white and green tea shots are high in antioxidants and a great way to start your day! Want to step up your shots? Why not try one of Halfday' s delicious blends of teas in your next shot? Made with only the finest ingredients, our teas are sure to please. Order today and see for yourself! Back to blog"
+    },
+    {
+      "path": "/blogs/news/white-green-tea-shot-vs-green-tea-shots",
+      "status": 200,
+      "development_asset_present": true,
+      "liquid_error": false,
+      "title": "\n      White Green Tea Shot vs. Green Tea Shots\n \u2013 Halfday Iced Tea",
+      "description": "What's the difference between Green Tea Shots and White Green Tea Shots and what's the easiest way to make them?",
+      "robots": [],
+      "canonical": "https://drinkhalfday.com/blogs/news/white-green-tea-shot-vs-green-tea-shots",
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Halfday Iced Tea",
+          "logo": "https://drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png?v=1771357890&width=500",
+          "sameAs": [
+            "https://twitter.com/drinkhalfday",
+            "https://www.instagram.com/drinkhalfday",
+            "https://www.tiktok.com/@drinkhalfday"
+          ],
+          "@id": "https://drinkhalfday.com/#organization",
+          "url": "https://drinkhalfday.com"
+        },
+        {
+          "@context": "http://schema.org/",
+          "@id": "/blogs/news/white-green-tea-shot-vs-green-tea-shots#article",
+          "@type": "Article",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://drinkhalfday.com/blogs/news/white-green-tea-shot-vs-green-tea-shots"
+          },
+          "articleBody": "There are many different options to choose from when it comes to tea. You can go with black tea, green tea, white tea, or oolong tea. And then, within those categories, you have a variety of flavors and brands to select from. So when you hear the bartender asking if you'd prefer a white green tea shot or a green tea shot, you might be wondering which would be the best option.\nIn this blog post, we will compare the white tea green shot vs. green tea shot in order to help you make the best decision for your next night out.\u00a0\nIs There A Difference When It Comes To Tea?\nYes! Although all of these teas come from the same plant, Camellia Sinensis, they are processed differently. Black tea is fully oxidized, white tea is minimally oxidized, green tea is unoxidized, and oolong tea falls somewhere in between black and green tea. Let's break down the top tea colors and what they mean.\nWhite Tea\nWith white tea leaves, the leaves are picked from the plant it's growing on, and they're laid out to wither and dry without processing the leaves any further. Younger leaves and shoots are used for this type of tea, which is why they are called \"white tea.\" The lack of processing doesn't necessarily mean it's better for you than green tea. However, this type of tea is not produced as frequently as other varieties, so it tends to be more expensive than other forms of tea leaves.\nGreen Tea\nGreen tea is the most popular type of tea in the world. Green tea is high in antioxidants, which can help improve your health. Expanding upon the process that the white leaves go through, the green tea leaves have a bit more left to go after they've wilted and been plucked. Dry heat is typically applied during this process, creating the color we're most familiar with. Depending on the way the leaves are heated will impact the ultimate color of the leaves.\nYellow Tea\nYellow tea is not as popular as white or green teas, but it's still consumed regularly in China. The leaves for yellow tea are allowed to oxidize for a bit longer than white tea leaves, but not as long as black tea leaves. This oxidation time is what gives the leaves their yellow color. This type of tea was initially created as a mistake, as it was meant to be green tea. However, due to the fact that this tea was so delicious, it was produced and sold around the world.\nOolong Tea\nOolong tea is the most complex type of tea. The leaves are allowed to oxidize for a longer time than green or white tea, but not as long as black tea. Therefore, oolong tea falls between green and black tea when it comes to oxidation levels, giving it its unique flavor profile. This type of tea is also the most expensive, as it takes a longer time to produce.\nBlack Tea\nBlack tea is the most oxidized type of tea. The leaves are allowed to wither, and then they are rolled, which breaks down the cell walls of the leaves. This allows oxygen to enter the leaves, which turns them black. Black tea is also known as \"red tea\" in some parts of China. It's typically sold as a pressed tea in the form of a nest or brick. The longer it's allowed to sit, the blacker it becomes, and the more expensive the leaf tends to be.\nWhich Tea Is The Best To Drink?\nThere are many different types of tea, each with its own set of benefits. It's essential to experiment with different kinds of tea to find the one that best suits your needs.\nIf you're looking for a healthy option, green tea is a great choice. If you want something that will help you relax, white tea might be a better choice for you. Oolong tea is an excellent option if you're looking for something that's both healthy and flavorful. And, if you're looking for the most antioxidants, black tea is your best bet.\nIt really comes down to personal preference and what you're looking for in a cup of tea. So, try out different types of tea and find the one that's best for you!\nWhat's the difference between a white green tea shot vs. a green tea shot?\nWhite green tea is less processed than a green tea shot, meaning the leaves have been withered and dried without further processing. This results in a more expensive type of tea. Green tea leaves are plucked and then allowed to oxidize for a bit longer than white tea leaves and then heated, resulting in a cheaper type of tea. Both white and green tea shots are high in antioxidants, but the flavor is slightly different. The best way to know which one you like the best is to try both!\n\nAre White Green Tea and Green Tea Shots Healthy?\u00a0\nCompared to other sugar drinks, all variations of tea shots are lower in sugar and can be a good way to enjoy the night without the hangover. To beat the alcohol bloating and actually make a version of the shot that's good for you, try using low calorie, low sugar iced tea! Halfday Iced Tea is loaded up with plant fibers and small amounts of all-natural sugar to help beat the alcohol bloat and keep the shots tasting good while being good for you! Just switch out the soda and cheers away.\u00a0\n\nHow To Make A White Green Tea Shot\nIt's actually quite simple to make a white green tea shot. However, while the process will only take a few minutes, the most essential part of the shot is the white tea! So make sure that you have that available to you before starting the process, along with a strainer and shot glass.\nIngredients:\n\nLemon-Lime Soda\u00a0\n1 ounce Peach Schnapps\n1 ounce Irish whiskey\n1 ounce Sour Mix\n2 tablespoons honey\n1 ounce white tea brewed (We recommend Honey Ginseng Iced Tea)\u00a0\n\nDirections: \nStart by heating some water and then adding the white tea bag to a cup. Allow the tea to steep for about three minutes and cool down. Next, add the honey, white tea, Irish whiskey, Peach Schnapps, and Sour Mix to a shaker filled with ice. Shake well and then strain into a shot glass. Finally, top off the shot with lemon-lime soda and enjoy!\nHow To Make A Green Tea Shot\nSimilar to the white-green tea shot, the process for making a green tea shot is quite simple. The only change between the last recipe and this recipe will be the type of tea we're using for the shot. The most important part of this recipe is the quality of the ingredients, so make sure that you use high-quality teas and spirits.\nIngredients:\n\nLemon-Lime Soda\u00a0\n1 ounce Peach Schnapps\n1 ounce Irish whiskey\n1 ounce Sour Mix\n2 tablespoons honey\n1 ounce green tea brewed (We recommend Peach Green Tea)\n\nDirections: \nStart by heating some water and then adding the green tea bag to a cup. Allow the tea to steep for about three minutes and cool down. Next, add the honey, white tea, Irish whiskey, Peach Schnapps, and Sour Mix to a shaker filled with ice. Shake well and then strain into a shot glass. Add lemon-lime soda to the top of the shot and enjoy!\u00a0\nIs There An Easier Way To Make A Green Tea Shot?\nYes! If you don't want to have to find tea and steep it to make a shot, you might be interested in using a green tea shot mix. These can be found at most liquor stores and provide an easy way to make a green tea shot without any hassle.\nIngredients:\n\nHalfday Iced Tea\nGreen Tea Shot Mix\nIce\u00a0\n\nDirections: \nSimply add the Green Tea Shot Mix to a glass and then top it off with some lemon-lime soda. Add ice and enjoy!\nConclusion\nAs you can see, there are a few different ways to make a green tea shot. It really comes down to personal preference and what you're looking for in a shot. If you want something simple and easy, go with the Green Tea Shot Mix. If you're looking for something with more flavor, try brewing your own white or green tea and using that in the shot. No matter which way you choose, both white and green tea shots are high in antioxidants and a great way to start your day!\nWant to step up your shots? Why not try one of Halfday's delicious blends of teas in your next shot? Made with only the finest ingredients, our teas are sure to please. Order today and see for yourself!",
+          "headline": "White Green Tea Shot vs. Green Tea Shots",
+          "description": "",
+          "image": "https://drinkhalfday.com/cdn/shop/articles/Shotz.jpg?v=1646855065&width=1920",
+          "datePublished": "2022-03-09T14:33:40-05:00",
+          "dateModified": "2022-03-09T14:42:24-05:00",
+          "author": {
+            "@type": "Person",
+            "name": "Kayvon Jahanbakhsh"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Halfday Iced Tea"
+          }
+        }
+      ],
+      "faq_links": [],
+      "remaining_legacy_article_links": [],
+      "locator_css": false,
+      "high_priority_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/articles/Shotz.jpg?v=1646855065&width=1100",
+          "alt": "Green Tea Shot",
+          "loading": "eager",
+          "fetchpriority": "high",
+          "sizes": "(min-width: 1200px) 1100px, (min-width: 750px) calc(100vw - 10rem), 100vw",
+          "width": "1008",
+          "height": "1008"
+        }
+      ],
+      "public_text": "White Green Tea Shot vs. Green Tea Shots March 9, 2022 Share Share Link Close share Copy link There are many different options to choose from when it comes to tea. You can go with black tea, green tea, white tea, or oolong tea. And then, within those categories, you have a variety of flavors and brands to select from. So when you hear the bartender asking if you'd prefer a white green tea shot or a green tea shot, you might be wondering which would be the best option. In this blog post, we will compare the white tea green shot vs. green tea shot in order to help you make the best decision for your next night out. Is There A Difference When It Comes To Tea? Yes! Although all of these teas come from the same plant, Camellia Sinensis, they are processed differently. Black tea is fully oxidized, white tea is minimally oxidized, green tea is unoxidized, and oolong tea falls somewhere in between black and green tea. Let's break down the top tea colors and what they mean. White Tea With white tea leaves, the leaves are picked from the plant it's growing on, and they're laid out to wither and dry without processing the leaves any further. Younger leaves and shoots are used for this type of tea, which is why they are called \"white tea.\" The lack of processing doesn't necessarily mean it's better for you than green tea. However, this type of tea is not produced as frequently as other varieties, so it tends to be more expensive than other forms of tea leaves. Green Tea Green tea is the most popular type of tea in the world. Green tea is high in antioxidants, which can help improve your health. Expanding upon the process that the white leaves go through, the green tea leaves have a bit more left to go after they've wilted and been plucked. Dry heat is typically applied during this process, creating the color we're most familiar with. Depending on the way the leaves are heated will impact the ultimate color of the leaves. Yellow Tea Yellow tea is not as popular as white or green teas, but it's still consumed regularly in China. The leaves for yellow tea are allowed to oxidize for a bit longer than white tea leaves, but not as long as black tea leaves. This oxidation time is what gives the leaves their yellow color. This type of tea was initially created as a mistake, as it was meant to be green tea. However, due to the fact that this tea was so delicious, it was produced and sold around the world. Oolong Tea Oolong tea is the most complex type of tea. The leaves are allowed to oxidize for a longer time than green or white tea, but not as long as black tea. Therefore, oolong tea falls between green and black tea when it comes to oxidation levels, giving it its unique flavor profile. This type of tea is also the most expensive, as it takes a longer time to produce. Black Tea Black tea is the most oxidized type of tea. The leaves are allowed to wither, and then they are rolled, which breaks down the cell walls of the leaves. This allows oxygen to enter the leaves, which turns them black. Black tea is also known as \"red tea\" in some parts of China. It's typically sold as a pressed tea in the form of a nest or brick. The longer it's allowed to sit, the blacker it becomes, and the more expensive the leaf tends to be. Which Tea Is The Best To Drink? There are many different types of tea, each with its own set of benefits. It's essential to experiment with different kinds of tea to find the one that best suits your needs. If you're looking for a healthy option, green tea is a great choice. If you want something that will help you relax, white tea might be a better choice for you. Oolong tea is an excellent option if you're looking for something that's both healthy and flavorful. And, if you're looking for the most antioxidants, black tea is your best bet. It really comes down to personal preference and what you're looking for in a cup of tea. So, try out different types of tea and find the one that's best for you! What's the difference between a white green tea shot vs. a green tea shot? White green tea is less processed than a green tea shot, meaning the leaves have been withered and dried without further processing. This results in a more expensive type of tea. Green tea leaves are plucked and then allowed to oxidize for a bit longer than white tea leaves and then heated, resulting in a cheaper type of tea. Both white and green tea shots are high in antioxidants, but the flavor is slightly different. The best way to know which one you like the best is to try both! Are White Green Tea and Green Tea Shots Healthy? Compared to other sugar drinks, all variations of tea shots are lower in sugar and can be a good way to enjoy the night without the hangover. To beat the alcohol bloating and actually make a version of the shot that's good for you, try using low calorie, low sugar iced tea! Halfday Iced Tea is loaded up with plant fibers and small amounts of all-natural sugar to help beat the alcohol bloat and keep the shots tasting good while being good for you! Just switch out the soda and cheers away. How To Make A White Green Tea Shot It's actually quite simple to make a white green tea shot. However, while the process will only take a few minutes, the most essential part of the shot is the white tea! So make sure that you have that available to you before starting the process, along with a strainer and shot glass. Ingredients: Lemon-Lime Soda 1 ounce Peach Schnapps 1 ounce Irish whiskey 1 ounce Sour Mix 2 tablespoons honey 1 ounce white tea brewed (We recommend Honey Ginseng Iced Tea ) Directions: Start by heating some water and then adding the white tea bag to a cup. Allow the tea to steep for about three minutes and cool down. Next, add the honey, white tea, Irish whiskey, Peach Schnapps, and Sour Mix to a shaker filled with ice. Shake well and then strain into a shot glass. Finally, top off the shot with lemon-lime soda and enjoy! How To Make A Green Tea Shot Similar to the white-green tea shot, the process for making a green tea shot is quite simple. The only change between the last recipe and this recipe will be the type of tea we're using for the shot. The most important part of this recipe is the quality of the ingredients, so make sure that you use high-quality teas and spirits. Ingredients: Lemon-Lime Soda 1 ounce Peach Schnapps 1 ounce Irish whiskey 1 ounce Sour Mix 2 tablespoons honey 1 ounce green tea brewed (We recommend Peach Green Tea ) Directions: Start by heating some water and then adding the green tea bag to a cup. Allow the tea to steep for about three minutes and cool down. Next, add the honey, white tea, Irish whiskey, Peach Schnapps, and Sour Mix to a shaker filled with ice. Shake well and then strain into a shot glass. Add lemon-lime soda to the top of the shot and enjoy! Is There An Easier Way To Make A Green Tea Shot? Yes! If you don't want to have to find tea and steep it to make a shot, you might be interested in using a green tea shot mix. These can be found at most liquor stores and provide an easy way to make a green tea shot without any hassle. Ingredients: Halfday Iced Tea Green Tea Shot Mix Ice Directions: Simply add the Green Tea Shot Mix to a glass and then top it off with some lemon-lime soda. Add ice and enjoy! Conclusion As you can see, there are a few different ways to make a green tea shot. It really comes down to personal preference and what you're looking for in a shot. If you want something simple and easy, go with the Green Tea Shot Mix. If you're looking for something with more flavor, try brewing your own white or green tea and using that in the shot. No matter which way you choose, both white and green tea shots are high in antioxidants and a great way to start your day! Want to step up your shots? Why not try one of Halfday' s delicious blends of teas in your next shot? Made with only the finest ingredients, our teas are sure to please. Order today and see for yourself! Back to blog"
+    }
+  ]
+}

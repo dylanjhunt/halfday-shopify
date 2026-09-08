@@ -106,7 +106,13 @@
   endfor
 -%}
 
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+{% liquid
+  assign header_tag = 'div'
+  if section.settings.sticky_header_type != 'none'
+    assign header_tag = 'sticky-header'
+  endif
+%}
+<{{ header_tag }} data-sticky-type="{{ section.settings.sticky_header_type }}" class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   {%- liquid
     assign social_links = false
     assign localization_forms = false
@@ -132,16 +138,16 @@
 
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
-        <h1 class="header__heading">
+        <div class="header__heading">
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if product.metafields.custom.product_logo != blank -%}
               <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = product.metafields.custom.product_logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = settings.logo_width | divided_by: product.metafields.custom.product_logo.aspect_ratio -%}
+                {%- assign logo_alt = product.metafields.custom.product_logo.value.alt | default: shop.name | escape -%}
+                {%- assign logo_height = settings.logo_width | divided_by: product.metafields.custom.product_logo.value.aspect_ratio -%}
                 {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
                 {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ product.metafields.custom.product_logo | image_url: width: 600 | image_tag:
+                {{ product.metafields.custom.product_logo.value | image_url: width: 600 | image_tag:
                   class: 'header__heading-logo',
                   widths: widths,
                   height: logo_height,
@@ -174,7 +180,7 @@
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
-        </h1>
+        </div>
       {%- endif -%}
     {%- endif -%}
 
@@ -202,25 +208,25 @@
     {%- liquid
       if section.settings.menu != blank
         if section.settings.menu_type_desktop == 'dropdown'
-          render 'header-dropdown-menu', limit: link_count_half, blocks:blocks
+          render 'header-dropdown-menu', limit: link_count_half
         elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu', limit: link_count_half, blocks:blocks
+          render 'header-mega-menu', limit: link_count_half
         endif
       endif
     %}
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
-        <h1 class="header__heading">
+        <div class="header__heading">
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if product.metafields.custom.product_logo != blank -%}
               <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = product.metafields.custom.product_logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = settings.logo_width | divided_by: product.metafields.custom.product_logo.aspect_ratio -%}
+                {%- assign logo_alt = product.metafields.custom.product_logo.value.alt | default: shop.name | escape -%}
+                {%- assign logo_height = settings.logo_width | divided_by: product.metafields.custom.product_logo.value.aspect_ratio -%}
                 {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
                 {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ product.metafields.custom.product_logo | image_url: width: 600 | image_tag:
+                {{ product.metafields.custom.product_logo.value | image_url: width: 600 | image_tag:
                   class: 'header__heading-logo',
                   widths: widths,
                   height: logo_height,
@@ -253,7 +259,7 @@
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
-        </h1>
+        </div>
       {%- endif -%}
     {%- endif -%}
 
@@ -261,9 +267,9 @@
       {%- liquid
           if section.settings.menu != blank
             if section.settings.menu_type_desktop == 'dropdown'
-              render 'header-dropdown-menu', offset: link_count_half, blocks:blocks
+              render 'header-dropdown-menu', offset: link_count_half
             elsif section.settings.menu_type_desktop != 'drawer'
-              render 'header-mega-menu', offset: link_count_half, blocks:blocks
+              render 'header-mega-menu', offset: link_count_half
             endif
           endif
       %}
@@ -278,7 +284,7 @@
 
       {%- if section.settings.main_mobile_find_in_store_link != blank -%}
         <div class="Header_mobile_store_new Mobile_only_new">
-          <a href="{{ section.settings.main_mobile_find_in_store_link }}" target="_blank">
+          <a href="{{ section.settings.main_mobile_find_in_store_link }}" target="_blank" rel="noopener" aria-label="Find Halfday in store">
             <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M24.2385 11.2352C24.0747 9.5306 23.4723 7.89746 22.4899 6.49482C21.5075 5.09218 20.1786 3.96783 18.6327 3.23127C17.0867 2.49471 15.3764 2.17104 13.6682 2.29177C11.96 2.4125 10.3122 2.97352 8.88518 3.9202C7.65924 4.73995 6.63008 5.82105 5.87161 7.08582C5.11315 8.35059 4.64422 9.76765 4.49851 11.2352C4.35558 12.6931 4.53897 14.1646 5.03538 15.5429C5.53179 16.9211 6.32878 18.1716 7.36851 19.2035L13.5518 25.3985C13.6603 25.5079 13.7893 25.5947 13.9315 25.6539C14.0737 25.7131 14.2262 25.7436 14.3802 25.7436C14.5342 25.7436 14.6867 25.7131 14.8289 25.6539C14.971 25.5947 15.1001 25.5079 15.2085 25.3985L21.3685 19.2035C22.4082 18.1716 23.2052 16.9211 23.7016 15.5429C24.1981 14.1646 24.3815 12.6931 24.2385 11.2352ZM19.7352 17.5585L14.3685 22.9252L9.00185 17.5585C8.21095 16.7676 7.60512 15.8112 7.22789 14.7583C6.85067 13.7053 6.71143 12.5818 6.82018 11.4685C6.92963 10.3382 7.2889 9.24622 7.87201 8.27168C8.45512 7.29714 9.2475 6.46436 10.1918 5.83353C11.4296 5.01131 12.8825 4.57271 14.3685 4.57271C15.8545 4.57271 17.3074 5.01131 18.5452 5.83353C19.4867 6.46192 20.2773 7.29103 20.8603 8.26129C21.4432 9.23156 21.8041 10.3189 21.9168 11.4452C22.0291 12.5622 21.8917 13.6902 21.5143 14.7475C21.137 15.8048 20.5293 16.765 19.7352 17.5585ZM14.3685 7.0002C13.3302 7.0002 12.3151 7.3081 11.4518 7.88498C10.5884 8.46186 9.91551 9.2818 9.51815 10.2411C9.12079 11.2004 9.01682 12.256 9.21939 13.2744C9.42196 14.2928 9.92198 15.2283 10.6562 15.9625C11.3904 16.6967 12.3259 17.1967 13.3443 17.3993C14.3627 17.6019 15.4183 17.4979 16.3776 17.1006C17.3369 16.7032 18.1569 16.0303 18.7337 15.1669C19.3106 14.3036 19.6185 13.2886 19.6185 12.2502C19.6154 10.8588 19.0613 9.52519 18.0774 8.54129C17.0935 7.55739 15.76 7.00328 14.3685 7.0002ZM14.3685 15.1669C13.7917 15.1669 13.2277 14.9958 12.7481 14.6753C12.2685 14.3548 11.8946 13.8993 11.6739 13.3664C11.4531 12.8334 11.3953 12.247 11.5079 11.6812C11.6204 11.1154 11.8982 10.5957 12.3061 10.1878C12.714 9.7799 13.2337 9.50211 13.7995 9.38957C14.3653 9.27703 14.9517 9.33479 15.4847 9.55555C16.0176 9.7763 16.4731 10.1501 16.7936 10.6298C17.1141 11.1094 17.2852 11.6733 17.2852 12.2502C17.2852 13.0237 16.9779 13.7656 16.4309 14.3126C15.8839 14.8596 15.1421 15.1669 14.3685 15.1669Z" fill="#004600"/>
             </svg>
@@ -383,7 +389,7 @@
       </div>
     </div>
   </header>
-</{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
+</{{ header_tag }}>
 
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
@@ -496,7 +502,7 @@
 
     closeSearchModal() {
       this.searchModal = this.searchModal || this.header.querySelector('details-modal');
-      this.searchModal.close(false);
+      this.searchModal?.close(false);
     }
   }
 
@@ -505,24 +511,24 @@
 
 <script type="application/ld+json">
   {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "Organization",
     "name": {{ shop.name | json }},
     {% if settings.logo %}
       "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
     {% endif %}
     "sameAs": [
-      {{ settings.social_twitter_link | json }},
-      {{ settings.social_facebook_link | json }},
-      {{ settings.social_pinterest_link | json }},
-      {{ settings.social_instagram_link | json }},
-      {{ settings.social_tiktok_link | json }},
-      {{ settings.social_tumblr_link | json }},
-      {{ settings.social_snapchat_link | json }},
-      {{ settings.social_youtube_link | json }},
-      {{ settings.social_vimeo_link | json }}
+      {%- assign social_keys = 'social_twitter_link,social_facebook_link,social_pinterest_link,social_instagram_link,social_tiktok_link,social_tumblr_link,social_snapchat_link,social_youtube_link,social_vimeo_link' | split: ',' -%}
+      {%- assign separator = '' -%}
+      {%- for social_key in social_keys -%}
+        {%- if settings[social_key] != blank -%}
+          {{ separator }}{{ settings[social_key] | json }}
+          {%- assign separator = ',' -%}
+        {%- endif -%}
+      {%- endfor -%}
     ],
-    "url": {{ request.origin | append: page.url | json }}
+    "@id": {{ request.origin | append: '/#organization' | json }},
+    "url": {{ request.origin | json }}
   }
 </script>
 
@@ -530,7 +536,7 @@
   {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "WebSite",
       "name": {{ shop.name | json }},
       "potentialAction": {
@@ -538,7 +544,7 @@
         "target": {{ potential_action_target | json }},
         "query-input": "required name=search_term_string"
       },
-      "url": {{ request.origin | append: page.url | json }}
+      "url": {{ request.origin | json }}
     }
   </script>
 {%- endif -%}

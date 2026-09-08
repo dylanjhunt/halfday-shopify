@@ -1,42 +1,31 @@
-{% if section.settings.bg_image != blank or section.settings.heading_text != blank or section.settings.information_text != blank %}
+{% if section.settings.bg_image != blank or section.settings.bg_image_mobile != blank or section.settings.heading_text != blank or section.settings.information_text != blank %}
   <div class="Page_image_banner_main Page_image_banner_main_{{ section.id }}">
-    {% if section.settings.bg_image != blank %}
-      <div class="Page_image_banner_main_image small-hide">
-        {{
-          section.settings.bg_image | 
-          image_url: width: img.width | 
-          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-          fetchpriority: 'low'
-        }}
+    {%- liquid
+      assign banner_image = section.settings.bg_image | default: section.settings.bg_image_mobile
+      assign image_loading = 'lazy'
+      assign image_priority = 'auto'
+      if section.index == 1
+        assign image_loading = 'eager'
+        assign image_priority = 'high'
+      endif
+    -%}
+    {%- if banner_image != blank -%}
+      <div class="Page_image_banner_main_image">
+        <picture>
+          {%- if section.settings.bg_image_mobile != blank -%}
+            <source media="(max-width: 749px)" width="{{ section.settings.bg_image_mobile.width }}" height="{{ section.settings.bg_image_mobile.height }}" sizes="100vw" srcset="{{ section.settings.bg_image_mobile | image_url: width: 375 }} 375w, {{ section.settings.bg_image_mobile | image_url: width: 550 }} 550w, {{ section.settings.bg_image_mobile | image_url: width: 750 }} 750w, {{ section.settings.bg_image_mobile | image_url: width: 1100 }} 1100w">
+          {%- endif -%}
+          {{ banner_image | image_url: width: 2048 | image_tag: widths: '375, 550, 750, 1100, 1500, 1800, 2048', sizes: '100vw', loading: image_loading, fetchpriority: image_priority }}
+        </picture>
       </div>
-    {% endif %}
-    {% if section.settings.bg_image_mobile != blank %}
-      <div class="Page_image_banner_main_image medium-hide large-up-hide">
-        {{
-          section.settings.bg_image_mobile | 
-          image_url: width: img.width | 
-          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-          fetchpriority: 'low'
-        }}
-      </div>
-    {% else %}
-      <div class="Page_image_banner_main_image medium-hide large-up-hide">
-        {{
-          section.settings.bg_image | 
-          image_url: width: img.width | 
-          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-          fetchpriority: 'low'
-        }}
-      </div>
-    {% endif %}
+    {%- endif -%}
     <div class="page-width">
       {% if section.settings.heading_text != blank or section.settings.information_text != blank %}
         <div class="Page_image_banner_inner">
           {% if section.settings.heading_text != blank %}
             <div class="Page_image_banner_heading_text Common_large_title_new">
-              <h2>
-                {{ section.settings.heading_text }}
-              </h2>
+              {% assign heading_tag = section.settings.heading_level | default: 'h2' %}
+              <{{ heading_tag }}>{{ section.settings.heading_text }}</{{ heading_tag }}>
             </div>
           {% endif %}
           {% if section.settings.information_text != blank %}
@@ -56,12 +45,12 @@
   .Page_image_banner_main_image { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
   .Page_image_banner_main_image img { width: 100%; height: 100% !important; display: block; object-fit: cover; }
   .Page_image_banner_inner { position: relative; padding: 56px 0 56px; }
-  .Page_image_banner_heading_text h2 { color: #FFE700; }
+  .Page_image_banner_heading_text :is(h1, h2) { color: #FFE700; }
   .Page_image_banner_information_text { padding-top: 32px; }
   .Page_image_banner_information_text p { color: #FFF; }
 
   @media (max-width: 1439px){
-    .Page_image_banner_heading_text h2 { font-size: 72px; }
+    .Page_image_banner_heading_text :is(h1, h2) { font-size: 72px; }
   }
   
   @media (max-width: 749px){
@@ -75,6 +64,16 @@
     "name": "Page Image Banner",
     "class": "Page_image_banner",
     "settings": [
+      {
+        "type": "select",
+        "id": "heading_level",
+        "label": "Heading level",
+        "default": "h2",
+        "options": [
+          { "value": "h1", "label": "Page title (H1)" },
+          { "value": "h2", "label": "Section heading (H2)" }
+        ]
+      },
       {
         "type": "image_picker",
         "id": "bg_image",

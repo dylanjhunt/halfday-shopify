@@ -1,0 +1,34 @@
+{
+  "before": {
+    "error": 122,
+    "warning": 397
+  },
+  "after": {
+    "error": 122,
+    "warning": 391
+  },
+  "added": [],
+  "removed": [
+    {
+      "path": "snippets/meta-tags.liquid",
+      "check": "DeprecatedFilter",
+      "severity": "warning",
+      "message": "Deprecated filter 'img_url', consider using 'image_url'.",
+      "count": 2
+    },
+    {
+      "path": "sections/Page-2-col-image-content.liquid",
+      "check": "UndefinedObject",
+      "severity": "warning",
+      "message": "Unknown object 'img' used.",
+      "count": 3
+    },
+    {
+      "path": "sections/Page-2-col-image-contact-form.liquid",
+      "check": "UndefinedObject",
+      "severity": "warning",
+      "message": "Unknown object 'img' used.",
+      "count": 1
+    }
+  ]
+}

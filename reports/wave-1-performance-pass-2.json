@@ -1,0 +1,393 @@
+{
+  "captured_at": "2026-09-07T23:33:08.548116+00:00",
+  "theme_id": 142755430600,
+  "method": "Lighthouse 13.4.1, default simulated mobile throttling, a separate CLI Chrome launch per run, same development preview URL and categories: performance, accessibility, SEO.",
+  "caveats": [
+    "Shopify redirects the preview URL and sets an anonymous preview cookie. All captures checked for the development video asset; raw cookies and request URLs are not exported.",
+    "The delivered-theme QA batch showed a large paint regression. Additional runs without concurrent preview navigation investigate that variability, not erase the earlier results. Cause is unproven; do not claim consistent LCP improvement or field CWV improvement.",
+    "Main-thread attribution is from the Lighthouse bootup-time table, which omits small entries. It is CPU work attributed to a source, not elapsed page-load time or an uninstall saving guarantee.",
+    "No app settings changed. Third-party execution and the development preview make results variable. Initial media bytes do not measure post-scroll media consumption."
+  ],
+  "groups": {
+    "previous_checkpoint": {
+      "runs": [
+        {
+          "capture": "before-1.json",
+          "captured_at": "2026-09-07T23:06:54.493Z",
+          "metrics": {
+            "lcp_ms": 3839.3410000000003,
+            "fcp_ms": 2773.8284999999996,
+            "tbt_ms": 1253.5000000000036,
+            "cls": 0.00015251054914225686,
+            "transfer_bytes": 6937449,
+            "main_thread_ms": 9097.319999999365,
+            "initial_media_bytes": 0,
+            "performance_score": 51.0,
+            "accessibility_score": 86.0,
+            "seo_score": 77.0,
+            "theme_custom_js_ms": 1449.9280000000083
+          },
+          "reported_main_thread_attribution_ms": {
+            "Theme custom.js": 1449.93,
+            "Signifyd": 2921.15,
+            "accessiBe": 244.64,
+            "Postscript": 163.38,
+            "Klaviyo": 337.61,
+            "Yotpo": 115.34
+          },
+          "preview_video_asset_present": true
+        },
+        {
+          "capture": "before-2.json",
+          "captured_at": "2026-09-07T23:07:18.639Z",
+          "metrics": {
+            "lcp_ms": 6513.9728,
+            "fcp_ms": 2733.9468,
+            "tbt_ms": 914.5000000000036,
+            "cls": 0.00015251054914225686,
+            "transfer_bytes": 6963808,
+            "main_thread_ms": 7789.039999999453,
+            "initial_media_bytes": 0,
+            "performance_score": 43.0,
+            "accessibility_score": 86.0,
+            "seo_score": 77.0,
+            "theme_custom_js_ms": 1509.0040000000106
+          },
+          "reported_main_thread_attribution_ms": {
+            "Theme custom.js": 1509.0,
+            "Signifyd": 2316.2,
+            "accessiBe": 258.49,
+            "Postscript": 187.51,
+            "Klaviyo": 337.69,
+            "Yotpo": 140.78
+          },
+          "preview_video_asset_present": true
+        },
+        {
+          "capture": "before-3.json",
+          "captured_at": "2026-09-07T23:07:42.732Z",
+          "metrics": {
+            "lcp_ms": 4335.9853,
+            "fcp_ms": 2828.4521,
+            "tbt_ms": 1092,
+            "cls": 0.00015251054914225686,
+            "transfer_bytes": 6956374,
+            "main_thread_ms": 8078.6599999992795,
+            "initial_media_bytes": 0,
+            "performance_score": 48.0,
+            "accessibility_score": 86.0,
+            "seo_score": 77.0,
+            "theme_custom_js_ms": 1422.900000000011
+          },
+          "reported_main_thread_attribution_ms": {
+            "Theme custom.js": 1422.9,
+            "Signifyd": 2703.22,
+            "accessiBe": 240.04,
+            "Postscript": 148.37,
+            "Yotpo": 138.68,
+            "Klaviyo": 308.13
+          },
+          "preview_video_asset_present": true
+        }
+      ],
+      "median": {
+        "lcp_ms": 4335.9853,
+        "fcp_ms": 2773.8284999999996,
+        "tbt_ms": 1092,
+        "cls": 0.00015251054914225686,
+        "transfer_bytes": 6956374,
+        "main_thread_ms": 8078.6599999992795,
+        "initial_media_bytes": 0,
+        "performance_score": 48.0,
+        "accessibility_score": 86.0,
+        "seo_score": 77.0,
+        "theme_custom_js_ms": 1449.9280000000083
+      }
+    },
+    "intermediate_before_header_repair": {
+      "runs": [
+        {
+          "capture": "after-1.json",
+          "captured_at": "2026-09-07T23:21:14.897Z",
+          "metrics": {
+            "lcp_ms": 3788.8460000000005,
+            "fcp_ms": 2767.1545,
+            "tbt_ms": 929,
+            "cls": 0.00015251054914225686,
+            "transfer_bytes": 6852308,
+            "main_thread_ms": 7763.379999999636,
+            "initial_media_bytes": 0,
+            "performance_score": 54.0,
+            "accessibility_score": 89.0,
+            "seo_score": 85.0,
+            "theme_custom_js_ms": 86.91199999999986
+          },
+          "reported_main_thread_attribution_ms": {
+            "Signifyd": 2816.9,
+            "accessiBe": 284.5,
+            "Postscript": 217.26,
+            "Klaviyo": 404.83,
+            "Yotpo": 246.8,
+            "Theme custom.js": 86.91
+          },
+          "preview_video_asset_present": true
+        },
+        {
+          "capture": "after-2.json",
+          "captured_at": "2026-09-07T23:21:39.152Z",
+          "metrics": {
+            "lcp_ms": 3874.781,
+            "fcp_ms": 2373.117,
+            "tbt_ms": 1186.9999999999982,
+            "cls": 0.00011298713826012966,
+            "transfer_bytes": 6894338,
+            "main_thread_ms": 8315.675999999572,
+            "initial_media_bytes": 0,
+            "performance_score": 52.0,
+            "accessibility_score": 89.0,
+            "seo_score": 85.0,
+            "theme_custom_js_ms": 120.624
+          },
+          "reported_main_thread_attribution_ms": {
+            "Signifyd": 3203.08,
+            "accessiBe": 241.85,
+            "Yotpo": 219.88,
+            "Postscript": 182.95,
+            "Klaviyo": 351.67,
+            "Theme custom.js": 120.62
+          },
+          "preview_video_asset_present": true
+        },
+        {
+          "capture": "after-3.json",
+          "captured_at": "2026-09-07T23:22:03.048Z",
+          "metrics": {
+            "lcp_ms": 3519.3209,
+            "fcp_ms": 2673.5191999999997,
+            "tbt_ms": 851.9999999999982,
+            "cls": 0.00011298713826012966,
+            "transfer_bytes": 6866221,
+            "main_thread_ms": 7081.135999999739,
+            "initial_media_bytes": 0,
+            "performance_score": 57.99999999999999,
+            "accessibility_score": 89.0,
+            "seo_score": 85.0,
+            "theme_custom_js_ms": 114.24799999999999
+          },
+          "reported_main_thread_attribution_ms": {
+            "Signifyd": 2540.72,
+            "accessiBe": 244.9,
+            "Postscript": 198.73,
+            "Yotpo": 161.1,
+            "Klaviyo": 306.24,
+            "Theme custom.js": 114.25
+          },
+          "preview_video_asset_present": true
+        }
+      ],
+      "median": {
+        "lcp_ms": 3788.8460000000005,
+        "fcp_ms": 2673.5191999999997,
+        "tbt_ms": 929,
+        "cls": 0.00011298713826012966,
+        "transfer_bytes": 6866221,
+        "main_thread_ms": 7763.379999999636,
+        "initial_media_bytes": 0,
+        "performance_score": 54.0,
+        "accessibility_score": 89.0,
+        "seo_score": 85.0,
+        "theme_custom_js_ms": 114.24799999999999
+      }
+    },
+    "delivered_theme_during_browser_qa": {
+      "runs": [
+        {
+          "capture": "final-1.json",
+          "captured_at": "2026-09-07T23:27:08.271Z",
+          "metrics": {
+            "lcp_ms": 28453.449150000015,
+            "fcp_ms": 13627.178949999998,
+            "tbt_ms": 1176.5,
+            "cls": 0,
+            "transfer_bytes": 6796761,
+            "main_thread_ms": 8242.199999999553,
+            "initial_media_bytes": 0,
+            "performance_score": 32.0,
+            "accessibility_score": 89.0,
+            "seo_score": 85.0,
+            "theme_custom_js_ms": 172.216
+          },
+          "reported_main_thread_attribution_ms": {
+            "Signifyd": 3318.47,
+            "accessiBe": 495.89,
+            "Yotpo": 478.23,
+            "Theme custom.js": 172.22,
+            "Postscript": 150.79,
+            "Klaviyo": 285.33
+          },
+          "preview_video_asset_present": true
+        },
+        {
+          "capture": "final-2.json",
+          "captured_at": "2026-09-07T23:27:32.053Z",
+          "metrics": {
+            "lcp_ms": 30598.86135000001,
+            "fcp_ms": 14914.361570000001,
+            "tbt_ms": 979.5,
+            "cls": 0,
+            "transfer_bytes": 6688596,
+            "main_thread_ms": 7295.3879999996225,
+            "initial_media_bytes": 0,
+            "performance_score": 34.0,
+            "accessibility_score": 89.0,
+            "seo_score": 85.0,
+            "theme_custom_js_ms": 132.96399999999988
+          },
+          "reported_main_thread_attribution_ms": {
+            "Signifyd": 3121.78,
+            "accessiBe": 468.0,
+            "Yotpo": 328.75,
+            "Postscript": 158.36,
+            "Klaviyo": 305.24,
+            "Theme custom.js": 132.96
+          },
+          "preview_video_asset_present": true
+        },
+        {
+          "capture": "final-3.json",
+          "captured_at": "2026-09-07T23:27:56.545Z",
+          "metrics": {
+            "lcp_ms": 31600.5777,
+            "fcp_ms": 14206.67455,
+            "tbt_ms": 954.5615500000085,
+            "cls": 0,
+            "transfer_bytes": 6799614,
+            "main_thread_ms": 7065.699999999653,
+            "initial_media_bytes": 0,
+            "performance_score": 34.0,
+            "accessibility_score": 89.0,
+            "seo_score": 85.0,
+            "theme_custom_js_ms": 138.9239999999999
+          },
+          "reported_main_thread_attribution_ms": {
+            "Signifyd": 2868.84,
+            "accessiBe": 271.62,
+            "Postscript": 232.66,
+            "Yotpo": 258.24,
+            "Theme custom.js": 138.92,
+            "Klaviyo": 288.41
+          },
+          "preview_video_asset_present": true
+        }
+      ],
+      "median": {
+        "lcp_ms": 30598.86135000001,
+        "fcp_ms": 14206.67455,
+        "tbt_ms": 979.5,
+        "cls": 0,
+        "transfer_bytes": 6796761,
+        "main_thread_ms": 7295.3879999996225,
+        "initial_media_bytes": 0,
+        "performance_score": 34.0,
+        "accessibility_score": 89.0,
+        "seo_score": 85.0,
+        "theme_custom_js_ms": 138.9239999999999
+      }
+    },
+    "delivered_theme_without_concurrent_navigation": {
+      "runs": [
+        {
+          "capture": "quiet-1.json",
+          "captured_at": "2026-09-07T23:30:23.310Z",
+          "metrics": {
+            "lcp_ms": 4130.2718,
+            "fcp_ms": 2773.5184000000004,
+            "tbt_ms": 1054.4999999999964,
+            "cls": 0.00022379682107377777,
+            "transfer_bytes": 6834004,
+            "main_thread_ms": 8282.81999999961,
+            "initial_media_bytes": 0,
+            "performance_score": 50.0,
+            "accessibility_score": 89.0,
+            "seo_score": 85.0,
+            "theme_custom_js_ms": 132.732
+          },
+          "reported_main_thread_attribution_ms": {
+            "Signifyd": 3445.04,
+            "accessiBe": 264.94,
+            "Postscript": 234.78,
+            "Yotpo": 218.68,
+            "Klaviyo": 353.72,
+            "Theme custom.js": 132.73
+          },
+          "preview_video_asset_present": true
+        },
+        {
+          "capture": "quiet-2.json",
+          "captured_at": "2026-09-07T23:31:18.485Z",
+          "metrics": {
+            "lcp_ms": 3530.1805,
+            "fcp_ms": 2674.8633999999997,
+            "tbt_ms": 1039.5,
+            "cls": 0.00011298713826012966,
+            "transfer_bytes": 6857371,
+            "main_thread_ms": 8006.463999999572,
+            "initial_media_bytes": 0,
+            "performance_score": 55.00000000000001,
+            "accessibility_score": 89.0,
+            "seo_score": 85.0,
+            "theme_custom_js_ms": 121.27999999999992
+          },
+          "reported_main_thread_attribution_ms": {
+            "Signifyd": 3254.68,
+            "accessiBe": 244.22,
+            "Klaviyo": 407.27,
+            "Postscript": 190.54,
+            "Yotpo": 174.91,
+            "Theme custom.js": 121.28
+          },
+          "preview_video_asset_present": true
+        },
+        {
+          "capture": "quiet-3.json",
+          "captured_at": "2026-09-07T23:31:42.293Z",
+          "metrics": {
+            "lcp_ms": 4201.7982999999995,
+            "fcp_ms": 2699.6744,
+            "tbt_ms": 1109,
+            "cls": 0.00015251054914225686,
+            "transfer_bytes": 6840793,
+            "main_thread_ms": 7811.959999999658,
+            "initial_media_bytes": 0,
+            "performance_score": 50.0,
+            "accessibility_score": 89.0,
+            "seo_score": 85.0,
+            "theme_custom_js_ms": 105.33599999999996
+          },
+          "reported_main_thread_attribution_ms": {
+            "Signifyd": 3550.0,
+            "accessiBe": 235.03,
+            "Postscript": 209.06,
+            "Yotpo": 139.76,
+            "Klaviyo": 303.88,
+            "Theme custom.js": 105.34
+          },
+          "preview_video_asset_present": true
+        }
+      ],
+      "median": {
+        "lcp_ms": 4130.2718,
+        "fcp_ms": 2699.6744,
+        "tbt_ms": 1054.4999999999964,
+        "cls": 0.00015251054914225686,
+        "transfer_bytes": 6840793,
+        "main_thread_ms": 8006.463999999572,
+        "initial_media_bytes": 0,
+        "performance_score": 50.0,
+        "accessibility_score": 89.0,
+        "seo_score": 85.0,
+        "theme_custom_js_ms": 121.27999999999992
+      }
+    }
+  }
+}
