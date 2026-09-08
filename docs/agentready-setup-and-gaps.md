@@ -1,5 +1,8 @@
 # Agentready setup and SEO/AEO follow-up
 
+**Latest recheck, September 8 at 19:29 UTC:** anonymous staff/public product markdown endpoints now return 404 with no-store caching while output is off. Concierge Apply still fails with `unsupported_field`, and saved-attempt recovery returns to the welcome screen. Both output switches and the theme embed remain off. Onboarding and enabled-output visibility are not yet verified. See [current feedback](agentready-product-feedback.md) and [Wave 1 follow-up](wave-1-review-layout-2026-09-08.md). Earlier endpoint observations below describe the original defect.
+
+
 September 8, 2026. **Core trial active; safe configuration completed manually; full activation blocked by verified app defects.** The reviewed Concierge Apply failed twice. Brand settings and scoped content settings subsequently saved through the individual screens. The production theme was not changed. Agentready’s shared settings and curated app-served discovery index were updated. The app embed was tested only in development, then disabled after it emitted protected staff collection data. Both app render switches are now off.
 
 **Urgent remaining issue:** a staff product’s public app markdown URL still returns details even with both render switches off, the live embed off, Include Products unchecked and all 45 selectable product rows explicitly hidden. A final anonymous response at 12:08 UTC had `Age: 0`, so the finding was not simply an old browser preview. The available configuration has not resolved this. Agentready needs an endpoint-level exclusion/shutdown fix before full activation. No customer/order data was encountered.

@@ -13,7 +13,10 @@
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
-  {{ 'component-rating.css' | asset_url | stylesheet_tag }}
+  {%- assign native_rating_blocks = section.blocks | where: 'type', 'rating' -%}
+  {%- if native_rating_blocks.size > 0 and product.metafields.reviews.rating.value != blank -%}
+    {{ 'component-rating.css' | asset_url | stylesheet_tag }}
+  {%- endif -%}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
   {% unless product.has_only_default_variant %}
@@ -79,7 +82,7 @@
         {%- if section.blocks.size > 0 -%}
           <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} Product_template_detail_mainleft_new">
             <section
-              id="ProductInfo-{{ section.id }}"
+              id="ProductDetails-{{ section.id }}"
               class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %} Product_template_detail_mainleft_loops_new"
             >
               {%- assign product_form_id = 'product-form-' | append: section.id -%}
@@ -98,6 +101,7 @@
                   {%- when 'Review_new' -%}
                     <div class="Review_main_new" {{ block.shopify_attributes }}>
                       <div class="Card_product_review_new">
+                        <a class="halfday-review-fallback" href="#Reviews">{{ block.settings.fallback_label | escape }}</a>
                         <div class="yotpo bottomLine" data-product-id="{{ product.id }}"></div>
                       </div>
                     </div>
@@ -1218,7 +1222,15 @@
     {
       "type": "Review_new",
       "name": "Review New",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "fallback_label",
+          "label": "Link text while ratings are unavailable",
+          "default": "Reviews"
+        }
+      ]
     },
     {
       "type": "Title_new",

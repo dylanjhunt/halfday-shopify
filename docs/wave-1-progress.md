@@ -5,7 +5,7 @@
 - Live: theme **142757101768**, `halfday-shopify/main`, commit `2c8ff4f`; tag `baseline/live-wave-1-2026-09-08`.
 - Current branch: **`feature/wave-1-follow-through`**. Never push this work to main without release authorization.
 - Development theme: **142755430600**, Development (deb269-MacBook-Pro-4).
-- [Development preview](https://drinkhalfday.com/?preview_theme_id=142755430600) · [Latest follow-through report](wave-1-follow-through-2026-09-08.md).
+- [Development preview](https://drinkhalfday.com/?preview_theme_id=142755430600) · [Latest review-layout and Agentready report](wave-1-review-layout-2026-09-08.md).
 - Fresh live and pre-edit development pulls each matched all 455 published theme files. No merchant drift needed merging.
 - Dylan confirmed all customer ordering redirects to Amazon. Authenticated staff/sample checkout is no longer a release gate; retain its existing code and Locksmith controls.
 - **This follow-through makes no production or shared app/store-data changes.** Agentready activation remains pending verification after the app fixes are ready.
@@ -220,3 +220,12 @@ With Dylan's approval, inspected all 66 products and switched 39 obsolete `shogu
 Dylan published `halfday-shopify/main`; Shopify CLI confirms its live role and a fresh pull matches all 455 files at `2c8ff4f`. Created the immutable published baseline tag and moved follow-through onto `feature/wave-1-follow-through`, with no upstream to main. Updated shared Claude guidance, README, the roadmap and regression comparisons for the live-main workflow.
 
 The [follow-through report](wave-1-follow-through-2026-09-08.md) records the additional gallery video deferral, responsive collection banner and single-H1 cleanup, browser checks, exact remote file verification and performance limits. All new theme edits are in development theme `142755430600`. Main remains unchanged. Outstanding catalog, app, Agentready and editorial dependencies remain visible in the roadmap.
+
+
+## September 8: review layout and Agentready recovery
+
+Completed a further three-file theme pass on `feature/wave-1-follow-through`: reserved the product rating slot with an editable Reviews fallback, separated Dawn/Yotpo star styles and conditional native-rating CSS, and made the gallery skip-link target unique. No JavaScript changed. Rated-product title geometry is retained at 390px/1440px; the zero-review fallback reaches the review section by keyboard.
+
+Two fresh mobile preview runs recorded CLS **0.000153 / 0.001416** and LCP **4.86s / 5.26s**. No reliable LCP gain is claimed. Fifteen regression routes preserve links/loaders/settings, Theme Check has zero added offenses (122 inherited errors / 391 warnings), and final remote files match local code.
+
+Agentready output-off endpoint blocking now passes the staff and public-product checks. A reviewed 34-proposal setup Apply still failed with `unsupported_field`; recovery returned to the welcome screen. Embed and output switches remain off. The app report includes the error, recovery behavior, conflicting plan labels and ineffective embedded CTA. [Details and evidence](wave-1-review-layout-2026-09-08.md).

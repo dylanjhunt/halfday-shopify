@@ -1,5 +1,17 @@
 # Agentready implementation and UX findings
 
+## September 8, 19:29 UTC: recheck after app updates
+
+- **AR-00 mitigation improved:** the previously exposed staff markdown URL and a public Lemon Tea control both return 404 with `private, no-store`. Both app output switches and the embed are off. This confirms the output-off endpoint behavior is repaired in this configuration. Protected exclusions with output enabled remain unverified; do not close the entire visibility issue yet.
+- **Concierge Apply still fails:** re-reviewed the saved 34 proposals (7 brand, 2 policy, 25 page types) and made one Apply attempt. It returned “Apply was not confirmed” with `Reason: unsupported_field`. No durable Shopify write was confirmed. Show the rejected field/path and a per-change result, validate field support before enabling Apply, and migrate older saved plan payloads when field names change. Keep successful and failed writes distinguishable.
+- **Recovery loses the attempt view:** “Reload saved attempt” returned to the welcome screen with “Analyze my store,” rather than a saved-attempt status or the reviewed plan. Preserve the run/attempt identifier, show its durable result and offer a direct return to the reviewed proposals. Do not imply a fresh scan is required to recover.
+- **Plan state disagrees:** embedded Shopify overview says Growth; standalone says Core trial and locks Schema issues as requiring Growth. Read one canonical entitlement state and label any store/account distinction explicitly.
+- **Embedded primary CTA:** “Review my setup plan” produced no visible navigation or new tab. The existing standalone Concierge tab provided a workaround. Use a reliable embedded navigation/deep link and expose a fallback link if a new window cannot open.
+- **Priority relevance remains weak:** the embedded overview still leads a tea store with “category, color_family, material.” Filter merchant-facing priorities to the approved public beverage catalog and show the affected records and why each attribute matters before presenting it as the most important next step.
+
+Go live was checked after the failed attempt and still showed Embed off / Output off. No output activation, rescan, app plan change or repeated Apply was performed. [Minimal evidence](../reports/agentready-visibility-recheck-2026-09-08.json). Earlier findings below are retained as history and remain open unless superseded above.
+
+
 Observed September 8, 2026 while setting up Halfday, a Shopify brand site whose public product CTAs direct shoppers to Amazon. Core trial active. This is a working report, updated during implementation. Findings describe observed behavior, not inferred backend causes. No report has been sent externally.
 
 ## Highest priority
