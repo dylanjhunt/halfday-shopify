@@ -229,3 +229,16 @@ Completed a further three-file theme pass on `feature/wave-1-follow-through`: re
 Two fresh mobile preview runs recorded CLS **0.000153 / 0.001416** and LCP **4.86s / 5.26s**. No reliable LCP gain is claimed. Fifteen regression routes preserve links/loaders/settings, Theme Check has zero added offenses (122 inherited errors / 391 warnings), and final remote files match local code.
 
 Agentready output-off endpoint blocking now passes the staff and public-product checks. A reviewed 34-proposal setup Apply still failed with `unsupported_field`; recovery returned to the welcome screen. Embed and output switches remain off. The app report includes the error, recovery behavior, conflicting plan labels and ineffective embedded CTA. [Details and evidence](wave-1-review-layout-2026-09-08.md).
+
+
+## September 8: combined tablet and LCP work ready for review
+
+Continued on **`djh/wave-1-responsive-follow-up`** and Shopify CLI development theme **142755430600**. [Combined completion and remaining-dependency report](wave-1-lcp-completion-2026-09-08.md).
+
+- Deferred collection promotional video using the existing component. Initial Shop All media transfer is now zero in three lab runs; total transfer median fell **19.75 → 6.07 MB**, with LCP median **4.18 → 3.53s**.
+- Sized contained product images and card hover images correctly. The sampled leading Lemon image fell from **155.5 → 65 KB**. Lemon LCP samples are **3.83 / 4.15 / 10.44s**, so consistent product LCP improvement is not established. Homepage median is effectively unchanged. Both Adobe-font experiments were reverted; all samples remain in the evidence.
+- Removed unused drawer card CSS for the current configuration, deferred quantity styles, repaired gallery/list semantics, improved announcement contrast, corrected collection card heading levels and removed a verified empty article H1. The tablet flavor-label refinement remains intact.
+- Fifteen live/preview routes preserve Amazon attribution URLs, Klaviyo embeds, external loaders, forms, protected code and settings. All 71 sitemap URLs pass the technical checks after three rate-limited requests passed a sequential retry. Relevant desktop/mobile geometry and keyboard/media interactions pass. No purchases or subscriptions were submitted.
+- Theme Check: **122 inherited errors / 388 warnings**, no added offenses. Motion lifecycle, JavaScript syntax and whitespace checks pass. Fresh CLI downloads match all **455 development files** to local and all **455 live files** to main `a99ed7f`.
+
+This is development work prepared for a combined merge, not a production deployment. Catalog facts, campaign/editorial decisions, app ownership/scoping and Agentready fixes remain the Wave 1 dependencies. Broader brand-contrast choices and app-owned accessibility findings are documented. Klaviyo activation remains Wave 2; GA/Ads deferred and GTM excluded.

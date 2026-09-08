@@ -13,6 +13,8 @@ Halfday's customized Dawn 15.2.0 theme, downloaded from the active theme on Sept
 
 Start with the [focused performance, app, Klaviyo and SEO audit](docs/focused-audit-2026-09-07.md) for verified findings from 15 performance runs, 71 public pages and authenticated account inspection. The [modernization roadmap](docs/modernization-roadmap.md) is the single delivery plan for CRO, speed/LCP, app cleanup, content, email/search, integrations, and reviews, including estimates and an email draft for Leslie. The [initial store audit](docs/initial-audit-2026-09-07.md) and [Klaviyo account audit](docs/klaviyo-audit-2026-09-07.md) remain supporting snapshots. Evidence is in `reports/`. Dylan published `halfday-shopify/main` (theme `142757101768`) on September 8, 2026. **GitHub main is live: pushing to main deploys to production.** The latest released baseline is `baseline/live-wave-1-follow-through-2026-09-08` (`a99ed7f`); `dev/wave-1` retains the first implementation history. See the [progress checklist and preview](docs/wave-1-progress.md) for changes, validation and outstanding decisions. Further Wave 1 work stays on `djh/wave-1-responsive-follow-up` and development theme `142755430600`. Agentready shared settings have been configured; full activation is blocked by [verified app issues](docs/agentready-product-feedback.md).
 
+Latest development checkpoint: [combined tablet, LCP and Wave 1 readiness report](docs/wave-1-lcp-completion-2026-09-08.md). The named development branch is ready for combined review; main is unchanged.
+
 ## Daily development
 
 ```sh

@@ -1,0 +1,1102 @@
+{
+  "captured_at": "2026-09-08T20:37:55.480238+00:00",
+  "theme_id": 142755430600,
+  "method": "Fresh public sitemap discovery; separate anonymous development-preview cookie jar per URL. No page bodies or customer data retained; no forms submitted.",
+  "limits": "Technical HTML checks, not search indexing, ranking, AEO traffic or editorial claim approval. Utility URLs may intentionally be noindex or access controlled.",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/",
+      "robots": [],
+      "h1": [
+        "A new era of iced tea"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news",
+      "status": 200,
+      "preview_verified": true,
+      "title": "News\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news",
+      "robots": [],
+      "h1": [
+        "News"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/10-non-carbonated-drinks-for-a-healthier-you-hydration-and-beyond",
+      "status": 200,
+      "preview_verified": true,
+      "title": "10 Non-Carbonated Drinks for a Healthier You: Hydration and Beyond\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/10-non-carbonated-drinks-for-a-healthier-you-hydration-and-beyond",
+      "robots": [],
+      "h1": [
+        "10 Non-Carbonated Drinks for a Healthier You: Hydration and Beyond"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/4-healthy-iced-tea-recipes-for-a-refreshing-summer-drink",
+      "status": 200,
+      "preview_verified": true,
+      "title": "4 Healthy Iced Tea Recipes for a Refreshing Summer Drink\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/4-healthy-iced-tea-recipes-for-a-refreshing-summer-drink",
+      "robots": [],
+      "h1": [
+        "4 Healthy Iced Tea Recipes for a Refreshing Summer Drink"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/8-best-fiber-cereals-to-keep-you-healthy",
+      "status": 200,
+      "preview_verified": true,
+      "title": "8 Best Fiber Cereals To Keep You Healthy\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/8-best-fiber-cereals-to-keep-you-healthy",
+      "robots": [],
+      "h1": [
+        "8 Best Fiber Cereals To Keep You Healthy"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/beat-bloating-what-is-apple-cider-vinegar-good-for",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Beat Bloating: What is Apple Cider Vinegar Good For?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/beat-bloating-what-is-apple-cider-vinegar-good-for",
+      "robots": [],
+      "h1": [
+        "Beat Bloating: What is Apple Cider Vinegar Good For?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/benefits-of-adding-a-high-fiber-smoothie-to-your-diet-and-recipe-ingredients",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Benefits of Adding a High Fiber Smoothie to Your Diet and Recipe Ingre\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/benefits-of-adding-a-high-fiber-smoothie-to-your-diet-and-recipe-ingredients",
+      "robots": [],
+      "h1": [
+        "Benefits of Adding a High Fiber Smoothie to Your Diet and Recipe Ingredients"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/benefits-of-cinnamon-tea",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Benefits of Cinnamon Tea\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/benefits-of-cinnamon-tea",
+      "robots": [],
+      "h1": [
+        "Benefits of Cinnamon Tea"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/best-supplements-for-bloating",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Best Supplements for Bloating\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/best-supplements-for-bloating",
+      "robots": [],
+      "h1": [
+        "Best Supplements for Bloating"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/best-tea-for-bloating",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Best Tea for Bloating\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/best-tea-for-bloating",
+      "robots": [],
+      "h1": [
+        "Best Tea for Bloating"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/best-time-to-drink-kombucha-find-out-the-truth",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Best Time to Drink Kombucha - Find Out the Truth!\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/best-time-to-drink-kombucha-find-out-the-truth",
+      "robots": [],
+      "h1": [
+        "Best Time to Drink Kombucha - Find Out the Truth!"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/does-snapple-have-caffeine",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Does Snapple Have Caffeine?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/does-snapple-have-caffeine",
+      "robots": [],
+      "h1": [
+        "Does Snapple Have Caffeine?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/ginseng-what-does-it-taste-like",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Ginseng: What Does it Taste Like?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/ginseng-what-does-it-taste-like",
+      "robots": [],
+      "h1": [
+        "Ginseng: What Does it Taste Like?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/history-of-the-arnold-palmer-and-alternatives-for-a-gut-friendly-diet",
+      "status": 200,
+      "preview_verified": true,
+      "title": "History of the Arnold Palmer and Alternatives for a Gut-Friendly Diet\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/history-of-the-arnold-palmer-and-alternatives-for-a-gut-friendly-diet",
+      "robots": [],
+      "h1": [
+        "History of the Arnold Palmer and Alternatives for a Gut-Friendly Diet"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/inulin-sweetener-what-is-it-and-how-do-you-use-it",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Inulin Sweetener: What Is It, and How Do You Use It?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/inulin-sweetener-what-is-it-and-how-do-you-use-it",
+      "robots": [],
+      "h1": [
+        "Inulin Sweetener: What Is It, and How Do You Use It?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/is-arizona-green-tea-good-for-you-spoiler-alert-the-answer-is-no",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Is Arizona Green Tea Good For You? Spoiler Alert: The Answer is No\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/is-arizona-green-tea-good-for-you-spoiler-alert-the-answer-is-no",
+      "robots": [],
+      "h1": [
+        "Is Arizona Green Tea Good For You? Spoiler Alert: The Answer is No"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/is-brisk-iced-tea-healthy-spoiler-alert-its-not",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Is Brisk Iced Tea Healthy? Spoiler Alert: It's Not\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/is-brisk-iced-tea-healthy-spoiler-alert-its-not",
+      "robots": [],
+      "h1": [
+        "Is Brisk Iced Tea Healthy? Spoiler Alert: It's Not"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/is-snapple-healthy",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Is Snapple Healthy?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/is-snapple-healthy",
+      "robots": [],
+      "h1": [
+        "Is Snapple Healthy?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/is-there-fiber-in-coffee-yes",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Is there Fiber in Coffee?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/is-there-fiber-in-coffee-yes",
+      "robots": [],
+      "h1": [
+        "Is there Fiber in Coffee?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/kombucha-101-what-does-kombucha-taste-like",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Kombucha 101: What Does Kombucha Taste Like?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/kombucha-101-what-does-kombucha-taste-like",
+      "robots": [],
+      "h1": [
+        "Kombucha 101: What Does Kombucha Taste Like?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/kombucha-101-what-does-kombucha-taste-like-1",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Kombucha 101: What Does Kombucha Taste Like?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/kombucha-101-what-does-kombucha-taste-like-1",
+      "robots": [],
+      "h1": [
+        "Kombucha 101: What Does Kombucha Taste Like?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/kombucha-when-is-the-best-time-to-drink-it",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Kombucha: When Is the Best Time to Drink it?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/kombucha-when-is-the-best-time-to-drink-it",
+      "robots": [],
+      "h1": [
+        "Kombucha: When Is the Best Time to Drink it?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/natural-herbs-to-curb-sugar-cravings-and-keep-your-gut-in-check",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Natural Herbs to Curb Sugar Cravings and Keep Your Gut in Check\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/natural-herbs-to-curb-sugar-cravings-and-keep-your-gut-in-check",
+      "robots": [],
+      "h1": [
+        "Natural Herbs to Curb Sugar Cravings and Keep Your Gut in Check"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/prebiotics-and-probiotics-whats-the-difference",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Prebiotics and Probiotics: What's the Difference?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/prebiotics-and-probiotics-whats-the-difference",
+      "robots": [],
+      "h1": [
+        "Prebiotics and Probiotics: What's the Difference?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/premade-long-island-iced-tea-with-less-bloating",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Premade Long Island Iced Tea With Less Bloating\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/premade-long-island-iced-tea-with-less-bloating",
+      "robots": [],
+      "h1": [
+        "Premade Long Island Iced Tea With Less Bloating"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/the-best-probiotics-for-bloating-which-ones-to-choose-and-how-to-use-them",
+      "status": 200,
+      "preview_verified": true,
+      "title": "The Best Probiotics for Bloating: Which Ones to Choose and How to Use \n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/the-best-probiotics-for-bloating-which-ones-to-choose-and-how-to-use-them",
+      "robots": [],
+      "h1": [
+        "The Best Probiotics for Bloating: Which Ones to Choose and How to Use Them"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/top-11-drinks-that-help-with-bloating-find-relief-today",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Top 11 Drinks That Help With Bloating: Find Relief Today\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/top-11-drinks-that-help-with-bloating-find-relief-today",
+      "robots": [],
+      "h1": [
+        "Top 11 Drinks That Help With Bloating: Find Relief Today"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/ulcerative-colitis-and-gut-health",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Ulcerative Colitis and Gut Health\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/ulcerative-colitis-and-gut-health",
+      "robots": [],
+      "h1": [
+        "Ulcerative Colitis and Gut Health"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/underrated-weight-loss-tips",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Underrated Weight Loss Tips\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/underrated-weight-loss-tips",
+      "robots": [],
+      "h1": [
+        "Underrated Weight Loss Tips"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/what-is-mio-and-what-are-the-side-effects",
+      "status": 200,
+      "preview_verified": true,
+      "title": "What is Mio and What are the Side Effects?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/what-is-mio-and-what-are-the-side-effects",
+      "robots": [],
+      "h1": [
+        "What is Mio and What are the Side Effects?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/when-can-i-drink-soda-after-tooth-extraction-1",
+      "status": 200,
+      "preview_verified": true,
+      "title": "When Can I Drink Soda After Tooth Extraction?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/when-can-i-drink-soda-after-tooth-extraction-1",
+      "robots": [],
+      "h1": [
+        "When Can I Drink Soda After Tooth Extraction?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/white-green-tea-shot-vs-green-tea-shot-which-is-the-better-choice",
+      "status": 200,
+      "preview_verified": true,
+      "title": "White Green Tea Shot vs. Green Tea Shot: Which Is The Better Choice?\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/white-green-tea-shot-vs-green-tea-shot-which-is-the-better-choice",
+      "robots": [],
+      "h1": [
+        "White Green Tea Shot vs. Green Tea Shot: Which Is The Better Choice?"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/white-green-tea-shot-vs-green-tea-shots",
+      "status": 200,
+      "preview_verified": true,
+      "title": "White Green Tea Shot vs. Green Tea Shots\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/white-green-tea-shot-vs-green-tea-shots",
+      "robots": [],
+      "h1": [
+        "White Green Tea Shot vs. Green Tea Shots"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/blogs/news/white-tea-shot-recipes",
+      "status": 200,
+      "preview_verified": true,
+      "title": "White Tea Shot Recipes\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/blogs/news/white-tea-shot-recipes",
+      "robots": [],
+      "h1": [
+        "White Tea Shot Recipes"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/collections/flavours-new-2-0",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Flavours New 2.0\n \u2013 Halfday Iced Tea",
+      "description_present": false,
+      "canonical": "https://drinkhalfday.com/collections/flavours-new-2-0",
+      "robots": [
+        "noindex,follow"
+      ],
+      "h1": [
+        "Flavours New 2.0\n                    Flavours New 2.0"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/collections/frontpage",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Home page\n \u2013 Halfday Iced Tea",
+      "description_present": false,
+      "canonical": "https://drinkhalfday.com/collections/frontpage",
+      "robots": [
+        "noindex,follow"
+      ],
+      "h1": [
+        "Go with your gut\n                    Go with your gut"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/collections/half-half",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Half & Half\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/collections/half-half",
+      "robots": [],
+      "h1": [
+        "Go with your gut\n                    Go with your gut"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/collections/iced-teas",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Iced Teas\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/collections/iced-teas",
+      "robots": [],
+      "h1": [
+        "Go with your gut\n                    Go with your gut"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/collections/menu",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Menu\n \u2013 Halfday Iced Tea",
+      "description_present": false,
+      "canonical": "https://drinkhalfday.com/collections/menu",
+      "robots": [
+        "noindex,follow"
+      ],
+      "h1": [
+        "Go with your gut\n                    Go with your gut"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/collections/menu-duplicate",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Menu - USE THIS ONE\n \u2013 Halfday Iced Tea",
+      "description_present": false,
+      "canonical": "https://drinkhalfday.com/collections/menu-duplicate",
+      "robots": [
+        "noindex,follow"
+      ],
+      "h1": [
+        "Go with your gut\n                    Go with your gut"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/collections/shop-all",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Shop All\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/collections/shop-all",
+      "robots": [],
+      "h1": [
+        "Go with your gut\n                    Go with your gut"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/collections/staff-variety-packs",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Staff Variety Packs\n \u2013 Halfday Iced Tea",
+      "description_present": false,
+      "canonical": "https://drinkhalfday.com/collections/staff-variety-packs",
+      "robots": [
+        "noindex,follow"
+      ],
+      "h1": [
+        "Go with your gut\n                    Go with your gut"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/collections/variety-packs",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Variety Packs\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/collections/variety-packs",
+      "robots": [],
+      "h1": [
+        "Go with your gut\n                    Go with your gut"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/collections/zb252lh3pgnv3b",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Staff All Flavors\n \u2013 Halfday Iced Tea",
+      "description_present": false,
+      "canonical": "https://drinkhalfday.com/collections/zb252lh3pgnv3b",
+      "robots": [
+        "noindex,follow"
+      ],
+      "h1": [
+        "Go with your gut\n                    Go with your gut"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/pages/contact",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Contact\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/pages/contact",
+      "robots": [],
+      "h1": [
+        "Drop us a line"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/pages/faq",
+      "status": 200,
+      "preview_verified": true,
+      "title": "FAQ\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/pages/faq",
+      "robots": [],
+      "h1": [
+        "FAQ"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/pages/find-in-store",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Find In Store\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/pages/find-in-store",
+      "robots": [],
+      "h1": [
+        "Find us in store"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/pages/hellofresh",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Giveaway\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/pages/hellofresh",
+      "robots": [],
+      "h1": [],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/pages/our-story",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Our Story\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/pages/our-story",
+      "robots": [],
+      "h1": [
+        "Our story starts with\u2028two best friends..."
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/pages/popup-testing",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Popup testing\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/pages/popup-testing",
+      "robots": [
+        "noindex,follow"
+      ],
+      "h1": [
+        "Popup testing"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/pages/privacy-policy",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Privacy Policy\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/pages/privacy-policy",
+      "robots": [],
+      "h1": [
+        "Privacy Policy"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/pages/pto",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Halfday PTO PSA\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/pages/pto",
+      "robots": [],
+      "h1": [
+        "You should take a half day on us"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/pages/subscribe",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Subscribe\n \u2013 Halfday Iced Tea",
+      "description_present": false,
+      "canonical": "https://drinkhalfday.com/pages/subscribe",
+      "robots": [],
+      "h1": [],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/pages/terms-of-service",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Terms of Service\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/pages/terms-of-service",
+      "robots": [],
+      "h1": [
+        "Terms of Service"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/pages/terms-of-service-pto",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Terms of Service PTO\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/pages/terms-of-service-pto",
+      "robots": [],
+      "h1": [
+        "Terms of Service PTO"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/pages/why-halfday",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Why Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/pages/why-halfday",
+      "robots": [],
+      "h1": [
+        "A classic, remade better"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/classic-half-half",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Classic\u2028Half & Half | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/classic-half-half",
+      "robots": [],
+      "h1": [
+        "Classic Half & Half"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/classic-variety",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Classic Variety | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/classic-variety",
+      "robots": [],
+      "h1": [
+        "Classic Variety"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/fan-favorites",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Fan Favorites | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/fan-favorites",
+      "robots": [],
+      "h1": [
+        "Fan Favorites"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/fruity-variety",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Fruity Variety | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/fruity-variety",
+      "robots": [],
+      "h1": [
+        "Fruity Variety"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/green-tea",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Green Tea | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/green-tea",
+      "robots": [],
+      "h1": [
+        "Green Tea"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/lemon-tea",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Lemon Tea | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/lemon-tea",
+      "robots": [],
+      "h1": [
+        "Lemon Tea"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/peach-lemon",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Peach & Lemon | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/peach-lemon",
+      "robots": [],
+      "h1": [
+        "Peach & Lemon"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/peach-tea",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Peach Tea | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/peach-tea",
+      "robots": [],
+      "h1": [
+        "Peach Tea"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/raspberry-tea",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Raspberry Tea | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/raspberry-tea",
+      "robots": [],
+      "h1": [
+        "Raspberry Tea"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/refresher-variety",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Refresher Variety | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/refresher-variety",
+      "robots": [],
+      "h1": [
+        "Refresher Variety"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/southern-variety",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Southern Variety | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/southern-variety",
+      "robots": [],
+      "h1": [
+        "Southern Variety"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/strawberry-half-half-slim-can",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Strawberry Half & Half (Slim Can)\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/strawberry-half-half-slim-can",
+      "robots": [],
+      "h1": [
+        "Strawberry Half & Half (Slim Can)"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/sweet-tea",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Sweet Tea | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/sweet-tea",
+      "robots": [],
+      "h1": [
+        "Sweet Tea"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/tropical-tea",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Tropical Tea | Prebiotic Iced Tea | Halfday\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/tropical-tea",
+      "robots": [],
+      "h1": [
+        "Tropical Tea"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    },
+    {
+      "path": "/products/watermelon-half-half",
+      "status": 200,
+      "preview_verified": true,
+      "title": "Watermelon Half & Half\n \u2013 Halfday Iced Tea",
+      "description_present": true,
+      "canonical": "https://drinkhalfday.com/products/watermelon-half-half",
+      "robots": [],
+      "h1": [
+        "Watermelon Half & Half"
+      ],
+      "schema_parse_errors": 0,
+      "liquid_error": false,
+      "legacy_internal_links": []
+    }
+  ],
+  "retry_history": [
+    {
+      "at": "2026-09-08T20:40:01.277191+00:00",
+      "previous_failures": [
+        {
+          "path": "/products/sweet-tea",
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "path": "/products/tropical-tea",
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "path": "/products/watermelon-half-half",
+          "error": "HTTP Error 429: Too Many Requests"
+        }
+      ]
+    }
+  ]
+}

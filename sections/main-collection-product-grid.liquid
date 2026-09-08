@@ -179,6 +179,7 @@
                     {% endif %}
                   >
                     {% render 'card-product',
+                      heading_level: 'h2',
                       card_product: product,
                       media_aspect_ratio: section.settings.image_ratio,
                       image_shape: section.settings.image_shape,
@@ -202,7 +203,7 @@
                       data-hb-position-mob="{{ collection_grid_testimonials_selections.mobile_position }}"
                       class="hidden"
                       >
-                        <div class="grid__item Collection_template_innerdetails_loops_maincustom_new">
+                        <li class="grid__item Collection_template_innerdetails_loops_maincustom_new">
                           <div class="Collection_template_innerdetails_loops_innercustom_new">
                           {%- if collection_grid_testimonials_selections.main_custom_details_text.value != blank or collection_grid_testimonials_selections.main_custom_logo_image.value != blank or collection_grid_testimonials_selections.main_custom_author_text.value != blank -%}
                             <div class="Index_object_testimonials_innerloops_maindetail_new" style="background: {{ collection_grid_testimonials_selections.main_custom_background_color.value }};">
@@ -245,7 +246,7 @@
                             </div>
                           {%- endif -%}
                         </div>
-                        </div>
+                        </li>
                       </collection-grid-item>
                     {%- endif -%}
                   {%- endfor -%}
@@ -257,7 +258,7 @@
                       data-hb-position-desk="{{ collection_custom_grid_item_selections.desktop_position }}"
                       data-hb-position-mob="{{ collection_custom_grid_item_selections.mobile_position }}"
                       class="hidden">
-                      <div class="grid__item Collection_template_innerdetails_loops_mainbanner_new">
+                      <li class="grid__item Collection_template_innerdetails_loops_mainbanner_new">
                         <div class="Collection_template_innerdetails_loops_innerbanner_new">
                           {%- if collection_custom_grid_item_selections.main_common_banner_redirect_link.value != blank -%}
                             <a href="{{ collection_custom_grid_item_selections.main_common_banner_redirect_link.value }}">
@@ -266,22 +267,22 @@
                                 <div class="Collection_template_innerdetails_loops_innerbanner_imagevideo_new">
                                   {{
                                     collection_custom_grid_item_selections.main_common_banner_video_or_image.value | 
-                                    image_url: width: img.width | 
-                                    image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                    fetchpriority: 'high', 
+                                    image_url: width: 2048 |
+                                    image_tag: widths: '375, 550, 750, 1100, 1500, 2048', sizes: '100vw', loading: 'lazy',
+                                    fetchpriority: 'low',
                                     class: 'Static_image_new'
                                   }}
                                 </div>
                               {%- else -%}
                                 <div class="Collection_template_innerdetails_loops_innerbanner_imagevideo_new">
-                                  {{ collection_custom_grid_item_selections.main_common_banner_video_or_image.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                                  {% render 'halfday-video', video: collection_custom_grid_item_selections.main_common_banner_video_or_image.value, sizes: '100vw', poster_width: 2048, poster_widths: '375, 550, 750, 1100, 1500, 2048' %}
                                 </div>
                               {%- endif -%}
                           {%- if collection_custom_grid_item_selections.main_common_banner_redirect_link.value != blank -%}
                             </a>
                           {%- endif -%}
                         </div>
-                      </div>
+                      </li>
                         
                       </collection-grid-item>
                     {%- elsif collection_custom_grid_item_selections.main_desktop_video_or_image.value != blank and collection_custom_grid_item_selections.main_mobile_video_or_image.value != blank -%}
@@ -289,7 +290,7 @@
                       data-hb-position-desk="{{ collection_custom_grid_item_selections.desktop_position }}"
                       data-hb-position-mob="{{ collection_custom_grid_item_selections.mobile_position }}"
                       class="hidden">
-                      <div class="grid__item Collection_template_innerdetails_loops_mainblock_new">
+                      <li class="grid__item Collection_template_innerdetails_loops_mainblock_new">
                         <div class="Collection_template_innerdetails_loops_innerbanner_new">
                         {%- if collection_custom_grid_item_selections.main_common_redirect_link.value != blank -%}
                           <a href="{{ collection_custom_grid_item_selections.main_common_redirect_link.value }}">
@@ -302,15 +303,15 @@
                                       <div class="Collection_template_innerdetails_loops_innerblock_innerstatic_imagevideo_new">
                                         {{
                                           collection_custom_grid_item_selections.main_desktop_video_or_image.value | 
-                                          image_url: width: img.width | 
-                                          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                          fetchpriority: 'low', 
+                                          image_url: width: 2048 |
+                                          image_tag: widths: '375, 550, 750, 1100, 1500, 2048', sizes: '100vw', loading: 'lazy',
+                                          fetchpriority: 'low',
                                           class: 'Static_image_new'
                                         }}
                                       </div>
                                     {%- else -%}
                                       <div class="Collection_template_innerdetails_loops_innerblock_innerstatic_imagevideo_new">
-                                        {{ collection_custom_grid_item_selections.main_desktop_video_or_image.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                                        {% render 'halfday-video', video: collection_custom_grid_item_selections.main_desktop_video_or_image.value, sizes: '(min-width: 750px) 50vw, 100vw', poster_width: 2048, poster_widths: '375, 550, 750, 1100, 1500, 2048' %}
                                       </div>
                                     {%- endif -%}
                                   </div>
@@ -323,15 +324,15 @@
                                       <div class="Collection_template_innerdetails_loops_innerblock_innerstatic_imagevideo_new">
                                         {{
                                           collection_custom_grid_item_selections.main_mobile_video_or_image.value | 
-                                          image_url: width: img.width | 
-                                          image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                          fetchpriority: 'low', 
+                                          image_url: width: 2048 |
+                                          image_tag: widths: '375, 550, 750, 1100, 1500, 2048', sizes: '100vw', loading: 'lazy',
+                                          fetchpriority: 'low',
                                           class: 'Static_image_new'
                                         }}
                                       </div>
                                     {%- else -%}
                                       <div class="Collection_template_innerdetails_loops_innerblock_innerstatic_imagevideo_new">
-                                        {{ collection_custom_grid_item_selections.main_mobile_video_or_image.value | video_tag: class:'Static_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                                        {% render 'halfday-video', video: collection_custom_grid_item_selections.main_mobile_video_or_image.value, sizes: '(min-width: 750px) 50vw, 100vw', poster_width: 2048, poster_widths: '375, 550, 750, 1100, 1500, 2048' %}
                                       </div>
                                     {%- endif -%}
                                   </div>
@@ -362,7 +363,7 @@
                           </a>
                         {%- endif -%}
                         </div>
-                      </div>
+                      </li>
                         
                       </collection-grid-item>
                     {%- endif -%}  

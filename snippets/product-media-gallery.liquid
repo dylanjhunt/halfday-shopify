@@ -56,13 +56,12 @@
     <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
       {{ 'accessibility.skip_to_product_info' | t }}
     </a>
-    <ul
+    <div
       id="Slider-Gallery-{{ section.id }}"
       class="product__media-list contains-media grid grid--peek list-unstyled slider swiper product_desktop_slider_new"
-      role="list"
     >
       <!-- slider--mobile -->
-      <div class="swiper-wrapper">
+      <ul class="swiper-wrapper list-unstyled" role="list">
         {%- if product.selected_or_first_available_variant.featured_media != null -%}
           {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
           <li
@@ -83,7 +82,8 @@
               media_width: media_width,
               media_fit: section.settings.media_fit,
               constrain_to_viewport: section.settings.constrain_to_viewport,
-              lazy_load: false
+              lazy_load: false,
+              halfday_gallery: halfday_gallery
             %}
           </li>
         {%- endif -%}
@@ -111,6 +111,14 @@
               data-media-id="{{ section.id }}-{{ media.id }}"
             >
               {%- liquid
+                assign gallery_cover = false
+                if media_count > 1
+                  if product.metafields.custom.variety_packs_product_full_lifestyle_image == true and forloop.index > 1
+                    assign gallery_cover = true
+                  elsif product.metafields.custom.variety_packs_product_full_lifestyle_image != true and forloop.index > 2
+                    assign gallery_cover = true
+                  endif
+                endif
                 assign media_position = media_position | default: 0 | plus: 1
                 assign lazy_load = false
                 if media_position > 1
@@ -129,12 +137,14 @@
                 media_width: media_width,
                 media_fit: section.settings.media_fit,
                 constrain_to_viewport: section.settings.constrain_to_viewport,
-                lazy_load: lazy_load
+                lazy_load: lazy_load,
+                halfday_gallery: halfday_gallery,
+                gallery_cover: gallery_cover
               %}
             </li>
           {%- endunless -%}
         {%- endfor -%}
-      </div>
+      </ul>
       <div class="swiper-button-prev">
         <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="27.91" cy="27.9974" r="20.91" fill="white"/>
@@ -149,7 +159,7 @@
           <path d="M37.9751 29.2251L16.9751 29.2251L16.9751 26.7751L37.9751 26.7752L37.9751 29.2251Z" fill="#004600"/>
         </svg>
       </div>
-    </ul>
+    </div>
     {% comment %}
     <div class="slider-buttons quick-add-hidden{% if hide_mobile_slider %} small-hide{% endif %}">
       <button

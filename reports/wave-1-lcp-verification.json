@@ -1,0 +1,62 @@
+{
+  "captured_at": "2026-09-08T20:38:59.181939+00:00",
+  "branch": "djh/wave-1-responsive-follow-up",
+  "live_commit": "a99ed7f313bcd686f975d998703665882f8d2ed5",
+  "live_files": 455,
+  "development_files": 455,
+  "live_differences_from_main": [],
+  "development_differences_from_local": [],
+  "theme_check": {
+    "baseline": {
+      "warning": 391,
+      "error": 122
+    },
+    "final": {
+      "warning": 388,
+      "error": 122
+    },
+    "added": [],
+    "removed": [
+      [
+        "sections/main-collection-product-grid.liquid",
+        "UndefinedObject",
+        "warning",
+        "Unknown object 'img' used."
+      ],
+      [
+        "sections/main-collection-product-grid.liquid",
+        "UndefinedObject",
+        "warning",
+        "Unknown object 'img' used."
+      ],
+      [
+        "sections/main-collection-product-grid.liquid",
+        "UndefinedObject",
+        "warning",
+        "Unknown object 'img' used."
+      ]
+    ]
+  },
+  "forms_equal_all_15_routes": true,
+  "browser_checks": {
+    "widths_px": [
+      390,
+      768,
+      1440
+    ],
+    "product_frame_geometry_preserved": true,
+    "no_horizontal_overflow": true,
+    "keyboard_gallery_play_and_leave_slide_pause": true,
+    "collection_mobile_promo_frame_px": [
+      350,
+      462
+    ],
+    "collection_mobile_video_initial_count": 0,
+    "collection_video_visible_play_and_offscreen_pause": true,
+    "hidden_breakpoint_video_not_loaded": true,
+    "collection_card_h2_font_px": 27.5,
+    "desktop_and_mobile_announcement_links_use_resolved_color": true,
+    "keyboard_green_tea_card_navigation": true,
+    "limits": "Representative browser checks, not exhaustive click coverage. Native staff checkout and downstream analytics receipt not exercised. No orders or signups submitted."
+  }
+}

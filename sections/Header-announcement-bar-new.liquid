@@ -1,5 +1,21 @@
 {%- if section.blocks.size > 0 -%}
-  <div class="Header_announcement_bar_main_new" style="background: {% if product.metafields.custom.product_announcement_back_color != blank %}{{ product.metafields.custom.product_announcement_back_color }}{% else %}{{ section.settings.main_background_color }}{% endif %}; color: {% if product.metafields.custom.product_announcement_text_color != blank %}{{ product.metafields.custom.product_announcement_text_color }}{% else %}{{ section.settings.main_information_color }}{% endif %};">
+  {%- liquid
+    assign announcement_background = product.metafields.custom.product_announcement_back_color.value | default: section.settings.main_background_color
+    assign announcement_text = product.metafields.custom.product_announcement_text_color.value | default: section.settings.main_information_color
+    assign announcement_contrast = announcement_background | color_contrast: announcement_text
+    if announcement_contrast < 4.5
+      assign green_contrast = announcement_background | color_contrast: '#004600'
+      assign white_contrast = announcement_background | color_contrast: '#ffffff'
+      if green_contrast >= 4.5
+        assign announcement_text = '#004600'
+      elsif white_contrast >= 4.5
+        assign announcement_text = '#ffffff'
+      else
+        assign announcement_text = '#000000'
+      endif
+    endif
+  -%}
+  <div class="Header_announcement_bar_main_new" style="background: {{ announcement_background }}; color: {{ announcement_text }};">
     <div class="page-width">
       <div class="Header_announcement_bar_inner_new">
         {%- if section.blocks.size > 0 -%}

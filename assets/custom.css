@@ -200,7 +200,7 @@ details[open]>.header__menu-item svg path{ stroke:#FF5528; }
 .Header_announcement_bar_innerdesktop_slider .Header_announcement_bar_innerdesktop_mainboxs_new.swiper-slide-active .Header_announcement_bar_innerdesktop_innerboxs_new{ opacity:1; }
 .Header_announcement_bar_innerdesktop_innerboxs_new{ color:inherit; text-align:center; font-size:14px; line-height:19px; letter-spacing:0.28px; text-transform:uppercase; margin:0px; font-family:var(--font-museo-slab-family); font-weight:800; }
 .Header_announcement_bar_innerdesktop_innerboxs_new p {margin:0; color:inherit; }
-.Header_announcement_bar_innerdesktop_innerboxs_new a{color:#ffffff !important;text-decoration:none;}
+.Header_announcement_bar_innerdesktop_innerboxs_new a{color:inherit !important;text-decoration:none;}
 .Header_announcement_bar_innermobile_innerboxs_new a {color: inherit; text-decoration: none;}
 
 .Index_top_image_over_text_main_new{}
