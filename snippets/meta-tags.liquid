@@ -29,28 +29,23 @@
   {%- comment %}original: <meta property="og:description" content="{{ og_description | escape }}">{%- endcomment %}
 {%- comment %}</locksmith:09a2>{% endcomment -%}
 
-{%- if page_image -%}
-  {% if request.page_type == 'product' and product.metafields.custom.product_custom_og_image != blank %}
-    {%- comment %}<locksmith:77f0>{% endcomment -%}
-      {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta property="og:image" content="https:{{ product.metafields.custom.product_custom_og_image.value | img_url:'master' }}">{% endif -%}
-      {%- comment %}original: <meta property="og:image" content="https:{{ product.metafields.custom.product_custom_og_image.value | img_url:'master' }}">{%- endcomment %}
-    {%- comment %}</locksmith:77f0>{% endcomment -%}
-    {%- comment %}<locksmith:8968>{% endcomment -%}
-      {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta property="og:image:secure_url" content="https:{{ product.metafields.custom.product_custom_og_image.value | img_url:'master' }}">{% endif -%}
-      {%- comment %}original: <meta property="og:image:secure_url" content="https:{{ product.metafields.custom.product_custom_og_image.value | img_url:'master' }}">{%- endcomment %}
-    {%- comment %}</locksmith:8968>{% endcomment -%}
-  {% else %}
-    {%- comment %}<locksmith:96d0>{% endcomment -%}
-      {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta property="og:image" content="http:{{ page_image | image_url }}">{% endif -%}
-      {%- comment %}original: <meta property="og:image" content="http:{{ page_image | image_url }}">{%- endcomment %}
-    {%- comment %}</locksmith:96d0>{% endcomment -%}
-    {%- comment %}<locksmith:5a43>{% endcomment -%}
-      {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta property="og:image:secure_url" content="https:{{ page_image | image_url }}">{% endif -%}
-      {%- comment %}original: <meta property="og:image:secure_url" content="https:{{ page_image | image_url }}">{%- endcomment %}
-    {%- comment %}</locksmith:5a43>{% endcomment -%}
-  {% endif %}
-  <meta property="og:image:width" content="{{ page_image.width }}">
-  <meta property="og:image:height" content="{{ page_image.height }}">
+{%- liquid
+  assign og_image = page_image
+  if request.page_type == 'product' and product.metafields.custom.product_custom_og_image != blank
+    assign og_image = product.metafields.custom.product_custom_og_image.value.preview_image | default: product.metafields.custom.product_custom_og_image.value
+  endif
+-%}
+{%- if og_image != blank -%}
+  {%- capture image_is_public -%}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{%- endcapture -%}
+  {%- if image_is_public == 'true' -%}
+    <meta property="og:image" content="https:{{ og_image | image_url | escape }}">
+    <meta property="og:image:secure_url" content="https:{{ og_image | image_url | escape }}">
+    <meta property="og:image:width" content="{{ og_image.width }}">
+    <meta property="og:image:height" content="{{ og_image.height }}">
+    {%- if og_image.alt != blank -%}
+      <meta property="og:image:alt" content="{{ og_image.alt | escape }}">
+    {%- endif -%}
+  {%- endif -%}
 {%- endif -%}
 
 {%- comment -%}Current product pages direct shoppers to retailers. Shopify prices do not describe those offers.{%- endcomment -%}

@@ -21,6 +21,8 @@
 5. Improve mobile/desktop flavor and format discovery, product information hierarchy, primary purchase CTAs, comparison content and accessibility while preserving Halfday's brand.
 6. Fix verified broken/internal links, search descriptions, product/organization schema, FAQ content and test/utility discovery. Retain useful blog content and queue claim review/consolidation decisions.
 
+**September 8 progress:** the secondary-page split-image cleanup, repeated/unused card stylesheet cleanup and HTTPS social-preview image/dimension fixes are complete on development. See the [Wave 1 checklist](wave-1-progress.md) for verification and remaining dependencies.
+
 **Acceptance:** reviewable development preview, documented before/after measurements, no new Theme Check offenses, verified public and protected buying paths, approved product content and an exact release diff. Keep unfinished content, app and access-dependent items visible on the checklist.
 
 ## Wave 2: Klaviyo cleanup and relaunch

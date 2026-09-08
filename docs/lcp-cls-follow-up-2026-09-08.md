@@ -40,9 +40,9 @@ In the slow homepage traces, the hero was downloaded substantially before it pai
 ## Remaining work, in order
 
 1. **Signifyd scoping:** its scripts remain a major measured CPU cost. Confirm vendor-supported profiling rules for public Amazon/retailer discovery pages while preserving genuine Shopify/staff checkout coverage. Earlier audit request-blocking tests identified an opportunity; they are not a supported production configuration or a guaranteed saving. Do not filter app scripts out of `content_for_header`.
-2. **Render-blocking dependencies:** review duplicated card/quick-order stylesheet inclusion and retain assets only for components that render. Adobe's font CSS/import chain and late Yotpo typography remain candidates for controlled testing. Preserve Halfday's brand fonts and avoid introducing font-swap shifts to improve a score.
+2. **Render-blocking dependencies:** card/quick-order stylesheet deduplication and conditional loading are complete in the subsequent quick-wins pass. Adobe's font CSS/import chain and late Yotpo typography remain candidates for controlled testing. Preserve Halfday's brand fonts and avoid introducing font-swap shifts to improve a score.
 3. **Review-widget space:** desktop Yotpo can add a rating row and move the product heading about 42px after hydration. Reserve a confirmed slot with an explicit zero-review behavior as part of review migration planning. This pass does not add empty space to every product or invent review counts.
-4. **Remaining secondary media:** continue the Contact/content split-image cleanup, ensuring only the breakpoint's visible image loads. Measure representative content pages in addition to the homepage.
+4. **Remaining secondary media:** Contact/content split-image cleanup is complete in the subsequent quick-wins pass. Browser checks confirm breakpoint source selection, retained frame dimensions and crop-aware sizing. Measure representative content pages after any approved release.
 5. **Release validation:** authenticated staff/sample ordering, agreed catalog/content decisions and exact merchant diff review are still required. Recheck real-user CWV after an approved production release; preview lab results cannot establish field improvement.
 
 ## Regression checks

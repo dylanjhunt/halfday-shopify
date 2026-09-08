@@ -13,7 +13,7 @@
   
 </style>
 
-{% if section.settings.heading_text != blank or section.settings.information_text != blank or section.settings.button_text != blank or section.settings.button_link != blank or section.settings.image != blank %}
+{% if section.settings.heading_text != blank or section.settings.information_text != blank or section.settings.button_text != blank or section.settings.button_link != blank or section.settings.image != blank or section.settings.image_mobile != blank %}
   <div class="Page_2_col_image_content_main Page_2_col_image_content_main_{{ section.id }} {{ section.settings.custom_class }}">
     <div class="page-width">
       <div class="Page_2_col_image_content_inner">
@@ -43,36 +43,59 @@
               </div>
             </div>
           {% endif %}
-          {% if section.settings.image != blank %}
+          {% assign content_image = section.settings.image | default: section.settings.image_mobile %}
+          {% if content_image != blank %}
+            {%- liquid
+              assign image_loading = 'lazy'
+              assign image_priority = 'auto'
+              if section.index == 1
+                assign image_loading = 'eager'
+                assign image_priority = 'high'
+              endif
+              assign desktop_image_vw = 58
+              if section.settings.square_image
+                assign desktop_image_vw = 52
+              endif
+              assign mobile_image = section.settings.image_mobile | default: content_image
+              assign mobile_cover_scale = mobile_image.aspect_ratio | divided_by: 0.8375 | at_least: 1
+              assign mobile_image_vw = mobile_cover_scale | times: 100
+              assign mobile_image_gutter = mobile_cover_scale | times: 40
+            -%}
+            {%- comment -%}Allow enough pixels for the existing mobile cover crop, including landscape fallback artwork.{%- endcomment -%}
+            {%- capture mobile_image_sizes -%}calc({{ mobile_image_vw }}vw - {{ mobile_image_gutter }}px){%- endcapture -%}
+            {%- capture image_sizes -%}(min-width: 750px) {{ desktop_image_vw }}vw, {{ mobile_image_sizes }}{%- endcapture -%}
             <div class="Page_2_col_image_content_rightmain">
               <div class="Page_2_col_image_content_rightinner">
-                <div class="Page_2_col_image_content_main_image small-hide">
-                  {{
-                    section.settings.image | 
-                    image_url: width: img.width | 
-                    image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                    fetchpriority: 'high'
-                  }}
+                <div class="Page_2_col_image_content_main_image">
+                  <picture>
+                    {%- if section.settings.image_mobile != blank -%}
+                      {%- assign mobile_widths = '360,540,750,1000' | split: ',' -%}
+                      {%- assign mobile_max_width = mobile_image.width | at_most: 1500 -%}
+                      {%- capture mobile_srcset -%}
+                        {%- for candidate in mobile_widths -%}
+                          {%- assign candidate_width = candidate | plus: 0 -%}
+                          {%- if candidate_width < mobile_max_width -%}
+                            {{ mobile_image | image_url: width: candidate_width }} {{ candidate_width }}w,
+                          {%- endif -%}
+                        {%- endfor -%}
+                        {{ mobile_image | image_url: width: mobile_max_width }} {{ mobile_max_width }}w
+                      {%- endcapture -%}
+                      <source
+                        media="(max-width: 749px)"
+                        srcset="{{ mobile_srcset | strip }}"
+                        sizes="{{ mobile_image_sizes }}"
+                        width="{{ section.settings.image_mobile.width }}"
+                        height="{{ section.settings.image_mobile.height }}"
+                      >
+                    {%- endif -%}
+                    {{ content_image | image_url: width: 2000 | image_tag:
+                      widths: '360, 540, 750, 1000, 1250, 1600, 2000',
+                      sizes: image_sizes,
+                      loading: image_loading,
+                      fetchpriority: image_priority
+                    }}
+                  </picture>
                 </div>
-                {% if section.settings.image_mobile != blank %}
-                  <div class="Page_2_col_image_content_main_image medium-hide large-up-hide">
-                    {{
-                      section.settings.image_mobile | 
-                      image_url: width: img.width | 
-                      image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                      fetchpriority: 'high'
-                    }}
-                  </div>
-                {% else %}
-                  <div class="Page_2_col_image_content_main_image medium-hide large-up-hide">
-                    {{
-                      section.settings.image | 
-                      image_url: width: img.width | 
-                      image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                      fetchpriority: 'high'
-                    }}
-                  </div>
-                {% endif %}
               </div>
             </div>
           {% endif %}
@@ -95,6 +118,7 @@
   /* .Page_2_col_image_content_main_information_text p { font-family: var(--font-museo-sans-family); } */
   .Page_2_col_image_content_main_image { aspect-ratio: 1.29729; }
   .Page_2_col_image_content_sides.square_image_parent_container .Page_2_col_image_content_main_image { aspect-ratio: 1.16215; }
+  .Page_2_col_image_content_main_image picture { display: block; width: 100%; height: 100%; }
   .Page_2_col_image_content_main_image img { width: 100%; height: 100% !important; display: block; object-fit: cover; border-radius: 12px; }
 
   @media (min-width: 1440px){

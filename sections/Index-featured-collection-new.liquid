@@ -54,6 +54,7 @@
           <div class="Index_featured_collection_innerloops_new">
             <div class="swiper Index_featured_collection_slider">
               <div class="swiper-wrapper">
+                {%- assign skip_card_styles = false -%}
                 {%- for product in section.settings.main_collection_select.products limit: section.settings.main_products_to_show -%}
                   {%- comment %}<locksmith:e51f>{% endcomment -%}
                     {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: section.settings.main_collection_select, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
@@ -62,6 +63,7 @@
                     {% render 'card-product',
                       card_product: product,
                       image_sizes: '256px',
+                      skip_styles: skip_card_styles,
                       media_aspect_ratio: section.settings.image_ratio,
                       image_shape: section.settings.image_shape,
                       show_secondary_image: section.settings.show_secondary_image,
@@ -70,6 +72,7 @@
                       section_id: section.id,
                       quick_add: section.settings.quick_add
                     %}
+                    {%- assign skip_card_styles = true -%}
                   </div>
                 {%- endfor -%}
               </div>

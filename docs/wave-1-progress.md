@@ -1,6 +1,6 @@
 # Wave 1 progress
 
-**Status: in progress, product-header CLS and responsive-image fixes available in development. September 8, 2026.**
+**Status: in progress. Secondary-page images, card stylesheets and social-preview metadata are complete in development. September 8, 2026.**
 
 - Branch: `dev/wave-1`.
 - Development theme: `142755430600`, Development (deb269-MacBook-Pro-4).
@@ -127,7 +127,7 @@ The curated native AI guide is implemented on development at `/agents.md`, `/llm
 | Slim cans | Confirm 45 versus 40 calories, tea ingredients, caffeine, approved images and the sample-only/access restrictions before making products publicly discoverable. Fix display-title/content fields after those decisions. |
 | CRO/content hierarchy | Finish format discovery, product comparisons and primary CTA placement using the approved catalog. Current public product CTAs and gallery behavior are preserved. |
 | Apps | Review Signifyd scoping with its owner; settle Postscript/Klaviyo SMS ownership; decide whether accessiBe remains needed. Shared app settings affect production and are not isolated by this preview. No speculative uninstall. |
-| Further speed work | Animation/polling and brand-font preload cleanup are complete. The story/Why Halfday can strips now use sized images with appropriate priorities. LCP remains variable; isolate app costs in a supported staging setup, review remaining secondary-page imagery and repeat production measurements after any approved release. |
+| Further speed work | Animation/polling and brand-font preload cleanup are complete. The story/Why Halfday can strips now use sized images with appropriate priorities. LCP remains variable; isolate app costs in a supported staging setup, Contact/content split-image cleanup is complete; repeat production measurements after any approved release. |
 | SEO/content | Homepage/FAQ headings and key link names are improved. Review remaining page titles/headings/alt text; confirm Subscribe page purpose; review nutrition/caffeine and old health claims. Choose retired Cranberry and overlapping blog destinations using content/Search Console evidence when available. |
 | Store-data cleanup | After preview approval, decide whether to migrate theme-level article fixes into source content and add redirects. Noindex does not remove retained utility URLs from Shopify's sitemap. |
 | Release QA | Owner walkthrough of authenticated staff/sample buying, desktop/mobile content review, reduced-motion setting check, and final production comparison/merchant-diff refresh. |
@@ -161,7 +161,7 @@ Development theme **142755430600**, branch `dev/wave-1`. Refreshed the live them
 
 1. Recheck Agentready endpoint visibility, exclusions, rendered data and onboarding only after Dylan's fixes are ready. Keep the current app embed/output safeguards until verification passes.
 2. Complete approved catalog merchandising once 4-pack/case, slim-can nutrition, channel and access decisions are supplied. This gates format comparisons and additional public product discovery.
-3. Review remaining secondary-page images, social preview image dimensions and accessibility as a separate focused pass. Prioritize actual rendered defects; preserve the current contact and purchase flows.
+3. Secondary-page split images and social-preview dimensions are now complete in the quick-wins checkpoint below. Remaining accessibility/content reviews should prioritize verified defects and preserve contact and purchase flows.
 4. Resolve app ownership/scoping decisions, beginning with measured Signifyd cost, then SMS overlap and the review migration dependencies. No speculative uninstall.
 5. Complete authenticated staff/sample ordering and release QA, refresh the merchant diff, then request approval for the exact production release. Wave 2 lifecycle activation is separate from this theme pass.
 
@@ -176,3 +176,22 @@ Development theme **142755430600**, branch `dev/wave-1`. Refreshed the live them
 - Final homepage mobile LCP: **4.04s, 4.22s, 29.78s**. LCP remains unstable; no reliable improvement claimed. An unproven extra-font-hint experiment was reverted; all samples are retained.
 - Theme Check: **122 inherited errors / 397 warnings**, no added findings. Nine-route image checks, 15-route integration/link regression checks and relevant desktop/mobile interactions pass.
 - No new JavaScript, production theme changes or shared app/data edits. Signifyd scoping, rendering dependencies and late review-widget space remain the next performance items, alongside the existing catalog and authenticated-release dependencies.
+
+
+## September 8: three Wave 1 quick wins completed
+
+Development theme **142755430600**, branch `dev/wave-1`. Fresh live/development downloads matched their committed baselines for all five changed files. All five final remote files were read back and match local code. No production or shared store/app data changes.
+
+| Completed | Result |
+| --- | --- |
+| Secondary-page image cleanup | Contact and Why Halfday use one responsive picture per content image instead of hidden desktop/mobile duplicates. Offscreen images are lazy; first-section artwork remains eager. Contact's desktop-only photo selects an inline empty source on mobile. Source candidates respect original resolution, and mobile sizing accounts for the existing cover crop. The original image settings, artwork and visible frame dimensions are retained. |
+| Card and quick-order stylesheet cleanup | Featured product loops include card styles once per section, after the first product allowed by Locksmith. Native rating styles load only when enabled; volume-pricing/quick-order styles load only in bulk mode. Price, native purchase-control and app review styles remain available. Homepage stylesheet tags fall **71 to 32**, Why Halfday **106 to 32**, and Shop All/Variety **36 to 32**. Three unused CSS files are absent from those routes, totaling 14,044 uncompressed source bytes. Duplicate URLs were already browser-cacheable, so fewer tags do not equal the same number of saved requests. |
+| Social-preview image metadata | Select the existing custom product image or page fallback once, then use its actual dimensions and HTTPS for both image URLs. Custom product images report **750 × 902**, rather than the unrelated product-page image dimensions. Existing selected artwork remains unchanged. All image fields retain the Locksmith resource visibility check; existing alt text is included when present. |
+
+Verification: [quick-wins evidence](../reports/wave-1-quick-wins-verification.json). Contact/Why Halfday retain their mobile and desktop image-frame dimensions at **390px/1440px**; screenshots retain the crop/design and lazy artwork loads in view. Homepage card text, color and dimensions match before/after, including existing Yotpo ratings; carousel Next advances to **2/8**. Contact keyboard focus moves from Name to Email and the form endpoint is unchanged. No forms were submitted.
+
+All **10 social-image checks** match the actual PNG dimensions over HTTPS. The [15-route regression comparison](../reports/wave-1-regression-markup.json) preserves Amazon URLs including attribution parameters, Klaviyo embeds, integration markers and external loaders. Native cart/product scripts, bundled libraries and Locksmith code remain unchanged. This is markup/interaction verification, not proof of downstream analytics receipt or authenticated ordering.
+
+No JavaScript added or changed. This pass does not claim a measured LCP/CLS improvement. App scoping, approved catalog facts, Agentready fixes and authenticated release QA remain the major dependencies.
+
+[Final Theme Check comparison](../reports/wave-1-quick-wins-theme-check.json): **122 inherited errors / 391 warnings**, no new offenses and six inherited warnings removed. Git whitespace checks pass.
