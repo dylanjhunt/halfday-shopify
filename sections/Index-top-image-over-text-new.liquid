@@ -19,7 +19,7 @@
                           <div class="Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new">
                             <picture>
                               {%- if block.settings.main_mobile_image != blank -%}
-                                <source media="(max-width: 749px)" sizes="100vw" srcset="{{ block.settings.main_mobile_image | image_url: width: 375 }} 375w, {{ block.settings.main_mobile_image | image_url: width: 550 }} 550w, {{ block.settings.main_mobile_image | image_url: width: 750 }} 750w">
+                                <source media="(max-width: 749px)" width="{{ block.settings.main_mobile_image.width }}" height="{{ block.settings.main_mobile_image.height }}" sizes="100vw" srcset="{{ block.settings.main_mobile_image | image_url: width: 375 }} 375w, {{ block.settings.main_mobile_image | image_url: width: 550 }} 550w, {{ block.settings.main_mobile_image | image_url: width: 750 }} 750w">
                               {%- endif -%}
                               {{ hero_image | image_url: width: 2048 | image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', sizes: '100vw', loading: 'eager', fetchpriority: 'high' }}
                             </picture>

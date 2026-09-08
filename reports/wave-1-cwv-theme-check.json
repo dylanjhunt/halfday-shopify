@@ -1,0 +1,45 @@
+{
+  "counts": {
+    "before": {
+      "warning": 402,
+      "error": 122
+    },
+    "after": {
+      "warning": 397,
+      "error": 122
+    }
+  },
+  "new_offenses": [],
+  "removed_offenses": [
+    [
+      "sections/Page-image-banner.liquid",
+      "UndefinedObject",
+      "warning",
+      "Unknown object 'img' used."
+    ],
+    [
+      "sections/Page-image-banner.liquid",
+      "UndefinedObject",
+      "warning",
+      "Unknown object 'img' used."
+    ],
+    [
+      "sections/Page-image-banner.liquid",
+      "UndefinedObject",
+      "warning",
+      "Unknown object 'img' used."
+    ],
+    [
+      "sections/Page-store-logo-slider.liquid",
+      "UndefinedObject",
+      "warning",
+      "Unknown object 'img' used."
+    ],
+    [
+      "sections/Page-store-logo-slider.liquid",
+      "UndefinedObject",
+      "warning",
+      "Unknown object 'img' used."
+    ]
+  ]
+}

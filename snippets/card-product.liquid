@@ -9,6 +9,7 @@
   - show_vendor: {Boolean} Show the product vendor. Default: false
   - show_rating: {Boolean} Show the product rating. Default: false
   - extend_height: {Boolean} Card height extends to available container space. Default: true (optional)
+  - image_sizes: {String} Responsive image slot widths supplied by the parent layout (optional)
   - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
   - skip_styles: {Boolean} Don't include component styles. Useful when rendering multiple product cards in a loop. Default: false (optional)
   - quick_add: {Boolean} Show the quick add button.
@@ -74,43 +75,16 @@
           <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
             <div class="media media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-              {% if card_product.metafields.custom.product_grid_primary_image != blank %}
-                <img 
-                  srcset="
-                    {%- if card_product.metafields.custom.product_grid_primary_image.width >= 720 -%}{{ card_product.metafields.custom.product_grid_primary_image | image_url: width: 720 }} 720w,{%- endif -%}
-                    {%- if card_product.metafields.custom.product_grid_primary_image.width >= 940 -%}{{ card_product.metafields.custom.product_grid_primary_image | image_url: width: 940 }} 940w,{%- endif -%}
-                    {%- if card_product.metafields.custom.product_grid_primary_image.width >= 1066 -%}{{ card_product.metafields.custom.product_grid_primary_image | image_url: width: 1066 }} 1066w,{%- endif -%}
-                    {{ card_product.metafields.custom.product_grid_primary_image | image_url }} {{ card_product.metafields.custom.product_grid_primary_image.width }}w
-                  "
-                  src="{{ card_product.metafields.custom.product_grid_primary_image | image_url: width: 533 }}"
-                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                  alt="{{ card_product.metafields.custom.product_grid_primary_image.alt | escape }}"
-                  class="motion-reduce"
-                  {% unless lazy_load == false %}
-                    loading="lazy"
-                  {% endunless %}
-                  width="{{ card_product.metafields.custom.product_grid_primary_image.width }}"
-                  height="{{ card_product.metafields.custom.product_grid_primary_image.height }}"
-                >
-              {% else %}
-                <img
-                  srcset="
-                    {%- if card_product.featured_media.width >= 720 -%}{{ card_product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
-                    {%- if card_product.featured_media.width >= 940 -%}{{ card_product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
-                    {%- if card_product.featured_media.width >= 1066 -%}{{ card_product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
-                    {{ card_product.featured_media | image_url }} {{ card_product.featured_media.width }}w
-                  "
-                  src="{{ card_product.featured_media | image_url: width: 720 }}"
-                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                  alt="{{ card_product.featured_media.alt | escape }}"
-                  class="motion-reduce"
-                  {% unless lazy_load == false %}
-                    loading="lazy"
-                  {% endunless %}
-                  width="{{ card_product.featured_media.width }}"
-                  height="{{ card_product.featured_media.height }}"
-                >
-              {% endif %}
+              {%- liquid
+                assign card_image = card_product.metafields.custom.product_grid_primary_image.value | default: card_product.featured_media.preview_image
+                assign image_loading = 'lazy'
+                if lazy_load == false
+                  assign image_loading = 'eager'
+                endif
+              -%}
+              {%- capture default_image_sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2){%- endcapture -%}
+              {%- assign card_image_sizes = image_sizes | default: default_image_sizes -%}
+              {{ card_image | image_url: width: 1066 | image_tag: widths: '240, 320, 480, 640, 720, 940, 1066', sizes: card_image_sizes, loading: image_loading, class: 'motion-reduce' }}
               {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
 
               {%- if show_secondary_image -%}
@@ -118,18 +92,18 @@
                   {%- if card_product.metafields.custom.product_grid_hover_image_or_video.value contains "files" -%}
                     <img 
                       srcset="
-                      {%- if card_product.metafields.custom.product_grid_hover_image_or_video.width >= 720 -%}{{ card_product.metafields.custom.product_grid_hover_image_or_video | image_url: width: 720 }} 720w,{%- endif -%}
-                      {%- if card_product.metafields.custom.product_grid_hover_image_or_video.width >= 940 -%}{{ card_product.metafields.custom.product_grid_hover_image_or_video | image_url: width: 940 }} 940w,{%- endif -%}
-                      {%- if card_product.metafields.custom.product_grid_hover_image_or_video.width >= 1066 -%}{{ card_product.metafields.custom.product_grid_hover_image_or_video | image_url: width: 1066 }} 1066w,{%- endif -%}
-                      {{ card_product.metafields.custom.product_grid_hover_image_or_video | image_url }} {{ card_product.metafields.custom.product_grid_hover_image_or_video.width }}w
+                      {%- if card_product.metafields.custom.product_grid_hover_image_or_video.value.width >= 720 -%}{{ card_product.metafields.custom.product_grid_hover_image_or_video.value | image_url: width: 720 }} 720w,{%- endif -%}
+                      {%- if card_product.metafields.custom.product_grid_hover_image_or_video.value.width >= 940 -%}{{ card_product.metafields.custom.product_grid_hover_image_or_video.value | image_url: width: 940 }} 940w,{%- endif -%}
+                      {%- if card_product.metafields.custom.product_grid_hover_image_or_video.value.width >= 1066 -%}{{ card_product.metafields.custom.product_grid_hover_image_or_video.value | image_url: width: 1066 }} 1066w,{%- endif -%}
+                      {{ card_product.metafields.custom.product_grid_hover_image_or_video.value | image_url }} {{ card_product.metafields.custom.product_grid_hover_image_or_video.value.width }}w
                       "
-                      src="{{ card_product.metafields.custom.product_grid_hover_image_or_video | image_url: width: 533 }}"
+                      src="{{ card_product.metafields.custom.product_grid_hover_image_or_video.value | image_url: width: 533 }}"
                       sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                       alt=""
                       class="motion-reduce"
                       loading="lazy"
-                      width="{{ card_product.metafields.custom.product_grid_hover_image_or_video.width }}"
-                      height="{{ card_product.metafields.custom.product_grid_hover_image_or_video.height }}" 
+                      width="{{ card_product.metafields.custom.product_grid_hover_image_or_video.value.width }}"
+                      height="{{ card_product.metafields.custom.product_grid_hover_image_or_video.value.height }}"
                     >
                   {%- else -%}
                     {% if card_product.metafields.custom.product_grid_hover_image_or_video.value.sources[1].url != blank %}

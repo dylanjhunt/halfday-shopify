@@ -1,0 +1,29 @@
+{
+  "viewports": [
+    390,
+    1440
+  ],
+  "pages": [
+    "/",
+    "/pages/faq",
+    "/products/lemon-tea"
+  ],
+  "checks": {
+    "homepage_hero_heading_and_card_rectangles_unchanged": true,
+    "faq_hero_and_heading_rectangles_unchanged": true,
+    "product_logo_final_rectangles_unchanged": true,
+    "product_logo_intrinsic_height_before": null,
+    "product_logo_intrinsic_height_after": 48.813559322033896,
+    "product_mobile_heading_rectangle_unchanged": true,
+    "product_gallery_next": "1 / 5 to 2 / 5",
+    "home_card_keyboard_destination": "/products/lemon-tea",
+    "mobile_faq_banner_images": 1,
+    "mobile_faq_banner_loaded": true,
+    "mobile_faq_horizontal_overflow": false,
+    "viewport_override_reset": true
+  },
+  "limits": [
+    "Desktop product heading was captured before and after asynchronous Yotpo insertion and differed by 42px; rating markup/CSS were not changed in this pass. This is not a claim of pixel-identical timing for third-party widgets.",
+    "No orders, real signups or review submissions. Existing staff/sample authenticated ordering remains a release dependency."
+  ]
+}

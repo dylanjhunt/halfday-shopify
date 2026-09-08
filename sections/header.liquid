@@ -143,11 +143,11 @@
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if product.metafields.custom.product_logo != blank -%}
               <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = product.metafields.custom.product_logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = settings.logo_width | divided_by: product.metafields.custom.product_logo.aspect_ratio -%}
+                {%- assign logo_alt = product.metafields.custom.product_logo.value.alt | default: shop.name | escape -%}
+                {%- assign logo_height = settings.logo_width | divided_by: product.metafields.custom.product_logo.value.aspect_ratio -%}
                 {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
                 {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ product.metafields.custom.product_logo | image_url: width: 600 | image_tag:
+                {{ product.metafields.custom.product_logo.value | image_url: width: 600 | image_tag:
                   class: 'header__heading-logo',
                   widths: widths,
                   height: logo_height,
@@ -222,11 +222,11 @@
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if product.metafields.custom.product_logo != blank -%}
               <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = product.metafields.custom.product_logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = settings.logo_width | divided_by: product.metafields.custom.product_logo.aspect_ratio -%}
+                {%- assign logo_alt = product.metafields.custom.product_logo.value.alt | default: shop.name | escape -%}
+                {%- assign logo_height = settings.logo_width | divided_by: product.metafields.custom.product_logo.value.aspect_ratio -%}
                 {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
                 {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ product.metafields.custom.product_logo | image_url: width: 600 | image_tag:
+                {{ product.metafields.custom.product_logo.value | image_url: width: 600 | image_tag:
                   class: 'header__heading-logo',
                   widths: widths,
                   height: logo_height,

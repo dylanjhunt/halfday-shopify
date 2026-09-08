@@ -1,6 +1,6 @@
 # Wave 1 progress
 
-**Status: in progress, SEO, accessibility and font/image follow-up available in development. September 8, 2026.**
+**Status: in progress, product-header CLS and responsive-image fixes available in development. September 8, 2026.**
 
 - Branch: `dev/wave-1`.
 - Development theme: `142755430600`, Development (deb269-MacBook-Pro-4).
@@ -164,3 +164,15 @@ Development theme **142755430600**, branch `dev/wave-1`. Refreshed the live them
 3. Review remaining secondary-page images, social preview image dimensions and accessibility as a separate focused pass. Prioritize actual rendered defects; preserve the current contact and purchase flows.
 4. Resolve app ownership/scoping decisions, beginning with measured Signifyd cost, then SMS overlap and the review migration dependencies. No speculative uninstall.
 5. Complete authenticated staff/sample ordering and release QA, refresh the merchant diff, then request approval for the exact production release. Wave 2 lifecycle activation is separate from this theme pass.
+
+
+## September 8: LCP and CLS follow-up
+
+[Detailed findings, measurements and next steps](lcp-cls-follow-up-2026-09-08.md).
+
+- Fixed a **36px product-header jump** by resolving the logo's actual image aspect ratio. Lemon PDP lab CLS fell from a 0.041498 baseline median to 0.000208 in the final confirmation; three earlier after-change samples were also below 0.0006.
+- Corrected custom product-card dimensions/srcsets and supplied the featured carousel's real image width. Preserved artwork, crop, hover media, Amazon links and gallery navigation.
+- Added the mobile homepage source dimensions, changed the FAQ to one responsive picture with first-section priority, and made 22 Contact retailer logos lazy/low priority.
+- Final homepage mobile LCP: **4.04s, 4.22s, 29.78s**. LCP remains unstable; no reliable improvement claimed. An unproven extra-font-hint experiment was reverted; all samples are retained.
+- Theme Check: **122 inherited errors / 397 warnings**, no added findings. Nine-route image checks, 15-route integration/link regression checks and relevant desktop/mobile interactions pass.
+- No new JavaScript, production theme changes or shared app/data edits. Signifyd scoping, rendering dependencies and late review-widget space remain the next performance items, alongside the existing catalog and authenticated-release dependencies.

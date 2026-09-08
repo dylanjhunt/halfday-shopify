@@ -1,0 +1,125 @@
+{
+  "captured_at": "2026-09-08T12:44:48.123716+00:00",
+  "theme_id": 142755430600,
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "header_logos": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png",
+          "width": "180",
+          "height": "50.285234899328856"
+        }
+      ],
+      "sized_card_images": 16,
+      "font_preconnects": []
+    },
+    {
+      "path": "/collections/shop-all",
+      "status": 200,
+      "header_logos": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png",
+          "width": "180",
+          "height": "50.285234899328856"
+        }
+      ],
+      "sized_card_images": 16,
+      "font_preconnects": []
+    },
+    {
+      "path": "/collections/variety-packs",
+      "status": 200,
+      "header_logos": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png",
+          "width": "180",
+          "height": "50.285234899328856"
+        }
+      ],
+      "sized_card_images": 12,
+      "font_preconnects": []
+    },
+    {
+      "path": "/products/lemon-tea",
+      "status": 200,
+      "header_logos": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_LEMON_TEA_3afcd057-81f1-4e8e-a904-c6390655dddb.svg",
+          "width": "180",
+          "height": "48.813559322033896"
+        }
+      ],
+      "sized_card_images": 0,
+      "font_preconnects": []
+    },
+    {
+      "path": "/products/classic-variety",
+      "status": 200,
+      "header_logos": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_web_1_2.svg",
+          "width": "180",
+          "height": "48.813559322033896"
+        }
+      ],
+      "sized_card_images": 0,
+      "font_preconnects": []
+    },
+    {
+      "path": "/products/strawberry-half-half-slim-can",
+      "status": 200,
+      "header_logos": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_WatermelonHH.png",
+          "width": "180",
+          "height": "48.813559322033896"
+        }
+      ],
+      "sized_card_images": 0,
+      "font_preconnects": []
+    },
+    {
+      "path": "/pages/faq",
+      "status": 200,
+      "header_logos": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png",
+          "width": "180",
+          "height": "50.285234899328856"
+        }
+      ],
+      "sized_card_images": 0,
+      "font_preconnects": [],
+      "faq_single_picture": true
+    },
+    {
+      "path": "/pages/contact",
+      "status": 200,
+      "header_logos": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png",
+          "width": "180",
+          "height": "50.285234899328856"
+        }
+      ],
+      "sized_card_images": 0,
+      "font_preconnects": [],
+      "lazy_low_priority_retailer_logos": 22
+    },
+    {
+      "path": "/collections/staff-variety-packs",
+      "status": 200,
+      "header_logos": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/HALFDAY_LOGO_RGB_1.png",
+          "width": "180",
+          "height": "50.285234899328856"
+        }
+      ],
+      "sized_card_images": 0,
+      "font_preconnects": []
+    }
+  ]
+}

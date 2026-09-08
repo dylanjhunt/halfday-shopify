@@ -1,0 +1,772 @@
+{
+  "captured_at": "2026-09-08T12:47:50.119536+00:00",
+  "theme_id": 142755430600,
+  "lighthouse_version": "13.4.1",
+  "method": "Sequential Lighthouse CLI, fresh temporary browser profiles, default mobile simulation. No app/network blocking. Before = commit 2de8851. After = initial image/CLS changes plus experimental font hints. Final = same image/CLS changes with font experiment reverted. No concurrent interactive preview browsing during measured batches. First before/after homepage captures overlapped routine CLI/markup checks; shared workstation and third-party variability remain limitations.",
+  "limits": [
+    "Lab simulations, not field Core Web Vitals or conversion measurements.",
+    "The slow samples are retained. No guaranteed LCP improvement is established.",
+    "Observed LCP subpart durations come from the unthrottled trace and must not be summed or compared directly with the simulated LCP metric.",
+    "Final product confirmation has one sample; the earlier after-change product batch has three."
+  ],
+  "groups": {
+    "before_home": {
+      "n": 3,
+      "median": {
+        "lcp_ms": 4394.126199999999,
+        "cls": 0.0001120011847793862,
+        "tbt_ms": 1032,
+        "transferred_bytes": 6792915,
+        "performance_score": 42.0
+      },
+      "lcp_range_ms": [
+        4158.395,
+        6914.9995
+      ]
+    },
+    "before_product": {
+      "n": 3,
+      "median": {
+        "lcp_ms": 5895.548649999997,
+        "cls": 0.04149752192821895,
+        "tbt_ms": 1151.4999999999964,
+        "transferred_bytes": 15183601,
+        "performance_score": 40.0
+      },
+      "lcp_range_ms": [
+        5504.1203000000005,
+        26803.847100000006
+      ]
+    },
+    "after_home": {
+      "n": 3,
+      "median": {
+        "lcp_ms": 11364.182800000002,
+        "cls": 0.0001120011847793862,
+        "tbt_ms": 1344.5000000000018,
+        "transferred_bytes": 6674789,
+        "performance_score": 37.0
+      },
+      "lcp_range_ms": [
+        5088.85105,
+        30378.716099999983
+      ]
+    },
+    "after_product": {
+      "n": 3,
+      "median": {
+        "lcp_ms": 5130.175650000001,
+        "cls": 0.00020814092484973848,
+        "tbt_ms": 987,
+        "transferred_bytes": 15162208,
+        "performance_score": 43.0
+      },
+      "lcp_range_ms": [
+        4519.435,
+        10587.308549999994
+      ]
+    },
+    "final_home": {
+      "n": 3,
+      "median": {
+        "lcp_ms": 4220.403199999999,
+        "cls": 4.050936436287064e-05,
+        "tbt_ms": 1380.4999999999964,
+        "transferred_bytes": 6762213,
+        "performance_score": 46.0
+      },
+      "lcp_range_ms": [
+        4044.2565999999997,
+        29784.13724999999
+      ]
+    },
+    "final_product": {
+      "n": 1,
+      "median": {
+        "lcp_ms": 4719.313250000001,
+        "cls": 0.00020814092484973848,
+        "tbt_ms": 861.4999999999982,
+        "transferred_bytes": 15143698,
+        "performance_score": 48.0
+      },
+      "lcp_range_ms": [
+        4719.313250000001,
+        4719.313250000001
+      ]
+    }
+  },
+  "runs": [
+    {
+      "sample": "after-home-1",
+      "captured_at": "2026-09-08T12:40:22.216Z",
+      "lcp_ms": 11364.182800000002,
+      "cls": 0.0001120011847793862,
+      "tbt_ms": 2588.5000000000055,
+      "transferred_bytes": 6664423,
+      "performance_score": 31.0,
+      "observed_unthrottled_lcp_ms": 1272,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 659.9169999389649
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 39.96400006103516
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 105.499
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 466.458
+        }
+      ],
+      "lcp_selector": "div.Index_top_image_over_text_loops_innerboxs_innerstatic_new > div.Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new > picture > img",
+      "script_cpu_ms": {
+        "Signifyd": 6128.74,
+        "Klaviyo": 592.81,
+        "Yotpo": 275.55,
+        "Postscript": 304.08,
+        "accessiBe": 348.63,
+        "theme_custom_js": 137.16
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "after-home-2",
+      "captured_at": "2026-09-08T12:41:55.202Z",
+      "lcp_ms": 5088.85105,
+      "cls": 0.00015251054914225686,
+      "tbt_ms": 1344.5000000000018,
+      "transferred_bytes": 6793014,
+      "performance_score": 43.0,
+      "observed_unthrottled_lcp_ms": 612,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 466.202
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 8.456
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 85.779
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 51.966
+        }
+      ],
+      "lcp_selector": "div.Index_top_image_over_text_loops_innerboxs_innerstatic_new > div.Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new > picture > img",
+      "script_cpu_ms": {
+        "Signifyd": 3655.39,
+        "Klaviyo": 438.16,
+        "Yotpo": 128.66,
+        "Postscript": 186.63,
+        "accessiBe": 248.06,
+        "theme_custom_js": 103.06
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "after-home-3",
+      "captured_at": "2026-09-08T12:42:42.585Z",
+      "lcp_ms": 30378.716099999983,
+      "cls": 0,
+      "tbt_ms": 758.0000000000009,
+      "transferred_bytes": 6674789,
+      "performance_score": 37.0,
+      "observed_unthrottled_lcp_ms": 2452,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 368.50300006103515
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 9.549999938964843
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 107.614
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 1966.635
+        }
+      ],
+      "lcp_selector": "div.Index_top_image_over_text_loops_innerboxs_innerstatic_new > div.Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new > picture > img",
+      "script_cpu_ms": {
+        "Signifyd": 2408.44,
+        "Klaviyo": 356.71,
+        "Yotpo": 293.13,
+        "Postscript": 232.9,
+        "accessiBe": 512.62,
+        "theme_custom_js": 131.11
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "after-product-1",
+      "captured_at": "2026-09-08T12:41:26.194Z",
+      "lcp_ms": 5130.175650000001,
+      "cls": 0.00020814092484973848,
+      "tbt_ms": 1259.499999999989,
+      "transferred_bytes": 15162208,
+      "performance_score": 42.0,
+      "observed_unthrottled_lcp_ms": 809,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 620.39
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 8.216
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 104.312
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 76.039
+        }
+      ],
+      "lcp_selector": "div.product-media-container > modal-opener.product__modal-opener > div.product__media > img.image-magnify-none",
+      "script_cpu_ms": {
+        "Signifyd": 3606.07,
+        "Klaviyo": 505.46,
+        "Yotpo": 479.55,
+        "Postscript": 228.36,
+        "accessiBe": 307.52,
+        "theme_custom_js": 131.16
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "after-product-2",
+      "captured_at": "2026-09-08T12:42:18.973Z",
+      "lcp_ms": 10587.308549999994,
+      "cls": 0.00015137884624134054,
+      "tbt_ms": 722.4999999999982,
+      "transferred_bytes": 15204423,
+      "performance_score": 43.0,
+      "observed_unthrottled_lcp_ms": 901,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 557.635
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 10.627
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 131.563
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 200.824
+        }
+      ],
+      "lcp_selector": "div.product-media-container > modal-opener.product__modal-opener > div.product__media > img.image-magnify-none",
+      "script_cpu_ms": {
+        "Signifyd": 2148.75,
+        "Klaviyo": 312.1,
+        "Yotpo": 319.48,
+        "Postscript": 216.99,
+        "accessiBe": 247.36,
+        "theme_custom_js": 139.89
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "after-product-3",
+      "captured_at": "2026-09-08T12:43:14.806Z",
+      "lcp_ms": 4519.435,
+      "cls": 0.0005105516493562154,
+      "tbt_ms": 987,
+      "transferred_bytes": 15075493,
+      "performance_score": 48.0,
+      "observed_unthrottled_lcp_ms": 1190,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 440.811
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 8.951
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 100.032
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 640.222
+        }
+      ],
+      "lcp_selector": "div.product-media-container > modal-opener.product__modal-opener > div.product__media > img.image-magnify-none",
+      "script_cpu_ms": {
+        "Signifyd": 2805.06,
+        "Klaviyo": 533.61,
+        "Yotpo": 326.67,
+        "Postscript": 257.15,
+        "accessiBe": 280.8,
+        "theme_custom_js": 122.3
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "before-home-1",
+      "captured_at": "2026-09-08T12:31:42.490Z",
+      "lcp_ms": 4394.126199999999,
+      "cls": 0.0001120011847793862,
+      "tbt_ms": 2637.5,
+      "transferred_bytes": 6794100,
+      "performance_score": 41.0,
+      "observed_unthrottled_lcp_ms": 809,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 599.494
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 28.422
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 116.655
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 64.01
+        }
+      ],
+      "lcp_selector": "div.Index_top_image_over_text_loops_innerboxs_innerstatic_new > div.Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new > picture > img",
+      "script_cpu_ms": {
+        "Signifyd": 6961.34,
+        "Klaviyo": 740.58,
+        "Yotpo": 163.85,
+        "Postscript": 238.27,
+        "accessiBe": 320.74,
+        "theme_custom_js": 135.4
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "before-home-2",
+      "captured_at": "2026-09-08T12:34:15.459Z",
+      "lcp_ms": 4158.395,
+      "cls": 0.0001120011847793862,
+      "tbt_ms": 1032,
+      "transferred_bytes": 6789823,
+      "performance_score": 50.0,
+      "observed_unthrottled_lcp_ms": 774,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 607.762
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 12.456
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 111.74
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 41.973
+        }
+      ],
+      "lcp_selector": "div.Index_top_image_over_text_loops_innerboxs_innerstatic_new > div.Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new > picture > img",
+      "script_cpu_ms": {
+        "Signifyd": 3307.91,
+        "Klaviyo": 449.63,
+        "Yotpo": 159.38,
+        "Postscript": 220.29,
+        "accessiBe": 259.98,
+        "theme_custom_js": 108.62
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "before-home-3",
+      "captured_at": "2026-09-08T12:35:35.254Z",
+      "lcp_ms": 6914.9995,
+      "cls": 9.859534807434639e-07,
+      "tbt_ms": 888,
+      "transferred_bytes": 6792915,
+      "performance_score": 42.0,
+      "observed_unthrottled_lcp_ms": 669,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 433.62600006103514
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 9.146999938964843
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 167.698
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 58.797
+        }
+      ],
+      "lcp_selector": "div.Index_top_image_over_text_loops_innerboxs_innerstatic_new > div.Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new > picture > img",
+      "script_cpu_ms": {
+        "Signifyd": 2741.19,
+        "Klaviyo": 409.21,
+        "Yotpo": 226.2,
+        "Postscript": 201.16,
+        "accessiBe": 300.02,
+        "theme_custom_js": 98.9
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "before-product-1",
+      "captured_at": "2026-09-08T12:33:17.642Z",
+      "lcp_ms": 5504.1203000000005,
+      "cls": 0.04155428400682735,
+      "tbt_ms": 1311.4999999999964,
+      "transferred_bytes": 15183601,
+      "performance_score": 40.0,
+      "observed_unthrottled_lcp_ms": 964,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 621.5980000610351
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 22.682999938964844
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 228.934
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 90.701
+        }
+      ],
+      "lcp_selector": "div.product-media-container > modal-opener.product__modal-opener > div.product__media > img.image-magnify-none",
+      "script_cpu_ms": {
+        "Signifyd": 3158.76,
+        "Klaviyo": 501.58,
+        "Yotpo": 314.93,
+        "Postscript": 200.52,
+        "accessiBe": 289.42,
+        "theme_custom_js": 152.03
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "before-product-2",
+      "captured_at": "2026-09-08T12:35:03.247Z",
+      "lcp_ms": 5895.548649999997,
+      "cls": 0.04149752192821895,
+      "tbt_ms": 1151.4999999999964,
+      "transferred_bytes": 15153537,
+      "performance_score": 40.0,
+      "observed_unthrottled_lcp_ms": 965,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 725.995
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 8.687
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 73.298
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 156.967
+        }
+      ],
+      "lcp_selector": "div.product-media-container > modal-opener.product__modal-opener > div.product__media > img.image-magnify-none",
+      "script_cpu_ms": {
+        "Signifyd": 3386.8,
+        "Klaviyo": 496.05,
+        "Yotpo": 387.77,
+        "Postscript": 251.54,
+        "accessiBe": 292.93,
+        "theme_custom_js": 167.89
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "before-product-3",
+      "captured_at": "2026-09-08T12:36:01.630Z",
+      "lcp_ms": 26803.847100000006,
+      "cls": 9.859534807434639e-07,
+      "tbt_ms": 766.8786000000009,
+      "transferred_bytes": 15200811,
+      "performance_score": 37.0,
+      "observed_unthrottled_lcp_ms": 2532,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 445.5570000610352
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 8.392999938964843
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 207.44
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 1870.827
+        }
+      ],
+      "lcp_selector": "div.product-media-container > modal-opener.product__modal-opener > div.product__media > img.image-magnify-none",
+      "script_cpu_ms": {
+        "Signifyd": 2094.45,
+        "Klaviyo": 325.9,
+        "Yotpo": 331.86,
+        "Postscript": 131.02,
+        "accessiBe": 240.06,
+        "theme_custom_js": 169.96
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "final-home-1",
+      "captured_at": "2026-09-08T12:45:40.782Z",
+      "lcp_ms": 4044.2565999999997,
+      "cls": 4.050936436287064e-05,
+      "tbt_ms": 983.0000000000036,
+      "transferred_bytes": 6785541,
+      "performance_score": 51.0,
+      "observed_unthrottled_lcp_ms": 608,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 405.437
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 22.445
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 111.955
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 68.073
+        }
+      ],
+      "lcp_selector": "div.Index_top_image_over_text_loops_innerboxs_innerstatic_new > div.Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new > picture > img",
+      "script_cpu_ms": {
+        "Signifyd": 3435.8,
+        "Klaviyo": 376.83,
+        "Yotpo": 204.52,
+        "Postscript": 275.3,
+        "accessiBe": 251.22,
+        "theme_custom_js": 139.11
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "final-home-2",
+      "captured_at": "2026-09-08T12:46:12.254Z",
+      "lcp_ms": 4220.403199999999,
+      "cls": 4.050936436287064e-05,
+      "tbt_ms": 1404.0000000000018,
+      "transferred_bytes": 6762213,
+      "performance_score": 46.0,
+      "observed_unthrottled_lcp_ms": 1092,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 756.535
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 15.016
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 246.71
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 73.626
+        }
+      ],
+      "lcp_selector": "div.Index_top_image_over_text_loops_innerboxs_innerstatic_new > div.Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new > picture > img",
+      "script_cpu_ms": {
+        "Signifyd": 3161.48,
+        "Klaviyo": 412.78,
+        "Yotpo": 339.62,
+        "Postscript": 298.48,
+        "accessiBe": 393.47,
+        "theme_custom_js": 99.12
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "final-home-3",
+      "captured_at": "2026-09-08T12:46:38.032Z",
+      "lcp_ms": 29784.13724999999,
+      "cls": 0,
+      "tbt_ms": 1380.4999999999964,
+      "transferred_bytes": 6668045,
+      "performance_score": 30.0,
+      "observed_unthrottled_lcp_ms": 2520,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 408.92
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 11.308
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 88.731
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 2010.569
+        }
+      ],
+      "lcp_selector": "div.Index_top_image_over_text_loops_innerboxs_innerstatic_new > div.Index_top_image_over_text_loops_innerboxs_innerstatic_videoimage_new > picture > img",
+      "script_cpu_ms": {
+        "Signifyd": 3515.2,
+        "Klaviyo": 326.73,
+        "Yotpo": 510.93,
+        "Postscript": 174.98,
+        "accessiBe": 677.56,
+        "theme_custom_js": 155.6
+      },
+      "preview_verified": true
+    },
+    {
+      "sample": "final-product-1",
+      "captured_at": "2026-09-08T12:47:10.456Z",
+      "lcp_ms": 4719.313250000001,
+      "cls": 0.00020814092484973848,
+      "tbt_ms": 861.4999999999982,
+      "transferred_bytes": 15143698,
+      "performance_score": 48.0,
+      "observed_unthrottled_lcp_ms": 837,
+      "observed_lcp_parts": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 610.209
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 13.519
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 138.047
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 75.558
+        }
+      ],
+      "lcp_selector": "div.product-media-container > modal-opener.product__modal-opener > div.product__media > img.image-magnify-none",
+      "script_cpu_ms": {
+        "Signifyd": 2749.58,
+        "Klaviyo": 497.28,
+        "Yotpo": 343.21,
+        "Postscript": 214.23,
+        "accessiBe": 231.18,
+        "theme_custom_js": 144.9
+      },
+      "preview_verified": true
+    }
+  ]
+}

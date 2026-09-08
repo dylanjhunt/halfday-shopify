@@ -2,7 +2,7 @@
 
 **Current three-wave plan. Wave 1 authorized for development on September 7, 2026.** This replaces the earlier five-wave grouping; the work is grouped around site readiness, email relaunch, and operations/reviews.
 
-[Verified audit](focused-audit-2026-09-07.md) · [Wave 1 checklist and preview](wave-1-progress.md)
+[Verified audit](focused-audit-2026-09-07.md) · [Wave 1 checklist and preview](wave-1-progress.md) · [LCP/CLS findings](lcp-cls-follow-up-2026-09-08.md)
 
 | Wave | Outcome | Estimated hands-on time | Status |
 | --- | --- | --- | --- |
@@ -15,7 +15,7 @@
 ## Wave 1: site cleanup, speed and shopping experience
 
 1. Correct misleading stock messaging and purchase paths without weakening Shopify inventory checks or Locksmith access controls.
-2. Defer offscreen testimonial/footer video, size posters/images, prioritize the first PDP image, scope route assets and measure the result. Preserve used brand typography. The homepage already passes field Core Web Vitals; a download reduction is not proof of better LCP or INP.
+2. Defer offscreen testimonial/footer video, size posters/images, prioritize the first PDP image, scope route assets, reserve image/widget space and measure LCP and CLS. Preserve used brand typography. The homepage already passes field Core Web Vitals; a download reduction is not proof of better LCP or INP.
 3. Review measured app costs, especially Signifyd, Postscript/Klaviyo overlap and the hardcoded accessiBe script. Retain needed operations apps, Stockist and Yotpo pending dependencies. Shared app settings are not isolated by the dev theme.
 4. Finish 4-pack/slim-can merchandising using approved consumer-pack, SKU/GTIN, nutrition, imagery, channel and access decisions. Existing case records must not automatically become consumer products.
 5. Improve mobile/desktop flavor and format discovery, product information hierarchy, primary purchase CTAs, comparison content and accessibility while preserving Halfday's brand.
