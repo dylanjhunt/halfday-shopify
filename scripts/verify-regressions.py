@@ -75,8 +75,18 @@ if __name__ == '__main__':
             old_library = next(line for line in old.splitlines() if line.startswith(marker))
             new_library = next(line for line in new.splitlines() if line.startswith(marker))
         libraries[label] = {'unchanged': old_library == new_library, 'sha256': sha256(new_library.encode()).hexdigest()}
-    protected_files = ['config/settings_data.json', 'snippets/locksmith.liquid', 'assets/product-form.js', 'assets/cart.js', 'assets/cart-drawer.js']
+    protected_files = ['snippets/locksmith.liquid', 'assets/product-form.js', 'assets/cart.js', 'assets/cart-drawer.js']
     unchanged = {name: subprocess.check_output(['git','show','main:'+name],cwd=ROOT) == (ROOT/name).read_bytes() for name in protected_files}
+    # App setup adds one disabled embed. Preserve every other merchant setting.
+    original_settings = subprocess.check_output(['git','show','main:config/settings_data.json'],cwd=ROOT).decode()
+    current_settings = (ROOT/'config/settings_data.json').read_text()
+    original_settings = json.loads(original_settings[original_settings.index('{'):])
+    current_settings = json.loads(current_settings[current_settings.index('{'):])
+    agentready = current_settings['current']['blocks'].pop('1788854400000000001', None)
+    unchanged['merchant_settings_except_disabled_agentready_embed'] = current_settings == original_settings
+    unchanged['agentready_embed_is_disabled'] = agentready == {
+        'type': 'shopify://apps/agentready/blocks/agent-json/019bc449-5f49-7d2d-86cd-f07c7b17ff7b',
+        'disabled': True, 'settings': {}}
     report = {'captured_at':datetime.now(timezone.utc).isoformat(), 'theme_id':142755430600,
               'method':'Separate anonymous cookie jars for public live and development HTML; no forms submitted. Script paths omit query/session values.',
               'limits':'Preserved loaders, attribution URLs, embed IDs and code do not prove receipt of analytics events or conversion attribution. No GA/Ads access; GTM excluded; no purchase/signup events generated.',

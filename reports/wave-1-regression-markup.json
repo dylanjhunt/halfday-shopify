@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-08T00:19:39.681116+00:00",
+  "captured_at": "2026-09-08T12:07:26.546643+00:00",
   "theme_id": 142755430600,
   "method": "Separate anonymous cookie jars for public live and development HTML; no forms submitted. Script paths omit query/session values.",
   "limits": "Preserved loaders, attribution URLs, embed IDs and code do not prove receipt of analytics events or conversion attribution. No GA/Ads access; GTM excluded; no purchase/signup events generated.",
@@ -18,11 +18,12 @@
     }
   },
   "unchanged_protected_files": {
-    "config/settings_data.json": true,
     "snippets/locksmith.liquid": true,
     "assets/product-form.js": true,
     "assets/cart.js": true,
-    "assets/cart-drawer.js": true
+    "assets/cart-drawer.js": true,
+    "merchant_settings_except_disabled_agentready_embed": true,
+    "agentready_embed_is_disabled": true
   },
   "pages": [
     {

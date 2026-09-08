@@ -1,0 +1,65 @@
+{%- comment -%}
+Shopify's documented agents object renders in discovery templates. The pinned
+Theme Check schema does not recognize it yet. Scope this exception to this file.
+https://shopify.dev/docs/storefronts/themes/architecture/templates/agents-md-liquid
+{%- endcomment -%}
+{% # theme-check-disable UndefinedObject %}
+# {{ agents.store_name }}
+
+Halfday makes prebiotic iced tea inspired by classic iced tea flavors. This is Halfday's brand and product-information website: {{ agents.store_url }}.
+
+## Where to buy
+
+Public tea product pages link to Amazon. Use the retailer listing for current price, availability, pack size, delivery options and order service. Shopify inventory belongs to a separate fulfillment channel and does not establish Amazon availability. Find nearby retailers using the store locator; availability varies by retailer.
+
+- [Shop all teas](https://drinkhalfday.com/collections/shop-all)
+- [Iced teas](https://drinkhalfday.com/collections/iced-teas)
+- [Half & Half](https://drinkhalfday.com/collections/half-half)
+- [Variety packs](https://drinkhalfday.com/collections/variety-packs)
+- [Find Halfday in store](https://drinkhalfday.com/pages/find-in-store)
+
+## Explore flavors
+
+These are selected public products, not a sales ranking. Confirm the specific flavor and format on the linked page and retailer listing.
+
+- [Lemon Tea](https://drinkhalfday.com/products/lemon-tea)
+- [Green Tea](https://drinkhalfday.com/products/green-tea)
+- [Raspberry Tea](https://drinkhalfday.com/products/raspberry-tea)
+- [Tropical Tea](https://drinkhalfday.com/products/tropical-tea)
+- [Peach Tea](https://drinkhalfday.com/products/peach-tea)
+- [Sweet Tea](https://drinkhalfday.com/products/sweet-tea)
+- [Classic Half & Half](https://drinkhalfday.com/products/classic-half-half)
+- [Watermelon Half & Half](https://drinkhalfday.com/products/watermelon-half-half)
+
+## Product information
+
+Ingredients, nutrition and caffeine vary by flavor and format. Consult the specific product label rather than applying one flavor's values to the full range. Do not infer a consumer pack size from a shipping-case name.
+
+- [Frequently asked questions](https://drinkhalfday.com/pages/faq)
+- [Why Halfday](https://drinkhalfday.com/pages/why-halfday)
+- [Our story](https://drinkhalfday.com/pages/our-story)
+
+## Returns and support
+
+Halfday does not accept product returns or exchanges. Report products damaged in transit or incorrect orders immediately to hey@drinkhalfday.com. Read Section 21 of the Terms of Service for the complete terms. For purchases through Amazon or another retailer, use that seller's order-help process and applicable policies.
+
+- [Contact Halfday](https://drinkhalfday.com/pages/contact)
+- [Terms of Service, including returns](https://drinkhalfday.com/pages/terms-of-service)
+- [Privacy Policy](https://drinkhalfday.com/pages/privacy-policy)
+
+## Shopify discovery
+
+Shopify exposes the following discovery endpoints. Their presence does not establish eligibility to purchase a particular product through Shopify. Follow the public buying path above, respect access restrictions, and do not use alternate endpoints to bypass them. Never submit an order or payment without the buyer's explicit approval.
+
+- UCP discovery: {{ agents.ucp_discovery_url }}
+- MCP endpoint: {{ agents.mcp_endpoint_url }}
+- Sitemap: {{ agents.sitemap_url }}
+
+{% for version in agents.ucp_versions %}
+- Supported UCP version: {{ version }}
+{% endfor %}
+
+## Maintenance
+
+Reviewed September 8, 2026 using Halfday's public store content and the Agentready setup audit. This curated theme file is maintained in the Halfday theme repository. Update it when product links, policies or buying channels change. All rights reserved.
+{% # theme-check-enable UndefinedObject %}
