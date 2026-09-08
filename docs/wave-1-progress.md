@@ -207,3 +207,6 @@ The merged `main`, completed `dev/wave-1` branch and original baseline tag are b
 ## September 8: Git-connected preview audited
 
 Dylan connected `main` to unpublished theme **142757101768**, `halfday-shopify/main`. [Final connected-theme audit](wave-1-connected-audit-2026-09-08.md) confirms all 455 theme files match release commit `2c8ff4f`, with no live merchant drift. Fifteen live/preview regression routes and 22 feature endpoints pass; representative desktop/mobile interactions are verified. Both fresh preview browser audits have zero console errors and very low CLS. LCP/TBT remain inconsistent; authenticated staff/sample ordering is still unverified. No theme code, app settings or publishing state changed during this audit.
+# September 8: legacy product template assignments
+
+With Dylan's approval, inspected all 66 products and switched 39 obsolete `shogun.custom` assignments to Default product. The remaining 27 already used the default. Saved in Shopify admin, verified product-record samples, and checked four affected tea routes on live and the Git-connected preview. All returned HTTP 200 without Liquid errors; Amazon links and attribution parameters matched. No theme was published. Details: `docs/shogun-template-cleanup-2026-09-08.md`.
