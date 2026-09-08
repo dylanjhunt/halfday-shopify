@@ -1,6 +1,22 @@
 {%- if collection.metafields.custom.collection_desktop_custom_heading_text.value != blank or collection.metafields.custom.collection_mobile_custom_heading_text.value != blank or collection.title != blank or collection.metafields.custom.collection_shortcut_reference_lists.value != blank -%}
   <div class="Collection_template_mainboths_new">
     <div class="Collection_template_innerboths_new">
+      {%- assign desktop_banner = collection.metafields.custom.collection_desktop_video_or_image_banner.value -%}
+      {%- assign mobile_banner = collection.metafields.custom.collection_mobile_video_or_image_banner.value -%}
+      {%- if desktop_banner contains 'files' and mobile_banner contains 'files' -%}
+        <div class="Collection_template_innerboths_mainstatic_new">
+          <div class="Collection_template_innerboths_innerstatic_new">
+            <div class="Collection_template_innerboths_innerstatic_imagevideo_new">
+              <picture>
+                <source media="(max-width: 749px)"
+                  srcset="{%- if mobile_banner.width > 375 -%}{{ mobile_banner | image_url: width: 375 }} 375w, {%- endif -%}{%- if mobile_banner.width > 550 -%}{{ mobile_banner | image_url: width: 550 }} 550w, {%- endif -%}{%- assign mobile_max_width = mobile_banner.width | at_most: 900 -%}{{ mobile_banner | image_url: width: mobile_max_width }} {{ mobile_max_width }}w"
+                  sizes="100vw" width="{{ mobile_banner.width }}" height="{{ mobile_banner.height }}">
+                {{ desktop_banner | image_url: width: 2880 | image_tag: widths: '750, 1100, 1500, 1800, 2048, 2880', sizes: '100vw', loading: 'eager', fetchpriority: 'high', class: 'Static_image_new' }}
+              </picture>
+            </div>
+          </div>
+        </div>
+      {%- else -%}
       {%- if collection.metafields.custom.collection_desktop_video_or_image_banner.value != blank and collection.metafields.custom.collection_mobile_video_or_image_banner.value != blank -%}
         {%- if collection.metafields.custom.collection_desktop_video_or_image_banner.value != blank -%}
           <div class="Collection_template_innerboths_mainstatic_new Desktop_only_new">
@@ -45,32 +61,19 @@
           </div>
         {%- endif -%}
       {%- endif -%}
+      {%- endif -%}
       {%- if collection.metafields.custom.collection_desktop_custom_heading_text.value != blank or collection.metafields.custom.collection_mobile_custom_heading_text.value != blank or collection.title != blank or collection.metafields.custom.collection_shortcut_reference_lists.value != blank -%}
         <div class="Collection_template_innerboths_mainoverlay_new">
           <div class="page-width">
             <div class="Collection_template_innerboths_inneroverlay_new">
-              {%- if collection.metafields.custom.collection_desktop_custom_heading_text.value != blank or collection.title != blank -%}
-                <div class="Collection_template_innerboths_inneroverlay_maintitle_new Desktop_only_new">
-                  <div class="Common_large_title_new Collection_template_innerboths_inneroverlay_innertitle_new">
-                    {%- if collection.metafields.custom.collection_desktop_custom_heading_text.value != blank -%}
-                      <h1>{{ collection.metafields.custom.collection_desktop_custom_heading_text.value }}</h1>
-                    {%- elsif collection.title != blank -%}
-                      <h1>{{ collection.title }}</h1>
-                    {%- endif -%}
-                  </div>
+              <div class="Collection_template_innerboths_inneroverlay_maintitle_new">
+                <div class="Common_large_title_new Collection_template_innerboths_inneroverlay_innertitle_new">
+                  <h1>
+                    <span class="Desktop_only_new">{{ collection.metafields.custom.collection_desktop_custom_heading_text.value | default: collection.title }}</span>
+                    <span class="Mobile_only_new">{{ collection.metafields.custom.collection_mobile_custom_heading_text.value | default: collection.title }}</span>
+                  </h1>
                 </div>
-              {%- endif -%}
-              {%- if collection.metafields.custom.collection_mobile_custom_heading_text.value != blank or collection.title != blank -%}
-                <div class="Collection_template_innerboths_inneroverlay_maintitle_new Mobile_only_new">
-                  <div class="Common_large_title_new Collection_template_innerboths_inneroverlay_innertitle_new">
-                    {%- if collection.metafields.custom.collection_mobile_custom_heading_text.value != blank -%}
-                      <h1>{{ collection.metafields.custom.collection_mobile_custom_heading_text.value }}</h1>
-                    {%- elsif collection.title != blank -%}
-                      <h1>{{ collection.title }}</h1>
-                    {%- endif -%}
-                  </div>
-                </div>
-              {%- endif -%}
+              </div>
               {%- if collection.metafields.custom.collection_shortcut_reference_lists.value != blank -%}
                 <div class="Collection_template_innerboths_inneroverlay_mainloops_new Desktop_only_new">
                   <div class="Collection_template_innerboths_inneroverlay_innerloops_new">

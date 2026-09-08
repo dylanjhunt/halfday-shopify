@@ -1,12 +1,15 @@
 # Wave 1 progress
 
-**Status: implemented Wave 1 work merged into `main` as an unpublished release candidate. Shopify connection and final audit are next. Outstanding dependencies remain listed below. September 8, 2026.**
+**Status: Dylan published the first Wave 1 release on September 8, 2026. Main is live. New follow-through is on a development branch/theme; remaining catalog/app dependencies are listed in the current roadmap.**
 
-- Release candidate: `main`. Completed implementation branch: `dev/wave-1`.
-- Development theme: `142755430600`, Development (deb269-MacBook-Pro-4).
-- [Preview](https://halfday-tonics.myshopify.com?preview_theme_id=142755430600) · [Theme editor](https://halfday-tonics.myshopify.com/admin/themes/142755430600/editor).
-- Latest live theme was pulled before edits; it matched the committed baseline. No merchant changes needed merging.
-- **Production theme changes: none.** The latest checkpoint is theme-scoped. Earlier authorized Agentready configuration changed shared app settings; its activation remains disabled pending the app fixes documented below.
+- Live: theme **142757101768**, `halfday-shopify/main`, commit `2c8ff4f`; tag `baseline/live-wave-1-2026-09-08`.
+- Current branch: **`feature/wave-1-follow-through`**. Never push this work to main without release authorization.
+- Development theme: **142755430600**, Development (deb269-MacBook-Pro-4).
+- [Development preview](https://drinkhalfday.com/?preview_theme_id=142755430600) · [Latest follow-through report](wave-1-follow-through-2026-09-08.md).
+- Fresh live and pre-edit development pulls each matched all 455 published theme files. No merchant drift needed merging.
+- Dylan confirmed all customer ordering redirects to Amazon. Authenticated staff/sample checkout is no longer a release gate; retain its existing code and Locksmith controls.
+- **This follow-through makes no production or shared app/store-data changes.** Agentready activation remains pending verification after the app fixes are ready.
+- The dated checkpoints below are historical. Their statements about an unpublished theme or authenticated-release dependencies describe the scope at the time and are superseded by this current status.
 
 ## Implemented in development
 
@@ -210,3 +213,10 @@ Dylan connected `main` to unpublished theme **142757101768**, `halfday-shopify/m
 # September 8: legacy product template assignments
 
 With Dylan's approval, inspected all 66 products and switched 39 obsolete `shogun.custom` assignments to Default product. The remaining 27 already used the default. Saved in Shopify admin, verified product-record samples, and checked four affected tea routes on live and the Git-connected preview. All returned HTTP 200 without Liquid errors; Amazon links and attribution parameters matched. No theme was published. Details: `docs/shogun-template-cleanup-2026-09-08.md`.
+
+
+## September 8: published baseline and continued Wave 1 development
+
+Dylan published `halfday-shopify/main`; Shopify CLI confirms its live role and a fresh pull matches all 455 files at `2c8ff4f`. Created the immutable published baseline tag and moved follow-through onto `feature/wave-1-follow-through`, with no upstream to main. Updated shared Claude guidance, README, the roadmap and regression comparisons for the live-main workflow.
+
+The [follow-through report](wave-1-follow-through-2026-09-08.md) records the additional gallery video deferral, responsive collection banner and single-H1 cleanup, browser checks, exact remote file verification and performance limits. All new theme edits are in development theme `142755430600`. Main remains unchanged. Outstanding catalog, app, Agentready and editorial dependencies remain visible in the roadmap.

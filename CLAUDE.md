@@ -1,16 +1,18 @@
 # Halfday Shopify theme
 
-This repository is the Shopify Online Store theme for Halfday Iced Tea, not a headless storefront or Shopify app. Store: `halfday-tonics.myshopify.com`; public site: `https://drinkhalfday.com`. Baseline: live theme `141825474760`, "HALFDAY 2.0 - PDP Update - 10 Mar 2025", downloaded September 7, 2026. Theme metadata identifies customized Dawn 15.2.0.
+This repository is the Shopify Online Store theme for Halfday Iced Tea, not a headless storefront or Shopify app. Store: `halfday-tonics.myshopify.com`; public site: `https://drinkhalfday.com`. Original baseline: theme `141825474760`, "HALFDAY 2.0 - PDP Update - 10 Mar 2025", downloaded September 7, 2026. Theme metadata identifies customized Dawn 15.2.0.
 
 ## Workflow
 
 - Use Shopify CLI for theme operations. Read `README.md` and `docs/modernization-roadmap.md` for project status and the current delivery sequence. The dated store and Klaviyo audits are supporting evidence.
 - `npm ci` installs the pinned local CLI. `npm run theme:list`, `npm run theme:check`, `npm run theme:dev`, `npm run theme:push:dev` are the normal commands.
-- Wave 1 is merged into `main` as an unpublished release candidate. Dylan will connect Shopify and request the final audit before publishing. Start subsequent work on a descriptive `feature/...` or `fix/...` branch from `main`, preview it on an unpublished theme, and merge reviewed work back into `main`. Keep `dev/wave-1` as the completed wave history. Track completed work, verification and pending decisions in `docs/wave-1-progress.md`. The user permits production repairs for confirmed broken functionality; otherwise keep all changes in the development theme until release approval. Shared product/app data is not isolated by theme previews.
-- `npm run theme:pull` refuses a dirty working tree but can still overwrite committed unpublished work. While `main` is ahead of production, pull live files into a separate temporary directory using explicit `--theme` and `--path`; compare against `baseline/live-2026-09-07` and merge only newer merchant edits through a branch. Review JSON templates and `config/settings_data.json` carefully: these contain merchant settings. The baseline tag also anchors the pre-release regression checker.
+- **Production:** Dylan published Git-connected theme `142757101768`, `halfday-shopify/main`, on September 8, 2026. Pushing to GitHub `main` automatically changes the live storefront. Treat any main merge/push as a production deployment requiring explicit release authorization.
+- Published baseline: `baseline/live-wave-1-2026-09-08` (`2c8ff4f`). The original pre-work theme remains at `baseline/live-2026-09-07` and Shopify theme `141825474760` as a rollback reference.
+- Continue Shopify CLI work on descriptive `feature/...` or `fix/...` branches and development/unpublished themes. Current follow-through branch: `feature/wave-1-follow-through`; development theme: `142755430600` (re-resolve its role each session). Preserve audit history and track work in `docs/wave-1-progress.md`. Production repair is allowed only for confirmed broken functionality; otherwise preview and review before an authorized release.
+- Pull live into a separate temporary directory using explicit `--theme` and `--path`, compare with the published baseline and reconcile merchant edits through the development branch. Never pull over uncommitted or unpublished work. Shared product/app data is not isolated by theme previews.
 - The default environment identifies only this store. Never infer a production deployment from a request for local development. Do not add `allow-live`, `publish`, or a live theme ID to default write commands.
 - Git tracks theme files, not products, menus, pages, metafields/metaobjects, app settings, inventory, fulfillment, or customer data. Those need separate verification in Shopify/apps.
-- Keep credentials, CLI sessions, customer/order exports, and local settings out of Git. Git remote `origin` points to `https://github.com/dylanjhunt/halfday-shopify.git`. Dylan is arranging the Shopify connection; inspect the actual branch/theme mapping before future pushes. No publishing authorization is implied by a Git merge or push.
+- Keep credentials, CLI sessions, customer/order exports, and local settings out of Git. Git remote `origin` points to `https://github.com/dylanjhunt/halfday-shopify.git`. The main branch is connected to the live theme. Push only named development branches until a production release is authorized.
 
 ## Shopify architecture and simplicity
 
@@ -31,7 +33,7 @@ This repository is the Shopify Online Store theme for Halfday Iced Tea, not a he
 
 ## Business context and validation
 
-- Public product pages primarily link to Amazon. Shopify inventory at a 3PL must not be presented as Amazon availability. Preserve real Shopify inventory checks on actual Shopify purchase paths.
+- Dylan confirmed on September 8 that customer ordering redirects to Amazon. Validate Amazon purchase links; authenticated staff/sample checkout is not a release gate for this roadmap. Preserve existing Locksmith and legacy native purchase code unless a separate change is authorized. Public product pages link to Amazon. Shopify inventory at a 3PL must not be presented as Amazon availability. Preserve real Shopify inventory checks on actual Shopify purchase paths.
 - Audit priorities: availability messaging, 4-packs/slim cans, Klaviyo, SEO/AEO, legacy content, Cin7/ShipStation/AfterShip/Faire, and Yotpo-to-Bazaarvoice planning. Do not activate flows, uninstall apps, or alter integrations as part of an audit.
 - GA and Google Ads are deferred until Dylan confirms access. Klaviyo access is available and was audited; see `docs/klaviyo-audit-2026-09-07.md`. Dylan confirmed GTM was unused/empty and asked not to pursue it; leave it alone unless scope changes.
 - Run Theme Check and distinguish inherited findings from regressions. Verify relevant desktop/mobile pages, keyboard navigation, variant/media interactions, Amazon destinations, and protected staff flows as applicable. Do not place orders or subscribe real people during tests.

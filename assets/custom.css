@@ -666,6 +666,7 @@ body.product-watermelon-half-half .product__title{ max-width:356px !important; }
 .product_desktop_slider_new .swiper-button-next:after{ display:none; }
 .product_page_last_image_new  .media>*{ object-fit:cover !important; border-radius: 12px; }
 .deferred-media__poster-button{ display:none !important; }
+.product__media-list .deferred-media__poster-button{ display:flex !important; }
 
 .Product_template_detail_mainright_new{ max-width:calc(50% - 16.667%)!important; width:calc(50% - 16.667%)!important; padding:0px !important; padding: 0 56px 0 32px !important; }
 .Product_template_detail_mainright_loops_new{}
