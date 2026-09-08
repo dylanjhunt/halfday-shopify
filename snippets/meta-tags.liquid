@@ -1,8 +1,9 @@
+{%- capture fallback_description -%}{% render 'halfday-description-fallback', page_type: request.page_type, collection_handle: collection.handle, page_handle: page.handle, product_description: product.metafields.custom.product_short_description_text %}{%- endcapture -%}
 {%- liquid
   assign og_title = page_title | default: shop.name
   assign og_url = canonical_url | default: request.origin
   assign og_type = 'website'
-  assign og_description = page_description | default: shop.description | default: shop.name
+  assign og_description = page_description | default: fallback_description | default: shop.description | default: shop.name
 
   if request.page_type == 'product'
     assign og_type = 'product'
@@ -52,16 +53,7 @@
   <meta property="og:image:height" content="{{ page_image.height }}">
 {%- endif -%}
 
-{%- if request.page_type == 'product' -%}
-  {%- comment %}<locksmith:9b16>{% endcomment -%}
-    {%- capture var %}{% render 'locksmith-variables', variable: 'access_granted' %}{% endcapture %}{% if var == 'true' %}<meta property="og:price:amount" content="{{ product.price | money_without_currency | strip_html }}">{% endif -%}
-    {%- comment %}original: <meta property="og:price:amount" content="{{ product.price | money_without_currency | strip_html }}">{%- endcomment %}
-  {%- comment %}</locksmith:9b16>{% endcomment -%}
-  {%- comment %}<locksmith:6e3c>{% endcomment -%}
-    {%- capture var %}{% render 'locksmith-variables', variable: 'access_granted' %}{% endcapture %}{% if var == 'true' %}<meta property="og:price:currency" content="{{ cart.currency.iso_code }}">{% endif -%}
-    {%- comment %}original: <meta property="og:price:currency" content="{{ cart.currency.iso_code }}">{%- endcomment %}
-  {%- comment %}</locksmith:6e3c>{% endcomment -%}
-{%- endif -%}
+{%- comment -%}Current product pages direct shoppers to retailers. Shopify prices do not describe those offers.{%- endcomment -%}
 
 {%- if settings.social_twitter_link != blank -%}
   <meta name="twitter:site" content="{{ settings.social_twitter_link | split: 'twitter.com/' | last | prepend: '@' }}">

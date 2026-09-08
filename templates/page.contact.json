@@ -47,6 +47,7 @@
         "bg_color_mobile": "#ff5528",
         "image": "shopify://shop_images/Rectangle_3147_abe0defb-c199-463d-be01-ac22beb56fd8.jpg",
         "img_video_bg_color": "#ff5528",
+        "heading_tag": "h1",
         "heading_text": "Drop us a line",
         "information_text": "<p>Check out our <a href=\"/pages/faq\" target=\"_blank\" title=\"Faq\">FAQs</a> first – we answer a lot of questions there.</p><p>If you still need us, email us at <a href=\"mailto:hey@drinkhalfday.com\" target=\"_blank\" title=\"mailto:hey@drinkhalfday.com\">hey@drinkhalfday.com</a> or fill out the form below.</p>"
       }

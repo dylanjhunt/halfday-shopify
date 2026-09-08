@@ -29,7 +29,7 @@
     <div class="page_main_banner_main_content">
       {% if section.settings.main_heading != blank %}
      <div class="page_main_banner_main_heading Common_large_title_new">
-       <h2>{{ section.settings.main_heading }}</h2>
+       <{{ section.settings.heading_tag | default: 'h2' }}>{{ section.settings.main_heading }}</{{ section.settings.heading_tag | default: 'h2' }}>
      </div>
         {% endif %}
       {% if section.settings.banner_image != blank %}
@@ -52,6 +52,16 @@
   {
     "name": "Page Main Banner",
     "settings": [
+      {
+        "type": "select",
+        "id": "heading_tag",
+        "label": "Heading level",
+        "options": [
+          { "value": "h1", "label": "H1 (page title)" },
+          { "value": "h2", "label": "H2 (section title)" }
+        ],
+        "default": "h2"
+      },
        {
       "type": "color_scheme",
       "id": "section_color_scheme",

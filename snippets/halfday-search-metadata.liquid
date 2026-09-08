@@ -12,20 +12,7 @@
   <meta name="robots" content="noindex,follow">
 {%- elsif page_description == blank -%}
   {%- capture fallback_description -%}
-    {%- if request.page_type == 'collection' -%}
-      {%- case collection.handle -%}
-        {%- when 'shop-all' -%}Explore Halfday prebiotic iced tea flavors and variety packs. Find your favorite and browse Amazon and store purchase options.
-        {%- when 'variety-packs' -%}Explore Halfday iced tea variety packs, compare the included flavors and find your next pack on Amazon.
-        {%- when 'iced-teas' -%}Explore Halfday prebiotic iced teas, compare flavors and find where to buy your favorites.
-        {%- when 'half-half' -%}Explore Halfday Half & Half flavors, bringing iced tea and lemonade together. See product details and where to buy.
-      {%- endcase -%}
-    {%- elsif request.page_type == 'product' -%}
-      {{- product.metafields.custom.product_short_description_text | metafield_tag | strip_html | strip | truncate: 160 -}}
-    {%- elsif request.page_type == 'blog' -%}
-      Explore the Halfday blog for iced tea stories, ingredients and answers to your tea questions.
-    {%- elsif request.page_type == 'page' and page.handle == 'contact' -%}
-      Contact Halfday with product questions, feedback or wholesale inquiries. Find the right contact for your Halfday iced tea question.
-    {%- endif -%}
+    {% render 'halfday-description-fallback', page_type: request.page_type, collection_handle: collection.handle, page_handle: page.handle, product_description: product.metafields.custom.product_short_description_text %}
   {%- endcapture -%}
   {%- capture search_access -%}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{%- endcapture -%}
   {%- if fallback_description != blank and search_access == 'true' -%}

@@ -1,0 +1,377 @@
+{
+  "captured_at": "2026-09-08T12:24:53.590295+00:00",
+  "theme_id": 142755430600,
+  "pages": [
+    {
+      "path": "/",
+      "description": [
+        "Welcome to a new era of iced tea. Halfday is a better-for-you, gut-healthy iced tea with 6g of prebiotic fiber, classic flavor, and 3-5g of sugar."
+      ],
+      "og_description": [
+        "Welcome to a new era of iced tea. Halfday is a better-for-you, gut-healthy iced tea with 6g of prebiotic fiber, classic flavor, and 3-5g of sugar."
+      ],
+      "twitter_description": [
+        "Welcome to a new era of iced tea. Halfday is a better-for-you, gut-healthy iced tea with 6g of prebiotic fiber, classic flavor, and 3-5g of sugar."
+      ],
+      "live_price_metadata": {},
+      "dev_price_metadata": {},
+      "font_preloads": [
+        "//drinkhalfday.com/cdn/shop/files/strippy-regular-webfont-2.woff2?v=4372493407147350643"
+      ],
+      "merchant_description_preserved": true,
+      "liquid_error": false
+    },
+    {
+      "path": "/collections/shop-all",
+      "description": [
+        "Explore Halfday prebiotic iced tea flavors and variety packs. Find your favorite and browse Amazon and store purchase options."
+      ],
+      "og_description": [
+        "Explore Halfday prebiotic iced tea flavors and variety packs. Find your favorite and browse Amazon and store purchase options."
+      ],
+      "twitter_description": [
+        "Explore Halfday prebiotic iced tea flavors and variety packs. Find your favorite and browse Amazon and store purchase options."
+      ],
+      "live_price_metadata": {},
+      "dev_price_metadata": {},
+      "font_preloads": [
+        "//drinkhalfday.com/cdn/shop/files/strippy-regular-webfont-2.woff2?v=4372493407147350643"
+      ],
+      "merchant_description_preserved": true,
+      "liquid_error": false
+    },
+    {
+      "path": "/collections/variety-packs",
+      "description": [
+        "Explore Halfday iced tea variety packs, compare the included flavors and find your next pack on Amazon."
+      ],
+      "og_description": [
+        "Explore Halfday iced tea variety packs, compare the included flavors and find your next pack on Amazon."
+      ],
+      "twitter_description": [
+        "Explore Halfday iced tea variety packs, compare the included flavors and find your next pack on Amazon."
+      ],
+      "live_price_metadata": {},
+      "dev_price_metadata": {},
+      "font_preloads": [
+        "//drinkhalfday.com/cdn/shop/files/strippy-regular-webfont-2.woff2?v=4372493407147350643"
+      ],
+      "merchant_description_preserved": true,
+      "liquid_error": false
+    },
+    {
+      "path": "/collections/iced-teas",
+      "description": [
+        "Explore Halfday prebiotic iced teas, compare flavors and find where to buy your favorites."
+      ],
+      "og_description": [
+        "Explore Halfday prebiotic iced teas, compare flavors and find where to buy your favorites."
+      ],
+      "twitter_description": [
+        "Explore Halfday prebiotic iced teas, compare flavors and find where to buy your favorites."
+      ],
+      "live_price_metadata": {},
+      "dev_price_metadata": {},
+      "font_preloads": [
+        "//drinkhalfday.com/cdn/shop/files/strippy-regular-webfont-2.woff2?v=4372493407147350643"
+      ],
+      "merchant_description_preserved": true,
+      "liquid_error": false
+    },
+    {
+      "path": "/collections/half-half",
+      "description": [
+        "Explore Halfday Half & Half flavors, bringing iced tea and lemonade together. See product details and where to buy."
+      ],
+      "og_description": [
+        "Explore Halfday Half & Half flavors, bringing iced tea and lemonade together. See product details and where to buy."
+      ],
+      "twitter_description": [
+        "Explore Halfday Half & Half flavors, bringing iced tea and lemonade together. See product details and where to buy."
+      ],
+      "live_price_metadata": {},
+      "dev_price_metadata": {},
+      "font_preloads": [
+        "//drinkhalfday.com/cdn/shop/files/strippy-regular-webfont-2.woff2?v=4372493407147350643"
+      ],
+      "merchant_description_preserved": true,
+      "liquid_error": false
+    },
+    {
+      "path": "/products/lemon-tea",
+      "description": [
+        "Bright, tangy, and refreshing\u2013like a sip of sunshine. Halfday\u2019s exclusive GOODDAY Prebiotic Blend delivers 6g of prebiotic fiber, with only 3-5g of sugar, and 30-40 calories per can."
+      ],
+      "og_description": [
+        "Bright, tangy, and refreshing\u2013like a sip of sunshine. Halfday\u2019s exclusive GOODDAY Prebiotic Blend delivers 6g of prebiotic fiber, with only 3-5g of sugar, and 30-40 calories per can."
+      ],
+      "twitter_description": [
+        "Bright, tangy, and refreshing\u2013like a sip of sunshine. Halfday\u2019s exclusive GOODDAY Prebiotic Blend delivers 6g of prebiotic fiber, with only 3-5g of sugar, and 30-40 calories per can."
+      ],
+      "live_price_metadata": {
+        "og:price:amount": [
+          "35.99"
+        ],
+        "og:price:currency": [
+          "USD"
+        ]
+      },
+      "dev_price_metadata": {},
+      "font_preloads": [
+        "//drinkhalfday.com/cdn/shop/files/strippy-regular-webfont-2.woff2?v=4372493407147350643"
+      ],
+      "merchant_description_preserved": true,
+      "liquid_error": false
+    },
+    {
+      "path": "/products/classic-variety",
+      "description": [
+        "A lineup of Halfday\u2019s greatest hits, ready for any escape. Halfday\u2019s exclusive GOODDAY Prebiotic Blend delivers 6g of prebiotic fiber, with only 3-5g of sugar, and 30-40 calories per can."
+      ],
+      "og_description": [
+        "A lineup of Halfday\u2019s greatest hits, ready for any escape. Halfday\u2019s exclusive GOODDAY Prebiotic Blend delivers 6g of prebiotic fiber, with only 3-5g of sugar, and 30-40 calories per can."
+      ],
+      "twitter_description": [
+        "A lineup of Halfday\u2019s greatest hits, ready for any escape. Halfday\u2019s exclusive GOODDAY Prebiotic Blend delivers 6g of prebiotic fiber, with only 3-5g of sugar, and 30-40 calories per can."
+      ],
+      "live_price_metadata": {
+        "og:price:amount": [
+          "35.99"
+        ],
+        "og:price:currency": [
+          "USD"
+        ]
+      },
+      "dev_price_metadata": {},
+      "font_preloads": [
+        "//drinkhalfday.com/cdn/shop/files/strippy-regular-webfont-2.woff2?v=4372493407147350643"
+      ],
+      "merchant_description_preserved": true,
+      "liquid_error": false
+    },
+    {
+      "path": "/products/strawberry-half-half-slim-can",
+      "description": [
+        "Meet the tea-and-lemonade classic, reimagined with a juicy strawberry twist. Halfday Strawberry Half &amp; Half blends real brewed tea with bright lemonade and sweet strawberries for the nostalgic flavor you grew up with - now made to love your gut back."
+      ],
+      "og_description": [
+        "Meet the tea-and-lemonade classic, reimagined with a juicy strawberry twist. Halfday Strawberry Half &amp; Half blends real brewed tea with bright lemonade and sweet strawberries for the nostalgic flavor you grew up with - now made to love your gut back."
+      ],
+      "twitter_description": [
+        "Meet the tea-and-lemonade classic, reimagined with a juicy strawberry twist. Halfday Strawberry Half &amp; Half blends real brewed tea with bright lemonade and sweet strawberries for the nostalgic flavor you grew up with - now made to love your gut back."
+      ],
+      "live_price_metadata": {
+        "og:price:amount": [
+          "32.28"
+        ],
+        "og:price:currency": [
+          "USD"
+        ]
+      },
+      "dev_price_metadata": {},
+      "font_preloads": [
+        "//drinkhalfday.com/cdn/shop/files/strippy-regular-webfont-2.woff2?v=4372493407147350643"
+      ],
+      "merchant_description_preserved": true,
+      "liquid_error": false
+    },
+    {
+      "path": "/pages/contact",
+      "description": [
+        "Contact Halfday with product questions, feedback or wholesale inquiries. Find the right contact for your Halfday iced tea question."
+      ],
+      "og_description": [
+        "Contact Halfday with product questions, feedback or wholesale inquiries. Find the right contact for your Halfday iced tea question."
+      ],
+      "twitter_description": [
+        "Contact Halfday with product questions, feedback or wholesale inquiries. Find the right contact for your Halfday iced tea question."
+      ],
+      "live_price_metadata": {},
+      "dev_price_metadata": {},
+      "font_preloads": [
+        "//drinkhalfday.com/cdn/shop/files/strippy-regular-webfont-2.woff2?v=4372493407147350643"
+      ],
+      "merchant_description_preserved": true,
+      "liquid_error": false
+    },
+    {
+      "path": "/pages/our-story",
+      "description": [
+        "When life handed Kayvon Jahanbakhsh a brutal health challenge, he didn't just fight back \u2013 he partnered with his best friend Mike Lombardo to revolutionize iced tea. Their story isn't just about a drink; it's about transforming a tough moment into something refreshingly awesome."
+      ],
+      "og_description": [
+        "When life handed Kayvon Jahanbakhsh a brutal health challenge, he didn't just fight back \u2013 he partnered with his best friend Mike Lombardo to revolutionize iced tea. Their story isn't just about a drink; it's about transforming a tough moment into something refreshingly awesome."
+      ],
+      "twitter_description": [
+        "When life handed Kayvon Jahanbakhsh a brutal health challenge, he didn't just fight back \u2013 he partnered with his best friend Mike Lombardo to revolutionize iced tea. Their story isn't just about a drink; it's about transforming a tough moment into something refreshingly awesome."
+      ],
+      "live_price_metadata": {},
+      "dev_price_metadata": {},
+      "font_preloads": [
+        "//drinkhalfday.com/cdn/shop/files/strippy-regular-webfont-2.woff2?v=4372493407147350643"
+      ],
+      "merchant_description_preserved": true,
+      "liquid_error": false,
+      "can_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SWEET_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/LEMON_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/PEACH_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/GREEN_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/RASPBERRY_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SWEET_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/LEMON_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/PEACH_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/GREEN_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/RASPBERRY_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        }
+      ]
+    },
+    {
+      "path": "/pages/why-halfday",
+      "description": [
+        "A classic, remade better. Welcome to the new era of iced tea, where feeling good and tasting good are finally on the same team."
+      ],
+      "og_description": [
+        "A classic, remade better. Welcome to the new era of iced tea, where feeling good and tasting good are finally on the same team."
+      ],
+      "twitter_description": [
+        "A classic, remade better. Welcome to the new era of iced tea, where feeling good and tasting good are finally on the same team."
+      ],
+      "live_price_metadata": {},
+      "dev_price_metadata": {},
+      "font_preloads": [
+        "//drinkhalfday.com/cdn/shop/files/strippy-regular-webfont-2.woff2?v=4372493407147350643"
+      ],
+      "merchant_description_preserved": true,
+      "liquid_error": false,
+      "can_images": [
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SWEET_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "eager",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/LEMON_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "eager",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/PEACH_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "eager",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/GREEN_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "eager",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/RASPBERRY_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "eager",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/SWEET_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/LEMON_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/PEACH_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/GREEN_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        },
+        {
+          "src": "//drinkhalfday.com/cdn/shop/files/RASPBERRY_TEA.png?v=1737530258&width=864",
+          "sizes": "(max-width: 989px) 184px, 288px",
+          "loading": "lazy",
+          "fetchpriority": "auto"
+        }
+      ]
+    },
+    {
+      "path": "/collections/staff-variety-packs",
+      "description": [],
+      "og_description": [
+        "Welcome to a new era of iced tea. Halfday is a better-for-you, gut-healthy iced tea with 6g of prebiotic fiber, classic flavor, and 3-5g of sugar."
+      ],
+      "twitter_description": [
+        "Welcome to a new era of iced tea. Halfday is a better-for-you, gut-healthy iced tea with 6g of prebiotic fiber, classic flavor, and 3-5g of sugar."
+      ],
+      "live_price_metadata": {},
+      "dev_price_metadata": {},
+      "font_preloads": [
+        "//drinkhalfday.com/cdn/shop/files/strippy-regular-webfont-2.woff2?v=4372493407147350643"
+      ],
+      "merchant_description_preserved": true,
+      "liquid_error": false
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 # Wave 1 progress
 
-**Status: in progress, second development checkpoint available. September 7, 2026.**
+**Status: in progress, SEO, accessibility and font/image follow-up available in development. September 8, 2026.**
 
 - Branch: `dev/wave-1`.
 - Development theme: `142755430600`, Development (deb269-MacBook-Pro-4).
 - [Preview](https://halfday-tonics.myshopify.com?preview_theme_id=142755430600) · [Theme editor](https://halfday-tonics.myshopify.com/admin/themes/142755430600/editor).
 - Latest live theme was pulled before edits; it matched the committed baseline. No merchant changes needed merging.
-- **Production changes: none.** No products, menus, articles, metafields, app settings, subscribers or inventory records were modified. This checkpoint is entirely theme-scoped.
+- **Production theme changes: none.** The latest checkpoint is theme-scoped. Earlier authorized Agentready configuration changed shared app settings; its activation remains disabled pending the app fixes documented below.
 
 ## Implemented in development
 
@@ -117,7 +117,7 @@ Release still needs authenticated staff/sample ordering QA, a real reduced-motio
 
 Updated September 8, 2026. Core trial is active. Concierge Apply failed twice, so brand, policy summaries, page types and discovery curation were saved through individual settings. See [current setup and remaining work](agentready-setup-and-gaps.md) and the [Agentready product/UX report](agentready-product-feedback.md).
 
-**Full activation is blocked by app defects.** Testing the embed through Shopify CLI on development exposed staff collection data in page HTML. The embed was disabled again; both shared app output switches are off. A direct staff-product markdown URL remains publicly readable despite all products being explicitly excluded. This requires an app endpoint visibility fix. Production theme code and existing store access rules were not changed. Shared Agentready settings and its curated app-served discovery index were updated.
+**Dylan is implementing the reported app fixes.** Full activation remains pending verification of those fixes. Testing the embed through Shopify CLI on development exposed staff collection data in page HTML. The embed was disabled again; both shared app output switches are off. A direct staff-product markdown URL remains publicly readable despite all products being explicitly excluded. This requires an app endpoint visibility fix. Production theme code and existing store access rules were not changed. Shared Agentready settings and its curated app-served discovery index were updated.
 
 The curated native AI guide is implemented on development at `/agents.md`, `/llms.txt` and `/llms-full.txt`, using only public tea links, verified support/terms and retailer buying guidance. Earlier development FAQ additions still provide 19 visible questions including returns and damaged/incorrect orders. No new shopper JavaScript was added. The final 15-route regression check passes and Theme Check remains 122 errors / 404 warnings. [Verification evidence](../reports/agentready-implementation-verification.json).
 
@@ -127,9 +127,40 @@ The curated native AI guide is implemented on development at `/agents.md`, `/llm
 | Slim cans | Confirm 45 versus 40 calories, tea ingredients, caffeine, approved images and the sample-only/access restrictions before making products publicly discoverable. Fix display-title/content fields after those decisions. |
 | CRO/content hierarchy | Finish format discovery, product comparisons and primary CTA placement using the approved catalog. Current public product CTAs and gallery behavior are preserved. |
 | Apps | Review Signifyd scoping with its owner; settle Postscript/Klaviyo SMS ownership; decide whether accessiBe remains needed. Shared app settings affect production and are not isolated by this preview. No speculative uninstall. |
-| Further speed work | The theme animation/polling pass is complete. LCP remains variable; isolate app costs in a supported staging setup, review font delivery and remaining route assets, and repeat production measurements after any approved release. |
+| Further speed work | Animation/polling and brand-font preload cleanup are complete. The story/Why Halfday can strips now use sized images with appropriate priorities. LCP remains variable; isolate app costs in a supported staging setup, review remaining secondary-page imagery and repeat production measurements after any approved release. |
 | SEO/content | Homepage/FAQ headings and key link names are improved. Review remaining page titles/headings/alt text; confirm Subscribe page purpose; review nutrition/caffeine and old health claims. Choose retired Cranberry and overlapping blog destinations using content/Search Console evidence when available. |
 | Store-data cleanup | After preview approval, decide whether to migrate theme-level article fixes into source content and add redirects. Noindex does not remove retained utility URLs from Shopify's sitemap. |
 | Release QA | Owner walkthrough of authenticated staff/sample buying, desktop/mobile content review, reduced-motion setting check, and final production comparison/merchant-diff refresh. |
 
 The signup/offer and lifecycle work belongs to Wave 2 of the latest three-wave plan. GA/Ads remain deferred; GTM remains excluded.
+
+
+## September 8: continued roadmap work while Agentready fixes are underway
+
+Development theme **142755430600**, branch `dev/wave-1`. Refreshed the live theme through Shopify CLI and compared all native theme files to `main`: no merchant drift. The development files being edited also matched the local checkout. No shared app or store data changed in this pass.
+
+| Completed | What changed |
+| --- | --- |
+| Consistent search and social descriptions | Extracted one small Liquid fallback snippet used by search, Open Graph and Twitter metadata. Collection/Contact descriptions now agree across channels; existing merchant descriptions still take precedence. Locksmith visibility checks remain around output. |
+| Retailer pricing metadata | Removed optional Shopify price/currency Open Graph tags from the current retailer-directed product pages. Their Shopify/3PL prices do not establish Amazon or retailer offers. Cart code, product events and actual Shopify inventory checks are untouched. |
+| Clear page headings | Contact, Our Story and Why Halfday now have one H1 each. Section settings allow H1/H2 and default to H2 elsewhere. Scoped CSS preserves existing typography, size, alignment and color. |
+| Smaller can images | Story/Why Halfday marquee images use a maximum 864px source with responsive candidates for their 184px mobile / 288px desktop slots. Removed ten high-priority requests per strip. The leading Why Halfday set stays eager; loop copies and the below-fold Story strip are lazy. Existing links, animation library and loop structure remain. |
+| Accessible flavor and form links | Populated editable flavor-specific accessible names on all ten configured product links across the two pages. Contact's existing translated labels now use the theme's visually-hidden utility instead of display:none. Form names, endpoints, consent behavior and submission logic are unchanged. |
+| Correct font preload | Replaced two identical unused Assistant font preloads with one Strippy WOFF2 preload matching the brand font-face source. Museo/Adobe fonts, font weights and font-display behavior are retained. |
+
+### Verification
+
+- [12-route metadata/image verification](../reports/wave-1-roadmap-preview.json): retained merchant descriptions, matching collection/Contact search and social descriptions, no retailer-page Shopify price metadata, exactly one Strippy font preload and no rendered Liquid errors. Both can strips output the expected responsive sizes and loading priorities.
+- [15-route regression comparison](../reports/wave-1-regression-markup.json): Amazon destinations and attribution parameters, Klaviyo embed IDs, integration markers and external loaders are preserved. Protected/cart scripts and bundled libraries remain unchanged. This verifies markup preservation, not complete analytics attribution or Amazon purchase events.
+- Browser review at **390px and 1440px**: all three pages have one H1 and no horizontal overflow. Original heading metrics also match at the original 842px viewport after the tag changes. Desktop Contact and mobile Why Halfday screenshots retain the current design. Keyboard Enter on the Sweet Tea can link reaches `/products/sweet-tea`.
+- [Theme Check comparison](../reports/wave-1-roadmap-theme-check.json): **122 inherited errors / 402 warnings**, zero added offenses and two undefined-image-variable warnings removed. This is not a clean Theme Check pass.
+- Shopify did not retain Contact's new heading setting on the first combined section/template upload. Reapplying the template after the schema upload resolved it; browser verification confirms H1. Future additions should upload section schema before JSON values and check the rendered result.
+- No JavaScript was added or changed. No new LCP, conversion or full-page transfer improvement is claimed from this pass; the verified changes are image sizing/loading priority and the removal of unused font preloads. Existing app costs remain the largest unresolved speed item.
+
+### Remaining sequence
+
+1. Recheck Agentready endpoint visibility, exclusions, rendered data and onboarding only after Dylan's fixes are ready. Keep the current app embed/output safeguards until verification passes.
+2. Complete approved catalog merchandising once 4-pack/case, slim-can nutrition, channel and access decisions are supplied. This gates format comparisons and additional public product discovery.
+3. Review remaining secondary-page images, social preview image dimensions and accessibility as a separate focused pass. Prioritize actual rendered defects; preserve the current contact and purchase flows.
+4. Resolve app ownership/scoping decisions, beginning with measured Signifyd cost, then SMS overlap and the review migration dependencies. No speculative uninstall.
+5. Complete authenticated staff/sample ordering and release QA, refresh the merchant diff, then request approval for the exact production release. Wave 2 lifecycle activation is separate from this theme pass.

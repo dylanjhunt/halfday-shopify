@@ -40,9 +40,9 @@
           <div class="Page_2_col_image_contact_form_rightinner">
             {% if section.settings.heading_text != blank %}
               <div class="Page_2_col_image_contact_form_heading_text Common_title_new">
-                <h2>
+                <{{ section.settings.heading_tag | default: 'h2' }}>
                   {{ section.settings.heading_text }}
-                </h2>
+                </{{ section.settings.heading_tag | default: 'h2' }}>
               </div>
             {% endif %}
             {% if section.settings.information_text != blank %}
@@ -100,7 +100,7 @@
                         placeholder="Name"
                         
                       >
-                      <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+                      <label class="visually-hidden" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
                     </div>
                     <div class="field field--with-error">
                       <input
@@ -123,7 +123,7 @@
                         {% endcomment %}
                         placeholder="Email Address"
                       >
-                      <label class="field__label" for="ContactForm-email">
+                      <label class="visually-hidden" for="ContactForm-email">
                         {{- 'templates.contact.form.email' | t }}
                         <span aria-hidden="true">*</span></label
                       >
@@ -176,7 +176,7 @@
                     >
                       {{- form.body -}}
                     </textarea>
-                    <label class="form__label field__label" for="ContactForm-body">
+                    <label class="visually-hidden" for="ContactForm-body">
                       {{- 'templates.contact.form.comment' | t -}}
                     </label>
                   </div>
@@ -205,7 +205,7 @@
   .Page_2_col_image_contact_form_leftinner { height: 100%; }
   .Page_2_col_image_contact_form_video_image { height: 100%; }
   .Page_2_col_image_contact_form_video_image video, .Page_2_col_image_contact_form_video_image img { width: 100%; height: 100% !important; display: block; object-fit: cover; }
-  .Page_2_col_image_contact_form_heading_text h2 { text-align: left; }
+  .Page_2_col_image_contact_form_heading_text :is(h1, h2) { text-align: left; }
   .Page_2_col_image_contact_form_information_text { padding-top: 22px; }
   .Page_2_col_image_contact_form_container { padding-top: 28px; }
   .Page_2_col_image_contact_form_information_text p { margin: 0; color: #004600; font-size: 18px; font-weight: 600; line-height: 120%; letter-spacing: 0.36px; font-family: var(--font-museo-sans-family); }
@@ -215,7 +215,6 @@
 
   .Page_2_col_image_contact_form_container form .field:before, .Page_2_col_image_contact_form_container form .field:after { display: none; }
   .Page_2_col_image_contact_form_container form .field__input { height: 48px; padding: 12px 20px; border-radius: 99px; border: 2px solid #004600; margin-bottom: 8px; }
-  .Page_2_col_image_contact_form_container form label { display: none; }
   .Page_2_col_image_contact_form_container form textarea { border-radius: 12px !important; height: 200px !important; }
   .Page_2_col_image_contact_form_container form .field__input::placeholder { opacity: 1; text-transform: uppercase; }
   .Page_2_col_image_contact_form_container form .field__input, .Page_2_col_image_contact_form_container form .field__input::placeholder { font-family: var(--font-museo-slab-family) !important; color: #004600; font-size: 16px; font-weight: 800; line-height: 135%; letter-spacing: 0.32px;}
@@ -239,7 +238,7 @@
   @media (max-width: 749px){
     .Page_2_col_image_contact_form_leftmain { display: none; }
     .Page_2_col_image_contact_form_rightmain { width: 100%; }
-    .Page_2_col_image_contact_form_heading_text h2, .Page_2_col_image_contact_form_information_text p, 
+    .Page_2_col_image_contact_form_heading_text :is(h1, h2), .Page_2_col_image_contact_form_information_text p,
     .Page_2_col_image_contact_form_information_text a { text-align: center; color: #FFF; }
 
     .Page_2_col_image_contact_form_container form .field__input { border: 2px solid #FFF; }
@@ -253,6 +252,16 @@
     "name": "Page 2 Col Contact Form",
     "class": "Page_2_col_image_contact_form",
     "settings": [
+      {
+        "type": "select",
+        "id": "heading_tag",
+        "label": "Heading level",
+        "options": [
+          { "value": "h1", "label": "H1 (page title)" },
+          { "value": "h2", "label": "H2 (section title)" }
+        ],
+        "default": "h2"
+      },
       {
         "type": "color",
         "id": "bg_color",

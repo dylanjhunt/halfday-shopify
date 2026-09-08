@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-08T12:07:26.546643+00:00",
+  "captured_at": "2026-09-08T12:21:55.804619+00:00",
   "theme_id": 142755430600,
   "method": "Separate anonymous cookie jars for public live and development HTML; no forms submitted. Script paths omit query/session values.",
   "limits": "Preserved loaders, attribution URLs, embed IDs and code do not prove receipt of analytics events or conversion attribution. No GA/Ads access; GTM excluded; no purchase/signup events generated.",

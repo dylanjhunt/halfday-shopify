@@ -46,7 +46,7 @@
 
 ## Working boundaries
 
-- Wave 1 is authorized on a development branch/theme. Production repair is permitted for confirmed broken functionality; otherwise development only. No production changes have been made in the current checkpoint.
+- Wave 1 is authorized on a development branch/theme. Production repair is permitted for confirmed broken functionality; otherwise development only. No production theme changes have been made. Authorized Agentready setup changed shared app settings; the current theme follow-up is development-only.
 - Product records, menus, metafields, article content and app settings are shared store data. Theme previews do not isolate their mutation.
 - GA setup, Google Ads and full attribution implementation remain deferred until Dylan confirms readiness. GTM was empty/unused and is excluded.
 - Amazon clicks are intent signals, not confirmed sales. Use actual channel data before claiming conversion lift.

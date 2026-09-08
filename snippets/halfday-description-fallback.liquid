@@ -1,0 +1,15 @@
+{%- comment -%}Shared search/social fallback; merchant SEO descriptions take precedence.{%- endcomment -%}
+    {%- if page_type == 'collection' -%}
+      {%- case collection_handle -%}
+        {%- when 'shop-all' -%}Explore Halfday prebiotic iced tea flavors and variety packs. Find your favorite and browse Amazon and store purchase options.
+        {%- when 'variety-packs' -%}Explore Halfday iced tea variety packs, compare the included flavors and find your next pack on Amazon.
+        {%- when 'iced-teas' -%}Explore Halfday prebiotic iced teas, compare flavors and find where to buy your favorites.
+        {%- when 'half-half' -%}Explore Halfday Half & Half flavors, bringing iced tea and lemonade together. See product details and where to buy.
+      {%- endcase -%}
+    {%- elsif page_type == 'product' -%}
+      {{- product_description | metafield_tag | strip_html | strip | truncate: 160 -}}
+    {%- elsif page_type == 'blog' -%}
+      Explore the Halfday blog for iced tea stories, ingredients and answers to your tea questions.
+    {%- elsif page_type == 'page' and page_handle == 'contact' -%}
+      Contact Halfday with product questions, feedback or wholesale inquiries. Find the right contact for your Halfday iced tea question.
+    {%- endif -%}
