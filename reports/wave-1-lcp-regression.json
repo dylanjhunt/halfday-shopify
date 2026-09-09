@@ -1,0 +1,1179 @@
+{
+  "captured_at": "2026-09-08T20:37:41.904635+00:00",
+  "theme_id": 142755430600,
+  "baseline_ref": "baseline/live-wave-1-follow-through-2026-09-08",
+  "method": "Separate anonymous cookie jars for public live and development HTML; no forms submitted. Script paths omit query/session values.",
+  "limits": "Preserved loaders, attribution URLs, embed IDs and code do not prove receipt of analytics events or conversion attribution. No GA/Ads access; GTM excluded; no purchase/signup events generated.",
+  "libraries": {
+    "jQuery": {
+      "unchanged": true,
+      "sha256": "8c2812ded6436715279f8fd8db58de307aa39ab0296fe3cf0e879067c51e9b18"
+    },
+    "marquee": {
+      "unchanged": true,
+      "sha256": "feade23a47f6041e6d1008885642dd7ab7cc4f12d94b0c7191c9cf8ca55df97d"
+    },
+    "Swiper": {
+      "unchanged": true,
+      "sha256": "b0ef161dccb32d9c84c65701827fece89eb1e22197ccc5f4f14f33cb15af7fda"
+    }
+  },
+  "unchanged_protected_files": {
+    "snippets/locksmith.liquid": true,
+    "assets/product-form.js": true,
+    "assets/cart.js": true,
+    "assets/cart-drawer.js": true,
+    "merchant_settings": true,
+    "agentready_embed_is_disabled": true
+  },
+  "pages": [
+    {
+      "path": "/",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 9,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "TPsGns"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/collections/shop-all",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 9,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "TPsGns"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/collections/variety-packs",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 8,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "TPsGns"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/products/lemon-tea",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 3,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "TPsGns"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/products/classic-variety",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 3,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "TPsGns"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/products/strawberry-half-half-slim-can",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 2,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "TPsGns"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/pages/faq",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 2,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "TPsGns"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/pages/find-in-store",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 13,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "TPsGns"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        },
+        {
+          "action": "/contact#ContactForm",
+          "method": "post"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        },
+        {
+          "action": "/contact#ContactForm",
+          "method": "post"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/pages/contact",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 2,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "TPsGns"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        },
+        {
+          "action": "/contact#ContactForm",
+          "method": "post"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        },
+        {
+          "action": "/contact#ContactForm",
+          "method": "post"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/pages/why-halfday",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 14,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "TPsGns"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        },
+        {
+          "action": "/cart/add",
+          "method": "post"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        },
+        {
+          "action": "/cart/add",
+          "method": "post"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/pages/our-story",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 2,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "TPsGns"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/pages/hellofresh",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 1,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "Xc2KrW"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/pages/pto",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 2,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "W727SZ"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/pages/subscribe",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 1,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "XLuRNz"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        }
+      ],
+      "removed_product_data_ids": []
+    },
+    {
+      "path": "/collections/staff-variety-packs",
+      "live_status": 200,
+      "development_status": 200,
+      "rendered_theme_id": 142755430600,
+      "rendered_live_theme_id": 142757101768,
+      "development_verified": true,
+      "liquid_error": false,
+      "amazon_urls_and_attribution_equal": true,
+      "amazon_destination_count": 0,
+      "live_legacy_internal_links": [],
+      "development_legacy_internal_links": [],
+      "removed_external_loaders": [],
+      "added_external_loaders": [
+        "drinkhalfday.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js"
+      ],
+      "integration_markers": {
+        "ShopifyAnalytics": {
+          "live": true,
+          "development": true
+        },
+        "web-pixels-manager": {
+          "live": true,
+          "development": true
+        },
+        "klaviyo": {
+          "live": true,
+          "development": true
+        },
+        "postscript": {
+          "live": true,
+          "development": true
+        },
+        "yotpo": {
+          "live": true,
+          "development": true
+        },
+        "signifyd": {
+          "live": true,
+          "development": true
+        },
+        "acsb": {
+          "live": true,
+          "development": true
+        },
+        "locksmith": {
+          "live": true,
+          "development": true
+        }
+      },
+      "klaviyo_embed_ids_equal": true,
+      "klaviyo_embed_ids": [
+        "TPsGns"
+      ],
+      "live_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "development_forms": [
+        {
+          "action": "/cart",
+          "method": "post"
+        },
+        {
+          "action": "/search",
+          "method": "get"
+        }
+      ],
+      "removed_product_data_ids": []
+    }
+  ]
+}

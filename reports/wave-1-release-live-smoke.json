@@ -1,0 +1,66 @@
+{
+  "release": "a99ed7f",
+  "method": "Fresh anonymous requests without preview cookies or query parameters",
+  "live_files_match_main": 455,
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "theme_id": 142757101768,
+      "liquid_error": false,
+      "amazon_links": [
+        "https://www.amazon.com/HALFDAY-Prebiotic-Supports-Digestive-Prebiotics/dp/B0F2PM2X54/ref=ast_sto_dp_puis?rdc=1&th=1",
+        "https://www.amazon.com/dp/B0B4F4L6PT?maas=maas_adg_E6AB5831A9D09584A9E3FA63A0FB9EC8_afap_abs&ref_=aa_maas&tag=maas&th=1",
+        "https://www.amazon.com/dp/B0B4F5NJB6?maas=maas_adg_D44B6540BE1F295B1EADBD55954623AF_afap_abs&ref_=aa_maas&tag=maas",
+        "https://www.amazon.com/dp/B0B4F5S6CN?maas=maas_adg_D44B6540BE1F295B1EADBD55954623AF_afap_abs&ref_=aa_maas&tag=maas&th=1",
+        "https://www.amazon.com/dp/B0C7TK99JJ?maas=maas_adg_A076EF74FD8801DDB66EAC328B92E412_afap_abs&ref_=aa_maas&tag=maas&th=1",
+        "https://www.amazon.com/dp/B0DS4635PH?maas=maas_adg_D9DD374CB585913B1F2A456649872BF5_afap_abs&ref_=aa_maas&tag=maas",
+        "https://www.amazon.com/dp/B0DS4DZFTH?maas=maas_adg_0C141A64FE6495C22B3E06AA030630E2_afap_abs&ref_=aa_maas&tag=maas",
+        "https://www.amazon.com/stores/Halfday/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?maas=maas_adg_2692AE890B7430B306E0F6BBB67E7A5A_afap_abs&ref_=aa_maas&tag=maas",
+        "https://www.amazon.com/stores/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?ingress=2&visitId=71862258-e898-4588-b18a-f6fb1e1baa6e&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln"
+      ],
+      "h1_count": 1
+    },
+    {
+      "path": "/products/lemon-tea",
+      "status": 200,
+      "theme_id": 142757101768,
+      "liquid_error": false,
+      "amazon_links": [
+        "https://www.amazon.com/dp/B0B4F5NJB6?maas=maas_adg_D44B6540BE1F295B1EADBD55954623AF_afap_abs&ref_=aa_maas&tag=maas",
+        "https://www.amazon.com/stores/Halfday/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?maas=maas_adg_2692AE890B7430B306E0F6BBB67E7A5A_afap_abs&ref_=aa_maas&tag=maas",
+        "https://www.amazon.com/stores/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?ingress=2&visitId=71862258-e898-4588-b18a-f6fb1e1baa6e&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln"
+      ],
+      "h1_count": 1
+    },
+    {
+      "path": "/products/strawberry-half-half-slim-can",
+      "status": 200,
+      "theme_id": 142757101768,
+      "liquid_error": false,
+      "amazon_links": [
+        "https://www.amazon.com/stores/Halfday/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?maas=maas_adg_2692AE890B7430B306E0F6BBB67E7A5A_afap_abs&ref_=aa_maas&tag=maas",
+        "https://www.amazon.com/stores/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?ingress=2&visitId=71862258-e898-4588-b18a-f6fb1e1baa6e&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln"
+      ],
+      "h1_count": 1
+    },
+    {
+      "path": "/collections/shop-all",
+      "status": 200,
+      "theme_id": 142757101768,
+      "liquid_error": false,
+      "amazon_links": [
+        "https://www.amazon.com/HALFDAY-Prebiotic-Supports-Digestive-Prebiotics/dp/B0F2PM2X54/ref=ast_sto_dp_puis?rdc=1&th=1",
+        "https://www.amazon.com/dp/B0B4F4L6PT?maas=maas_adg_E6AB5831A9D09584A9E3FA63A0FB9EC8_afap_abs&ref_=aa_maas&tag=maas&th=1",
+        "https://www.amazon.com/dp/B0B4F5NJB6?maas=maas_adg_D44B6540BE1F295B1EADBD55954623AF_afap_abs&ref_=aa_maas&tag=maas",
+        "https://www.amazon.com/dp/B0B4F5S6CN?maas=maas_adg_D44B6540BE1F295B1EADBD55954623AF_afap_abs&ref_=aa_maas&tag=maas&th=1",
+        "https://www.amazon.com/dp/B0C7TK99JJ?maas=maas_adg_A076EF74FD8801DDB66EAC328B92E412_afap_abs&ref_=aa_maas&tag=maas&th=1",
+        "https://www.amazon.com/dp/B0DS4635PH?maas=maas_adg_D9DD374CB585913B1F2A456649872BF5_afap_abs&ref_=aa_maas&tag=maas",
+        "https://www.amazon.com/dp/B0DS4DZFTH?maas=maas_adg_0C141A64FE6495C22B3E06AA030630E2_afap_abs&ref_=aa_maas&tag=maas",
+        "https://www.amazon.com/stores/Halfday/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?maas=maas_adg_2692AE890B7430B306E0F6BBB67E7A5A_afap_abs&ref_=aa_maas&tag=maas",
+        "https://www.amazon.com/stores/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?ingress=2&visitId=71862258-e898-4588-b18a-f6fb1e1baa6e&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln"
+      ],
+      "h1_count": 1
+    }
+  ]
+}

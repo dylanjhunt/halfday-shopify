@@ -751,7 +751,7 @@
           </div>
         {%- endif -%}
         <div class="grid__item product__media-wrapper Product_template_detail_maincenter_new">
-          {% render 'product-media-gallery', variant_images: variant_images %}
+          {% render 'product-media-gallery', variant_images: variant_images, halfday_gallery: true %}
           {%- if product.metafields.custom.product_grid_custom_tag_text != blank -%}
             <div class="Meta_custom_tag_text_main_new Mobile_only_new">
               <div class="Meta_custom_tag_text_inner_new">

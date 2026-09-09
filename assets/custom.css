@@ -200,7 +200,7 @@ details[open]>.header__menu-item svg path{ stroke:#FF5528; }
 .Header_announcement_bar_innerdesktop_slider .Header_announcement_bar_innerdesktop_mainboxs_new.swiper-slide-active .Header_announcement_bar_innerdesktop_innerboxs_new{ opacity:1; }
 .Header_announcement_bar_innerdesktop_innerboxs_new{ color:inherit; text-align:center; font-size:14px; line-height:19px; letter-spacing:0.28px; text-transform:uppercase; margin:0px; font-family:var(--font-museo-slab-family); font-weight:800; }
 .Header_announcement_bar_innerdesktop_innerboxs_new p {margin:0; color:inherit; }
-.Header_announcement_bar_innerdesktop_innerboxs_new a{color:#ffffff !important;text-decoration:none;}
+.Header_announcement_bar_innerdesktop_innerboxs_new a{color:inherit !important;text-decoration:none;}
 .Header_announcement_bar_innermobile_innerboxs_new a {color: inherit; text-decoration: none;}
 
 .Index_top_image_over_text_main_new{}
@@ -1949,6 +1949,9 @@ body.product-watermelon-half-half .product__title{ max-width:356px !important; }
 
 @media(min-width:990px) and (max-width:1280px){
   #product-grid .grid__item { padding: 0 16px; }
+  /* Keep long flavor names inside their links in the narrow product column. */
+  .Meta_flavors_variety_tabs_innerloops_innerboxs_innerlists_mainboxs_new{ width:calc((100% - 16px) / 3); }
+  .Meta_flavors_variety_tabs_innerloops_innerboxs_innerlists_innerboxs_innertitle_new p{ font-size:13px; }
 }
 
 @media(min-width:0px) and (max-width:989px){

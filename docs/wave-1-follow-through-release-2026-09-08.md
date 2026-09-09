@@ -22,3 +22,9 @@ The two latest fresh mobile preview measurements had LCP 4.86s/5.26s and CLS 0.0
 The tablet audit found the existing Watermelon flavor label crowded against the edge of the flavor selector. Address this as a separate development change after release. Agentready Apply (`unsupported_field`), app ownership/scoping, approved catalog facts and editorial decisions remain open.
 
 After pushing main, verify the connected Shopify theme by a fresh download and public storefront smoke checks. Record the actual release commit and verification in the next development branch; do not treat a successful Git push alone as deployment proof.
+
+## Deployment verified
+
+Merged and pushed main at **`a99ed7f`**. Shopify theme `142757101768` remains live with processing complete; a fresh post-push download matches all **455 theme files** at main. The release tag is `baseline/live-wave-1-follow-through-2026-09-08`. After exiting browser preview, public Lemon Tea renders the new ProductDetails anchor, no initial gallery video and the unchanged attributed Amazon purchase link. No separate Shopify publish action was needed.
+
+Continued work is isolated on `djh/wave-1-responsive-follow-up` and development theme `142755430600`.

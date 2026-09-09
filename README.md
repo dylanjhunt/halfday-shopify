@@ -11,7 +11,9 @@ Halfday's customized Dawn 15.2.0 theme, downloaded from the active theme on Sept
 | Toolchain | Shopify CLI 4.6.1 (pinned locally); Node 24.19.0 used for setup |
 | Claude Code | Installed version 2.1.207; shared project context in `CLAUDE.md` |
 
-Start with the [focused performance, app, Klaviyo and SEO audit](docs/focused-audit-2026-09-07.md) for verified findings from 15 performance runs, 71 public pages and authenticated account inspection. The [modernization roadmap](docs/modernization-roadmap.md) is the single delivery plan for CRO, speed/LCP, app cleanup, content, email/search, integrations, and reviews, including estimates and an email draft for Leslie. The [initial store audit](docs/initial-audit-2026-09-07.md) and [Klaviyo account audit](docs/klaviyo-audit-2026-09-07.md) remain supporting snapshots. Evidence is in `reports/`. Dylan published `halfday-shopify/main` (theme `142757101768`) on September 8, 2026. **GitHub main is live: pushing to main deploys to production.** The released baseline is `baseline/live-wave-1-2026-09-08` (`2c8ff4f`); `dev/wave-1` retains the first implementation history. See the [progress checklist and preview](docs/wave-1-progress.md) for changes, validation and outstanding decisions. Further Wave 1 work stays on `feature/wave-1-follow-through` and development theme `142755430600`. Agentready shared settings have been configured; full activation is blocked by [verified app issues](docs/agentready-product-feedback.md).
+Start with the [focused performance, app, Klaviyo and SEO audit](docs/focused-audit-2026-09-07.md) for verified findings from 15 performance runs, 71 public pages and authenticated account inspection. The [modernization roadmap](docs/modernization-roadmap.md) is the single delivery plan for CRO, speed/LCP, app cleanup, content, email/search, integrations, and reviews, including estimates and an email draft for Leslie. The [initial store audit](docs/initial-audit-2026-09-07.md) and [Klaviyo account audit](docs/klaviyo-audit-2026-09-07.md) remain supporting snapshots. Evidence is in `reports/`. Dylan published `halfday-shopify/main` (theme `142757101768`) on September 8, 2026. **GitHub main is live: pushing to main deploys to production.** The latest released baseline is `baseline/live-wave-1-follow-through-2026-09-08` (`a99ed7f`); `dev/wave-1` retains the first implementation history. See the [progress checklist and preview](docs/wave-1-progress.md) for changes, validation and outstanding decisions. Further Wave 1 work stays on `djh/wave-1-responsive-follow-up` and development theme `142755430600`. Agentready shared settings have been configured; full activation is blocked by [verified app issues](docs/agentready-product-feedback.md).
+
+Latest development checkpoint: [combined tablet, LCP and Wave 1 readiness report](docs/wave-1-lcp-completion-2026-09-08.md). The named development branch is ready for combined review; main is unchanged.
 
 ## Daily development
 
@@ -20,7 +22,7 @@ cd /Users/dylanhunt/Documents/development/Halfday
 npm ci
 npm run theme:list
 git fetch origin
-git switch --no-track -c feature/describe-the-change origin/main
+git switch --no-track -c djh/describe-the-change origin/main
 npm run theme:dev
 ```
 
@@ -40,7 +42,7 @@ The initial Theme Check result is **126 errors and 361 warnings**, recorded in `
 
 Before new work, check the working tree, fetch GitHub and inspect `theme:list`. Download live theme `142757101768` into a separate temporary directory with explicit `--theme` and `--path`. Compare against `baseline/live-wave-1-2026-09-08` or the latest recorded release, then reconcile any merchant JSON/settings changes through a development branch. Do not pull live over unpublished work.
 
-Use a named `feature/...` or `fix/...` branch and Shopify CLI development preview for every new change. Push that branch explicitly (`git push -u origin feature/describe-the-change`). **Never push or merge into main without release approval: its Shopify theme is already live.** Before an authorized release, refresh the live snapshot, review the exact diff and validate the unpublished preview. Record each released baseline.
+Use a named `djh/...` branch and Shopify CLI development preview for every new change. Push that branch explicitly (`git push -u origin djh/describe-the-change`). **Never push or merge into main without release approval: its Shopify theme is already live.** Before an authorized release, refresh the live snapshot, review the exact diff and validate the unpublished preview. Record each released baseline.
 
 Dylan confirmed customer buying routes to Amazon. Verify Amazon destinations and attribution parameters; staff/sample checkout is not a release gate. Preserve existing access controls and legacy native purchase code.
 

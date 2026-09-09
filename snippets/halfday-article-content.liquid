@@ -1,5 +1,6 @@
 {% comment %}Repair verified legacy destinations in the preview without editing shared blog records.{% endcomment %}
 {{- content
+  | replace: '<h1><span></span></h1>', ''
   | replace: 'https://drinkhalfday.com/pages/shop', '/collections/shop-all'
   | replace: 'https://v6mgp6z0dsx2uxou-53162672328.shopifypreview.com/pages/shop', '/collections/shop-all'
   | replace: 'drinkhalfday.com/pages/shop', '/collections/shop-all'
