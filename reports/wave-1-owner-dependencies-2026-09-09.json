@@ -1,0 +1,39 @@
+{
+  "captured_date": "2026-09-09",
+  "method": "Authenticated Shopify admin UI inspection; no orders/customer data exported.",
+  "installed_apps": [
+    "AgentReady",
+    "Klaviyo: Email Marketing & SMS",
+    "Cin7 Core",
+    "Shopify Claude Connector App",
+    "app-onbrand-halfday",
+    "Flow",
+    "Bad Customer",
+    "Signifyd",
+    "Locksmith",
+    "Matrixify",
+    "DiffMate - Asset Compare Tool",
+    "Forms",
+    "RepRally",
+    "Messaging",
+    "Wayflyer",
+    "Modern Dropship",
+    "QuickBooks Online",
+    "Collabs",
+    "Stockist Store Locator",
+    "Ramp",
+    "Mirakl Connect",
+    "ShipStation",
+    "Yotpo Product Reviews"
+  ],
+  "signifyd": "Opens Signifyd Console login; account configuration not accessible in the existing session.",
+  "storefront_app_caveat": "Postscript and accessiBe load on storefront but are not named in the installed app menu; absence from this menu does not establish they are unused.",
+  "shopify_field_report": {
+    "window": "Last 30 days through yesterday as shown in admin",
+    "lcp_p75_ms": 1292,
+    "inp_p75_ms": 96,
+    "cls_p75": 0.01,
+    "interpretation": "Mostly predates the Wave 1 release; not evidence of release uplift."
+  },
+  "redirect_import": "Prepared, not submitted. Browser connection became unavailable; native UI fallback was interrupted by concurrent browser use."
+}

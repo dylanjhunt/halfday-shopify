@@ -175,31 +175,12 @@ $(".Tabs_common_inner_new").click(function() {
     }
 })
 
-function initAccordion() {
-    $(".accordion .question").click(function() {
-        if ($(this).parent("li").hasClass("open") == false) {
-            $(this).parents(".accordion").find(".answer").slideUp();
-            $(this).parents(".accordion").find("li").removeClass("open");
-
-            $(this).next(".answer").slideDown();
-            $(this).parent(".accordion li").addClass("open");
-        } else {
-            $(this).parents(".accordion").find(".answer").slideUp();
-            $(this).parents(".accordion").find("li").removeClass("open");
-        }
-    })
-}
-initAccordion();
-// Let the browser handle real fragment navigation. Only expand a legacy
-// accordion when a matching target exists; ordinary footer URLs are untouched.
+// Native details handle disclosure and keyboard input without accordion listeners.
 function halfdayOpenAnchor(hash) {
   let id;
   try { id = decodeURIComponent(hash.slice(1)); } catch { return; }
   const target = id && document.getElementById(id);
   if (!target) return;
-  if (target.matches('li') && target.closest('.accordion') && !target.classList.contains('open')) {
-    $(target).children('.question').trigger('click');
-  }
   const details = target.closest('details');
   if (details) details.open = true;
 }

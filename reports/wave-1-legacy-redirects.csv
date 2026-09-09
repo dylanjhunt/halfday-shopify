@@ -1,0 +1,8 @@
+Redirect from,Redirect to
+/pages/shop,/collections/shop-all
+/blogs/news/drinkhalfday.com,/
+/blogs/news/drinkhalfday.com/pages/shop,/collections/shop-all
+/pages/faq_general,/pages/faq#faq_general
+/pages/faq_products,/pages/faq#faq_products
+/pages/faq_orders,/pages/faq#faq_orders
+/pages/faq_company,/pages/faq#faq_company
