@@ -1,0 +1,68 @@
+{
+  "shopify_import": "7 redirects added, confirmed in admin",
+  "checks": [
+    {
+      "path": "/pages/shop",
+      "status": 301,
+      "location": "/collections/shop-all",
+      "expected": "/collections/shop-all",
+      "destination_status": 200,
+      "final_url": "https://drinkhalfday.com/collections/shop-all",
+      "passed": true
+    },
+    {
+      "path": "/blogs/news/drinkhalfday.com",
+      "status": 301,
+      "location": "/",
+      "expected": "/",
+      "destination_status": 200,
+      "final_url": "https://drinkhalfday.com/",
+      "passed": true
+    },
+    {
+      "path": "/blogs/news/drinkhalfday.com/pages/shop",
+      "status": 301,
+      "location": "/collections/shop-all",
+      "expected": "/collections/shop-all",
+      "destination_status": 200,
+      "final_url": "https://drinkhalfday.com/collections/shop-all",
+      "passed": true
+    },
+    {
+      "path": "/pages/faq_general",
+      "status": 301,
+      "location": "/pages/faq#faq_general",
+      "expected": "/pages/faq#faq_general",
+      "destination_status": 200,
+      "final_url": "https://drinkhalfday.com/pages/faq#faq_general",
+      "passed": true
+    },
+    {
+      "path": "/pages/faq_products",
+      "status": 301,
+      "location": "/pages/faq#faq_products",
+      "expected": "/pages/faq#faq_products",
+      "destination_status": 200,
+      "final_url": "https://drinkhalfday.com/pages/faq#faq_products",
+      "passed": true
+    },
+    {
+      "path": "/pages/faq_orders",
+      "status": 301,
+      "location": "/pages/faq#faq_orders",
+      "expected": "/pages/faq#faq_orders",
+      "destination_status": 200,
+      "final_url": "https://drinkhalfday.com/pages/faq#faq_orders",
+      "passed": true
+    },
+    {
+      "path": "/pages/faq_company",
+      "status": 301,
+      "location": "/pages/faq#faq_company",
+      "expected": "/pages/faq#faq_company",
+      "destination_status": 200,
+      "final_url": "https://drinkhalfday.com/pages/faq#faq_company",
+      "passed": true
+    }
+  ]
+}

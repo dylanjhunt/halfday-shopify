@@ -11,7 +11,7 @@ Updated September 9, 2026. The released theme is main `bb0169f`. Additional audi
 - Confirmed all 455 files in the fresh live snapshot still match main `bb0169f`.
 - Rechecked the installed app menu: 23 apps. Signifyd opens a separate account login. Postscript and accessiBe still have storefront integrations but are not named in that menu. No app was removed based on menu absence.
 - Recorded Shopify's last-30-days field baseline: **LCP P75 1,292ms; INP P75 96ms; CLS P75 0.01**. This window mostly predates our release and cannot measure its effect yet.
-- Prepared [seven native URL redirects](../reports/wave-1-legacy-redirects.csv). Each source was freshly verified as HTTP 404. `/pages/shop` and the malformed blog shop URL point to Shop All; the malformed homepage URL points home; four old FAQ paths point to their current FAQ anchors. The import was **not submitted**: the browser connection became unavailable and concurrent native browser use interrupted the file picker. Existing theme-level internal-link repairs remain live. No redirect or source article was changed.
+- Imported [seven native URL redirects](../reports/wave-1-legacy-redirects.csv) after browser access recovered. Shopify confirmed seven additions, and anonymous HTTP checks verified all seven return **301** to the intended destination with **200** destination responses. The old shop/malformed URLs now reach Shop All or home; four old FAQ paths reach the current FAQ anchors. These shared store repairs are live independently of the development theme. Source articles were not changed. [Redirect verification](../reports/wave-1-legacy-redirects-after.json).
 
 [Theme verification](../reports/wave-1-final-follow-up-verification.json) · [15-route comparison](../reports/wave-1-final-follow-up-regression.json) · [App/field observations](../reports/wave-1-owner-dependencies-2026-09-09.json) · [Redirect 404 evidence](../reports/wave-1-legacy-redirects-before.json)
 
@@ -32,8 +32,6 @@ Updated September 9, 2026. The released theme is main `bb0169f`. Additional audi
 
 **Agentready:** Apply still fails with `unsupported_field` on the saved 34-change run. Dylan already confirmed the fix is being worked on. Tell us when it is deployed; no need to repeat setup decisions. We will verify durable Apply results, current description/policy output, retailer-safe product data, schema ownership and approved/protected catalog behavior before activation. [Current app report](agentready-product-feedback.md).
 
-**Browser access needed for the prepared redirects:** make the Halfday Shopify admin browser available for a short uninterrupted import and verification. The seven-row CSV is ready; no editorial decision is needed for those mappings. Do not assume it was imported because the upload dialog was opened.
-
 ## App-owner request, ready to forward
 
 “Our public shopping journey sends customers to Amazon, while Shopify retains separate staff/sample paths. Does the current Signifyd configuration require device collection on public discovery pages? If it can be scoped, please provide the supported setting or implementation and how we retain required Shopify-order coverage. We measured repeated CPU cost from imgs.signifyd.com and cdn-scripts.signifyd.com, so we want to review its scope before removing any code.”
@@ -44,4 +42,6 @@ Signifyd documents use of browsing/device behavior in its protection products; n
 
 Stockist and Locksmith have active storefront functions. Keep Yotpo until Bazaarvoice's replacement/import is verified in Wave 3. Keep operations apps until the route ownership work in Wave 3. Klaviyo offer/signup/flow activation is Wave 2; GA and Ads remain deferred and GTM excluded. No customer, order, subscription or campaign state was changed in this pass.
 
-The extra theme changes are ready in development. Wave 1 is not entirely complete while catalog facts, editorial/app decisions, the redirect import and Agentready activation checks remain outstanding. Historical progress entries retain their original wording; this status and the current roadmap supersede older blockers that have already been repaired.
+The extra theme changes are ready in development. Wave 1 is not entirely complete while catalog facts, editorial/app decisions and Agentready activation checks remain outstanding. Historical progress entries retain their original wording; this status and the current roadmap supersede older blockers that have already been repaired.
+
+Development work is committed and pushed in [draft PR #1](https://github.com/dylanjhunt/halfday-shopify/pull/1). Main is unchanged.

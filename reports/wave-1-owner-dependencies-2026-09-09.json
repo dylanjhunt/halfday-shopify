@@ -35,5 +35,5 @@
     "cls_p75": 0.01,
     "interpretation": "Mostly predates the Wave 1 release; not evidence of release uplift."
   },
-  "redirect_import": "Prepared, not submitted. Browser connection became unavailable; native UI fallback was interrupted by concurrent browser use."
+  "redirect_import": "Completed after browser access recovered. Shopify confirmed seven additions; all seven anonymous checks return 301 to the intended destination with 200 destination responses. See wave-1-legacy-redirects-after.json."
 }

@@ -12,7 +12,7 @@
 
 Additional development fixes now cover the homepage benefits accordion, responsive benefits artwork/icons, optional video deferral and restored keyboard focus indicators. Four remote files match local; 15-route checks pass; Theme Check reports 122 inherited errors / 385 warnings with no added findings. Main remains `bb0169f`.
 
-Seven native legacy redirects are prepared from freshly verified 404s but **not imported** because browser access was interrupted before submission. Rechecked app inventory and the Shopify 30-day field baseline. [Completion details and specific questions](wave-1-completion-questions.md) track every remaining dependency. Agentready Apply is still being worked on; it was not retried this pass.
+Seven native legacy redirects were imported after browser access recovered. Shopify confirmed seven additions; anonymous requests verify all seven now return **301** to the intended working destinations. [After verification](../reports/wave-1-legacy-redirects-after.json). Rechecked app inventory and the Shopify 30-day field baseline. [Completion details and specific questions](wave-1-completion-questions.md) track every remaining dependency. Agentready Apply is still being worked on; it was not retried this pass.
 
 ## Implemented and released
 
