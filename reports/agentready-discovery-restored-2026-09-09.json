@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-09-09T12:41:02.239155+00:00",
+  "condition": "After restoring settings and explicitly regenerating the curated discovery file",
+  "path": "/apps/agentready/llms.txt",
+  "status": 200,
+  "bytes": 2660,
+  "cache_control": "private, no-store",
+  "description_override_present": true,
+  "product_detail_links_present": false,
+  "staff_markers": false,
+  "rights_reserved": true
+}

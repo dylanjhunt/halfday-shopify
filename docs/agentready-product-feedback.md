@@ -1,5 +1,32 @@
 # Agentready implementation and UX findings
 
+## September 9: release recheck and controlled catalog test
+
+This section supersedes earlier status statements below. The historical reproductions are retained to distinguish original defects from verified fixes.
+
+| Area | Verified now | Remaining acceptance gap |
+| --- | --- | --- |
+| Concierge Apply, AR-01 | Saved run `cmts0phhe003zgm0atjof7omg`, 34 approved changes, still returns `unsupported_field`. Corrected the legacy return proposal from Unknown to Not accepted before one Apply attempt. Dylan says the fix is being worked on. | Show the exact rejected field/path and a durable per-change receipt. Do not claim writes succeeded. Migrate legacy plans and compare proposals with current saved settings. |
+| Saved-attempt recovery | Reload saved attempt now returns to the existing 34-change review rather than the welcome screen. Legacy page proposals disclose missing scan-coverage evidence. | Still needs attempt outcome/time and per-item states. Some current values in the legacy review say Not set despite populated individual settings; label snapshot age and refresh the comparison. |
+| Returns and policy sources, AR-02/03/08 | Not accepted is available, with no numeric window required. Custom Terms and FAQ policy URLs are accepted. Source versus override, sync time and affected outputs are clearer. | Verify final emitted no-return schema only after a successful apply/sync. Shipping estimates remain unconfirmed and policy schema output remains disabled. |
+| Output/coverage UI, AR-05/06 | Independent Agent JSON and JSON-LD controls; readiness, prepared data and actual delivery are differentiated. Copy avoids promising assistant usage from publishing alone. | Embedded entitlement/CTA and catalog priority relevance from September 8 were not rechecked. Do not mark those resolved. |
+| Catalog safeguards, AR-00/04 | Explicit product/collection handle approvals, per-channel approval, exclusions and a pause switch now exist. With Agent JSON and the dev embed on, catalog paused and no approved handles, the homepage emitted one valid block; Lemon Tea and the protected staff collection emitted none. Staff/public product markdown URLs returned 404 with private/no-store caching. Production emitted none. | This is a sampled paused/zero-approval test, not verification of approved-product access rules, every protected item, JSON-LD, MCP, ACP or cache invalidation across all channels. Test those before catalog activation. |
+| Brand/discovery precedence | App-served llms.txt now uses the saved retailer-aware description override, US market and All Rights Reserved; no product detail links or staff markers in the inspected file. | Enabled homepage Agent JSON still used the older Shopify description and `generated_at` September 8 11:54 UTC, not the saved retailer-aware description. Show source/version beside each output, and verify precedence after the Apply/sync fix. |
+
+### Remaining output and UX recommendations
+
+- **Retailer buying model:** Structured data settings still expose Shopify offer-bearing ProductGroup/AggregateOffer choices without a visible external-retailer or offer-suppression choice. Halfday's Amazon-directed catalog needs output that does not infer Amazon price or availability from Shopify/3PL data. Keep public product output disabled until rendered behavior is verified.
+- **Schema ownership:** Before enabling JSON-LD, compare Organization IDs, policy nodes and existing theme/Yotpo product markup. The controlled test used Agent JSON only, so the earlier unexplained shipping-region/rate issue in JSON-LD is not closed.
+- **Discovery status:** Saving curation temporarily showed “saved file is withheld.” During the paused test, the direct index was still 200 and contained only curated brand/pages/policies; later the UI showed Saved. After restoring pause, a fresh request correctly returned 404 until explicit regeneration, then 200. Do not call the earlier 200 a proven catalog leak. Show a timestamped endpoint check and whether a file was regenerated automatically so the status and public response can be understood together.
+- **Separate brand-only from catalog shutdown:** The home block continuing while catalog is paused is consistent with the switch label. Make the scope equally clear on all delivery screens. A green status should list which formats, pages and catalog channels were actually checked.
+- **Complete the journey with evidence:** After Apply, present saved settings, regenerated output and fetched live output as separate steps. A plan review, sync timestamp or audit score alone is not completion.
+
+### Test restoration and evidence
+
+Both shared format switches are off again; development embed is disabled and CLI readback matches the committed config; production embed stayed off. Catalog pause is restored to its original off state. Approved handles remain blank, channel approvals off, Include Products off, and all 45 product rows hidden. Regenerated the curated brand/page/policy index after restoring settings; it is public again without catalog records. No temporary embed activation is committed.
+
+[Initial off-state check](../reports/agentready-recheck-2026-09-09.json) · [Paused enabled-output test](../reports/agentready-paused-output-test-2026-09-09.json) · [Restored output/endpoints](../reports/agentready-restored-2026-09-09.json) · [Regenerated discovery file](../reports/agentready-discovery-restored-2026-09-09.json)
+
 ## September 8, 19:29 UTC: recheck after app updates
 
 - **AR-00 mitigation improved:** the previously exposed staff markdown URL and a public Lemon Tea control both return 404 with `private, no-store`. Both app output switches and the embed are off. This confirms the output-off endpoint behavior is repaired in this configuration. Protected exclusions with output enabled remain unverified; do not close the entire visibility issue yet.

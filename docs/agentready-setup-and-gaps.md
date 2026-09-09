@@ -1,7 +1,10 @@
 # Agentready setup and SEO/AEO follow-up
 
-**Latest recheck, September 8 at 19:29 UTC:** anonymous staff/public product markdown endpoints now return 404 with no-store caching while output is off. Concierge Apply still fails with `unsupported_field`, and saved-attempt recovery returns to the welcome screen. Both output switches and the theme embed remain off. Onboarding and enabled-output visibility are not yet verified. See [current feedback](agentready-product-feedback.md) and [Wave 1 follow-up](wave-1-review-layout-2026-09-08.md). Earlier endpoint observations below describe the original defect.
+**Current status, September 9:** no-return/custom policy controls and saved-plan recovery are improved. The saved 34-change Apply still fails with `unsupported_field`; Dylan is working on it. A controlled development-only Agent JSON test passed sampled product/staff exclusions with catalog paused and no approved handles, using homepage output as a positive control. Both output switches and both theme embeds are restored off. The curated app-served discovery index is regenerated and public, with the correct retailer description and no catalog records. Approved product output, JSON-LD, MCP/ACP and post-sync description precedence still need verification. See [current feedback and evidence](agentready-product-feedback.md) and [release record](wave-1-release-2026-09-09.md).
 
+## September 8 setup history
+
+The entries below retain the original observations. Their defect status is superseded by the September 9 recheck above.
 
 September 8, 2026. **Core trial active; safe configuration completed manually; full activation blocked by verified app defects.** The reviewed Concierge Apply failed twice. Brand settings and scoped content settings subsequently saved through the individual screens. The production theme was not changed. Agentready’s shared settings and curated app-served discovery index were updated. The app embed was tested only in development, then disabled after it emitted protected staff collection data. Both app render switches are now off.
 

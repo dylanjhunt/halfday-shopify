@@ -1,0 +1,77 @@
+{
+  "captured_at": "2026-09-09T12:35:44.189512+00:00",
+  "condition": "Agent JSON on; JSON-LD off; development embed on; production embed off; catalog paused; zero approved product/collection handles.",
+  "pages": [
+    {
+      "path": "/",
+      "development": true,
+      "status": 200,
+      "theme_id": "142755430600",
+      "blocks": [
+        {
+          "kind": "home",
+          "id": null,
+          "valid_json": true,
+          "keys": [
+            "version",
+            "type",
+            "organization",
+            "store_policies",
+            "generated_at",
+            "source"
+          ],
+          "has_offer": false,
+          "staff_markers": false
+        }
+      ],
+      "liquid_error": false
+    },
+    {
+      "path": "/products/lemon-tea",
+      "development": true,
+      "status": 200,
+      "theme_id": "142755430600",
+      "blocks": [],
+      "liquid_error": false
+    },
+    {
+      "path": "/collections/staff-variety-packs",
+      "development": true,
+      "status": 200,
+      "theme_id": "142755430600",
+      "blocks": [],
+      "liquid_error": false
+    },
+    {
+      "path": "/",
+      "development": false,
+      "status": 200,
+      "theme_id": "142757101768",
+      "blocks": [],
+      "liquid_error": false
+    }
+  ],
+  "endpoints": [
+    {
+      "path": "/apps/agentready/products/womens-marmot-black-jacket-s.md",
+      "status": 404,
+      "cache_control": "private, no-store",
+      "bytes": 18,
+      "staff_markers": false
+    },
+    {
+      "path": "/apps/agentready/products/lemon-tea.md",
+      "status": 404,
+      "cache_control": "private, no-store",
+      "bytes": 18,
+      "staff_markers": false
+    },
+    {
+      "path": "/apps/agentready/llms.txt",
+      "status": 200,
+      "cache_control": "private, no-store",
+      "bytes": 2660,
+      "staff_markers": false
+    }
+  ]
+}

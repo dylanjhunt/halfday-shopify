@@ -1,12 +1,12 @@
 # Halfday modernization roadmap
 
-**Current three-wave plan. First Wave 1 release published by Dylan on September 8, 2026. The audited gallery, collection and review follow-through is also live; subsequent work remains in development.** This replaces the earlier five-wave grouping; the work is grouped around site readiness, email relaunch, and operations/reviews.
+**Current three-wave plan. First Wave 1 release published by Dylan on September 8, 2026. The combined tablet, performance and accessibility follow-through is live as of September 9. Catalog/app dependencies remain open.** This replaces the earlier five-wave grouping; the work is grouped around site readiness, email relaunch, and operations/reviews.
 
 [Verified audit](focused-audit-2026-09-07.md) · [Wave 1 checklist and preview](wave-1-progress.md) · [LCP/CLS findings](lcp-cls-follow-up-2026-09-08.md)
 
 | Wave | Outcome | Estimated hands-on time | Status |
 | --- | --- | --- | --- |
-| 1. Site cleanup, speed and shopping experience | Current content, clear buying paths, lighter pages and concrete SEO repairs | 14–20 hours | First release and follow-through live; responsive and final LCP work audited in development; catalog/app decisions open |
+| 1. Site cleanup, speed and shopping experience | Current content, clear buying paths, lighter pages and concrete SEO repairs | 14–20 hours | Combined theme work live at bb0169f; catalog/app and editorial decisions open |
 | 2. Klaviyo cleanup and relaunch | Correct signup/offer journey, refreshed welcome/browse messaging and eligible campaign audience | 8–12 hours | Not started |
 | 3. Fulfillment connections and reviews | Verified channel routing, routine sync repairs and Bazaarvoice migration | 6–10 hours | Vendor/access inputs needed |
 
@@ -23,9 +23,11 @@
 
 **September 8 progress:** Dylan published Git-connected theme **142757101768**, `halfday-shopify/main`, at `2c8ff4f`. All 455 downloaded live files match that release. The initial performance, accessibility, metadata, link, image and stylesheet improvements are now the production baseline. The obsolete Shogun product assignments were also cleared with approval.
 
-The audited follow-through was merged and deployed with Dylan’s authorization at **`a99ed7f`**. All 455 live files match the release. New work is on **`djh/wave-1-responsive-follow-up`**, preview theme **142755430600**. Product gallery videos now load on request and pause when leaving their slide. Collection banners use a single responsive picture and one H1 while preserving the existing artwork and heading text. See the [follow-through report](wave-1-follow-through-2026-09-08.md) and the [latest review-layout/Agentready checkpoint](wave-1-review-layout-2026-09-08.md).
+**Latest release, September 9:** the tablet-label and LCP work is merged and live at **`bb0169f`**, tag **`baseline/live-wave-1-2026-09-09`**. Shopify's overnight Locksmith changes were preserved. All 455 live files match main; 15-route regression checks passed before and after deployment. Live desktop/tablet/mobile samples were visually inspected. See the [release record](wave-1-release-2026-09-09.md).
 
-**Latest development checkpoint:** the tablet-label branch now also contains the final image sizing, collection promotional-video deferral, cart CSS, announcement contrast and semantic/empty-heading repairs. Shop All initial transfer fell about 69% and median lab LCP from 4.18s to 3.53s; product LCP still has a 10.44s outlier. Both Adobe font experiments were reverted. All 455 preview files match local code, 15 regression routes preserve integrations, and the 71-URL sitemap check is complete. Main remains `a99ed7f`. See the [combined readiness report](wave-1-lcp-completion-2026-09-08.md) for evidence, remaining app/content inputs and the prepared app-owner questions.
+The [combined performance audit](wave-1-lcp-completion-2026-09-08.md) measured about 69% less Shop All initial transfer and median lab LCP from 4.18s to 3.53s; product LCP remains variable. These are September 8 lab measurements, not new production field results. New work stays on **`djh/wave-1-agentready-verification`** and development theme **142755430600**.
+
+Agentready now has better policy, recovery and catalog approval controls. Sampled paused-catalog output exclusions passed with development Agent JSON enabled, then test controls were restored. Apply still fails with `unsupported_field`, which Dylan is working on. Retailer-safe approved product output, JSON-LD ownership and remaining channel checks still precede activation. [Current app findings](agentready-product-feedback.md).
 
 **Open to finish Wave 1:** approved 4-pack/slim-can facts and assets; app ownership and supported Signifyd scoping; verification after Agentready's app fixes are ready; editorial decisions on disputed health/nutrition claims and retired content. The review slot now has a verified loading/zero-review state, and Dawn/Yotpo star CSS is separated. LCP remains variable. Agentready output-off endpoint blocking now passes, but Concierge Apply still fails with `unsupported_field`. These items remain open, not silently marked complete. Klaviyo signup/offer activation belongs to Wave 2.
 
@@ -54,7 +56,7 @@ The audited follow-through was merged and deployed with Dylan’s authorization 
 
 ## Working boundaries
 
-- GitHub main is connected to the live theme. Use Shopify CLI with development/unpublished themes and descriptive feature/fix branches. A main push is a production deployment and needs release authorization. Production repair is permitted for confirmed broken functionality; otherwise development only. Authorized Agentready setup and Shogun assignment cleanup changed shared settings/data; this follow-through changes neither.
+- GitHub main is connected to the live theme. Use Shopify CLI with development/unpublished themes and descriptive feature/fix branches. A main push is a production deployment and needs release authorization. Production repair is permitted for confirmed broken functionality; otherwise development only. Authorized Agentready setup and Shogun assignment cleanup changed shared settings/data; the September 9 theme release changed neither; separate Agentready shared-setting tests and restoration are documented.
 - Product records, menus, metafields, article content and app settings are shared store data. Theme previews do not isolate their mutation.
 - GA setup, Google Ads and full attribution implementation remain deferred until Dylan confirms readiness. GTM was empty/unused and is excluded.
 - Amazon clicks are intent signals, not confirmed sales. Use actual channel data before claiming conversion lift.
