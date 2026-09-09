@@ -10,7 +10,7 @@ Updated September 9, 2026. Dylan merged PR #1 at main `2893a6f`. The new contras
 - Dark-green contrast treatment: **approved and implemented in development**, including yellow-panel headings, primary/mobile-card buttons, footer embedded-form button and footer link hover. Desktop/mobile checks and 15-route regression passed; other merchant settings and attributed Amazon links are preserved. No new JavaScript.
 - Search Console: Dylan will request access. Do not consolidate article URLs before that evidence arrives.
 - Agentready: deployed Apply fix verified with a durable 34/34 receipt; accurate brand/policy output prepared in development. Product output and JSON-LD remain off. Contact-field UI mismatch is reported separately.
-- Peach display-title typo correction is prepared but unsaved. Automatic approval review rejected the shared live metafield save under the development-only workflow; the edit was discarded. Exact pending correction: `Peach Tea (Silm Can)` to `Peach Tea (Slim Can)`.
+- Peach display-title typo: **completed with Dylan's explicit approval** on September 9. Saved `Peach Tea (Slim Can)` in the Product Title metafield and verified it after an admin reload. No other product fields were changed.
 
 The original numbered questions below are retained to match Dylan's numbered reply. Items 5, 8 and 9 are resolved by the decisions above; 1 is narrowed to preserving existing setup and confirming only specific merchandising changes.
 

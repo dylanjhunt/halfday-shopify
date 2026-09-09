@@ -8,6 +8,10 @@
 - Agentready UI and sampled catalog safeguards improved. Apply still returns `unsupported_field`; Dylan is working on it. Both output switches and embeds restored off; curated discovery index regenerated without catalog records. [Current app findings](agentready-product-feedback.md).
 - Historical checkpoints below retain their original scope and are superseded by this current status. Amazon buying routes and protected legacy code are preserved.
 
+## September 9: approved Peach typo correction
+
+Dylan explicitly approved the live product metafield spelling correction. Saved Product Title on Peach Tea (Slim Can), Shopify product `8335577710792`, from `Peach Tea (Silm Can)` to `Peach Tea (Slim Can)`. A fresh admin reload confirmed the corrected value; Save was disabled, indicating no pending edits. No other product fields, theme code, publication or access settings were changed. This closes the previously blocked typo item below.
+
 ## September 9: decisions, contrast and Agentready Apply follow-up
 
 Dylan confirmed keeping accessiBe and the health articles, approved dark-green contrast fixes, and will confirm Signifyd, Postscript, expired campaigns and Cranberry while requesting Search Console. Existing products are preserved; [client fact list](product-facts-for-leslie.md) gives exact locations for contradictory and missing details.
