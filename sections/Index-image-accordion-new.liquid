@@ -7,29 +7,19 @@
             <div class="Index_image_accordion_sides_innerleft_new">
               {%- if section.settings.main_common_video != blank -%}
                 <div class="Index_image_accordion_sides_innerleft_videoimage_new">
-                  {{ section.settings.main_common_video | video_tag: class:'Common_video_new', image_size: 'master', controls: false, autoplay: true, loop: true }}
+                  {% render 'halfday-video', video: section.settings.main_common_video, sizes: '(min-width: 750px) calc(50vw - 80px), calc(100vw - 80px)' %}
                 </div>
-              {% else %}  
-                {%- if section.settings.main_desktop_image != blank and section.settings.main_mobile_image != blank -%}
+              {%- else -%}
+                {%- assign desktop_image = section.settings.main_desktop_image | default: section.settings.main_mobile_image -%}
+                {%- assign mobile_image = section.settings.main_mobile_image | default: desktop_image -%}
+                {%- if desktop_image != blank -%}
                   <div class="Index_image_accordion_sides_innerleft_videoimage_new">
-                    {%- if section.settings.main_desktop_image != blank -%}
-                      {{
-                        section.settings.main_desktop_image | 
-                        image_url: width: img.width | 
-                        image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                        fetchpriority: 'low', 
-                        class:'Desktop_image_new'
-                      }}
-                    {%- endif -%}
-                    {%- if section.settings.main_mobile_image != blank -%}
-                      {{
-                        section.settings.main_mobile_image | 
-                        image_url: width: img.width | 
-                        image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                        fetchpriority: 'low', 
-                        class:'Mobile_image_new'
-                      }}
-                    {%- endif -%}
+                    <picture>
+                      <source media="(max-width: 749px)"
+                        srcset="{%- if mobile_image.width > 375 -%}{{ mobile_image | image_url: width: 375 }} 375w, {%- endif -%}{%- if mobile_image.width > 550 -%}{{ mobile_image | image_url: width: 550 }} 550w, {%- endif -%}{%- assign mobile_max_width = mobile_image.width | at_most: 900 -%}{{ mobile_image | image_url: width: mobile_max_width }} {{ mobile_max_width }}w"
+                        sizes="calc(100vw - 80px)" width="{{ mobile_image.width }}" height="{{ mobile_image.height }}">
+                      {{ desktop_image | image_url: width: 1500 | image_tag: widths: '375, 550, 750, 900, 1100, 1500', sizes: '(min-width: 750px) calc(50vw - 80px), calc(100vw - 80px)', loading: 'lazy', fetchpriority: 'low', class: 'Static_image_new' }}
+                    </picture>
                   </div>
                 {%- endif -%}
               {%- endif -%}
@@ -51,44 +41,34 @@
                   <div class="Index_image_accordion_sides_innerright_innerloops_new">
                     <div class="accordion">
                       <ul class="list-unstyled">
+                        {%- assign first_answer = true -%}
                         {%- for block in section.blocks -%}
                           {%- if block.settings.title != blank and block.settings.main_custom_infos != blank -%}
-                            <li{% if forloop.first %} class="open"{% endif %}>
-                              {%- if block.settings.main_custom_image != blank or block.settings.title != blank -%}
-                                <div class="question">
-                                  <div class="Index_image_accordion_sides_innerright_innerloops_mainquestion_new">
-                                    <div class="Index_image_accordion_sides_innerright_innerloops_innerquestion_new">
+                            <li {{ block.shopify_attributes }}>
+                              <details name="Benefits-{{ section.id }}"{% if first_answer %} open{% endif %}>
+                                <summary class="question">
+                                  <span class="Index_image_accordion_sides_innerright_innerloops_mainquestion_new">
+                                    <span class="Index_image_accordion_sides_innerright_innerloops_innerquestion_new">
                                       {%- if block.settings.main_custom_image != blank -%}
-                                        <div class="Index_image_accordion_sides_innerright_innerloops_innerquestion_image_new">
-                                          {{
-                                            block.settings.main_custom_image | 
-                                            image_url: width: img.width | 
-                                            image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                            fetchpriority: 'low', 
-                                            class: 'Custom_image_new'
-                                          }}
-                                        </div>
+                                        <span class="Index_image_accordion_sides_innerright_innerloops_innerquestion_image_new">
+                                          {{ block.settings.main_custom_image | image_url: width: 96 | image_tag: widths: '32, 64, 96', sizes: '32px', loading: 'lazy', class: 'Custom_image_new', alt: '' }}
+                                        </span>
                                       {%- endif -%}
-                                      {%- if block.settings.title != blank -%}
-                                        <div class="Index_image_accordion_sides_innerright_innerloops_innerquestion_title_new">
-                                          {{ block.settings.title }}
-                                        </div>
-                                      {%- endif -%}
-                                    </div>
-                                  </div>
-                                </div>
-                              {%- endif -%}
-                              {%- if block.settings.main_custom_infos != blank -%}
-                                <div class="answer"{% if forloop.first %} style="display: block;"{% endif %}>
+                                      <span class="Index_image_accordion_sides_innerright_innerloops_innerquestion_title_new">{{ block.settings.title }}</span>
+                                    </span>
+                                  </span>
+                                </summary>
+                                <div class="answer">
                                   <div class="Index_image_accordion_sides_innerright_innerloops_mainanswer_new">
                                     <div class="Index_image_accordion_sides_innerright_innerloops_inneranswer_new">
                                       {{ block.settings.main_custom_infos }}
                                     </div>
                                   </div>
                                 </div>
-                              {%- endif -%}
+                              </details>
                             </li>
-                          {%- endif -%}  
+                            {%- assign first_answer = false -%}
+                          {%- endif -%}
                         {%- endfor -%}
                       </ul>
                     </div>

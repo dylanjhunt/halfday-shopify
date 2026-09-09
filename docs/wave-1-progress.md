@@ -1,15 +1,18 @@
 # Wave 1 progress
 
-**Status: the initial release and audited gallery, collection and review follow-through are live. Remaining development is on a fresh branch. Catalog/app dependencies remain open.**
+**Status: the combined Wave 1 tablet, performance, accessibility and semantic work is live. Catalog/app and editorial dependencies remain open.**
 
-- Live: theme **142757101768**, `halfday-shopify/main`, release commit `a99ed7f`; tag `baseline/live-wave-1-follow-through-2026-09-08`.
-- Current branch: **`djh/wave-1-responsive-follow-up`**. Further changes stay in development until separately authorized for release.
-- Development theme: **142755430600**, Development (deb269-MacBook-Pro-4).
-- [Development preview](https://drinkhalfday.com/?preview_theme_id=142755430600) · [Release audit](wave-1-follow-through-release-2026-09-08.md).
-- Post-release Shopify CLI download: **455 files match main**, live role verified and processing complete. Public Lemon Tea has the new unique anchor, zero initial gallery videos and the existing attributed Amazon destination; browser preview was exited before this check.
-- Continuing: tablet flavor-selector spacing in development, with no new JavaScript. See the [responsive follow-up](wave-1-responsive-follow-up-2026-09-08.md).
-- Shared app/store data was not changed by this release. Agentready activation still depends on app fixes and visibility verification.
-- Historical checkpoints below retain their original scope; this current status supersedes their release-state statements. Public buying routes to Amazon; authenticated staff checkout is outside the release gate, with code and access controls preserved.
+- Live: theme **142757101768**, `halfday-shopify/main`, release **`bb0169f`**; tag **`baseline/live-wave-1-2026-09-09`**.
+- Current branch: **`djh/wave-1-agentready-verification`**. Development theme: **142755430600**. Future theme releases need separate authorization.
+- [September 9 release and verification](wave-1-release-2026-09-09.md): all 455 live files match main; 15-route checks pass before/after deployment; live desktop/tablet/mobile samples inspected. Overnight Shopify/Locksmith changes preserved.
+- Agentready UI and sampled catalog safeguards improved. Apply still returns `unsupported_field`; Dylan is working on it. Both output switches and embeds restored off; curated discovery index regenerated without catalog records. [Current app findings](agentready-product-feedback.md).
+- Historical checkpoints below retain their original scope and are superseded by this current status. Amazon buying routes and protected legacy code are preserved.
+
+## Latest autonomous completion pass, September 9
+
+Additional development fixes now cover the homepage benefits accordion, responsive benefits artwork/icons, optional video deferral and restored keyboard focus indicators. Four remote files match local; 15-route checks pass; Theme Check reports 122 inherited errors / 385 warnings with no added findings. Main remains `bb0169f`.
+
+Seven native legacy redirects were imported after browser access recovered. Shopify confirmed seven additions; anonymous requests verify all seven now return **301** to the intended working destinations. [After verification](../reports/wave-1-legacy-redirects-after.json). Rechecked app inventory and the Shopify 30-day field baseline. [Completion details and specific questions](wave-1-completion-questions.md) track every remaining dependency. Agentready Apply is still being worked on; it was not retried this pass.
 
 ## Implemented and released
 
@@ -242,3 +245,7 @@ Continued on **`djh/wave-1-responsive-follow-up`** and Shopify CLI development t
 - Theme Check: **122 inherited errors / 388 warnings**, no added offenses. Motion lifecycle, JavaScript syntax and whitespace checks pass. Fresh CLI downloads match all **455 development files** to local and all **455 live files** to main `a99ed7f`.
 
 This is development work prepared for a combined merge, not a production deployment. Catalog facts, campaign/editorial decisions, app ownership/scoping and Agentready fixes remain the Wave 1 dependencies. Broader brand-contrast choices and app-owned accessibility findings are documented. Klaviyo activation remains Wave 2; GA/Ads deferred and GTM excluded.
+
+## September 9: combined release and app recheck
+
+Published `bb0169f` with authorization, preserving Shopify's overnight `b17447a` changes. Recorded release baseline, post-release route evidence and Agentready controlled-test/restoration evidence. See [release record](wave-1-release-2026-09-09.md). No further theme changes or app activation are pending locally. Remaining dependencies are approved catalog facts/assets, app ownership/scoping, Agentready final fixes/output validation, and editorial decisions. Wave 2 remains Klaviyo signup/offer and lifecycle relaunch.

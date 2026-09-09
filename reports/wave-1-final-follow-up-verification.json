@@ -1,0 +1,64 @@
+{
+  "captured_at": "2026-09-09T13:10:16.803236+00:00",
+  "branch": "djh/wave-1-agentready-verification",
+  "live_baseline": "bb0169f",
+  "development_theme": 142755430600,
+  "theme_check": {
+    "before": {
+      "warning": 388,
+      "error": 122
+    },
+    "after": {
+      "warning": 385,
+      "error": 122
+    },
+    "added": [],
+    "removed": [
+      [
+        "Index-image-accordion-new.liquid",
+        "UndefinedObject",
+        "warning",
+        "Unknown object 'img' used.",
+        3
+      ]
+    ]
+  },
+  "remote_files_match": {
+    "assets/base.css": true,
+    "assets/custom.css": true,
+    "assets/custom.js": true,
+    "sections/Index-image-accordion-new.liquid": true
+  },
+  "live_snapshot": {
+    "files": 455,
+    "matches_origin_main": true
+  },
+  "browser_checks": {
+    "desktop_width": 1280,
+    "desktop_question_dimensions_before_after": {
+      "width": 560,
+      "height": 80
+    },
+    "enter_opens_second_and_closes_first": true,
+    "space_closes_second": true,
+    "focus_indicator_visible": true,
+    "mobile_width": 390,
+    "mobile_frame_width": 310,
+    "mobile_artwork_selected": true,
+    "mobile_pointer_and_keyboard_open_close": true,
+    "horizontal_overflow_observed": false,
+    "newsletter_popup_dismissed_without_submission": true,
+    "benefits_cta_result": "Click completed; browser tab subsequently showed Why Halfday title. Expected href /pages/why-halfday is unchanged."
+  },
+  "checks": {
+    "javascript_syntax": true,
+    "motion_lifecycle": true,
+    "regression_routes": 15
+  },
+  "limits": [
+    "No new lab LCP or CLS measurement.",
+    "Keyboard, pointer and visual samples do not establish complete WCAG conformance.",
+    "Tracking loaders and attributed Amazon links are preserved; downstream event receipt is not verified.",
+    "Configured video branch reuses existing tested halfday-video; the active homepage uses image artwork."
+  ]
+}

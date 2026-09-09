@@ -14,7 +14,7 @@ from urllib.request import Request, build_opener, HTTPCookieProcessor
 
 ROOT = Path(__file__).resolve().parents[1]
 # Keep the published comparison stable while main receives future releases.
-BASELINE_REF = 'baseline/live-wave-1-follow-through-2026-09-08'
+BASELINE_REF = 'baseline/live-wave-1-2026-09-09'
 THEME_ID = 142755430600
 PATHS = ['/', '/collections/shop-all', '/collections/variety-packs', '/products/lemon-tea',
          '/products/classic-variety', '/products/strawberry-half-half-slim-can',

@@ -1,0 +1,37 @@
+[
+  {
+    "path": "/pages/shop",
+    "status": 404,
+    "location": null
+  },
+  {
+    "path": "/blogs/news/drinkhalfday.com",
+    "status": 404,
+    "location": null
+  },
+  {
+    "path": "/blogs/news/drinkhalfday.com/pages/shop",
+    "status": 404,
+    "location": null
+  },
+  {
+    "path": "/pages/faq_general",
+    "status": 404,
+    "location": null
+  },
+  {
+    "path": "/pages/faq_products",
+    "status": 404,
+    "location": null
+  },
+  {
+    "path": "/pages/faq_orders",
+    "status": 404,
+    "location": null
+  },
+  {
+    "path": "/pages/faq_company",
+    "status": 404,
+    "location": null
+  }
+]

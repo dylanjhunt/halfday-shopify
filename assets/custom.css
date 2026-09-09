@@ -301,9 +301,14 @@ details[open]>.header__menu-item svg path{ stroke:#FF5528; }
 .Index_image_accordion_sides_innerright_innerloops_new .accordion>ul{margin: 0; list-style-type: none;}
 .Index_image_accordion_sides_innerright_innerloops_new .accordion>ul>li{margin:0; border-bottom:2px solid #004600;}
 .Index_image_accordion_sides_innerright_innerloops_new .accordion>ul>li:last-child{border:none;}
-.Index_image_accordion_sides_innerright_innerloops_new .accordion>ul>li .question{border:none; padding:24px 45px 24px 0; background:url(accordion_plus.svg) no-repeat center right;}
-.Index_image_accordion_sides_innerright_innerloops_new .accordion>ul>li.open .question{background:url(accordion_minus.svg) no-repeat center right;}
-.Index_image_accordion_sides_innerright_innerloops_mainquestion_new{}
+.Index_image_accordion_sides_innerright_innerloops_new .accordion>ul>li .question{display:block; list-style:none; border:none; padding:24px 45px 24px 0; background:url(accordion_plus.svg) no-repeat center right;}
+.Index_image_accordion_sides_innerright_innerloops_new .accordion>ul>li details[open] .question{background:url(accordion_minus.svg) no-repeat center right;}
+.Index_image_accordion_sides_innerright_innerloops_new summary::-webkit-details-marker{display:none;}
+/* Keep the focus indicator above the answer’s existing negative margin. */
+.Index_image_accordion_sides_innerright_innerloops_new summary:focus-visible{outline:0; box-shadow:none;}
+.Index_image_accordion_sides_innerright_innerloops_new summary:focus-visible .Index_image_accordion_sides_innerright_innerloops_innerquestion_title_new{outline:2px solid currentColor; outline-offset:4px;}
+.Index_image_accordion_sides_innerright_innerloops_new details .answer{display:block;}
+.Index_image_accordion_sides_innerright_innerloops_mainquestion_new{display:block;}
 .Index_image_accordion_sides_innerright_innerloops_innerquestion_new{display:flex; align-items:center;}
 .Index_image_accordion_sides_innerright_innerloops_innerquestion_image_new{width:32px;}
 .Index_image_accordion_sides_innerright_innerloops_innerquestion_image_new img{width:100%; display:flex;}
