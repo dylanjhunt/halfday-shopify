@@ -1,5 +1,17 @@
 # Agentready implementation and UX findings
 
+## September 9, after deployed Apply fix
+
+This checkpoint supersedes earlier Apply/output status below.
+
+- **Apply fixed:** reviewed the saved 34-change plan, applied it once, and received **Saved Apply receipt · 34 of 34 changes resolved**. Reload returned to that same saved receipt. Brand description, tagline, social profiles and the two retailer-aware policies persist in settings. Page classifications were reviewed before Apply; no product content was part of the plan.
+- **Description/output freshness fixed in the sampled path:** development homepage Agent JSON now contains the reviewed Amazon-aware description, current generation time, no-return acceptance and retailer-specific shipping summary. It includes `hey@drinkhalfday.com` in post-purchase support. The prior stale Shopify description is gone.
+- **Brand-only development delivery prepared:** Agent JSON on, JSON-LD off, development embed on. Live embed stays off. No public product/collection handles are approved, and catalog approvals remain off. Lemon Tea and the protected staff collection emit no Agentready block; the protected direct product markdown endpoint returns 404/private/no-store. Regenerated public llms.txt contains curated brand/pages/policies and no concrete product/staff entries.
+- **Remaining contact-field UI inconsistency:** the 34-change plan includes contact email, but Brand & identity still shows both Public email and Contact email blank after Apply. A manual ContactPoint edit exposed no Save action and was lost on reload. Hydration errors 418/423 were observed; this is evidence, not a proven cause. Generated Agent JSON support and llms.txt contact email are correct. Show which saved contact key each field/output uses, and restore a reliable visible save action.
+- **Still unverified:** approved product output, external-retailer offer suppression, JSON-LD ownership and MCP/ACP catalog delivery. Keep those channels off until tested; the brand-only pass does not certify them. The standalone Core versus prior embedded Growth entitlement discrepancy was not rechecked.
+
+[Post-Apply output evidence](../reports/agentready-post-apply-output-2026-09-09.json). The verified brand-only development embed is prepared on `djh/wave-1-contrast-agentready`; production output will not change until its authorized release. PR #1 was already merged before this follow-up.
+
 ## September 9: release recheck and controlled catalog test
 
 This section supersedes earlier status statements below. The historical reproductions are retained to distinguish original defects from verified fixes.
