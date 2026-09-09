@@ -16,6 +16,9 @@
   {%- endcapture -%}
   {%- capture search_access -%}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{%- endcapture -%}
   {%- if fallback_description != blank and search_access == 'true' -%}
-    <meta name="description" content="{{ fallback_description | strip | escape }}">
+    {%- comment %}<locksmith:4e3d>{% endcomment -%}
+      {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta name="description" content="{{ fallback_description | strip | escape }}">{% endif -%}
+      {%- comment %}original: <meta name="description" content="{{ fallback_description | strip | escape }}">{%- endcomment %}
+    {%- comment %}</locksmith:4e3d>{% endcomment -%}
   {%- endif -%}
 {%- endif -%}
