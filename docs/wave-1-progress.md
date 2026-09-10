@@ -8,6 +8,20 @@
 - Agentready UI and sampled catalog safeguards improved. Apply still returns `unsupported_field`; Dylan is working on it. Both output switches and embeds restored off; curated discovery index regenerated without catalog records. [Current app findings](agentready-product-feedback.md).
 - Historical checkpoints below retain their original scope and are superseded by this current status. Amazon buying routes and protected legacy code are preserved.
 
+## September 9: approved Peach typo correction
+
+Dylan explicitly approved the live product metafield spelling correction. Saved Product Title on Peach Tea (Slim Can), Shopify product `8335577710792`, from `Peach Tea (Silm Can)` to `Peach Tea (Slim Can)`. A fresh admin reload confirmed the corrected value; Save was disabled, indicating no pending edits. No other product fields, theme code, publication or access settings were changed. This closes the previously blocked typo item below.
+
+## September 9: decisions, contrast and Agentready Apply follow-up
+
+Dylan confirmed keeping accessiBe and the health articles, approved dark-green contrast fixes, and will confirm Signifyd, Postscript, expired campaigns and Cranberry while requesting Search Console. Existing products are preserved; [client fact list](product-facts-for-leslie.md) gives exact locations for contradictory and missing details.
+
+Implemented CSS-only contrast fixes on the existing development branch: green/yellow panel headings (8.89:1), white/green primary and mobile-card buttons plus footer Klaviyo button (11.19:1), and green underlined footer link hover. Desktop 1280px and mobile 390px samples passed; no overflow, no form submissions, Amazon attribution intact. Shopify CLI readback matches CSS and config. [15-route verification](../reports/wave-1-contrast-regression.json).
+
+Agentready Apply now shows a persistent 34/34 receipt. Brand-only development output has the correct current description and policies, with no catalog approvals, no JSON-LD, no live embed activation and no protected catalog output in sampled checks. The development embed remains enabled for this verified configuration. Dylan merged PR #1 at `2893a6f`; this follow-up is isolated on `djh/wave-1-contrast-agentready`. [Output evidence](../reports/agentready-post-apply-output-2026-09-09.json). Its contact form still has a presentation/save inconsistency, while output support email is correct.
+
+No product data changed. The proposed Peach metafield spelling correction was rejected by automatic approval review as a live product edit outside the development workflow; the unsaved edit was discarded. No main push was performed in this follow-up.
+
 ## Latest autonomous completion pass, September 9
 
 Additional development fixes now cover the homepage benefits accordion, responsive benefits artwork/icons, optional video deferral and restored keyboard focus indicators. Four remote files match local; 15-route checks pass; Theme Check reports 122 inherited errors / 385 warnings with no added findings. Main remains `bb0169f`.

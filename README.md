@@ -65,3 +65,5 @@ Environment configuration follows [Shopify theme environments](https://shopify.d
 Wave 1 motion lifecycle verification: `node scripts/test-motion.cjs`. Sanitized performance summaries can be regenerated with `python3 scripts/summarize-wave-1-pass-2.py /path/to/lighthouse-json-directory`.
 
 Wave 1 regression verification: `python3 scripts/verify-regressions.py` compares 15 public live/development routes, Amazon attribution links, tracking loaders and protected code. The third checkpoint in the progress checklist records browser interaction checks, visual comparisons and tracking transport limits.
+
+September 9 follow-up: approved contrast fixes and verified brand-only Agentready output are prepared on `djh/wave-1-contrast-agentready`, based on the merged PR #1 (`2893a6f`). See [product facts for Leslie](docs/product-facts-for-leslie.md) and [updated decisions](docs/wave-1-completion-questions.md). Live main is unchanged.

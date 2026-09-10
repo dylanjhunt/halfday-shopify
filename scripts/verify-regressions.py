@@ -75,6 +75,8 @@ if __name__ == '__main__':
     arguments = argparse.ArgumentParser(description=__doc__)
     arguments.add_argument('--theme-id', type=int, default=THEME_ID, help='Unpublished theme ID to verify')
     arguments.add_argument('--output', type=Path, default=ROOT/'reports/wave-1-regression-markup.json')
+    arguments.add_argument('--agentready-embed', choices=['disabled', 'enabled'], default='disabled',
+                           help='Expected reviewed theme embed state; shared app output settings need separate verification')
     options = arguments.parse_args()
     THEME_ID = options.theme_id
     with ThreadPoolExecutor(max_workers=3) as pool:
@@ -91,17 +93,19 @@ if __name__ == '__main__':
         libraries[label] = {'unchanged': old_library == new_library, 'sha256': sha256(new_library.encode()).hexdigest()}
     protected_files = ['snippets/locksmith.liquid', 'assets/product-form.js', 'assets/cart.js', 'assets/cart-drawer.js']
     unchanged = {name: subprocess.check_output(['git','show',BASELINE_REF + ':' + name],cwd=ROOT) == (ROOT/name).read_bytes() for name in protected_files}
-    # Compare merchant settings against the published baseline, including app embeds.
+    # Isolate the explicitly reviewed Agentready embed change; preserve every other merchant setting.
     original_settings = subprocess.check_output(['git','show',BASELINE_REF + ':config/settings_data.json'],cwd=ROOT).decode()
     current_settings = (ROOT/'config/settings_data.json').read_text()
     original_settings = json.loads(original_settings[original_settings.index('{'):])
     current_settings = json.loads(current_settings[current_settings.index('{'):])
-    agentready = current_settings['current']['blocks'].get('1788854400000000001')
+    agentready = current_settings['current']['blocks'].pop('1788854400000000001', None)
+    original_settings['current']['blocks'].pop('1788854400000000001', None)
     unchanged['merchant_settings'] = current_settings == original_settings
-    unchanged['agentready_embed_is_disabled'] = agentready == {
+    unchanged['agentready_embed_matches_expected_state'] = agentready == {
         'type': 'shopify://apps/agentready/blocks/agent-json/019bc449-5f49-7d2d-86cd-f07c7b17ff7b',
-        'disabled': True, 'settings': {}}
+        'disabled': options.agentready_embed == 'disabled', 'settings': {}}
     report = {'captured_at':datetime.now(timezone.utc).isoformat(), 'theme_id':THEME_ID, 'baseline_ref':BASELINE_REF,
+              'expected_agentready_embed': options.agentready_embed,
               'method':'Separate anonymous cookie jars for public live and development HTML; no forms submitted. Script paths omit query/session values.',
               'limits':'Preserved loaders, attribution URLs, embed IDs and code do not prove receipt of analytics events or conversion attribution. No GA/Ads access; GTM excluded; no purchase/signup events generated.',
               'libraries':libraries, 'unchanged_protected_files':unchanged, 'pages':pages}
