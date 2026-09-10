@@ -4,6 +4,12 @@ Prepared September 10, 2026. Estimated hands-on work remains **8–12 hours**, e
 
 The outcome is one clear signup-to-welcome journey, one appropriate browse-interest reminder, and a defined audience for a controlled email relaunch. Preserve the existing sending domain and useful brand assets.
 
+## September 10 implementation checkpoint
+
+The [local implementation package](wave-2/implementation-outline.md) now includes three welcome emails, one browse fallback and one relaunch campaign, in HTML/plain text, plus signup copy, routing/filter specifications, audience definitions, QA and rollback plans. [Open the visual review](wave-2/preview/index.html). All five email drafts passed local mobile/desktop layout review; native Klaviyo rendering and delivery remain untested.
+
+The Halfday account switch currently requires a fresh Klaviyo login, so account configuration and actual event mapping were not refreshed. No forms, flows, lists, sending or production theme files were changed. The September 7 account evidence remains the basis for the setting proposals.
+
 ## 1. Fix signup routing and align the offer
 
 - Recheck footer form `TPsGns`, currently audited as submitting to HelloFresh Sample Campaign `TPaapC`, against newsletter list `XNd8tH` and welcome flow `XruESR`. Inspect any bridge before proposing a routing change.

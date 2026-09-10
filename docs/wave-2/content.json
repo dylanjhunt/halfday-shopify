@@ -1,0 +1,71 @@
+{
+  "status": "Local review drafts only. No Klaviyo import, publish or send.",
+  "offer": "No discount. This is a proposed alternative pending approval, not a replacement of the live offer.",
+  "messages": [
+    {
+      "id": "welcome-01",
+      "name": "Welcome / day 0",
+      "subject": "Welcome to Halfday. Tea time starts here.",
+      "preheader": "Meet your next iced tea favorite.",
+      "eyebrow": "Glad you're here",
+      "heading": "Make time for tea.",
+      "paragraphs": ["Welcome to Halfday. We're happy you found us.", "We make prebiotic iced tea in flavors you'll want to keep in the fridge. Take a look around, find your favorite, and follow the Amazon link on its page when you're ready to stock up.", "We'll be in your inbox with flavor news and more from Halfday. For now, let's find your first sip."],
+      "cta": "Find your flavor",
+      "url": "https://drinkhalfday.com/collections/shop-all",
+      "secondary": "Find Halfday near you",
+      "secondary_url": "https://drinkhalfday.com/pages/find-in-store"
+    },
+    {
+      "id": "welcome-02",
+      "name": "Flavor discovery / day 2 at noon",
+      "subject": "What's your kind of tea break?",
+      "preheader": "A familiar favorite or something new? Start with the flavors.",
+      "eyebrow": "Find your favorite",
+      "heading": "Your fridge. Your favorites.",
+      "paragraphs": ["Some days call for a familiar flavor. Others call for trying something new.", "Explore Halfday's iced teas and variety packs to find your next fridge favorite. Each product page has the details and a link to buy on Amazon.", "Prefer picking up a can while you're out? Our store locator can help you find Halfday nearby."],
+      "cta": "Explore the flavors",
+      "url": "https://drinkhalfday.com/collections/shop-all",
+      "secondary": "Find a store",
+      "secondary_url": "https://drinkhalfday.com/pages/find-in-store"
+    },
+    {
+      "id": "welcome-03",
+      "name": "Brand story / day 5 at noon",
+      "subject": "A little more about Halfday",
+      "preheader": "Meet the people behind your tea break.",
+      "eyebrow": "Behind the can",
+      "heading": "Good tea. A story to share.",
+      "paragraphs": ["You've met the tea. Now meet the people behind it.", "Our story is a good place to get to know Halfday, our founders, and how it all started.", "Thanks for making a little room for us in your day."],
+      "cta": "Meet Halfday",
+      "url": "https://drinkhalfday.com/pages/our-story",
+      "secondary": "Find your next flavor",
+      "secondary_url": "https://drinkhalfday.com/collections/shop-all"
+    },
+    {
+      "id": "browse-01",
+      "name": "Browse reminder / 2 hours / static fallback",
+      "subject": "A flavor catch your eye?",
+      "preheader": "Take another look at Halfday's iced teas.",
+      "eyebrow": "Take another look",
+      "heading": "Still thinking tea?",
+      "paragraphs": ["If you're still deciding on a flavor, here's a little nudge to take another look.", "Browse the lineup, check the product details, and follow the Amazon link on the product page when you're ready.", "Need a hand finding Halfday near you? We've got a store locator for that, too."],
+      "cta": "Browse the flavors",
+      "url": "https://drinkhalfday.com/collections/shop-all",
+      "secondary": "Find a store",
+      "secondary_url": "https://drinkhalfday.com/pages/find-in-store"
+    },
+    {
+      "id": "campaign-01",
+      "name": "Relaunch campaign / unscheduled draft",
+      "subject": "Make a little time for iced tea",
+      "preheader": "Find your next Halfday favorite online or nearby.",
+      "eyebrow": "Tea break, anyone?",
+      "heading": "A little Halfday in your day.",
+      "paragraphs": ["Open the fridge, grab a tea, take a minute.", "Whether you're choosing a familiar favorite or looking for something different, you can explore Halfday's flavors online and follow the product links to buy on Amazon.", "More of a pick-it-up-on-the-way-home person? Find Halfday near you with our store locator."],
+      "cta": "Find your flavor",
+      "url": "https://drinkhalfday.com/collections/shop-all",
+      "secondary": "Find a store",
+      "secondary_url": "https://drinkhalfday.com/pages/find-in-store"
+    }
+  ]
+}

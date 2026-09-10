@@ -1,6 +1,6 @@
 # Halfday modernization roadmap
 
-**September 10 handoff:** core Wave 1 theme implementation is audited and ready for closeout. PR #1 is merged at `2893a6f`; [PR #2](https://github.com/dylanjhunt/halfday-shopify/pull/2), containing final contrast and verified brand-only Agentready delivery, is still open. Team fact confirmations, app/campaign decisions and additional Agentready catalog checks remain tracked follow-ups. Keep accessiBe and leave health articles unchanged. [Exact handoff status](wave-1-handoff-2026-09-10.md) supersedes older checkpoints below. [Wave 2 preparation](wave-2-plan.md) is ready on a separate documentation-only branch; no Klaviyo sending/configuration changed.
+**September 10 handoff:** core Wave 1 theme implementation is audited and ready for closeout. PR #1 is merged at `2893a6f`; [PR #2](https://github.com/dylanjhunt/halfday-shopify/pull/2), containing final contrast and verified brand-only Agentready delivery, is still open. Team fact confirmations, app/campaign decisions and additional Agentready catalog checks remain tracked follow-ups. Keep accessiBe and leave health articles unchanged. [Exact handoff status](wave-1-handoff-2026-09-10.md) supersedes older checkpoints below. [Wave 2 drafts and implementation outline](wave-2/implementation-outline.md) are ready on a separate branch, with five email drafts and signup/routing/eligibility plans. No Klaviyo sending/configuration changed; fresh login is needed for account staging.
 
 **Current three-wave plan. First Wave 1 release published by Dylan on September 8, 2026. The combined tablet, performance and accessibility follow-through is live as of September 9. Catalog/app dependencies remain open.** This replaces the earlier five-wave grouping; the work is grouped around site readiness, email relaunch, and operations/reviews.
 
@@ -9,7 +9,7 @@
 | Wave | Outcome | Estimated hands-on time | Status |
 | --- | --- | --- | --- |
 | 1. Site cleanup, speed and shopping experience | Current content, clear buying paths, lighter pages and concrete SEO repairs | 14–20 hours | Core implementation audited; PR #2 release and tracked external follow-ups outstanding |
-| 2. Klaviyo cleanup and relaunch | Correct signup/offer journey, refreshed welcome/browse messaging and eligible campaign audience | 8–12 hours | Implementation plan prepared; account refresh and draft work next |
+| 2. Klaviyo cleanup and relaunch | Correct signup/offer journey, refreshed welcome/browse messaging and eligible campaign audience | 8–12 hours | Local email/signup drafts and QA/release package complete; fresh Klaviyo login needed for account refresh and native staging |
 | 3. Fulfillment connections and reviews | Verified channel routing, routine sync repairs and Bazaarvoice migration | 6–10 hours | Vendor/access inputs needed |
 
 **Planning total: 28–42 hours**, targeting 1–2 calendar weeks for directly controlled work once approved product information, access and decisions are available. This is a focused first pass using existing assets and integrations, not an allowance for a full redesign, 32 article rewrites, unlimited flows or custom integration repair. Track vendor waiting and retailer syndication separately.
