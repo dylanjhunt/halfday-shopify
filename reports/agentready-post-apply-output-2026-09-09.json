@@ -1,0 +1,82 @@
+{
+  "condition": "Agent JSON on, JSON-LD off, development embed on, live embed off; zero approved product/collection handles and all catalog-channel approvals off. Verified brand-only configuration is retained in development.",
+  "checks": [
+    {
+      "path": "/",
+      "development": true,
+      "status": 200,
+      "cache_control": null,
+      "blocks": [
+        {
+          "version": "1.0",
+          "type": "home",
+          "organization": {
+            "name": "Halfday Iced Tea",
+            "description": "Halfday makes prebiotic iced tea inspired by classic iced tea flavors. Explore individual flavors and variety packs at drinkhalfday.com, follow the product links to shop on Amazon, or use the store locator to find a nearby retailer. For product and order support, contact hey@drinkhalfday.com.",
+            "domain": "drinkhalfday.com",
+            "currency": "USD",
+            "timezone": "America/New_York",
+            "url": "https://drinkhalfday.com"
+          },
+          "store_policies": {
+            "shipping": {
+              "policy_url": "https://drinkhalfday.com/pages/faq",
+              "summary": "For Amazon or other retailer purchases, check the seller\u2019s delivery estimate and shipping options when you order; contact hey@drinkhalfday.com for Halfday product support."
+            },
+            "returns": {
+              "policy_url": "https://drinkhalfday.com/pages/terms-of-service",
+              "acceptance": "not_accepted",
+              "summary": "Halfday does not accept product returns or exchanges; report damaged-in-transit or incorrect orders immediately to hey@drinkhalfday.com, as described in Section 21 of the Terms of Service."
+            },
+            "post_purchase": {
+              "support_url": "https://drinkhalfday.com/pages/contact",
+              "support_email": "hey@drinkhalfday.com"
+            }
+          },
+          "generated_at": "2026-09-09T14:22:27.477Z",
+          "source": "agentready_metafields"
+        }
+      ]
+    },
+    {
+      "path": "/products/lemon-tea",
+      "development": true,
+      "status": 200,
+      "cache_control": null,
+      "blocks": []
+    },
+    {
+      "path": "/collections/staff-variety-packs",
+      "development": true,
+      "status": 200,
+      "cache_control": null,
+      "blocks": []
+    },
+    {
+      "path": "/",
+      "development": false,
+      "status": 200,
+      "cache_control": null,
+      "blocks": []
+    },
+    {
+      "path": "/apps/agentready/products/womens-marmot-black-jacket-s.md",
+      "development": false,
+      "status": 404,
+      "cache_control": "private, no-store",
+      "blocks": []
+    },
+    {
+      "path": "/apps/agentready/llms.txt",
+      "development": false,
+      "status": 200,
+      "cache_control": "private, no-store",
+      "blocks": [],
+      "description_present": true,
+      "literal_product_path_token_present": true,
+      "actual_product_entries_present": false,
+      "staff_entries_present": false,
+      "inspection_note": "The only product path token is the explanatory /products/<handle>.md template, not a concrete catalog entry. Curated index has brand, seven pages, policies and profiles."
+    }
+  ]
+}
