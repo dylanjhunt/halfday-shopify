@@ -37,6 +37,7 @@ Klaviyo can support non-sending draft templates and flows, but they still live i
 
 ## Current evidence and blockers
 
+- September 14: Halfday's Shopify-specific Klaviyo launch still ends at login. No native staging or account refresh was possible. Wave 3's verified Faire order tags now inform the operational-exclusion test plan. The complete package continues on `djh/wave-3-review-prep`; see the [combined handoff](../waves-2-3-progress-2026-09-14.md).
 - September 10: opening Klaviyo showed another authorized client account. Switching through its account menu to **Halfday (`V2taSu`)** led to a fresh login screen. No Halfday settings were refreshed or changed. All account IDs/settings in this package remain explicitly sourced to the September 7 audit.
 - September 10: public Shop All and Our Story destinations loaded; public collection still presents Amazon purchase links and the footer still promises up to 15% off. That does not verify a working signup offer. [Shop All](https://drinkhalfday.com/collections/shop-all), [Our Story](https://drinkhalfday.com/pages/our-story).
 - Confirm the Amazon offer or approve the no-offer option. Existing questions about Postscript and campaign ownership remain pending; no duplicate request has been sent.

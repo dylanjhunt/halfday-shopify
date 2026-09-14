@@ -2,6 +2,8 @@
 
 September 10, 2026. These are implementation specifications. No segments, properties, triggers or queues have been changed.
 
+**September 14 evidence update:** Faire's current connector applies `Faire` and `Wholesale` to Shopify orders. These are concrete sources to investigate for operational audience exclusions, not verified Klaviyo profile properties. After login, inspect one matching imported order event and its profile to establish whether the tags are available, their exact field/type, and whether identity persists beyond a single event. Do not implement a guessed profile filter or assume order tags alone exclude a wholesale contact from signup-triggered email. Halfday's store-specific Klaviyo launch still requires login; all Klaviyo settings below remain the dated September 7 baseline. See the [operations trace](../wave-3/operations-audit-2026-09-14.md).
+
 ## Welcome eligibility
 
 Audited flow `XruESR`: added to `XNd8tH`, no re-entry, Placed Order zero over all time AND no email from legacy welcome `XeYvCE` AND Boolean `rc_active_subscriber` false. Preserve these production filters until their business purpose and evaluation are tested.

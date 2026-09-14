@@ -1,0 +1,23 @@
+{
+  "rows": 12,
+  "unlinked_rows": 5,
+  "approved_rows": 0,
+  "errors": [],
+  "attention": [
+    "po_u7v825z7wm: SKU alias needs preserving; do not rebuild this match by SKU equality",
+    "po_u7v825z7wm: observed mapping only; package/operations approval remains open",
+    "po_k7ayn6pk2b: observed mapping only; package/operations approval remains open",
+    "po_szj9rutqu8: observed mapping only; package/operations approval remains open",
+    "po_t8xb3qy7um: observed mapping only; package/operations approval remains open",
+    "po_g9dnjcm448: observed mapping only; package/operations approval remains open",
+    "po_n5bwujrqsz: SKU alias needs preserving; do not rebuild this match by SKU equality",
+    "po_n5bwujrqsz: observed mapping only; package/operations approval remains open",
+    "po_qqkutv2wje: observed mapping only; package/operations approval remains open",
+    "po_zbj97cwv6c: observed mapping only; package/operations approval remains open",
+    "po_4x5mfjq4zf: observed mapping only; package/operations approval remains open",
+    "po_wtkqgx5u4v: observed mapping only; package/operations approval remains open",
+    "po_qamwzhqc8w: observed mapping only; package/operations approval remains open",
+    "po_7d2zarmehj: observed mapping only; package/operations approval remains open"
+  ],
+  "limit": "Static checks only. No sync, product authenticity, retailer acceptance or review-family approval is established."
+}
