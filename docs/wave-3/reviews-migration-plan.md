@@ -1,4 +1,6 @@
-# Reviews: baseline and migration packet
+# Reviews: historical migration packet
+
+**Inactive after Dylan’s decision to retain Yotpo.** Do not execute the replacement, export/import, request cutover or app-removal steps below. They are historical research, not the current delivery plan. Caffine Functions is not being added. The original retailer-syndication request remains separately deferred. Current work is in [Yotpo maintenance](yotpo-maintenance.md).
 
 September 14, 2026. No review imports, exports containing reviewer data, invitations, widget changes or pixel reconnections were performed in the live account.
 

@@ -1,5 +1,7 @@
 # Halfday modernization roadmap
 
+**Current scope decision:** Dylan confirmed we should keep Yotpo and not add Caffine Functions. Wave 3 now covers fulfillment verification and maintenance of existing reviews. Replacement/migration work is inactive; Walmart/Target syndication remains a separately deferred client request. See the [retained Yotpo plan](wave-3/yotpo-maintenance.md). Historical estimates below are retained for reference and are not a new quote for the reduced scope.
+
 **September 14 checkpoint:** Wave 2's five local email drafts and release specifications are complete; Halfday Klaviyo login still blocks native staging. Wave 3 now has a read-only Faire configuration/order trace, all 12 linked products and five unlinked legacy listings mapped, a catalog validator, and a Yotpo/Bazaarvoice migration packet. A local Yotpo price-reference repair removes one Theme Check warning with no new findings, but needs an isolated Shopify preview slot. The store is at its 20-theme limit. Work is on `djh/wave-3-review-prep`; main and shared app settings were not changed. [Current outline, evidence and remaining decisions](waves-2-3-progress-2026-09-14.md) supersedes older status paragraphs below. Wave 1 PR #2 remains open.
 
 **September 10 handoff:** core Wave 1 theme implementation is audited and ready for closeout. PR #1 is merged at `2893a6f`; [PR #2](https://github.com/dylanjhunt/halfday-shopify/pull/2), containing final contrast and verified brand-only Agentready delivery, is still open. Team fact confirmations, app/campaign decisions and additional Agentready catalog checks remain tracked follow-ups. Keep accessiBe and leave health articles unchanged. [Exact handoff status](wave-1-handoff-2026-09-10.md) supersedes older checkpoints below. [Wave 2 drafts and implementation outline](wave-2/implementation-outline.md) are ready on a separate branch, with five email drafts and signup/routing/eligibility plans. No Klaviyo sending/configuration changed; fresh login is needed for account staging.
@@ -12,9 +14,9 @@
 | --- | --- | --- | --- |
 | 1. Site cleanup, speed and shopping experience | Current content, clear buying paths, lighter pages and concrete SEO repairs | 14–20 hours | Core implementation audited; PR #2 release and tracked external follow-ups outstanding |
 | 2. Klaviyo cleanup and relaunch | Correct signup/offer journey, refreshed welcome/browse messaging and eligible campaign audience | 8–12 hours | Local email/signup drafts and QA/release package complete; fresh Klaviyo login needed for account refresh and native staging |
-| 3. Fulfillment connections and reviews | Verified channel routing, routine sync repairs and Bazaarvoice migration | 6–10 hours | Faire audit, catalog map/checker and review migration packet prepared; account/owner inputs and isolated theme preview remain |
+| 3. Fulfillment connections and reviews | Verified channel routing, routine sync repairs and retained Yotpo review health | Original 6–10 hours, included migration | Faire audit and catalog map/checker prepared; review maintenance and access-dependent route verification remain |
 
-**Planning total: 28–42 hours**, targeting 1–2 calendar weeks for directly controlled work once approved product information, access and decisions are available. This is a focused first pass using existing assets and integrations, not an allowance for a full redesign, 32 article rewrites, unlimited flows or custom integration repair. Track vendor waiting and retailer syndication separately.
+**Original planning total: 28–42 hours**, targeting 1–2 calendar weeks for directly controlled work once approved product information, access and decisions are available. This is a focused first pass using existing assets and integrations, not an allowance for a full redesign, 32 article rewrites, unlimited flows or custom integration repair. Track vendor waiting and retailer syndication separately.
 
 ## Wave 1: site cleanup, speed and shopping experience
 
@@ -54,11 +56,11 @@ Agentready now has better policy, recovery and catalog approval controls. Sample
 
 1. Map Shopify, Amazon, TikTok/AfterShip and Faire to order owner, fulfillment route and inventory/tracking source. Validate SKU/case and location mappings using representative existing records.
 2. Resolve existing Cin7 organization access and trace current Cin7/ShipStation/3PL routes. An access gate or installed app alone does not establish broken sync.
-3. Reconnect Faire or make routine configuration corrections only after confirming direction, ownership and duplicate prevention. Estimate specific deeper faults separately.
-4. Coordinate Bazaarvoice onboarding, catalog/GTIN matching, supported review import and onsite rendering. Preserve Yotpo until the replacement is verified. Track Walmart/Target syndication acceptance separately from installing an onsite widget.
+3. Preserve the verified existing Faire connection. Prepare corrections only after confirming direction, ownership and duplicate prevention. Resolve the five legacy listings and preserve the two working SKU aliases. Estimate deeper faults separately.
+4. Retain Yotpo. Check review counts, product mapping, star/anchor interactions, empty/loading states and duplicate rating schema. Keep the local price-reference fix pending preview QA. Do not reconnect its shared pixel or change request eligibility without the required account evidence and release review. Replacement migration is inactive; Walmart/Target syndication is deferred separately.
 5. Complete regression checks, handover and the release checklist.
 
-**Acceptance:** documented operational ownership and successful supported verification of the selected routes/review migration. No fixed completion date is promised for vendor onboarding or unknown integration repairs.
+**Acceptance:** documented operational ownership and successful supported verification of the selected routes and retained review integration. No fixed completion date is promised for access-dependent or unknown integration repairs.
 
 ## Working boundaries
 
@@ -66,4 +68,4 @@ Agentready now has better policy, recovery and catalog approval controls. Sample
 - Product records, menus, metafields, article content and app settings are shared store data. Theme previews do not isolate their mutation.
 - GA setup, Google Ads and full attribution implementation remain deferred until Dylan confirms readiness. GTM was empty/unused and is excluded.
 - Amazon clicks are intent signals, not confirmed sales. Use actual channel data before claiming conversion lift.
-- Request approved product facts/assets, content decisions, operations contacts and Bazaarvoice inputs early. Track delivery work separately from client/vendor turnaround.
+- Request approved product facts/assets, content decisions, operations contacts early. Bazaarvoice inputs are not a blocker for retaining Yotpo. Track delivery work separately from client/vendor turnaround.
