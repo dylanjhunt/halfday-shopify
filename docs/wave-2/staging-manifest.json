@@ -1,0 +1,40 @@
+{
+  "verified_on": "2026-09-14",
+  "account": "Halfday",
+  "live_changes": false,
+  "sends_performed": false,
+  "existing_welcome_design": "retain; replacement design inactive",
+  "objects": [
+    {
+      "type": "form",
+      "id": "S4DvQh",
+      "name": "[Halfday W2 STAGING] Footer routing only - DO NOT PUBLISH",
+      "status": "Draft",
+      "source_form_id": "TPsGns",
+      "original_list_id": "TPaapC",
+      "saved_draft_list_id": "XNd8tH",
+      "verification": "Reopened editor, linked mobile button destination persisted; list summary still displayed original destination",
+      "source_property": "[Halfday W2 STAGING] Footer routing only - DO NOT PUBLISH",
+      "embedded": false,
+      "publish_authorized": false
+    },
+    {
+      "type": "flow",
+      "id": "RpHH9D",
+      "name": "[Halfday W2 UNUSED] Welcome reference copy - DO NOT ACTIVATE",
+      "status": "Draft",
+      "source_flow_id": "XruESR",
+      "unused": true,
+      "content_replaced": false,
+      "activation_authorized": false
+    },
+    {
+      "type": "standalone_template",
+      "id": "QSSEVw",
+      "name": "[Halfday W2 REVIEW ONLY] Welcome 01 - no offer",
+      "unused": true,
+      "assigned_to_message": false,
+      "replacement_work": "stopped at user's request"
+    }
+  ]
+}

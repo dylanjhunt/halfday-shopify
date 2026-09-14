@@ -2,7 +2,7 @@
 
 September 10, 2026. These are implementation specifications. No segments, properties, triggers or queues have been changed.
 
-**September 14 evidence update:** Faire's current connector applies `Faire` and `Wholesale` to Shopify orders. These are concrete sources to investigate for operational audience exclusions, not verified Klaviyo profile properties. After login, inspect one matching imported order event and its profile to establish whether the tags are available, their exact field/type, and whether identity persists beyond a single event. Do not implement a guessed profile filter or assume order tags alone exclude a wholesale contact from signup-triggered email. Halfday's store-specific Klaviyo launch still requires login; all Klaviyo settings below remain the dated September 7 baseline. See the [operations trace](../wave-3/operations-audit-2026-09-14.md).
+**September 14 evidence update:** Faire's current connector applies `Faire` and `Wholesale` to Shopify orders. These are concrete sources to investigate for operational audience exclusions, not verified Klaviyo profile properties. Inspect one matching imported order event and its profile to establish whether the tags are available, their exact field/type, and whether identity persists beyond a single event. Do not implement a guessed profile filter or assume order tags alone exclude a wholesale contact from signup-triggered email. Halfday access is restored. Welcome/browse baseline settings were rechecked September 14, and two real browse events were inspected. Exact evidence and untouched live settings are in the [account audit](account-audit-and-staging-2026-09-14.md). See the [operations trace](../wave-3/operations-audit-2026-09-14.md).
 
 ## Welcome eligibility
 
@@ -25,13 +25,13 @@ Use native profile filters for rules that must remain true before each message. 
 
 ## Browse reminder `RX4C7p`
 
-Keep the existing two-hour delay, 30-day re-entry and 16-hour Smart Sending as initial settings. Recheck them in the account before editing. Keep Checkout Started zero and Placed Order zero since entry as the audited baseline, while recognizing these only represent captured Shopify events.
+Keep the existing two-hour delay, 30-day re-entry and 16-hour Smart Sending as initial settings. All three were verified September 14; no existing flow was edited. Keep Checkout Started zero and Placed Order zero since entry as the audited baseline, while recognizing these only represent captured Shopify events.
 
 Add explicit email marketing eligibility and operational-profile exclusions. Product eligibility must be an allowlist of verified public consumer product IDs from actual Viewed Product event data. Do not use Shopify inventory availability as Amazon availability. Do not use only a blacklist for staff/sample handles, a URL containing `/products/`, or public accessibility as catalog approval.
 
 ### Event mapping contract
 
-No real event was available in this turn because login blocked the account recheck. None of the following field names are invented Klaviyo variables. Capture the exact keys/types in the account preview before implementing dynamic tags:
+Real event panels now confirm `ProductID`, `Name`, `URL`, `ImageURL`, `Price`, `CompareAtPrice`, `Value`, `Brand` and `Categories`. Peach (`8143502573768`) and Fan Favorites (`8143536226504`) both include `Employee Shop` in Categories, so a category blacklist would exclude legitimate public products. Native value types and template bindings remain unverified. See the [redacted event evidence](account-audit-and-staging-2026-09-14.md). Validate the following before implementing dynamic tags:
 
 | Semantic value | Required validation | Failure behavior |
 | --- | --- | --- |
@@ -42,7 +42,7 @@ No real event was available in this turn because login blocked the account reche
 | Amazon destination | Approved matching ASIN and tracking destination | Use verified public product page, not a guessed retailer URL |
 | Consent / identity / recency | Verified profile and platform event timestamp | Ineligible/unknown profile or stale event is not a generic-send fallback |
 
-The local browse email is a complete static creative fallback. It contains no dynamic fields and does not certify event mapping. The dynamic version remains blocked until an actual eligible event can be previewed. Staff/sample or unknown products must fail eligibility, even when generic creative could render. When title/URL is available for an eligible product, proposed card copy is **Take another look at [VERIFIED PRODUCT TITLE]**, CTA **View this flavor**, with the validated public product URL. Omit prices, inventory claims and nutrition figures.
+The local browse email is a complete static creative fallback. It contains no dynamic fields and does not certify event mapping. Native dynamic rendering still needs testing with the verified event fields. Existing creative is retained; do not rebuild the welcome. Staff/sample or unknown products must fail eligibility, even when generic creative could render. When title/URL is available for an eligible product, proposed card copy is **Take another look at [VERIFIED PRODUCT TITLE]**, CTA **View this flavor**, with the validated public product URL. Omit prices, inventory claims and nutrition figures.
 
 If product approval is revoked during the two-hour delay, the entry-time allowlist alone will not stop a queued message. Add a supported send-time check if available; otherwise pause the draft/live reminder and resolve affected waiting recipients before a catalog change. Do not promise send-time catalog validation until tested.
 
@@ -60,9 +60,9 @@ Exclude suppression, missing consent, known staff/sample/wholesale and unresolve
 ## Controlled cutover, once authorized
 
 1. Recheck live account, filters, forms, list consent settings and all older manual queues; preserve templates, settings, links, IDs and counts in a private rollback record. Do not export customer records into Git.
-2. Stage **new standalone templates and cloned flows with every action Draft**. Avoid editing a shared template referenced by a live message. Draft creative and native previews can be tested without sending; they do not prove actual signup or delivery. Manual is not an isolated sandbox because recipients can queue. [Klaviyo status behavior](https://help.klaviyo.com/hc/en-us/articles/360017706091).
+2. Retain existing welcome creative. Only stage a separate copy when a specific reviewed functional correction needs one; keep **every action Draft**. The unused welcome clone `RpHH9D` and template `QSSEVw` are not release candidates. Avoid editing a shared template referenced by a live message. Draft creative and native previews can be tested without sending; they do not prove actual signup or delivery. Manual is not an isolated sandbox because recipients can queue. [Klaviyo status behavior](https://help.klaviyo.com/hc/en-us/articles/360017706091).
 3. Resolve source/list bridges before changing footer routing. Preview exact eligible/ineligible profile cases; authorize one test inbox and test actions separately. A dev theme does not isolate the installed Klaviyo integration or list events.
-4. Review one release packet: chosen offer option, HTML/text, exact destination/attribution list, source mapping, consent settings, profile/product filters, audience counts, statuses, queued-recipient treatment and scheduled time. No automatic approval from finishing local QA.
+4. Review one release packet: minimal corrections to existing creative, verified offer terms, exact destination/attribution list, source mapping, consent settings, profile/product filters, audience counts, statuses, queued-recipient treatment and scheduled time. No automatic approval from finishing local QA.
 5. Prefer updating the canonical welcome through the platform's verified draft/version workflow if available. If a clone is needed, route only the new approved form submissions to its verified new-source cohort and exclude those from the old flow atomically in a controlled window. Document how already-waiting old recipients finish. If a supported overlap-free cutover cannot be demonstrated, pause new acquisition entry for the agreed window and test it; do not activate two overlapping welcomes or guess at pending-recipient behavior.
 6. Activate approved signup/welcome changes first. Observe controlled test consent/list/source and exactly one welcome. Then activate the browse reminder only after event mapping passes. Start the campaign only after audience approval and suppression/queue counts have been refreshed.
 7. Rollback: pause the newly activated path first, restore the recorded original form route/offer and canonical message version, verify one intended path, and review waiting recipients without bulk release or deletion. Never reactivate old and new welcome paths together blindly.

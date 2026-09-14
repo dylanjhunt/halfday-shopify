@@ -1,6 +1,6 @@
 # Signup and offer specification
 
-September 10, 2026. Proposed copy and settings, not saved to Klaviyo or Shopify.
+Original copy specification: September 10, 2026. **September 14 update:** retain the existing welcome design; copy alternatives below are reference only. Footer destination is saved only in isolated Draft `S4DvQh`; original `TPsGns` remains Live to HelloFresh. The clone has its own automatic Source value. No live form/message/consent setting changed. [Current evidence and staging details](account-audit-and-staging-2026-09-14.md).
 
 ## Current journey and intended change
 
@@ -10,7 +10,7 @@ September 10, 2026. Proposed copy and settings, not saved to Klaviyo or Shopify.
 | Main popup `XDLfXK` | Live, 2-second delay, all devices/all visitors, email then optional SMS; success displays `NEWERA15` | Align offer with welcome; propose 8-second delay as a test candidate; target eligible visitors who are not already subscribed; preserve campaign exclusions and 5-day dismissal cooldown |
 | Alternate popup `WtiUL4` | Custom-trigger only, no views in audited period | Retain until its caller and campaign owner are established; no assumed duplicate removal |
 | HelloFresh, Subscribe and other campaign forms | Separate campaign journeys | Keep separate; no historical list migration or surprise welcome sends |
-| Newsletter welcome `XruESR` | Three live messages | Refresh together with signup wording and destinations after isolated draft/inbox QA |
+| Newsletter welcome `XruESR` | Three live messages | Retain design; propose only verified offer/link corrections after review |
 
 The popup delay is a proposed first experiment, not a proven improvement. Don't change timing, audience and design together if the objective is to identify which improves signup rate. First fix the routing/offer defect; then compare timing with the same eligible audience and copy. Keep mobile and desktop reporting separate. Do not add theme JavaScript to replicate Klaviyo behavior.
 
@@ -62,4 +62,4 @@ Local drafts intentionally route discovery to public Shopify pages, where shoppe
 
 Before release, inventory every existing image and text link per email, including its UTM/maas parameters. Keep a private exact-link rollback record; exclude recipient-specific preview tokens from Git. Preserve approved attribution on retained Amazon URLs. If new destinations need different Amazon tracking links, obtain them from the offer owner instead of fabricating identifiers. Configure Klaviyo message UTMs once and inspect the rendered URL to avoid duplicate parameters. GA/Ads/GTM setup remains out of scope.
 
-Sources: [September 7 focused audit](../focused-audit-2026-09-07.md), [current public collection and footer](https://drinkhalfday.com/collections/shop-all) checked September 10. Account recheck is blocked by fresh Klaviyo login.
+Sources: [September 7 focused audit](../focused-audit-2026-09-07.md), [current public collection and footer](https://drinkhalfday.com/collections/shop-all) checked September 10. September 14 account refresh is recorded in the [current audit](account-audit-and-staging-2026-09-14.md); older timing/copy details above retain their original evidence date.

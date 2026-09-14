@@ -1,6 +1,8 @@
 # Wave 2 QA and acceptance
 
-September 10, 2026. A local browser pass proves layout only. It does not prove Klaviyo rendering, inbox delivery, consent routing or attribution.
+**Updated September 14:** existing welcome design retained. [Account evidence](account-audit-and-staging-2026-09-14.md) and [staging manifest](staging-manifest.json) supersede earlier access status. Original local checks below date to September 10.
+
+A local browser pass proves layout only. It does not prove Klaviyo rendering, inbox delivery, consent routing or attribution.
 
 ## Local checks
 
@@ -14,18 +16,18 @@ September 10, 2026. A local browser pass proves layout only. It does not prove K
 | No unverified numeric nutrition/discount claims in generated creative | Passed: inspected all 10 HTML files and five plain-text versions |
 | Theme/app production files untouched | Passed: only `docs/**` and `scripts/build-wave-2-preview.py` changed; main remains `2893a6f`; no Shopify CLI push |
 
-## After login: draft-only checks, no sends
+## Account and draft-only checks, no sends
 
 | Test | Expected result | Current status |
 | --- | --- | --- |
-| Confirm account identity and original IDs | Halfday; named form/list/flow settings match or differences recorded | Blocked by login |
-| Standalone template import/native preview | All five compile, correct subject/preheader, verified organization address, native footer links | Not imported |
-| Existing artwork | Correct brand assets, good alt text, explicit dimensions; body/CTA remain useful with images blocked | Account access needed |
-| Welcome timing/filter preview | Day 0, day 2/day 5 noon as audited; actual timezone recorded; missing/false/true/string cases reviewed | Account access needed |
-| Draft browse event preview | One verified public product event; exact ID/title/URL/image mapping; staff/sample/unknown product rejected | Account access needed |
+| Confirm account identity and original IDs | Halfday; named form/list/flow settings match or differences recorded | Passed September 14: Halfday account, exact original IDs rechecked |
+| Standalone template import/native preview | Historical redesign check, no longer an active deliverable | Redesign stopped. One unused standalone template imported; no full native/inbox certification |
+| Existing artwork | Correct brand assets, good alt text, explicit dimensions; body/CTA remain useful with images blocked | Existing design retained; no redesign work planned |
+| Welcome timing/filter preview | Day 0, day 2/day 5 noon as audited; actual timezone recorded; missing/false/true/string cases reviewed | Current filters and two-day recipient-local noon verified; native property cases and second timezone still pending |
+| Draft browse event preview | One verified public product event; exact ID/title/URL/image mapping; staff/sample/unknown product rejected | Two real event panels inspected; exact fields verified. Native binding and rejection cases pending |
 | Missing image/title/URL | Eligible product renders static fallback; no empty links or fabricated product | Contract prepared; native preview pending |
-| Shared template/flow dependencies | Editing new draft cannot alter live messages; every cloned action Draft, no queued recipients | Not staged |
-| Legacy and list bridge inventory | Exactly one intended welcome route; older manual queues preserved | Account access needed |
+| Shared template/flow dependencies | Editing new draft cannot alter live messages; every cloned action Draft, no queued recipients | One unused flow clone is Draft; standalone template unassigned. Footer route persisted in isolated Draft; no sends |
+| Legacy and list bridge inventory | Exactly one intended welcome route; older manual queues preserved | Legacy XeYvCE remains Manual; queue totals and bridges still unverified |
 | Audience logic/counts | Consented consumers only; no overlap or inferred Amazon orders; counts recorded with timestamp | Definitions prepared; counts unavailable |
 
 ## Controlled live-account tests requiring an approved identity/window
