@@ -161,21 +161,21 @@
     "index_store_logo_slider_new_RiVcXd": {
       "type": "Index-store-logo-slider-new",
       "blocks": {
-        "information_6EhEri": {
-          "type": "information",
-          "settings": {
-            "main_custom_image": "shopify://shop_images/Target_Logo-Horizontal.svg",
-            "main_custom_links": ""
-          }
-        },
-        "information_RW6b6p": {
+        "information_bdaKfk": {
           "type": "information",
           "settings": {
             "main_custom_image": "shopify://shop_images/Walmart_Logo.svg",
-            "main_custom_links": ""
+            "main_custom_links": "https://erewhon.com/product/7737761000/halfday-tonics-lemon-black-tea-12-oz?referral=search"
           }
         },
-        "information_bdaKfk": {
+        "information_wwaVaF": {
+          "type": "information",
+          "settings": {
+            "main_custom_image": "shopify://shop_images/Target_Logo-Horizontal.svg",
+            "main_custom_links": "https://erewhon.com/product/7737761000/halfday-tonics-lemon-black-tea-12-oz?referral=search"
+          }
+        },
+        "information_btLFzi": {
           "type": "information",
           "settings": {
             "main_custom_image": "shopify://shop_images/Layer_3.svg",
@@ -254,9 +254,9 @@
         }
       },
       "block_order": [
-        "information_6EhEri",
-        "information_RW6b6p",
         "information_bdaKfk",
+        "information_wwaVaF",
+        "information_btLFzi",
         "information_kTwqJC",
         "information_fpTLXP",
         "information_rmwf64",
