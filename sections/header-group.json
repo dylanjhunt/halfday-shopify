@@ -11,24 +11,6 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "header_announcement_bar_new_HWYmt8": {
-      "type": "Header-announcement-bar-new",
-      "blocks": {
-        "information_XNYnLg": {
-          "type": "information",
-          "settings": {
-            "title": "<p><a href=\"https://www.amazon.com/stores/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?ingress=2&visitId=71862258-e898-4588-b18a-f6fb1e1baa6e&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln\" target=\"_blank\" title=\"https://www.amazon.com/stores/page/4BEC182E-830C-4B9A-818E-C0035C8961BC?ingress=2&visitId=71862258-e898-4588-b18a-f6fb1e1baa6e&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln\">Subscribe and Save 15% + Free Shipping w/ Amazon Prime</a></p>"
-          }
-        }
-      },
-      "block_order": [
-        "information_XNYnLg"
-      ],
-      "settings": {
-        "main_background_color": "#ff5528",
-        "main_information_color": "#ffffff"
-      }
-    },
     "header": {
       "type": "header",
       "settings": {
@@ -61,7 +43,6 @@
     }
   },
   "order": [
-    "header_announcement_bar_new_HWYmt8",
     "header"
   ]
 }
