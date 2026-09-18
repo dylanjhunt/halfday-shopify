@@ -1,0 +1,22 @@
+Subject: Welcome to Halfday. Tea time starts here.
+Preheader: Meet your next iced tea favorite.
+
+Make time for tea.
+
+Welcome to Halfday. We're happy you found us.
+
+We make prebiotic iced tea in flavors you'll want to keep in the fridge. Take a look around, find your favorite, and follow the Amazon link on its page when you're ready to stock up.
+
+We'll be in your inbox with flavor news and more from Halfday. For now, let's find your first sip.
+
+Find your flavor: https://drinkhalfday.com/collections/shop-all
+Find Halfday near you: https://drinkhalfday.com/pages/find-in-store
+
+See you at tea time,
+The Halfday team
+
+{{ organization.name }}
+{{ organization.full_address }}
+Manage preferences: {% manage_preferences_link %}
+Unsubscribe: {% unsubscribe_link %}
+Questions? hey@drinkhalfday.com

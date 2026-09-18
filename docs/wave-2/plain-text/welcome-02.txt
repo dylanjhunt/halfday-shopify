@@ -1,0 +1,22 @@
+Subject: What's your kind of tea break?
+Preheader: A familiar favorite or something new? Start with the flavors.
+
+Your fridge. Your favorites.
+
+Some days call for a familiar flavor. Others call for trying something new.
+
+Explore Halfday's iced teas and variety packs to find your next fridge favorite. Each product page has the details and a link to buy on Amazon.
+
+Prefer picking up a can while you're out? Our store locator can help you find Halfday nearby.
+
+Explore the flavors: https://drinkhalfday.com/collections/shop-all
+Find a store: https://drinkhalfday.com/pages/find-in-store
+
+See you at tea time,
+The Halfday team
+
+{{ organization.name }}
+{{ organization.full_address }}
+Manage preferences: {% manage_preferences_link %}
+Unsubscribe: {% unsubscribe_link %}
+Questions? hey@drinkhalfday.com
