@@ -1,6 +1,18 @@
 # Wave 1: completion status and decisions
 
-Updated September 9, 2026. The released theme is main `bb0169f`. Additional audited theme fixes are on `djh/wave-1-agentready-verification` and CLI development theme **142755430600**. Main has not been changed in this final pass.
+Updated September 9, 2026. Dylan merged PR #1 at main `2893a6f`. The new contrast and brand-only Agentready changes are on `djh/wave-1-contrast-agentready` and CLI development theme **142755430600**. No new production release was performed in this follow-up.
+
+## Dylan's decisions and updated scope
+
+- Products already exist. Do not recreate them or change public assortment/access automatically. The remaining task is correcting confirmed content and deciding on any specifically requested new merchandising. See [the exact fact list for Leslie](product-facts-for-leslie.md).
+- Signifyd, Postscript, expired campaigns and Cranberry: Dylan will confirm.
+- accessiBe: **keep**. Health articles: **leave unchanged**. These are no longer open approval questions or Wave 1 completion blockers.
+- Dark-green contrast treatment: **approved and implemented in development**, including yellow-panel headings, primary/mobile-card buttons, footer embedded-form button and footer link hover. Desktop/mobile checks and 15-route regression passed; other merchant settings and attributed Amazon links are preserved. No new JavaScript.
+- Search Console: Dylan will request access. Do not consolidate article URLs before that evidence arrives.
+- Agentready: deployed Apply fix verified with a durable 34/34 receipt; accurate brand/policy output prepared in development. Product output and JSON-LD remain off. Contact-field UI mismatch is reported separately.
+- Peach display-title typo: **completed with Dylan's explicit approval** on September 9. Saved `Peach Tea (Slim Can)` in the Product Title metafield and verified it after an admin reload. No other product fields were changed.
+
+The original numbered questions below are retained to match Dylan's numbered reply. Items 5, 8 and 9 are resolved by the decisions above; 1 is narrowed to preserving existing setup and confirming only specific merchandising changes.
 
 ## Completed without further input
 
@@ -30,7 +42,7 @@ Updated September 9, 2026. The released theme is main `bb0169f`. Additional audi
 | 9 | Can we use the existing **dark green** for orange-on-yellow headings and low-contrast button/footer text where needed, retaining orange as an accent? Or does the brand require a different approved contrast treatment? | The broader contrast pass changes the visual system, beyond the already released announcement fix and current focus-ring repair. |
 | 10 | Can we get **Search Console** access to choose which overlapping kombucha/green-tea-shot articles to retain, or should those URL consolidations be deferred beyond Wave 1? | Evidence-based consolidation. Recommendation until data is available: keep the existing URLs and do not guess which has the strongest traffic/backlinks. This does not reopen GA, Ads or GTM. |
 
-**Agentready:** Apply still fails with `unsupported_field` on the saved 34-change run. Dylan already confirmed the fix is being worked on. Tell us when it is deployed; no need to repeat setup decisions. We will verify durable Apply results, current description/policy output, retailer-safe product data, schema ownership and approved/protected catalog behavior before activation. [Current app report](agentready-product-feedback.md).
+**Agentready:** Apply is now verified. Brand-only Agent JSON is prepared in development, with the live embed still off. Remaining work is catalog/JSON-LD/channel verification and the reported contact-field UI inconsistency. [Latest app report](agentready-product-feedback.md).
 
 ## App-owner request, ready to forward
 
@@ -42,6 +54,6 @@ Signifyd documents use of browsing/device behavior in its protection products; n
 
 Stockist and Locksmith have active storefront functions. Keep Yotpo until Bazaarvoice's replacement/import is verified in Wave 3. Keep operations apps until the route ownership work in Wave 3. Klaviyo offer/signup/flow activation is Wave 2; GA and Ads remain deferred and GTM excluded. No customer, order, subscription or campaign state was changed in this pass.
 
-The extra theme changes are ready in development. Wave 1 is not entirely complete while catalog facts, editorial/app decisions and Agentready activation checks remain outstanding. Historical progress entries retain their original wording; this status and the current roadmap supersede older blockers that have already been repaired.
+The extra theme changes are ready in development. Wave 1 is not entirely complete while catalog facts, the outstanding campaign/app decisions and Agentready catalog checks remain outstanding. Historical progress entries retain their original wording; this status and the current roadmap supersede older blockers that have already been repaired.
 
-Development work is committed and pushed in [draft PR #1](https://github.com/dylanjhunt/halfday-shopify/pull/1). Main is unchanged.
+PR #1 is merged. New follow-up work uses `djh/wave-1-contrast-agentready` based on that merged main.

@@ -1,0 +1,34 @@
+{
+  "branch": "djh/wave-1-contrast-agentready",
+  "base_main": "2893a6f",
+  "theme_id": 142755430600,
+  "theme_check": {
+    "counts": {
+      "warning": 385,
+      "error": 122
+    },
+    "added_findings": []
+  },
+  "contrast_ratios": {
+    "previous_white_on_orange": 3.19,
+    "new_white_on_green": 11.19,
+    "previous_orange_on_yellow": 2.53,
+    "new_green_on_yellow": 8.89
+  },
+  "verified": {
+    "desktop_width": 1280,
+    "mobile_width": 390,
+    "overflow_observed": false,
+    "desktop_mobile_benefits_visual_and_keyboard": true,
+    "mobile_footer_visual": true,
+    "mobile_collection_button_colors_and_amazon_destinations": true,
+    "remote_css_and_config_readback_match": true,
+    "route_regression_count": 15,
+    "new_storefront_javascript": false
+  },
+  "limits": [
+    "Targeted contrast improvements, not complete WCAG certification; image backgrounds and remaining legacy/app colors require separate assessment.",
+    "No customer forms or orders submitted; analytics loader/URL preservation does not establish downstream receipt.",
+    "Agentready catalog output and JSON-LD remain off; only brand-only Agent JSON was verified."
+  ]
+}

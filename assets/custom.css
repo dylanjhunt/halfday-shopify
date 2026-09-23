@@ -47,8 +47,8 @@ img{ height: auto !important; }
 
 .button:after{display:none;}
 .button:before{display:none;}
-.button{ font-family:var(--font-museo-slab-family) !important; border-radius:99px; background:#FF5528; color:#FFF; text-align:center; font-size:16px; line-height:22px; letter-spacing:0.32px; text-transform:uppercase; padding:13px; display:inline-block; min-height:initial; min-width:244px; font-weight:800;}
-.button:hover{ background:#004600; }
+.button{ font-family:var(--font-museo-slab-family) !important; border-radius:99px; background:#004600; color:#FFF; text-align:center; font-size:16px; line-height:22px; letter-spacing:0.32px; text-transform:uppercase; padding:13px; display:inline-block; min-height:initial; min-width:244px; font-weight:800;}
+.button:hover{ background:#003300; color:#FFF; }
 .button_border_new{border:2px solid #004600; color:#004600; background:transparent; padding:11px;}
 .button_border_new:hover{ background:transparent; color:#004600; }
 .button_yellow_new{background:#FFE700; color:#004600;}
@@ -511,7 +511,7 @@ details[open]>.header__menu-item svg path{ stroke:#FF5528; }
 .Footer_top_sides_mainleft_mainboxs_new ul{padding-top:32px;}
 .Footer_top_sides_mainleft_mainboxs_new ul li{margin:0 !important; line-height:100%; }
 .Footer_top_sides_mainleft_mainboxs_new ul li a{color:#004600 !important; font-family: var(--font-museo-slab-family); font-size:16px !important; font-weight:800; line-height:11px; letter-spacing:0.32px; text-transform:uppercase; padding:16px 0; display:block !important; text-decoration:none !important; }
-.Footer_top_sides_mainleft_mainboxs_new ul li a:hover{ text-decoration:none !important; color:#FF5528 !important; }
+.Footer_top_sides_mainleft_mainboxs_new ul li a:hover{ text-decoration:underline !important; text-underline-offset:4px; color:#004600 !important; }
 .Footer_top_sides_mainleft_mainboxs_new ul li:last-child a{ padding-bottom:0; }
 .Footer_top_sides_mainright_new{display:block !important; width:40.964%; margin:0 !important;}
 .Footer_top_sides_mainright_new .footer-block__heading{margin:0; color:#004600; font-family: var(--font-body-family); font-size:24px; font-weight:700; line-height:115%; letter-spacing:0.48px;}
@@ -1073,7 +1073,7 @@ body.product-watermelon-half-half .product__title{ max-width:356px !important; }
   .Common_large_title_new h2, .Common_large_title_new h1{font-size:72px; letter-spacing:2.88px;}
   
   .button{min-width:100%;}
-  .button:hover{ background:#FF5528; }
+  .button:hover{ background:#003300; color:#FFF; }
   .button_border_new:hover { background: transparent; color: #004600; }
   .button_yellow_new:hover{ background:#FFE700; color:#004600; }
   .button_white_new:hover{ background:#FFF; color:#004600; }
@@ -1277,7 +1277,7 @@ body.product-watermelon-half-half .product__title{ max-width:356px !important; }
   .Card_product_review_new .rating-star{ margin-right:1px !important; }
   .Collection_card_product_main_new .Card_product_detail_innerhover_mainbutton_new{ padding-bottom:0; }
   .Collection_card_product_main_new .Card_product_detail_innerhover_mainredirect_new{ display:none; }
-  .Collection_card_product_main_new .Card_product_detail_innerhover_innerbutton_new .button{ font-size:14px; letter-spacing:0.28px; padding:13px 6px; background: #ff5528 !important; color: #fff !important; }
+  .Collection_card_product_main_new .Card_product_detail_innerhover_innerbutton_new .button{ font-size:14px; letter-spacing:0.28px; padding:13px 6px; background: #004600 !important; color: #fff !important; }
   .Collection_template_innerdetails_loops_maincustom_new{ width: 100% !important; max-width: 100% !important; }
   .Collection_template_innerdetails_loops_maincustom_new .Index_object_testimonials_innerloops_maindetail_new{ padding:40px 28px; }
   .Collection_template_innerdetails_loops_maincustom_new .Index_object_testimonials_innerloops_innerdetail_innerinfos_new p{ font-size:28px; letter-spacing:0.56px; }
@@ -2082,3 +2082,10 @@ summary.header__menu-item_main_menu.list-menu__item { padding-right: 16px; }
   html { scroll-behavior: auto; }
   .spin { animation: none; }
 }
+
+/* Keep brand orange as an accent with readable text on the yellow panels. */
+.Index_image_accordion_sides_innerright_innertitle_new h2,
+.Index_object_instagram_innersides_innerleft_innertitle_new h2 { color:#004600; }
+
+/* The embedded form supplies inline colors, so scope the contrast override to the footer. */
+.footer_newsletter_klaviyo_new .klaviyo-form-button { background-color:#004600 !important; color:#FFF !important; }
