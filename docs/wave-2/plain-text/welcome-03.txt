@@ -1,0 +1,22 @@
+Subject: A little more about Halfday
+Preheader: Meet the people behind your tea break.
+
+Good tea. A story to share.
+
+You've met the tea. Now meet the people behind it.
+
+Our story is a good place to get to know Halfday, our founders, and how it all started.
+
+Thanks for making a little room for us in your day.
+
+Meet Halfday: https://drinkhalfday.com/pages/our-story
+Find your next flavor: https://drinkhalfday.com/collections/shop-all
+
+See you at tea time,
+The Halfday team
+
+{{ organization.name }}
+{{ organization.full_address }}
+Manage preferences: {% manage_preferences_link %}
+Unsubscribe: {% unsubscribe_link %}
+Questions? hey@drinkhalfday.com

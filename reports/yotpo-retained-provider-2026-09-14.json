@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-14",
+  "scope": "Read-only published storefront after exiting inherited development preview; desktop 1280x720 only",
+  "theme_changes_deployed": false,
+  "samples": [
+    {
+      "path": "/products/lemon-tea",
+      "product_id": "8151000056008",
+      "rating": 4.5,
+      "displayed_count": 2,
+      "visible_text_review_rows": 1,
+      "data_price": "",
+      "currency": "USD",
+      "horizontal_overflow": false,
+      "rating_link_scrolled_to_content": true
+    },
+    {
+      "path": "/products/peach-tea",
+      "product_id": "8143502573768",
+      "rating": 4.8,
+      "displayed_count": 57,
+      "visible_text_review_rows": 5,
+      "data_price": "",
+      "currency": "USD",
+      "horizontal_overflow": false,
+      "pagination": "1 -> 2 -> 1 confirmed",
+      "form_fields_opened": true,
+      "form_submitted": false
+    },
+    {
+      "path": "/products/watermelon-half-half",
+      "product_id": "8312047206600",
+      "rating": 4.8,
+      "displayed_count": 56,
+      "visible_text_review_rows": 5,
+      "data_price": "",
+      "currency": "USD",
+      "horizontal_overflow": false
+    },
+    {
+      "path": "/products/strawberry-half-half-slim-can",
+      "product_id": "8335577252040",
+      "rating": null,
+      "displayed_count": null,
+      "visible_text_review_rows": 0,
+      "data_price": "",
+      "currency": "USD",
+      "horizontal_overflow": false,
+      "header_fallback": "Reviews",
+      "fallback_target": "#Reviews",
+      "section_top_after_click_px": 110.15,
+      "first_review_prompt_visible": true
+    }
+  ],
+  "limits": [
+    "No mobile or full keyboard retest",
+    "No review, signup, order or email submission",
+    "No account settings changed",
+    "No validation of unpublished repair",
+    "Aggregate count can include ratings without text; hidden template rows excluded"
+  ]
+}

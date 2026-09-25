@@ -1,0 +1,22 @@
+Subject: Make a little time for iced tea
+Preheader: Find your next Halfday favorite online or nearby.
+
+A little Halfday in your day.
+
+Open the fridge, grab a tea, take a minute.
+
+Whether you're choosing a familiar favorite or looking for something different, you can explore Halfday's flavors online and follow the product links to buy on Amazon.
+
+More of a pick-it-up-on-the-way-home person? Find Halfday near you with our store locator.
+
+Find your flavor: https://drinkhalfday.com/collections/shop-all
+Find a store: https://drinkhalfday.com/pages/find-in-store
+
+See you at tea time,
+The Halfday team
+
+{{ organization.name }}
+{{ organization.full_address }}
+Manage preferences: {% manage_preferences_link %}
+Unsubscribe: {% unsubscribe_link %}
+Questions? hey@drinkhalfday.com

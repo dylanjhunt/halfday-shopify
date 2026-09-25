@@ -1,0 +1,22 @@
+Subject: A flavor catch your eye?
+Preheader: Take another look at Halfday's iced teas.
+
+Still thinking tea?
+
+If you're still deciding on a flavor, here's a little nudge to take another look.
+
+Browse the lineup, check the product details, and follow the Amazon link on the product page when you're ready.
+
+Need a hand finding Halfday near you? We've got a store locator for that, too.
+
+Browse the flavors: https://drinkhalfday.com/collections/shop-all
+Find a store: https://drinkhalfday.com/pages/find-in-store
+
+See you at tea time,
+The Halfday team
+
+{{ organization.name }}
+{{ organization.full_address }}
+Manage preferences: {% manage_preferences_link %}
+Unsubscribe: {% unsubscribe_link %}
+Questions? hey@drinkhalfday.com

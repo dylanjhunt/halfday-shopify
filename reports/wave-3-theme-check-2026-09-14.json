@@ -1,0 +1,22 @@
+{
+  "before": {
+    "error": 122,
+    "warning": 385
+  },
+  "after": {
+    "error": 122,
+    "warning": 384
+  },
+  "added": [],
+  "removed": [
+    {
+      "offense": [
+        "sections/Product-review-new.liquid",
+        "UndefinedObject",
+        "warning",
+        "Unknown object 'variant' used."
+      ],
+      "count": 1
+    }
+  ]
+}
